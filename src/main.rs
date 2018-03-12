@@ -15,10 +15,13 @@ extern crate url_serde;
 
 
 use chrono::{DateTime, Utc};
+use std::error::Error;
 use futures::Stream;
 use hyper::Client;
 use hyper_tls::HttpsConnector;
-use std::io::{self, Write};
+use std::fs::OpenOptions;
+use std::io::Write;
+use std::path::Path;
 use tokio_core::reactor::Core;
 
 
@@ -47,7 +50,7 @@ mod rfc_822_format {
 
 
 #[derive(Serialize, Deserialize, Debug)]
-struct RSSFeed {
+struct RSS {
     channel: Channel,
 }
 
@@ -109,7 +112,7 @@ fn main() {
     let response = match core.run(client.get(uri)) {
         Ok(response) => response,
         Err(error) => {
-            println!("ERROR: {:?}", error);
+            println!("ERROR: {}", error.description());
             return;
         }
     };
@@ -117,46 +120,96 @@ fn main() {
     let body_chunk = match core.run(response.body().concat2()) {
         Ok(response) => response,
         Err(error) => {
-            println!("ERROR: {:?}", error);
+            println!("ERROR: {}", error.description());
             return;
         }
     };
 
     let body_bytes = body_chunk.as_ref();
 
-    io::stdout().write(body_bytes).unwrap();
-    println!("");
-    println!("");
-
-    let rss_feed: RSSFeed = serde_xml_rs::deserialize(body_bytes).unwrap();
-    println!("channel:");
-    println!("    title: {}", rss_feed.channel.title);
-    println!("    link: {}", rss_feed.channel.link);
-    println!("    description: {}", rss_feed.channel.description);
-    println!("    {} items:", rss_feed.channel.items.len());
-    println!("");
-    for i in 0..rss_feed.channel.items.len() {
-        let item = &rss_feed.channel.items[i];
-        println!("    {:2}) title: {}", i, item.title);
-        println!("        link: {}", item.link);
-        println!("        pub_date: {}", item.pub_date);
-        println!("        comments: {}", item.comments);
-        println!("        description: {}", item.description);
-        println!("");
-    }
-
-    let mut stories: Vec<Story> = Vec::new();
-    for item in rss_feed.channel.items.iter() {
-        let story = Story::from_item(&item);
-        stories.push(story);
-    }
-
-    let stories_json = match serde_json::to_string_pretty(&stories) {
-        Ok(stories_json) => stories_json,
+    // write RSS XML to file
+    let rss_xml_path = Path::new("rss.xml");
+    let mut rss_xml_file = match OpenOptions::new().create(true).write(true).open(&rss_xml_path) {
+        Ok(rss_xml_file) => rss_xml_file,
         Err(error) => {
-            println!("ERROR: {:?}", error);
+            println!("ERROR: {}: {}", rss_xml_path.display(), error.description());
             return;
         }
     };
-    println!("{}", stories_json);
+    match rss_xml_file.write_all(body_bytes) {
+        Ok(_) => (),
+        Err(error) => {
+            println!("ERROR: {}: {}", rss_xml_path.display(), error.description());
+            return;
+        }
+    };
+
+    // parse RSS XML
+    let rss: RSS = match serde_xml_rs::deserialize(body_bytes) {
+        Ok(rss) => rss,
+        Err(error) => {
+            println!("ERROR: {}", error.description());
+            return;
+        }
+    };
+
+    // convert RSS to JSON
+    let rss_json = match serde_json::to_string_pretty(&rss) {
+        Ok(rss_json) => rss_json,
+        Err(error) => {
+            println!("ERROR: {}", error.description());
+            return;
+        }
+    };
+
+    // write RSS JSON to file
+    let rss_json_path = Path::new("rss.json");
+    let mut rss_json_file = match OpenOptions::new().create(true).write(true).open(&rss_json_path) {
+        Ok(rss_json_file) => rss_json_file,
+        Err(error) => {
+            println!("ERROR: {}: {}", rss_json_path.display(), error.description());
+            return;
+        }
+    };
+
+    match rss_json_file.write_all(rss_json.as_bytes()) {
+        Ok(_) => (),
+        Err(error) => {
+            println!("ERROR: {}: {}", rss_json_path.display(), error.description());
+            return;
+        }
+    };
+
+    // turn RSS items into stories
+    let mut new_stories: Vec<Story> = Vec::new();
+    for item in rss.channel.items.iter() {
+        let story = Story::from_item(&item);
+        new_stories.push(story);
+    }
+
+    // convert stories to JSON
+    let new_stories_json = match serde_json::to_string_pretty(&new_stories) {
+        Ok(new_stories_json) => new_stories_json,
+        Err(error) => {
+            println!("ERROR: {}", error.description());
+            return;
+        }
+    };
+
+    // write stories JSON to file
+    let stories_path = Path::new("stories.json");
+    let mut stories_file = match OpenOptions::new().create(true).write(true).open(&stories_path) {
+        Ok(file) => file,
+        Err(error) => {
+            println!("ERROR: {}: {}", stories_path.display(), error.description());
+            return;
+        }
+    };
+    match stories_file.write_all(new_stories_json.as_bytes()) {
+        Ok(_) => (),
+        Err(error) => {
+            println!("ERROR: {}: {}", stories_path.display(), error.description());
+            return;
+        }
+    };
 }
