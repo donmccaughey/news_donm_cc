@@ -14,7 +14,7 @@ extern crate url;
 extern crate url_serde;
 
 
-use chrono::{DateTime, Utc};
+use chrono::{DateTime, Duration, Utc};
 use futures::Stream;
 use hyper::Client;
 use hyper_tls::HttpsConnector;
@@ -248,19 +248,33 @@ fn main() {
         .collect();
 
     let difference = rss_stories.difference(&saved_stories);
-    let mut new_stories: Vec<Story> = difference.cloned().collect();
-    let count = new_stories.len();
-    let word = if count == 1 { "story" } else { "stories" };
-    println!("news:{}: Found {} new {}", Utc::now(), count, word);
+    let mut new_stories: Vec<&Story> = difference.collect();
+    let new_count = new_stories.len();
+    let new_word = if new_count == 1 { "story" } else { "stories" };
+    println!("news:{}: Found {} new {}", Utc::now(), new_count, new_word);
     for story in new_stories.iter() {
         println!("    - {}", story.title);
     }
 
-    let mut updated_stories: Vec<Story> = saved_stories.clone().into_iter().collect();
+    let expired_date = created_date + Duration::days(30);
+    let expired_stories: Vec<&Story> = saved_stories.iter()
+        .filter(|story| story.created_date >= expired_date)
+        .collect();
+    let expired_count = expired_stories.len();
+    let expired_word = if expired_count == 1 { "story" } else { "stories" };
+    println!("news:{}: Removed {} expired {}", Utc::now(), expired_count, expired_word);
+    for story in expired_stories.iter() {
+        println!("    - {}", story.title);
+    }
+
+    let mut updated_stories: Vec<&Story> = saved_stories.iter()
+        .filter(|story| story.created_date < expired_date)
+        .collect();
     updated_stories.append(&mut new_stories);
+
     updated_stories.sort_by(|a, b| {
         a.created_date.cmp(&b.created_date).reverse()
-            .then(a.pub_date.cmp(&b.pub_date))
+            .then(a.pub_date.cmp(&b.pub_date).reverse())
             .then(a.title.cmp(&b.title))
     });
 
@@ -275,7 +289,7 @@ fn main() {
 
     // write stories JSON to file
     let stories_path = options.stories_dir.join("stories.json");
-    let mut stories_file = match OpenOptions::new().create(true).write(true).open(&stories_path) {
+    let mut stories_file = match OpenOptions::new().create(true).truncate(true).write(true).open(&stories_path) {
         Ok(file) => file,
         Err(error) => {
             println!("ERROR: {}: {}", stories_path.display(), error.description());
