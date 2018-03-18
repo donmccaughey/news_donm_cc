@@ -23,7 +23,6 @@ use std::error::Error;
 use std::fs::{create_dir_all, File, OpenOptions};
 use std::hash::{Hash, Hasher};
 use std::io::Write;
-use std::iter::FromIterator;
 use std::path::PathBuf;
 use tokio_core::reactor::Core;
 
@@ -105,10 +104,10 @@ struct Story {
 }
 
 impl Story {
-    fn from_item(item: &Item) -> Story {
+    fn from_item(item: &Item, created_date: DateTime<Utc>) -> Story {
         Story {
             comments: item.comments.clone(),
-            created_date: Utc::now(),
+            created_date: created_date.clone(),
             link: item.link.clone(),
             pub_date: item.pub_date.clone(),
             title: item.title.clone(),
@@ -144,10 +143,10 @@ fn main() {
 
     // read stories JSON to file
     let stories_path = options.stories_dir.join("stories.json");
-    let saved_stories: Vec<Story> = match File::open(&stories_path) {
+    let saved_stories: HashSet<Story> = match File::open(&stories_path) {
         Ok(mut stories_file) => {
             match serde_json::from_reader(stories_file) {
-                Ok(old_stories) => old_stories,
+                Ok(saved_stories) => saved_stories,
                 Err(error) => {
                     println!("ERROR: {}: {}", stories_path.display(), error.description());
                     return;
@@ -156,11 +155,9 @@ fn main() {
         },
         Err(error) => {
             println!("ERROR: {}: {}", stories_path.display(), error.description());
-            Vec::new()
+            HashSet::new()
         }
     };
-
-    let saved_stories_set: HashSet<Story> = HashSet::from_iter(saved_stories);
 
     let mut core = Core::new().unwrap();
 
@@ -181,7 +178,7 @@ fn main() {
     };
 
     let body_chunk = match core.run(response.body().concat2()) {
-        Ok(response) => response,
+        Ok(body_chunk) => body_chunk,
         Err(error) => {
             println!("ERROR: {}", error.description());
             return;
@@ -244,22 +241,28 @@ fn main() {
     };
 
     // turn RSS items into stories
-    let mut rss_stories = Vec::new();
-    for item in rss.channel.items.iter() {
-        let story = Story::from_item(&item);
-        rss_stories.push(story);
-    }
-    let rss_stories_set: HashSet<Story> = HashSet::from_iter(rss_stories);
+    let created_date = Utc::now();
+    let rss_stories: HashSet<Story> = rss.channel.items
+        .iter()
+        .map(|item| Story::from_item(&item, created_date))
+        .collect();
 
-    let new_stories_difference = rss_stories_set.difference(&saved_stories_set);
-    let mut new_stories = Vec::from_iter(new_stories_difference.cloned());
-    println!("Found {} new stories", new_stories.len());
+    let difference = rss_stories.difference(&saved_stories);
+    let mut new_stories: Vec<Story> = difference.cloned().collect();
+    let count = new_stories.len();
+    let word = if count == 1 { "story" } else { "stories" };
+    println!("news:{}: Found {} new {}", Utc::now(), count, word);
     for story in new_stories.iter() {
         println!("    - {}", story.title);
     }
 
-    let mut updated_stories: Vec<Story> = Vec::from_iter(saved_stories_set.clone());
+    let mut updated_stories: Vec<Story> = saved_stories.clone().into_iter().collect();
     updated_stories.append(&mut new_stories);
+    updated_stories.sort_by(|a, b| {
+        a.created_date.cmp(&b.created_date).reverse()
+            .then(a.pub_date.cmp(&b.pub_date))
+            .then(a.title.cmp(&b.title))
+    });
 
     // convert stories to JSON
     let updated_stories_json = match serde_json::to_string_pretty(&updated_stories) {
