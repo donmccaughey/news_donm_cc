@@ -14,6 +14,7 @@ extern crate url;
 extern crate url_serde;
 
 
+mod options;
 mod rfc_2822_format;
 
 
@@ -21,27 +22,13 @@ use chrono::{DateTime, Duration, Utc};
 use futures::Stream;
 use hyper::Client;
 use hyper_tls::HttpsConnector;
+use options::Options;
 use std::collections::HashSet;
 use std::error::Error;
 use std::fs::{create_dir_all, File, OpenOptions};
 use std::hash::{Hash, Hasher};
 use std::io::Write;
-use std::path::PathBuf;
 use tokio_core::reactor::Core;
-
-
-#[derive(Serialize, Deserialize, Debug)]
-struct Options {
-    stories_dir: PathBuf,
-}
-
-impl Options {
-    fn new() -> Options {
-        Options {
-            stories_dir: PathBuf::from("./tmp"),
-        }
-    }
-}
 
 
 #[derive(Serialize, Deserialize, Debug)]
