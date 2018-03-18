@@ -23,7 +23,8 @@ use url_serde;
 pub enum StoryError {
     InvalidPath(PathBuf, String),
     IoError(io::Error),
-    ParsingError(serde_json::Error),
+    JSONParsingError(serde_json::Error),
+    JSONConversionError(serde_json::Error),
 }
 
 impl StoryError {
@@ -37,7 +38,8 @@ impl fmt::Display for StoryError {
         match *self {
             StoryError::InvalidPath(_, ref string) => write!(f, "Invalid path: {}", string),
             StoryError::IoError(ref error) => write!(f, "IO error: {}", error),
-            StoryError::ParsingError(ref error) => write!(f, "Parsing error: {}", error),
+            StoryError::JSONParsingError(ref error) => write!(f, "JSON parsing error: {}", error),
+            StoryError::JSONConversionError(ref error) => write!(f, "JSON conversion error: {}", error),
         }
     }
 }
@@ -47,7 +49,8 @@ impl Error for StoryError {
         match *self {
             StoryError::InvalidPath(_, ref string) => &string,
             StoryError::IoError(ref error) => error.description(),
-            StoryError::ParsingError(ref error) => error.description(),
+            StoryError::JSONParsingError(ref error) => error.description(),
+            StoryError::JSONConversionError(ref error) => error.description(),
         }
     }
 }
@@ -82,7 +85,7 @@ impl Story {
             Err(error) => return Err(StoryError::IoError(error)),
         };
         serde_json::from_reader(file)
-            .map_err(StoryError::ParsingError)
+            .map_err(StoryError::JSONParsingError)
     }
 
     pub fn write_all(stories: &[&Story], path: &Path) -> Result<(), StoryError> {
@@ -91,7 +94,7 @@ impl Story {
             None => return Err(StoryError::invalid_path(path)),
         };
         let json = serde_json::to_string_pretty(stories)
-            .map_err(StoryError::ParsingError)?;
+            .map_err(StoryError::JSONConversionError)?;
         let mut file = OpenOptions::new()
             .create(true).truncate(true).write(true)
             .open(path).map_err(StoryError::IoError)?;

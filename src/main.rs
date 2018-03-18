@@ -104,26 +104,9 @@ fn main() {
         }
     };
 
-    // convert RSS to JSON
-    let rss_json = match serde_json::to_string_pretty(&rss) {
-        Ok(rss_json) => rss_json,
-        Err(error) => {
-            eprintln!("ERROR: {}", error.description());
-            return;
-        }
-    };
-
     // write RSS JSON to file
     let rss_json_path = options.stories_dir.join("rss.json");
-    let mut rss_json_file = match OpenOptions::new().create(true).write(true).open(&rss_json_path) {
-        Ok(rss_json_file) => rss_json_file,
-        Err(error) => {
-            eprintln!("ERROR: {}: {}", rss_json_path.display(), error.description());
-            return;
-        }
-    };
-
-    match rss_json_file.write_all(rss_json.as_bytes()) {
+    match rss.write(&rss_json_path) {
         Ok(_) => (),
         Err(error) => {
             eprintln!("ERROR: {}: {}", rss_json_path.display(), error.description());
