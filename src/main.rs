@@ -34,6 +34,21 @@ use story::Story;
 use tokio_core::reactor::Core;
 
 
+fn get_url(url_string: &str) -> Result<hyper::Chunk, hyper::Error> {
+    let uri = url_string.parse()?;
+
+    let mut core = Core::new().unwrap();
+
+    let handle = core.handle();
+    let connector = HttpsConnector::new(4, &handle).unwrap();
+    let client = Client::configure()
+        .connector(connector)
+        .build(&handle);
+
+    let response = core.run(client.get(uri))?;
+    core.run(response.body().concat2())
+}
+
 fn main() {
     let options = Options::new();
 
@@ -63,33 +78,13 @@ fn main() {
         }
     };
 
-    let mut core = Core::new().unwrap();
-
-    let handle = core.handle();
-    let connector = HttpsConnector::new(4, &handle).unwrap();
-    let client = Client::configure()
-        .connector(connector)
-        .build(&handle);
-
-    let uri = "https://news.ycombinator.com/rss".parse().unwrap();
-
-    let response = match core.run(client.get(uri)) {
-        Ok(response) => response,
+    let chunk = match get_url("https://news.ycombinator.com/rss") {
+        Ok(chunk) => chunk,
         Err(error) => {
             println!("ERROR: {}", error.description());
             return;
         }
     };
-
-    let body_chunk = match core.run(response.body().concat2()) {
-        Ok(body_chunk) => body_chunk,
-        Err(error) => {
-            println!("ERROR: {}", error.description());
-            return;
-        }
-    };
-
-    let body_bytes = body_chunk.as_ref();
 
     // write RSS XML to file
     let rss_xml_path = options.stories_dir.join("rss.xml");
@@ -100,7 +95,7 @@ fn main() {
             return;
         }
     };
-    match rss_xml_file.write_all(body_bytes) {
+    match rss_xml_file.write_all(chunk.as_ref()) {
         Ok(_) => (),
         Err(error) => {
             println!("ERROR: {}: {}", rss_xml_path.display(), error.description());
@@ -109,7 +104,7 @@ fn main() {
     };
 
     // parse RSS XML
-    let rss: RSS = match serde_xml_rs::deserialize(body_bytes) {
+    let rss: RSS = match serde_xml_rs::deserialize(chunk.as_ref()) {
         Ok(rss) => rss,
         Err(error) => {
             println!("ERROR: {}", error.description());
