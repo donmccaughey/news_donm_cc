@@ -27,26 +27,24 @@ use std::path::PathBuf;
 use tokio_core::reactor::Core;
 
 
-mod rfc_822_format {
-    use chrono::{DateTime, Utc, TimeZone};
+mod rfc_2822_format {
+    use chrono::{DateTime, Utc};
     use serde::{self, Deserialize, Serializer, Deserializer};
-
-    // Sun, 11 Mar 2018 00:55:15 +0000
-    // day, dd mmm yyyy hh:mm:ss +zzzz
-    const FORMAT: &'static str = "%a, %e %b %Y %H:%M:%S %z";
 
     pub fn serialize<S>(date: &DateTime<Utc>, serializer: S) -> Result<S::Ok, S::Error>
         where S: Serializer
     {
-        let s = format!("{}", date.format(FORMAT));
-        serializer.serialize_str(&s)
+        serializer.serialize_str(&date.to_rfc2822())
     }
 
     pub fn deserialize<'de, D>(deserializer: D) -> Result<DateTime<Utc>, D::Error>
         where D: Deserializer<'de>
     {
-        let s = String::deserialize(deserializer)?;
-        Utc.datetime_from_str(&s, FORMAT).map_err(serde::de::Error::custom)
+        let string = String::deserialize(deserializer)?;
+        match DateTime::parse_from_rfc2822(&string) {
+            Ok(datetime) => Ok(datetime.with_timezone(&Utc)),
+            Err(error) => Err(serde::de::Error::custom(error)),
+        }
     }
 }
 
@@ -87,7 +85,7 @@ struct Item {
     description: String,
     #[serde(with = "url_serde")]
     link: url::Url,
-    #[serde(rename = "pubDate", with = "rfc_822_format")]
+    #[serde(rename = "pubDate", with = "rfc_2822_format")]
     pub_date: DateTime<Utc>,
     title: String,
 }
