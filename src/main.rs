@@ -29,7 +29,9 @@ use rss::RSS;
 use std::collections::HashSet;
 use std::error::Error;
 use std::fs::{create_dir_all, OpenOptions};
+use std::io;
 use std::io::Write;
+use std::path::Path;
 use story::Story;
 use tokio_core::reactor::Core;
 
@@ -47,6 +49,13 @@ fn get_url(url_string: &str) -> Result<hyper::Chunk, hyper::Error> {
 
     let response = core.run(client.get(uri))?;
     core.run(response.body().concat2())
+}
+
+fn write_chunk(chunk: &hyper::Chunk, path: &Path) -> Result<(), io::Error> {
+    let mut file = OpenOptions::new()
+        .create(true).truncate(true).write(true)
+        .open(path)?;
+    file.write_all(chunk.as_ref())
 }
 
 fn main() {
@@ -80,14 +89,7 @@ fn main() {
 
     // write RSS XML to file
     let rss_xml_path = options.stories_dir.join("rss.xml");
-    let mut rss_xml_file = match OpenOptions::new().create(true).write(true).open(&rss_xml_path) {
-        Ok(rss_xml_file) => rss_xml_file,
-        Err(error) => {
-            eprintln!("ERROR: {}: {}", rss_xml_path.display(), error.description());
-            return;
-        }
-    };
-    match rss_xml_file.write_all(chunk.as_ref()) {
+    match write_chunk(&chunk, &rss_xml_path) {
         Ok(_) => (),
         Err(error) => {
             eprintln!("ERROR: {}: {}", rss_xml_path.display(), error.description());
