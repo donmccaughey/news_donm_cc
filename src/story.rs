@@ -1,13 +1,17 @@
-use chrono::{DateTime, Utc};
+use chrono::DateTime;
+use chrono::Utc;
 use rss::Item;
 use serde_json;
 use std::collections::HashSet;
 use std::error::Error;
 use std::fmt;
 use std::fs::File;
+use std::fs::OpenOptions;
 use std::io;
 use std::io::ErrorKind::NotFound;
-use std::hash::{Hash, Hasher};
+use std::io::Write;
+use std::hash::Hash;
+use std::hash::Hasher;
 use std::path::Path;
 use url::Url;
 use url_serde;
@@ -63,7 +67,18 @@ impl Story {
             Err(ref error) if NotFound == error.kind() => return Ok(HashSet::new()),
             Err(error) => return Err(StoryError::IoError(error)),
         };
-        serde_json::from_reader(file).map_err(StoryError::ParsingError)
+        serde_json::from_reader(file)
+            .map_err(StoryError::ParsingError)
+    }
+
+    pub fn write_all(stories: &[&Story], path: &Path) -> Result<(), StoryError> {
+        let json = serde_json::to_string_pretty(stories)
+            .map_err(StoryError::ParsingError)?;
+        let mut file = OpenOptions::new()
+            .create(true).truncate(true).write(true)
+            .open(path).map_err(StoryError::IoError)?;
+        file.write_all(json.as_bytes())
+            .map_err(StoryError::IoError)
     }
 }
 

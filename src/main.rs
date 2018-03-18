@@ -169,25 +169,8 @@ fn main() {
             .then(a.title.cmp(&b.title))
     });
 
-    // convert stories to JSON
-    let updated_stories_json = match serde_json::to_string_pretty(&updated_stories) {
-        Ok(updated_stories_json) => updated_stories_json,
-        Err(error) => {
-            eprintln!("ERROR: {}", error.description());
-            return;
-        }
-    };
-
-    // write stories JSON to file
     let stories_path = options.stories_dir.join("stories.json");
-    let mut stories_file = match OpenOptions::new().create(true).truncate(true).write(true).open(&stories_path) {
-        Ok(file) => file,
-        Err(error) => {
-            eprintln!("ERROR: {}: {}", stories_path.display(), error.description());
-            return;
-        }
-    };
-    match stories_file.write_all(updated_stories_json.as_bytes()) {
+    match Story::write_all(&updated_stories, &stories_path) {
         Ok(_) => (),
         Err(error) => {
             eprintln!("ERROR: {}: {}", stories_path.display(), error.description());
