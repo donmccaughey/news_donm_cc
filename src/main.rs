@@ -16,6 +16,7 @@ extern crate url_serde;
 
 mod options;
 mod rfc_2822_format;
+mod rss;
 
 
 use chrono::{DateTime, Duration, Utc};
@@ -23,6 +24,7 @@ use futures::Stream;
 use hyper::Client;
 use hyper_tls::HttpsConnector;
 use options::Options;
+use rss::{RSS, Item};
 use std::collections::HashSet;
 use std::error::Error;
 use std::fs::{create_dir_all, File, OpenOptions};
@@ -30,33 +32,6 @@ use std::hash::{Hash, Hasher};
 use std::io::Write;
 use tokio_core::reactor::Core;
 
-
-#[derive(Serialize, Deserialize, Debug)]
-struct RSS {
-    channel: Channel,
-}
-
-#[derive(Serialize, Deserialize, Debug)]
-struct Channel {
-    description: String,
-    #[serde(rename = "item")]
-    items: Vec<Item>,
-    #[serde(with = "url_serde")]
-    link: url::Url,
-    title: String,
-}
-
-#[derive(Serialize, Deserialize, Debug)]
-struct Item {
-    #[serde(with = "url_serde")]
-    comments: url::Url,
-    description: String,
-    #[serde(with = "url_serde")]
-    link: url::Url,
-    #[serde(rename = "pubDate", with = "rfc_2822_format")]
-    pub_date: DateTime<Utc>,
-    title: String,
-}
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
 struct Story {
