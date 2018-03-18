@@ -17,58 +17,21 @@ extern crate url_serde;
 mod options;
 mod rfc_2822_format;
 mod rss;
+mod story;
 
 
-use chrono::{DateTime, Duration, Utc};
+use chrono::{Duration, Utc};
 use futures::Stream;
 use hyper::Client;
 use hyper_tls::HttpsConnector;
 use options::Options;
-use rss::{RSS, Item};
+use rss::RSS;
 use std::collections::HashSet;
 use std::error::Error;
 use std::fs::{create_dir_all, File, OpenOptions};
-use std::hash::{Hash, Hasher};
 use std::io::Write;
+use story::Story;
 use tokio_core::reactor::Core;
-
-
-#[derive(Serialize, Deserialize, Debug, Clone)]
-struct Story {
-    #[serde(with = "url_serde")]
-    comments: url::Url,
-    created_date: DateTime<Utc>,
-    #[serde(with = "url_serde")]
-    link: url::Url,
-    pub_date: DateTime<Utc>,
-    title: String,
-}
-
-impl Story {
-    fn from_item(item: &Item, created_date: DateTime<Utc>) -> Story {
-        Story {
-            comments: item.comments.clone(),
-            created_date: created_date.clone(),
-            link: item.link.clone(),
-            pub_date: item.pub_date.clone(),
-            title: item.title.clone(),
-        }
-    }
-}
-
-impl Eq for Story {}
-
-impl Hash for Story {
-    fn hash<H: Hasher>(&self, state: &mut H) {
-        self.comments.hash(state);
-    }
-}
-
-impl PartialEq for Story {
-    fn eq(&self, other: &Story) -> bool {
-        self.comments.as_str() == other.comments.as_str()
-    }
-}
 
 
 fn main() {
