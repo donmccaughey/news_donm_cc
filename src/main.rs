@@ -14,6 +14,9 @@ extern crate url;
 extern crate url_serde;
 
 
+mod rfc_2822_format;
+
+
 use chrono::{DateTime, Duration, Utc};
 use futures::Stream;
 use hyper::Client;
@@ -25,28 +28,6 @@ use std::hash::{Hash, Hasher};
 use std::io::Write;
 use std::path::PathBuf;
 use tokio_core::reactor::Core;
-
-
-mod rfc_2822_format {
-    use chrono::{DateTime, Utc};
-    use serde::{self, Deserialize, Serializer, Deserializer};
-
-    pub fn serialize<S>(date: &DateTime<Utc>, serializer: S) -> Result<S::Ok, S::Error>
-        where S: Serializer
-    {
-        serializer.serialize_str(&date.to_rfc2822())
-    }
-
-    pub fn deserialize<'de, D>(deserializer: D) -> Result<DateTime<Utc>, D::Error>
-        where D: Deserializer<'de>
-    {
-        let string = String::deserialize(deserializer)?;
-        match DateTime::parse_from_rfc2822(&string) {
-            Ok(datetime) => Ok(datetime.with_timezone(&Utc)),
-            Err(error) => Err(serde::de::Error::custom(error)),
-        }
-    }
-}
 
 
 #[derive(Serialize, Deserialize, Debug)]
