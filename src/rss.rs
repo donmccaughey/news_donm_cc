@@ -4,12 +4,12 @@ use url::Url;
 use url_serde;
 
 
-#[derive(Serialize, Deserialize, Debug)]
+#[derive(Debug, Deserialize, Serialize)]
 pub struct RSS {
     pub channel: Channel,
 }
 
-#[derive(Serialize, Deserialize, Debug)]
+#[derive(Debug, Deserialize, Serialize)]
 pub struct Channel {
     pub description: String,
     #[serde(rename = "item")]
@@ -19,7 +19,7 @@ pub struct Channel {
     pub title: String,
 }
 
-#[derive(Serialize, Deserialize, Debug)]
+#[derive(Debug, Deserialize, Serialize)]
 pub struct Item {
     #[serde(with = "url_serde")]
     pub comments: Url,

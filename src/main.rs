@@ -28,7 +28,7 @@ use options::Options;
 use rss::RSS;
 use std::collections::HashSet;
 use std::error::Error;
-use std::fs::{create_dir_all, File, OpenOptions};
+use std::fs::{create_dir_all, OpenOptions};
 use std::io::Write;
 use story::Story;
 use tokio_core::reactor::Core;
@@ -55,33 +55,25 @@ fn main() {
     match create_dir_all(&options.stories_dir) {
         Ok(_) => (),
         Err(error) => {
-            println!("ERROR: {}", error.description());
+            eprintln!("ERROR: {}", error.description());
             return;
         }
     }
 
-    // read stories JSON to file
+    // read stories JSON from file
     let stories_path = options.stories_dir.join("stories.json");
-    let saved_stories: HashSet<Story> = match File::open(&stories_path) {
-        Ok(mut stories_file) => {
-            match serde_json::from_reader(stories_file) {
-                Ok(saved_stories) => saved_stories,
-                Err(error) => {
-                    println!("ERROR: {}: {}", stories_path.display(), error.description());
-                    return;
-                }
-            }
-        },
+    let saved_stories = match Story::read_all(&stories_path) {
+        Ok(saved_stories) => saved_stories,
         Err(error) => {
-            println!("ERROR: {}: {}", stories_path.display(), error.description());
-            HashSet::new()
+            eprintln!("ERROR: {}: {}", stories_path.display(), error.description());
+            return;
         }
     };
 
     let chunk = match get_url("https://news.ycombinator.com/rss") {
         Ok(chunk) => chunk,
         Err(error) => {
-            println!("ERROR: {}", error.description());
+            eprintln!("ERROR: {}", error.description());
             return;
         }
     };
@@ -91,14 +83,14 @@ fn main() {
     let mut rss_xml_file = match OpenOptions::new().create(true).write(true).open(&rss_xml_path) {
         Ok(rss_xml_file) => rss_xml_file,
         Err(error) => {
-            println!("ERROR: {}: {}", rss_xml_path.display(), error.description());
+            eprintln!("ERROR: {}: {}", rss_xml_path.display(), error.description());
             return;
         }
     };
     match rss_xml_file.write_all(chunk.as_ref()) {
         Ok(_) => (),
         Err(error) => {
-            println!("ERROR: {}: {}", rss_xml_path.display(), error.description());
+            eprintln!("ERROR: {}: {}", rss_xml_path.display(), error.description());
             return;
         }
     };
@@ -107,7 +99,7 @@ fn main() {
     let rss: RSS = match serde_xml_rs::deserialize(chunk.as_ref()) {
         Ok(rss) => rss,
         Err(error) => {
-            println!("ERROR: {}", error.description());
+            eprintln!("ERROR: {}", error.description());
             return;
         }
     };
@@ -116,7 +108,7 @@ fn main() {
     let rss_json = match serde_json::to_string_pretty(&rss) {
         Ok(rss_json) => rss_json,
         Err(error) => {
-            println!("ERROR: {}", error.description());
+            eprintln!("ERROR: {}", error.description());
             return;
         }
     };
@@ -126,7 +118,7 @@ fn main() {
     let mut rss_json_file = match OpenOptions::new().create(true).write(true).open(&rss_json_path) {
         Ok(rss_json_file) => rss_json_file,
         Err(error) => {
-            println!("ERROR: {}: {}", rss_json_path.display(), error.description());
+            eprintln!("ERROR: {}: {}", rss_json_path.display(), error.description());
             return;
         }
     };
@@ -134,7 +126,7 @@ fn main() {
     match rss_json_file.write_all(rss_json.as_bytes()) {
         Ok(_) => (),
         Err(error) => {
-            println!("ERROR: {}: {}", rss_json_path.display(), error.description());
+            eprintln!("ERROR: {}: {}", rss_json_path.display(), error.description());
             return;
         }
     };
@@ -181,7 +173,7 @@ fn main() {
     let updated_stories_json = match serde_json::to_string_pretty(&updated_stories) {
         Ok(updated_stories_json) => updated_stories_json,
         Err(error) => {
-            println!("ERROR: {}", error.description());
+            eprintln!("ERROR: {}", error.description());
             return;
         }
     };
@@ -191,14 +183,14 @@ fn main() {
     let mut stories_file = match OpenOptions::new().create(true).truncate(true).write(true).open(&stories_path) {
         Ok(file) => file,
         Err(error) => {
-            println!("ERROR: {}: {}", stories_path.display(), error.description());
+            eprintln!("ERROR: {}: {}", stories_path.display(), error.description());
             return;
         }
     };
     match stories_file.write_all(updated_stories_json.as_bytes()) {
         Ok(_) => (),
         Err(error) => {
-            println!("ERROR: {}: {}", stories_path.display(), error.description());
+            eprintln!("ERROR: {}: {}", stories_path.display(), error.description());
             return;
         }
     };
