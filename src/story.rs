@@ -5,6 +5,7 @@ use serde_json;
 use std::collections::HashSet;
 use std::error::Error;
 use std::fmt;
+use std::fs::create_dir_all;
 use std::fs::File;
 use std::fs::OpenOptions;
 use std::io;
@@ -13,25 +14,38 @@ use std::io::Write;
 use std::hash::Hash;
 use std::hash::Hasher;
 use std::path::Path;
+use std::path::PathBuf;
 use url::Url;
 use url_serde;
 
 
 #[derive(Debug)]
 pub enum StoryError {
+    InvalidPath(PathBuf, String),
     IoError(io::Error),
     ParsingError(serde_json::Error),
 }
 
+impl StoryError {
+    fn invalid_path(path: &Path) -> StoryError {
+        StoryError::InvalidPath(path.to_path_buf(), path.to_string_lossy().to_string())
+    }
+}
+
 impl fmt::Display for StoryError {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-        write!(f, "{}", self.description())
+        match *self {
+            StoryError::InvalidPath(_, ref string) => write!(f, "Invalid path: {}", string),
+            StoryError::IoError(ref error) => write!(f, "IO error: {}", error),
+            StoryError::ParsingError(ref error) => write!(f, "Parsing error: {}", error),
+        }
     }
 }
 
 impl Error for StoryError {
     fn description(&self) -> &str {
         match *self {
+            StoryError::InvalidPath(_, ref string) => &string,
             StoryError::IoError(ref error) => error.description(),
             StoryError::ParsingError(ref error) => error.description(),
         }
@@ -72,6 +86,10 @@ impl Story {
     }
 
     pub fn write_all(stories: &[&Story], path: &Path) -> Result<(), StoryError> {
+        match path.parent() {
+            Some(parent) => create_dir_all(parent).map_err(StoryError::IoError)?,
+            None => return Err(StoryError::invalid_path(path)),
+        };
         let json = serde_json::to_string_pretty(stories)
             .map_err(StoryError::ParsingError)?;
         let mut file = OpenOptions::new()
