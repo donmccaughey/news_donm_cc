@@ -1,51 +1,14 @@
 use chrono::DateTime;
 use chrono::Utc;
+use news_error::NewsError;
 use rfc_2822_format;
 use serde_json;
-use std::error::Error;
-use std::fmt;
 use std::fs::create_dir_all;
 use std::fs::OpenOptions;
-use std::io;
 use std::io::Write;
 use std::path::Path;
-use std::path::PathBuf;
 use url::Url;
 use url_serde;
-
-
-#[derive(Debug)]
-pub enum RSSError {
-    InvalidPath(PathBuf, String),
-    IoError(io::Error),
-    JSONConversionError(serde_json::Error),
-}
-
-impl RSSError {
-    fn invalid_path(path: &Path) -> RSSError {
-        RSSError::InvalidPath(path.to_path_buf(), path.to_string_lossy().to_string())
-    }
-}
-
-impl fmt::Display for RSSError {
-    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-        match *self {
-            RSSError::InvalidPath(_, ref string) => write!(f, "Invalid path: {}", string),
-            RSSError::IoError(ref error) => write!(f, "IO error: {}", error),
-            RSSError::JSONConversionError(ref error) => write!(f, "JSON conversion error: {}", error),
-        }
-    }
-}
-
-impl Error for RSSError {
-    fn description(&self) -> &str {
-        match *self {
-            RSSError::InvalidPath(_, ref string) => &string,
-            RSSError::IoError(ref error) => error.description(),
-            RSSError::JSONConversionError(ref error) => error.description(),
-        }
-    }
-}
 
 
 #[derive(Debug, Deserialize, Serialize)]
@@ -54,18 +17,18 @@ pub struct RSS {
 }
 
 impl RSS {
-    pub fn write(&self, path: &Path) -> Result<(), RSSError> {
+    pub fn write(&self, path: &Path) -> Result<(), NewsError> {
         match path.parent() {
-            Some(parent) => create_dir_all(parent).map_err(RSSError::IoError)?,
-            None => return Err(RSSError::invalid_path(path)),
+            Some(parent) => create_dir_all(parent).map_err(NewsError::IoError)?,
+            None => return Err(NewsError::invalid_path(path)),
         };
         let json = serde_json::to_string_pretty(self)
-            .map_err(RSSError::JSONConversionError)?;
+            .map_err(NewsError::JSONConversionError)?;
         let mut file = OpenOptions::new()
             .create(true).truncate(true).write(true)
-            .open(path).map_err(RSSError::IoError)?;
+            .open(path).map_err(NewsError::IoError)?;
         file.write_all(json.as_bytes())
-            .map_err(RSSError::IoError)
+            .map_err(NewsError::IoError)
     }
 }
 

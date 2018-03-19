@@ -1,59 +1,19 @@
 use chrono::DateTime;
 use chrono::Utc;
+use news_error::NewsError;
 use rss::Item;
 use serde_json;
 use std::collections::HashSet;
-use std::error::Error;
-use std::fmt;
 use std::fs::create_dir_all;
 use std::fs::File;
 use std::fs::OpenOptions;
-use std::io;
 use std::io::ErrorKind::NotFound;
 use std::io::Write;
 use std::hash::Hash;
 use std::hash::Hasher;
 use std::path::Path;
-use std::path::PathBuf;
 use url::Url;
 use url_serde;
-
-
-#[derive(Debug)]
-pub enum StoryError {
-    InvalidPath(PathBuf, String),
-    IoError(io::Error),
-    JSONParsingError(serde_json::Error),
-    JSONConversionError(serde_json::Error),
-}
-
-impl StoryError {
-    fn invalid_path(path: &Path) -> StoryError {
-        StoryError::InvalidPath(path.to_path_buf(), path.to_string_lossy().to_string())
-    }
-}
-
-impl fmt::Display for StoryError {
-    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-        match *self {
-            StoryError::InvalidPath(_, ref string) => write!(f, "Invalid path: {}", string),
-            StoryError::IoError(ref error) => write!(f, "IO error: {}", error),
-            StoryError::JSONParsingError(ref error) => write!(f, "JSON parsing error: {}", error),
-            StoryError::JSONConversionError(ref error) => write!(f, "JSON conversion error: {}", error),
-        }
-    }
-}
-
-impl Error for StoryError {
-    fn description(&self) -> &str {
-        match *self {
-            StoryError::InvalidPath(_, ref string) => &string,
-            StoryError::IoError(ref error) => error.description(),
-            StoryError::JSONParsingError(ref error) => error.description(),
-            StoryError::JSONConversionError(ref error) => error.description(),
-        }
-    }
-}
 
 
 #[derive(Clone, Debug, Deserialize, Serialize)]
@@ -78,28 +38,28 @@ impl Story {
         }
     }
 
-    pub fn read_all(path: &Path) -> Result<HashSet<Story>, StoryError> {
+    pub fn read_all(path: &Path) -> Result<HashSet<Story>, NewsError> {
         let file = match File::open(path) {
             Ok(file) => file,
             Err(ref error) if NotFound == error.kind() => return Ok(HashSet::new()),
-            Err(error) => return Err(StoryError::IoError(error)),
+            Err(error) => return Err(NewsError::IoError(error)),
         };
         serde_json::from_reader(file)
-            .map_err(StoryError::JSONParsingError)
+            .map_err(NewsError::JSONParsingError)
     }
 
-    pub fn write_all(stories: &[&Story], path: &Path) -> Result<(), StoryError> {
+    pub fn write_all(stories: &[&Story], path: &Path) -> Result<(), NewsError> {
         match path.parent() {
-            Some(parent) => create_dir_all(parent).map_err(StoryError::IoError)?,
-            None => return Err(StoryError::invalid_path(path)),
+            Some(parent) => create_dir_all(parent).map_err(NewsError::IoError)?,
+            None => return Err(NewsError::invalid_path(path)),
         };
         let json = serde_json::to_string_pretty(stories)
-            .map_err(StoryError::JSONConversionError)?;
+            .map_err(NewsError::JSONConversionError)?;
         let mut file = OpenOptions::new()
             .create(true).truncate(true).write(true)
-            .open(path).map_err(StoryError::IoError)?;
+            .open(path).map_err(NewsError::IoError)?;
         file.write_all(json.as_bytes())
-            .map_err(StoryError::IoError)
+            .map_err(NewsError::IoError)
     }
 }
 

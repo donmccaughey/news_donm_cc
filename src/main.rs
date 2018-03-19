@@ -14,6 +14,7 @@ extern crate url;
 extern crate url_serde;
 
 
+mod news_error;
 mod options;
 mod rfc_2822_format;
 mod rss;
