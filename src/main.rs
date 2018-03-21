@@ -14,6 +14,7 @@ extern crate url;
 extern crate url_serde;
 
 
+mod https_client;
 mod news_error;
 mod options;
 mod rfc_2822_format;
@@ -22,9 +23,7 @@ mod story;
 
 
 use chrono::{Duration, Utc};
-use futures::Stream;
-use hyper::Client;
-use hyper_tls::HttpsConnector;
+use https_client::HttpsClient;
 use news_error::NewsError;
 use options::Options;
 use rss::RSS;
@@ -34,23 +33,11 @@ use std::fs::{create_dir_all, OpenOptions};
 use std::io::Write;
 use std::path::Path;
 use story::Story;
-use tokio_core::reactor::Core;
 
 
 fn get_url(url_string: &str) -> Result<hyper::Chunk, NewsError> {
-    let uri = url_string.parse().map_err(NewsError::UriError)?;
-
-    let mut core = Core::new().map_err(NewsError::IoError)?;
-
-    let handle = core.handle();
-    let connector = HttpsConnector::new(4, &handle)
-        .map_err(NewsError::TlsError)?;
-    let client = Client::configure()
-        .connector(connector)
-        .build(&handle);
-
-    let response = core.run(client.get(uri)).map_err(NewsError::HyperError)?;
-    core.run(response.body().concat2()).map_err(NewsError::HyperError)
+    let mut https_client = HttpsClient::new()?;
+    https_client.get(url_string)
 }
 
 fn write_chunk(chunk: &hyper::Chunk, path: &Path) -> Result<(), NewsError> {
