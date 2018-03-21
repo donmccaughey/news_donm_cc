@@ -25,57 +25,53 @@ use chrono::{Duration, Utc};
 use futures::Stream;
 use hyper::Client;
 use hyper_tls::HttpsConnector;
+use news_error::NewsError;
 use options::Options;
 use rss::RSS;
 use std::collections::HashSet;
 use std::error::Error;
 use std::fs::{create_dir_all, OpenOptions};
-use std::io;
 use std::io::Write;
 use std::path::Path;
 use story::Story;
 use tokio_core::reactor::Core;
 
 
-fn get_url(url_string: &str) -> Result<hyper::Chunk, hyper::Error> {
-    let uri = url_string.parse()?;
+fn get_url(url_string: &str) -> Result<hyper::Chunk, NewsError> {
+    let uri = url_string.parse().map_err(NewsError::UriError)?;
 
-    let mut core = Core::new().unwrap();
+    let mut core = Core::new().map_err(NewsError::IoError)?;
 
     let handle = core.handle();
-    let connector = HttpsConnector::new(4, &handle).unwrap();
+    let connector = HttpsConnector::new(4, &handle)
+        .map_err(NewsError::TlsError)?;
     let client = Client::configure()
         .connector(connector)
         .build(&handle);
 
-    let response = core.run(client.get(uri))?;
-    core.run(response.body().concat2())
+    let response = core.run(client.get(uri)).map_err(NewsError::HyperError)?;
+    core.run(response.body().concat2()).map_err(NewsError::HyperError)
 }
 
-fn write_chunk(chunk: &hyper::Chunk, path: &Path) -> Result<(), io::Error> {
+fn write_chunk(chunk: &hyper::Chunk, path: &Path) -> Result<(), NewsError> {
+    match path.parent() {
+        Some(parent) => create_dir_all(parent).map_err(NewsError::IoError)?,
+        None => return Err(NewsError::invalid_path(path)),
+    };
     let mut file = OpenOptions::new()
         .create(true).truncate(true).write(true)
-        .open(path)?;
-    file.write_all(chunk.as_ref())
+        .open(path).map_err(NewsError::IoError)?;
+    file.write_all(chunk.as_ref()).map_err(NewsError::IoError)
 }
 
 fn main() {
     let options = Options::new();
 
-    match create_dir_all(&options.stories_dir) {
-        Ok(_) => (),
-        Err(error) => {
-            eprintln!("ERROR: {}", error.description());
-            return;
-        }
-    }
-
-    // read stories JSON from file
-    let stories_path = options.stories_dir.join("stories.json");
-    let saved_stories = match Story::read_all(&stories_path) {
+    // read news JSON from file
+    let saved_stories = match Story::read_all(&options.news_path) {
         Ok(saved_stories) => saved_stories,
         Err(error) => {
-            eprintln!("ERROR: {}: {}", stories_path.display(), error.description());
+            eprintln!("ERROR: {}: {}", options.news_path.display(), error.description());
             return;
         }
     };
@@ -89,11 +85,10 @@ fn main() {
     };
 
     // write RSS XML to file
-    let rss_xml_path = options.stories_dir.join("rss.xml");
-    match write_chunk(&chunk, &rss_xml_path) {
+    match write_chunk(&chunk, &options.rss_xml_path) {
         Ok(_) => (),
         Err(error) => {
-            eprintln!("ERROR: {}: {}", rss_xml_path.display(), error.description());
+            eprintln!("ERROR: {}: {}", options.rss_xml_path.display(), error.description());
             return;
         }
     };
@@ -108,11 +103,10 @@ fn main() {
     };
 
     // write RSS JSON to file
-    let rss_json_path = options.stories_dir.join("rss.json");
-    match rss.write(&rss_json_path) {
+    match rss.write(&options.rss_json_path) {
         Ok(_) => (),
         Err(error) => {
-            eprintln!("ERROR: {}: {}", rss_json_path.display(), error.description());
+            eprintln!("ERROR: {}: {}", options.rss_json_path.display(), error.description());
             return;
         }
     };
@@ -155,11 +149,10 @@ fn main() {
             .then(a.title.cmp(&b.title))
     });
 
-    let stories_path = options.stories_dir.join("stories.json");
-    match Story::write_all(&updated_stories, &stories_path) {
+    match Story::write_all(&updated_stories, &options.news_path) {
         Ok(_) => (),
         Err(error) => {
-            eprintln!("ERROR: {}: {}", stories_path.display(), error.description());
+            eprintln!("ERROR: {}: {}", options.news_path.display(), error.description());
             return;
         }
     };

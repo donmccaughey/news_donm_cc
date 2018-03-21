@@ -45,7 +45,7 @@ impl Story {
             Err(error) => return Err(NewsError::IoError(error)),
         };
         serde_json::from_reader(file)
-            .map_err(NewsError::JSONParsingError)
+            .map_err(NewsError::JsonParsingError)
     }
 
     pub fn write_all(stories: &[&Story], path: &Path) -> Result<(), NewsError> {
@@ -54,7 +54,7 @@ impl Story {
             None => return Err(NewsError::invalid_path(path)),
         };
         let json = serde_json::to_string_pretty(stories)
-            .map_err(NewsError::JSONConversionError)?;
+            .map_err(NewsError::JsonConversionError)?;
         let mut file = OpenOptions::new()
             .create(true).truncate(true).write(true)
             .open(path).map_err(NewsError::IoError)?;

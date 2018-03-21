@@ -1,3 +1,5 @@
+use hyper;
+use native_tls;
 use serde_json;
 use std::error::Error;
 use std::fmt;
@@ -10,8 +12,12 @@ use std::path::PathBuf;
 pub enum NewsError {
     InvalidPath(PathBuf, String),
     IoError(io::Error),
-    JSONParsingError(serde_json::Error),
-    JSONConversionError(serde_json::Error),
+    JsonParsingError(serde_json::Error),
+    JsonConversionError(serde_json::Error),
+    HyperError(hyper::Error),
+    TlsError(native_tls::Error),
+    UriError(hyper::error::UriError),
+
 }
 
 impl NewsError {
@@ -25,8 +31,11 @@ impl fmt::Display for NewsError {
         match *self {
             NewsError::InvalidPath(_, ref string) => write!(f, "Invalid path: {}", string),
             NewsError::IoError(ref error) => write!(f, "IO error: {}", error),
-            NewsError::JSONParsingError(ref error) => write!(f, "JSON parsing error: {}", error),
-            NewsError::JSONConversionError(ref error) => write!(f, "JSON conversion error: {}", error),
+            NewsError::JsonParsingError(ref error) => write!(f, "JSON parsing error: {}", error),
+            NewsError::JsonConversionError(ref error) => write!(f, "JSON conversion error: {}", error),
+            NewsError::HyperError(ref error) => write!(f, "Hyper error: {}", error),
+            NewsError::TlsError(ref error) => write!(f, "TLS error: {}", error),
+            NewsError::UriError(ref error) => write!(f, "URI error: {}", error),
         }
     }
 }
@@ -36,8 +45,11 @@ impl Error for NewsError {
         match *self {
             NewsError::InvalidPath(_, ref string) => &string,
             NewsError::IoError(ref error) => error.description(),
-            NewsError::JSONParsingError(ref error) => error.description(),
-            NewsError::JSONConversionError(ref error) => error.description(),
+            NewsError::JsonParsingError(ref error) => error.description(),
+            NewsError::JsonConversionError(ref error) => error.description(),
+            NewsError::HyperError(ref error) => error.description(),
+            NewsError::TlsError(ref error) => error.description(),
+            NewsError::UriError(ref error) => error.description(),
         }
     }
 }

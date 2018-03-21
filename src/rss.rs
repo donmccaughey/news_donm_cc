@@ -23,7 +23,7 @@ impl RSS {
             None => return Err(NewsError::invalid_path(path)),
         };
         let json = serde_json::to_string_pretty(self)
-            .map_err(NewsError::JSONConversionError)?;
+            .map_err(NewsError::JsonConversionError)?;
         let mut file = OpenOptions::new()
             .create(true).truncate(true).write(true)
             .open(path).map_err(NewsError::IoError)?;
