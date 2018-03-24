@@ -3,6 +3,11 @@
 Source code for my personal news aggregation site.
 Coming soon to [https://news.donm.cc](https://news.donm.cc).
 
+[![Build Status][11]][12]
+
+[11]: https://travis-ci.org/donmccaughey/news_donm_cc.svg?branch=master
+[12]: https://travis-ci.org/donmccaughey/news_donm_cc
+
 ## Architecture
 
 The _news.donm.cc_ is driven by three main components: 
