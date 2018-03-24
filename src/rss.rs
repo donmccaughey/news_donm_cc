@@ -65,14 +65,14 @@ mod tests {
     #[test]
     fn test_item_from_xml() {
         let xml = r#"
-        <item>\
-            <title>Article One</title>\
-            <link>https://news.example.com/article1</link>\
-            <pubDate>Sun, 18 Mar 2018 23:43:03 +0000</pubDate>\
-            <comments>https://news.example.com/article1/comments</comments>\
-            <description><![CDATA[<a href="https://news.example.com/article1/comments">Comments</a>]]></description>\
-        </item>
-    "#;
+            <item>\
+                <title>Article One</title>\
+                <link>https://news.example.com/article1</link>\
+                <pubDate>Sun, 18 Mar 2018 23:43:03 +0000</pubDate>\
+                <comments>https://news.example.com/article1/comments</comments>\
+                <description><![CDATA[<a href="https://news.example.com/article1/comments">Comments</a>]]></description>\
+            </item>
+        "#;
         let item: Item = serde_xml_rs::deserialize(xml.as_bytes()).unwrap();
         assert_eq!("Article One", item.title);
         assert_eq!("https://news.example.com/article1", item.link.as_str());
@@ -84,26 +84,26 @@ mod tests {
     #[test]
     fn test_channel_from_xml() {
         let xml = r#"
-        <channel>
-            <title>News Channel</title>
-            <link>https://news.example.com/news_channel</link>
-            <description>Better than teevee.</description>
-            <item>\
-                <title>Article One</title>\
-                <link>https://news.example.com/article1</link>\
-                <pubDate>Sun, 18 Mar 2018 23:43:03 +0000</pubDate>\
-                <comments>https://news.example.com/article1/comments</comments>\
-                <description><![CDATA[<a href="https://news.example.com/article1/comments">Comments</a>]]></description>\
-            </item>
-            <item>\
-                <title>Article Two</title>\
-                <link>https://news.example.com/article2</link>\
-                <pubDate>Sun, 18 Mar 2018 13:59:55 +0000</pubDate>\
-                <comments>https://news.example.com/article2/comments</comments>\
-                <description><![CDATA[<a href="https://news.example.com/article2/comments">Comments</a>]]></description>\
-            </item>
-        </channel>
-    "#;
+            <channel>
+                <title>News Channel</title>
+                <link>https://news.example.com/news_channel</link>
+                <description>Better than teevee.</description>
+                <item>\
+                    <title>Article One</title>\
+                    <link>https://news.example.com/article1</link>\
+                    <pubDate>Sun, 18 Mar 2018 23:43:03 +0000</pubDate>\
+                    <comments>https://news.example.com/article1/comments</comments>\
+                    <description><![CDATA[<a href="https://news.example.com/article1/comments">Comments</a>]]></description>\
+                </item>
+                <item>\
+                    <title>Article Two</title>\
+                    <link>https://news.example.com/article2</link>\
+                    <pubDate>Sun, 18 Mar 2018 13:59:55 +0000</pubDate>\
+                    <comments>https://news.example.com/article2/comments</comments>\
+                    <description><![CDATA[<a href="https://news.example.com/article2/comments">Comments</a>]]></description>\
+                </item>
+            </channel>
+        "#;
         let channel: Channel = serde_xml_rs::deserialize(xml.as_bytes()).unwrap();
         assert_eq!("News Channel", channel.title);
         assert_eq!("https://news.example.com/news_channel", channel.link.as_str());
@@ -126,21 +126,21 @@ mod tests {
     #[test]
     fn test_rss_from_xml() {
         let xml = r#"
-        <rss version="2.0">
-            <channel>
-                <title>News Channel</title>
-                <link>https://news.example.com/news_channel</link>
-                <description>Better than teevee.</description>
-                <item>\
-                    <title>Article One</title>\
-                    <link>https://news.example.com/article1</link>\
-                    <pubDate>Sun, 18 Mar 2018 23:43:03 +0000</pubDate>\
-                    <comments>https://news.example.com/article1/comments</comments>\
-                    <description><![CDATA[<a href="https://news.example.com/article1/comments">Comments</a>]]></description>\
-                </item>
-            </channel>
-        </rss>
-    "#;
+            <rss version="2.0">
+                <channel>
+                    <title>News Channel</title>
+                    <link>https://news.example.com/news_channel</link>
+                    <description>Better than teevee.</description>
+                    <item>\
+                        <title>Article One</title>\
+                        <link>https://news.example.com/article1</link>\
+                        <pubDate>Sun, 18 Mar 2018 23:43:03 +0000</pubDate>\
+                        <comments>https://news.example.com/article1/comments</comments>\
+                        <description><![CDATA[<a href="https://news.example.com/article1/comments">Comments</a>]]></description>\
+                    </item>
+                </channel>
+            </rss>
+        "#;
         let rss: RSS = serde_xml_rs::deserialize(xml.as_bytes()).unwrap();
         assert_eq!("News Channel", rss.channel.title);
         assert_eq!("https://news.example.com/news_channel", rss.channel.link.as_str());

@@ -73,6 +73,102 @@ impl Hash for Story {
 
 impl PartialEq for Story {
     fn eq(&self, other: &Story) -> bool {
-        self.comments.as_str() == other.comments.as_str()
+        self.comments == other.comments
+    }
+}
+
+
+#[cfg(test)]
+mod tests {
+    use chrono::DateTime;
+    use chrono::Utc;
+    use rss::Item;
+    use std::collections::hash_map::DefaultHasher;
+    use std::hash::{Hash, Hasher};
+    use super::*;
+    use url::Url;
+
+    impl Story {
+        fn hash_code(&self) -> u64 {
+            let mut hasher = DefaultHasher::new();
+            self.hash(&mut hasher);
+            hasher.finish()
+        }
+    }
+
+    #[test]
+    fn test_story_from_item() {
+        let pub_date = DateTime::parse_from_rfc2822("Wed, 21 Mar 2018 22:33:19 +0000")
+            .unwrap().with_timezone(&Utc);
+        let item = Item {
+            comments: Url::parse("https://example.com/comments").unwrap(),
+            description: "Some stuff happened.".to_string(),
+            link: Url::parse("https://example.com/link").unwrap(),
+            pub_date: pub_date,
+            title: "A News Story".to_string(),
+        };
+        let created_date = DateTime::parse_from_rfc2822("Thu, 22 Mar 2018 13:08:18 +0000")
+            .unwrap().with_timezone(&Utc);
+        let story = Story::from_item(&item, created_date);
+        assert_eq!(item.comments, story.comments);
+        assert_eq!(created_date, story.created_date);
+        assert_eq!(item.link, story.link);
+        assert_eq!(item.pub_date, story.pub_date);
+        assert_eq!(item.title, story.title);
+    }
+
+    #[test]
+    fn test_story_eq() {
+        let url1 = Url::parse("https://example.com/one").unwrap();
+        let url2 = Url::parse("https://example.com/two").unwrap();
+
+        let date1 = DateTime::parse_from_rfc2822("Wed, 21 Mar 2018 22:33:19 +0000")
+            .unwrap().with_timezone(&Utc);
+        let date2 = DateTime::parse_from_rfc2822("Thu, 22 Mar 2018 01:59:58 +0000")
+            .unwrap().with_timezone(&Utc);
+
+        let story1 = Story {
+            comments: url1.clone(),
+            created_date: date1.clone(),
+            link: url1.clone(),
+            pub_date: date1.clone(),
+            title: "Some Title".to_string(),
+        };
+        let mut story2 = story1.clone();
+
+        assert_eq!(story1, story2);
+        assert_eq!(story2, story1);
+        assert_eq!(story1.hash_code(), story2.hash_code());
+
+        story2.title = "Another Title".to_string();
+
+        assert_eq!(story1, story2);
+        assert_eq!(story2, story1);
+        assert_eq!(story1.hash_code(), story2.hash_code());
+
+        story2.pub_date = date2.clone();
+
+        assert_eq!(story1, story2);
+        assert_eq!(story2, story1);
+        assert_eq!(story1.hash_code(), story2.hash_code());
+
+        story2.link = url2.clone();
+
+        assert_eq!(story1, story2);
+        assert_eq!(story2, story1);
+        assert_eq!(story1.hash_code(), story2.hash_code());
+
+        story2.created_date = date2.clone();
+
+        assert_eq!(story1, story2);
+        assert_eq!(story2, story1);
+        assert_eq!(story1.hash_code(), story2.hash_code());
+
+        story2 = story1.clone();
+        story2.comments = url2;
+
+        assert_ne!(story1, story2);
+        assert_ne!(story2, story1);
+        assert_ne!(story1.hash_code(), story2.hash_code());
     }
 }
