@@ -29,9 +29,6 @@ use news_error::NewsError;
 use options::Options;
 use rss::RSS;
 use std::error::Error;
-use std::fs::{create_dir_all, OpenOptions};
-use std::io::Write;
-use std::path::Path;
 
 
 enum Event {
@@ -67,7 +64,7 @@ fn run() -> Result<(), NewsError> {
     let mut news = News::read_from(&options.news_path)?;
 
     let chunk = https_client::get_url("https://news.ycombinator.com/rss")?;
-    write_chunk(&chunk, &options.rss_xml_path)?;
+    https_client::write_chunk(&chunk, &options.rss_xml_path)?;
 
     let rss: RSS = serde_xml_rs::deserialize(chunk.as_ref())
         .map_err(NewsError::XmlParsingError)?;
@@ -86,15 +83,4 @@ fn run() -> Result<(), NewsError> {
     news.write_to(&options.news_path)?;
 
     Ok(())
-}
-
-fn write_chunk(chunk: &hyper::Chunk, path: &Path) -> Result<(), NewsError> {
-    match path.parent() {
-        Some(parent) => create_dir_all(parent).map_err(NewsError::IoError)?,
-        None => return Err(NewsError::invalid_path(path)),
-    };
-    let mut file = OpenOptions::new()
-        .create(true).truncate(true).write(true)
-        .open(path).map_err(NewsError::IoError)?;
-    file.write_all(chunk.as_ref()).map_err(NewsError::IoError)
 }
