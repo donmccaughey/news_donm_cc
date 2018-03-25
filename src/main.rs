@@ -24,6 +24,7 @@ mod rss;
 
 use chrono::{Duration, Utc};
 use https_client::HttpsClient;
+use news::News;
 use news::Story;
 use news_error::NewsError;
 use options::Options;
@@ -54,9 +55,11 @@ fn write_chunk(chunk: &hyper::Chunk, path: &Path) -> Result<(), NewsError> {
 fn main() {
     let options = Options::new();
 
+    let mut news = News::new();
+
     // read news JSON from file
-    let saved_stories = match Story::read_all(&options.news_path) {
-        Ok(saved_stories) => saved_stories,
+    news.stories = match Story::read_all(&options.news_path) {
+        Ok(stories) => stories,
         Err(error) => {
             eprintln!("ERROR: {}: {}", options.news_path.display(), error.description());
             return;
@@ -105,8 +108,10 @@ fn main() {
         .map(|item| Story::from_item(&item, created_date))
         .collect();
 
+    let saved_stories: HashSet<Story> = news.stories.into_iter().collect();
     let difference = rss_stories.difference(&saved_stories);
-    let mut new_stories: Vec<&Story> = difference.collect();
+
+    let new_stories: Vec<&Story> = difference.collect();
     let new_count = new_stories.len();
     let new_word = if new_count == 1 { "story" } else { "stories" };
     println!("news:{}: Found {} new {}", Utc::now(), new_count, new_word);
@@ -115,6 +120,7 @@ fn main() {
     }
 
     let expired_date = created_date + Duration::days(30);
+
     let expired_stories: Vec<&Story> = saved_stories.iter()
         .filter(|story| story.created_date >= expired_date)
         .collect();
@@ -125,18 +131,18 @@ fn main() {
         println!("    - {}", story.title);
     }
 
-    let mut updated_stories: Vec<&Story> = saved_stories.iter()
+    news.stories = saved_stories.iter()
         .filter(|story| story.created_date < expired_date)
-        .collect();
-    updated_stories.append(&mut new_stories);
+        .cloned().collect();
+    news.stories.extend(new_stories.into_iter().cloned());
 
-    updated_stories.sort_by(|a, b| {
+    news.stories.sort_by(|a, b| {
         a.created_date.cmp(&b.created_date).reverse()
             .then(a.pub_date.cmp(&b.pub_date).reverse())
             .then(a.title.cmp(&b.title))
     });
 
-    match Story::write_all(&updated_stories, &options.news_path) {
+    match Story::write_all(&news.stories, &options.news_path) {
         Ok(_) => (),
         Err(error) => {
             eprintln!("ERROR: {}: {}", options.news_path.display(), error.description());
