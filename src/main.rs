@@ -15,15 +15,16 @@ extern crate url_serde;
 
 
 mod https_client;
+mod news;
 mod news_error;
 mod options;
 mod rfc_2822_format;
 mod rss;
-mod story;
 
 
 use chrono::{Duration, Utc};
 use https_client::HttpsClient;
+use news::Story;
 use news_error::NewsError;
 use options::Options;
 use rss::RSS;
@@ -32,7 +33,6 @@ use std::error::Error;
 use std::fs::{create_dir_all, OpenOptions};
 use std::io::Write;
 use std::path::Path;
-use story::Story;
 
 
 fn get_url(url_string: &str) -> Result<hyper::Chunk, NewsError> {
