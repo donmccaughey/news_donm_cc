@@ -8,6 +8,12 @@ use news_error::NewsError;
 use tokio_core::reactor::Core;
 
 
+pub fn get_url(url_string: &str) -> Result<Chunk, NewsError> {
+    let mut https_client = HttpsClient::new()?;
+    https_client.get(url_string)
+}
+
+
 #[derive(Debug)]
 pub struct HttpsClient {
     core: Core,

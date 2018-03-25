@@ -23,7 +23,6 @@ mod rss;
 
 
 use chrono::{DateTime, Duration, Utc};
-use https_client::HttpsClient;
 use news::News;
 use news::Story;
 use news_error::NewsError;
@@ -53,11 +52,6 @@ fn log_stories(event: Event, stories: &[Story], date_time: DateTime<Utc>) {
     }
 }
 
-fn get_url(url_string: &str) -> Result<hyper::Chunk, NewsError> {
-    let mut https_client = HttpsClient::new()?;
-    https_client.get(url_string)
-}
-
 fn write_chunk(chunk: &hyper::Chunk, path: &Path) -> Result<(), NewsError> {
     match path.parent() {
         Some(parent) => create_dir_all(parent).map_err(NewsError::IoError)?,
@@ -81,7 +75,7 @@ fn main() {
         }
     };
 
-    let chunk = match get_url("https://news.ycombinator.com/rss") {
+    let chunk = match https_client::get_url("https://news.ycombinator.com/rss") {
         Ok(chunk) => chunk,
         Err(error) => {
             eprintln!("ERROR: {}", error.description());
