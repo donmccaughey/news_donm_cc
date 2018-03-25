@@ -22,7 +22,7 @@ mod rfc_2822_format;
 mod rss;
 
 
-use chrono::{DateTime, Duration, Utc};
+use chrono::{DateTime, Utc};
 use news::News;
 use news::Story;
 use news_error::NewsError;
@@ -63,8 +63,6 @@ fn main() {
 
 fn run() -> Result<(), NewsError> {
     let options = Options::new();
-    let now = Utc::now();
-    let expired_date = now - Duration::days(30);
 
     let mut news = News::read_from(&options.news_path)?;
 
@@ -76,14 +74,14 @@ fn run() -> Result<(), NewsError> {
     rss.write(&options.rss_json_path)?;
 
     let rss_stories: Vec<Story> = rss.channel.items.iter()
-        .map(|item| Story::from_item(&item, now))
+        .map(|item| Story::from_item(&item, options.now_date))
         .collect();
 
     let new_stories = news.add_stories(&rss_stories);
-    log_stories(Event::Added, &new_stories, now);
+    log_stories(Event::Added, &new_stories, options.now_date);
 
-    let expired_stories = news.expire_stories(expired_date);
-    log_stories(Event::Expired, &expired_stories, now);
+    let expired_stories = news.expire_stories(options.expired_date);
+    log_stories(Event::Expired, &expired_stories, options.now_date);
 
     news.write_to(&options.news_path)?;
 
