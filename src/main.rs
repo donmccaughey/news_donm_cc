@@ -52,6 +52,44 @@ fn log_stories(event: Event, stories: &[Story], date_time: DateTime<Utc>) {
     }
 }
 
+fn main() {
+    match run() {
+        Ok(_) => (),
+        Err(error) => {
+            eprintln!("ERROR: {}", error.description());
+        }
+    }
+}
+
+fn run() -> Result<(), NewsError> {
+    let options = Options::new();
+    let now = Utc::now();
+    let expired_date = now - Duration::days(30);
+
+    let mut news = News::read_from(&options.news_path)?;
+
+    let chunk = https_client::get_url("https://news.ycombinator.com/rss")?;
+    write_chunk(&chunk, &options.rss_xml_path)?;
+
+    let rss: RSS = serde_xml_rs::deserialize(chunk.as_ref())
+        .map_err(NewsError::XmlParsingError)?;
+    rss.write(&options.rss_json_path)?;
+
+    let rss_stories: Vec<Story> = rss.channel.items.iter()
+        .map(|item| Story::from_item(&item, now))
+        .collect();
+
+    let new_stories = news.add_stories(&rss_stories);
+    log_stories(Event::Added, &new_stories, now);
+
+    let expired_stories = news.expire_stories(expired_date);
+    log_stories(Event::Expired, &expired_stories, now);
+
+    news.write_to(&options.news_path)?;
+
+    Ok(())
+}
+
 fn write_chunk(chunk: &hyper::Chunk, path: &Path) -> Result<(), NewsError> {
     match path.parent() {
         Some(parent) => create_dir_all(parent).map_err(NewsError::IoError)?,
@@ -61,74 +99,4 @@ fn write_chunk(chunk: &hyper::Chunk, path: &Path) -> Result<(), NewsError> {
         .create(true).truncate(true).write(true)
         .open(path).map_err(NewsError::IoError)?;
     file.write_all(chunk.as_ref()).map_err(NewsError::IoError)
-}
-
-fn main() {
-    let options = Options::new();
-
-    // read news JSON from file
-    let mut news = match News::read_from(&options.news_path) {
-        Ok(stories) => stories,
-        Err(error) => {
-            eprintln!("ERROR: {}: {}", options.news_path.display(), error.description());
-            return;
-        }
-    };
-
-    let chunk = match https_client::get_url("https://news.ycombinator.com/rss") {
-        Ok(chunk) => chunk,
-        Err(error) => {
-            eprintln!("ERROR: {}", error.description());
-            return;
-        }
-    };
-
-    // write RSS XML to file
-    match write_chunk(&chunk, &options.rss_xml_path) {
-        Ok(_) => (),
-        Err(error) => {
-            eprintln!("ERROR: {}: {}", options.rss_xml_path.display(), error.description());
-            return;
-        }
-    };
-
-    // parse RSS XML
-    let rss: RSS = match serde_xml_rs::deserialize(chunk.as_ref()) {
-        Ok(rss) => rss,
-        Err(error) => {
-            eprintln!("ERROR: {}", error.description());
-            return;
-        }
-    };
-
-    // write RSS JSON to file
-    match rss.write(&options.rss_json_path) {
-        Ok(_) => (),
-        Err(error) => {
-            eprintln!("ERROR: {}: {}", options.rss_json_path.display(), error.description());
-            return;
-        }
-    };
-
-    // turn RSS items into stories
-    let now = Utc::now();
-    let rss_stories: Vec<Story> = rss.channel.items.iter()
-        .map(|item| Story::from_item(&item, now))
-        .collect();
-
-    let new_stories = news.add_stories(&rss_stories);
-    log_stories(Event::Added, &new_stories, now);
-
-    let expired_date = now - Duration::days(30);
-
-    let expired_stories = news.expire_stories(expired_date);
-    log_stories(Event::Expired, &expired_stories, now);
-
-    match news.write_to(&options.news_path) {
-        Ok(_) => (),
-        Err(error) => {
-            eprintln!("ERROR: {}: {}", options.news_path.display(), error.description());
-            return;
-        }
-    };
 }

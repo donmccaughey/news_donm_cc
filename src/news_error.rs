@@ -1,6 +1,7 @@
 use hyper;
 use native_tls;
 use serde_json;
+use serde_xml_rs;
 use std::error::Error;
 use std::fmt;
 use std::io;
@@ -17,6 +18,7 @@ pub enum NewsError {
     HyperError(hyper::Error),
     TlsError(native_tls::Error),
     UriError(hyper::error::UriError),
+    XmlParsingError(serde_xml_rs::Error),
 
 }
 
@@ -36,6 +38,7 @@ impl fmt::Display for NewsError {
             NewsError::HyperError(ref error) => write!(f, "Hyper error: {}", error),
             NewsError::TlsError(ref error) => write!(f, "TLS error: {}", error),
             NewsError::UriError(ref error) => write!(f, "URI error: {}", error),
+            NewsError::XmlParsingError(ref error) => write!(f, "XML parsing error: {}", error),
         }
     }
 }
@@ -50,6 +53,7 @@ impl Error for NewsError {
             NewsError::HyperError(ref error) => error.description(),
             NewsError::TlsError(ref error) => error.description(),
             NewsError::UriError(ref error) => error.description(),
+            NewsError::XmlParsingError(ref error) => error.description(),
         }
     }
 }
