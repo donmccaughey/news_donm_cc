@@ -29,7 +29,6 @@ use news::Story;
 use news_error::NewsError;
 use options::Options;
 use rss::RSS;
-use std::collections::HashSet;
 use std::error::Error;
 use std::fs::{create_dir_all, OpenOptions};
 use std::io::Write;
@@ -101,15 +100,12 @@ fn main() {
 
     // turn RSS items into stories
     let created_date = Utc::now();
-    let rss_stories: HashSet<Story> = rss.channel.items
+    let rss_stories: Vec<Story> = rss.channel.items
         .iter()
         .map(|item| Story::from_item(&item, created_date))
         .collect();
 
-    let saved_stories: HashSet<Story> = news.stories.into_iter().collect();
-    let difference = rss_stories.difference(&saved_stories);
-
-    let new_stories: Vec<&Story> = difference.collect();
+    let new_stories = news.add_stories(&rss_stories);
     let new_count = new_stories.len();
     let new_word = if new_count == 1 { "story" } else { "stories" };
     println!("news:{}: Found {} new {}", Utc::now(), new_count, new_word);
@@ -117,28 +113,15 @@ fn main() {
         println!("    - {}", story.title);
     }
 
-    let expired_date = created_date + Duration::days(30);
+    let expired_date = created_date - Duration::days(30);
 
-    let expired_stories: Vec<&Story> = saved_stories.iter()
-        .filter(|story| story.created_date >= expired_date)
-        .collect();
+    let expired_stories = news.expire_stories(expired_date);
     let expired_count = expired_stories.len();
     let expired_word = if expired_count == 1 { "story" } else { "stories" };
     println!("news:{}: Removed {} expired {}", Utc::now(), expired_count, expired_word);
     for story in expired_stories.iter() {
         println!("    - {}", story.title);
     }
-
-    news.stories = saved_stories.iter()
-        .filter(|story| story.created_date < expired_date)
-        .cloned().collect();
-    news.stories.extend(new_stories.into_iter().cloned());
-
-    news.stories.sort_by(|a, b| {
-        a.created_date.cmp(&b.created_date).reverse()
-            .then(a.pub_date.cmp(&b.pub_date).reverse())
-            .then(a.title.cmp(&b.title))
-    });
 
     match news.write_to(&options.news_path) {
         Ok(_) => (),
