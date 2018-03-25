@@ -22,7 +22,7 @@ mod rfc_2822_format;
 mod rss;
 
 
-use chrono::{Duration, Utc};
+use chrono::{DateTime, Duration, Utc};
 use https_client::HttpsClient;
 use news::News;
 use news::Story;
@@ -34,6 +34,24 @@ use std::fs::{create_dir_all, OpenOptions};
 use std::io::Write;
 use std::path::Path;
 
+
+enum Event {
+    Added,
+    Expired,
+}
+
+
+fn log_stories(event: Event, stories: &[Story], date_time: DateTime<Utc>) {
+    let count = stories.len();
+    let story_noun = if count == 1 { "story" } else { "stories" };
+    match event {
+        Event::Added => println!("news:{}: Found {} new {}", date_time, count, story_noun),
+        Event::Expired => println!("news:{}: Removed {} expired {}", date_time, count, story_noun),
+    };
+    for story in stories.iter() {
+        println!("    - {}", story.title);
+    }
+}
 
 fn get_url(url_string: &str) -> Result<hyper::Chunk, NewsError> {
     let mut https_client = HttpsClient::new()?;
@@ -99,29 +117,18 @@ fn main() {
     };
 
     // turn RSS items into stories
-    let created_date = Utc::now();
-    let rss_stories: Vec<Story> = rss.channel.items
-        .iter()
-        .map(|item| Story::from_item(&item, created_date))
+    let now = Utc::now();
+    let rss_stories: Vec<Story> = rss.channel.items.iter()
+        .map(|item| Story::from_item(&item, now))
         .collect();
 
     let new_stories = news.add_stories(&rss_stories);
-    let new_count = new_stories.len();
-    let new_word = if new_count == 1 { "story" } else { "stories" };
-    println!("news:{}: Found {} new {}", Utc::now(), new_count, new_word);
-    for story in new_stories.iter() {
-        println!("    - {}", story.title);
-    }
+    log_stories(Event::Added, &new_stories, now);
 
-    let expired_date = created_date - Duration::days(30);
+    let expired_date = now - Duration::days(30);
 
     let expired_stories = news.expire_stories(expired_date);
-    let expired_count = expired_stories.len();
-    let expired_word = if expired_count == 1 { "story" } else { "stories" };
-    println!("news:{}: Removed {} expired {}", Utc::now(), expired_count, expired_word);
-    for story in expired_stories.iter() {
-        println!("    - {}", story.title);
-    }
+    log_stories(Event::Expired, &expired_stories, now);
 
     match news.write_to(&options.news_path) {
         Ok(_) => (),
