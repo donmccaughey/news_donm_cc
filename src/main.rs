@@ -55,10 +55,8 @@ fn write_chunk(chunk: &hyper::Chunk, path: &Path) -> Result<(), NewsError> {
 fn main() {
     let options = Options::new();
 
-    let mut news = News::new();
-
     // read news JSON from file
-    news.stories = match Story::read_all(&options.news_path) {
+    let mut news = match News::read_from(&options.news_path) {
         Ok(stories) => stories,
         Err(error) => {
             eprintln!("ERROR: {}: {}", options.news_path.display(), error.description());
@@ -142,7 +140,7 @@ fn main() {
             .then(a.title.cmp(&b.title))
     });
 
-    match Story::write_all(&news.stories, &options.news_path) {
+    match news.write_to(&options.news_path) {
         Ok(_) => (),
         Err(error) => {
             eprintln!("ERROR: {}: {}", options.news_path.display(), error.description());

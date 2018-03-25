@@ -33,10 +33,15 @@ pub struct Story {
 }
 
 impl News {
-    pub fn new() -> News {
-        News {
-            stories: Vec::new(),
-        }
+    pub fn read_from(path: &Path) -> Result<News, NewsError> {
+        let stories = Story::read_all(path)?;
+        Ok(News {
+            stories: stories,
+        })
+    }
+
+    pub fn write_to(&self, path: &Path) -> Result<(), NewsError> {
+        Story::write_all(&self.stories, path)
     }
 }
 
