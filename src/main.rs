@@ -15,13 +15,14 @@ extern crate url_serde;
 
 
 mod https_client;
+mod monitor;
 mod news;
 mod options;
 mod rfc_2822_format;
 mod rss;
 
 
-use chrono::{DateTime, Utc};
+use monitor::Monitor;
 use news::News;
 use news::Story;
 use news::error::NewsError;
@@ -29,24 +30,6 @@ use options::Options;
 use rss::RSS;
 use std::error::Error;
 
-
-enum Event {
-    Added,
-    Expired,
-}
-
-
-fn log_stories(event: Event, stories: &[Story], date_time: DateTime<Utc>) {
-    let count = stories.len();
-    let story_noun = if count == 1 { "story" } else { "stories" };
-    match event {
-        Event::Added => println!("news:{}: Found {} new {}", date_time, count, story_noun),
-        Event::Expired => println!("news:{}: Removed {} expired {}", date_time, count, story_noun),
-    };
-    for story in stories.iter() {
-        println!("    - {}", story.title);
-    }
-}
 
 fn main() {
     match run() {
@@ -59,6 +42,7 @@ fn main() {
 
 fn run() -> Result<(), NewsError> {
     let options = Options::new();
+    let monitor = Monitor::new(&options);
 
     let mut news = News::read_from(&options.news_path)?;
 
@@ -74,10 +58,10 @@ fn run() -> Result<(), NewsError> {
         .collect();
 
     let new_stories = news.add_stories(&rss_stories);
-    log_stories(Event::Added, &new_stories, options.now_date);
+    monitor.added_stories(&new_stories);
 
     let expired_stories = news.expire_stories(options.expired_date);
-    log_stories(Event::Expired, &expired_stories, options.now_date);
+    monitor.expired_stories(&expired_stories);
 
     news.write_to(&options.news_path)?;
 
