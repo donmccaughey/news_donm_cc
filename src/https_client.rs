@@ -4,7 +4,7 @@ use hyper::Chunk;
 use hyper::Client;
 use hyper::client::HttpConnector;
 use hyper_tls::HttpsConnector;
-use news_error::NewsError;
+use news::error::NewsError;
 use std::fs::create_dir_all;
 use std::fs::OpenOptions;
 use std::io::Write;

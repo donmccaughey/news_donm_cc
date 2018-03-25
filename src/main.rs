@@ -16,7 +16,6 @@ extern crate url_serde;
 
 mod https_client;
 mod news;
-mod news_error;
 mod options;
 mod rfc_2822_format;
 mod rss;
@@ -25,7 +24,7 @@ mod rss;
 use chrono::{DateTime, Utc};
 use news::News;
 use news::Story;
-use news_error::NewsError;
+use news::error::NewsError;
 use options::Options;
 use rss::RSS;
 use std::error::Error;
