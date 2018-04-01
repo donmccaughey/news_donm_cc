@@ -1,6 +1,6 @@
 use chrono::DateTime;
 use chrono::Utc;
-use news::error::NewsError;
+use news_extractor_error::NewsExtractorError;
 use rfc_2822_format;
 use serde_json;
 use std::fs::create_dir_all;
@@ -17,18 +17,18 @@ pub struct RSS {
 }
 
 impl RSS {
-    pub fn write(&self, path: &Path) -> Result<(), NewsError> {
+    pub fn write(&self, path: &Path) -> Result<(), NewsExtractorError> {
         match path.parent() {
-            Some(parent) => create_dir_all(parent).map_err(NewsError::IoError)?,
-            None => return Err(NewsError::invalid_path(path)),
+            Some(parent) => create_dir_all(parent).map_err(NewsExtractorError::IoError)?,
+            None => return Err(NewsExtractorError::invalid_path(path)),
         };
         let json = serde_json::to_string_pretty(self)
-            .map_err(NewsError::JsonConversionError)?;
+            .map_err(NewsExtractorError::JsonConversionError)?;
         let mut file = OpenOptions::new()
             .create(true).truncate(true).write(true)
-            .open(path).map_err(NewsError::IoError)?;
+            .open(path).map_err(NewsExtractorError::IoError)?;
         file.write_all(json.as_bytes())
-            .map_err(NewsError::IoError)
+            .map_err(NewsExtractorError::IoError)
     }
 }
 

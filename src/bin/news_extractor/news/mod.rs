@@ -1,10 +1,7 @@
-pub mod error;
-
-
 use chrono::DateTime;
 use chrono::Utc;
+use news_extractor_error::NewsExtractorError;
 use rss::Item;
-use self::error::NewsError;
 use serde_json;
 use std::cmp::Ordering;
 use std::collections::HashSet;
@@ -38,7 +35,7 @@ pub struct Story {
 }
 
 impl News {
-    pub fn read_from(path: &Path) -> Result<News, NewsError> {
+    pub fn read_from(path: &Path) -> Result<News, NewsExtractorError> {
         let stories = Story::read_all(path)?;
         Ok(News {
             stories: stories,
@@ -67,7 +64,7 @@ impl News {
         self.stories.drain(i..).collect()
     }
 
-    pub fn write_to(&self, path: &Path) -> Result<(), NewsError> {
+    pub fn write_to(&self, path: &Path) -> Result<(), NewsExtractorError> {
         Story::write_all(&self.stories, path)
     }
 }
@@ -90,28 +87,28 @@ impl Story {
         }
     }
 
-    pub fn read_all(path: &Path) -> Result<Vec<Story>, NewsError> {
+    pub fn read_all(path: &Path) -> Result<Vec<Story>, NewsExtractorError> {
         let file = match File::open(path) {
             Ok(file) => file,
             Err(ref error) if NotFound == error.kind() => return Ok(Vec::new()),
-            Err(error) => return Err(NewsError::IoError(error)),
+            Err(error) => return Err(NewsExtractorError::IoError(error)),
         };
         serde_json::from_reader(file)
-            .map_err(NewsError::JsonParsingError)
+            .map_err(NewsExtractorError::JsonParsingError)
     }
 
-    pub fn write_all(stories: &[Story], path: &Path) -> Result<(), NewsError> {
+    pub fn write_all(stories: &[Story], path: &Path) -> Result<(), NewsExtractorError> {
         match path.parent() {
-            Some(parent) => create_dir_all(parent).map_err(NewsError::IoError)?,
-            None => return Err(NewsError::invalid_path(path)),
+            Some(parent) => create_dir_all(parent).map_err(NewsExtractorError::IoError)?,
+            None => return Err(NewsExtractorError::invalid_path(path)),
         };
         let json = serde_json::to_string_pretty(stories)
-            .map_err(NewsError::JsonConversionError)?;
+            .map_err(NewsExtractorError::JsonConversionError)?;
         let mut file = OpenOptions::new()
             .create(true).truncate(true).write(true)
-            .open(path).map_err(NewsError::IoError)?;
+            .open(path).map_err(NewsExtractorError::IoError)?;
         file.write_all(json.as_bytes())
-            .map_err(NewsError::IoError)
+            .map_err(NewsExtractorError::IoError)
     }
 }
 

@@ -17,6 +17,7 @@ extern crate url_serde;
 mod https_client;
 mod monitor;
 mod news;
+mod news_extractor_error;
 mod options;
 mod rfc_2822_format;
 mod rss;
@@ -25,7 +26,7 @@ mod rss;
 use monitor::Monitor;
 use news::News;
 use news::Story;
-use news::error::NewsError;
+use news_extractor_error::NewsExtractorError;
 use options::Options;
 use rss::RSS;
 use std::error::Error;
@@ -40,7 +41,7 @@ fn main() {
     }
 }
 
-fn run() -> Result<(), NewsError> {
+fn run() -> Result<(), NewsExtractorError> {
     let options = Options::new();
     let monitor = Monitor::new(&options);
 
@@ -50,7 +51,7 @@ fn run() -> Result<(), NewsError> {
     https_client::write_chunk(&chunk, &options.rss_xml_path)?;
 
     let rss: RSS = serde_xml_rs::deserialize(chunk.as_ref())
-        .map_err(NewsError::XmlParsingError)?;
+        .map_err(NewsExtractorError::XmlParsingError)?;
     rss.write(&options.rss_json_path)?;
 
     let rss_stories: Vec<Story> = rss.channel.items.iter()
