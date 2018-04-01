@@ -45,9 +45,6 @@ fn run() -> Result<(), NewsExtractorError> {
     let options = Options::new();
     let monitor = Monitor::new(&options);
 
-    let mut news = News::read_from(&options.news_path)
-        .map_err(NewsExtractorError::NewsError)?;
-
     let chunk = https_client::get_url("https://news.ycombinator.com/rss")?;
     https_client::write_chunk(&chunk, &options.rss_xml_path)?;
 
@@ -59,6 +56,9 @@ fn run() -> Result<(), NewsExtractorError> {
         .map(|item| Story::from_item(&item, options.now_date))
         .collect();
 
+    let mut news = News::read_from(&options.news_path)
+        .map_err(NewsExtractorError::NewsError)?;
+    
     let new_stories = news.add_stories(&rss_stories);
     monitor.added_stories(&new_stories);
 
