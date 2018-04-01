@@ -15,17 +15,17 @@ extern crate url;
 extern crate url_serde;
 
 
+mod error;
 mod https_client;
 mod monitor;
-mod news_extractor_error;
 mod options;
 mod rfc_2822_format;
 mod rss;
 
 
+use error::NewsExtractorError;
 use monitor::Monitor;
 use news::News;
-use news_extractor_error::NewsExtractorError;
 use options::Options;
 use rss::RSS;
 use std::error::Error;

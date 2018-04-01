@@ -1,7 +1,7 @@
 use chrono::DateTime;
 use chrono::Utc;
+use error::NewsExtractorError;
 use news::Story;
-use news_extractor_error::NewsExtractorError;
 use rfc_2822_format;
 use serde_json;
 use std::fs::create_dir_all;

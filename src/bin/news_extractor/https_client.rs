@@ -1,10 +1,10 @@
+use error::NewsExtractorError;
 use futures::Stream;
 use hyper::Body;
 use hyper::Chunk;
 use hyper::Client;
 use hyper::client::HttpConnector;
 use hyper_tls::HttpsConnector;
-use news_extractor_error::NewsExtractorError;
 use std::fs::create_dir_all;
 use std::fs::OpenOptions;
 use std::io::Write;
