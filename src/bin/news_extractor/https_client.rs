@@ -1,4 +1,4 @@
-use error::NewsExtractorError;
+use error::Error;
 use futures::Stream;
 use hyper::Body;
 use hyper::Chunk;
@@ -12,20 +12,20 @@ use std::path::Path;
 use tokio_core::reactor::Core;
 
 
-pub fn get_url(url_string: &str) -> Result<Chunk, NewsExtractorError> {
+pub fn get_url(url_string: &str) -> Result<Chunk, Error> {
     let mut https_client = HttpsClient::new()?;
     https_client.get(url_string)
 }
 
-pub fn write_chunk(chunk: &Chunk, path: &Path) -> Result<(), NewsExtractorError> {
+pub fn write_chunk(chunk: &Chunk, path: &Path) -> Result<(), Error> {
     match path.parent() {
-        Some(parent) => create_dir_all(parent).map_err(NewsExtractorError::IoError)?,
-        None => return Err(NewsExtractorError::invalid_path(path)),
+        Some(parent) => create_dir_all(parent).map_err(Error::Io)?,
+        None => return Err(Error::invalid_path(path)),
     };
     let mut file = OpenOptions::new()
         .create(true).truncate(true).write(true)
-        .open(path).map_err(NewsExtractorError::IoError)?;
-    file.write_all(chunk.as_ref()).map_err(NewsExtractorError::IoError)
+        .open(path).map_err(Error::Io)?;
+    file.write_all(chunk.as_ref()).map_err(Error::Io)
 }
 
 
@@ -36,10 +36,10 @@ pub struct HttpsClient {
 }
 
 impl HttpsClient {
-    pub fn new() -> Result<HttpsClient, NewsExtractorError> {
-        let core = Core::new().map_err(NewsExtractorError::IoError)?;
+    pub fn new() -> Result<HttpsClient, Error> {
+        let core = Core::new().map_err(Error::Io)?;
         let handle = core.handle();
-        let connector = HttpsConnector::new(4, &handle).map_err(NewsExtractorError::TlsError)?;
+        let connector = HttpsConnector::new(4, &handle).map_err(Error::Tls)?;
         let client = Client::configure().connector(connector).build(&handle);
         Ok(
             HttpsClient {
@@ -49,9 +49,9 @@ impl HttpsClient {
         )
     }
 
-    pub fn get(&mut self, url_string: &str) -> Result<Chunk, NewsExtractorError> {
-        let uri = url_string.parse().map_err(NewsExtractorError::UriError)?;
-        let response = self.core.run(self.client.get(uri)).map_err(NewsExtractorError::HyperError)?;
-        self.core.run(response.body().concat2()).map_err(NewsExtractorError::HyperError)
+    pub fn get(&mut self, url_string: &str) -> Result<Chunk, Error> {
+        let uri = url_string.parse().map_err(Error::Uri)?;
+        let response = self.core.run(self.client.get(uri)).map_err(Error::Hyper)?;
+        self.core.run(response.body().concat2()).map_err(Error::Hyper)
     }
 }

@@ -23,7 +23,6 @@ mod rfc_2822_format;
 mod rss;
 
 
-use error::NewsExtractorError;
 use monitor::Monitor;
 use news::News;
 use options::Options;
@@ -40,7 +39,7 @@ fn main() {
     }
 }
 
-fn run() -> Result<(), NewsExtractorError> {
+fn run() -> Result<(), error::Error> {
     let options = Options::new();
     let monitor = Monitor::new(&options);
 
@@ -48,11 +47,11 @@ fn run() -> Result<(), NewsExtractorError> {
     https_client::write_chunk(&chunk, &options.rss_xml_path)?;
 
     let rss: RSS = serde_xml_rs::deserialize(chunk.as_ref())
-        .map_err(NewsExtractorError::XmlParsingError)?;
+        .map_err(error::Error::XmlParsing)?;
     rss.write(&options.rss_json_path)?;
 
     let mut news = News::read_from(&options.news_path)
-        .map_err(NewsExtractorError::NewsError)?;
+        .map_err(error::Error::News)?;
 
     let new_stories = news.add_stories(&rss.create_stories(options.now_date));
     monitor.added_stories(&new_stories);
@@ -61,5 +60,5 @@ fn run() -> Result<(), NewsExtractorError> {
     monitor.expired_stories(&expired_stories);
 
     news.write_to(&options.news_path)
-        .map_err(NewsExtractorError::NewsError)
+        .map_err(error::Error::News)
 }

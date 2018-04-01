@@ -1,6 +1,6 @@
 use chrono::DateTime;
 use chrono::Utc;
-use error::NewsExtractorError;
+use error::Error;
 use news::Story;
 use rfc_2822_format;
 use serde_json;
@@ -24,18 +24,18 @@ impl RSS {
             .collect()
     }
 
-    pub fn write(&self, path: &Path) -> Result<(), NewsExtractorError> {
+    pub fn write(&self, path: &Path) -> Result<(), Error> {
         match path.parent() {
-            Some(parent) => create_dir_all(parent).map_err(NewsExtractorError::IoError)?,
-            None => return Err(NewsExtractorError::invalid_path(path)),
+            Some(parent) => create_dir_all(parent).map_err(Error::Io)?,
+            None => return Err(Error::invalid_path(path)),
         };
         let json = serde_json::to_string_pretty(self)
-            .map_err(NewsExtractorError::JsonConversionError)?;
+            .map_err(Error::JsonConversion)?;
         let mut file = OpenOptions::new()
             .create(true).truncate(true).write(true)
-            .open(path).map_err(NewsExtractorError::IoError)?;
+            .open(path).map_err(Error::Io)?;
         file.write_all(json.as_bytes())
-            .map_err(NewsExtractorError::IoError)
+            .map_err(Error::Io)
     }
 }
 
