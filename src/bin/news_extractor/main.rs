@@ -6,6 +6,7 @@ extern crate futures;
 extern crate hyper;
 extern crate hyper_tls;
 extern crate native_tls;
+extern crate news;
 extern crate serde;
 extern crate serde_json;
 extern crate serde_xml_rs;
@@ -16,7 +17,6 @@ extern crate url_serde;
 
 mod https_client;
 mod monitor;
-mod news;
 mod news_extractor_error;
 mod options;
 mod rfc_2822_format;

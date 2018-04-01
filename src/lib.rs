@@ -1,6 +1,15 @@
+#[macro_use]
+extern crate serde_derive;
+
+extern crate chrono;
+extern crate serde;
+extern crate serde_json;
+extern crate url;
+extern crate url_serde;
+
+
 use chrono::DateTime;
 use chrono::Utc;
-use serde_json;
 use std::cmp::Ordering;
 use std::collections::HashSet;
 use std::error;
@@ -17,7 +26,6 @@ use std::hash::Hasher;
 use std::path::Path;
 use std::path::PathBuf;
 use url::Url;
-use url_serde;
 
 
 #[derive(Debug, Deserialize, Serialize)]
