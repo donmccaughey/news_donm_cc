@@ -1,6 +1,5 @@
 use chrono::DateTime;
 use chrono::Utc;
-use rss::Item;
 use serde_json;
 use std::cmp::Ordering;
 use std::collections::HashSet;
@@ -79,16 +78,6 @@ impl Story {
         a.created_date.cmp(&b.created_date).reverse()
             .then(a.pub_date.cmp(&b.pub_date).reverse())
             .then(a.title.cmp(&b.title))
-    }
-
-    pub fn from_item(item: &Item, created_date: DateTime<Utc>) -> Story {
-        Story {
-            comments: item.comments.clone(),
-            created_date: created_date.clone(),
-            link: item.link.clone(),
-            pub_date: item.pub_date.clone(),
-            title: item.title.clone(),
-        }
     }
 
     pub fn read_all(path: &Path) -> Result<Vec<Story>, Error> {
@@ -182,7 +171,6 @@ mod tests {
     use chrono::DateTime;
     use chrono::TimeZone;
     use chrono::Utc;
-    use rss::Item;
     use std::collections::hash_map::DefaultHasher;
     use std::hash::{Hash, Hasher};
     use super::*;
@@ -334,27 +322,6 @@ mod tests {
         let story_b = Story::new("B", 103, 103);
         assert_eq!(Ordering::Less, Story::created_pub_title_order(&story_a, &story_b));
         assert_eq!(Ordering::Greater, Story::created_pub_title_order(&story_b, &story_a));
-    }
-
-    #[test]
-    fn test_story_from_item() {
-        let pub_date = DateTime::parse_from_rfc2822("Wed, 21 Mar 2018 22:33:19 +0000")
-            .unwrap().with_timezone(&Utc);
-        let item = Item {
-            comments: Url::parse("https://example.com/comments").unwrap(),
-            description: "Some stuff happened.".to_string(),
-            link: Url::parse("https://example.com/link").unwrap(),
-            pub_date: pub_date,
-            title: "A News Story".to_string(),
-        };
-        let created_date = DateTime::parse_from_rfc2822("Thu, 22 Mar 2018 13:08:18 +0000")
-            .unwrap().with_timezone(&Utc);
-        let story = Story::from_item(&item, created_date);
-        assert_eq!(item.comments, story.comments);
-        assert_eq!(created_date, story.created_date);
-        assert_eq!(item.link, story.link);
-        assert_eq!(item.pub_date, story.pub_date);
-        assert_eq!(item.title, story.title);
     }
 
     #[test]

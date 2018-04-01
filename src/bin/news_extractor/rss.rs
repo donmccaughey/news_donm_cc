@@ -1,5 +1,6 @@
 use chrono::DateTime;
 use chrono::Utc;
+use news::Story;
 use news_extractor_error::NewsExtractorError;
 use rfc_2822_format;
 use serde_json;
@@ -56,11 +57,44 @@ pub struct Item {
     pub title: String,
 }
 
+impl Item {
+    pub fn to_story(&self, created_date: DateTime<Utc>) -> Story {
+        Story {
+            comments: self.comments.clone(),
+            created_date: created_date.clone(),
+            link: self.link.clone(),
+            pub_date: self.pub_date.clone(),
+            title: self.title.clone(),
+        }
+    }
+}
+
 
 #[cfg(test)]
 mod tests {
     use serde_xml_rs;
     use super::*;
+
+    #[test]
+    fn test_item_to_story() {
+        let pub_date = DateTime::parse_from_rfc2822("Wed, 21 Mar 2018 22:33:19 +0000")
+            .unwrap().with_timezone(&Utc);
+        let item = Item {
+            comments: Url::parse("https://example.com/comments").unwrap(),
+            description: "Some stuff happened.".to_string(),
+            link: Url::parse("https://example.com/link").unwrap(),
+            pub_date: pub_date,
+            title: "A News Story".to_string(),
+        };
+        let created_date = DateTime::parse_from_rfc2822("Thu, 22 Mar 2018 13:08:18 +0000")
+            .unwrap().with_timezone(&Utc);
+        let story = item.to_story(created_date);
+        assert_eq!(item.comments, story.comments);
+        assert_eq!(created_date, story.created_date);
+        assert_eq!(item.link, story.link);
+        assert_eq!(item.pub_date, story.pub_date);
+        assert_eq!(item.title, story.title);
+    }
 
     #[test]
     fn test_item_from_xml() {

@@ -53,12 +53,12 @@ fn run() -> Result<(), NewsExtractorError> {
     rss.write(&options.rss_json_path)?;
 
     let rss_stories: Vec<Story> = rss.channel.items.iter()
-        .map(|item| Story::from_item(&item, options.now_date))
+        .map(|item| item.to_story(options.now_date))
         .collect();
 
     let mut news = News::read_from(&options.news_path)
         .map_err(NewsExtractorError::NewsError)?;
-    
+
     let new_stories = news.add_stories(&rss_stories);
     monitor.added_stories(&new_stories);
 
