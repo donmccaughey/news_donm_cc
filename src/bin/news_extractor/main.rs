@@ -25,7 +25,6 @@ mod rss;
 
 use monitor::Monitor;
 use news::News;
-use news::Story;
 use news_extractor_error::NewsExtractorError;
 use options::Options;
 use rss::RSS;
@@ -52,14 +51,10 @@ fn run() -> Result<(), NewsExtractorError> {
         .map_err(NewsExtractorError::XmlParsingError)?;
     rss.write(&options.rss_json_path)?;
 
-    let rss_stories: Vec<Story> = rss.channel.items.iter()
-        .map(|item| item.to_story(options.now_date))
-        .collect();
-
     let mut news = News::read_from(&options.news_path)
         .map_err(NewsExtractorError::NewsError)?;
 
-    let new_stories = news.add_stories(&rss_stories);
+    let new_stories = news.add_stories(&rss.create_stories(options.now_date));
     monitor.added_stories(&new_stories);
 
     let expired_stories = news.expire_stories(options.expired_date);
