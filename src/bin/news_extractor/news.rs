@@ -1,18 +1,22 @@
 use chrono::DateTime;
 use chrono::Utc;
-use news_extractor_error::NewsExtractorError;
 use rss::Item;
 use serde_json;
 use std::cmp::Ordering;
 use std::collections::HashSet;
+use std::error;
+use std::fmt;
+use std::fmt::Display;
 use std::fs::create_dir_all;
 use std::fs::File;
 use std::fs::OpenOptions;
+use std::io;
 use std::io::ErrorKind::NotFound;
 use std::io::Write;
 use std::hash::Hash;
 use std::hash::Hasher;
 use std::path::Path;
+use std::path::PathBuf;
 use url::Url;
 use url_serde;
 
@@ -35,7 +39,7 @@ pub struct Story {
 }
 
 impl News {
-    pub fn read_from(path: &Path) -> Result<News, NewsExtractorError> {
+    pub fn read_from(path: &Path) -> Result<News, Error> {
         let stories = Story::read_all(path)?;
         Ok(News {
             stories: stories,
@@ -64,7 +68,7 @@ impl News {
         self.stories.drain(i..).collect()
     }
 
-    pub fn write_to(&self, path: &Path) -> Result<(), NewsExtractorError> {
+    pub fn write_to(&self, path: &Path) -> Result<(), Error> {
         Story::write_all(&self.stories, path)
     }
 }
@@ -87,28 +91,28 @@ impl Story {
         }
     }
 
-    pub fn read_all(path: &Path) -> Result<Vec<Story>, NewsExtractorError> {
+    pub fn read_all(path: &Path) -> Result<Vec<Story>, Error> {
         let file = match File::open(path) {
             Ok(file) => file,
             Err(ref error) if NotFound == error.kind() => return Ok(Vec::new()),
-            Err(error) => return Err(NewsExtractorError::IoError(error)),
+            Err(error) => return Err(Error::Io(error)),
         };
         serde_json::from_reader(file)
-            .map_err(NewsExtractorError::JsonParsingError)
+            .map_err(Error::JsonParsing)
     }
 
-    pub fn write_all(stories: &[Story], path: &Path) -> Result<(), NewsExtractorError> {
+    pub fn write_all(stories: &[Story], path: &Path) -> Result<(), Error> {
         match path.parent() {
-            Some(parent) => create_dir_all(parent).map_err(NewsExtractorError::IoError)?,
-            None => return Err(NewsExtractorError::invalid_path(path)),
+            Some(parent) => create_dir_all(parent).map_err(Error::Io)?,
+            None => return Err(Error::invalid_path(path)),
         };
         let json = serde_json::to_string_pretty(stories)
-            .map_err(NewsExtractorError::JsonConversionError)?;
+            .map_err(Error::JsonConversion)?;
         let mut file = OpenOptions::new()
             .create(true).truncate(true).write(true)
-            .open(path).map_err(NewsExtractorError::IoError)?;
+            .open(path).map_err(Error::Io)?;
         file.write_all(json.as_bytes())
-            .map_err(NewsExtractorError::IoError)
+            .map_err(Error::Io)
     }
 }
 
@@ -123,6 +127,52 @@ impl Hash for Story {
 impl PartialEq for Story {
     fn eq(&self, other: &Story) -> bool {
         self.comments == other.comments
+    }
+}
+
+
+#[derive(Debug)]
+pub enum Error {
+    InvalidPath(PathBuf, String),
+    Io(io::Error),
+    JsonConversion(serde_json::Error),
+    JsonParsing(serde_json::Error),
+}
+
+impl Error {
+    pub fn invalid_path(path: &Path) -> Error {
+        Error::InvalidPath(path.to_path_buf(), path.to_string_lossy().to_string())
+    }
+}
+
+impl Display for Error {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        match *self {
+            Error::InvalidPath(_, ref string) => write!(f, "Invalid path: {}", string),
+            Error::Io(ref error) => write!(f, "IO error: {}", error),
+            Error::JsonConversion(ref error) => write!(f, "JSON conversion error: {}", error),
+            Error::JsonParsing(ref error) => write!(f, "JSON parsing error: {}", error),
+        }
+    }
+}
+
+impl error::Error for Error {
+    fn description(&self) -> &str {
+        match *self {
+            Error::InvalidPath(_, ref string) => &string,
+            Error::Io(ref error) => error.description(),
+            Error::JsonConversion(ref error) => error.description(),
+            Error::JsonParsing(ref error) => error.description(),
+        }
+    }
+
+    fn cause(&self) -> Option<&error::Error> {
+        match *self {
+            Error::InvalidPath(_, _) => None,
+            Error::Io(ref error) => Some(error),
+            Error::JsonConversion(ref error) => Some(error),
+            Error::JsonParsing(ref error) => Some(error),
+        }
     }
 }
 

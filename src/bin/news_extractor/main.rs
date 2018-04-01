@@ -45,7 +45,8 @@ fn run() -> Result<(), NewsExtractorError> {
     let options = Options::new();
     let monitor = Monitor::new(&options);
 
-    let mut news = News::read_from(&options.news_path)?;
+    let mut news = News::read_from(&options.news_path)
+        .map_err(NewsExtractorError::NewsError)?;
 
     let chunk = https_client::get_url("https://news.ycombinator.com/rss")?;
     https_client::write_chunk(&chunk, &options.rss_xml_path)?;
@@ -64,7 +65,6 @@ fn run() -> Result<(), NewsExtractorError> {
     let expired_stories = news.expire_stories(options.expired_date);
     monitor.expired_stories(&expired_stories);
 
-    news.write_to(&options.news_path)?;
-
-    Ok(())
+    news.write_to(&options.news_path)
+        .map_err(NewsExtractorError::NewsError)
 }
