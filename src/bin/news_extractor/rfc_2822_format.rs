@@ -1,5 +1,9 @@
-use chrono::{DateTime, Utc};
-use serde::{self, Deserialize, Deserializer, Serializer};
+use chrono::DateTime;
+use chrono::Utc;
+use serde;
+use serde::Deserialize;
+use serde::Deserializer;
+use serde::Serializer;
 
 
 pub fn serialize<S>(date: &DateTime<Utc>, serializer: S) -> Result<S::Ok, S::Error>
