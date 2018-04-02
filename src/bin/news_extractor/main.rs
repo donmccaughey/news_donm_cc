@@ -26,7 +26,7 @@ mod rss;
 use monitor::Monitor;
 use news::News;
 use options::Options;
-use rss::RSS;
+use rss::Rss;
 use std::error::Error;
 
 
@@ -46,7 +46,7 @@ fn run() -> Result<(), error::Error> {
     let chunk = https_client::get_url("https://news.ycombinator.com/rss")?;
     https_client::write_chunk(&chunk, &options.rss_xml_path)?;
 
-    let rss: RSS = serde_xml_rs::deserialize(chunk.as_ref())
+    let rss: Rss = serde_xml_rs::deserialize(chunk.as_ref())
         .map_err(error::Error::XmlParsing)?;
     rss.write(&options.rss_json_path)?;
 

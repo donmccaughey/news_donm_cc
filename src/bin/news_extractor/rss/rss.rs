@@ -11,11 +11,11 @@ use super::Channel;
 
 
 #[derive(Debug, Deserialize, Serialize)]
-pub struct RSS {
+pub struct Rss {
     pub channel: Channel,
 }
 
-impl RSS {
+impl Rss {
     pub fn create_stories(&self, created_date: DateTime<Utc>) -> Vec<Story> {
         self.channel.items.iter()
             .map(|item| item.to_story(created_date))
@@ -61,7 +61,7 @@ mod tests {
                 </channel>
             </rss>
         "#;
-        let rss: RSS = serde_xml_rs::deserialize(xml.as_bytes()).unwrap();
+        let rss: Rss = serde_xml_rs::deserialize(xml.as_bytes()).unwrap();
         assert_eq!("News Channel", rss.channel.title);
         assert_eq!("https://news.example.com/news_channel", rss.channel.link.as_str());
         assert_eq!("Better than teevee.", rss.channel.description);
@@ -99,7 +99,7 @@ mod tests {
                 </channel>
             </rss>
         "#;
-        let rss: RSS = serde_xml_rs::deserialize(xml.as_bytes()).unwrap();
+        let rss: Rss = serde_xml_rs::deserialize(xml.as_bytes()).unwrap();
         let created_date = DateTime::parse_from_rfc2822("Thu, 22 Mar 2018 13:08:18 +0000")
             .unwrap().with_timezone(&Utc);
         let stories = rss.create_stories(created_date);
