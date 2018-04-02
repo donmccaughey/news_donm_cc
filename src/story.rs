@@ -1,16 +1,8 @@
 use chrono::DateTime;
 use chrono::Utc;
-use serde_json;
 use std::cmp::Ordering;
-use std::fs::create_dir_all;
-use std::fs::File;
-use std::fs::OpenOptions;
 use std::hash::Hash;
 use std::hash::Hasher;
-use std::io::ErrorKind::NotFound;
-use std::io::Write;
-use std::path::Path;
-use super::Error;
 use url::Url;
 use url_serde;
 
@@ -31,30 +23,6 @@ impl Story {
         a.created_date.cmp(&b.created_date).reverse()
             .then(a.pub_date.cmp(&b.pub_date).reverse())
             .then(a.title.cmp(&b.title))
-    }
-
-    pub fn read_all(path: &Path) -> Result<Vec<Story>, Error> {
-        let file = match File::open(path) {
-            Ok(file) => file,
-            Err(ref error) if NotFound == error.kind() => return Ok(Vec::new()),
-            Err(error) => return Err(Error::Io(error)),
-        };
-        serde_json::from_reader(file)
-            .map_err(Error::JsonParsing)
-    }
-
-    pub fn write_all(stories: &[Story], path: &Path) -> Result<(), Error> {
-        match path.parent() {
-            Some(parent) => create_dir_all(parent).map_err(Error::Io)?,
-            None => return Err(Error::invalid_path(path)),
-        };
-        let json = serde_json::to_string_pretty(stories)
-            .map_err(Error::JsonConversion)?;
-        let mut file = OpenOptions::new()
-            .create(true).truncate(true).write(true)
-            .open(path).map_err(Error::Io)?;
-        file.write_all(json.as_bytes())
-            .map_err(Error::Io)
     }
 }
 

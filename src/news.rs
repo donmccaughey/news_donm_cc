@@ -1,6 +1,12 @@
 use chrono::DateTime;
 use chrono::Utc;
+use serde_json;
 use std::collections::HashSet;
+use std::fs::create_dir_all;
+use std::fs::File;
+use std::fs::OpenOptions;
+use std::io::ErrorKind::NotFound;
+use std::io::Write;
 use std::path::Path;
 use super::Error;
 use super::Story;
@@ -13,11 +19,20 @@ pub struct News {
 
 
 impl News {
+    pub fn new() -> News {
+        News {
+            stories: Vec::new(),
+        }
+    }
+
     pub fn read_from(path: &Path) -> Result<News, Error> {
-        let stories = Story::read_all(path)?;
-        Ok(News {
-            stories: stories,
-        })
+        let file = match File::open(path) {
+            Ok(file) => file,
+            Err(ref error) if NotFound == error.kind() => return Ok(News::new()),
+            Err(error) => return Err(Error::Io(error)),
+        };
+        serde_json::from_reader(file)
+            .map_err(Error::JsonParsing)
     }
 
     pub fn add_stories(&mut self, stories: &[Story]) -> Vec<Story> {
@@ -43,7 +58,17 @@ impl News {
     }
 
     pub fn write_to(&self, path: &Path) -> Result<(), Error> {
-        Story::write_all(&self.stories, path)
+        match path.parent() {
+            Some(parent) => create_dir_all(parent).map_err(Error::Io)?,
+            None => return Err(Error::invalid_path(path)),
+        };
+        let json = serde_json::to_string_pretty(self)
+            .map_err(Error::JsonConversion)?;
+        let mut file = OpenOptions::new()
+            .create(true).truncate(true).write(true)
+            .open(path).map_err(Error::Io)?;
+        file.write_all(json.as_bytes())
+            .map_err(Error::Io)
     }
 }
 
@@ -53,14 +78,6 @@ mod tests {
     use chrono::TimeZone;
     use chrono::Utc;
     use super::*;
-
-    impl News {
-        fn new() -> News {
-            News {
-                stories: Vec::new(),
-            }
-        }
-    }
 
     #[test]
     fn test_news_add_stories() {
