@@ -8,23 +8,24 @@ extern crate url;
 extern crate url_serde;
 
 
+mod error;
+
+
+pub use error::Error;
+
+
 use chrono::DateTime;
 use chrono::Utc;
 use std::cmp::Ordering;
 use std::collections::HashSet;
-use std::error;
-use std::fmt;
-use std::fmt::Display;
 use std::fs::create_dir_all;
 use std::fs::File;
 use std::fs::OpenOptions;
-use std::io;
 use std::io::ErrorKind::NotFound;
 use std::io::Write;
 use std::hash::Hash;
 use std::hash::Hasher;
 use std::path::Path;
-use std::path::PathBuf;
 use url::Url;
 
 
@@ -124,52 +125,6 @@ impl Hash for Story {
 impl PartialEq for Story {
     fn eq(&self, other: &Story) -> bool {
         self.comments == other.comments
-    }
-}
-
-
-#[derive(Debug)]
-pub enum Error {
-    InvalidPath(PathBuf, String),
-    Io(io::Error),
-    JsonConversion(serde_json::Error),
-    JsonParsing(serde_json::Error),
-}
-
-impl Error {
-    pub fn invalid_path(path: &Path) -> Error {
-        Error::InvalidPath(path.to_path_buf(), path.to_string_lossy().to_string())
-    }
-}
-
-impl Display for Error {
-    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-        match *self {
-            Error::InvalidPath(_, ref string) => write!(f, "Invalid path: {}", string),
-            Error::Io(ref error) => write!(f, "IO error: {}", error),
-            Error::JsonConversion(ref error) => write!(f, "JSON conversion error: {}", error),
-            Error::JsonParsing(ref error) => write!(f, "JSON parsing error: {}", error),
-        }
-    }
-}
-
-impl error::Error for Error {
-    fn description(&self) -> &str {
-        match *self {
-            Error::InvalidPath(_, ref string) => &string,
-            Error::Io(ref error) => error.description(),
-            Error::JsonConversion(ref error) => error.description(),
-            Error::JsonParsing(ref error) => error.description(),
-        }
-    }
-
-    fn cause(&self) -> Option<&error::Error> {
-        match *self {
-            Error::InvalidPath(_, _) => None,
-            Error::Io(ref error) => Some(error),
-            Error::JsonConversion(ref error) => Some(error),
-            Error::JsonParsing(ref error) => Some(error),
-        }
     }
 }
 
