@@ -10,7 +10,7 @@ use std::hash::Hasher;
 use std::io::ErrorKind::NotFound;
 use std::io::Write;
 use std::path::Path;
-use super::error::Error;
+use super::Error;
 use url::Url;
 use url_serde;
 
