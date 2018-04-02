@@ -59,6 +59,10 @@ fn run() -> Result<(), error::Error> {
     let expired_stories = news.expire_stories(options.expired_date);
     monitor.expired_stories(&expired_stories);
 
-    news.write_to(&options.news_path)
-        .map_err(error::Error::News)
+    if new_stories.len() > 0 || expired_stories.len() > 0 {
+        news.write_to(&options.news_path)
+            .map_err(error::Error::News)
+    } else {
+        Ok(())
+    }
 }
