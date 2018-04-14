@@ -12,6 +12,7 @@ pub struct Story {
     #[serde(with = "url_serde")]
     pub comments: Url,
     pub created_date: DateTime<Utc>,
+    pub id: u32,
     #[serde(with = "url_serde")]
     pub link: Url,
     pub pub_date: DateTime<Utc>,
@@ -19,7 +20,7 @@ pub struct Story {
 }
 
 impl Story {
-    pub fn created_pub_title_order(a: &Story, b: &Story) -> Ordering {
+    pub fn standard_order(a: &Story, b: &Story) -> Ordering {
         a.created_date.cmp(&b.created_date).reverse()
             .then(a.pub_date.cmp(&b.pub_date).reverse())
             .then(a.title.cmp(&b.title))
@@ -57,6 +58,7 @@ mod tests {
             Story {
                 comments: Url::parse(&format!("https://comments.example.com/{}", id)).unwrap(),
                 created_date: Utc.yo(2018, create_day).and_hms(0, 0, 0),
+                id: 42,
                 link: Url::parse(&format!("https://link.example.com/{}", id)).unwrap(),
                 pub_date: Utc.yo(2018, pub_day).and_hms(0, 0, 0),
                 title: format!("Story {}", id),
@@ -74,20 +76,20 @@ mod tests {
     fn test_story_created_pub_title_order() {
         let story101 = Story::new("101", 101, 101);
         let story101dup = Story::new("101", 101, 101);
-        assert_eq!(Ordering::Equal, Story::created_pub_title_order(&story101, &story101dup));
+        assert_eq!(Ordering::Equal, Story::standard_order(&story101, &story101dup));
 
         let story102 = Story::new("102", 102, 102);
-        assert_eq!(Ordering::Less, Story::created_pub_title_order(&story102, &story101));
-        assert_eq!(Ordering::Greater, Story::created_pub_title_order(&story101, &story102));
+        assert_eq!(Ordering::Less, Story::standard_order(&story102, &story101));
+        assert_eq!(Ordering::Greater, Story::standard_order(&story101, &story102));
 
         let story102pub99 = Story::new("102", 102, 99);
-        assert_eq!(Ordering::Less, Story::created_pub_title_order(&story102, &story102pub99));
-        assert_eq!(Ordering::Greater, Story::created_pub_title_order(&story102pub99, &story102));
+        assert_eq!(Ordering::Less, Story::standard_order(&story102, &story102pub99));
+        assert_eq!(Ordering::Greater, Story::standard_order(&story102pub99, &story102));
 
         let story_a = Story::new("A", 103, 103);
         let story_b = Story::new("B", 103, 103);
-        assert_eq!(Ordering::Less, Story::created_pub_title_order(&story_a, &story_b));
-        assert_eq!(Ordering::Greater, Story::created_pub_title_order(&story_b, &story_a));
+        assert_eq!(Ordering::Less, Story::standard_order(&story_a, &story_b));
+        assert_eq!(Ordering::Greater, Story::standard_order(&story_b, &story_a));
     }
 
     #[test]
@@ -103,6 +105,7 @@ mod tests {
         let story1 = Story {
             comments: url1.clone(),
             created_date: date1.clone(),
+            id: 42,
             link: url1.clone(),
             pub_date: date1.clone(),
             title: "Some Title".to_string(),

@@ -23,6 +23,7 @@ impl Item {
         Story {
             comments: self.comments.clone(),
             created_date: created_date.clone(),
+            id: 0,
             link: self.link.clone(),
             pub_date: self.pub_date.clone(),
             title: self.title.clone(),

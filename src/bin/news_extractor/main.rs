@@ -60,6 +60,7 @@ fn run() -> Result<(), error::Error> {
     monitor.expired_stories(&expired_stories);
 
     if new_stories.len() > 0 || expired_stories.len() > 0 {
+        news.modified_date = options.now_date.clone();
         news.write_to(&options.news_path)
             .map_err(error::Error::News)
     } else {

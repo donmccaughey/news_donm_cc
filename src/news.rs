@@ -14,6 +14,8 @@ use super::Story;
 
 #[derive(Debug, Deserialize, Serialize)]
 pub struct News {
+    pub modified_date: DateTime<Utc>,
+    pub next_story_id: u32,
     pub stories: Vec<Story>,
 }
 
@@ -21,6 +23,8 @@ pub struct News {
 impl News {
     pub fn new() -> News {
         News {
+            modified_date: Utc::now(),
+            next_story_id: 1,
             stories: Vec::new(),
         }
     }
@@ -43,9 +47,17 @@ impl News {
             let difference = new_set.difference(&old_set);
             stories_added = difference.cloned().cloned().collect();
         }
+        stories_added.sort_by(Story::standard_order);
+
+        let mut id = self.next_story_id;
+        for mut story in stories_added.iter_mut().rev() {
+            story.id = id;
+            id += 1;
+        }
+        self.next_story_id = id;
+
         self.stories.extend(stories_added.iter().cloned());
-        self.stories.sort_by(Story::created_pub_title_order);
-        stories_added.sort_by(Story::created_pub_title_order);
+        self.stories.sort_by(Story::standard_order);
         stories_added
     }
 
