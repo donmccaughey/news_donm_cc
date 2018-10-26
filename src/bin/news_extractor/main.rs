@@ -27,19 +27,9 @@ use monitor::Monitor;
 use news::News;
 use options::Options;
 use rss::Rss;
-use std::error::Error;
 
 
-fn main() {
-    match run() {
-        Ok(_) => (),
-        Err(error) => {
-            eprintln!("ERROR: {}", error.description());
-        }
-    }
-}
-
-fn run() -> Result<(), error::Error> {
+fn main() -> Result<(), error::Error> {
     let options = Options::new();
     let monitor = Monitor::new(&options);
 

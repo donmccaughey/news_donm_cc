@@ -20,7 +20,6 @@ pub enum Error {
     Tls(native_tls::Error),
     Uri(hyper::error::UriError),
     XmlParsing(serde_xml_rs::Error),
-
 }
 
 impl Error {
