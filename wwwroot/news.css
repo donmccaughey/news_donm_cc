@@ -1,0 +1,268 @@
+/* 
+ * Colors:
+ *      #ffffff white
+ *      #f5f5f5 whitesmoke
+ *      #c0c0c0 silver
+ *      #a9a9a9 darkgray
+ *      #808080 gray
+ *      #696969 dimgray
+ *      #000000 black 
+ */
+
+body, html {
+    background: white;
+    border: 0;
+    color: black;
+    font: 12pt Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 24pt; /* space for fixed menu */
+}
+
+h1 {
+    border: 0;
+    font-size: 18pt;
+    font-weight: 500;
+    margin: 0.5em 0;
+    padding: 0;
+}
+
+h2:before {
+    content: '\00a7' ' ';
+}
+
+h2 {
+    border: 0;
+    font-size: 14pt;
+    font-weight: 500;
+    margin: 0.5em 0;
+    padding: 0;
+}
+
+h3 {
+    border: 0;
+    font-size: 12pt;
+    font-weight: 500;
+    margin: 0.5em 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+section {
+    border: 0;
+    margin: 0.5em auto;
+    max-width: 40em;
+    padding: 0.5em 1em;
+}
+
+time {
+    background: darkgray;
+    color: white;
+    font: 10pt Helvetica, Arial, sans-serif;
+    padding: 1pt 3pt;
+    white-space: nowrap;
+}
+
+.authors {
+    background: lightgray;
+    color: black;
+    font: italic 10pt Helvetica, Arial, sans-serif;
+    padding: 1pt 3pt;
+    white-space: nowrap;
+}
+
+.banner {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+.banner img {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.banner .caption {
+    color: white;
+    right: 1em;
+    position: absolute;
+    top: 0.5em;
+}
+
+.collection {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.collection h1 {
+    color: dimgray;
+    font-size: 16pt;
+}
+
+.item {
+    background: whitesmoke;
+    border: 1pt solid whitesmoke;
+    border-radius: 4px;
+    color: black;
+    display: inline-block;
+    line-height: 150%;
+    margin: 1em;
+    padding: 0.5em 1em;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+}
+
+.item:hover {
+    border: 1pt solid black;
+}
+
+.item:visited {
+    color: gray;
+}
+
+.item.local {
+    border: 1pt solid silver;
+}
+
+.item:hover.local {
+    border: 1pt solid black;
+}
+
+.item strong {
+    font-size: 14pt;
+    font-weight: normal;
+}
+
+.item .favicon {
+    background: whitesmoke;
+    border: 1pt solid whitesmoke;
+    border-radius: 2px;
+    height: 16px;
+    left: -2px;
+    margin: 0;
+    padding: 1px;
+    position: relative;
+    top: 2px;
+    width: 16px;
+}
+
+.links a:before {
+    content: '\1f517';
+    font-size: 8pt;
+    position: absolute;
+    left: -2em;
+    top: 6pt;
+}
+
+.links a.blog:before {
+    content: '\1f5de';
+}
+
+.links a.book:before {
+    content: '\1f4d6';
+}
+
+.links a.docs:before {
+    content: '\1f4d1';
+}
+
+.links a.email:before {
+    content: '\1f4e7';
+}
+
+.links a.podcast:before {
+    content: '\1f3a4';
+}
+
+.links a.repo:before {
+    content: '\1f4bc';
+}
+
+.links a.site:before {
+    content: '\1f310';
+}
+
+.links a {
+    color: black;
+    display: list-item;
+    font-size: 14pt;
+    list-style-type: none;
+    margin: 0 2em;
+    padding: 0.25em;
+    position: relative;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.links a:visited {
+    color: gray;
+}
+
+.menu {
+    background: rgba(192, 192, 192, 0.9); /* silver */
+    border: 0;
+    border-bottom: 2pt solid silver;
+    color: white;
+    height: 24pt; /* matches body padding-top */
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 10;
+}
+
+.menu a {
+    border: 0;
+    color: white;
+    display: inline-block;
+    font: bold 16pt Helvetica, Arial, sans-serif;
+    margin: 4pt 8pt;
+    padding: 0;
+    text-decoration: none;
+}
+
+.overview {
+    margin: 1em auto;
+}
+
+.overview h1 {
+    text-align: center;
+}
+
+.package {
+    background: whitesmoke;
+    border: 1pt solid whitesmoke;
+    border-radius: 4px;
+    padding: 1em 2em 0em 2em;
+}
+
+.package .item {
+    background: white;
+    border: 1pt solid white;
+}
+
+.package .item:hover {
+    border: 1pt solid black;
+}
+
+.package .item .favicon {
+    background: white;
+    border: 1pt solid white;
+}
