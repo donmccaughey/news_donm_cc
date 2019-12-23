@@ -42,7 +42,7 @@ impl std::error::Error for Error {
         }
     }
 
-    fn cause(&self) -> Option<&std::error::Error> {
+    fn cause(&self) -> Option<&dyn std::error::Error> {
         match *self {
             Error::InvalidPath(_, _) => None,
             Error::Io(ref error) => Some(error),

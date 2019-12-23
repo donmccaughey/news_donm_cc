@@ -57,7 +57,7 @@ impl error::Error for Error {
         }
     }
 
-    fn cause(&self) -> Option<&error::Error> {
+    fn cause(&self) -> Option<&dyn error::Error> {
         match *self {
             Error::InvalidPath(_, _) => None,
             Error::Io(ref error) => Some(error),
