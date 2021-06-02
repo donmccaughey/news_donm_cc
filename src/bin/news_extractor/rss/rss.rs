@@ -1,6 +1,6 @@
+use crate::error::Error;
 use chrono::DateTime;
 use chrono::Utc;
-use error::Error;
 use news::Story;
 use serde_json;
 use std::fs::create_dir_all;

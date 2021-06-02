@@ -1,4 +1,4 @@
-use error::Error;
+use crate::error::Error;
 use futures::Stream;
 use hyper::Body;
 use hyper::Chunk;

@@ -1,7 +1,7 @@
+use crate::rfc_2822_format;
 use chrono::DateTime;
 use chrono::Utc;
 use news::Story;
-use rfc_2822_format;
 use url::Url;
 use url_serde;
 

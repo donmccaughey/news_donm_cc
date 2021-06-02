@@ -1,5 +1,5 @@
+use crate::options::Options;
 use news::Story;
-use options::Options;
 
 
 pub struct Monitor<'a> {
