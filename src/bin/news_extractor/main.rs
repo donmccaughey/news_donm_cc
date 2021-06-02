@@ -1,19 +1,6 @@
 #[macro_use]
 extern crate serde_derive;
 
-extern crate chrono;
-extern crate futures;
-extern crate hyper;
-extern crate hyper_tls;
-extern crate native_tls;
-extern crate news;
-extern crate serde;
-extern crate serde_json;
-extern crate serde_xml_rs;
-extern crate tokio_core;
-extern crate url;
-extern crate url_serde;
-
 
 mod error;
 mod https_client;
