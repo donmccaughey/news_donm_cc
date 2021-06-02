@@ -13,6 +13,6 @@ mod news;
 mod story;
 
 
-pub use error::Error;
-pub use news::News;
-pub use story::Story;
+pub use crate::error::Error;
+pub use crate::news::News;
+pub use crate::story::Story;
