@@ -44,19 +44,6 @@ impl fmt::Display for Error {
 }
 
 impl error::Error for Error {
-    fn description(&self) -> &str {
-        match *self {
-            Error::InvalidPath(_, ref string) => &string,
-            Error::Io(ref error) => error.description(),
-            Error::JsonConversion(ref error) => error.description(),
-            Error::Hyper(ref error) => error.description(),
-            Error::News(ref error) => error.description(),
-            Error::Tls(ref error) => error.description(),
-            Error::Uri(ref error) => error.description(),
-            Error::XmlParsing(ref error) => error.description(),
-        }
-    }
-
     fn cause(&self) -> Option<&dyn error::Error> {
         match *self {
             Error::InvalidPath(_, _) => None,

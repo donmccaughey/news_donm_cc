@@ -33,15 +33,6 @@ impl Display for Error {
 }
 
 impl std::error::Error for Error {
-    fn description(&self) -> &str {
-        match *self {
-            Error::InvalidPath(_, ref string) => &string,
-            Error::Io(ref error) => error.description(),
-            Error::JsonConversion(ref error) => error.description(),
-            Error::JsonParsing(ref error) => error.description(),
-        }
-    }
-
     fn cause(&self) -> Option<&dyn std::error::Error> {
         match *self {
             Error::InvalidPath(_, _) => None,
