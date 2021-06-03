@@ -3,27 +3,46 @@ extern crate serde_derive;
 
 
 mod error;
-mod https_client;
 mod monitor;
 mod options;
 mod rfc_2822_format;
 mod rss;
 
 
+use crate::error::Error;
 use monitor::Monitor;
 use news::News;
 use options::Options;
 use rss::Rss;
+use std::fs::create_dir_all;
+use std::fs::OpenOptions;
+use std::io::Write;
+use std::path::Path;
+
+
+pub fn write_file(bytes: &[u8], path: &Path) -> Result<(), Error> {
+    match path.parent() {
+        Some(parent) => create_dir_all(parent).map_err(Error::Io)?,
+        None => return Err(Error::invalid_path(path)),
+    };
+    let mut file = OpenOptions::new()
+        .create(true).truncate(true).write(true)
+        .open(path).map_err(Error::Io)?;
+    file.write_all(bytes).map_err(Error::Io)
+}
 
 
 fn main() -> Result<(), error::Error> {
     let options = Options::new();
     let monitor = Monitor::new(&options);
 
-    let chunk = https_client::get_url("https://news.ycombinator.com/rss")?;
-    https_client::write_chunk(&chunk, &options.rss_xml_path)?;
+    let mut response = reqwest::blocking::get("https://news.ycombinator.com/rss")
+        .map_err(Error::Reqwest)?;
+    let mut buffer: Vec<u8> = vec![];
+    response.copy_to(&mut buffer).map_err(Error::Reqwest)?;
+    write_file(&buffer, &options.rss_xml_path)?;
 
-    let rss: Rss = serde_xml_rs::deserialize(chunk.as_ref())
+    let rss: Rss = serde_xml_rs::deserialize(&*buffer)
         .map_err(error::Error::XmlParsing)?;
     rss.write(&options.rss_json_path)?;
 

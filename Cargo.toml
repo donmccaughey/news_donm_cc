@@ -6,14 +6,10 @@ edition = "2018"
 
 [dependencies]
 chrono = { version = "0.4", features = ["serde"] }
-futures = "0.1"
-hyper = "0.11"
-hyper-tls = "0.1.2"
-native-tls = "0.1.5"
+reqwest = { version = "0.11", features = ["blocking"] }
 serde = "1.0.29"
 serde_derive = "1.0.29"
 serde_json = "1.0.11"
 serde-xml-rs = "0.2.1"
-tokio-core = "0.1"
 url = "1.7.2"
 url_serde = "0.2.0"

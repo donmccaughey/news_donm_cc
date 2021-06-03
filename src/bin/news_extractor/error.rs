@@ -1,5 +1,3 @@
-use hyper;
-use native_tls;
 use news;
 use serde_json;
 use serde_xml_rs;
@@ -15,10 +13,8 @@ pub enum Error {
     InvalidPath(PathBuf, String),
     Io(io::Error),
     JsonConversion(serde_json::Error),
-    Hyper(hyper::Error),
     News(news::Error),
-    Tls(native_tls::Error),
-    Uri(hyper::error::UriError),
+    Reqwest(reqwest::Error),
     XmlParsing(serde_xml_rs::Error),
 }
 
@@ -34,10 +30,8 @@ impl fmt::Display for Error {
             Error::InvalidPath(_, ref string) => write!(f, "Invalid path: {}", string),
             Error::Io(ref error) => write!(f, "IO error: {}", error),
             Error::JsonConversion(ref error) => write!(f, "JSON conversion error: {}", error),
-            Error::Hyper(ref error) => write!(f, "Hyper error: {}", error),
             Error::News(ref error) => write!(f, "News error: {}", error),
-            Error::Tls(ref error) => write!(f, "TLS error: {}", error),
-            Error::Uri(ref error) => write!(f, "URI error: {}", error),
+            Error::Reqwest(ref error) => write!(f, "Reqwest error: {}", error),
             Error::XmlParsing(ref error) => write!(f, "XML parsing error: {}", error),
         }
     }
@@ -49,10 +43,8 @@ impl error::Error for Error {
             Error::InvalidPath(_, _) => None,
             Error::Io(ref error) => Some(error),
             Error::JsonConversion(ref error) => Some(error),
-            Error::Hyper(ref error) => Some(error),
             Error::News(ref error) => Some(error),
-            Error::Tls(ref error) => Some(error),
-            Error::Uri(ref error) => Some(error),
+            Error::Reqwest(ref error) => Some(error),
             Error::XmlParsing(ref error) => Some(error),
         }
     }
