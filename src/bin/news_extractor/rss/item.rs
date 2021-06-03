@@ -69,7 +69,7 @@ mod tests {
                 <description><![CDATA[<a href="https://news.example.com/article1/comments">Comments</a>]]></description>\
             </item>
         "#;
-        let item: Item = serde_xml_rs::deserialize(xml.as_bytes()).unwrap();
+        let item: Item = serde_xml_rs::from_reader(xml.as_bytes()).unwrap();
         assert_eq!("Article One", item.title);
         assert_eq!("https://news.example.com/article1", item.link.as_str());
         assert_eq!(1521416583, item.pub_date.timestamp());

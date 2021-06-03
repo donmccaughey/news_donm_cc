@@ -42,7 +42,7 @@ fn main() -> Result<(), error::Error> {
     response.copy_to(&mut buffer).map_err(Error::Reqwest)?;
     write_file(&buffer, &options.rss_xml_path)?;
 
-    let rss: Rss = serde_xml_rs::deserialize(&*buffer)
+    let rss: Rss = serde_xml_rs::from_reader(&*buffer)
         .map_err(error::Error::XmlParsing)?;
     rss.write(&options.rss_json_path)?;
 

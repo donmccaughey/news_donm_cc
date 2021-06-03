@@ -42,7 +42,7 @@ mod tests {
                 </item>
             </channel>
         "#;
-        let channel: Channel = serde_xml_rs::deserialize(xml.as_bytes()).unwrap();
+        let channel: Channel = serde_xml_rs::from_reader(xml.as_bytes()).unwrap();
         assert_eq!("News Channel", channel.title);
         assert_eq!("https://news.example.com/news_channel", channel.link.as_str());
         assert_eq!("Better than teevee.", channel.description);
