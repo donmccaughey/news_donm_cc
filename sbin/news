@@ -1,0 +1,11 @@
+#!/bin/sh
+
+/usr/sbin/nginx &
+
+cd /opt/news
+/usr/bin/python3 server.py &
+
+wait -n
+
+exit $?
+
