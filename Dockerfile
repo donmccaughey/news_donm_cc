@@ -14,4 +14,3 @@ COPY sbin /usr/local/sbin
 COPY src /opt/news
 
 ENTRYPOINT ["/usr/local/sbin/news"]
-

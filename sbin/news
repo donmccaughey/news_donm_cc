@@ -2,10 +2,9 @@
 
 /usr/sbin/nginx &
 
-cd /opt/news
+cd /opt/news || exit
 /usr/bin/python3 server.py &
 
-wait -n
+wait
 
 exit $?
-
