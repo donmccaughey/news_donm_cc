@@ -18,6 +18,10 @@ Running the Docker container and getting a shell:
 
 2022-12-08 current Python on Alpine is 3.10.8.
 
+Article: [Deploying NGINX and NGINX Plus with Docker][nginx-docker]
+
+[nginx-docker]: https://www.nginx.com/blog/deploying-nginx-nginx-plus-docker/
+
 
 ## To Do
 
