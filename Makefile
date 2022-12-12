@@ -24,6 +24,10 @@ clean : stop
 create : $(TMP)/Docker-create.id.txt
 
 
+.PHONY : deploy
+deploy : $(TMP)/aws-create-container-service-deployment.json.txt
+
+
 .PHONY : push
 push : $(TMP)/Docker-push.date.txt
 
@@ -60,6 +64,18 @@ src_files := src/server.py
 sbin_files := sbin/news
 
 
+$(TMP)/aws-create-container-service-deployment.json.txt : \
+		$(TMP)/Docker-push.date.txt \
+		aws/create-container-service-deployment.json \
+		| $$(dir $$@)
+	aws lightsail create-container-service-deployment \
+		--cli-input-json "$$(<aws/create-container-service-deployment.json)" \
+		--output json \
+		--region us-west-2 \
+		--service-name news \
+		> $@ || rm $@
+
+
 $(TMP)/Docker-build.date.txt : \
 		Dockerfile \
 		$(nginx_files) \
@@ -91,6 +107,7 @@ $(TMP)/Docker-push.date.txt : $(TMP)/Docker-build.date.txt | $$(dir $$@)
 	docker tag news public.ecr.aws/d2g3p0u7/news
 	docker push public.ecr.aws/d2g3p0u7/news
 	docker logout public.ecr.aws
+	date > $@
 
 
 $(TMP)/Docker-start.date.txt : $(TMP)/Docker-create.id.txt | $$(dir $$@)
