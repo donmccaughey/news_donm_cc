@@ -22,11 +22,29 @@ Article: [Deploying NGINX and NGINX Plus with Docker][nginx-docker]
 
 [nginx-docker]: https://www.nginx.com/blog/deploying-nginx-nginx-plus-docker/
 
+#### Pushing Docker container to AWS
+
+https://docs.aws.amazon.com/AmazonECR/latest/public/public-registries.html
+
+    # log Docker into Amazon ECR Public
+    $ aws ecr-public get-login-password \
+            --region us-east-1 \
+        | docker login \
+                --username AWS \
+                --password-stdin \
+                public.ecr.aws
+
+    # https://docs.aws.amazon.com/AmazonECR/latest/public/docker-push-ecr-image.html
+    $ docker tag news public.ecr.aws/d2g3p0u7/news
+    $ docker push public.ecr.aws/d2g3p0u7/news
+
+    # log Docker out of Amazon ECR Public
+    $ docker logout public.ecr.aws
+
+Public domain: https://news.6i2dp3e2do9ku.us-west-2.cs.amazonlightsail.com
+
 
 ## To Do
 
-- rotate nginx error logs or send them somewhere
-    https://www.cyberciti.biz/faq/how-to-install-and-configure-log-roate-in-alpine-linux/
-
-
-
+- set up news.donm.cc
+- health check

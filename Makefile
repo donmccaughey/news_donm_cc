@@ -24,6 +24,10 @@ clean : stop
 create : $(TMP)/Docker-create.id.txt
 
 
+.PHONY : push
+push : $(TMP)/Docker-push.date.txt
+
+
 .PHONY : shell
 shell: $(TMP)/Docker-start.date.txt
 	docker exec \
@@ -38,7 +42,7 @@ start : $(TMP)/Docker-start.date.txt
 
 .PHONY : stop
 stop :
-	docker stop $(NEWS)
+	-docker stop $(NEWS)
 	rm -rf $(TMP)/Docker-start.date.txt
 
 
@@ -64,6 +68,7 @@ $(TMP)/Docker-build.date.txt : \
 		| $$(dir $$@)
 	docker build \
 		--file $< \
+		--platform linux/amd64 \
 		--tag $(NEWS) \
 		--quiet \
 		$(dir $<)
@@ -75,8 +80,17 @@ $(TMP)/Docker-create.id.txt : stop $(TMP)/Docker-build.date.txt | $$(dir $$@)
 	docker create \
 		--init \
 		--name $(NEWS) \
+		--platform linux/amd64 \
 		--publish 8000:80 \
 		$(NEWS) > $@
+
+
+$(TMP)/Docker-push.date.txt : $(TMP)/Docker-build.date.txt | $$(dir $$@)
+	aws ecr-public get-login-password --region us-east-1 \
+        | docker login --username AWS --password-stdin public.ecr.aws
+	docker tag news public.ecr.aws/d2g3p0u7/news
+	docker push public.ecr.aws/d2g3p0u7/news
+	docker logout public.ecr.aws
 
 
 $(TMP)/Docker-start.date.txt : $(TMP)/Docker-create.id.txt | $$(dir $$@)
