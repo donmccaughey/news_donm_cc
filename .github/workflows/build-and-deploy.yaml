@@ -1,0 +1,16 @@
+name: BuildAndDeploy
+run-name: ${{ github.actor }} is building and deploying.
+on:
+  push:
+    branches:
+      - 'master'
+  workflow_dispatch:
+jobs:
+  News:
+    name: News
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build
+        run : |
+          docker build --file Dockerfile --platform linux/amd64 --tag news --quiet ${{github.workspace}}/news
