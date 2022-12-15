@@ -67,9 +67,9 @@ $(TMP)/aws-create-container-service-deployment.json.txt : \
 		$(TMP)/Docker-push.date.txt \
 		aws/create-container-service-deployment.json \
 		| $$(dir $$@)
-	printf "%s" "$$(<aws/create-container-service-deployment.json)"
+	printf "%s" "$$(jq -c . aws/create-container-service-deployment.json)"
 	aws lightsail create-container-service-deployment \
-		--cli-input-json "$$(<aws/create-container-service-deployment.json)" \
+		--cli-input-json "$$(jq -c . aws/create-container-service-deployment.json)" \
 		--output json \
 		--region us-west-2 \
 		--service-name news \
