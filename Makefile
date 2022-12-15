@@ -71,8 +71,9 @@ $(TMP)/aws-create-container-service-deployment.json.txt : \
 		--cli-input-json "$$(jq -c . aws/create-container-service-deployment.json)" \
 		--output json \
 		--region us-west-2 \
-		--service-name news
-	date > $@
+		--service-name news \
+		> $@ \
+		|| ( cat $@ && rm $@ && false )
 
 
 $(TMP)/Docker-build.date.txt : \
@@ -104,7 +105,7 @@ $(TMP)/Docker-push.date.txt : $(TMP)/Docker-build.date.txt | $$(dir $$@)
 	aws ecr-public get-login-password --region us-east-1 \
         | docker login --username AWS --password-stdin public.ecr.aws
 	docker tag news public.ecr.aws/d2g3p0u7/news
-	docker push public.ecr.aws/d2g3p0u7/news
+	docker push --quiet public.ecr.aws/d2g3p0u7/news
 	docker logout public.ecr.aws
 	date > $@
 
