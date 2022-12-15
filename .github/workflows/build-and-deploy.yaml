@@ -1,5 +1,5 @@
 name: BuildAndDeploy
-run-name: ${{ github.actor }} is building and deploying.
+run-name: ${{github.actor}} is building and deploying.
 on:
   push:
     branches:
