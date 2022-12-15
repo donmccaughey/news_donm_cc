@@ -19,4 +19,4 @@ jobs:
       - name: Deploy
         run : |
           cd '${{github.workspace}}/news'
-          make push
+          make deploy
