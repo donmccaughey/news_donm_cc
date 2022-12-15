@@ -71,8 +71,8 @@ $(TMP)/aws-create-container-service-deployment.json.txt : \
 		--cli-input-json "$$(jq -c . aws/create-container-service-deployment.json)" \
 		--output json \
 		--region us-west-2 \
-		--service-name news \
-		> $@ || cat $@ && rm $@ && false
+		--service-name news
+	date > $@
 
 
 $(TMP)/Docker-build.date.txt : \
