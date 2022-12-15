@@ -1,5 +1,4 @@
 TMP ?= $(abspath tmp)
-
 NEWS := news
 
 
@@ -115,5 +114,5 @@ $(TMP)/Docker-start.date.txt : $(TMP)/Docker-create.id.txt | $$(dir $$@)
 	date > $@
 
 
-$(TMP) :
+$(TMP)/ :
 	mkdir -p $@
