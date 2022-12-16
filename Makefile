@@ -53,6 +53,13 @@ stop :
 	rm -rf $(TMP)/Docker-start.date.txt
 
 
+docker_sources := \
+	Dockerfile \
+	requirements.txt \
+	$(nginx_files) \
+	$(src_files) \
+	$(sbin_files)
+
 nginx_files := \
 	nginx/nginx.conf \
 	nginx/default/404.html \
@@ -62,9 +69,11 @@ nginx_files := \
 	nginx/default/504.html \
 	nginx/default/index.html
 
-src_files := src/server.py
-
 sbin_files := sbin/news
+
+src_files := \
+	src/server.py \
+	src/templates/home.html
 
 
 $(TMP)/aws-create-container-service-deployment.json.txt : \
@@ -80,13 +89,7 @@ $(TMP)/aws-create-container-service-deployment.json.txt : \
 		|| ( cat $@ && rm $@ && false )
 
 
-$(TMP)/Docker-build.date.txt : \
-		Dockerfile \
-		requirements.txt \
-		$(nginx_files) \
-		$(src_files) \
-		$(sbin_files) \
-		| $$(dir $$@)
+$(TMP)/Docker-build.date.txt : $(docker_sources) | $$(dir $$@)
 	docker build \
 		--file $< \
 		--platform linux/amd64 \

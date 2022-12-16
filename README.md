@@ -60,6 +60,12 @@ Public domain: https://news.6i2dp3e2do9ku.us-west-2.cs.amazonlightsail.com
 
 ## To Do
 
-- flask web app
+- gunicorn error logs
+- flask app logs
 - health check
 - ecr container versioning
+- nginx.conf `proxy_set_header` and other settings
+  - https://flask.palletsprojects.com/en/2.2.x/deploying/nginx/
+  - https://docs.gunicorn.org/en/latest/deploy.html
+- flask proxy middleware
+  - https://flask.palletsprojects.com/en/2.2.x/deploying/proxy_fix/
