@@ -1,10 +1,9 @@
 #!/bin/sh
 
-/usr/sbin/nginx &
+nginx &
 
-cd /opt/news || exit
-/usr/bin/python3 server.py &
+cd /opt/news
+python3 server.py &
 
 wait
-
 exit $?

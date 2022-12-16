@@ -16,7 +16,7 @@ Running the Docker container and getting a shell:
 
     docker run --name news-sh --publish 8000:80 --interactive --tty --rm news sh
 
-2022-12-08 current Python on Alpine is 3.10.8.
+2022-12-15 current Python on Alpine is 3.10.9.
 
 Article: [Deploying NGINX and NGINX Plus with Docker][nginx-docker]
 
@@ -55,8 +55,11 @@ Get Lightsail deployments:
 Public domain: https://news.6i2dp3e2do9ku.us-west-2.cs.amazonlightsail.com
 
 
+### Flask https://flask.palletsprojects.com/en/2.2.x/
+
+
 ## To Do
 
-- github actions
+- flask web app
 - health check
 - ecr container versioning

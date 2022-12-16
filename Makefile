@@ -23,6 +23,10 @@ clean : stop
 create : $(TMP)/Docker-create.id.txt
 
 
+.PHONY : debug
+debug :
+	flask --app src/server --debug run
+
 .PHONY : deploy
 deploy : $(TMP)/aws-create-container-service-deployment.json.txt
 
@@ -78,6 +82,7 @@ $(TMP)/aws-create-container-service-deployment.json.txt : \
 
 $(TMP)/Docker-build.date.txt : \
 		Dockerfile \
+		requirements.txt \
 		$(nginx_files) \
 		$(src_files) \
 		$(sbin_files) \
