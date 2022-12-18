@@ -4,8 +4,38 @@
 <meta charset=utf-8>
 <meta name=viewport content='initial-scale=0.9, width=device-width'>
 <title>News</title>
+<style>
+    footer {
+        text-align: center;
+    }
+    html {
+        border: 0;
+        font: 12pt "Atkinson Hyperlegible", Helvetica, Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        line-height: 1.2;
+        padding-bottom: 0.5em;
+    }
+    main {
+        margin: 1.5em auto 0 auto;
+        max-width: 40em;
+        padding: 0 1em;
+    }
+</style>
 <main>
     <h1>News</h1>
+    <p>{{items.items|count}} Items
+    <ol>
+    {% for item in items|reverse %}
+        <li>
+            <a href="{{item.url}}">{{item.title}}</a>
+            ({{item.url|domain}})
+            <br>
+            <time datetime="{{item.created}}">{{item.created}}</time>
+    {% endfor %}
+    </ol>
 </main>
 <footer>
     <hr>

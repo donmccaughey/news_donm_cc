@@ -25,7 +25,10 @@ create : $(TMP)/Docker-create.id.txt
 
 .PHONY : debug
 debug :
-	flask --app src/server --debug run
+	python3 src/extractor.py \
+		--cache-path="$(TMP)/news.json"
+	FLASK_NEWS_PATH="$(TMP)/news.json" \
+		flask --app src/server --debug run
 
 .PHONY : deploy
 deploy : $(TMP)/aws-create-container-service-deployment.json.txt
@@ -53,26 +56,26 @@ stop :
 	rm -rf $(TMP)/Docker-start.date.txt
 
 
-docker_sources := \
+container_src := \
 	Dockerfile \
 	requirements.txt \
-	$(nginx_files) \
-	$(src_files) \
-	$(sbin_files)
-
-nginx_files := \
 	nginx/nginx.conf \
 	nginx/default/404.html \
 	nginx/default/500.html \
 	nginx/default/502.html \
 	nginx/default/503.html \
 	nginx/default/504.html \
-	nginx/default/index.html
-
-sbin_files := sbin/news
-
-src_files := \
+	nginx/default/index.html \
+	sbin/news \
+	src/extractor.py \
 	src/server.py \
+	src/news/__init__.py \
+	src/news/cache.py \
+	src/news/item.py \
+	src/news/items.py \
+	src/news/source.py \
+	src/news/store.py \
+	src/news/url.py \
 	src/templates/home.html
 
 
@@ -89,7 +92,7 @@ $(TMP)/aws-create-container-service-deployment.json.txt : \
 		|| ( cat $@ && rm $@ && false )
 
 
-$(TMP)/Docker-build.date.txt : $(docker_sources) | $$(dir $$@)
+$(TMP)/Docker-build.date.txt : $(container_src) | $$(dir $$@)
 	docker build \
 		--file $< \
 		--platform linux/amd64 \

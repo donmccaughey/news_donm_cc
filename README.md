@@ -57,6 +57,10 @@ Public domain: https://news.6i2dp3e2do9ku.us-west-2.cs.amazonlightsail.com
 
 ### Flask https://flask.palletsprojects.com/en/2.2.x/
 
+### feedparser https://feedparser.readthedocs.io/en/latest/index.html
+
+### boto3 https://boto3.amazonaws.com/v1/documentation/api/latest/index.html
+
 
 ## To Do
 

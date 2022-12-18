@@ -2,7 +2,10 @@
 
 nginx &
 
-cd /opt/news
+cd /usr/local/news
+export FLASK_NEWS_PATH=/var/news/news.json
+
+python3 extractor.py --cache-path="$FLASK_NEWS_PATH" --poll=5 &
 gunicorn -w 4 'server:app' &
 
 wait

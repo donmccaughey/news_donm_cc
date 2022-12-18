@@ -9,13 +9,15 @@ RUN rm -f fastcgi.conf fastcgi_params scgi_params uwsgi_params
 RUN rm -rf http.d/ modules/
 RUN ln -sf /dev/stderr /var/log/nginx/error.log
 
-COPY requirements.txt /opt/news/requirements.txt
+COPY requirements.txt /usr/local/news/requirements.txt
 COPY nginx/nginx.conf /etc/nginx/nginx.conf
-COPY nginx/default /srv/nginx/default
+COPY nginx/default /var/nginx/default
 COPY sbin /usr/local/sbin
-COPY src /opt/news
+COPY src /usr/local/news
 
-WORKDIR /opt/news
+RUN mkdir -p /var/news
+
+WORKDIR /usr/local/news
 RUN pip install -r requirements.txt
 
 WORKDIR /root
