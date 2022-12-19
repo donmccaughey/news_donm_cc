@@ -4,7 +4,11 @@
         "news": {
             "image": "public.ecr.aws/d2g3p0u7/news:latest",
             "command": [],
-            "environment": {},
+            "environment": {
+                "AWS_ACCESS_KEY_ID": "{{AWS_ACCESS_KEY_ID}}",
+                "AWS_SECRET_ACCESS_KEY": "{{AWS_SECRET_ACCESS_KEY}}",
+                "AWS_DEFAULT_REGION": "us-west-2"
+            },
             "ports": {
                 "80": "HTTP"
             }

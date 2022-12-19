@@ -84,12 +84,19 @@ $(TMP)/.env :
 	chmod 600 $@
 
 
+$(TMP)/create-container-service-deployment.json : aws/create-container-service-deployment.template.json
+	sed \
+		-e "s/{{AWS_ACCESS_KEY_ID}}/$$(aws configure get aws_access_key_id)/g" \
+		-e "s/{{AWS_SECRET_ACCESS_KEY}}/$$(aws configure get aws_secret_access_key)/g" \
+		$< > $@
+
+
 $(TMP)/aws-create-container-service-deployment.json.txt : \
+		$(TMP)/create-container-service-deployment.json \
 		$(TMP)/Docker-push.date.txt \
-		aws/create-container-service-deployment.json \
 		| $$(dir $$@)
 	aws lightsail create-container-service-deployment \
-		--cli-input-json "$$(jq -c . aws/create-container-service-deployment.json)" \
+		--cli-input-json "$$(jq -c . $(TMP)/create-container-service-deployment.json)" \
 		--output json \
 		--region us-west-2 \
 		--service-name news \
