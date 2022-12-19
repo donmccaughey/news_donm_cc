@@ -1,7 +1,7 @@
 import argparse
 
 from datetime import datetime, timedelta, timezone
-from news import Cache, Items, Source, Store, URL
+from news import Cache, Items, NoStore, Source, S3Store, URL
 from pathlib import Path
 from time import sleep
 
@@ -25,6 +25,8 @@ def parse_options():
                             help='discard items older than the given number of days')
     arg_parser.add_argument('-p', '--poll', dest='poll', default=0, type=int,
                             help='minutes to sleep before checking for new items')
+    arg_parser.add_argument('--no-store', dest='no_store', default=False,
+                            action='store_true', help="don't use a persistent store")
     options = arg_parser.parse_args()
     options.poll_seconds = options.poll * 60
     return options
@@ -33,8 +35,8 @@ def parse_options():
 def main():
     options = parse_options()
 
+    store = NoStore() if options.no_store else S3Store()
     cache = Cache(options.cache_path)
-    store = Store()
 
     items = Items.from_json(
         cache.get() or store.get() or Items().to_json()

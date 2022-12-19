@@ -19,16 +19,14 @@ clean : stop
 	rm -rf $(TMP)
 
 
-.PHONY : create
-create : $(TMP)/Docker-create.id.txt
-
-
 .PHONY : debug
 debug :
 	python3 src/extractor.py \
-		--cache-path="$(TMP)/news.json"
+		--cache-path="$(TMP)/news.json" \
+		--no-store
 	FLASK_NEWS_PATH="$(TMP)/news.json" \
 		flask --app src/server --debug run
+
 
 .PHONY : deploy
 deploy : $(TMP)/aws-create-container-service-deployment.json.txt
@@ -38,22 +36,22 @@ deploy : $(TMP)/aws-create-container-service-deployment.json.txt
 push : $(TMP)/Docker-push.date.txt
 
 
+.PHONY : run
+run : $(TMP)/Docker-run.id.txt
+
+
 .PHONY : shell
-shell: $(TMP)/Docker-start.date.txt
+shell: $(TMP)/Docker-run.id.txt
 	docker exec \
 		--interactive \
 		--tty \
 		$(NEWS) sh
 
 
-.PHONY : start
-start : $(TMP)/Docker-start.date.txt
-
-
 .PHONY : stop
 stop :
 	-docker stop $(NEWS)
-	rm -rf $(TMP)/Docker-start.date.txt
+	rm -rf $(TMP)/Docker-run.id.txt
 
 
 container_src := \
@@ -79,6 +77,13 @@ container_src := \
 	src/templates/home.html
 
 
+$(TMP)/.env :
+	printf "AWS_ACCESS_KEY_ID=%s\n" "$$(aws configure get aws_access_key_id)" >> $@
+	printf "AWS_SECRET_ACCESS_KEY=%s\n" "$$(aws configure get aws_secret_access_key)" >> $@
+	printf "AWS_DEFAULT_REGION=us-west-2\n" >> $@
+	chmod 600 $@
+
+
 $(TMP)/aws-create-container-service-deployment.json.txt : \
 		$(TMP)/Docker-push.date.txt \
 		aws/create-container-service-deployment.json \
@@ -102,16 +107,6 @@ $(TMP)/Docker-build.date.txt : $(container_src) | $$(dir $$@)
 	date > $@
 
 
-$(TMP)/Docker-create.id.txt : stop $(TMP)/Docker-build.date.txt | $$(dir $$@)
-	-docker rm $(NEWS)
-	docker create \
-		--init \
-		--name $(NEWS) \
-		--platform linux/amd64 \
-		--publish 8000:80 \
-		$(NEWS) > $@
-
-
 $(TMP)/Docker-push.date.txt : $(TMP)/Docker-build.date.txt | $$(dir $$@)
 	aws ecr-public get-login-password --region us-east-1 \
         | docker login --username AWS --password-stdin public.ecr.aws
@@ -121,9 +116,21 @@ $(TMP)/Docker-push.date.txt : $(TMP)/Docker-build.date.txt | $$(dir $$@)
 	date > $@
 
 
-$(TMP)/Docker-start.date.txt : $(TMP)/Docker-create.id.txt | $$(dir $$@)
-	docker start $(NEWS)
-	date > $@
+$(TMP)/Docker-run.id.txt : \
+		$(TMP)/Docker-build.date.txt \
+		$(TMP)/.env \
+		stop \
+		| $$(dir $$@)
+	-docker rm $(NEWS)
+	docker run \
+		--detach \
+		--env-file $(TMP)/.env \
+		--init \
+		--name $(NEWS) \
+		--platform linux/amd64 \
+		--publish 8000:80 \
+		--rm \
+		$(NEWS) > $@
 
 
 $(TMP)/ :
