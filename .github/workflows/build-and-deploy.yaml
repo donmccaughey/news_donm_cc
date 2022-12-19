@@ -5,6 +5,9 @@ on:
     branches:
       - 'master'
   workflow_dispatch:
+env:
+  AWS_ACCESS_KEY: ${{secrets.AWS_ACCESS_KEY}}
+  AWS_ACCESS_KEY_SECRET: ${{secrets.AWS_ACCESS_KEY_SECRET}}
 jobs:
   News:
     name: News

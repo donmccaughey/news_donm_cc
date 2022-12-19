@@ -1,4 +1,7 @@
+AWS_ACCESS_KEY_ID ?= $(shell aws configure get aws_access_key_id)
+AWS_SECRET_ACCESS_KEY ?= $(shell aws configure get aws_secret_access_key)
 TMP ?= $(abspath tmp)
+
 NEWS := news
 
 
@@ -78,16 +81,16 @@ container_src := \
 
 
 $(TMP)/.env : | $$(dir $$@)
-	printf "AWS_ACCESS_KEY_ID=%s\n" "$$(aws configure get aws_access_key_id)" >> $@
-	printf "AWS_SECRET_ACCESS_KEY=%s\n" "$$(aws configure get aws_secret_access_key)" >> $@
+	printf "AWS_ACCESS_KEY_ID=%s\n" "$(AWS_ACCESS_KEY_ID)" >> $@
+	printf "AWS_SECRET_ACCESS_KEY=%s\n" "$(AWS_SECRET_ACCESS_KEY)" >> $@
 	printf "AWS_DEFAULT_REGION=us-west-2\n" >> $@
 	chmod 600 $@
 
 
 $(TMP)/create-container-service-deployment.json : aws/create-container-service-deployment.template.json | $$(dir $$@)
 	sed \
-		-e "s/{{AWS_ACCESS_KEY_ID}}/$$(aws configure get aws_access_key_id)/g" \
-		-e "s/{{AWS_SECRET_ACCESS_KEY}}/$$(aws configure get aws_secret_access_key)/g" \
+		-e "s/{{AWS_ACCESS_KEY_ID}}/$(AWS_ACCESS_KEY_ID)/g" \
+		-e "s/{{AWS_SECRET_ACCESS_KEY}}/$(AWS_SECRET_ACCESS_KEY)/g" \
 		$< > $@
 
 

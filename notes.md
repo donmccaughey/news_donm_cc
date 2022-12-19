@@ -2,7 +2,6 @@
 
 ## To Do
 
-- find out why s3.upload_fileobj is failing
 - gunicorn error logs
 - flask app logs
 - health check
