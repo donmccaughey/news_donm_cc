@@ -77,14 +77,14 @@ container_src := \
 	src/templates/home.html
 
 
-$(TMP)/.env :
+$(TMP)/.env : | $$(dir $$@)
 	printf "AWS_ACCESS_KEY_ID=%s\n" "$$(aws configure get aws_access_key_id)" >> $@
 	printf "AWS_SECRET_ACCESS_KEY=%s\n" "$$(aws configure get aws_secret_access_key)" >> $@
 	printf "AWS_DEFAULT_REGION=us-west-2\n" >> $@
 	chmod 600 $@
 
 
-$(TMP)/create-container-service-deployment.json : aws/create-container-service-deployment.template.json
+$(TMP)/create-container-service-deployment.json : aws/create-container-service-deployment.template.json | $$(dir $$@)
 	sed \
 		-e "s/{{AWS_ACCESS_KEY_ID}}/$$(aws configure get aws_access_key_id)/g" \
 		-e "s/{{AWS_SECRET_ACCESS_KEY}}/$$(aws configure get aws_secret_access_key)/g" \
