@@ -2,6 +2,7 @@
 
 ## To Do
 
+- add source name, initials to source and item
 - gunicorn error logs
 - flask app logs
 - health check
@@ -17,6 +18,8 @@
   - npr to https://text.npr.org
   - https://www.nytimes.com/timeswire
   - pay walls to https://archive.ph
+    - wsj
+    - economist
 
 
 ## Docker

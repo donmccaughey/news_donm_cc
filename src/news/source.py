@@ -40,7 +40,11 @@ class Source:
                 )
                 for entry in d.entries
             ]
-            return Items(items=items)
+            return Items(
+                items=items,
+                created=now,
+                modified=now,
+            )
         else:
             # TODO: log error
             return Items()

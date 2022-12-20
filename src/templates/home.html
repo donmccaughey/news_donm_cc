@@ -5,39 +5,72 @@
 <meta name=viewport content='initial-scale=0.9, width=device-width'>
 <title>News</title>
 <style>
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    a:visited {
+        color: gray;
+    }
     footer {
         text-align: center;
     }
     html {
+        background: white;
         border: 0;
-        font: 12pt "Atkinson Hyperlegible", Helvetica, Arial, sans-serif;
+        color: black;
+        font: 14pt "Atkinson Hyperlegible", Helvetica, Arial, sans-serif;
         margin: 0;
         padding: 0;
     }
     li {
-        line-height: 1.2;
-        padding-bottom: 0.5em;
+        padding: 0.25em 0;
+    }
+    li p {
+        border: 0;
+        font-size: 12pt;
+        font-style: italic;
+        margin: 0;
+        padding: 0.25em 0;
     }
     main {
         margin: 1.5em auto 0 auto;
         max-width: 40em;
         padding: 0 1em;
     }
+    .domain {
+        color: gray;
+    }
+    @media (prefers-color-scheme: dark) {
+        a {
+            color: white;
+        }
+        a:visited {
+            color: silver;
+        }
+        html {
+            background: black;
+            color: white;
+        }
+        .domain {
+            color: silver;
+        }
+    }
 </style>
 <main>
     <h1>News</h1>
-    <p>{{items.items|count}} Items
+    <p>
+        {{items.items|count}} items updated <time datetime={{items.modified|iso}}>{{items.modified|utc}}</time>
     <ol>
     {% for item in items|reverse %}
         <li>
-            <a href="{{item.url}}">{{item.title}}</a>
-            ({{item.url|domain}})
-            <br>
-            <time datetime="{{item.created}}">{{item.created}}</time>
+            <a href={{item.url|href|safe}}>{{item.title}}</a>
+            <p>
+                <span class=domain>{{item.url|domain}}</span>
+                —
+                <a class=source href={{item.source|href|safe}}>hn</a>
+                —
+                <time datetime={{item.created|iso}}>{{item.created|utc}}</time>
     {% endfor %}
     </ol>
 </main>
-<footer>
-    <hr>
-    {{now|format_date_time}}
-</footer>
