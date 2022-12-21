@@ -13,7 +13,7 @@ all : build
 
 
 .PHONY : build
-build : $(TMP)/Docker-build.date.txt
+build : $(TMP)/docker-build.stamp.txt
 
 
 .PHONY : clean
@@ -32,19 +32,19 @@ debug :
 
 
 .PHONY : deploy
-deploy : $(TMP)/aws-create-container-service-deployment.json.txt
+deploy : $(TMP)/aws-lightsail-create-container-service-deployment.stamp.txt
 
 
 .PHONY : push
-push : $(TMP)/Docker-push.date.txt
+push : $(TMP)/docker-push.stamp.txt
 
 
 .PHONY : run
-run : $(TMP)/Docker-run.id.txt
+run : $(TMP)/docker-run.stamp.txt
 
 
 .PHONY : shell
-shell: $(TMP)/Docker-run.id.txt
+shell: $(TMP)/docker-run.stamp.txt
 	docker exec \
 		--interactive \
 		--tty \
@@ -54,7 +54,7 @@ shell: $(TMP)/Docker-run.id.txt
 .PHONY : stop
 stop :
 	-docker stop $(NEWS)
-	rm -rf $(TMP)/Docker-run.id.txt
+	rm -rf $(TMP)/docker-run.stamp.txt
 
 
 container_src := \
@@ -94,9 +94,9 @@ $(TMP)/create-container-service-deployment.json : aws/create-container-service-d
 		$< > $@
 
 
-$(TMP)/aws-create-container-service-deployment.json.txt : \
+$(TMP)/aws-lightsail-create-container-service-deployment.stamp.txt : \
 		$(TMP)/create-container-service-deployment.json \
-		$(TMP)/Docker-push.date.txt \
+		$(TMP)/docker-push.stamp.txt \
 		| $$(dir $$@)
 	aws lightsail create-container-service-deployment \
 		--cli-input-json "$$(jq -c . $(TMP)/create-container-service-deployment.json)" \
@@ -107,7 +107,7 @@ $(TMP)/aws-create-container-service-deployment.json.txt : \
 		|| ( cat $@ && rm $@ && false )
 
 
-$(TMP)/Docker-build.date.txt : $(container_src) | $$(dir $$@)
+$(TMP)/docker-build.stamp.txt : $(container_src) | $$(dir $$@)
 	docker build \
 		--file $< \
 		--platform linux/amd64 \
@@ -117,7 +117,7 @@ $(TMP)/Docker-build.date.txt : $(container_src) | $$(dir $$@)
 	date > $@
 
 
-$(TMP)/Docker-push.date.txt : $(TMP)/Docker-build.date.txt | $$(dir $$@)
+$(TMP)/docker-push.stamp.txt : $(TMP)/docker-build.stamp.txt | $$(dir $$@)
 	aws ecr-public get-login-password --region us-east-1 \
         | docker login --username AWS --password-stdin public.ecr.aws
 	docker tag news public.ecr.aws/d2g3p0u7/news
@@ -126,8 +126,8 @@ $(TMP)/Docker-push.date.txt : $(TMP)/Docker-build.date.txt | $$(dir $$@)
 	date > $@
 
 
-$(TMP)/Docker-run.id.txt : \
-		$(TMP)/Docker-build.date.txt \
+$(TMP)/docker-run.stamp.txt : \
+		$(TMP)/docker-build.stamp.txt \
 		$(TMP)/.env \
 		stop \
 		| $$(dir $$@)
