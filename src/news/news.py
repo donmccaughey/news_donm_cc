@@ -5,7 +5,7 @@ from typing import Iterable
 from .item import Item
 
 
-class Items:
+class News:
     def __init__(self,
                  items: list[Item] | None = None,
                  created: datetime | None = None,
@@ -18,7 +18,7 @@ class Items:
         self.created = created if created else now
         self.modified = modified if modified else now
 
-    def __iadd__(self, other: 'Items'):
+    def __iadd__(self, other: 'News'):
         for item in other:
             if item.source in self.index:
                 # TODO: update item
@@ -42,8 +42,8 @@ class Items:
         self.items = [item for item in self.items if item.created > cutoff]
 
     @staticmethod
-    def decode(encoded: dict) -> 'Items':
-        return Items(
+    def decode(encoded: dict) -> 'News':
+        return News(
             items=[Item.decode(item) for item in encoded['stories']],
             created=datetime.fromisoformat(encoded['created']),
             modified=datetime.fromisoformat(encoded['modified']),
@@ -57,8 +57,8 @@ class Items:
         }
 
     @staticmethod
-    def from_json(s: str) -> 'Items':
-        return Items.decode(json.loads(s))
+    def from_json(s: str) -> 'News':
+        return News.decode(json.loads(s))
 
     def to_json(self) -> str:
         return json.dumps(self.encode(), indent='\t')

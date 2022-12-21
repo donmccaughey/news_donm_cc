@@ -2,7 +2,7 @@ from datetime import datetime
 from feedparser import FeedParserDict, parse
 
 from .item import Item
-from .items import Items
+from .news import News
 from .url import URL
 
 
@@ -18,7 +18,7 @@ class Source:
     def __str__(self) -> str:
         return str(self.url)
 
-    def get(self, now: datetime) -> Items:
+    def get(self, now: datetime) -> News:
         d: FeedParserDict = parse(
             str(self.url),
             etag=self.etag,
@@ -40,11 +40,11 @@ class Source:
                 )
                 for entry in d.entries
             ]
-            return Items(
+            return News(
                 items=items,
                 created=now,
                 modified=now,
             )
         else:
             # TODO: log error
-            return Items()
+            return News()

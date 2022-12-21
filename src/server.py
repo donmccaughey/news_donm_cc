@@ -1,10 +1,10 @@
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import urlsplit
 
-from flask import Flask, render_template
+from flask import Flask, make_response, render_template, request, Response
 
-from news import Cache, Items, URL
+from news import Cache, News, URL
 
 app = Flask(__name__)
 app.config.from_prefixed_env()
@@ -13,10 +13,30 @@ news_path = Path(app.config['NEWS_PATH'])
 cache = Cache(news_path)
 
 
-@app.route('/')
-def home():
-    items = Items.from_json(cache.get() or Items().to_json())
-    return render_template('home.html', items=items)
+@app.route('/', methods=['GET', 'HEAD'])
+def home() -> Response:
+    news = News.from_json(cache.get() or News().to_json())
+    response = make_response(render_template('home.html', news=news))
+
+    response.add_etag()
+    response.last_modified = news.modified
+
+    response.make_conditional(request)
+
+    if 200 == response.status_code:
+        now = datetime.now(timezone.utc)
+        age = now - news.modified
+        five_min = timedelta(minutes=5)
+        max_age = five_min - age if age < five_min else timedelta(seconds=15)
+
+        response.cache_control.public = True
+        response.cache_control.max_age = max_age.seconds
+        response.cache_control.must_revalidate = True
+        response.cache_control.s_maxage = max_age.seconds
+        response.cache_control.proxy_revalidate = True
+        response.cache_control.immutable = True
+
+    return response
 
 
 @app.template_filter()

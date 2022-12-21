@@ -60,9 +60,9 @@
 <main>
     <h1>News</h1>
     <p>
-        {{items.items|count}} items updated <time datetime={{items.modified|iso}}>{{items.modified|utc}}</time>
+        {{news.items|count}} items updated <time datetime={{news.modified|iso}}>{{news.modified|utc}}</time>
     <ol>
-    {% for item in items|reverse %}
+    {% for item in news|reverse %}
         <li>
             <a href={{item.url|href|safe}}>{{item.title}}</a>
             <p>

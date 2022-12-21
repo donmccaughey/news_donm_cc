@@ -1,7 +1,7 @@
 import argparse
 
 from datetime import datetime, timedelta, timezone
-from news import Cache, Items, NoStore, Source, S3Store, URL
+from news import Cache, News, NoStore, Source, S3Store, URL
 from pathlib import Path
 from time import sleep
 
@@ -38,8 +38,8 @@ def main():
     store = NoStore() if options.no_store else S3Store()
     cache = Cache(options.cache_path)
 
-    items = Items.from_json(
-        cache.get() or store.get() or Items().to_json()
+    news = News.from_json(
+        cache.get() or store.get() or News().to_json()
     )
 
     while True:
@@ -47,11 +47,11 @@ def main():
         cutoff = now - options.cutoff_days
 
         for source in sources:
-            items += source.get(now)
+            news += source.get(now)
 
-        items.prune(cutoff)
+        news.prune(cutoff)
 
-        json = items.to_json()
+        json = news.to_json()
         cache.put(json)
         store.put(json)
 

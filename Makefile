@@ -73,7 +73,7 @@ container_src := \
 	src/news/__init__.py \
 	src/news/cache.py \
 	src/news/item.py \
-	src/news/items.py \
+	src/news/news.py \
 	src/news/source.py \
 	src/news/store.py \
 	src/news/url.py \
