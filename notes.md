@@ -2,6 +2,7 @@
 
 ## To Do
 
+- reverse-proxying of flask app by nginx
 - add source name, initials to source and item
 - gunicorn error logs
 - flask app logs

@@ -52,14 +52,22 @@ def utc(value: datetime) -> str:
 @app.template_filter()
 def domain(value: URL) -> str:
     parts = urlsplit(value.url)
-    hostname_parts = parts.hostname.split('.')
+
+    hostname = parts.hostname
+    path = parts.path
+
+    if 'old.reddit.com' == hostname:
+        hostname = 'reddit.com'
+
+    hostname_parts = hostname.split('.')
     if len(hostname_parts) > 2 and 'www' == hostname_parts[0]:
         del hostname_parts[0]
     hostname = '.'.join(hostname_parts)
+
     if 'github.com' == hostname:
         if not parts.path:
             return hostname
-        path_parts = Path(parts.path).parts
+        path_parts = Path(path).parts
         if not path_parts:
             return hostname
         if not '/' == path_parts[0]:
@@ -67,6 +75,19 @@ def domain(value: URL) -> str:
         if not len(path_parts) > 2:
             return hostname
         return hostname + '/' + path_parts[1]
+    elif 'reddit.com' == hostname:
+        if not parts.path:
+            return hostname
+        path_parts = Path(path).parts
+        if not path_parts:
+            return hostname
+        if not '/' == path_parts[0]:
+            return hostname
+        if not len(path_parts) > 2:
+            return hostname
+        if not 'r' == path_parts[1]:
+            return hostname
+        return hostname + '/r/' + path_parts[2]
     else:
         return hostname
 
