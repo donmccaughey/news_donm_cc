@@ -64,11 +64,11 @@
     <ol>
     {% for item in news|reverse %}
         <li>
-            <a href={{item.url|href|safe}}>{{item.title}}</a>
+            <a href={{item.url|href|safe}} rel=noreferrer target=_blank>{{item.title}}</a>
             <p>
                 <span class=domain>{{item.url|domain}}</span>
                 —
-                <a class=source href={{item.source|href|safe}}>hn</a>
+                <a class=source href={{item.source|href|safe}} rel=noreferrer target=_blank>hn</a>
                 —
                 <time datetime={{item.created|iso}}>{{item.created|utc}}</time>
     {% endfor %}

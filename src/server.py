@@ -130,4 +130,4 @@ def href(url: URL) -> str:
     if chars & SPECIAL_CHARS:
         return f"'{href}'"
 
-    return href + ' ' if href.endswith('/') else href
+    return href
