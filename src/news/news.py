@@ -32,7 +32,7 @@ class News:
         return self
 
     def __iter__(self) -> Iterable:
-        return iter(self.items)
+        return reversed(self.items)
 
     def __len__(self) -> int:
         return len(self.items)

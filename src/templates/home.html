@@ -12,9 +12,6 @@
     a:visited {
         color: gray;
     }
-    footer {
-        text-align: center;
-    }
     html {
         background: white;
         border: 0;
@@ -25,6 +22,12 @@
     }
     li {
         padding: 0.25em 0;
+    }
+    li:before {
+        content: counter(item) ". ";
+        counter-increment: item;
+        margin-left: -2em;
+        width: 2em;
     }
     li p {
         border: 0;
@@ -38,8 +41,19 @@
         max-width: 40em;
         padding: 0 1em;
     }
+    ol {
+        counter-reset: item {{item_count}};
+        list-style: none;
+    }
     .domain {
         color: gray;
+    }
+    .inactive {
+        color: whitesmoke;
+        text-decoration: line-through;
+    }
+    .page-control {
+        float: right;
     }
     @media (prefers-color-scheme: dark) {
         a {
@@ -55,14 +69,32 @@
         .domain {
             color: silver;
         }
+        .inactive {
+            color: dimgray;
+        }
     }
 </style>
 <main>
     <h1>News</h1>
-    <p>
-        {{news.items|count}} items updated <time datetime={{news.modified|iso}}>{{news.modified|utc}}</time>
+    <header>
+        {{news.items|count}} items updated
+        <time datetime={{news.modified|iso}}>{{news.modified|utc}}</time>
+        <span class=page-control>
+            {% if first_url %}
+            <a href={{first_url}}>first</a>
+            {% else %}
+            <span class=inactive>first</span>
+            {% endif %}
+            —
+            {% if previous_url %}
+            <a href={{previous_url}}>previous</a>
+            {% else %}
+            <span class=inactive>previous</span>
+            {% endif %}
+            </span>
+    </header>
     <ol>
-    {% for item in news|reverse %}
+    {% for item in page %}
         <li>
             <a href={{item.url|href|safe}} rel=noreferrer target=_blank>{{item.title}}</a>
             <p>
@@ -73,4 +105,19 @@
                 <time datetime={{item.created|iso}}>{{item.created|utc}}</time>
     {% endfor %}
     </ol>
+    <footer>
+        <span class=page-control>
+            {% if last_url %}
+            <a href={{last_url}}>last</a>
+            {% else %}
+            <span class=inactive>last</span>
+            {% endif %}
+            —
+            {% if next_url %}
+            <a href={{next_url}}>next</a>
+            {% else %}
+            <span class=inactive>next</span>
+            {% endif %}
+        </span>
+    </footer>
 </main>

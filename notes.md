@@ -2,7 +2,6 @@
 
 ## To Do
 
-- pagination of results
 - updating <time> tags with relative times
 - nginx content caching
 - add source name, initials to source and item

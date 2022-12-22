@@ -9,10 +9,10 @@ def test_iadd():
     news = News()
     new_news = News([
         Item(
-            URL('http://example.com/item1'), 'Item 1', URL('http://source.com/1')
+            URL('https://example.com/item1'), 'Item 1', URL('https://source.com/1')
         ),
         Item(
-            URL('http://example.com/item2'), 'Item 2', URL('http://source.com/2')
+            URL('https://example.com/item2'), 'Item 2', URL('https://source.com/2')
         ),
     ])
     empty_news = News()
@@ -36,10 +36,10 @@ def test_prune():
 
     news = News ([
         Item(
-            URL('http://example.com/item1'), 'Item 1', URL('http://source.com/1')
+            URL('https://example.com/item1'), 'Item 1', URL('https://source.com/1')
         ),
         Item(
-            URL('http://example.com/item2'), 'Item 2', URL('http://source.com/2'),
+            URL('https://example.com/item2'), 'Item 2', URL('https://source.com/2'),
             created=old, modified=old
         ),
     ])

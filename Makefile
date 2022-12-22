@@ -71,8 +71,7 @@ container_files := \
 	nginx/default/503.html \
 	nginx/default/504.html \
 	nginx/default/index.html \
-	sbin/news \
-	$(source_files)
+	sbin/news
 
 source_files := \
 	src/extractor.py \
@@ -81,6 +80,7 @@ source_files := \
 	src/news/cache.py \
 	src/news/item.py \
 	src/news/news.py \
+	src/news/page.py \
 	src/news/source.py \
 	src/news/store.py \
 	src/news/url.py \
@@ -88,6 +88,7 @@ source_files := \
 
 test_files := \
 	src/news/news_test.py \
+	src/news/page_test.py \
 	src/news/url_test.py
 
 
@@ -116,9 +117,10 @@ $(TMP)/create-container-service-deployment.json : aws/create-container-service-d
 		-e "s/{{AWS_ACCESS_KEY_ID}}/$(AWS_ACCESS_KEY_ID)/g" \
 		-e "s/{{AWS_SECRET_ACCESS_KEY}}/$(AWS_SECRET_ACCESS_KEY)/g" \
 		$< > $@
+	chmod 600 $@
 
 
-$(TMP)/docker-build.stamp.txt : Dockerfile $(container_files) | $$(dir $$@)
+$(TMP)/docker-build.stamp.txt : Dockerfile $(container_files) $(source_files) | $$(dir $$@)
 	docker build \
 		--file $< \
 		--platform linux/amd64 \
