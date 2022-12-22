@@ -19,20 +19,8 @@ class News:
         self.modified = modified if modified else now
         self.is_modified = False
 
-    def __iadd__(self, other: 'News'):
-        for item in other:
-            if item.source in self.index:
-                # TODO: update item
-                pass
-            else:
-                self.items.append(item)
-                self.index[item.source] = item
-                self.modified = other.modified
-                self.is_modified = True
-        return self
-
     def __iter__(self) -> Iterable:
-        return reversed(self.items)
+        return iter(self.items)
 
     def __len__(self) -> int:
         return len(self.items)
@@ -43,7 +31,19 @@ class News:
     def __str__(self) -> str:
         return f'{len(self.items)} items updated on {self.modified}'
 
-    def prune(self, cutoff: datetime):
+    def add_new(self, other: 'News'):
+        for item in other:
+            if item.source in self.index:
+                # TODO: update item
+                pass
+            else:
+                self.items.insert(0, item)
+                self.index[item.source] = item
+                self.modified = other.modified
+                self.is_modified = True
+        return self
+
+    def remove_old(self, cutoff: datetime):
         items = []
         for item in self.items:
             if item.created > cutoff:

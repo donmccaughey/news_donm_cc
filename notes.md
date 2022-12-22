@@ -4,6 +4,7 @@
 
 - updating <time> tags with relative times
 - nginx content caching
+- in debug mode, disable HTTP caching
 - add source name, initials to source and item
 - gunicorn error logs
 - flask app logs

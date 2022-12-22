@@ -49,9 +49,9 @@ def main():
         cutoff = now - options.cutoff_days
 
         for source in sources:
-            news += source.get(now)
+            news.add_new(source.get(now))
 
-        news.prune(cutoff)
+        news.remove_old(cutoff)
 
         if news.is_modified:
             json = news.to_json()
