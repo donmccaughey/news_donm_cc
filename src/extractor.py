@@ -41,6 +41,8 @@ def main():
     news = News.from_json(
         cache.get() or store.get() or News().to_json()
     )
+    if not cache:
+        cache.put(news.to_json())
 
     while True:
         now = datetime.now(timezone.utc)
@@ -51,9 +53,11 @@ def main():
 
         news.prune(cutoff)
 
-        json = news.to_json()
-        cache.put(json)
-        store.put(json)
+        if news.is_modified:
+            json = news.to_json()
+            cache.put(json)
+            store.put(json)
+            news.is_modified = False
 
         if options.poll:
             sleep(options.poll_seconds)

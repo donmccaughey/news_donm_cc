@@ -16,6 +16,10 @@ all : build
 build : $(TMP)/docker-build.stamp.txt
 
 
+.PHONY : check
+check : $(TMP)/pytest.stamp.txt
+
+
 .PHONY : clean
 clean : stop
 	-docker rm $(NEWS)
@@ -57,8 +61,8 @@ stop :
 	rm -rf $(TMP)/docker-run.stamp.txt
 
 
-container_src := \
-	Dockerfile \
+container_files := \
+	.dockerignore \
 	requirements.txt \
 	nginx/nginx.conf \
 	nginx/default/404.html \
@@ -68,6 +72,9 @@ container_src := \
 	nginx/default/504.html \
 	nginx/default/index.html \
 	sbin/news \
+	$(source_files)
+
+source_files := \
 	src/extractor.py \
 	src/server.py \
 	src/news/__init__.py \
@@ -79,19 +86,16 @@ container_src := \
 	src/news/url.py \
 	src/templates/home.html
 
+test_files := \
+	src/news/news_test.py \
+	src/news/url_test.py
+
 
 $(TMP)/.env : | $$(dir $$@)
 	printf "AWS_ACCESS_KEY_ID=%s\n" "$(AWS_ACCESS_KEY_ID)" >> $@
 	printf "AWS_SECRET_ACCESS_KEY=%s\n" "$(AWS_SECRET_ACCESS_KEY)" >> $@
 	printf "AWS_DEFAULT_REGION=us-west-2\n" >> $@
 	chmod 600 $@
-
-
-$(TMP)/create-container-service-deployment.json : aws/create-container-service-deployment.template.json | $$(dir $$@)
-	sed \
-		-e "s/{{AWS_ACCESS_KEY_ID}}/$(AWS_ACCESS_KEY_ID)/g" \
-		-e "s/{{AWS_SECRET_ACCESS_KEY}}/$(AWS_SECRET_ACCESS_KEY)/g" \
-		$< > $@
 
 
 $(TMP)/aws-lightsail-create-container-service-deployment.stamp.txt : \
@@ -103,11 +107,18 @@ $(TMP)/aws-lightsail-create-container-service-deployment.stamp.txt : \
 		--output json \
 		--region us-west-2 \
 		--service-name news \
-		> $@ \
-		|| ( cat $@ && rm $@ && false )
+		> $(TMP)/lightsail-deployment.json
+	date > $@
 
 
-$(TMP)/docker-build.stamp.txt : $(container_src) | $$(dir $$@)
+$(TMP)/create-container-service-deployment.json : aws/create-container-service-deployment.template.json | $$(dir $$@)
+	sed \
+		-e "s/{{AWS_ACCESS_KEY_ID}}/$(AWS_ACCESS_KEY_ID)/g" \
+		-e "s/{{AWS_SECRET_ACCESS_KEY}}/$(AWS_SECRET_ACCESS_KEY)/g" \
+		$< > $@
+
+
+$(TMP)/docker-build.stamp.txt : Dockerfile $(container_files) | $$(dir $$@)
 	docker build \
 		--file $< \
 		--platform linux/amd64 \
@@ -140,7 +151,32 @@ $(TMP)/docker-run.stamp.txt : \
 		--platform linux/amd64 \
 		--publish 8000:80 \
 		--rm \
-		$(NEWS) > $@
+		$(NEWS)
+	date > $@
+
+
+$(TMP)/pip-install-requirements.stamp.txt : requirements.txt | $$(dir $$@)
+	python3 -m pip install \
+		--quiet --quiet --quiet \
+		--requirement requirements.txt
+	date > $@
+
+
+$(TMP)/pip-install-dev-requirements.stamp.txt : dev-requirements.txt | $$(dir $$@)
+	python3 -m pip install \
+		--quiet --quiet --quiet \
+		--requirement dev-requirements.txt
+	date > $@
+
+
+$(TMP)/pytest.stamp.txt : \
+		$(source_files) \
+		$(test_files) \
+		$(TMP)/pip-install-requirements.stamp.txt \
+		$(TMP)/pip-install-dev-requirements.stamp.txt \
+		| $$(dir $$@)
+	python3 -m pytest --quiet --quiet
+	date > $@
 
 
 $(TMP)/ :

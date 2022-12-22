@@ -18,7 +18,7 @@ COPY src /usr/local/news
 RUN mkdir -p /var/news
 
 WORKDIR /usr/local/news
-RUN pip install -r requirements.txt
+RUN python3 -m pip install --quiet --quiet --quiet --requirement requirements.txt
 
 WORKDIR /root
 ENTRYPOINT ["/usr/local/sbin/news"]

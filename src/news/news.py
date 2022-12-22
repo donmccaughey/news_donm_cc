@@ -17,6 +17,7 @@ class News:
         now = datetime.now(timezone.utc)
         self.created = created if created else now
         self.modified = modified if modified else now
+        self.is_modified = False
 
     def __iadd__(self, other: 'News'):
         for item in other:
@@ -27,19 +28,29 @@ class News:
                 self.items.append(item)
                 self.index[item.source] = item
                 self.modified = other.modified
+                self.is_modified = True
         return self
 
     def __iter__(self) -> Iterable:
         return iter(self.items)
 
+    def __len__(self) -> int:
+        return len(self.items)
+
     def __repr__(self) -> str:
-        return f'Items<count = {len(self.items)}>'
+        return f'News<count = {len(self.items)}>'
 
     def __str__(self) -> str:
         return f'{len(self.items)} items updated on {self.modified}'
 
     def prune(self, cutoff: datetime):
-        self.items = [item for item in self.items if item.created > cutoff]
+        items = []
+        for item in self.items:
+            if item.created > cutoff:
+                items.append(item)
+            else:
+                self.is_modified = True
+        self.items = items
 
     @staticmethod
     def decode(encoded: dict) -> 'News':

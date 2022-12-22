@@ -2,7 +2,9 @@
 
 ## To Do
 
-- reverse-proxying of flask app by nginx
+- pagination of results
+- updating <time> tags with relative times
+- nginx content caching
 - add source name, initials to source and item
 - gunicorn error logs
 - flask app logs
