@@ -38,7 +38,8 @@ def home() -> Response:
 @app.route('/all', methods=['GET', 'HEAD'])
 def all() -> Response:
     news = News.from_json(cache.get() or News().to_json())
-    html = render_template('home.html', news=news, page=news, item_count=0)
+    page = Page.one_page(news)
+    html = render_template('home.html', news=news, page=page, item_count=0)
     response = make_response(html)
 
     response.add_etag()

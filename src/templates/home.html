@@ -12,6 +12,16 @@
     a:visited {
         color: gray;
     }
+    body {
+        margin: 1.5em auto 0 auto;
+        max-width: 40em;
+    }
+    footer {
+        padding: 0 1.5em 1.5em 1.5em;
+    }
+    header {
+        padding: 0 1.5em 0.5em 1.5em;
+    }
     html {
         background: white;
         border: 0;
@@ -26,8 +36,8 @@
     li:before {
         content: counter(item) ". ";
         counter-increment: item;
-        margin-left: -2em;
-        width: 2em;
+        margin-left: -1.5em;
+        width: 1.5em;
     }
     li p {
         border: 0;
@@ -37,8 +47,6 @@
         padding: 0.25em 0;
     }
     main {
-        margin: 1.5em auto 0 auto;
-        max-width: 40em;
         padding: 0 1em;
     }
     ol {
@@ -74,25 +82,25 @@
         }
     }
 </style>
-<main>
+<header>
     <h1>News</h1>
-    <header>
-        {{news.items|count}} items updated
-        <time datetime={{news.modified|iso}}>{{news.modified|utc}}</time>
-        <span class=page-control>
-            {% if first_url %}
-            <a href={{first_url}}>first</a>
-            {% else %}
-            <span class=inactive>first</span>
-            {% endif %}
-            —
-            {% if previous_url %}
-            <a href={{previous_url}}>previous</a>
-            {% else %}
-            <span class=inactive>previous</span>
-            {% endif %}
-            </span>
-    </header>
+    {{news.items|count}} items updated
+    <time datetime={{news.modified|iso}}>{{news.modified|utc}}</time>
+    <span class=page-control>
+        {% if first_url %}
+        <a href={{first_url}}>first</a>
+        {% else %}
+        <span class=inactive>first</span>
+        {% endif %}
+        —
+        {% if previous_url %}
+        <a href={{previous_url}}>previous</a>
+        {% else %}
+        <span class=inactive>previous</span>
+        {% endif %}
+        </span>
+</header>
+<main>
     <ol>
     {% for item in page %}
         <li>
@@ -105,19 +113,20 @@
                 <time datetime={{item.created|iso}}>{{item.created|utc}}</time>
     {% endfor %}
     </ol>
-    <footer>
-        <span class=page-control>
-            {% if last_url %}
-            <a href={{last_url}}>last</a>
-            {% else %}
-            <span class=inactive>last</span>
-            {% endif %}
-            —
-            {% if next_url %}
-            <a href={{next_url}}>next</a>
-            {% else %}
-            <span class=inactive>next</span>
-            {% endif %}
-        </span>
-    </footer>
 </main>
+<footer>
+    page {{page.number}} of {{page.count}}
+    <span class=page-control>
+        {% if last_url %}
+        <a href={{last_url}}>last</a>
+        {% else %}
+        <span class=inactive>last</span>
+        {% endif %}
+        —
+        {% if next_url %}
+        <a href={{next_url}}>next</a>
+        {% else %}
+        <span class=inactive>next</span>
+        {% endif %}
+    </span>
+</footer>

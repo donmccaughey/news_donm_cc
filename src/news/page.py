@@ -49,3 +49,7 @@ class Page:
             return Page(self.news, self.number - 1, self.items_per_page)
         else:
             return None
+
+    @classmethod
+    def one_page(cls, news: News) -> 'Page':
+        return Page(news, 1, len(news))
