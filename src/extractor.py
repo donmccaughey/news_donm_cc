@@ -1,14 +1,9 @@
 import argparse
 
 from datetime import datetime, timedelta, timezone
-from news import Cache, News, NoStore, Source, S3Store, URL
+from news import Cache, DaringFireball, HackerNews, News, NoStore, S3Store
 from pathlib import Path
 from time import sleep
-
-
-sources = [
-    Source(URL('https://news.ycombinator.com/rss')),
-]
 
 
 def cutoff_days(arg: str) -> timedelta:
@@ -44,10 +39,12 @@ def main():
     if not cache.is_present:
         cache.put(news.to_json())
 
+    sites = [DaringFireball(), HackerNews()]
+
     while True:
         now = datetime.now(timezone.utc)
-        for source in sources:
-            news.add_new(source.get(now))
+        for site in sites:
+            news.add_new(site.get(now))
 
         cutoff = now - options.cutoff_days
         news.remove_old(cutoff)

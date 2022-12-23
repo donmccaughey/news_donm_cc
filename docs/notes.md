@@ -2,7 +2,6 @@
 
 ## To Do
 
-- updating <time> tags with relative times
 - nginx content caching
 - in debug mode, disable HTTP caching
 - add source name, initials to source and item
@@ -23,6 +22,18 @@
   - pay walls to https://archive.ph
     - wsj
     - economist
+
+
+## News Feeds
+
+- Hacker News https://news.ycombinator.com/rss
+
+- Daring Fireball https://daringfireball.net/feeds/main
+      or https://daringfireball.net/feeds/json
+
+  df sponsor links look like:
+    https://daringfireball.net/feeds/sponsors/2022/12/retool_5
+    https://daringfireball.net/feeds/sponsors/2022/12/kolide_5
 
 
 ## Docker

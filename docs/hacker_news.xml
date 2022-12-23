@@ -1,0 +1,277 @@
+<rss version="2.0">
+	<channel>
+		<title>Hacker News</title>
+		<link>https://news.ycombinator.com/</link>
+		<description>Links for the intellectually curious, ranked by readers.</description>
+		<item>
+			<title>Can Doom Run It? An Adding Machine in Doom</title>
+			<link>https://blog.otterstack.com/posts/202212-doom-calculator/</link>
+			<pubDate>Fri, 23 Dec 2022 04:46:57 +0000</pubDate>
+			<comments>https://news.ycombinator.com/item?id=34102419</comments>
+			<description>
+				<![CDATA[<a href="https://news.ycombinator.com/item?id=34102419">Comments</a>]]>
+			</description>
+		</item>
+		<item>
+			<title>Serverless Video Transcription inspired by Cyberpunk 2077</title>
+			<link>https://github.com/elanmart/cbp-translate</link>
+			<pubDate>Thu, 22 Dec 2022 22:20:18 +0000</pubDate>
+			<comments>https://news.ycombinator.com/item?id=34099641</comments>
+			<description>
+				<![CDATA[<a href="https://news.ycombinator.com/item?id=34099641">Comments</a>]]>
+			</description>
+		</item>
+		<item>
+			<title>A book teaching assembly language programming on the ARM 64 bit ISA</title>
+			<link>https://github.com/pkivolowitz/asm_book</link>
+			<pubDate>Fri, 23 Dec 2022 06:51:50 +0000</pubDate>
+			<comments>https://news.ycombinator.com/item?id=34102962</comments>
+			<description>
+				<![CDATA[<a href="https://news.ycombinator.com/item?id=34102962">Comments</a>]]>
+			</description>
+		</item>
+		<item>
+			<title>Nix on the Steam Deck</title>
+			<link>https://determinate.systems/posts/nix-on-the-steam-deck</link>
+			<pubDate>Fri, 23 Dec 2022 06:19:06 +0000</pubDate>
+			<comments>https://news.ycombinator.com/item?id=34102816</comments>
+			<description>
+				<![CDATA[<a href="https://news.ycombinator.com/item?id=34102816">Comments</a>]]>
+			</description>
+		</item>
+		<item>
+			<title>Jazz.Computer</title>
+			<link>http://jazz.computer/</link>
+			<pubDate>Wed, 21 Dec 2022 20:56:13 +0000</pubDate>
+			<comments>https://news.ycombinator.com/item?id=34086273</comments>
+			<description>
+				<![CDATA[<a href="https://news.ycombinator.com/item?id=34086273">Comments</a>]]>
+			</description>
+		</item>
+		<item>
+			<title>PicoCAD – A tiny modeller for tiny models</title>
+			<link>https://johanpeitz.itch.io/picocad</link>
+			<pubDate>Fri, 23 Dec 2022 01:23:40 +0000</pubDate>
+			<comments>https://news.ycombinator.com/item?id=34101251</comments>
+			<description>
+				<![CDATA[<a href="https://news.ycombinator.com/item?id=34101251">Comments</a>]]>
+			</description>
+		</item>
+		<item>
+			<title>The simplest app that makes money</title>
+			<link>https://billprin.com/2022/12/07/simpest-app-that-makes-money.html</link>
+			<pubDate>Fri, 23 Dec 2022 00:49:39 +0000</pubDate>
+			<comments>https://news.ycombinator.com/item?id=34101016</comments>
+			<description>
+				<![CDATA[<a href="https://news.ycombinator.com/item?id=34101016">Comments</a>]]>
+			</description>
+		</item>
+		<item>
+			<title>Password Requirements: Myths and Madness</title>
+			<link>https://www.franzoni.eu/password-requirements-myths-madness/</link>
+			<pubDate>Thu, 22 Dec 2022 20:42:24 +0000</pubDate>
+			<comments>https://news.ycombinator.com/item?id=34098369</comments>
+			<description>
+				<![CDATA[<a href="https://news.ycombinator.com/item?id=34098369">Comments</a>]]>
+			</description>
+		</item>
+		<item>
+			<title>Infinite Canvas</title>
+			<link>https://infinitecanvas.tools/</link>
+			<pubDate>Thu, 22 Dec 2022 18:29:24 +0000</pubDate>
+			<comments>https://news.ycombinator.com/item?id=34096668</comments>
+			<description>
+				<![CDATA[<a href="https://news.ycombinator.com/item?id=34096668">Comments</a>]]>
+			</description>
+		</item>
+		<item>
+			<title>Hyperpaper Planner: fully interlinked dayplanner for e-ink tablets</title>
+			<link>https://hyperpaper.me</link>
+			<pubDate>Fri, 23 Dec 2022 00:13:07 +0000</pubDate>
+			<comments>https://news.ycombinator.com/item?id=34100752</comments>
+			<description>
+				<![CDATA[<a href="https://news.ycombinator.com/item?id=34100752">Comments</a>]]>
+			</description>
+		</item>
+		<item>
+			<title>Emulating an iPod Touch 1G and iPhoneOS 1.0 using QEMU (Part I)</title>
+			<link>https://devos50.github.io/blog/2022/ipod-touch-qemu/</link>
+			<pubDate>Thu, 22 Dec 2022 17:22:01 +0000</pubDate>
+			<comments>https://news.ycombinator.com/item?id=34095830</comments>
+			<description>
+				<![CDATA[<a href="https://news.ycombinator.com/item?id=34095830">Comments</a>]]>
+			</description>
+		</item>
+		<item>
+			<title>Bunny AI</title>
+			<link>https://bunny.net/blog/introducing-bunny-optimizer-ai-a-new-way-of-creating-content/</link>
+			<pubDate>Thu, 22 Dec 2022 19:22:35 +0000</pubDate>
+			<comments>https://news.ycombinator.com/item?id=34097324</comments>
+			<description>
+				<![CDATA[<a href="https://news.ycombinator.com/item?id=34097324">Comments</a>]]>
+			</description>
+		</item>
+		<item>
+			<title>Not Getting Hacked</title>
+			<link>https://www.jefftk.com/p/not-getting-hacked</link>
+			<pubDate>Thu, 22 Dec 2022 13:22:44 +0000</pubDate>
+			<comments>https://news.ycombinator.com/item?id=34092956</comments>
+			<description>
+				<![CDATA[<a href="https://news.ycombinator.com/item?id=34092956">Comments</a>]]>
+			</description>
+		</item>
+		<item>
+			<title>Pico8 Music Synthesizer</title>
+			<link>https://johanpeitz.itch.io/picosynth</link>
+			<pubDate>Thu, 22 Dec 2022 20:06:52 +0000</pubDate>
+			<comments>https://news.ycombinator.com/item?id=34097936</comments>
+			<description>
+				<![CDATA[<a href="https://news.ycombinator.com/item?id=34097936">Comments</a>]]>
+			</description>
+		</item>
+		<item>
+			<title>How Pitfall builds its world (2021)</title>
+			<link>https://evoniuk.github.io/posts/pitfall.html</link>
+			<pubDate>Thu, 22 Dec 2022 17:30:42 +0000</pubDate>
+			<comments>https://news.ycombinator.com/item?id=34095954</comments>
+			<description>
+				<![CDATA[<a href="https://news.ycombinator.com/item?id=34095954">Comments</a>]]>
+			</description>
+		</item>
+		<item>
+			<title>Tesla shares tank after U.S. discounts doubled on key models</title>
+			<link>https://www.reuters.com/business/autos-transportation/tesla-offers-discount-some-car-models-us-canada-2022-12-22/</link>
+			<pubDate>Fri, 23 Dec 2022 06:19:06 +0000</pubDate>
+			<comments>https://news.ycombinator.com/item?id=34102818</comments>
+			<description>
+				<![CDATA[<a href="https://news.ycombinator.com/item?id=34102818">Comments</a>]]>
+			</description>
+		</item>
+		<item>
+			<title>Washington Needs a Crypto Rethink</title>
+			<link>https://www.newyorker.com/news/our-columnists/washington-needs-a-crypto-rethink</link>
+			<pubDate>Fri, 23 Dec 2022 03:37:35 +0000</pubDate>
+			<comments>https://news.ycombinator.com/item?id=34102099</comments>
+			<description>
+				<![CDATA[<a href="https://news.ycombinator.com/item?id=34102099">Comments</a>]]>
+			</description>
+		</item>
+		<item>
+			<title>Linux Kernel Ksmbd Use-After-Free Remote Code Execution Vulnerability</title>
+			<link>https://www.zerodayinitiative.com/advisories/ZDI-22-1690/</link>
+			<pubDate>Thu, 22 Dec 2022 21:15:39 +0000</pubDate>
+			<comments>https://news.ycombinator.com/item?id=34098804</comments>
+			<description>
+				<![CDATA[<a href="https://news.ycombinator.com/item?id=34098804">Comments</a>]]>
+			</description>
+		</item>
+		<item>
+			<title>Generally Intelligent (YC S17) Is Hiring Systems Engineers</title>
+			<link>https://news.ycombinator.com/item?id=34101086</link>
+			<pubDate>Fri, 23 Dec 2022 01:00:14 +0000</pubDate>
+			<comments>https://news.ycombinator.com/item?id=34101086</comments>
+			<description>
+				<![CDATA[<a href="https://news.ycombinator.com/item?id=34101086">Comments</a>]]>
+			</description>
+		</item>
+		<item>
+			<title>SantaCoder: A new 1.1B code model for generation and infilling</title>
+			<link>https://huggingface.co/spaces/bigcode/santacoder-demo</link>
+			<pubDate>Thu, 22 Dec 2022 19:45:44 +0000</pubDate>
+			<comments>https://news.ycombinator.com/item?id=34097642</comments>
+			<description>
+				<![CDATA[<a href="https://news.ycombinator.com/item?id=34097642">Comments</a>]]>
+			</description>
+		</item>
+		<item>
+			<title>40 Years of PCMag: An Illustrated Guide</title>
+			<link>https://www.pcmag.com/news/40-years-of-pcmag-an-illustrated-guide</link>
+			<pubDate>Thu, 22 Dec 2022 22:03:57 +0000</pubDate>
+			<comments>https://news.ycombinator.com/item?id=34099446</comments>
+			<description>
+				<![CDATA[<a href="https://news.ycombinator.com/item?id=34099446">Comments</a>]]>
+			</description>
+		</item>
+		<item>
+			<title>Implementing the MySQL server protocol for fun and profit</title>
+			<link>https://ochagavia.nl/blog/implementing-the-mysql-server-protocol-for-fun-and-profit/</link>
+			<pubDate>Thu, 22 Dec 2022 15:44:14 +0000</pubDate>
+			<comments>https://news.ycombinator.com/item?id=34094471</comments>
+			<description>
+				<![CDATA[<a href="https://news.ycombinator.com/item?id=34094471">Comments</a>]]>
+			</description>
+		</item>
+		<item>
+			<title>Searching a data breach with ElasticSearch</title>
+			<link>https://adamfallon.com/databreach/csv/elasticsearch/2022/12/22/elasticsearch-facebook-data-leak.html</link>
+			<pubDate>Thu, 22 Dec 2022 19:09:30 +0000</pubDate>
+			<comments>https://news.ycombinator.com/item?id=34097166</comments>
+			<description>
+				<![CDATA[<a href="https://news.ycombinator.com/item?id=34097166">Comments</a>]]>
+			</description>
+		</item>
+		<item>
+			<title>Notice of Recent Security Incident [updated]</title>
+			<link>https://blog.lastpass.com/2022/12/notice-of-recent-security-incident/</link>
+			<pubDate>Thu, 22 Dec 2022 19:07:27 +0000</pubDate>
+			<comments>https://news.ycombinator.com/item?id=34097142</comments>
+			<description>
+				<![CDATA[<a href="https://news.ycombinator.com/item?id=34097142">Comments</a>]]>
+			</description>
+		</item>
+		<item>
+			<title>Personal newsletters as a calmer alternative to social networks</title>
+			<link>https://www.philipithomas.com/posts/why-i-built-postcard-a-calmer-alternative-to-social-networks</link>
+			<pubDate>Wed, 21 Dec 2022 19:20:16 +0000</pubDate>
+			<comments>https://news.ycombinator.com/item?id=34085127</comments>
+			<description>
+				<![CDATA[<a href="https://news.ycombinator.com/item?id=34085127">Comments</a>]]>
+			</description>
+		</item>
+		<item>
+			<title>UnifiedPush: A decentralized, open-source push notification protocol</title>
+			<link>https://f-droid.org/2022/12/18/unifiedpush.html</link>
+			<pubDate>Thu, 22 Dec 2022 15:45:57 +0000</pubDate>
+			<comments>https://news.ycombinator.com/item?id=34094497</comments>
+			<description>
+				<![CDATA[<a href="https://news.ycombinator.com/item?id=34094497">Comments</a>]]>
+			</description>
+		</item>
+		<item>
+			<title>Docker on MacOS is slow and how to fix it</title>
+			<link>https://www.paolomainardi.com/posts/docker-performance-macos/</link>
+			<pubDate>Thu, 22 Dec 2022 20:42:12 +0000</pubDate>
+			<comments>https://news.ycombinator.com/item?id=34098367</comments>
+			<description>
+				<![CDATA[<a href="https://news.ycombinator.com/item?id=34098367">Comments</a>]]>
+			</description>
+		</item>
+		<item>
+			<title>Don&#x27;t call yourself a programmer, and other career advice (2011)</title>
+			<link>https://www.kalzumeus.com/2011/10/28/dont-call-yourself-a-programmer/</link>
+			<pubDate>Thu, 22 Dec 2022 17:17:46 +0000</pubDate>
+			<comments>https://news.ycombinator.com/item?id=34095775</comments>
+			<description>
+				<![CDATA[<a href="https://news.ycombinator.com/item?id=34095775">Comments</a>]]>
+			</description>
+		</item>
+		<item>
+			<title>NuttX RTOS for PinePhone: Display Engine</title>
+			<link>https://lupyuen.github.io/articles/de3</link>
+			<pubDate>Thu, 22 Dec 2022 23:55:35 +0000</pubDate>
+			<comments>https://news.ycombinator.com/item?id=34100614</comments>
+			<description>
+				<![CDATA[<a href="https://news.ycombinator.com/item?id=34100614">Comments</a>]]>
+			</description>
+		</item>
+		<item>
+			<title>Do simpler machine learning models exist and how can we find them?</title>
+			<link>https://statmodeling.stat.columbia.edu/2022/12/22/do-simpler-machine-learning-models-exist-and-how-can-we-find-them/</link>
+			<pubDate>Thu, 22 Dec 2022 18:56:34 +0000</pubDate>
+			<comments>https://news.ycombinator.com/item?id=34096988</comments>
+			<description>
+				<![CDATA[<a href="https://news.ycombinator.com/item?id=34096988">Comments</a>]]>
+			</description>
+		</item>
+	</channel>
+</rss>
