@@ -52,6 +52,7 @@ class News:
                 items.append(item)
             else:
                 self.is_modified = True
+                del self.index[item.source]
         self.items = items
 
     @staticmethod

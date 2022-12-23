@@ -19,55 +19,80 @@ def test_str_and_repr():
 
 def test_add_new():
     news = News()
-    empty_news = News()
-    new_news1 = News([item1, item2])
-    new_news2 = News([item3, item4])
 
-    assert not news.is_modified
-
-    news.add_new(empty_news)
-
-    assert not news.is_modified
-
-    news.add_new(new_news1)
+    news.add_new(News([item1, item2]))
 
     assert news.is_modified
     assert len(news) == 2
     assert list(news) == [item2, item1]
 
-    news.is_modified = False
-    news.add_new(new_news2)
+
+def test_add_new_for_empty():
+    news = News()
+
+    news.add_new(News())
+
+    assert not news.is_modified
+
+
+def test_add_new_for_all_duplicates():
+    news = News([item1, item2, item3, item4])
+
+    news.add_new(News([item1, item2]))
+
+    assert not news.is_modified
+    assert len(news) == 4
+
+
+def test_add_new_for_some_duplicates():
+    news = News([item1, item3, item4])
+
+    news.add_new(News([item1, item2]))
 
     assert news.is_modified
     assert len(news) == 4
-    assert list(news) == [item4, item3, item2, item1]
+    assert list(news) == [item2, item1, item3, item4]
 
 
 def test_remove_old():
+    news = News([item3, item1_old, item2])
     now = datetime.now(timezone.utc)
-    cutoff = now - timedelta(days=5)
-    old = now - timedelta(days=6)
-    old_item = Item(URL('https://example.com/item-old'), 'Old Item', URL('https://source.com/old'), created=old, modified=old)
 
-    news = News([item1, old_item, item2])
-
-    assert not news.is_modified
-    assert len(news) == 3
-
-    news.remove_old(cutoff)
+    news.remove_old(now - FIVE_DAYS)
 
     assert news.is_modified
     assert len(news) == 2
 
-    news.is_modified = False
-    news.remove_old(cutoff)
+
+def test_remove_old_when_none_expired():
+    now = datetime.now(timezone.utc)
+    news = News([item3, item1, item2])
+
+    news.remove_old(now - FIVE_DAYS)
 
     assert not news.is_modified
-    assert len(news) == 2
 
+
+def test_remove_old_and_add_new_duplicate_item():
+    now = datetime.now(timezone.utc)
+    news = News([item3, item1_old, item2])
+    news.remove_old(now - FIVE_DAYS)
+
+    news.add_new(News([item1]))
+
+    assert len(news) == 3
+
+
+FIVE_DAYS = timedelta(days=5)
+SIX_DAYS = timedelta(days=6)
 
 item1 = Item(
     URL('https://example.com/item1'), 'Item 1', URL('https://source.com/1')
+)
+
+item1_old = Item(
+    URL('https://example.com/item1'), 'Item 1', URL('https://source.com/1'),
+    item1.created - SIX_DAYS, item1.modified - SIX_DAYS
 )
 
 item2 = Item(

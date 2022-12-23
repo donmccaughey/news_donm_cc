@@ -19,6 +19,12 @@ class Item:
         self.created = created if created else now
         self.modified = modified if modified else now
 
+    def __eq__(self, other: 'Item') -> bool:
+        return self.url == other.url
+
+    def __hash__(self) -> int:
+        return hash(self.url)
+
     def __repr__(self) -> str:
         return f"Item(URL('{self.url}'), '{self.title}', URL('{self.source}'))"
 

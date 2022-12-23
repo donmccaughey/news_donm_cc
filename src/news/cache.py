@@ -7,11 +7,12 @@ class Cache:
         self.mtime = None
         self.json = ''
 
-    def __bool__(self) -> bool:
-        return self.json != ''
-
     def __repr__(self) -> str:
         return f"Cache(Path('{self.path}'))"
+
+    @property
+    def is_present(self) -> bool:
+        return self.mtime is not None
 
     def get(self) -> str:
         if self.path.is_file():

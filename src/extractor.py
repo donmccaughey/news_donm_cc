@@ -41,16 +41,15 @@ def main():
     news = News.from_json(
         cache.get() or store.get() or News().to_json()
     )
-    if not cache:
+    if not cache.is_present:
         cache.put(news.to_json())
 
     while True:
         now = datetime.now(timezone.utc)
-        cutoff = now - options.cutoff_days
-
         for source in sources:
             news.add_new(source.get(now))
 
+        cutoff = now - options.cutoff_days
         news.remove_old(cutoff)
 
         if news.is_modified:
