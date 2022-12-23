@@ -130,7 +130,7 @@
 </style>
 <header>
     <h1>News</h1>
-    {{news.items|count}} items updated
+    updated
     <time datetime={{news.modified|iso}}>{{news.modified|utc}}</time>
     <span class=page-control>
         {% if first_url %}
@@ -140,7 +140,7 @@
         {% endif %}
         —
         {% if previous_url %}
-        <a href={{previous_url}}>previous</a>
+        <a href={{previous_url}} rel=prev>previous</a>
         {% else %}
         <span class=inactive>previous</span>
         {% endif %}
@@ -170,7 +170,7 @@
         {% endif %}
         —
         {% if next_url %}
-        <a href={{next_url}}>next</a>
+        <a href={{next_url}} rel=next>next</a>
         {% else %}
         <span class=inactive>next</span>
         {% endif %}
