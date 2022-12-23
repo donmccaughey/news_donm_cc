@@ -7,12 +7,12 @@ from .item import Item
 
 class News:
     def __init__(self,
-                 items: list[Item] | None = None,
+                 items: list[Item] = [],
                  created: datetime | None = None,
                  modified: datetime | None = None,
                  ):
-        self.items = items if items else []
-        self.index = {item.source: item for item in items} if items else {}
+        self.items = list(items)
+        self.index = set(items)
 
         now = datetime.now(timezone.utc)
         self.created = created if created else now
@@ -35,12 +35,9 @@ class News:
 
     def add_new(self, other: 'News'):
         for item in other:
-            if item.source in self.index:
-                # TODO: update item
-                pass
-            else:
+            if item not in self.index:
                 self.items.insert(0, item)
-                self.index[item.source] = item
+                self.index.add(item)
                 self.modified = other.modified
                 self.is_modified = True
         return self
@@ -52,7 +49,7 @@ class News:
                 items.append(item)
             else:
                 self.is_modified = True
-                del self.index[item.source]
+                self.index.remove(item)
         self.items = items
 
     @staticmethod
