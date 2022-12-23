@@ -10,6 +10,9 @@ class Cache:
     def __bool__(self) -> bool:
         return self.json != ''
 
+    def __repr__(self) -> str:
+        return f"Cache(Path('{self.path}'))"
+
     def get(self) -> str:
         if self.path.is_file():
             mtime = self.path.stat().st_mtime

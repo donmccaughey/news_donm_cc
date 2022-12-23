@@ -13,7 +13,7 @@ class Source:
         self.modified = None
 
     def __repr__(self) -> str:
-        return f'Source<{self.url}>'
+        return f"Source(URL('{self.url}'))"
 
     def __str__(self) -> str:
         return str(self.url)

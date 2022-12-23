@@ -156,11 +156,10 @@ def test_str_and_repr():
     news = News([item1, item2, item3, item4])
     page = Page(news, page_number=1, items_per_page=3)
 
-    assert 'Page 1 of 2' == str(page)
-    assert 'Page<size=3, start=1>' == repr(page)
+    assert str(page) == 'Page 1 of 2'
+    assert repr(page) == '<Page 1 of 2, items[0:3]>'
 
-    # TODO page = page.next
-    # ...
+    assert repr(page.next) == '<Page 2 of 2, items[3:4]>'
 
 
 item1 = Item(

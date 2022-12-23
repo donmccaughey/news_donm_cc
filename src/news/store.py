@@ -6,6 +6,9 @@ from io import BytesIO
 
 
 class NoStore:
+    def __repr__(self) -> str:
+        return 'NoStore()'
+
     def get(self) -> str:
         return ''
 
@@ -14,10 +17,13 @@ class NoStore:
 
 
 class S3Store:
-    def __init__(self):
-        self.bucket = 'news.donm.cc'
-        self.object = 'news.json'
+    def __init__(self, bucket: str = 'news.donm.cc', object: str = 'news.json'):
+        self.bucket = bucket
+        self.object = object
         self.s3 = boto3.client('s3')
+
+    def __repr__(self) -> str:
+        return f"S3Store('{self.bucket}', '{self.object}')"
 
     def get(self) -> str:
         buffer = BytesIO()

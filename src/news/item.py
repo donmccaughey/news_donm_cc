@@ -20,10 +20,10 @@ class Item:
         self.modified = modified if modified else now
 
     def __repr__(self) -> str:
-        return f'Item<{self.source}>'
+        return f"Item(URL('{self.url}'), '{self.title}', URL('{self.source}'))"
 
     def __str__(self) -> str:
-        return f'"{self.title}" ({self.source})'
+        return f'"{self.title}" ({self.url})'
 
     @staticmethod
     def decode(encoded: dict[str, str]) -> 'Item':

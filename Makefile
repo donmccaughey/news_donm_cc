@@ -87,8 +87,12 @@ source_files := \
 	src/templates/home.html
 
 test_files := \
+	src/news/cache_test.py \
+	src/news/item_test.py \
 	src/news/news_test.py \
 	src/news/page_test.py \
+	src/news/source_test.py \
+	src/news/store_test.py \
 	src/news/url_test.py
 
 

@@ -24,7 +24,7 @@ class Page:
         return self.end - self.begin
 
     def __repr__(self) -> str:
-        return f'Page<size={self.items_per_page}, start={self.number}>'
+        return f'<Page {self.number} of {self.count}, items[{self.begin}:{self.end}]>'
 
     def __str__(self) -> str:
         return f'Page {self.number} of {self.count}'

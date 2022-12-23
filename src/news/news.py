@@ -11,8 +11,8 @@ class News:
                  created: datetime | None = None,
                  modified: datetime | None = None,
                  ):
-        self.items = items if items else list()
-        self.index = {item.source: item for item in items} if items else dict()
+        self.items = items if items else []
+        self.index = {item.source: item for item in items} if items else {}
 
         now = datetime.now(timezone.utc)
         self.created = created if created else now
@@ -26,10 +26,12 @@ class News:
         return len(self.items)
 
     def __repr__(self) -> str:
-        return f'News<count = {len(self.items)}>'
+        modified = ', modified' if self.is_modified else ''
+        return f'<News: {len(self.items)} items{modified}>'
 
     def __str__(self) -> str:
-        return f'{len(self.items)} items updated on {self.modified}'
+        modified = ' (modified)' if self.is_modified else ''
+        return f'{len(self.items)} news items{modified}'
 
     def add_new(self, other: 'News'):
         for item in other:

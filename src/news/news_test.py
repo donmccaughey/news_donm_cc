@@ -5,6 +5,18 @@ from .news import News
 from .url import URL
 
 
+def test_str_and_repr():
+    news = News([item1, item2, item3])
+
+    assert str(news) == '3 news items'
+    assert repr(news) == '<News: 3 items>'
+
+    news.is_modified = True
+
+    assert str(news) == '3 news items (modified)'
+    assert repr(news) == '<News: 3 items, modified>'
+
+
 def test_add_new():
     news = News()
     empty_news = News()
