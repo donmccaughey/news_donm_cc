@@ -4,6 +4,52 @@
 <meta charset=utf-8>
 <meta name=viewport content='initial-scale=0.9, width=device-width'>
 <title>News</title>
+<script>
+    function timeAgo(elapsed_ms) {
+        const SEC = 1000; // ms
+        const MIN = 60 * SEC;
+        const HOUR = 60 * MIN;
+        const DAY = 24 * HOUR;
+
+        let age = 0;
+        let unit = '';
+
+        if (elapsed_ms < MIN) {
+            age = Math.floor(elapsed_ms / SEC);
+            unit = 'second';
+        } else if (elapsed_ms < HOUR) {
+            age = Math.floor(elapsed_ms / MIN);
+            unit = 'minute';
+        } else if (elapsed_ms < DAY) {
+            age = Math.floor(elapsed_ms / HOUR);
+            unit = 'hour';
+        } else {
+            age = Math.floor(elapsed_ms / DAY);
+            unit = 'day';
+        }
+
+        let plural = (age === 1) ? '' : 's';
+        return '' + age + ' ' + unit + plural + ' ago';
+    }
+
+    function updateTimes() {
+        const now = Date.now();
+        const times = document.querySelectorAll('time');
+        for (time of times) {
+            const iso = time.getAttribute('datetime');
+            const then = Date.parse(iso);
+            const elapsed_ms = now - then;
+            time.innerText = timeAgo(elapsed_ms);
+        }
+    }
+
+    let intervalID = 0;
+
+    window.addEventListener('DOMContentLoaded', () => {
+        window.setTimeout(updateTimes);
+        intervalID = window.setInterval(updateTimes, 5000);
+    });
+</script>
 <style>
     a {
         color: black;
