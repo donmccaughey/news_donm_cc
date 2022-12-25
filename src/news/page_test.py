@@ -1,6 +1,7 @@
 from .item import Item
 from .news import News
 from .page import Page
+from .source import Source
 from .url import URL
 
 
@@ -163,29 +164,29 @@ def test_str_and_repr():
 
 
 item1 = Item(
-    URL('https://example.com/item1'), 'Item 1', URL('https://source.com/1')
+    URL('https://example.com/item1'), 'Item 1', Source(URL('https://source.com/1'), 'so')
 )
 
 item2 = Item(
-    URL('https://example.com/item2'), 'Item 2', URL('https://source.com/2')
+    URL('https://example.com/item2'), 'Item 2', Source(URL('https://source.com/2'), 'so')
 )
 
 item3 = Item(
-    URL('https://example.com/item3'), 'Item 3', URL('https://source.com/3')
+    URL('https://example.com/item3'), 'Item 3', Source(URL('https://source.com/3'), 'so')
 )
 
 item4 = Item(
-    URL('https://example.com/item4'), 'Item 4', URL('https://source.com/4')
+    URL('https://example.com/item4'), 'Item 4', Source(URL('https://source.com/4'), 'so')
 )
 
 item5 = Item(
-    URL('https://example.com/item5'), 'Item 5', URL('https://source.com/5')
+    URL('https://example.com/item5'), 'Item 5', Source(URL('https://source.com/5'), 'so')
 )
 
 item6 = Item(
-    URL('https://example.com/item6'), 'Item 6', URL('https://source.com/6')
+    URL('https://example.com/item6'), 'Item 6', Source(URL('https://source.com/6'), 'so')
 )
 
 item7 = Item(
-    URL('https://example.com/item7'), 'Item 7', URL('https://source.com/7')
+    URL('https://example.com/item7'), 'Item 7', Source(URL('https://source.com/7'), 'so')
 )

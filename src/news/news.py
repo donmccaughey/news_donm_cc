@@ -54,15 +54,16 @@ class News:
 
     @staticmethod
     def decode(encoded: dict) -> 'News':
+        items = encoded['items'] if 'items' in encoded else encoded['stories']
         return News(
-            items=[Item.decode(item) for item in encoded['stories']],
+            items=[Item.decode(item) for item in items],
             created=datetime.fromisoformat(encoded['created']),
             modified=datetime.fromisoformat(encoded['modified']),
         )
 
     def encode(self) -> dict[str, str | list[dict[str, str]]]:
         return {
-            'stories': [item.encode() for item in self.items],
+            'items': [item.encode() for item in self.items],
             'created': datetime.isoformat(self.created),
             'modified': datetime.isoformat(self.modified),
         }

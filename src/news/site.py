@@ -3,26 +3,27 @@ from feedparser import FeedParserDict, parse
 
 from .item import Item
 from .news import News
+from .source import Source
 from .url import URL
 
 
 class Site:
-    def __init__(self, url: URL, name: str, initials: str):
-        self.url = url
+    def __init__(self, feed_url: URL, name: str, initials: str):
+        self.feed_url = feed_url
         self.name = name
         self.initials = initials
         self.etag = None
         self.modified = None
 
     def __repr__(self) -> str:
-        return f"Site(URL('{self.url}'), '{self.name}', '{self.initials}')"
+        return f"Site({repr(self.feed_url)}, '{self.name}', '{self.initials}')"
 
     def __str__(self) -> str:
         return str(self.name)
 
     def get(self, now: datetime) -> News:
         d: FeedParserDict = parse(
-            str(self.url),
+            str(self.feed_url),
             etag=self.etag,
             modified=self.modified,
             agent='News +https://news.donm.cc',
@@ -84,7 +85,7 @@ class DaringFireball(Site):
         return Item(
             url=URL(link),
             title=entry.title,
-            source=URL(link),
+            source=Source(URL(link), self.initials),
             created=now,
             modified=now,
         )
@@ -104,7 +105,7 @@ class HackerNews(Site):
         return Item(
             url=URL(entry.link),
             title=entry.title,
-            source=URL(entry.comments),
+            source=Source(URL(entry.comments), self.initials),
             created=now,
             modified=now,
         )

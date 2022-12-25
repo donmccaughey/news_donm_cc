@@ -154,8 +154,10 @@
             <p>
                 <span class=domain>{{item.url|domain}}</span>
                 —
-                <a class=source href={{item.source|href|safe}} rel=noreferrer target=_blank>hn</a>
+                {% if item.source.url != item.url %}
+                <a class=source href={{item.source.url|href|safe}} rel=noreferrer target=_blank>{{item.source.site_id}}</a>
                 —
+                {% endif %}
                 <time datetime={{item.created|iso}}>{{item.created|utc}}</time>
     {% endfor %}
     </ol>

@@ -1,5 +1,6 @@
 from datetime import datetime, timezone
 
+from .source import Source
 from .url import URL
 
 
@@ -7,7 +8,7 @@ class Item:
     def __init__(self,
                  url: URL,
                  title: str,
-                 source: URL,
+                 source: Source,
                  created: datetime | None = None,
                  modified: datetime | None = None,
                  ):
@@ -26,17 +27,17 @@ class Item:
         return hash(self.url)
 
     def __repr__(self) -> str:
-        return f"Item(URL('{self.url}'), '{self.title}', URL('{self.source}'))"
+        return f"Item({repr(self.url)}, '{self.title}', {repr(self.source)})"
 
     def __str__(self) -> str:
         return f'"{self.title}" ({self.url})'
 
     @staticmethod
-    def decode(encoded: dict[str, str]) -> 'Item':
+    def decode(encoded: dict[str, dict[str, str] | str]) -> 'Item':
         return Item(
             url=URL(encoded['url']),
             title=encoded['title'],
-            source=URL(encoded['source']),
+            source=Source.decode(encoded['source']),
             created=datetime.fromisoformat(encoded['created']),
             modified=datetime.fromisoformat(encoded['modified']),
         )
@@ -45,7 +46,7 @@ class Item:
         return {
             'url': str(self.url),
             'title': self.title,
-            'source': str(self.source),
+            'source': self.source.encode(),
             'created': datetime.isoformat(self.created),
             'modified': datetime.isoformat(self.modified),
         }

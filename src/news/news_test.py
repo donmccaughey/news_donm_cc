@@ -2,6 +2,7 @@ from datetime import datetime, timedelta, timezone
 
 from .item import Item
 from .news import News
+from .source import Source
 from .url import URL
 
 
@@ -87,22 +88,22 @@ FIVE_DAYS = timedelta(days=5)
 SIX_DAYS = timedelta(days=6)
 
 item1 = Item(
-    URL('https://example.com/item1'), 'Item 1', URL('https://source.com/1')
+    URL('https://example.com/item1'), 'Item 1', Source(URL('https://source.com/1'), 'so')
 )
 
 item1_old = Item(
-    URL('https://example.com/item1'), 'Item 1', URL('https://source.com/1'),
+    URL('https://example.com/item1'), 'Item 1', Source(URL('https://source.com/1'), 'so'),
     item1.created - SIX_DAYS, item1.modified - SIX_DAYS
 )
 
 item2 = Item(
-    URL('https://example.com/item2'), 'Item 2', URL('https://source.com/2')
+    URL('https://example.com/item2'), 'Item 2', Source(URL('https://source.com/2'), 'so')
 )
 
 item3 = Item(
-    URL('https://example.com/item3'), 'Item 3', URL('https://source.com/3')
+    URL('https://example.com/item3'), 'Item 3', Source(URL('https://source.com/3'), 'so')
 )
 
 item4 = Item(
-    URL('https://example.com/item4'), 'Item 4', URL('https://source.com/4')
+    URL('https://example.com/item4'), 'Item 4', Source(URL('https://source.com/4'), 'so')
 )
