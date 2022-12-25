@@ -99,7 +99,7 @@
         counter-reset: item {{item_count}};
         list-style: none;
     }
-    .domain {
+    .identity {
         color: gray;
     }
     .inactive {
@@ -152,7 +152,7 @@
         <li>
             <a href={{item.url|href|safe}} rel=noreferrer target=_blank>{{item.title}}</a>
             <p>
-                <span class=domain>{{item.url|domain}}</span>
+                <span class=identity>{{item.url.identity}}</span>
                 —
                 {% if item.source.url != item.url %}
                 <a class=source href={{item.source.url|href|safe}} rel=noreferrer target=_blank>{{item.source.site_id}}</a>

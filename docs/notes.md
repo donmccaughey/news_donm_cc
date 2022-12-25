@@ -98,6 +98,23 @@ Public domain: https://news.6i2dp3e2do9ku.us-west-2.cs.amazonlightsail.com
 ### boto3 https://boto3.amazonaws.com/v1/documentation/api/latest/index.html
 
 
+## Links and Identiy
+
+### Mastodon
+
+https://mastodon.online/@raph/109547934082265439
+https://mastodon.social/@Tibor/109540214666343598
+
+### GitHub
+
+https://raw.githubusercontent.com/websnarf/bstrlib/master/bstrlib.txt
+
+### Google Docs
+
+https://docs.google.com/presentation/d/1sowJrQQfgxnLCErb-CvUV8VGXdtca6SWYWWLRPZgaHI/edit?usp=sharing
+https://docs.google.com/presentation/d/1sowJrQQfgxnLCErb-CvUV8VGXdtca6SWYWWLRPZgaHI/mobilepresent?slide=id.ga3a076b34_0_12
+
+
 ## Errors
 
 ### Container startup error on Lightsail
