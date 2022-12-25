@@ -1,8 +1,7 @@
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from urllib.parse import urlsplit
 
-from flask import Flask, make_response, render_template, request, Response
+from flask import abort, Flask, make_response, redirect, render_template, request, Response
 
 from news import Cache, News, Page, URL
 
@@ -53,8 +52,16 @@ def all() -> Response:
 
 @app.route('/<int:page_number>', methods=['GET', 'HEAD'])
 def numbered_page(page_number: int) -> Response:
+    if page_number == 0:
+        abort(404)
+    if page_number == 1:
+        return redirect('/', 308)
+
     news = News.from_json(cache.get() or News().to_json())
     page = Page(news, page_number=page_number, items_per_page=PAGE_SIZE)
+    if page.number > page.count:
+        abort(404)
+
     html = render_template(
         'home.html', news=news, page=page, item_count=page.begin,
         next_url=next_url(page), previous_url=previous_url(page),
@@ -69,6 +76,11 @@ def numbered_page(page_number: int) -> Response:
     add_cache_control(response)
 
     return response
+
+
+@app.errorhandler(404)
+def not_found(e):
+    return render_template('404.html'), 404
 
 
 def add_cache_control(response: Response):

@@ -85,6 +85,7 @@ source_files := \
 	src/news/source.py \
 	src/news/store.py \
 	src/news/url.py \
+	src/templates/404.html \
 	src/templates/home.html
 
 test_files := \

@@ -2,12 +2,14 @@
 
 ## To Do
 
+- nginx custom error pages for 50x 
+- run services unprivileged
 - nginx content caching
 - in debug mode, disable HTTP caching
-- add source name, initials to source and item
 - gunicorn error logs
 - flask app logs
 - health check
+- robots.txt, sitemap.txt
 - ecr container versioning
 - nginx.conf `proxy_set_header` and other settings
   - https://flask.palletsprojects.com/en/2.2.x/deploying/nginx/
