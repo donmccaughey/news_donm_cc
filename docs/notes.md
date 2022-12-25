@@ -2,10 +2,12 @@
 
 ## To Do
 
+- dim color for item number, site-id and timestamp 
 - nginx custom error pages for 50x 
 - run services unprivileged
 - nginx content caching
 - in debug mode, disable HTTP caching
+- make page footer sticky to the window
 - gunicorn error logs
 - flask app logs
 - health check
@@ -24,6 +26,21 @@
   - pay walls to https://archive.ph
     - wsj
     - economist
+- filter / search news
+  - by domain name
+  - by keywords
+
+
+## Colors
+
+    #ffffff white
+    #f5f5f5 whitesmoke
+    #c0c0c0 silver
+    #a9a9a9 darkgray
+    #808080 gray
+    #696969 dimgray
+    #000000 black
+
 
 
 ## News Feeds
@@ -115,6 +132,10 @@ https://raw.githubusercontent.com/websnarf/bstrlib/master/bstrlib.txt
 
 https://docs.google.com/presentation/d/1sowJrQQfgxnLCErb-CvUV8VGXdtca6SWYWWLRPZgaHI/edit?usp=sharing
 https://docs.google.com/presentation/d/1sowJrQQfgxnLCErb-CvUV8VGXdtca6SWYWWLRPZgaHI/mobilepresent?slide=id.ga3a076b34_0_12
+
+### Microsoft
+
+https://devblogs.microsoft.com/oldnewthing/20221216-00/?p=107598
 
 
 ## Errors
