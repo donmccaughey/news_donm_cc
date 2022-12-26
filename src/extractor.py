@@ -1,4 +1,5 @@
 import argparse
+import logging
 
 from datetime import datetime, timedelta, timezone
 from news import Cache, DaringFireball, HackerNews, News, NoStore, S3Store
@@ -29,6 +30,8 @@ def parse_options():
 
 def main():
     options = parse_options()
+    logging.basicConfig(level=logging.INFO)
+    logger = logging.getLogger(Path(__file__).name)
 
     store = NoStore() if options.no_store else S3Store()
     cache = Cache(options.cache_path)
@@ -43,11 +46,14 @@ def main():
 
     while True:
         now = datetime.now(timezone.utc)
+        new_count = 0
         for site in sites:
-            news.add_new(site.get(now))
+            new_count += news.add_new(site.get(now))
 
         cutoff = now - options.cutoff_days
-        news.remove_old(cutoff)
+        old_count = news.remove_old(cutoff)
+
+        logger.info(f'Added {new_count} and removed {old_count} items')
 
         if news.is_modified:
             json = news.to_json()

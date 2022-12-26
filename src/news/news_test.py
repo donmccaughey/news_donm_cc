@@ -21,8 +21,9 @@ def test_str_and_repr():
 def test_add_new():
     news = News()
 
-    news.add_new(News([item1, item2]))
+    new_count = news.add_new(News([item1, item2]))
 
+    assert new_count == 2
     assert news.is_modified
     assert len(news) == 2
     assert list(news) == [item2, item1]
@@ -31,16 +32,18 @@ def test_add_new():
 def test_add_new_for_empty():
     news = News()
 
-    news.add_new(News())
+    new_count = news.add_new(News())
 
+    assert new_count == 0
     assert not news.is_modified
 
 
 def test_add_new_for_all_duplicates():
     news = News([item1, item2, item3, item4])
 
-    news.add_new(News([item1, item2]))
+    new_count = news.add_new(News([item1, item2]))
 
+    assert new_count == 0
     assert not news.is_modified
     assert len(news) == 4
 
@@ -48,8 +51,9 @@ def test_add_new_for_all_duplicates():
 def test_add_new_for_some_duplicates():
     news = News([item1, item3, item4])
 
-    news.add_new(News([item1, item2]))
+    new_count = news.add_new(News([item1, item2]))
 
+    assert new_count == 1
     assert news.is_modified
     assert len(news) == 4
     assert list(news) == [item2, item1, item3, item4]
@@ -59,8 +63,9 @@ def test_remove_old():
     news = News([item3, item1_old, item2])
     now = datetime.now(timezone.utc)
 
-    news.remove_old(now - FIVE_DAYS)
+    old_count = news.remove_old(now - FIVE_DAYS)
 
+    assert old_count == 1
     assert news.is_modified
     assert len(news) == 2
 
@@ -69,18 +74,22 @@ def test_remove_old_when_none_expired():
     now = datetime.now(timezone.utc)
     news = News([item3, item1, item2])
 
-    news.remove_old(now - FIVE_DAYS)
+    old_count = news.remove_old(now - FIVE_DAYS)
 
+    assert old_count == 0
     assert not news.is_modified
 
 
 def test_remove_old_and_add_new_duplicate_item():
     now = datetime.now(timezone.utc)
     news = News([item3, item1_old, item2])
-    news.remove_old(now - FIVE_DAYS)
+    old_count = news.remove_old(now - FIVE_DAYS)
 
-    news.add_new(News([item1]))
+    assert old_count == 1
 
+    new_count = news.add_new(News([item1]))
+
+    assert new_count == 1
     assert len(news) == 3
 
 

@@ -33,24 +33,29 @@ class News:
         modified = ' (modified)' if self.is_modified else ''
         return f'{len(self.items)} news items{modified}'
 
-    def add_new(self, other: 'News'):
+    def add_new(self, other: 'News') -> int:
+        new_count = 0
         for item in other:
             if item not in self.index:
                 self.items.insert(0, item)
                 self.index.add(item)
                 self.modified = other.modified
                 self.is_modified = True
-        return self
+                new_count += 1
+        return new_count
 
-    def remove_old(self, cutoff: datetime):
+    def remove_old(self, cutoff: datetime) -> int:
         items = []
+        old_count = 0
         for item in self.items:
             if item.created > cutoff:
                 items.append(item)
             else:
                 self.is_modified = True
                 self.index.remove(item)
+                old_count += 1
         self.items = items
+        return old_count
 
     @staticmethod
     def decode(encoded: dict) -> 'News':
