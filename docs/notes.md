@@ -2,6 +2,7 @@
 
 ## To Do
 
+- embed git sha in web page
 - nginx custom error pages for 50x 
 - run extractor unprivileged / on chron job
 - nginx content caching
@@ -269,3 +270,74 @@ https://devblogs.microsoft.com/oldnewthing/20221216-00/?p=107598
     [2022-12-19 05:41:39 +0000] [14] [INFO] Booting worker with pid: 14
     [2022-12-19 05:41:39 +0000] [15] [INFO] Booting worker with pid: 15
     [deployment:18] Reached a steady state
+
+
+## Extractor errors
+
+    [26/Dec/2022:18:42:05] Traceback (most recent call last):
+    [26/Dec/2022:18:42:05] File "/usr/lib/python3.10/site-packages/feedparser/util.py", line 156, in __getattr__
+    [26/Dec/2022:18:42:05] return self.__getitem__(key)
+    [26/Dec/2022:18:42:05] File "/usr/lib/python3.10/site-packages/feedparser/util.py", line 113, in __getitem__
+    [26/Dec/2022:18:42:05] return dict.__getitem__(self, key)
+    [26/Dec/2022:18:42:05] KeyError: 'title'
+    [26/Dec/2022:18:42:05] During handling of the above exception, another exception occurred:
+    [26/Dec/2022:18:42:05] Traceback (most recent call last):
+    [26/Dec/2022:18:42:05] File "/usr/local/news/extractor.py", line 71, in <module>
+    [26/Dec/2022:18:42:05] main()
+    [26/Dec/2022:18:42:05] File "/usr/local/news/extractor.py", line 51, in main
+    [26/Dec/2022:18:42:05] new_count += news.add_new(site.get(now))
+    [26/Dec/2022:18:42:05] File "/usr/local/news/news/site.py", line 36, in get
+    [26/Dec/2022:18:42:05] items = [
+    [26/Dec/2022:18:42:05] File "/usr/local/news/news/site.py", line 37, in <listcomp>
+    [26/Dec/2022:18:42:05] self.parse_entry(entry, now) for entry in d.entries
+    [26/Dec/2022:18:42:05] File "/usr/local/news/news/site.py", line 87, in parse_entry
+    [26/Dec/2022:18:42:05] title=entry.title,
+    [26/Dec/2022:18:42:05] File "/usr/lib/python3.10/site-packages/feedparser/util.py", line 158, in __getattr__
+    [26/Dec/2022:18:42:05] raise AttributeError("object has no attribute '%s'" % key)
+    [26/Dec/2022:18:42:05] AttributeError: object has no attribute 'title'
+
+
+    [26/Dec/2022:11:34:04] Traceback (most recent call last):
+    [26/Dec/2022:11:34:04] File "/usr/lib/python3.10/site-packages/feedparser/util.py", line 156, in __getattr__
+    [26/Dec/2022:11:34:04] return self.__getitem__(key)
+    [26/Dec/2022:11:34:04] File "/usr/lib/python3.10/site-packages/feedparser/util.py", line 113, in __getitem__
+    [26/Dec/2022:11:34:04] return dict.__getitem__(self, key)
+    [26/Dec/2022:11:34:04] KeyError: 'title'
+    [26/Dec/2022:11:34:04] During handling of the above exception, another exception occurred:
+    [26/Dec/2022:11:34:04] Traceback (most recent call last):
+    [26/Dec/2022:11:34:04] File "/usr/local/news/extractor.py", line 71, in <module>
+    [26/Dec/2022:11:34:04] main()
+    [26/Dec/2022:11:34:04] File "/usr/local/news/extractor.py", line 51, in main
+    [26/Dec/2022:11:34:04] new_count += news.add_new(site.get(now))
+    [26/Dec/2022:11:34:04] File "/usr/local/news/news/site.py", line 36, in get
+    [26/Dec/2022:11:34:04] items = [
+    [26/Dec/2022:11:34:04] File "/usr/local/news/news/site.py", line 37, in <listcomp>
+    [26/Dec/2022:11:34:04] self.parse_entry(entry, now) for entry in d.entries
+    [26/Dec/2022:11:34:04] File "/usr/local/news/news/site.py", line 87, in parse_entry
+    [26/Dec/2022:11:34:04] title=entry.title,
+    [26/Dec/2022:11:34:04] File "/usr/lib/python3.10/site-packages/feedparser/util.py", line 158, in __getattr__
+    [26/Dec/2022:11:34:04] raise AttributeError("object has no attribute '%s'" % key)
+    [26/Dec/2022:11:34:04] AttributeError: object has no attribute 'title'
+
+
+    [25/Dec/2022:14:08:05] Traceback (most recent call last):
+    [25/Dec/2022:14:08:05] File "/usr/lib/python3.10/site-packages/feedparser/util.py", line 156, in __getattr__
+    [25/Dec/2022:14:08:05] return self.__getitem__(key)
+    [25/Dec/2022:14:08:05] File "/usr/lib/python3.10/site-packages/feedparser/util.py", line 113, in __getitem__
+    [25/Dec/2022:14:08:05] return dict.__getitem__(self, key)
+    [25/Dec/2022:14:08:05] KeyError: 'title'
+    [25/Dec/2022:14:08:05] During handling of the above exception, another exception occurred:
+    [25/Dec/2022:14:08:05] Traceback (most recent call last):
+    [25/Dec/2022:14:08:05] File "/usr/local/news/extractor.py", line 65, in <module>
+    [25/Dec/2022:14:08:05] main()
+    [25/Dec/2022:14:08:05] File "/usr/local/news/extractor.py", line 47, in main
+    [25/Dec/2022:14:08:05] news.add_new(site.get(now))
+    [25/Dec/2022:14:08:05] File "/usr/local/news/news/site.py", line 36, in get
+    [25/Dec/2022:14:08:05] items = [
+    [25/Dec/2022:14:08:05] File "/usr/local/news/news/site.py", line 37, in <listcomp>
+    [25/Dec/2022:14:08:05] self.parse_entry(entry, now) for entry in d.entries
+    [25/Dec/2022:14:08:05] File "/usr/local/news/news/site.py", line 87, in parse_entry
+    [25/Dec/2022:14:08:05] title=entry.title,
+    [25/Dec/2022:14:08:05] File "/usr/lib/python3.10/site-packages/feedparser/util.py", line 158, in __getattr__
+    [25/Dec/2022:14:08:05] raise AttributeError("object has no attribute '%s'" % key)
+    [25/Dec/2022:14:08:05] AttributeError: object has no attribute 'title'

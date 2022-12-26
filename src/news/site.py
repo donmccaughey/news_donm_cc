@@ -1,3 +1,5 @@
+import logging
+
 from datetime import datetime
 from feedparser import FeedParserDict, parse
 
@@ -46,6 +48,13 @@ class Site:
             # TODO: log error
             return News()
 
+    def entry_has_keys(self, entry, keys: list[str]) -> bool:
+        for key in keys:
+            if key not in entry:
+                logging.warning(f'Entry {repr(entry)} from {self.name} does not have a "{key}" attribute')
+                return False
+        return True
+
     def keep_entry(self, entry) -> bool:
         return True
 
@@ -71,6 +80,9 @@ class DaringFireball(Site):
         return 'DaringFireball()'
 
     def keep_entry(self, entry) -> bool:
+        if not self.entry_has_keys(entry, ['link', 'title']):
+            return False
+
         related = first_link_with_rel(entry.links, 'related')
         if related and related.startswith('https://daringfireball.net/feeds/sponsors/'):
             return False
@@ -100,6 +112,10 @@ class HackerNews(Site):
 
     def __repr__(self) -> str:
         return 'HackerNews()'
+
+    def keep_entry(self, entry) -> bool:
+        if not self.entry_has_keys(entry, ['link', 'title', 'comments']):
+            return False
 
     def parse_entry(self, entry, now: datetime) -> Item:
         return Item(
