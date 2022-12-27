@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cd /usr/local/news || exit 1
+python3 extractor.py \
+    --cache-path="$FLASK_NEWS_PATH"

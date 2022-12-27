@@ -23,13 +23,17 @@ COPY nginx/nginx.conf /etc/nginx/nginx.conf
 COPY --chown=nginx:www-data nginx/default /srv/www
 
 
+# cron
+COPY crontabs /var/spool/cron/crontabs
+
+
 # control script
 COPY sbin /usr/local/sbin
 
 
 # news app
-RUN mkdir -p /var/lib/news \
-    && chown -R news:news /var/lib/news
+RUN mkdir -p /usr/lib/news /var/lib/news
+RUN chown -R news:news /usr/lib/news /var/lib/news
 COPY --chown=news:news requirements.txt /usr/local/news/requirements.txt
 COPY --chown=news:news src /usr/local/news
 

@@ -2,17 +2,19 @@
 
 export FLASK_NEWS_PATH=/var/lib/news/news.json
 
-cd /usr/local/news || exit 1
 
-python3 extractor.py \
-    --cache-path="$FLASK_NEWS_PATH" \
-    --poll=5 &
+su news -s /bin/sh -c extract
+
+cd /usr/local/news || exit 1
 gunicorn \
     --group=news \
     --user=news \
     --workers=4 \
     'server:app' &
+
 nginx &
+
+crond -f -l 10 -L /dev/stdout &
 
 wait
 exit $?

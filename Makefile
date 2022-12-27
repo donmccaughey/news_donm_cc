@@ -71,6 +71,7 @@ stop :
 container_files := \
 	.dockerignore \
 	requirements.txt \
+	crontabs/news \
 	nginx/nginx.conf \
 	nginx/default/404.html \
 	nginx/default/500.html \
@@ -78,7 +79,8 @@ container_files := \
 	nginx/default/503.html \
 	nginx/default/504.html \
 	nginx/default/index.html \
-	sbin/news
+	sbin/extract \
+	sbin/news \
 
 source_files := \
 	src/extractor.py \

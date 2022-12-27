@@ -191,6 +191,34 @@ Public domain: https://news.6i2dp3e2do9ku.us-west-2.cs.amazonlightsail.com
     nobody:x:65534:
     nginx:x:101:nginx
 
+### crond
+
+    ~ # crond -h
+    crond: unrecognized option: h
+    BusyBox v1.35.0 (2022-11-19 10:13:10 UTC) multi-call binary.
+    
+    Usage: crond [-fbS] [-l N] [-d N] [-L LOGFILE] [-c DIR]
+    
+        -f	Foreground
+        -b	Background (default)
+        -S	Log to syslog (default)
+        -l N	Set log level. Most verbose 0, default 8
+        -d N	Set log level, log to stderr
+        -L FILE	Log to FILE
+        -c DIR	Cron dir. Default:/var/spool/cron/crontabs
+
+    /etc/crontabs # cat root 
+    # do daily/weekly/monthly maintenance
+    # min	hour	day	month	weekday	command
+    */15	*	*	*	*	run-parts /etc/periodic/15min
+    0	*	*	*	*	run-parts /etc/periodic/hourly
+    0	2	*	*	*	run-parts /etc/periodic/daily
+    0	3	*	*	6	run-parts /etc/periodic/weekly
+    0	5	1	*	*	run-parts /etc/periodic/monthly
+
+crond log levels:
+https://unix.stackexchange.com/questions/412805/crond-log-level-meaning
+
 
 ## Python
 
@@ -232,6 +260,10 @@ https://devblogs.microsoft.com/oldnewthing/20221216-00/?p=107598
 ### Medium
 
 https://medium.com/@AnalyticsAtMeta/notifications-why-less-is-more-how-facebook-has-been-increasing-both-user-satisfaction-and-app-9463f7325e7d
+
+### Threadreaderapp
+
+https://threadreaderapp.com/thread/1606701397109796866.html
 
 
 ## Errors
@@ -345,3 +377,50 @@ https://medium.com/@AnalyticsAtMeta/notifications-why-less-is-more-how-facebook-
             }
         } from Daring Fireball does not have a "title" attribute
     2022-12-26T16:06:05-08:00: INFO:extractor.py:Added 0 and removed 0 items
+
+
+
+### crond errors
+
+    2022-12-26 21:44:00 crond: wakeup dt=51
+    2022-12-26 21:44:00 crond: file news:
+    2022-12-26 21:44:00 crond:  line /usr/local/sbin/extract
+    2022-12-26 21:44:00 crond:  job: 0 /usr/local/sbin/extract
+    2022-12-26 21:44:00 crond: file root:
+    2022-12-26 21:44:00 crond:  line run-parts /etc/periodic/15min
+    2022-12-26 21:44:00 crond:  line run-parts /etc/periodic/hourly
+    2022-12-26 21:44:00 crond:  line run-parts /etc/periodic/daily
+    2022-12-26 21:44:00 crond:  line run-parts /etc/periodic/weekly
+    2022-12-26 21:44:00 crond:  line run-parts /etc/periodic/monthly
+    2022-12-26 21:44:00 crond: USER news pid  51 cmd /usr/local/sbin/extract
+    2022-12-26 21:44:00 crond: can't change directory to '/usr/lib/news'
+    2022-12-26 21:44:00 crond: child running /bin/ash
+
+    2022-12-26 22:17:00 crond: wakeup dt=20
+    2022-12-26 22:17:00 crond: file news:
+    2022-12-26 22:17:00 crond:  line /usr/local/sbin/extract
+    2022-12-26 22:17:00 crond:  job: 0 /usr/local/sbin/extract
+    2022-12-26 22:17:00 crond: file root:
+    2022-12-26 22:17:00 crond:  line run-parts /etc/periodic/15min
+    2022-12-26 22:17:00 crond:  line run-parts /etc/periodic/hourly
+    2022-12-26 22:17:00 crond:  line run-parts /etc/periodic/daily
+    2022-12-26 22:17:00 crond:  line run-parts /etc/periodic/weekly
+    2022-12-26 22:17:00 crond:  line run-parts /etc/periodic/monthly
+    2022-12-26 22:17:00 crond: USER news pid 235 cmd /usr/local/sbin/extract
+    2022-12-26 22:17:00 crond: can't change directory to '/usr/lib/news'
+    2022-12-26 22:17:00 crond: child running /bin/ash
+    2022-12-26 22:17:01 INFO:botocore.credentials:Found credentials in environment variables.
+    2022-12-26 22:17:02 INFO:extractor.py:Using ReadOnlyStore(S3Store('news.donm.cc', 'news.json'))
+    2022-12-26 22:17:03 INFO:extractor.py:Added 2 and removed 0 items
+    2022-12-26 22:17:03 Traceback (most recent call last):
+    2022-12-26 22:17:03   File "/usr/local/news/extractor.py", line 88, in <module>
+    2022-12-26 22:17:03     main()
+    2022-12-26 22:17:03   File "/usr/local/news/extractor.py", line 77, in main
+    2022-12-26 22:17:03     cache.put(json)
+    2022-12-26 22:17:03   File "/usr/local/news/news/cache.py", line 27, in put
+    2022-12-26 22:17:03     with self.path.open('w', encoding='utf-8') as f:
+    2022-12-26 22:17:03   File "/usr/lib/python3.10/pathlib.py", line 1119, in open
+    2022-12-26 22:17:03     return self._accessor.open(self, mode, buffering, encoding, errors,
+    2022-12-26 22:17:03 PermissionError: [Errno 13] Permission denied: '/var/lib/news/news.json'
+    2022-12-26 22:17:10 crond: wakeup dt=10
+
