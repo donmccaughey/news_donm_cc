@@ -27,26 +27,30 @@ class URL:
         hostname = url_parts.hostname
         path = url_parts.path
 
-        hostname = clip_subdomains(hostname, [
-            'blog', 'blogs', 'community', 'docs', 'en', 'www'
-        ])
+        subdomains = ['blog', 'blogs', 'community', 'docs', 'en', 'www']
+        hostname = remove_subdomain(hostname, subdomains)
 
-        if hostname == 'old.reddit.com':
-            hostname = 'reddit.com'
+        hostname_map = {
+            'lite.cnn.com': 'cnn.com',
+            'text.npr.org': 'npr.org',
+            'old.reddit.com': 'reddit.com',
+        }
+        if hostname in hostname_map:
+            hostname = hostname_map[hostname]
 
-        if hostname == 'github.com':
-            return keep_path_matching(hostname, path, '/*')
-
-        if hostname == 'reddit.com':
-            return keep_path_matching(hostname, path, '/r/*')
-
-        if hostname == 'twitter.com':
-            return keep_path_matching(hostname, path, '/*')
+        path_map = {
+            'github.com': '/*',
+            'devblogs.microsoft.com': '/*',
+            'reddit.com': '/r/*',
+            'twitter.com': '/*',
+        }
+        if hostname in path_map:
+            return keep_path_matching(hostname, path, path_map[hostname])
 
         return hostname
 
 
-def clip_subdomains(hostname: str, subdomains: list[str]) -> str:
+def remove_subdomain(hostname: str, subdomains: list[str]) -> str:
     parts = hostname.split('.')
     if len(parts) > 2:
         subdomain = parts[0]

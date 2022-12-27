@@ -203,6 +203,14 @@ Public domain: https://news.6i2dp3e2do9ku.us-west-2.cs.amazonlightsail.com
 
 ## Links and Identity
 
+### CNN
+
+https://lite.cnn.com/en/article/h_83938cfff92036cf0e1b55ced9febc77
+
+### NPR
+
+https://text.npr.org/1145536902
+
 ### Mastodon
 
 https://mastodon.online/@raph/109547934082265439

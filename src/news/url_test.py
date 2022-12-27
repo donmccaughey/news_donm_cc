@@ -41,6 +41,12 @@ def test_identity_for_blog_url():
     assert url.identity == 'lastpass.com'
 
 
+def test_identity_for_cnn():
+    url = URL('https://lite.cnn.com/en/article/h_83938cfff92036cf0e1b55ced9febc77')
+
+    assert url.identity == 'cnn.com'
+
+
 def test_identity_for_github():
     url = URL('https://github.com/electronicarts/EAStdC/blob/master/include/EAStdC/EABitTricks.h')
 
@@ -61,6 +67,18 @@ def test_identity_for_github():
     url = URL('https://github.com')
 
     assert url.identity == 'github.com'
+
+
+def test_identity_for_microsoft_devblogs():
+    url = URL('https://devblogs.microsoft.com/oldnewthing/20221216-00/?p=107598')
+
+    assert url.identity == 'devblogs.microsoft.com/oldnewthing'
+
+
+def test_identity_for_npr():
+    url = URL('https://text.npr.org/1144331954')
+
+    assert url.identity == 'npr.org'
 
 
 def test_identity_for_reddit():
