@@ -1,14 +1,22 @@
 import argparse
 import logging
+import os
 
 from datetime import datetime, timedelta, timezone
-from news import Cache, DaringFireball, HackerNews, News, NoStore, S3Store
+from news import Cache, DaringFireball, HackerNews, News, NoStore, ReadOnlyStore, S3Store
 from pathlib import Path
 from time import sleep
 
 
 def cutoff_days(arg: str) -> timedelta:
     return timedelta(days=int(arg))
+
+
+def env_is_true(name: str) -> bool:
+    return (
+            name in os.environ
+            and os.environ[name].lower() in ['true', 'yes', '1']
+    )
 
 
 def parse_options():
@@ -24,16 +32,25 @@ def parse_options():
     arg_parser.add_argument('--no-store', dest='no_store', default=False,
                             action='store_true', help="don't use a persistent store")
     options = arg_parser.parse_args()
+
     options.poll_seconds = options.poll * 60
+    options.read_only = not env_is_true('EXTRACTOR_READ_WRITE')
+
     return options
 
 
 def main():
     options = parse_options()
+
     logging.basicConfig(level=logging.INFO)
-    logger = logging.getLogger(Path(__file__).name)
+    logger = logging.getLogger()
+    logger.name = Path(__file__).name
 
     store = NoStore() if options.no_store else S3Store()
+    if options.read_only:
+        store = ReadOnlyStore(store)
+    logger.info(f'Using {store}')
+
     cache = Cache(options.cache_path)
 
     news = News.from_json(

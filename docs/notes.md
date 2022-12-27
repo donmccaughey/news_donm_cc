@@ -2,10 +2,10 @@
 
 ## To Do
 
+- nginx content caching
 - embed git sha in web page
 - nginx custom error pages for 50x 
 - run extractor unprivileged / on chron job
-- nginx content caching
 - in debug mode, disable HTTP caching
 - make page footer sticky to the window
 - gunicorn error logs

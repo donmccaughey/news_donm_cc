@@ -16,6 +16,20 @@ class NoStore:
         pass
 
 
+class ReadOnlyStore:
+    def __init__(self, store):
+        self.store = store
+
+    def __repr__(self) -> str:
+        return f'ReadOnlyStore({repr(self.store)})'
+
+    def get(self) -> str:
+        return self.store.get()
+
+    def put(self, json: str):
+        pass
+
+
 class S3Store:
     def __init__(self, bucket: str = 'news.donm.cc', object: str = 'news.json'):
         self.bucket = bucket
