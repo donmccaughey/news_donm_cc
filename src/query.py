@@ -1,6 +1,6 @@
 import argparse
 
-from news import Cache, News, NoStore, S3Store
+from news import Cache, News, S3Store
 from pathlib import Path
 
 
@@ -11,8 +11,7 @@ def parse_options():
                             help='location to store news items')
     arg_parser.add_argument('--no-store', dest='no_store', default=False,
                             action='store_true', help="don't use a persistent store")
-    options = arg_parser.parse_args()
-    return options
+    return arg_parser.parse_args()
 
 
 def main():

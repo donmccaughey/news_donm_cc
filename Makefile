@@ -39,6 +39,13 @@ debug :
 deploy : $(TMP)/aws-lightsail-create-container-service-deployment.stamp.txt
 
 
+.PHONY : logs
+logs :
+	aws lightsail get-container-log \
+		--service-name news \
+		--container-name news \
+		--region us-west-2
+
 .PHONY : push
 push : $(TMP)/docker-push.stamp.txt
 

@@ -42,7 +42,6 @@
     #000000 black
 
 
-
 ## News Feeds
 
 - Hacker News https://news.ycombinator.com/rss
@@ -91,6 +90,7 @@ https://docs.aws.amazon.com/AmazonECR/latest/public/public-registries.html
 
     # log Docker out of Amazon ECR Public
     $ docker logout public.ecr.aws
+
 
 ## AWS
 
@@ -221,20 +221,15 @@ https://docs.google.com/presentation/d/1sowJrQQfgxnLCErb-CvUV8VGXdtca6SWYWWLRPZg
 
 https://devblogs.microsoft.com/oldnewthing/20221216-00/?p=107598
 
+### Medium
+
+https://medium.com/@AnalyticsAtMeta/notifications-why-less-is-more-how-facebook-has-been-increasing-both-user-satisfaction-and-app-9463f7325e7d
+
 
 ## Errors
 
-### Container startup error on Lightsail
+### Missing AWS credentials
 
-    [deployment:16] Finalizing your deployment
-    [deployment:17] Creating your deployment
-    [2022-12-19 05:34:06 +0000] [8] [INFO] Starting gunicorn 20.1.0
-    [2022-12-19 05:34:06 +0000] [8] [INFO] Listening at: http://127.0.0.1:8000 (8)
-    [2022-12-19 05:34:06 +0000] [8] [INFO] Using worker: sync
-    [2022-12-19 05:34:06 +0000] [11] [INFO] Booting worker with pid: 11
-    [2022-12-19 05:34:07 +0000] [12] [INFO] Booting worker with pid: 12
-    [2022-12-19 05:34:07 +0000] [13] [INFO] Booting worker with pid: 13
-    [2022-12-19 05:34:07 +0000] [14] [INFO] Booting worker with pid: 14
     Traceback (most recent call last):
     File "/usr/local/news/extractor.py", line 65, in <module>
     main()
@@ -259,20 +254,9 @@ https://devblogs.microsoft.com/oldnewthing/20221216-00/?p=107598
     File "/usr/lib/python3.10/site-packages/botocore/client.py", line 960, in _make_api_call
     raise error_class(parsed_response, operation_name)
     botocore.exceptions.ClientError: An error occurred (AccessDenied) when calling the PutObject operation: Access Denied
-    [deployment:17] Reached a steady state
-    [deployment:17] Finalizing your deployment
-    [deployment:18] Creating your deployment
-    [2022-12-19 05:41:39 +0000] [9] [INFO] Starting gunicorn 20.1.0
-    [2022-12-19 05:41:39 +0000] [9] [INFO] Listening at: http://127.0.0.1:8000 (9)
-    [2022-12-19 05:41:39 +0000] [9] [INFO] Using worker: sync
-    [2022-12-19 05:41:39 +0000] [12] [INFO] Booting worker with pid: 12
-    [2022-12-19 05:41:39 +0000] [13] [INFO] Booting worker with pid: 13
-    [2022-12-19 05:41:39 +0000] [14] [INFO] Booting worker with pid: 14
-    [2022-12-19 05:41:39 +0000] [15] [INFO] Booting worker with pid: 15
-    [deployment:18] Reached a steady state
 
 
-## Extractor errors
+### Missing key in feed entry
 
     [26/Dec/2022:18:42:05] Traceback (most recent call last):
     [26/Dec/2022:18:42:05] File "/usr/lib/python3.10/site-packages/feedparser/util.py", line 156, in __getattr__
@@ -295,49 +279,3 @@ https://devblogs.microsoft.com/oldnewthing/20221216-00/?p=107598
     [26/Dec/2022:18:42:05] File "/usr/lib/python3.10/site-packages/feedparser/util.py", line 158, in __getattr__
     [26/Dec/2022:18:42:05] raise AttributeError("object has no attribute '%s'" % key)
     [26/Dec/2022:18:42:05] AttributeError: object has no attribute 'title'
-
-
-    [26/Dec/2022:11:34:04] Traceback (most recent call last):
-    [26/Dec/2022:11:34:04] File "/usr/lib/python3.10/site-packages/feedparser/util.py", line 156, in __getattr__
-    [26/Dec/2022:11:34:04] return self.__getitem__(key)
-    [26/Dec/2022:11:34:04] File "/usr/lib/python3.10/site-packages/feedparser/util.py", line 113, in __getitem__
-    [26/Dec/2022:11:34:04] return dict.__getitem__(self, key)
-    [26/Dec/2022:11:34:04] KeyError: 'title'
-    [26/Dec/2022:11:34:04] During handling of the above exception, another exception occurred:
-    [26/Dec/2022:11:34:04] Traceback (most recent call last):
-    [26/Dec/2022:11:34:04] File "/usr/local/news/extractor.py", line 71, in <module>
-    [26/Dec/2022:11:34:04] main()
-    [26/Dec/2022:11:34:04] File "/usr/local/news/extractor.py", line 51, in main
-    [26/Dec/2022:11:34:04] new_count += news.add_new(site.get(now))
-    [26/Dec/2022:11:34:04] File "/usr/local/news/news/site.py", line 36, in get
-    [26/Dec/2022:11:34:04] items = [
-    [26/Dec/2022:11:34:04] File "/usr/local/news/news/site.py", line 37, in <listcomp>
-    [26/Dec/2022:11:34:04] self.parse_entry(entry, now) for entry in d.entries
-    [26/Dec/2022:11:34:04] File "/usr/local/news/news/site.py", line 87, in parse_entry
-    [26/Dec/2022:11:34:04] title=entry.title,
-    [26/Dec/2022:11:34:04] File "/usr/lib/python3.10/site-packages/feedparser/util.py", line 158, in __getattr__
-    [26/Dec/2022:11:34:04] raise AttributeError("object has no attribute '%s'" % key)
-    [26/Dec/2022:11:34:04] AttributeError: object has no attribute 'title'
-
-
-    [25/Dec/2022:14:08:05] Traceback (most recent call last):
-    [25/Dec/2022:14:08:05] File "/usr/lib/python3.10/site-packages/feedparser/util.py", line 156, in __getattr__
-    [25/Dec/2022:14:08:05] return self.__getitem__(key)
-    [25/Dec/2022:14:08:05] File "/usr/lib/python3.10/site-packages/feedparser/util.py", line 113, in __getitem__
-    [25/Dec/2022:14:08:05] return dict.__getitem__(self, key)
-    [25/Dec/2022:14:08:05] KeyError: 'title'
-    [25/Dec/2022:14:08:05] During handling of the above exception, another exception occurred:
-    [25/Dec/2022:14:08:05] Traceback (most recent call last):
-    [25/Dec/2022:14:08:05] File "/usr/local/news/extractor.py", line 65, in <module>
-    [25/Dec/2022:14:08:05] main()
-    [25/Dec/2022:14:08:05] File "/usr/local/news/extractor.py", line 47, in main
-    [25/Dec/2022:14:08:05] news.add_new(site.get(now))
-    [25/Dec/2022:14:08:05] File "/usr/local/news/news/site.py", line 36, in get
-    [25/Dec/2022:14:08:05] items = [
-    [25/Dec/2022:14:08:05] File "/usr/local/news/news/site.py", line 37, in <listcomp>
-    [25/Dec/2022:14:08:05] self.parse_entry(entry, now) for entry in d.entries
-    [25/Dec/2022:14:08:05] File "/usr/local/news/news/site.py", line 87, in parse_entry
-    [25/Dec/2022:14:08:05] title=entry.title,
-    [25/Dec/2022:14:08:05] File "/usr/lib/python3.10/site-packages/feedparser/util.py", line 158, in __getattr__
-    [25/Dec/2022:14:08:05] raise AttributeError("object has no attribute '%s'" % key)
-    [25/Dec/2022:14:08:05] AttributeError: object has no attribute 'title'

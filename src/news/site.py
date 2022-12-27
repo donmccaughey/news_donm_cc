@@ -114,8 +114,7 @@ class HackerNews(Site):
         return 'HackerNews()'
 
     def keep_entry(self, entry) -> bool:
-        if not self.entry_has_keys(entry, ['link', 'title', 'comments']):
-            return False
+        return self.entry_has_keys(entry, ['link', 'title', 'comments'])
 
     def parse_entry(self, entry, now: datetime) -> Item:
         return Item(
