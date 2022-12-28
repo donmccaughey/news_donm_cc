@@ -3,11 +3,11 @@
 ## To Do
 
 - nginx content gzipping
+- save site `etag` and `modified` in `sites.json`
 - embed git sha in web page
 - robots.txt, sitemap.txt
 - where should `query.py` live?
 - in debug mode, disable HTTP caching
-- save site `etag` and `modified` in `news.json`
 - nginx custom error pages for 50x 
 - make page footer sticky to the window
 - gunicorn error logs
@@ -381,6 +381,54 @@ https://threadreaderapp.com/thread/1606701397109796866.html
 
 
 ## Errors
+
+### KeyError: 'status' running locally
+
+    2022-12-28 12:09:25 INFO:botocore.credentials:Found credentials in environment variables.
+    2022-12-28 12:09:26 INFO:extractor.py:Using ReadOnlyStore(S3Store('news.donm.cc', 'news.json'))
+    2022-12-28 12:09:31 Traceback (most recent call last):
+    2022-12-28 12:09:31   File "/usr/lib/python3.10/site-packages/feedparser/util.py", line 156, in __getattr__
+    2022-12-28 12:09:31     return self.__getitem__(key)
+    2022-12-28 12:09:31   File "/usr/lib/python3.10/site-packages/feedparser/util.py", line 113, in __getitem__
+    2022-12-28 12:09:31     return dict.__getitem__(self, key)
+    2022-12-28 12:09:31 KeyError: 'status'
+    2022-12-28 12:09:31 
+    2022-12-28 12:09:31 During handling of the above exception, another exception occurred:
+    2022-12-28 12:09:31 
+    2022-12-28 12:09:31 Traceback (most recent call last):
+    2022-12-28 12:09:31   File "/usr/local/news/extractor.py", line 77, in <module>
+    2022-12-28 12:09:31     main()
+    2022-12-28 12:09:31   File "/usr/local/news/extractor.py", line 62, in main
+    2022-12-28 12:09:31     new_count += news.add_new(site.get(now))
+    2022-12-28 12:09:31   File "/usr/local/news/news/site.py", line 36, in get
+    2022-12-28 12:09:31     if d.status in [200, 302]:
+    2022-12-28 12:09:31   File "/usr/lib/python3.10/site-packages/feedparser/util.py", line 158, in __getattr__
+    2022-12-28 12:09:31     raise AttributeError("object has no attribute '%s'" % key)
+    2022-12-28 12:09:31 AttributeError: object has no attribute 'status'
+    2022-12-28 12:13:44 INFO:botocore.credentials:Found credentials in environment variables.
+    2022-12-28 12:13:45 INFO:extractor.py:Using ReadOnlyStore(S3Store('news.donm.cc', 'news.json'))
+    2022-12-28 12:13:50 Traceback (most recent call last):
+    2022-12-28 12:13:50   File "/usr/lib/python3.10/site-packages/feedparser/util.py", line 156, in __getattr__
+    2022-12-28 12:13:50     return self.__getitem__(key)
+    2022-12-28 12:13:50   File "/usr/lib/python3.10/site-packages/feedparser/util.py", line 113, in __getitem__
+    2022-12-28 12:13:50     return dict.__getitem__(self, key)
+    2022-12-28 12:13:50 KeyError: 'status'
+    2022-12-28 12:13:50 
+    2022-12-28 12:13:50 During handling of the above exception, another exception occurred:
+    2022-12-28 12:13:50 
+    2022-12-28 12:13:50 Traceback (most recent call last):
+    2022-12-28 12:13:50   File "/usr/local/news/extractor.py", line 77, in <module>
+    2022-12-28 12:13:50     main()
+    2022-12-28 12:13:50   File "/usr/local/news/extractor.py", line 62, in main
+    2022-12-28 12:13:50     new_count += news.add_new(site.get(now))
+    2022-12-28 12:13:50   File "/usr/local/news/news/site.py", line 36, in get
+    2022-12-28 12:13:50     if d.status in [200, 302]:
+    2022-12-28 12:13:50   File "/usr/lib/python3.10/site-packages/feedparser/util.py", line 158, in __getattr__
+    2022-12-28 12:13:50     raise AttributeError("object has no attribute '%s'" % key)
+    2022-12-28 12:13:50 AttributeError: object has no attribute 'status'
+    2022-12-28 12:43:02 INFO:botocore.credentials:Found credentials in environment variables.
+
+
 
 ### Missing AWS credentials
 
