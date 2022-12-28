@@ -1,0 +1,9 @@
+#!/bin/sh
+
+cd /usr/local/news || exit 1
+
+gunicorn \
+    --group=news \
+    --user=news \
+    --workers=4 \
+    'server:app'

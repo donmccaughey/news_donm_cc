@@ -220,6 +220,14 @@ crond log levels:
 https://unix.stackexchange.com/questions/412805/crond-log-level-meaning
 
 
+## Nginx
+
+### Caching
+
+https://www.cloudsigma.com/nginx-http-proxying-load-balancing-buffering-and-caching-an-overview/
+https://www.sheshbabu.com/posts/nginx-caching-proxy/
+
+
 ## Python
 
 ### Flask https://flask.palletsprojects.com/en/2.2.x/

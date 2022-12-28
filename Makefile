@@ -41,10 +41,7 @@ deploy : $(TMP)/aws-lightsail-create-container-service-deployment.stamp.txt
 
 .PHONY : logs
 logs :
-	aws lightsail get-container-log \
-		--service-name news \
-		--container-name news \
-		--region us-west-2
+	python3 scripts/logs.py
 
 .PHONY : push
 push : $(TMP)/docker-push.stamp.txt
@@ -59,7 +56,7 @@ shell: $(TMP)/docker-run.stamp.txt
 	docker exec \
 		--interactive \
 		--tty \
-		$(NEWS) sh
+		$(NEWS) sh -l
 
 
 .PHONY : stop
@@ -79,11 +76,17 @@ container_files := \
 	nginx/default/503.html \
 	nginx/default/504.html \
 	nginx/default/index.html \
+	profile.d/dir.sh \
 	sbin/extract \
 	sbin/news \
+	sbin/serve
+
+script_files := \
+	scripts/logs.py
 
 source_files := \
 	src/extractor.py \
+	src/query.py \
 	src/server.py \
 	src/news/__init__.py \
 	src/news/cache.py \

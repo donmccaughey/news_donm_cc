@@ -31,6 +31,11 @@ COPY crontabs /var/spool/cron/crontabs
 COPY sbin /usr/local/sbin
 
 
+# ash profile
+COPY profile.d /etc/profile.d
+RUN ln -sf /etc/profile.d/color_prompt.sh.disabled /etc/profile.d/color_prompt.sh
+
+
 # news app
 RUN mkdir -p /usr/lib/news /var/lib/news
 RUN chown -R news:news /usr/lib/news /var/lib/news
