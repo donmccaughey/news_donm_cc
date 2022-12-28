@@ -4,15 +4,21 @@
 
 - nginx content caching
 - embed git sha in web page
-- nginx custom error pages for 50x 
-- run extractor unprivileged / on chron job
+- robots.txt, sitemap.txt
+- where should `query.py` live?
 - in debug mode, disable HTTP caching
+- save site `etag` and `modified` in `news.json`
+- nginx custom error pages for 50x 
 - make page footer sticky to the window
 - gunicorn error logs
 - flask app logs
 - health check
-- robots.txt, sitemap.txt
+- json responses
+- Cache wraps Store and Cache write on first `get()`
 - ecr container versioning
+- improve AWS permissions to read/write S3 bucket
+- unify command line options and ENV
+- ENV variable to control logging level
 - nginx.conf `proxy_set_header` and other settings
   - https://flask.palletsprojects.com/en/2.2.x/deploying/nginx/
   - https://docs.gunicorn.org/en/latest/deploy.html

@@ -9,6 +9,9 @@ from .source import Source
 from .url import URL
 
 
+log = logging.getLogger(__name__)
+
+
 class Site:
     def __init__(self, feed_url: URL, name: str, initials: str):
         self.feed_url = feed_url
@@ -35,6 +38,8 @@ class Site:
                 self.etag = d.etag
             if 'modified' in d:
                 self.modified = d.modified
+            if self.etag or self.modified:
+                log.info(f'{self.name}: etag={self.etag}, modified={self.modified}')
             items = [
                 self.parse_entry(entry, now) for entry in d.entries
                 if self.keep_entry(entry)
@@ -45,13 +50,13 @@ class Site:
                 modified=now,
             )
         else:
-            # TODO: log error
+            log.warning(f'{self.name} returned status code {d.status}')
             return News()
 
     def entry_has_keys(self, entry, keys: list[str]) -> bool:
         for key in keys:
             if key not in entry:
-                logging.warning(f'Entry {repr(entry)} from {self.name} does not have a "{key}" attribute')
+                log.warning(f'Entry {repr(entry)} from {self.name} does not have a "{key}" attribute')
                 return False
         return True
 
