@@ -2,7 +2,7 @@
 
 ## To Do
 
-- nginx content caching
+- nginx content gzipping
 - embed git sha in web page
 - robots.txt, sitemap.txt
 - where should `query.py` live?
@@ -19,9 +19,7 @@
 - improve AWS permissions to read/write S3 bucket
 - unify command line options and ENV
 - ENV variable to control logging level
-- nginx.conf `proxy_set_header` and other settings
-  - https://flask.palletsprojects.com/en/2.2.x/deploying/nginx/
-  - https://docs.gunicorn.org/en/latest/deploy.html
+- nginx rate limiting
 - flask proxy middleware
   - https://flask.palletsprojects.com/en/2.2.x/deploying/proxy_fix/
 - link rewriting
@@ -228,10 +226,112 @@ https://unix.stackexchange.com/questions/412805/crond-log-level-meaning
 
 ## Nginx
 
+[Configuration file measurement units](https://nginx.org/en/docs/syntax.html)
+
+
 ### Caching
 
 https://www.cloudsigma.com/nginx-http-proxying-load-balancing-buffering-and-caching-an-overview/
 https://www.sheshbabu.com/posts/nginx-caching-proxy/
+
+Cache size calculation
+
+    one_mb = 1024 * 1024 bytes
+    one_mb => 1,048,576 bytes
+    
+    key_zone_bytes_per_cache_item = one_mb / 8000 items
+    key_zone_bytes_per_cache_item => 131.072 bytes/items
+    
+    typical_item_size = 8 * 1024 bytes/items
+    typical_item_size => 8,192 bytes/items
+    
+    items_per_10_mb_disk = 10 * one_mb / typical_item_size
+    items_per_10_mb_disk => 1,280 items
+    
+    key_zone_size = key_zone_bytes_per_cache_item * items_per_10_mb_disk * 1 kb / 1024 bytes
+    key_zone_size => 163.84 kb
+
+### Alpine nginx config options
+
+    $ nginx -V
+    nginx version: nginx/1.22.1
+    built with OpenSSL 3.0.5 5 Jul 2022 (running with OpenSSL 3.0.7 1 Nov 2022)
+    TLS SNI support enabled
+    configure arguments: \
+        --prefix=/var/lib/nginx \
+        --sbin-path=/usr/sbin/nginx \
+        --modules-path=/usr/lib/nginx/modules \
+        --conf-path=/etc/nginx/nginx.conf \
+        --pid-path=/run/nginx/nginx.pid \
+        --lock-path=/run/nginx/nginx.lock \
+        --http-client-body-temp-path=/var/lib/nginx/tmp/client_body \
+        --http-proxy-temp-path=/var/lib/nginx/tmp/proxy \
+        --http-fastcgi-temp-path=/var/lib/nginx/tmp/fastcgi \
+        --http-uwsgi-temp-path=/var/lib/nginx/tmp/uwsgi \
+        --http-scgi-temp-path=/var/lib/nginx/tmp/scgi \
+        --with-perl_modules_path=/usr/lib/perl5/vendor_perl \
+        --user=nginx \
+        --group=nginx \
+        --with-threads \
+        --with-file-aio \
+        --without-pcre2 \
+        --with-http_ssl_module \
+        --with-http_v2_module \
+        --with-http_realip_module \
+        --with-http_addition_module \
+        --with-http_xslt_module=dynamic \
+        --with-http_image_filter_module=dynamic \
+        --with-http_geoip_module=dynamic \
+        --with-http_sub_module \
+        --with-http_dav_module \
+        --with-http_flv_module \
+        --with-http_mp4_module \
+        --with-http_gunzip_module \
+        --with-http_gzip_static_module \
+        --with-http_auth_request_module \
+        --with-http_random_index_module \
+        --with-http_secure_link_module \
+        --with-http_degradation_module \
+        --with-http_slice_module \
+        --with-http_stub_status_module \
+        --with-http_perl_module=dynamic \
+        --with-mail=dynamic \
+        --with-mail_ssl_module \
+        --with-stream=dynamic \
+        --with-stream_ssl_module \
+        --with-stream_realip_module \
+        --with-stream_geoip_module=dynamic \
+        --with-stream_ssl_preread_module \
+        --add-dynamic-module=/.../njs-0.7.7/nginx \
+        --add-dynamic-module=/.../ngx_devel_kit-0.3.1/ \
+        --add-dynamic-module=/.../traffic-accounting-nginx-module-2.0/ \
+        --add-dynamic-module=/.../array-var-nginx-module-0.05/ \
+        --add-dynamic-module=/.../ngx_brotli-1.0.0rc/ \
+        --add-dynamic-module=/.../ngx_cache_purge-2.5.2/ \
+        --add-dynamic-module=/.../nginx_cookie_flag_module-1.1.0/ \
+        --add-dynamic-module=/.../nginx-dav-ext-module-3.0.0/ \
+        --add-dynamic-module=/.../echo-nginx-module-0.63/ \
+        --add-dynamic-module=/.../encrypted-session-nginx-module-0.09/ \
+        --add-dynamic-module=/.../ngx-fancyindex-0.5.2/ \
+        --add-dynamic-module=/.../ngx_http_geoip2_module-3.4/ \
+        --add-dynamic-module=/.../headers-more-nginx-module-0.34/ \
+        --add-dynamic-module=/.../nginx-log-zmq-1.0.0/ \
+        --add-dynamic-module=/.../lua-nginx-module-0.10.22/ \
+        --add-dynamic-module=/.../lua-upstream-nginx-module-0.07/ \
+        --add-dynamic-module=/.../naxsi-1.3/naxsi_src \
+        --add-dynamic-module=/.../nchan-1.3.4/ \
+        --add-dynamic-module=/.../redis2-nginx-module-0.15/ \
+        --add-dynamic-module=/.../set-misc-nginx-module-0.33/ \
+        --add-dynamic-module=/.../nginx-http-shibboleth-2.0.1/ \
+        --add-dynamic-module=/.../ngx_http_untar_module-1.1/ \
+        --add-dynamic-module=/.../nginx-upload-module-2.3.0/ \
+        --add-dynamic-module=/.../nginx-upload-progress-module-0.9.2/ \
+        --add-dynamic-module=/.../nginx-upstream-fair-0.1.3/ \
+        --add-dynamic-module=/.../ngx_upstream_jdomain-1.4.0/ \
+        --add-dynamic-module=/.../nginx-vod-module-1.30/ \
+        --add-dynamic-module=/.../nginx-module-vts-0.2.1/ \
+        --add-dynamic-module=/.../mod_zip-1.2.0/ \
+        --add-dynamic-module=/.../nginx-rtmp-module-1.2.2/
 
 
 ## Python

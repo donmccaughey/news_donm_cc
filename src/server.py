@@ -85,15 +85,10 @@ def not_found(e):
 
 def add_cache_control(response: Response):
     if 200 == response.status_code:
-        now = datetime.now(timezone.utc)
-        age = now - response.last_modified
-        five_min = timedelta(minutes=5)
-        max_age = five_min - age if age < five_min else timedelta(seconds=15)
-
         response.cache_control.public = True
-        response.cache_control.max_age = max_age.seconds
+        response.cache_control.max_age = 15
         response.cache_control.must_revalidate = True
-        response.cache_control.s_maxage = max_age.seconds
+        response.cache_control.s_maxage = 15
         response.cache_control.proxy_revalidate = True
         response.cache_control.immutable = True
 
