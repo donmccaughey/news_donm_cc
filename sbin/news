@@ -1,12 +1,14 @@
 #!/bin/sh
 
-export FLASK_NEWS_PATH=/var/lib/news/news.json
-
 su news -s /bin/sh -c extract
 
 serve &
 nginx &
-crond -f -l 10 -L /dev/stdout &
+crond \
+    -f \
+    -l 10 \
+    -L /dev/stdout \
+    &
 
 wait
 exit $?

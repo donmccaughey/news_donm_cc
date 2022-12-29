@@ -1,4 +1,4 @@
-from datetime import datetime, timedelta, timezone
+from datetime import datetime
 from pathlib import Path
 
 from flask import abort, Flask, make_response, redirect, render_template, request, Response
@@ -10,13 +10,13 @@ PAGE_SIZE = 10
 app = Flask(__name__)
 app.config.from_prefixed_env()
 
-news_path = Path(app.config['NEWS_PATH'])
-cache = Cache(news_path)
+cache_dir = Path(app.config.get('CACHE_DIR', Cache.DEFAULT_DIR))
+news_cache = Cache(cache_dir / Cache.NEWS_FILE)
 
 
 @app.route('/', methods=['GET', 'HEAD'])
 def home() -> Response:
-    news = News.from_json(cache.get() or News().to_json())
+    news = News.from_json(news_cache.get() or News().to_json())
     page = Page(news, page_number=1, items_per_page=PAGE_SIZE)
     html = render_template(
         'home.html', news=news, page=page, item_count=page.begin,
@@ -36,7 +36,7 @@ def home() -> Response:
 
 @app.route('/all', methods=['GET', 'HEAD'])
 def all() -> Response:
-    news = News.from_json(cache.get() or News().to_json())
+    news = News.from_json(news_cache.get() or News().to_json())
     page = Page.one_page(news)
     html = render_template('home.html', news=news, page=page, item_count=0)
     response = make_response(html)
@@ -57,7 +57,7 @@ def numbered_page(page_number: int) -> Response:
     if page_number == 1:
         return redirect('/', 308)
 
-    news = News.from_json(cache.get() or News().to_json())
+    news = News.from_json(news_cache.get() or News().to_json())
     page = Page(news, page_number=page_number, items_per_page=PAGE_SIZE)
     if page.number > page.count:
         abort(404)

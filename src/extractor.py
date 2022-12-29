@@ -20,9 +20,9 @@ def env_is_true(name: str) -> bool:
 
 def parse_options():
     arg_parser = argparse.ArgumentParser(description='News extractor.')
-    arg_parser.add_argument('-c', '--cache-path', dest='cache_path',
-                            default='./news.json', type=Path,
-                            help='location to store news items')
+    arg_parser.add_argument('-c', '--cache-dir', dest='cache_dir',
+                            default=Cache.DEFAULT_DIR, type=Path,
+                            help='location to store cache files')
     arg_parser.add_argument('-t', '--cutoff-days', dest='cutoff_days',
                             default='30', type=cutoff_days,
                             help='discard items older than the given number of days')
@@ -47,13 +47,12 @@ def main():
         store = ReadOnlyStore(store)
     log.info(f'Using {store}')
 
-    cache = Cache(options.cache_path)
-
+    news_cache = Cache(options.cache_dir / Cache.NEWS_FILE)
     news = News.from_json(
-        cache.get() or store.get() or News().to_json()
+        news_cache.get() or store.get() or News().to_json()
     )
-    if not cache.is_present:
-        cache.put(news.to_json())
+    if not news_cache.is_present:
+        news_cache.put(news.to_json())
 
     now = datetime.now(timezone.utc)
 
@@ -68,7 +67,7 @@ def main():
 
     if news.is_modified:
         json = news.to_json()
-        cache.put(json)
+        news_cache.put(json)
         store.put(json)
         news.is_modified = False
 

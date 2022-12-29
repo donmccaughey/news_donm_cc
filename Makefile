@@ -29,10 +29,13 @@ clean : stop
 .PHONY : debug
 debug :
 	python3 src/extractor.py \
-		--cache-path="$(TMP)/news.json" \
+		--cache-dir="$(TMP)" \
 		--no-store
-	FLASK_NEWS_PATH="$(TMP)/news.json" \
-		flask --app src/server --debug run
+	FLASK_CACHE_DIR="$(TMP)" \
+		flask \
+		--app src/server \
+		--debug \
+		run
 
 
 .PHONY : deploy
