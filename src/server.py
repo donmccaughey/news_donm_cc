@@ -34,22 +34,6 @@ def home() -> Response:
     return response
 
 
-@app.route('/all', methods=['GET', 'HEAD'])
-def all() -> Response:
-    news = News.from_json(news_cache.get() or News().to_json())
-    page = Page.one_page(news)
-    html = render_template('home.html', news=news, page=page, item_count=0)
-    response = make_response(html)
-
-    response.add_etag()
-    response.last_modified = news.modified
-
-    response.make_conditional(request)
-    add_cache_control(response)
-
-    return response
-
-
 @app.route('/<int:page_number>', methods=['GET', 'HEAD'])
 def numbered_page(page_number: int) -> Response:
     if page_number == 0:

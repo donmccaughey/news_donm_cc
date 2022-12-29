@@ -2,8 +2,7 @@
 
 ## To Do
 
-- save site `etag` and `modified` in `sites.json`
-- do proper request handling, use feed parser only for parsing
+- check that feedparser actually handles conditional GETs
 - embed git sha in web page
 - robots.txt, sitemap.txt
 - add container smoke test
