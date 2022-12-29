@@ -4,6 +4,7 @@ from pathlib import Path
 class Cache:
     DEFAULT_DIR = '/var/lib/news'
     NEWS_FILE = 'news.json'
+    SITES_FILE = 'sites.json'
 
     def __init__(self, path: Path):
         self.path = path

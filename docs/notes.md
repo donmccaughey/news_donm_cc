@@ -2,10 +2,11 @@
 
 ## To Do
 
-- nginx content gzipping
 - save site `etag` and `modified` in `sites.json`
+- do proper request handling, use feed parser only for parsing
 - embed git sha in web page
 - robots.txt, sitemap.txt
+- add container smoke test
 - where should `query.py` live?
 - in debug mode, disable HTTP caching
 - nginx custom error pages for 50x 

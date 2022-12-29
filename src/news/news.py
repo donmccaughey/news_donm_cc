@@ -1,6 +1,6 @@
 import json
 from datetime import datetime, timezone
-from typing import Iterable
+from typing import Iterable, Any
 
 from .item import Item
 
@@ -19,7 +19,7 @@ class News:
         self.modified = modified if modified else now
         self.is_modified = False
 
-    def __iter__(self) -> Iterable:
+    def __iter__(self) -> Iterable[Item]:
         return iter(self.items)
 
     def __len__(self) -> int:
@@ -58,7 +58,7 @@ class News:
         return old_count
 
     @staticmethod
-    def decode(encoded: dict) -> 'News':
+    def decode(encoded: dict[str, Any]) -> 'News':
         items = encoded['items'] if 'items' in encoded else encoded['stories']
         return News(
             items=[Item.decode(item) for item in items],
@@ -66,7 +66,7 @@ class News:
             modified=datetime.fromisoformat(encoded['modified']),
         )
 
-    def encode(self) -> dict[str, str | list[dict[str, str]]]:
+    def encode(self) -> dict[str, Any]:
         return {
             'items': [item.encode() for item in self.items],
             'created': datetime.isoformat(self.created),

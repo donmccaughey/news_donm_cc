@@ -1,6 +1,8 @@
 import logging
 
 from datetime import datetime
+from typing import Any
+
 from feedparser import FeedParserDict, parse
 
 from .item import Item
@@ -18,7 +20,7 @@ class Site:
         self.name = name
         self.initials = initials
         self.etag = None
-        self.modified = None
+        self.last_modified = None
 
     def __repr__(self) -> str:
         return f"Site({repr(self.feed_url)}, '{self.name}', '{self.initials}')"
@@ -30,16 +32,16 @@ class Site:
         d: FeedParserDict = parse(
             str(self.feed_url),
             etag=self.etag,
-            modified=self.modified,
+            modified=self.last_modified,
             agent='News +https://news.donm.cc',
         )
         if d.status in [200, 302]:
             if 'etag' in d:
                 self.etag = d.etag
             if 'modified' in d:
-                self.modified = d.modified
-            if self.etag or self.modified:
-                log.info(f'{self.name}: etag={self.etag}, modified={self.modified}')
+                self.last_modified = d.modified
+            if self.etag or self.last_modified:
+                log.info(f'{self.name}: etag={self.etag}, last_modified={self.last_modified}')
             items = [
                 self.parse_entry(entry, now) for entry in d.entries
                 if self.keep_entry(entry)
@@ -65,6 +67,18 @@ class Site:
 
     def parse_entry(self, entry, now: datetime) -> Item:
         raise NotImplementedError()
+
+    def encode(self) -> dict[str, Any]:
+        encoded = {
+            'feed_url': str(self.feed_url),
+            'name': self.name,
+            'initials': self.initials,
+        }
+        if self.etag:
+            encoded['etag'] = self.etag
+        if self.last_modified:
+            encoded['last_modified'] = self.last_modified
+        return encoded
 
 
 def first_link_with_rel(links, rel: str):

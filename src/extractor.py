@@ -3,7 +3,7 @@ import logging
 import os
 
 from datetime import datetime, timedelta, timezone
-from news import Cache, DaringFireball, HackerNews, News, NoStore, ReadOnlyStore, S3Store
+from news import Cache, News, NoStore, ReadOnlyStore, S3Store, Sites
 from pathlib import Path
 
 
@@ -42,6 +42,9 @@ def main():
     log = logging.getLogger()
     log.name = Path(__file__).name
 
+    sites_cache = Cache(options.cache_dir / Cache.SITES_FILE)
+    sites = Sites.from_json(sites_cache.get())
+
     store = NoStore() if options.no_store else S3Store()
     if options.read_only:
         store = ReadOnlyStore(store)
@@ -57,7 +60,7 @@ def main():
     now = datetime.now(timezone.utc)
 
     new_count = 0
-    for site in [DaringFireball(), HackerNews()]:
+    for site in sites:
         new_count += news.add_new(site.get(now))
 
     cutoff = now - options.cutoff_days
@@ -69,7 +72,8 @@ def main():
         json = news.to_json()
         news_cache.put(json)
         store.put(json)
-        news.is_modified = False
+
+    sites_cache.put(sites.to_json())
 
 
 if __name__ == '__main__':
