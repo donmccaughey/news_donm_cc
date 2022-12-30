@@ -19,6 +19,20 @@ def test_str_and_repr():
     assert "URL('https://www.example.com/foo/bar?baz#fid')" == repr(url)
 
 
+def test_url_clean_for_clean_url():
+    url = URL('https://example.com').clean()
+
+    assert url == URL('https://example.com')
+
+
+def test_url_clean_for_dirty_url():
+    url = URL(
+        'https://acoup.blog/2022/12/02/collections-why-roman-egypt-was-such-a-strange-province/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=collections-why-roman-egypt-was-such-a-strange-province'
+    ).clean()
+
+    assert url == URL('https://acoup.blog/2022/12/02/collections-why-roman-egypt-was-such-a-strange-province/')
+
+
 def test_identity_for_bare_url():
     url = URL('https://fivethirtyeight.com/features/lionel-messi-is-impossible/')
 

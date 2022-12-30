@@ -1,5 +1,5 @@
 from pathlib import Path
-from urllib.parse import urlsplit
+from urllib.parse import urlsplit, urlunsplit
 
 
 class URL:
@@ -20,6 +20,16 @@ class URL:
 
     def __str__(self) -> str:
         return self.url
+
+    def clean(self) -> 'URL':
+        parts = urlsplit(self.url)
+        if parts.query or parts.fragment:
+            cleaned = urlunsplit(
+                (parts.scheme, parts.netloc, parts.path, '', '')
+            )
+            return URL(cleaned)
+        else:
+            return self
 
     @property
     def identity(self) -> str:

@@ -51,6 +51,9 @@ class Site:
                 created=now,
                 modified=now,
             )
+        elif d.status == 304:
+            log.info(f'{self.name} is unmodified')
+            return News()
         else:
             log.warning(f'{self.name} returned status code {d.status}')
             return News()
@@ -86,6 +89,27 @@ def first_link_with_rel(links, rel: str):
         if link['rel'] == rel:
             return link.href
     return None
+
+
+class Acoup(Site):
+    def __init__(self):
+        super().__init__(
+            URL('https://acoup.blog/feed/'),
+            'A Collection of Unmitigated Pedantry', 'acoup'
+        )
+
+    def __repr__(self) -> str:
+        return 'Acoup()'
+
+    def parse_entry(self, entry, now: datetime) -> Item:
+        url = URL(entry.link).clean()
+        return Item(
+            url=url,
+            title=entry.title,
+            source=Source(url, self.initials),
+            created=now,
+            modified=now,
+        )
 
 
 class DaringFireball(Site):

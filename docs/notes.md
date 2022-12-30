@@ -345,6 +345,20 @@ Cache size calculation
 
 ## Links and Identity
 
+### Acoup
+
+    https://acoup.blog/2022/12/23/fireside-friday-december-23-2022-whither-history/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=fireside-friday-december-23-2022-whither-history
+    https://acoup.blog/2022/12/16/collections-why-rings-of-powers-middle-earth-feels-flat/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=collections-why-rings-of-powers-middle-earth-feels-flat
+    https://acoup.blog/2022/12/09/meet-a-historian-james-baillie-on-digital-humanities-and-the-medieval-caucasus/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=meet-a-historian-james-baillie-on-digital-humanities-and-the-medieval-caucasus
+    https://acoup.blog/2022/12/02/collections-why-roman-egypt-was-such-a-strange-province/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=collections-why-roman-egypt-was-such-a-strange-province
+
+Queries:
+
+    ?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=fireside-friday-december-23-2022-whither-history
+    ?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=collections-why-rings-of-powers-middle-earth-feels-flat
+    ?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=meet-a-historian-james-baillie-on-digital-humanities-and-the-medieval-caucasus
+    ?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=collections-why-roman-egypt-was-such-a-strange-province
+
 ### CNN
 
 https://lite.cnn.com/en/article/h_83938cfff92036cf0e1b55ced9febc77

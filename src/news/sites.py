@@ -1,12 +1,13 @@
 import json
 from typing import Iterable, Any
 
-from .site import DaringFireball, HackerNews, Site
+from .site import Acoup, DaringFireball, HackerNews, Site
 
 
 class Sites:
     def __init__(self):
         self.sites = [
+            Acoup(),
             DaringFireball(),
             HackerNews(),
         ]
