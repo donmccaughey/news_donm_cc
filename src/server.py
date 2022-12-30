@@ -9,9 +9,19 @@ PAGE_SIZE = 10
 
 app = Flask(__name__)
 app.config.from_prefixed_env()
+app.jinja_options = {
+    'lstrip_blocks': True,
+    'trim_blocks': True,
+}
 
 cache_dir = Path(app.config.get('CACHE_DIR', Cache.DEFAULT_DIR))
 news_cache = Cache(cache_dir / Cache.NEWS_FILE)
+
+version = 'unknown'
+version_path = Path('version.txt')
+if version_path.exists():
+    with version_path.open() as f:
+        version = f.read().strip()
 
 
 @app.route('/', methods=['GET', 'HEAD'])
@@ -22,6 +32,7 @@ def home() -> Response:
         'home.html', news=news, page=page, item_count=page.begin,
         next_url=next_url(page), previous_url=previous_url(page),
         first_url=first_url(page), last_url=last_url(page),
+        version=version
     )
     response = make_response(html)
 
@@ -50,6 +61,7 @@ def numbered_page(page_number: int) -> Response:
         'home.html', news=news, page=page, item_count=page.begin,
         next_url=next_url(page), previous_url=previous_url(page),
         first_url=first_url(page), last_url=last_url(page),
+        version=version
     )
     response = make_response(html)
 

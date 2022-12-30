@@ -7,14 +7,14 @@ RUN apk add --no-cache nginx python3 py3-pip
 
 # nginx
 RUN rm -rf \
-    /etc/nginx/http.d/ \
-    /etc/nginx/modules/ \
-    /var/lib/nginx/html/
+        /etc/nginx/http.d/ \
+        /etc/nginx/modules/ \
+        /var/lib/nginx/html/
 RUN rm -f \
-    /etc/nginx/fastcgi.conf \
-    /etc/nginx/fastcgi_params \
-    /etc/nginx/scgi_params \
-    /etc/nginx/uwsgi_params
+        /etc/nginx/fastcgi.conf \
+        /etc/nginx/fastcgi_params \
+        /etc/nginx/scgi_params \
+        /etc/nginx/uwsgi_params
 
 RUN ln -sf /dev/stderr /var/log/nginx/error.log
 RUN ln -sf /srv/www /var/lib/nginx/html
@@ -42,13 +42,15 @@ RUN ln -sf /etc/profile.d/color_prompt.sh.disabled /etc/profile.d/color_prompt.s
 # news app
 RUN mkdir -p /usr/lib/news /var/lib/news
 RUN chown -R news:news /usr/lib/news /var/lib/news
-COPY --chown=news:news requirements.txt /usr/local/news/requirements.txt
-COPY --chown=news:news src /usr/local/news
+COPY --chown=news:news \
+        requirements.txt version.txt /usr/local/news/
+COPY --chown=news:news \
+        src /usr/local/news
 
 WORKDIR /usr/local/news
 RUN python3 -m pip install \
-    --quiet --quiet --quiet \
-    --requirement requirements.txt
+        --quiet --quiet --quiet \
+        --requirement requirements.txt
 
 
 WORKDIR /root

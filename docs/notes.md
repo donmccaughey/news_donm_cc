@@ -2,12 +2,12 @@
 
 ## To Do
 
-- check that feedparser actually handles conditional GETs
-- embed git sha in web page
 - robots.txt, sitemap.txt
 - add container smoke test
 - where should `query.py` live?
+- nginx rate limiting
 - in debug mode, disable HTTP caching
+- improve AWS permissions to read/write S3 bucket
 - nginx custom error pages for 50x 
 - make page footer sticky to the window
 - gunicorn error logs
@@ -16,10 +16,8 @@
 - json responses
 - Cache wraps Store and Cache write on first `get()`
 - ecr container versioning
-- improve AWS permissions to read/write S3 bucket
 - unify command line options and ENV
 - ENV variable to control logging level
-- nginx rate limiting
 - flask proxy middleware
   - https://flask.palletsprojects.com/en/2.2.x/deploying/proxy_fix/
 - link rewriting

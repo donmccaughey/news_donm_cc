@@ -2,7 +2,7 @@ AWS_ACCESS_KEY_ID ?= $(shell aws configure get aws_access_key_id)
 AWS_SECRET_ACCESS_KEY ?= $(shell aws configure get aws_secret_access_key)
 TMP ?= $(abspath tmp)
 
-NEWS := news
+NEWS := news  # container name
 
 
 .SECONDEXPANSION :
@@ -97,6 +97,7 @@ source_files := \
 	src/news/news.py \
 	src/news/page.py \
 	src/news/site.py \
+	src/news/sites.py \
 	src/news/source.py \
 	src/news/store.py \
 	src/news/url.py \
@@ -142,7 +143,12 @@ $(TMP)/create-container-service-deployment.json : aws/create-container-service-d
 	chmod 600 $@
 
 
-$(TMP)/docker-build.stamp.txt : Dockerfile $(container_files) $(source_files) | $$(dir $$@)
+$(TMP)/docker-build.stamp.txt : \
+		Dockerfile \
+		$(container_files) \
+		$(source_files) \
+		| $$(dir $$@)
+	git rev-parse --short HEAD > version.txt
 	docker build \
 		--file $< \
 		--platform linux/amd64 \
