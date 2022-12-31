@@ -129,8 +129,12 @@ class DaringFireball(Site):
         related = first_link_with_rel(entry.links, 'related')
         if related and related.startswith('https://daringfireball.net/feeds/sponsors/'):
             return False
-        else:
-            return True
+
+        alternate = first_link_with_rel(entry.links, 'alternate')
+        if alternate and alternate.startswith('https://daringfireball.net/thetalkshow/'):
+            return False
+
+        return True
 
     def parse_entry(self, entry, now: datetime) -> Item:
         related = first_link_with_rel(entry.links, 'related')

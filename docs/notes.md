@@ -2,13 +2,13 @@
 
 ## To Do
 
-- gunicorn error logs
-- flask app logs
 - health check
 - json responses
 - add container smoke test
-- where should `query.py` live?
 - in debug mode, disable HTTP caching
+- gunicorn error logs
+- flask app logs
+- where should `query.py` live?
 - improve AWS permissions to read/write S3 bucket
 - make page footer sticky to the window
 - Cache wraps Store and Cache write on first `get()`
