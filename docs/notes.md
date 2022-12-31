@@ -2,7 +2,6 @@
 
 ## To Do
 
-- nginx rate limiting
 - gunicorn error logs
 - flask app logs
 - health check
@@ -224,6 +223,8 @@ https://unix.stackexchange.com/questions/412805/crond-log-level-meaning
 
 [Configuration file measurement units](https://nginx.org/en/docs/syntax.html)
 
+Rate limiting:
+[Limiting Access to Proxied HTTP Resources](https://docs.nginx.com/nginx/admin-guide/security-controls/controlling-access-proxied-http/)
 
 ### Caching
 
