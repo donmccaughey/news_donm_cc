@@ -1,5 +1,5 @@
 #!/bin/sh
 
-cd /usr/local/news || exit 1
+cd /usr/lib/news || exit 1
 
 python3 extractor.py

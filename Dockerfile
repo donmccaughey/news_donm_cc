@@ -23,8 +23,9 @@ RUN mkdir -p /var/cache/nginx
 RUN chown -R nginx:nginx /var/cache/nginx
 
 COPY nginx/nginx.conf /etc/nginx/nginx.conf
-COPY --chown=nginx:www-data nginx/default /srv/www
-
+COPY --chown=nginx:www-data wwwroot /srv/www
+COPY --chown=nginx:nginx \
+        nginx/error_pages /var/lib/nginx/error_pages
 
 # cron
 COPY crontabs /var/spool/cron/crontabs
@@ -43,11 +44,11 @@ RUN ln -sf /etc/profile.d/color_prompt.sh.disabled /etc/profile.d/color_prompt.s
 RUN mkdir -p /usr/lib/news /var/lib/news
 RUN chown -R news:news /usr/lib/news /var/lib/news
 COPY --chown=news:news \
-        requirements.txt version.txt /usr/local/news/
+        requirements.txt version.txt /usr/lib/news/
 COPY --chown=news:news \
-        src /usr/local/news
+        src /usr/lib/news
 
-WORKDIR /usr/local/news
+WORKDIR /usr/lib/news
 RUN python3 -m pip install \
         --quiet --quiet --quiet \
         --requirement requirements.txt

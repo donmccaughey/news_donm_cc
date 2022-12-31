@@ -73,22 +73,24 @@ container_files := \
 	requirements.txt \
 	crontabs/news \
 	nginx/nginx.conf \
-	nginx/default/404.html \
-	nginx/default/500.html \
-	nginx/default/502.html \
-	nginx/default/503.html \
-	nginx/default/504.html \
-	nginx/default/index.html \
+	nginx/error_pages/404.html \
+	nginx/error_pages/500.html \
+	nginx/error_pages/502.html \
+	nginx/error_pages/503.html \
+	nginx/error_pages/504.html \
 	profile.d/dir.sh \
 	sbin/extract \
 	sbin/news \
-	sbin/serve
+	sbin/serve \
+	wwwroot/robots.txt \
+	wwwroot/sitemap.txt
 
 script_files := \
 	scripts/logs.py
 
 source_files := \
 	src/extractor.py \
+	src/gunicorn.conf.py \
 	src/query.py \
 	src/server.py \
 	src/news/__init__.py \
@@ -101,8 +103,7 @@ source_files := \
 	src/news/source.py \
 	src/news/store.py \
 	src/news/url.py \
-	src/templates/404.html \
-	src/templates/home.html
+	src/templates/news.html
 
 test_files := \
 	src/news/cache_test.py \

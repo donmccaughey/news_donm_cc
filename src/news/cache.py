@@ -8,6 +8,7 @@ class Cache:
 
     def __init__(self, path: Path):
         self.path = path
+        self.temp_path = path.with_suffix('.temp' + path.suffix)
         self.mtime = None
         self.json = ''
 
@@ -28,7 +29,8 @@ class Cache:
         return self.json
 
     def put(self, json: str):
-        with self.path.open('w', encoding='utf-8') as f:
+        with self.temp_path.open('w', encoding='utf-8') as f:
             f.write(json)
+        self.temp_path.rename(self.path)
         self.mtime = self.path.stat().st_mtime
         self.json = json

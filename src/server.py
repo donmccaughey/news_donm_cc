@@ -1,5 +1,6 @@
 from datetime import datetime
 from pathlib import Path
+from textwrap import dedent
 
 from flask import abort, Flask, make_response, redirect, render_template, request, Response
 
@@ -29,7 +30,7 @@ def home() -> Response:
     news = News.from_json(news_cache.get() or News().to_json())
     page = Page(news, page_number=1, items_per_page=PAGE_SIZE)
     html = render_template(
-        'home.html', news=news, page=page, item_count=page.begin,
+        'news.html', news=news, page=page, item_count=page.begin,
         next_url=next_url(page), previous_url=previous_url(page),
         first_url=first_url(page), last_url=last_url(page),
         version=version
@@ -58,7 +59,7 @@ def numbered_page(page_number: int) -> Response:
         abort(404)
 
     html = render_template(
-        'home.html', news=news, page=page, item_count=page.begin,
+        'news.html', news=news, page=page, item_count=page.begin,
         next_url=next_url(page), previous_url=previous_url(page),
         first_url=first_url(page), last_url=last_url(page),
         version=version
@@ -74,9 +75,21 @@ def numbered_page(page_number: int) -> Response:
     return response
 
 
+PAGE_404 = dedent(
+    '''
+    <!doctype html>
+    <html lang=en>
+    <link rel=icon href=data:,>
+    <meta charset=utf-8>
+    <title>News</title>
+    <p>404 Not found.
+    '''
+).strip()
+
+
 @app.errorhandler(404)
 def not_found(e):
-    return render_template('404.html'), 404
+    return PAGE_404, 404
 
 
 def add_cache_control(response: Response):
@@ -91,7 +104,7 @@ def add_cache_control(response: Response):
 
 def first_url(page: Page) -> str | None:
     if page.number > 1:
-        return '/'
+        return './'
     else:
         return None
 
@@ -99,7 +112,7 @@ def first_url(page: Page) -> str | None:
 def last_url(page: Page) -> str | None:
     last_page = page.last
     if last_page:
-        return f'/{last_page.number}'
+        return f'./{last_page.number}'
     else:
         return None
 
@@ -107,7 +120,7 @@ def last_url(page: Page) -> str | None:
 def next_url(page: Page) -> str | None:
     next_page = page.next
     if next_page:
-        return f'/{next_page.number}'
+        return f'./{next_page.number}'
     else:
         return None
 
@@ -116,9 +129,9 @@ def previous_url(page: Page) -> str | None:
     previous_page = page.previous
     if previous_page:
         if previous_page.number == 1:
-            return '/'
+            return './'
         else:
-            return f'/{previous_page.number}'
+            return f'./{previous_page.number}'
     else:
         return None
 

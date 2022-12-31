@@ -2,18 +2,16 @@
 
 ## To Do
 
-- robots.txt, sitemap.txt
-- add container smoke test
-- where should `query.py` live?
 - nginx rate limiting
-- in debug mode, disable HTTP caching
-- improve AWS permissions to read/write S3 bucket
-- nginx custom error pages for 50x 
-- make page footer sticky to the window
 - gunicorn error logs
 - flask app logs
 - health check
 - json responses
+- add container smoke test
+- where should `query.py` live?
+- in debug mode, disable HTTP caching
+- improve AWS permissions to read/write S3 bucket
+- make page footer sticky to the window
 - Cache wraps Store and Cache write on first `get()`
 - ecr container versioning
 - unify command line options and ENV
@@ -394,6 +392,53 @@ https://threadreaderapp.com/thread/1606701397109796866.html
 
 ## Errors
 
+### JSON decoding error
+
+Possible race condition leading to corruption?
+
+    2022-12-30T13:35:00-08:00: INFO:botocore.credentials:Found credentials in environment variables.
+    2022-12-30T13:35:01-08:00: INFO:extractor.py:Using S3Store('news.donm.cc', 'news.json')
+    2022-12-30T13:35:01-08:00: INFO:news.site:A Collection of Unmitigated Pedantry is unmodified
+    2022-12-30T13:35:02-08:00: INFO:news.site:Daring Fireball: etag="844fddd460231e427e64a496278ff1b4-gzip", last_modified=Fri, 30 Dec 2022 21:34:05 GMT
+    2022-12-30T13:35:02-08:00: INFO:extractor.py:Added 1 and removed 0 items
+
+Error started at:
+
+    2022-12-30T13:35:02-08:00: [2022-12-30 21:35:02,742] ERROR in app: Exception on / [GET]
+
+Last error occurrence at:
+
+    2022-12-30T13:59:54-08:00: [2022-12-30 21:59:54,182] ERROR in app: Exception on / [GET]
+    2022-12-30T13:59:54-08:00: Traceback (most recent call last):
+    2022-12-30T13:59:54-08:00:   File "/usr/lib/python3.10/site-packages/flask/app.py", line 2525, in wsgi_app
+    2022-12-30T13:59:54-08:00:     response = self.full_dispatch_request()
+    2022-12-30T13:59:54-08:00:   File "/usr/lib/python3.10/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    2022-12-30T13:59:54-08:00:     rv = self.handle_user_exception(e)
+    2022-12-30T13:59:54-08:00:   File "/usr/lib/python3.10/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    2022-12-30T13:59:54-08:00:     rv = self.dispatch_request()
+    2022-12-30T13:59:54-08:00:   File "/usr/lib/python3.10/site-packages/flask/app.py", line 1796, in dispatch_request
+    2022-12-30T13:59:54-08:00:     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+    2022-12-30T13:59:54-08:00:   File "/usr/local/news/server.py", line 29, in home
+    2022-12-30T13:59:54-08:00:     news = News.from_json(news_cache.get() or News().to_json())
+    2022-12-30T13:59:54-08:00:   File "/usr/local/news/news/news.py", line 78, in from_json
+    2022-12-30T13:59:54-08:00:     return News.decode(json.loads(s))
+    2022-12-30T13:59:54-08:00:   File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    2022-12-30T13:59:54-08:00:     return _default_decoder.decode(s)
+    2022-12-30T13:59:54-08:00:   File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    2022-12-30T13:59:54-08:00:     obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+    2022-12-30T13:59:54-08:00:   File "/usr/lib/python3.10/json/decoder.py", line 353, in raw_decode
+    2022-12-30T13:59:54-08:00:     obj, end = self.scan_once(s, idx)
+    2022-12-30T13:59:54-08:00: json.decoder.JSONDecodeError: Unterminated string starting at: line 1484 column 11 (char 53241)
+
+Resolved when `news.json` was updated:
+
+    2022-12-30T14:00:00-08:00: INFO:botocore.credentials:Found credentials in environment variables.
+    2022-12-30T14:00:01-08:00: INFO:extractor.py:Using S3Store('news.donm.cc', 'news.json')
+    2022-12-30T14:00:01-08:00: INFO:news.site:A Collection of Unmitigated Pedantry is unmodified
+    2022-12-30T14:00:02-08:00: INFO:news.site:Daring Fireball: etag="844fddd460231e427e64a496278ff1b4-gzip", last_modified=Fri, 30 Dec 2022 21:59:04 GMT
+    2022-12-30T14:00:02-08:00: INFO:extractor.py:Added 1 and removed 0 items
+
+
 ### KeyError: 'status' running locally
 
     2022-12-28 12:09:25 INFO:botocore.credentials:Found credentials in environment variables.
@@ -439,7 +484,6 @@ https://threadreaderapp.com/thread/1606701397109796866.html
     2022-12-28 12:13:50     raise AttributeError("object has no attribute '%s'" % key)
     2022-12-28 12:13:50 AttributeError: object has no attribute 'status'
     2022-12-28 12:43:02 INFO:botocore.credentials:Found credentials in environment variables.
-
 
 
 ### Missing AWS credentials
@@ -551,7 +595,6 @@ https://threadreaderapp.com/thread/1606701397109796866.html
             }
         } from Daring Fireball does not have a "title" attribute
     2022-12-26T16:06:05-08:00: INFO:extractor.py:Added 0 and removed 0 items
-
 
 
 ### crond errors
