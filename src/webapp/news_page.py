@@ -11,7 +11,10 @@ class NewsPage:
         self.modified = self.news.modified
 
         self.page = Page(self.news, page_number=page_number, items_per_page=10)
-        self.is_valid = 1 <= self.page.number <= self.page.count
+        self.is_valid = (
+            (1 <= self.page.number <= self.page.count)
+            or (self.page.number == 1 and self.page.count == 0)
+        )
 
         # navigation URLs
         self.first_url = './' if self.page.number > 1 else None
