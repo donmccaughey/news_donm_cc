@@ -1,6 +1,6 @@
 from flask import abort, make_response, redirect, render_template, request, Response
 
-from news import Cache, News, Page
+from news import Cache
 from .news_page import NewsPage
 
 
@@ -39,37 +39,3 @@ def add_cache_control(response: Response):
         response.cache_control.s_maxage = 15
         response.cache_control.proxy_revalidate = True
         response.cache_control.immutable = True
-
-
-def first_url(page: Page) -> str | None:
-    if page.number > 1:
-        return './'
-    else:
-        return None
-
-
-def last_url(page: Page) -> str | None:
-    last_page = page.last
-    if last_page:
-        return f'./{last_page.number}'
-    else:
-        return None
-
-
-def next_url(page: Page) -> str | None:
-    next_page = page.next
-    if next_page:
-        return f'./{next_page.number}'
-    else:
-        return None
-
-
-def previous_url(page: Page) -> str | None:
-    previous_page = page.previous
-    if previous_page:
-        if previous_page.number == 1:
-            return './'
-        else:
-            return f'./{previous_page.number}'
-    else:
-        return None
