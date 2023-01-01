@@ -153,6 +153,20 @@ def test_seven_items_backwards():
     assert page1.next is not None
 
 
+def test_page_number_past_end():
+    news = News([item1, item2])
+    page = Page(news, page_number=2, items_per_page=3)
+
+    assert page.number == 2
+    assert page.count == 1
+
+    assert len(page) == 0
+    assert list(page) == []
+
+    assert page.previous is not None
+    assert page.next is None
+
+
 def test_str_and_repr():
     news = News([item1, item2, item3, item4])
     page = Page(news, page_number=1, items_per_page=3)

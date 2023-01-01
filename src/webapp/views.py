@@ -1,23 +1,15 @@
 from flask import abort, make_response, redirect, render_template, request, Response
 
 from news import Cache, News, Page
-
-
-PAGE_SIZE = 10
+from .news_page import NewsPage
 
 
 def news_page(news_cache: Cache, version: str, page_number: int) -> Response:
-    news = News.from_json(news_cache.get() or News().to_json())
-    page = Page(news, page_number=page_number, items_per_page=PAGE_SIZE)
-    if page.number > page.count:
+    news = NewsPage(news_cache, version, page_number)
+    if not news.is_valid:
         abort(404)
 
-    html = render_template(
-        'news.html', news=news, page=page, item_count=page.begin,
-        next_url=next_url(page), previous_url=previous_url(page),
-        first_url=first_url(page), last_url=last_url(page),
-        version=version
-    )
+    html = render_template('news.html', news=news)
     response = make_response(html)
 
     response.add_etag()
@@ -34,8 +26,6 @@ def first_page(news_cache: Cache, version: str) -> Response:
 
 
 def numbered_page(news_cache: Cache, version: str, page_number: int) -> Response:
-    if page_number < 1:
-        abort(404)
     if page_number == 1:
         return redirect('/', 308)
     return news_page(news_cache, version, page_number)

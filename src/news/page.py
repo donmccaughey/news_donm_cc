@@ -11,9 +11,12 @@ class Page:
 
         self.begin = (self.number - 1) * self.items_per_page
         self.end = self.begin + self.items_per_page
+
         items_end = len(self.news)
         if items_end < self.end:
             self.end = items_end
+        if self.begin > self.end:
+            self.begin = self.end
 
         self.count = ((items_end - 1) // self.items_per_page) + 1
 
