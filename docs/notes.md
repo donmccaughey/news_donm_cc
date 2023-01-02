@@ -15,8 +15,6 @@
 - ecr container versioning
 - unify command line options and ENV
 - ENV variable to control logging level
-- flask proxy middleware
-  - https://flask.palletsprojects.com/en/2.2.x/deploying/proxy_fix/
 - link rewriting
   - reddit links to old reddit
   - cnn to https://lite.cnn.com/en

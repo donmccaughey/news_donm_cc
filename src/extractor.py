@@ -7,10 +7,6 @@ from news import Cache, News, NoStore, ReadOnlyStore, S3Store, Sites
 from pathlib import Path
 
 
-def cutoff_days(arg: str) -> timedelta:
-    return timedelta(days=int(arg))
-
-
 def env_is_true(name: str) -> bool:
     return (
             name in os.environ
@@ -23,9 +19,6 @@ def parse_options():
     arg_parser.add_argument('-c', '--cache-dir', dest='cache_dir',
                             default=Cache.DEFAULT_DIR, type=Path,
                             help='location to store cache files')
-    arg_parser.add_argument('-t', '--cutoff-days', dest='cutoff_days',
-                            default='30', type=cutoff_days,
-                            help='discard items older than the given number of days')
     arg_parser.add_argument('--no-store', dest='no_store', default=False,
                             action='store_true', help="don't use a persistent store")
     options = arg_parser.parse_args()
@@ -48,7 +41,6 @@ def main():
     store = NoStore() if options.no_store else S3Store()
     if options.read_only:
         store = ReadOnlyStore(store)
-    log.info(f'Using {store}')
 
     news_cache = Cache(options.cache_dir / Cache.NEWS_FILE)
     news = News.from_json(
@@ -58,13 +50,11 @@ def main():
         news_cache.put(news.to_json())
 
     now = datetime.now(timezone.utc)
-
     new_count = 0
     for site in sites:
         new_count += news.add_new(site.get(now))
 
-    cutoff = now - options.cutoff_days
-    old_count = news.remove_old(cutoff)
+    old_count = news.remove_old()
 
     log.info(f'Added {new_count} and removed {old_count} items')
 

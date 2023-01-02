@@ -1,5 +1,5 @@
 import json
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from typing import Iterable, Any
 
 from .item import Item
@@ -10,6 +10,7 @@ class News:
                  items: list[Item] = [],
                  created: datetime | None = None,
                  modified: datetime | None = None,
+                 lifetime: timedelta | None = timedelta(days=30),
                  ):
         self.items = list(items)
         self.index = set(items)
@@ -17,6 +18,8 @@ class News:
         now = datetime.now(timezone.utc)
         self.created = created if created else now
         self.modified = modified if modified else now
+        self.lifetime = lifetime
+        self.expired = self.modified - self.lifetime
         self.is_modified = False
 
     def __iter__(self) -> Iterable[Item]:
@@ -41,14 +44,15 @@ class News:
                 self.index.add(item)
                 self.modified = other.modified
                 self.is_modified = True
+                self.expired = self.modified - self.lifetime
                 new_count += 1
         return new_count
 
-    def remove_old(self, cutoff: datetime) -> int:
+    def remove_old(self) -> int:
         items = []
         old_count = 0
         for item in self.items:
-            if item.created > cutoff:
+            if item.created > self.expired:
                 items.append(item)
             else:
                 self.is_modified = True
@@ -59,7 +63,7 @@ class News:
 
     @staticmethod
     def decode(encoded: dict[str, Any]) -> 'News':
-        items = encoded['items'] if 'items' in encoded else encoded['stories']
+        items = encoded['items']
         return News(
             items=[Item.decode(item) for item in items],
             created=datetime.fromisoformat(encoded['created']),
@@ -71,6 +75,7 @@ class News:
             'items': [item.encode() for item in self.items],
             'created': datetime.isoformat(self.created),
             'modified': datetime.isoformat(self.modified),
+            'expired': datetime.isoformat(self.expired),
         }
 
     @staticmethod

@@ -60,10 +60,9 @@ def test_add_new_for_some_duplicates():
 
 
 def test_remove_old():
-    news = News([item3, item1_old, item2])
-    now = datetime.now(timezone.utc)
+    news = News([item3, item1_old, item2], lifetime=FIVE_DAYS)
 
-    old_count = news.remove_old(now - FIVE_DAYS)
+    old_count = news.remove_old()
 
     assert old_count == 1
     assert news.is_modified
@@ -71,19 +70,17 @@ def test_remove_old():
 
 
 def test_remove_old_when_none_expired():
-    now = datetime.now(timezone.utc)
-    news = News([item3, item1, item2])
+    news = News([item3, item1, item2], lifetime=FIVE_DAYS)
 
-    old_count = news.remove_old(now - FIVE_DAYS)
+    old_count = news.remove_old()
 
     assert old_count == 0
     assert not news.is_modified
 
 
 def test_remove_old_and_add_new_duplicate_item():
-    now = datetime.now(timezone.utc)
-    news = News([item3, item1_old, item2])
-    old_count = news.remove_old(now - FIVE_DAYS)
+    news = News([item3, item1_old, item2], lifetime=FIVE_DAYS)
+    old_count = news.remove_old()
 
     assert old_count == 1
 

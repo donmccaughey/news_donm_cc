@@ -41,7 +41,7 @@ class Site:
             if 'modified' in d:
                 self.last_modified = d.modified
             if self.etag or self.last_modified:
-                log.info(f'{self.name}: etag={self.etag}, last_modified={self.last_modified}')
+                log.debug(f'{self.name}: etag={self.etag}, last_modified={self.last_modified}')
             items = [
                 self.parse_entry(entry, now) for entry in d.entries
                 if self.keep_entry(entry)
@@ -52,7 +52,7 @@ class Site:
                 modified=now,
             )
         elif d.status == 304:
-            log.info(f'{self.name} is unmodified')
+            log.debug(f'{self.name} is unmodified')
             return News()
         else:
             log.warning(f'{self.name} returned status code {d.status}')
