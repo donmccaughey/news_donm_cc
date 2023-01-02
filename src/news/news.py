@@ -1,8 +1,10 @@
 import json
+
 from datetime import datetime, timedelta, timezone
 from typing import Iterable, Any
 
 from .item import Item
+from .utility import bisect
 
 
 class News:
@@ -49,17 +51,15 @@ class News:
         return new_count
 
     def remove_old(self) -> int:
-        items = []
-        old_count = 0
-        for item in self.items:
-            if item.created > self.expired:
-                items.append(item)
-            else:
-                self.is_modified = True
-                self.index.remove(item)
-                old_count += 1
-        self.items = items
-        return old_count
+        i = bisect(self.items, lambda item: item.created > self.expired)
+        if i == len(self.items):
+            return 0
+
+        self.is_modified = True
+        old_items = self.items[i:]
+        self.index.difference_update(old_items)
+        del self.items[i:]
+        return len(old_items)
 
     @staticmethod
     def decode(encoded: dict[str, Any]) -> 'News':
