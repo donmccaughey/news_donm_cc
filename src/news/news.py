@@ -4,7 +4,6 @@ from datetime import datetime, timedelta, timezone
 from typing import Iterable, Any
 
 from .item import Item
-from .utility import bisect
 
 
 class News:
@@ -51,15 +50,15 @@ class News:
         return new_count
 
     def remove_old(self) -> int:
-        i = bisect(self.items, lambda item: item.created > self.expired)
-        if i == len(self.items):
-            return 0
-
-        self.is_modified = True
-        old_items = self.items[i:]
-        self.index.difference_update(old_items)
-        del self.items[i:]
-        return len(old_items)
+        old_count = 0
+        i = len(self.items) - 1
+        while i >= 0 and self.items[i].created <= self.expired:
+            self.index.remove(self.items[i])
+            del self.items[i]
+            self.is_modified = True
+            old_count += 1
+            i -= 1
+        return old_count
 
     @staticmethod
     def decode(encoded: dict[str, Any]) -> 'News':

@@ -103,7 +103,6 @@ source_files := \
 	src/news/source.py \
 	src/news/store.py \
 	src/news/url.py \
-	src/news/utility.py \
 	src/templates/news.html \
 	src/webapp/__init__.py \
 	src/webapp/error_handlers.py \
