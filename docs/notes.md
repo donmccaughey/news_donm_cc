@@ -22,7 +22,10 @@
   - cnn to https://lite.cnn.com/en
   - npr to https://text.npr.org
   - https://www.nytimes.com/timeswire
+  - https://youtubetranscript.com
+  - https://threadreaderapp.com
   - pay walls to https://archive.ph
+    - https://archive.vn/rsxDl --> archive.today --> source site
     - wsj
     - economist
 - filter / search news
