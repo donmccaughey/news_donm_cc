@@ -53,6 +53,7 @@ RUN python3 -m pip install \
         --quiet --quiet --quiet \
         --requirement requirements.txt
 
+HEALTHCHECK CMD /usr/local/sbin/check-health
 
 WORKDIR /root
 ENTRYPOINT ["/usr/local/sbin/news"]

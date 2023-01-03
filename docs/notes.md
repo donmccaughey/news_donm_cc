@@ -191,6 +191,31 @@ Public domain: https://news.6i2dp3e2do9ku.us-west-2.cs.amazonlightsail.com
     nobody:x:65534:
     nginx:x:101:nginx
 
+
+### `ps` output
+
+    $ ps
+    PID   USER     TIME  COMMAND
+        1 root      0:00 /sbin/docker-init -- /usr/local/sbin/news
+        7 root      0:00 {news} /usr/bin/qemu-x86_64 /bin/sh /bin/sh /usr/local/sbin/news
+       17 root      0:00 {sh} /usr/bin/qemu-x86_64 /bin/sh sh -l
+       26 root      0:00 {serve} /usr/bin/qemu-x86_64 /bin/sh /bin/sh /usr/local/sbin/serve
+       28 root      0:00 {nginx} /usr/bin/qemu-x86_64 /usr/sbin/nginx nginx
+       30 root      0:00 {crond} /usr/bin/qemu-x86_64 /usr/sbin/crond crond -f -l 10 -L /dev/stdout
+       35 root      0:00 {gunicorn} /usr/bin/qemu-x86_64 /usr/bin/python3 /usr/bin/python3 /usr/bin/gunicorn
+       38 nginx     0:00 {nginx} /usr/bin/qemu-x86_64 /usr/sbin/nginx nginx
+       40 nginx     0:00 {nginx} /usr/bin/qemu-x86_64 /usr/sbin/nginx nginx
+       42 nginx     0:00 {nginx} /usr/bin/qemu-x86_64 /usr/sbin/nginx nginx
+       43 nginx     0:00 {nginx} /usr/bin/qemu-x86_64 /usr/sbin/nginx nginx
+       45 nginx     0:00 {nginx} /usr/bin/qemu-x86_64 /usr/sbin/nginx nginx
+       46 nginx     0:00 {nginx} /usr/bin/qemu-x86_64 /usr/sbin/nginx nginx
+       52 news      0:00 {gunicorn} /usr/bin/qemu-x86_64 /usr/bin/python3 /usr/bin/python3 /usr/bin/gunicorn
+       54 news      0:00 {gunicorn} /usr/bin/qemu-x86_64 /usr/bin/python3 /usr/bin/python3 /usr/bin/gunicorn
+       56 news      0:00 {gunicorn} /usr/bin/qemu-x86_64 /usr/bin/python3 /usr/bin/python3 /usr/bin/gunicorn
+       58 news      0:00 {gunicorn} /usr/bin/qemu-x86_64 /usr/bin/python3 /usr/bin/python3 /usr/bin/gunicorn
+       82 root      0:00 ps
+
+
 ### crond
 
     ~ # crond -h
@@ -340,6 +365,7 @@ Cache size calculation
 
 ### boto3 https://boto3.amazonaws.com/v1/documentation/api/latest/index.html
 
+### reStructured Text Primer https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
 
 ## Links and Identity
 

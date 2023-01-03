@@ -62,6 +62,11 @@ shell: $(TMP)/docker-run.stamp.txt
 		$(NEWS) sh -l
 
 
+.PHONY : status
+status :
+	docker inspect news | jq '.[0].State'
+
+
 .PHONY : stop
 stop :
 	-docker stop $(NEWS)
@@ -79,6 +84,7 @@ container_files := \
 	nginx/error_pages/503.html \
 	nginx/error_pages/504.html \
 	profile.d/dir.sh \
+	sbin/check-health \
 	sbin/extract \
 	sbin/news \
 	sbin/serve \
@@ -91,8 +97,13 @@ script_files := \
 source_files := \
 	src/extractor.py \
 	src/gunicorn.conf.py \
+	src/health_check.py \
 	src/query.py \
 	src/server.py \
+	src/health/__init__.py \
+	src/health/jobs.py \
+	src/health/processes.py \
+	src/health/servers.py \
 	src/news/__init__.py \
 	src/news/cache.py \
 	src/news/item.py \
