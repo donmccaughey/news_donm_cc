@@ -1,7 +1,7 @@
 import json
-from typing import Iterable, Any
+from typing import Iterable
 
-from .site import Acoup, DaringFireball, HackerNews, Site
+from .site import Acoup, DaringFireball, HackerNews, Site, Streetsblog
 
 
 class Sites:
@@ -10,6 +10,7 @@ class Sites:
             Acoup(),
             DaringFireball(),
             HackerNews(),
+            Streetsblog(),
         ]
 
     def __iter__(self) -> Iterable[Site]:
