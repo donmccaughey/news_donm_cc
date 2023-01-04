@@ -112,14 +112,14 @@ source_files := \
 	src/health/processes.py \
 	src/health/servers.py \
 	src/news/__init__.py \
-	src/news/cache.py \
 	src/news/item.py \
 	src/news/news.py \
-	src/news/page.py \
 	src/news/source.py \
 	src/news/store.py \
 	src/news/url.py \
 	src/templates/news.html \
+	src/utility/cache.py \
+	src/utility/page.py \
 	src/webapp/__init__.py \
 	src/webapp/error_handlers.py \
 	src/webapp/news_page.py \
@@ -131,13 +131,13 @@ test_files := \
 	src/feeds/daring_fireball_test.py \
 	src/feeds/site_test.py \
 	src/feeds/streetsblog_test.py \
-	src/news/cache_test.py \
 	src/news/item_test.py \
 	src/news/news_test.py \
-	src/news/page_test.py \
 	src/news/source_test.py \
 	src/news/store_test.py \
-	src/news/url_test.py
+	src/news/url_test.py \
+	src/utility/cache_test.py \
+	src/utility/page_test.py
 
 
 $(TMP)/.env : | $$(dir $$@)

@@ -1,6 +1,7 @@
 from typing import Iterable
 
-from news import Cache, News, Page, Item
+from news import News, Item
+from utility import Cache, Page
 
 
 class NewsPage:

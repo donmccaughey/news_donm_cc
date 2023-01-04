@@ -1,6 +1,6 @@
 from flask import abort, make_response, redirect, render_template, request, Response
 
-from news import Cache
+from utility import Cache
 from .news_page import NewsPage
 
 

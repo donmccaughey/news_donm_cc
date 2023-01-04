@@ -3,8 +3,8 @@ from pathlib import Path
 
 from flask import Flask
 
-from news import Cache
-
+from news import CACHE_DIR, NEWS_FILE
+from utility import Cache
 from .error_handlers import not_found
 from .template_filters import href, iso, utc
 from .utility import get_version
@@ -16,8 +16,8 @@ def create_app(name: str) -> Flask:
 
     app.config.from_prefixed_env()
 
-    cache_dir = Path(app.config.get('CACHE_DIR', Cache.DEFAULT_DIR))
-    news_cache = Cache(cache_dir / Cache.NEWS_FILE)
+    cache_dir = Path(app.config.get('CACHE_DIR', CACHE_DIR))
+    news_cache = Cache(cache_dir / NEWS_FILE)
 
     version = get_version()
 

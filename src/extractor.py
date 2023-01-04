@@ -5,7 +5,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from feeds import Sites
-from news import Cache, News, NoStore, ReadOnlyStore, S3Store
+from news import CACHE_DIR, News, NEWS_FILE, NoStore, ReadOnlyStore, S3Store
+from utility import Cache
 
 
 def env_is_true(name: str) -> bool:
@@ -18,7 +19,7 @@ def env_is_true(name: str) -> bool:
 def parse_options():
     arg_parser = argparse.ArgumentParser(description='News extractor.')
     arg_parser.add_argument('-c', '--cache-dir', dest='cache_dir',
-                            default=Cache.DEFAULT_DIR, type=Path,
+                            default=CACHE_DIR, type=Path,
                             help='location to store cache files')
     arg_parser.add_argument('--no-store', dest='no_store', default=False,
                             action='store_true', help="don't use a persistent store")
@@ -43,7 +44,7 @@ def main():
     if options.read_only:
         store = ReadOnlyStore(store)
 
-    news_cache = Cache(options.cache_dir / Cache.NEWS_FILE)
+    news_cache = Cache(options.cache_dir / NEWS_FILE)
     news = News.from_json(
         news_cache.get() or store.get() or News().to_json()
     )
