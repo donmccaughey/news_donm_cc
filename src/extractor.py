@@ -1,10 +1,11 @@
 import argparse
 import logging
 import os
-
-from datetime import datetime, timedelta, timezone
-from news import Cache, News, NoStore, ReadOnlyStore, S3Store, Sites
+from datetime import datetime, timezone
 from pathlib import Path
+
+from feeds import Sites
+from news import Cache, News, NoStore, ReadOnlyStore, S3Store
 
 
 def env_is_true(name: str) -> bool:
@@ -35,7 +36,7 @@ def main():
     log = logging.getLogger()
     log.name = Path(__file__).name
 
-    sites_cache = Cache(options.cache_dir / Cache.SITES_FILE)
+    sites_cache = Cache(options.cache_dir / 'sites.json')
     sites = Sites.from_json(sites_cache.get())
 
     store = NoStore() if options.no_store else S3Store()

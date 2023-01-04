@@ -1,7 +1,7 @@
 from feedparser import FeedParserDict, parse
 
+from news import URL
 from .site import Site, DaringFireball
-from .url import URL
 
 
 def test_str_and_repr():

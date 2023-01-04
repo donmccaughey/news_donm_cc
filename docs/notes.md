@@ -4,6 +4,7 @@
 
 - health check
 - json responses
+- make `Cache` and `Page` generic
 - add container smoke test
 - in debug mode, disable HTTP caching
 - gunicorn error logs

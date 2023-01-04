@@ -100,6 +100,9 @@ source_files := \
 	src/health_check.py \
 	src/query.py \
 	src/server.py \
+	src/feeds/__init__.py \
+	src/feeds/site.py \
+	src/feeds/sites.py \
 	src/health/__init__.py \
 	src/health/jobs.py \
 	src/health/processes.py \
@@ -109,8 +112,6 @@ source_files := \
 	src/news/item.py \
 	src/news/news.py \
 	src/news/page.py \
-	src/news/site.py \
-	src/news/sites.py \
 	src/news/source.py \
 	src/news/store.py \
 	src/news/url.py \
@@ -123,11 +124,11 @@ source_files := \
 	src/webapp/views.py
 
 test_files := \
+	src/feeds/site_test.py \
 	src/news/cache_test.py \
 	src/news/item_test.py \
 	src/news/news_test.py \
 	src/news/page_test.py \
-	src/news/site_test.py \
 	src/news/source_test.py \
 	src/news/store_test.py \
 	src/news/url_test.py

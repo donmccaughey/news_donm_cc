@@ -1,15 +1,10 @@
 import logging
-
 from datetime import datetime
 from typing import Any
 
 from feedparser import FeedParserDict, parse
 
-from .item import Item
-from .news import News
-from .source import Source
-from .url import URL
-
+from news import Item, News, Source, URL
 
 log = logging.getLogger(__name__)
 
