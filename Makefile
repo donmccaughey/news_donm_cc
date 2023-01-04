@@ -101,8 +101,12 @@ source_files := \
 	src/query.py \
 	src/server.py \
 	src/feeds/__init__.py \
+	src/feeds/acoup.py \
+	src/feeds/daring_fireball.py \
+	src/feeds/hacker_news.py \
 	src/feeds/site.py \
 	src/feeds/sites.py \
+	src/feeds/streetsblog.py \
 	src/health/__init__.py \
 	src/health/jobs.py \
 	src/health/processes.py \
@@ -124,7 +128,9 @@ source_files := \
 	src/webapp/views.py
 
 test_files := \
+	src/feeds/daring_fireball_test.py \
 	src/feeds/site_test.py \
+	src/feeds/streetsblog_test.py \
 	src/news/cache_test.py \
 	src/news/item_test.py \
 	src/news/news_test.py \

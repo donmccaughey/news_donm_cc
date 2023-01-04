@@ -1,7 +1,11 @@
 import json
 from typing import Iterable
 
-from .site import Acoup, DaringFireball, HackerNews, Site, Streetsblog
+from .acoup import Acoup
+from .daring_fireball import DaringFireball
+from .hacker_news import HackerNews
+from .site import Site
+from .streetsblog import Streetsblog
 
 
 class Sites:
