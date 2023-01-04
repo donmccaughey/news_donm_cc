@@ -356,6 +356,13 @@ Cache size calculation
         --add-dynamic-module=/.../mod_zip-1.2.0/ \
         --add-dynamic-module=/.../nginx-rtmp-module-1.2.2/
 
+### Stub Status
+
+    Active connections: 1 
+    server accepts handled requests
+    2 2 2 
+    Reading: 0 Writing: 1 Waiting: 0
+
 
 ## Python
 
