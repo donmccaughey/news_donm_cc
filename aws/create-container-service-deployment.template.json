@@ -23,7 +23,7 @@
             "unhealthyThreshold": 2,
             "timeoutSeconds": 2,
             "intervalSeconds": 30,
-            "path": "/",
+            "path": "/health",
             "successCodes": "200-499"
         }
     }

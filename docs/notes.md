@@ -195,6 +195,7 @@ Public domain: https://news.6i2dp3e2do9ku.us-west-2.cs.amazonlightsail.com
 
 ### `ps` output
 
+    Running on macOS:
     $ ps
     PID   USER     TIME  COMMAND
         1 root      0:00 /sbin/docker-init -- /usr/local/sbin/news
@@ -215,6 +216,25 @@ Public domain: https://news.6i2dp3e2do9ku.us-west-2.cs.amazonlightsail.com
        56 news      0:00 {gunicorn} /usr/bin/qemu-x86_64 /usr/bin/python3 /usr/bin/python3 /usr/bin/gunicorn
        58 news      0:00 {gunicorn} /usr/bin/qemu-x86_64 /usr/bin/python3 /usr/bin/python3 /usr/bin/gunicorn
        82 root      0:00 ps
+
+    Running on Lightsail:
+    PID USER TIME COMMAND
+    1 root 0:00 {news} /bin/sh /usr/local/sbin/news
+    13 root 0:00 {serve} /bin/sh /usr/local/sbin/serve
+    14 root 0:00 nginx: master process nginx
+    15 root 0:00 crond -f -l 10 -L /dev/stdout
+    16 root 0:00 {gunicorn} /usr/bin/python3 /usr/bin/gunicorn
+    17 nginx 0:00 nginx: worker process
+    18 nginx 0:00 nginx: worker process
+    19 nginx 0:00 nginx: cache manager process
+    20 nginx 0:00 nginx: cache loader process
+    21 news 0:00 {gunicorn} /usr/bin/python3 /usr/bin/gunicorn
+    22 news 0:00 {gunicorn} /usr/bin/python3 /usr/bin/gunicorn
+    23 news 0:00 {gunicorn} /usr/bin/python3 /usr/bin/gunicorn
+    24 news 0:00 {gunicorn} /usr/bin/python3 /usr/bin/gunicorn
+    25 news 0:00 {check-health} /bin/sh /usr/local/sbin/check-health
+    26 news 0:00 python3 health_check.py
+    27 news 0:00 ps
 
 
 ### crond

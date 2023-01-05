@@ -20,15 +20,10 @@ def check_processes() -> list[str]:
         errors.append(f'ps failed with status {results.returncode}')
         errors.append(results.stderr)
     else:
-        processes = {
-            'crond': '/usr/sbin/crond',
-            'nginx': '/usr/sbin/nginx',
-            'gunicorn': '/usr/bin/gunicorn',
-        }
+        processes = ['crond', 'nginx', 'gunicorn']
         ps_output = results.stdout
-        for name, signature in processes.items():
-            if signature not in ps_output:
-                errors.append(f'{name} is not running')
-                errors.append(ps_output)
+        for process in processes:
+            if process not in ps_output:
+                errors.append(f'{process} is not running')
 
     return errors
