@@ -29,5 +29,6 @@ def check_processes() -> list[str]:
         for name, signature in processes.items():
             if signature not in ps_output:
                 errors.append(f'{name} is not running')
+                errors.append(ps_output)
 
     return errors
