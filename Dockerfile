@@ -2,7 +2,7 @@ FROM alpine:latest
 
 EXPOSE 80
 
-RUN apk add --no-cache nginx python3 py3-pip
+RUN apk add --no-cache curl nginx python3 py3-pip
 
 
 # nginx
@@ -25,7 +25,7 @@ RUN chown -R nginx:nginx /var/cache/nginx
 COPY nginx/nginx.conf /etc/nginx/nginx.conf
 COPY --chown=nginx:www-data wwwroot /srv/www
 COPY --chown=nginx:nginx \
-        nginx/error_pages /var/lib/nginx/error_pages
+        nginx/error_pages /usr/lib/nginx/error_pages
 
 # cron
 COPY crontabs /var/spool/cron/crontabs
@@ -53,7 +53,7 @@ RUN python3 -m pip install \
         --quiet --quiet --quiet \
         --requirement requirements.txt
 
-HEALTHCHECK CMD /usr/local/sbin/check-health
+HEALTHCHECK CMD curl --fail --show-error --silent http://127.0.0.1/health || exit 1
 
 WORKDIR /root
 ENTRYPOINT ["/usr/local/sbin/news"]

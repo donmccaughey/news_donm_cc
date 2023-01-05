@@ -22,8 +22,8 @@
             "healthyThreshold": 2,
             "unhealthyThreshold": 2,
             "timeoutSeconds": 2,
-            "intervalSeconds": 5,
-            "path": "/",
+            "intervalSeconds": 30,
+            "path": "/health",
             "successCodes": "200-499"
         }
     }

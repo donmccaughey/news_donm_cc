@@ -2,4 +2,4 @@
 
 cd /usr/lib/news || exit 1
 
-gunicorn
+gunicorn "$@"

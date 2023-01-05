@@ -1,5 +1,6 @@
 #!/bin/sh
 
+su news -s /bin/sh -c 'check-health --startup'
 su news -s /bin/sh -c extract
 
 serve &

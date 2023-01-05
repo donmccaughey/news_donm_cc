@@ -3,8 +3,8 @@
 ## To Do
 
 - health check
+- move nginx error pages to /usr/lib/nginx/ 
 - json responses
-- make `Cache` and `Page` generic
 - add container smoke test
 - in debug mode, disable HTTP caching
 - gunicorn error logs

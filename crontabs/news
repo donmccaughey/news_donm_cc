@@ -1,2 +1,3 @@
 # min  hour  day  month  weekday  command
+  */1    *    *     *       *     /usr/local/sbin/check-health
   */5    *    *     *       *     /usr/local/sbin/extract
