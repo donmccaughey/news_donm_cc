@@ -3,7 +3,6 @@
 ## To Do
 
 - health check
-- move nginx error pages to /usr/lib/nginx/ 
 - json responses
 - add container smoke test
 - in debug mode, disable HTTP caching

@@ -3,13 +3,21 @@ import subprocess
 
 def check_processes() -> list[str]:
     """
-    Expects Alpine Linux ``ps`` output like::
+    Expects Alpine Linux ``ps`` output like (M1 Mac)::
 
-        PID   USER     TIME  COMMAND
-           28 root      0:00 {nginx} /usr/bin/qemu-x86_64 /usr/sbin/nginx nginx
-           30 root      0:00 {crond} /usr/bin/qemu-x86_64 /usr/sbin/crond crond -f -l 10 -L /dev/stdout
-           35 root      0:00 {gunicorn} /usr/bin/qemu-x86_64 /usr/bin/python3 /usr/bin/python3 /usr/bin/gunicorn
-           ...
+        PID   USER   TIME   COMMAND
+         28   root   0:00   {nginx} /usr/bin/qemu-x86_64 /usr/sbin/nginx nginx
+         30   root   0:00   {crond} /usr/bin/qemu-x86_64 /usr/sbin/crond crond -f -l 10 -L /dev/stdout
+         35   root   0:00   {gunicorn} /usr/bin/qemu-x86_64 /usr/bin/python3 /usr/bin/python3 /usr/bin/gunicorn
+        ...
+
+    or (AWS Intel)::
+
+        PID   USER   TIME   COMMAND
+         14   root   0:00   nginx: master process nginx
+         15   root   0:00   crond -f -l 10 -L /dev/stdout
+         16   root   0:00   {gunicorn} /usr/bin/python3 /usr/bin/gunicorn
+        ...
 
     :return: an empty list on success or a list of errors on failure
     """

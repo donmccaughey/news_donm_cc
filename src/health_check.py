@@ -3,22 +3,9 @@ import sys
 
 from datetime import datetime, timezone
 from pathlib import Path
-from textwrap import dedent
 
 from health import Health
 from news import CACHE_DIR
-
-
-HTML = dedent(
-        '''
-        <!doctype html>
-        <html lang=en>
-        <link rel=icon href=data:,>
-        <meta charset=utf-8>
-        <title>News</title>
-        <p>Healthy {now}.
-        '''
-    ).strip()
 
 
 def parse_options():
@@ -36,21 +23,14 @@ def parse_options():
 def main():
     options = parse_options()
 
-    health_dir = options.cache_dir / 'health'
-    health_dir.mkdir(parents=True, exist_ok=True)
-
-    health_path = health_dir / 'index.html'
-
-    if options.startup:
-        health_path.write_text(HTML)
-        sys.exit(0)
-
     health = Health()
-    health.check()
+    if not options.startup:
+        health.check()
 
+    health_path = options.cache_dir / 'healthy.txt'
     if health:
-        html = HTML.format(now=datetime.now(timezone.utc))
-        health_path.write_text(html)
+        now = datetime.now(timezone.utc)
+        health_path.write_text(f'healthy {now}\n')
     else:
         health_path.unlink(missing_ok=True)
         sys.stderr.write(health.details())
