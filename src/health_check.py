@@ -6,6 +6,7 @@ from pathlib import Path
 
 from health import Health
 from news import CACHE_DIR
+from utility import iso
 
 
 def parse_options():
@@ -30,7 +31,7 @@ def main():
     health_path = options.cache_dir / 'healthy.txt'
     if health:
         now = datetime.now(timezone.utc)
-        health_path.write_text(f'healthy {now}\n')
+        health_path.write_text(f'healthy {iso(now)}\n')
     else:
         health_path.unlink(missing_ok=True)
         sys.stderr.write(health.details())

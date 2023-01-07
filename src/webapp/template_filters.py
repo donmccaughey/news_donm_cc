@@ -1,14 +1,4 @@
-from datetime import datetime
-
 from news import URL
-
-
-def iso(value: datetime) -> str:
-    return datetime.isoformat(value)
-
-
-def utc(value: datetime) -> str:
-    return value.strftime('%Y-%m-%d %H:%M:%S UTC')
 
 
 # TODO: unify with gen/markup/attributes.py
