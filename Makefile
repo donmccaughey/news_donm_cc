@@ -99,7 +99,6 @@ source_files := \
 	src/gunicorn.conf.py \
 	src/health_check.py \
 	src/query.py \
-	src/server.py \
 	src/feeds/__init__.py \
 	src/feeds/acoup.py \
 	src/feeds/daring_fireball.py \
@@ -108,6 +107,7 @@ source_files := \
 	src/feeds/sites.py \
 	src/feeds/streetsblog.py \
 	src/health/__init__.py \
+	src/health/health.py \
 	src/health/jobs.py \
 	src/health/processes.py \
 	src/health/servers.py \
@@ -117,26 +117,30 @@ source_files := \
 	src/news/source.py \
 	src/news/store.py \
 	src/news/url.py \
-	src/templates/news.html \
 	src/utility/cache.py \
+	src/utility/formats.py \
 	src/utility/page.py \
-	src/webapp/__init__.py \
-	src/webapp/error_handlers.py \
-	src/webapp/news_page.py \
-	src/webapp/template_filters.py \
-	src/webapp/utility.py \
-	src/webapp/views.py
+	src/server/__init__.py \
+	src/server/create_app.py \
+	src/server/error_handlers.py \
+	src/server/news_page.py \
+	src/server/template_filters.py \
+	src/server/utility.py \
+	src/server/views.py \
+	src/server/templates/news.html
 
 test_files := \
 	src/feeds/daring_fireball_test.py \
 	src/feeds/site_test.py \
 	src/feeds/streetsblog_test.py \
+	src/health/health_test.py \
 	src/news/item_test.py \
 	src/news/news_test.py \
 	src/news/source_test.py \
 	src/news/store_test.py \
 	src/news/url_test.py \
 	src/utility/cache_test.py \
+	src/utility/formats_test.py \
 	src/utility/page_test.py
 
 

@@ -2,7 +2,6 @@
 
 ## To Do
 
-- health check
 - json responses
 - add container smoke test
 - in debug mode, disable HTTP caching

@@ -11,8 +11,8 @@ from .utility import get_version
 from .views import first_page, numbered_page
 
 
-def create_app(name: str) -> Flask:
-    app = Flask(name)
+def create_app() -> Flask:
+    app = Flask('server')
 
     app.config.from_prefixed_env()
 
