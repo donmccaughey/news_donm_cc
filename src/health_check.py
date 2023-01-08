@@ -1,6 +1,5 @@
 import argparse
 import sys
-
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -16,7 +15,7 @@ def parse_options():
                             help='location to write the health file')
     arg_parser.add_argument('--startup', dest='startup',
                             default=False, action='store_true',
-                            help='write the health file and exit')
+                            help='write the health file without checking and exit')
     options = arg_parser.parse_args()
     return options
 
@@ -31,7 +30,7 @@ def main():
     health_path = options.cache_dir / 'healthy.txt'
     if health:
         now = datetime.now(timezone.utc)
-        health_path.write_text(f'healthy {iso(now)}\n')
+        health_path.write_text(f'{iso(now)} Healthy.\n')
     else:
         health_path.unlink(missing_ok=True)
         sys.stderr.write(health.details())

@@ -27,17 +27,19 @@ COPY --chown=nginx:www-data wwwroot /srv/www
 COPY --chown=nginx:nginx \
         nginx/error_pages /usr/lib/nginx/error_pages
 
-# cron
+
+# cron jobs
 COPY crontabs /var/spool/cron/crontabs
 
 
-# control script
+# control scripts
 COPY sbin /usr/local/sbin
 
 
 # ash profile
 COPY profile.d /etc/profile.d
-RUN ln -sf /etc/profile.d/color_prompt.sh.disabled /etc/profile.d/color_prompt.sh
+RUN ln -sf /etc/profile.d/color_prompt.sh.disabled \
+        /etc/profile.d/color_prompt.sh
 
 
 # news app
@@ -45,15 +47,17 @@ RUN mkdir -p /usr/lib/news /var/lib/news
 RUN chown -R news:news /usr/lib/news /var/lib/news
 COPY --chown=news:news \
         requirements.txt version.txt /usr/lib/news/
-COPY --chown=news:news \
-        src /usr/lib/news
+COPY --chown=news:news src /usr/lib/news
 
 WORKDIR /usr/lib/news
 RUN python3 -m pip install \
         --quiet --quiet --quiet \
         --requirement requirements.txt
 
-HEALTHCHECK CMD curl --fail --show-error --silent http://127.0.0.1/health || exit 1
+HEALTHCHECK CMD \
+        curl --fail --show-error --silent \
+                http://127.0.0.1/health \
+        || exit 1
 
 WORKDIR /root
 ENTRYPOINT ["/usr/local/sbin/news"]

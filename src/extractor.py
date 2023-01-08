@@ -5,8 +5,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from feeds import Sites
-from news import CACHE_DIR, News, NEWS_FILE, NoStore, ReadOnlyStore, S3Store
-from utility import Cache
+from news import CACHE_DIR, LAST_EXTRACTION_FILE, News, NEWS_FILE, NoStore, ReadOnlyStore, S3Store
+from utility import Cache, iso
 
 
 def env_is_true(name: str) -> bool:
@@ -58,14 +58,18 @@ def main():
 
     old_count = news.remove_old()
 
-    log.info(f'Added {new_count} and removed {old_count} items')
-
     if news.is_modified:
         json = news.to_json()
         news_cache.put(json)
         store.put(json)
 
     sites_cache.put(sites.to_json())
+
+    message = f'Added {new_count} and removed {old_count} items.'
+    log.info(message)
+
+    last_extraction_path = options.cache_dir / LAST_EXTRACTION_FILE
+    last_extraction_path.write_text(f'{iso(now)} {message}\n')
 
 
 if __name__ == '__main__':
