@@ -3,6 +3,7 @@
 ## To Do
 
 - change `News.add_new() to take (items, now) instead of news`
+- split `modified` into `items_added` and `items_removed`
 - json responses
 - add container smoke test
 - statsd and datadog 
