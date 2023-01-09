@@ -56,7 +56,7 @@ def main():
     for site in sites:
         new_count += news.add_new(site.get(now))
 
-    old_count = news.remove_old()
+    old_count = news.remove_old(now)
 
     if news.is_modified:
         json = news.to_json()

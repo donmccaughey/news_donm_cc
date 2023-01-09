@@ -1,4 +1,8 @@
-from news import URL
+from news import Age, Item, URL
+
+
+def age(item: Item) -> str:
+    return ' class=new' if item.age == Age.NEW else ''
 
 
 # TODO: unify with gen/markup/attributes.py

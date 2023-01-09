@@ -2,11 +2,10 @@
 
 ## To Do
 
+- change `News.add_new() to take (items, now) instead of news`
 - json responses
 - add container smoke test
-- in debug mode, disable HTTP caching
-- gunicorn error logs
-- flask app logs
+- statsd and datadog 
 - where should `query.py` live?
 - improve AWS permissions to read/write S3 bucket
 - make page footer sticky to the window

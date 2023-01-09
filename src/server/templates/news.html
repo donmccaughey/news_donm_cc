@@ -116,6 +116,10 @@
         margin: 1.5em 0;
         padding: 0;
     }
+    .new {
+        border-left: 0.33em solid whitesmoke;
+        padding-left: 0.33em;
+    }
     .page-control {
         float: right;
     }
@@ -142,6 +146,9 @@
         html {
             background: black;
             color: white;
+        }
+        .new {
+            border-left-color: dimgray;
         }
         .page-control a {
             color: white;
@@ -174,7 +181,7 @@
 <main>
     <ol>
     {% for item in news %}
-        <li>
+        <li{{item|age}}>
             <a href={{item.url|href|safe}} rel=noreferrer target=_blank>{{item.title}}</a>
             <p>
                 {{item.url.identity}}

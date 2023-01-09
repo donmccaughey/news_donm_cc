@@ -1,6 +1,6 @@
 from datetime import datetime, timedelta, timezone
 
-from .item import Item
+from .item import Age, Item
 from .news import News
 from .source import Source
 from .url import URL
@@ -26,7 +26,25 @@ def test_add_new():
     assert new_count == 2
     assert news.is_modified
     assert len(news) == 2
-    assert list(news) == [item2, item1]
+    assert list(news) == [item1, item2]
+
+
+def test_add_new_updates_item_age():
+    news = News(modified=YESTERDAY)
+
+    assert item4.age == Age.UNKNOWN
+    assert item4.modified == AN_HOUR_AGO
+
+    news.add_new(News([item4], modified=AN_HOUR_AGO))
+
+    assert news.is_modified
+    assert news.modified == AN_HOUR_AGO
+    assert item4.age == Age.NEW
+
+    news.add_new(News([item5], modified=TODAY))
+
+    assert item4.age == Age.OLD
+    assert item5.age == Age.NEW
 
 
 def test_add_new_for_empty():
@@ -60,77 +78,84 @@ def test_add_new_for_some_duplicates():
 
 
 def test_remove_old_when_empty():
-    news = News(lifetime=FIVE_DAYS)
+    news = News(modified=AN_HOUR_AGO, lifetime=FIVE_DAYS)
 
-    old_count = news.remove_old()
+    old_count = news.remove_old(TODAY)
 
     assert old_count == 0
     assert not news.is_modified
+    assert news.modified == AN_HOUR_AGO
     assert len(news) == 0
 
 
 def test_remove_old_odd_1():
-    news = News([item3, item2, item1_old], lifetime=FIVE_DAYS)
+    news = News([item3, item2, item1_old], modified=AN_HOUR_AGO, lifetime=FIVE_DAYS)
 
-    old_count = news.remove_old()
+    old_count = news.remove_old(TODAY)
 
     assert old_count == 1
     assert news.is_modified
+    assert news.modified == TODAY
     assert len(news) == 2
 
 
 def test_remove_old_odd_2():
-    news = News([item3, item2_old, item1_old], lifetime=FIVE_DAYS)
+    news = News([item3, item2_old, item1_old], modified=AN_HOUR_AGO, lifetime=FIVE_DAYS)
 
-    old_count = news.remove_old()
+    old_count = news.remove_old(TODAY)
 
     assert old_count == 2
     assert news.is_modified
+    assert news.modified == TODAY
     assert len(news) == 1
 
 
 def test_remove_old_even_1():
-    news = News([item4, item3, item2, item1_old], lifetime=FIVE_DAYS)
+    news = News([item4, item3, item2, item1_old], modified=AN_HOUR_AGO, lifetime=FIVE_DAYS)
 
-    old_count = news.remove_old()
+    old_count = news.remove_old(TODAY)
 
     assert old_count == 1
     assert news.is_modified
+    assert news.modified == TODAY
     assert len(news) == 3
 
 
 def test_remove_old_even_2():
-    news = News([item4, item3, item2_old, item1_old], lifetime=FIVE_DAYS)
+    news = News([item4, item3, item2_old, item1_old], modified=AN_HOUR_AGO, lifetime=FIVE_DAYS)
 
-    old_count = news.remove_old()
+    old_count = news.remove_old(TODAY)
 
     assert old_count == 2
     assert news.is_modified
+    assert news.modified == TODAY
     assert len(news) == 2
 
 
 def test_remove_old_when_none_expired():
-    news = News([item3, item2, item1], lifetime=FIVE_DAYS)
+    news = News([item3, item2, item1], modified=AN_HOUR_AGO, lifetime=FIVE_DAYS)
 
-    old_count = news.remove_old()
+    old_count = news.remove_old(TODAY)
 
     assert old_count == 0
     assert not news.is_modified
+    assert news.modified == AN_HOUR_AGO
 
 
 def test_remove_old_when_all_expired():
-    news = News([item2_old, item1_old], lifetime=FIVE_DAYS)
+    news = News([item2_old, item1_old], modified=AN_HOUR_AGO, lifetime=FIVE_DAYS)
 
-    old_count = news.remove_old()
+    old_count = news.remove_old(TODAY)
 
     assert old_count == 2
     assert news.is_modified
+    assert news.modified == TODAY
     assert len(news) == 0
 
 
 def test_remove_old_and_add_new_duplicate_item():
-    news = News([item3, item2, item1_old], lifetime=FIVE_DAYS)
-    old_count = news.remove_old()
+    news = News([item3, item2, item1_old], modified=AN_HOUR_AGO, lifetime=FIVE_DAYS)
+    old_count = news.remove_old(TODAY)
 
     assert old_count == 1
 
@@ -144,6 +169,7 @@ FIVE_DAYS = timedelta(days=5)
 SIX_DAYS = timedelta(days=6)
 
 TODAY = datetime.now(timezone.utc)
+AN_HOUR_AGO = TODAY - timedelta(hours=1)
 YESTERDAY = TODAY - timedelta(days=1)
 TWO_DAYS_AGO = TODAY - timedelta(days=2)
 THREE_DAYS_AGO = TODAY - timedelta(days=3)
@@ -178,5 +204,10 @@ item3 = Item(
 
 item4 = Item(
     URL('https://example.com/item4'), 'Item 4', Source(URL('https://source.com/4'), 'so'),
+    AN_HOUR_AGO, AN_HOUR_AGO
+)
+
+item5 = Item(
+    URL('https://example.com/item5'), 'Item 5', Source(URL('https://source.com/5'), 'so'),
     TODAY, TODAY
 )

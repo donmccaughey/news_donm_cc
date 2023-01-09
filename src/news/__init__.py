@@ -1,4 +1,4 @@
-from .item import Item
+from .item import Age, Item
 from .news import News
 from .source import Source
 from .store import NoStore, ReadOnlyStore, S3Store
