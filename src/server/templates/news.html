@@ -52,12 +52,28 @@
     });
 </script>
 <style>
+    @media (prefers-color-scheme: light) {
+        :root {
+            --page: white;
+            --highlight: whitesmoke;
+            --dim-text: darkgray;
+            --text: black;
+        }
+    }
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --page: black;
+            --highlight: dimgray;
+            --dim-text: darkgray;
+            --text: white;
+        }
+    }
     a {
-        color: black;
+        color: var(--text);
         text-decoration: none;
     }
     a:visited {
-        color: gray;
+        color: var(--dim-text);
     }
     body {
         margin: 1.5rem auto;
@@ -65,22 +81,22 @@
         padding: 0 1.5rem;
     }
     footer {
-        color: darkgray;
+        color: var(--dim-text);
         margin: 0;
         padding: 0;
     }
     h1 {
-        color: black;
+        color: var(--text);
     }
     header {
-        color: darkgray;
+        color: var(--dim-text);
         margin: 0;
         padding: 0;
     }
     html {
-        background: white;
+        background: var(--page);
         border: 0;
-        color: black;
+        color: var(--text);
         font: 14pt "Atkinson Hyperlegible", Helvetica, Arial, sans-serif;
         margin: 0;
         padding: 0;
@@ -89,22 +105,22 @@
         padding: 0.25rem 0;
     }
     li:before {
-        color: darkgray;
+        color: var(--dim-text);
         content: counter(item) ". ";
         counter-increment: item;
     }
     li p {
         border: 0;
-        color: darkgray;
+        color: var(--dim-text);
         font-size: 12pt;
         margin: 0;
         padding: 0.25rem 0;
     }
     li p a {
-        color: darkgray;
+        color: var(--dim-text);
     }
     li p a:visited {
-        color: darkgray;
+        color: var(--dim-text);
     }
     main {
         margin: 0;
@@ -117,48 +133,20 @@
         padding: 0;
     }
     .new {
-        border-left: 0.33rem solid whitesmoke;
+        border-left: 0.33rem solid var(--highlight);
         padding-left: 0.33rem;
     }
     .page-control {
         float: right;
     }
     .page-control a {
-        color: black;
+        color: var(--text);
     }
     .page-control a:visited {
-        color: black;
+        color: var(--text);
     }
     .page-control span {
-        color: whitesmoke;
         text-decoration: line-through;
-    }
-    @media (prefers-color-scheme: dark) {
-        a {
-            color: white;
-        }
-        a:visited {
-            color: silver;
-        }
-        h1 {
-            color: white;
-        }
-        html {
-            background: black;
-            color: white;
-        }
-        .new {
-            border-left-color: dimgray;
-        }
-        .page-control a {
-            color: white;
-        }
-        .page-control a:visited {
-            color: white;
-        }
-        .page-control span {
-            color: dimgray;
-        }
     }
 </style>
 <header>
