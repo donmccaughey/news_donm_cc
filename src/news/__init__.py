@@ -1,5 +1,5 @@
 from .item import Age, Item
-from .news import News
+from .news import LIFETIME, News
 from .source import Source
 from .store import NoStore, ReadOnlyStore, S3Store
 from .url import URL

@@ -2,6 +2,7 @@ import json
 from typing import Iterable
 
 from .acoup import Acoup
+from .charity_wtf import CharityWTF
 from .daring_fireball import DaringFireball
 from .hacker_news import HackerNews
 from .site import Site
@@ -12,6 +13,7 @@ class Sites:
     def __init__(self):
         self.sites = [
             Acoup(),
+            CharityWTF(),
             DaringFireball(),
             HackerNews(),
             Streetsblog(),

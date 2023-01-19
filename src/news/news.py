@@ -6,12 +6,16 @@ from typing import Iterable, Any
 from .item import Age, Item
 
 
+LIFETIME = timedelta(days=30)
+
+
 class News:
+
     def __init__(self,
                  items: list[Item] = [],
                  created: datetime | None = None,
                  modified: datetime | None = None,
-                 lifetime: timedelta | None = timedelta(days=30),
+                 lifetime: timedelta | None = LIFETIME,
                  ):
         self.items = list()
         self.index = set()

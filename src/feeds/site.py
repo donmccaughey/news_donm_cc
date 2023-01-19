@@ -1,10 +1,12 @@
+import calendar
 import logging
-from datetime import datetime
+import time
+from datetime import datetime, timezone
 from typing import Any
 
 from feedparser import FeedParserDict, parse
 
-from news import Item, News, URL
+from news import LIFETIME, Item, News, URL
 
 log = logging.getLogger(__name__)
 
@@ -39,7 +41,7 @@ class Site:
                 log.debug(f'{self.name}: etag={self.etag}, last_modified={self.last_modified}')
             items = [
                 self.parse_entry(entry, now) for entry in d.entries
-                if self.keep_entry(entry)
+                if is_recent(entry, now) and self.keep_entry(entry)
             ]
             return News(
                 items=items,
@@ -77,3 +79,13 @@ class Site:
         if self.last_modified:
             encoded['last_modified'] = self.last_modified
         return encoded
+
+
+def is_recent(entry, now: datetime) -> bool:
+    time_tuple = (
+        entry.published_parsed or entry.updated_parsed or entry.created_parsed
+        or time.gmtime()
+    )
+    timestamp = calendar.timegm(time_tuple)
+    published = datetime.fromtimestamp(timestamp, timezone.utc)
+    return now - published < LIFETIME
