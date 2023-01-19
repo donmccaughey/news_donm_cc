@@ -12,7 +12,7 @@ LIFETIME = timedelta(days=30)
 class News:
 
     def __init__(self,
-                 items: list[Item] = [],
+                 items: list[Item] = None,
                  created: datetime | None = None,
                  modified: datetime | None = None,
                  lifetime: timedelta | None = LIFETIME,
@@ -21,12 +21,12 @@ class News:
         self.index = set()
 
         now = datetime.now(timezone.utc)
-        self.created = created if created else now
-        self.modified = modified if modified else now
+        self.created = created or now
+        self.modified = modified or now
         self.lifetime = lifetime
         self.is_modified = False
 
-        for item in items:
+        for item in (items or []):
             self.add_item(item, at_head=False)
 
     def __iter__(self) -> Iterable[Item]:
