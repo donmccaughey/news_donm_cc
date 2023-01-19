@@ -1,5 +1,9 @@
+import logging
 from pathlib import Path
-from urllib.parse import urlsplit, urlunsplit
+from typing import AnyStr
+from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
+
+log = logging.getLogger(__name__)
 
 
 class URL:
@@ -22,12 +26,13 @@ class URL:
         return self.url
 
     def clean(self) -> 'URL':
-        parts = urlsplit(self.url)
-        if parts.query or parts.fragment:
-            cleaned = urlunsplit(
-                (parts.scheme, parts.netloc, parts.path, '', '')
+        scheme, netloc, path, query, fragment = urlsplit(self.url)
+        if query or fragment:
+            return URL(
+                urlunsplit(
+                    (scheme, netloc, path, clean_query(query), '')
+                )
             )
-            return URL(cleaned)
         else:
             return self
 
@@ -58,6 +63,34 @@ class URL:
             return keep_path_matching(hostname, path, path_map[hostname])
 
         return hostname
+
+
+def clean_query(query: str) -> str:
+    try:
+        parameters = parse_qsl(
+            query, keep_blank_values=True, strict_parsing=True,
+            encoding='utf-8', errors='strict'
+        )
+        clean_parameters = [
+            parameter for parameter in parameters
+            if not is_dirty(parameter)
+        ]
+        if len(parameters) == len(clean_parameters):
+            return query
+        else:
+            return urlencode(
+                list(clean_parameters), encoding='utf-8', errors='strict'
+            )
+    except UnicodeError as e:
+        log.warning(f'Unicode Error parsing "{query}": {e}')
+    except ValueError as e:
+        log.warning(f'Value Error parsing "{query}": {e}')
+    return query
+
+
+def is_dirty(parameter: tuple[AnyStr, AnyStr]) -> bool:
+    name, value = parameter
+    return name.startswith('utm_')
 
 
 def remove_subdomain(hostname: str, subdomains: list[str]) -> str:

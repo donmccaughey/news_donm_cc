@@ -20,10 +20,11 @@ class Streetsblog(Site):
         return "Today's Headlines" in entry.category
 
     def parse_entry(self, entry, now: datetime) -> Item:
+        url = URL(entry.link).clean()
         return Item(
-            url=URL(entry.link),
+            url=url,
             title=entry.title,
-            source=Source(URL(entry.link), self.initials),
+            source=Source(url, self.initials),
             created=now,
             modified=now,
         )

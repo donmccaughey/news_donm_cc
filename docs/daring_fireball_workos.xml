@@ -1,0 +1,2495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Daring Fireball</title>
+    <subtitle>By John Gruber</subtitle>
+    <link rel="alternate" type="text/html" href="https://daringfireball.net/"/>
+    <link rel="self" type="application/atom+xml" href="https://daringfireball.net/feeds/main"/>
+    <id>https://daringfireball.net/feeds/main</id>
+
+
+    <updated>2023-01-15T19:22:36Z</updated>
+    <rights>Copyright © 2023, John Gruber</rights>
+    <entry>
+        <title>WorkOS</title>
+        <link rel="alternate" type="text/html"
+              href="https://workos.com/?utm_source=daringfireball&amp;utm_medium=newsletter&amp;utm_campaign=df2023"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ukk"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/01/15/workos"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39620</id>
+        <published>2023-01-15T19:22:35Z</published>
+        <updated>2023-01-15T19:22:36Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>My thanks to WorkOS for sponsoring last week at DF. WorkOS is like “Stripe for enterprise features.” They make it easy for developers to build features needed by enterprise customers, such as Single Sign-On and SCIM.</p>
+
+<p>Shipping these feature is important because they enable selling upmarket for bigger deals. Without these features, the IT department will reject your app. But these enterprise features are complex and time-consuming to build yourself, usually taking months.</p>
+
+<p>With WorkOS you can integrate and ship enterprise features in minutes. Beautiful API docs guide you through every step of the way, and transparent pricing scales based on usage. It’s a product built by developers, for developers.</p>
+
+<div>
+<a  title="Permanent link to ‘WorkOS’"  href="https://daringfireball.net/linked/2023/01/15/workos">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>If You Needed Any More Confirmation, Internal Slack Messages at Twitter Show That Cutting Off Third-Party
+            Clients Was ‘Intentional’
+        </title>
+        <link rel="alternate" type="text/html"
+              href="https://www.theinformation.com/articles/musks-twitter-intentionally-suspended-tweet-bot-third-party-apps-messages-show?rc=jfy0lk"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ukj"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/01/14/information-twitter-slack-confirmation"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39619</id>
+        <published>2023-01-14T23:58:36Z</published>
+        <updated>2023-01-15T00:05:36Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Some reporter, writing for one very expensive paywalled blog:</p>
+
+<blockquote>
+  <p>The reason for the suspension couldn’t be learned. Speculation on
+<a href="https://9to5google.com/2023/01/12/twitter-api-appears-to-be-down-breaking-tweetbot-and-third-party-clients/">one blog</a> this week raised the possibility that Twitter might
+have turned off access to the apps deliberately because they don’t
+help drive ad revenue. At least some don’t show ads that appear on
+Twitter. That means the apps may be hurting Elon Musk’s ability to
+stop a major decline in ad revenue in the past two months.</p>
+</blockquote>
+
+<p>“One blog” was <a href="https://9to5google.com/2023/01/12/twitter-api-appears-to-be-down-breaking-tweetbot-and-third-party-clients/">this excellent early report</a> on the outage by Ben Schoon for 9to5Google.</p>
+
+<p>It is of course true that third-party clients didn’t show Twitter’s ads, but Twitter never tried putting those ads into the feeds delivered by the APIs used by third-party clients. And it’s obviously true that third-party Twitter clients weren’t suddenly getting users to switch from Twitter’s first-party clients.</p>
+
+<blockquote>
+  <p>In the day and a half since users started reporting problems with
+the apps, neither Twitter’s official account nor the Twitter
+support account have explained what caused the outage, including
+whether it was deliberate or accidental. Musk also hasn’t
+commented on his Twitter account.</p>
+
+<p>But a senior software engineer wrote Thursday night that
+“Third-party app suspensions are intentional,” in an internal
+Twitter command center Slack channel, used by employees to handle
+outages and interruptions to Twitter’s services. The engineer
+declined to comment when contacted by The Information on Saturday
+afternoon.</p>
+
+<p>The internal messages seen by The Information also show that
+Twitter employees have been discussing when the decision would be
+announced publicly. A Twitter employee working on product
+partnerships asked on Friday morning when employees could expect a
+list of “approved talking points” for questions from partners
+related to “3party clients revoked access.”</p>
+
+<p>A product marketing manager responded on Slack that morning that
+the company had “started to work on comms” but that there was no
+estimate as to when it would be ready, the messages show.</p>
+</blockquote>
+
+<p>Twitter can of course do what it wants, and Musk owns Twitter so he can do what he wants. But pulling the plug on these clients and ghosting everyone on communications about it is so absurdly disrespectful. Zero respect for the users for those apps, zero respect for the developers behind them — many of whom had been building on the Twitter platform for 10-15 years. Just a clown show.</p>
+
+<p>Meanwhile, using Twitter’s own apps or website, my @gruber account shows a total of 7 mentions since January 5. Using Twitterrific for Mac — the plug for which has somehow not yet been pulled — I count 239 mentions since January 5.</p>
+
+<p>Twitter’s own first-party service is falling apart.</p>
+
+<div>
+<a  title="Permanent link to ‘If You Needed Any More Confirmation, Internal Slack Messages at Twitter Show That Cutting Off Third-Party Clients Was ‘Intentional’’"  href="https://daringfireball.net/linked/2023/01/14/information-twitter-slack-confirmation">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>AI-Generated Stills From a Movie That Doesn’t Exist: Alejandro Jodorowsky’s 1976 Version of ‘Tron’
+        </title>
+        <link rel="alternate" type="text/html"
+              href="https://www.nytimes.com/interactive/2023/01/13/opinion/jodorowsky-dune-ai-tron.html"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/uki"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/01/13/jodorowskys-tron"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39618</id>
+        <published>2023-01-14T02:58:23Z</published>
+        <updated>2023-01-14T03:02:16Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>The New York Times has a jaw-dropping feature from Frank Pavich and Johnny Darrell:</p>
+
+<blockquote>
+  <p>I was recently shown some frames from a film that I had never
+heard of: Alejandro Jodorowsky’s 1976 version of <em>Tron</em>. The sets
+were incredible. The actors, unfamiliar to me, looked fantastic in
+their roles. The costumes and lighting worked together perfectly.
+The images glowed with an extravagant and psychedelic sensibility
+that felt distinctly Jodorowskian.</p>
+
+<p>However, Mr. Jodorowsky, the visionary Chilean filmmaker, never
+tried to make <em>Tron</em>. I’m not even sure he knows what “Tron” is.
+And Disney’s original <em>Tron</em> was released in 1982. So what 1970s
+film were these gorgeous stills from? Who were these neon-suited
+actors? And how did I — the director of the documentary
+<em>Jodorowsky’s Dune</em>, having spent two and a half years
+interviewing and working with Alejandro to tell the story of his
+famously unfinished film — not know about this?</p>
+
+<p>The truth is that these weren’t stills from a long-lost movie.
+They weren’t photos at all. These evocative, well-composed and
+tonally immaculate images were generated in seconds with the magic
+of artificial intelligence.</p>
+</blockquote>
+
+<p>It’s staggering how beautiful these stills are, and so evocative of what this imaginery film should look and feel like. You can practically <em>hear</em> them, they’re so sensual. The animation of stills atop the feature even feels like a trailer for the movie. Look at this on the biggest display you can.</p>
+
+<p>The downside to this is that it has created in me a strong desire to see a movie that can never exist.</p>
+
+<div>
+<a  title="Permanent link to ‘AI-Generated Stills From a Movie That Doesn’t Exist: Alejandro Jodorowsky’s 1976 Version of ‘Tron’’"  href="https://daringfireball.net/linked/2023/01/13/jodorowskys-tron">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>The Trio of Apps That Will Replace iTunes for Windows: Apple Music, Apple TV, and Apple Devices</title>
+        <link rel="alternate" type="text/html"
+              href="https://arstechnica.com/gadgets/2023/01/apple-previews-a-trio-of-apps-that-will-finally-replace-itunes-for-windows/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ukh"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/01/13/itunes-windows-replacements"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39617</id>
+        <published>2023-01-14T01:29:46Z</published>
+        <updated>2023-01-14T01:29:47Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Andrew Cunningham, writing for Ars Technica:</p>
+
+<blockquote>
+  <p>Today, as part of <a href="https://blogs.windows.com/windows-insider/2023/01/12/announcing-windows-11-insider-preview-build-25276/">a new Windows 11 preview build for Windows
+Insiders</a>, Microsoft has announced that previews of new
+<a href="https://apps.microsoft.com/store/detail/apple-music-preview/9PFHDD62MXS1?hl=en-us&amp;gl=us&amp;rtc=1">Apple Music</a>, <a href="https://apps.microsoft.com/store/detail/apple-tv-preview/9NM4T8B9JQZ1?hl=en-us&amp;gl=us&amp;rtc=1">Apple TV</a>, and <a href="https://apps.microsoft.com/store/detail/apple-devices-preview/9NP83LWLPZ9K?hl=en-us&amp;gl=us&amp;rtc=1">Apple
+Devices</a> apps are available in the Microsoft Store for
+download.</p>
+
+<p>The Apple Music and Apple TV apps handle iTunes’ music and video
+functionality, just as they do on macOS, and provide access to the
+Apple Music and Apple TV+ subscription services. The Apple Devices
+app is what you’ll use to make local device backups, perform
+emergency software updates, sync local media, and the other things
+you can do with an iDevice that’s plugged into your PC (in macOS,
+similar functionality was <a href="https://arstechnica.com/gadgets/2019/10/macos-10-15-catalina-the-ars-technica-review/7/#h5">added to the Finder</a>, rather
+than being broken out into its own app).</p>
+</blockquote>
+
+<p>Kinda sad that an app as legendary as iTunes is living out its last days as a Windows exclusive.</p>
+
+<div>
+<a  title="Permanent link to ‘The Trio of Apps That Will Replace iTunes for Windows: Apple Music, Apple TV, and Apple Devices’"  href="https://daringfireball.net/linked/2023/01/13/itunes-windows-replacements">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Meanwhile, Over at Twitter, They’re Giving Away Ads</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.wsj.com/articles/twitter-offers-free-ads-to-brands-that-advertise-on-its-platform-11673654556"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ukg"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/01/13/twitter-ads"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39616</id>
+        <published>2023-01-14T01:25:08Z</published>
+        <updated>2023-01-14T03:06:20Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Suzanne Vranica and Patience Haggin, reporting for The Wall Street Journal (<a href="https://apple.news/ApuYTCXFmQImoDt_KtKZpQA">News+</a> and <a href="https://archive.md/CtfIz">Archive</a> links):</p>
+
+<blockquote>
+  <p>Twitter Inc. is offering advertisers a new incentive in an attempt
+to woo brands back to the social-media platform, which has seen
+its ad business deteriorate following Elon Musk‘s $44 billion
+takeover.</p>
+
+<p>The tech company is dangling free ad space by offering to match
+advertisers’ ad spending up to $250,000, according to emails
+reviewed by The Wall Street Journal. The full $500,000 in
+advertising must run by Feb. 28, the emails said.</p>
+</blockquote>
+
+<p>Couldn’t happen to a nicer company.</p>
+
+<div>
+<a  title="Permanent link to ‘Meanwhile, Over at Twitter, They’re Giving Away Ads’"  href="https://daringfireball.net/linked/2023/01/13/twitter-ads">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Saks Unveils Plan for Casino Atop Its Flagship Manhattan Store</title>
+        <link rel="alternate" type="text/html"
+              href="https://nypost.com/2023/01/12/saks-unveils-stylish-plan-for-casino-at-fifth-avenue-store/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ukf"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/01/13/saks-casino"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39615</id>
+        <published>2023-01-14T00:09:27Z</published>
+        <updated>2023-01-14T00:09:28Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Lisa Fickenscher, reporting for The New York Post:</p>
+
+<blockquote>
+  <p>Saks Fifth Avenue finally tipped its hand, confirming plans to bid
+for a casino license on the top floors of its flagship store on
+Fifth Avenue. [...]</p>
+
+<p>The renderings show stylishly dressed guests, seated at roulette
+tables, posh bars and upholstered chairs, clinking cocktails. They
+enter the building via a separate entrance on a red carpet that
+extends out onto the sidewalk and opens into a vast lobby area
+with multiple chandeliers and plush decorative rugs.</p>
+
+<p>The casino would take up three floors, starting on the ninth,
+where servers will be dressed in black tie and hand out champagne
+flutes to gamblers, Richard Baker, executive chairman and chief
+executive of HBC, the Toronto-based company that owns Saks told
+The Post. [...]</p>
+
+<p>The stylish Saks casino would be similar to the one featured in
+the James Bond movie “Casino Royale,” according to Baker. “In
+Monte Carlo they have fancy casinos so why not in Manhattan,”
+Baker said. “Why should Manhattan have another slobby casino. … We
+need spectacular.”</p>
+</blockquote>
+
+<p>What a grand idea. I love a nice casino but most casinos are anything but nice.</p>
+
+<div>
+<a  title="Permanent link to ‘Saks Unveils Plan for Casino Atop Its Flagship Manhattan Store’"  href="https://daringfireball.net/linked/2023/01/13/saks-casino">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>The End May Be Nigh for Third-Party Twitter Clients</title>
+        <link rel="alternate" type="text/html" href="https://mjtsai.com/blog/2023/01/13/twitter-api-down/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/uke"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/01/13/end-nigh-for-third-party-twitter-clients"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39614</id>
+        <published>2023-01-13T17:02:13Z</published>
+        <updated>2023-01-13T19:03:04Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Last night around 11pm ET, Tweetbot and Twitterrific stopped working, with authentication errors. They’re still down, as are other popular clients. Twitter has said nothing, either publicly or in communications to the affected developers, so your guess is as good as mine whether this is an unintended outage from Twitter’s skeleton crew staff or a strategic decision to pull the plug on third-party clients. Last night I’d have bet — a small amount — that it was an unintentional outage. Today I’d bet the other way, that this is the end. If so, this is probably the end of my regular usage of Twitter. Twitter’s official client has been terrible ever since it was anything other than a rebranded version of Tweetie. The first-party experience has gotten worse in recent weeks during the Musk era — both in their iOS app and on their <a href="https://twitter.com/reneritchie/status/1613902134671466496">convoluted website</a>.</p>
+
+<p>(Twitterrific for Mac is still functioning, though — at least as I write this. Unlike Tweetbot, Twitterrific uses different app IDs for iOS and Mac, and whatever is going on, it seems to have affected only the most popular third-party apps.)</p>
+
+<p><strong>Update:</strong> <a href="https://blog.iconfactory.com/2023/01/state-of-the-twitterverse/">The Iconfactory has a blog post up</a>. No news yet, but it’s worth checking out just for the <em>chef’s kiss</em> custom illustration. A picture says a thousand words and this one sums up the whole situation, no matter how it turns out.</p>
+
+<p>Also: What a load of bullshit it is that Twitter no longer has a comms team. Apparently that’s how Musk runs all his companies, but it’s just childish.</p>
+
+<div>
+<a  title="Permanent link to ‘The End May Be Nigh for Third-Party Twitter Clients’"  href="https://daringfireball.net/linked/2023/01/13/end-nigh-for-third-party-twitter-clients">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Headline/Subhead Pairing of the Day</title>
+        <link rel="alternate" type="text/html" href="https://www.androidauthority.com/google-tv-remote-3265974/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ukd"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/01/12/headline-subhead-pairing-of-the-day"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39613</id>
+        <published>2023-01-12T23:38:46Z</published>
+        <updated>2023-01-12T23:40:00Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Android Authority headline: “Google TV Is About to Get a Remote That Never Runs Out of Power”.</p>
+
+<p>Subhead from the same article: “There’s no date for when to expect the remote to launch.”</p>
+
+<p>That’s one of the best “about to”s in CES history.</p>
+
+<div>
+<a  title="Permanent link to ‘Headline/Subhead Pairing of the Day’"  href="https://daringfireball.net/linked/2023/01/12/headline-subhead-pairing-of-the-day">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>El Pintador — AI Art Generation App for iOS</title>
+        <link rel="alternate" type="text/html" href="https://el-pintador.com/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ukc"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/01/11/el-pintador"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39612</id>
+        <published>2023-01-11T23:50:26Z</published>
+        <updated>2023-01-13T02:23:22Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>One reason a scam like the <a href="https://daringfireball.net/linked/2023/01/11/app-store-chatgpt-scam">aforementioned ChatGPT rip-off</a> is annoying is that it distracts from legitimate apps in the same space. El Pintador is a new iOS app built atop Stable Diffusion that is worth your attention:</p>
+
+<blockquote>
+  <p>Simply tell El Pintador what you would like to see and watch as
+the AI generates beautiful new art right before your eyes.</p>
+</blockquote>
+
+<p>In addition to a bunch of helpful templates that serve as starting points, El Pintador features lessons to help people fine tune their prompts. It’s fun, and the team behind it (<a href="https://twitter.com/xibbonhq">Xibbon</a>, founded by <a href="https://mastodon.social/@Migueldeicaza/109662032532535188">Miguel de Icaza</a>) has been responsive to feedback since launching it just before Christmas. Also: free of charge to download and try.</p>
+
+<div>
+<a  title="Permanent link to ‘El Pintador — AI Art Generation App for iOS’"  href="https://daringfireball.net/linked/2023/01/11/el-pintador">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>App Store Scam of the Week: ‘ChatGPT Chat GPT AI With GPT-3’</title>
+        <link rel="alternate" type="text/html" href="https://www.macrumors.com/2023/01/09/chatgpt-app-store-apps/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ukb"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/01/11/app-store-chatgpt-scam"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39611</id>
+        <published>2023-01-11T23:20:29Z</published>
+        <updated>2023-01-11T23:20:29Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Sami Fathi, reporting for MacRumors:</p>
+
+<blockquote>
+  <p>ChatGPT is <a href="https://openai.com/blog/chatgpt/">free to use on the web</a> for anyone with an
+OpenAI account, but it has inspired scammers and sketchy
+developers to take advantage of its popularity for ill-gained
+profit. One app in particular, named “<a href="https://apps.apple.com/us/app/chatgpt-chat-gpt-ai-with-gpt-3/id1659730883">ChatGPT Chat GPT AI With
+GPT-3</a>,” gives the impression it is the official app for the
+ChatGPT bot, but appears to have no affiliation to Open AI, the
+creators of ChatGPT, or the bot itself.</p>
+
+<p>The app charges users a $7.99 weekly or $49.99 annual subscription
+to use the bot unlimited times and eliminate intrusive in-app ads.
+The app and its bot are inconsistent, sometimes providing generic
+or entirely irrelevant responses to a prompt offered by the user.</p>
+
+<p>The app is currently the <a href="https://apps.apple.com/us/charts/iphone/productivity-apps/6007">second most popular productivity app on
+the App Store</a> in the United States, indicating it is rather
+popular. The app has nearly 12,000 ratings, with a number of
+positive and negative reviews. “This is a fake app,” one review
+said. “This is just faking openai endorsement and more bad stuff,”
+another user said. Despite its suspicious activity, presence, and
+soaring popularity, the app has passed Apple’s App Store review
+process multiple times since its initial launch three weeks ago.</p>
+</blockquote>
+
+<p>As noted by Fathi in an update, the app was pulled from the App Store yesterday. But it should have been flagged sooner. I don’t think it’s feasible to expect App Store reviewers to catch every potential scam app. But <a href="https://daringfireball.net/search/bunco+squad">as I’ve long argued</a>, I do think it’s reasonable to expect Apple to catch every scam app that makes its way onto the list of most popular apps. They can’t catch every scam app but they ought to be able to catch every successful one.</p>
+
+<div>
+<a  title="Permanent link to ‘App Store Scam of the Week: ‘ChatGPT Chat GPT AI With GPT-3’’"  href="https://daringfireball.net/linked/2023/01/11/app-store-chatgpt-scam">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Surveillance Footage of Tesla ‘Full Self-Driving’ Crash on Bay Bridge</title>
+        <link rel="alternate" type="text/html"
+              href="https://theintercept.com/2023/01/10/tesla-crash-footage-autopilot/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/uka"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/01/11/tesla-full-self-driving-crash"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39610</id>
+        <published>2023-01-11T23:02:38Z</published>
+        <updated>2023-01-11T23:02:38Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Ken Klippenstein, reporting for The Intercept:</p>
+
+<blockquote>
+  <p>Highway surveillance footage from Thanksgiving Day shows a Tesla
+Model S vehicle changing lanes and then abruptly braking in the
+far-left lane of the San Francisco Bay Bridge, resulting in an
+eight-vehicle crash. The crash <a href="https://www.kron4.com/news/bay-area/thanksgiving-bay-bridge-crash-may-have-involved-telsa-in-self-driving-mode/">injured</a> nine people, including
+a 2-year-old child, and blocked traffic on the bridge for over
+an hour.</p>
+
+<p>The video and new photographs of the crash, which were obtained by
+The Intercept via a California Public Records Act request,
+provides the first direct look at what happened on November 24,
+confirming witness accounts at the time. The driver told police
+that he had been using Tesla’s new “Full Self-Driving” feature,
+<a href="https://www.documentcloud.org/documents/23569059-9335-2022-02256-redacted">the report notes</a>, before the Tesla’s “left signal activated” and
+its “brakes activated,” and it moved into the left lane, “slowing
+to a stop directly in [the second vehicle’s] path of travel.” [...]</p>
+
+<p>Since 2016, the federal agency has investigated a total of 35
+crashes in which Tesla’s “Full Self-Driving” or “Autopilot”
+systems were likely in use. Together, these accidents have killed
+19 people. In recent months, a surge of reports have emerged in
+which Tesla drivers complained of sudden “<a href="https://www.washingtonpost.com/technology/2022/02/02/tesla-phantom-braking/">phantom braking</a>,”
+causing the vehicle to slam on its brakes at high speeds. More
+than 100 such complaints were filed with NHTSA in a three-month
+period, according to the Washington Post.</p>
+</blockquote>
+
+<p>The footage of the crash is weird. The Tesla just slows to a stop in the passing lane. When AI systems make mistakes, they often are very different from the sort of mistakes people make.</p>
+
+<p>It ought to be enough for self-driving systems to be safer, mile-per-mile, than human-driven vehicles. That may even be true for Tesla’s “full self-driving” mode, today. 35 crashes in  6 years isn’t a lot. But that’s not going to be enough. It’s not fair, but the bar for self-driving cars is <em>much</em> higher than having a lower accident rate than human-driven vehicles. Even though <a href="https://www.nytimes.com/2022/02/15/briefing/vehicle-crashes-deaths-pandemic.html">human-caused crashes are increasing in frequency</a>, they’re <a href="https://en.wikipedia.org/wiki/Motor_vehicle_fatality_rate_in_U.S._by_year">so commonplace</a> that they don’t register as shocking. (Same thing with <a href="https://www.pewresearch.org/fact-tank/2022/02/03/what-the-data-says-about-gun-deaths-in-the-u-s/">gun deaths</a> in the U.S.) An accident caused by an AI-driven car, though — that’s jarring because that’s novel. “Dog Bites Man” doesn’t make the front page. “Man Bites Dog” does.</p>
+
+<p>As for Tesla’s system in particular, it strikes me as bizarre that it’s legal for them to enable this when they themselves still describe the feature as “beta” software.</p>
+
+<div>
+<a  title="Permanent link to ‘Surveillance Footage of Tesla ‘Full Self-Driving’ Crash on Bay Bridge’"  href="https://daringfireball.net/linked/2023/01/11/tesla-full-self-driving-crash">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Semafor: Microsoft Looking to Invest $10B in OpenAI, Maker of ChatGPT</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.semafor.com/article/01/09/2023/microsoft-eyes-10-billion-bet-on-chatgpt"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/uk9"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/01/11/microsoft-openai"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39609</id>
+        <published>2023-01-11T22:02:06Z</published>
+        <updated>2023-01-11T22:15:52Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Liz Hoffman and Reed Albergotti, reporting for Semafor:</p>
+
+<blockquote>
+  <p>The $29 billion is a big valuation for OpenAI, a company that
+hasn’t yet figured out its business model, and $10 billion is a
+big price tag for Microsoft’s shareholders. [...] If OpenAI
+figures out how to make money on products like ChatGPT and image
+creation tool Dall-E, Microsoft will get 75% of the profits until
+it recoups its initial investment.</p>
+
+<p>Beyond the financial risks and rewards for Microsoft, the bigger
+prize is that it gets to work alongside OpenAI in developing the
+technology on Microsoft Cloud, which instantly puts Microsoft at
+the forefront of what could be the most important consumer
+technology over the next decade.</p>
+
+<p>That’s a huge coup for Microsoft, especially considering Google, a
+rival, has helped pioneer some of the technology used by OpenAI.
+Microsoft was also in talks to incorporate some of those features
+into its other programs, like Word and Outlook email, The
+Information reported.</p>
+</blockquote>
+
+<p><a href="https://www.cnn.com/2021/07/15/tech/microsoft-clippy-emoji/index.html">Clippy</a>, but actually smart and useful. That’d be one hell of a feature.</p>
+
+<p><a href="https://twitter.com/carnage4life/status/1612798864289067010">Dare Obasanjo, on Twitter</a>:</p>
+
+<blockquote>
+  <p>Satya Nadella cements his entry in the CEO hall of fame by
+spotting OpenAI early and locking down access to its fruit for use
+in Office and Bing.</p>
+
+<p>FTC is worried about Activision which is gaming’s past when
+Microsoft is locking down the future of AI.</p>
+</blockquote>
+
+<p>It seems <em>way</em> early to credit this investment as a hall of fame decision, but it does seem <a href="https://www.cnbc.com/2022/12/15/google-vs-chatgpt-what-happened-when-i-swapped-services-for-a-day.html">forward-looking</a> in a way that the Activision acquisition does not.</p>
+
+<div>
+<a  title="Permanent link to ‘Semafor: Microsoft Looking to Invest $10B in OpenAI, Maker of ChatGPT’"  href="https://daringfireball.net/linked/2023/01/11/microsoft-openai">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Executive Turnover at Rivian</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.wsj.com/articles/top-rivian-executives-depart-the-electric-vehicle-startup-11673380522"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/uk8"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/01/11/turnover-at-rivian"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39608</id>
+        <published>2023-01-11T20:48:28Z</published>
+        <updated>2023-01-11T20:57:46Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Sean McLain and Nora Eckert, reporting for The Wall Street Journal:</p>
+
+<blockquote>
+  <p>The departures, confirmed by a Rivian spokeswoman, are the latest
+developments in what has been a challenging period for Rivian,
+which has been rolling out its first all-electric models but last
+year missed a critical milestone of manufacturing 25,000 vehicles.
+The company said it was off its goal by about 700 vehicles in part
+because of difficulty getting parts.</p>
+
+<p>Rivian’s stock has also tumbled since its blockbuster initial
+public offering in November 2021, down roughly 79% through
+Tuesday’s close.</p>
+</blockquote>
+
+<p>Rivian’s stock price is what it is — but a miss of 700 vehicles from a goal of 25,000 seems pretty good to me. That’s about 97 percent. But for context, <a href="https://www.cnn.com/2023/01/02/investing/tesla-deliveries-production/index.html">Tesla made a record 1.3 million vehicles last year</a>. Rivian obviously has a long way to go to reach a mainstream level of vehicle production.</p>
+
+<blockquote>
+  <p>The executives who have left were some of Rivian’s longer-tenured
+employees. Among them is Randy Frank, vice president of body and
+interior engineering, and Steve Gawronski, the vice president in
+charge of parts purchasing. Both had departed around the
+beginning of this year. Mr. Frank joined Rivian in 2019 from Ford
+Motor Co. Mr. Gawronski joined in 2018 from the autonomous
+vehicle startup Zoox.</p>
+</blockquote>
+
+<p>When executives who’ve only been at the company for 3 or 4 years are among the “longer-tenured”, I think it’s more a sign of how dynamic the entire electric vehicle industry is at the moment, rather than a mark against Rivian in particular. There’s a lot of turnover (and effectively, musical chairs, as they tend to go from one company to another) <a href="https://www.reuters.com/business/autos-transportation/teslas-ai-director-leaving-company-after-4-month-sabbatical-2022-07-13/">at Tesla</a> and <a href="https://www.theverge.com/2022/5/25/23141370/apple-cj-moore-leave-luminar-car-project-titan">Apple’s secretive Project Titan</a>, too. After leading development of Tesla’s Model 3, Doug Field went to Apple, but <a href="https://www.cnbc.com/2021/09/07/ford-hires-ex-tesla-apple-executive-doug-field-to-lead-advanced-tech.html">then left Apple for that plucky startup Ford</a>. But then <a href="https://www.tomsguide.com/news/apple-car-development-could-accelerate-after-ford-veteran-joins-apple">Apple hired an executive who’d spent 31 years at Ford</a>. It’s a huge market that’s being disrupted from multiple angles.</p>
+
+<div>
+<a  title="Permanent link to ‘Executive Turnover at Rivian’"  href="https://daringfireball.net/linked/2023/01/11/turnover-at-rivian">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>The Complexity of Evaluating Modern Phone Cameras</title>
+        <link rel="alternate" type="text/html" href="https://www.youtube.com/watch?v=88kd9tVwkH8"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/uk7"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/01/11/the-complexity-of-evaluating-modern-phone-cameras"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39607</id>
+        <published>2023-01-11T20:13:41Z</published>
+        <updated>2023-01-11T20:13:43Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Marques Brownlee’s title for this video is “What Is Happening With iPhone Camera?”, but it’s a nuanced consideration of just how complex phone cameras have gotten in the era of computational photography.</p>
+
+<div>
+<a  title="Permanent link to ‘The Complexity of Evaluating Modern Phone Cameras’"  href="https://daringfireball.net/linked/2023/01/11/the-complexity-of-evaluating-modern-phone-cameras">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Tom Brady Taking It on the Chin With FTX Holdings</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.bloomberg.com/news/articles/2023-01-10/tom-brady-and-bob-kraft-among-ftx-shareholders-set-for-wipeout?srnd=premium"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/uk6"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/01/10/brady-ftx"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39606</id>
+        <published>2023-01-10T20:38:03Z</published>
+        <updated>2023-01-10T20:38:04Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Jeremy Hill, Bloomberg:</p>
+
+<blockquote>
+  <p>Billionaire New England Patriots owner Robert Kraft and star NFL
+quarterback Tom Brady are among those sharing in the pain of FTX
+Group’s sudden implosion.</p>
+
+<p>Brady, formerly a prominent FTX booster, owns more than 1.1
+million common shares of FTX Trading, bankruptcy court documents
+show. His ex-wife, supermodel Gisele Bündchen, has more than
+680,000 shares in the same entity.</p>
+</blockquote>
+
+<p>He might have to play until he’s 50 to make up for this.</p>
+
+<div>
+<a  title="Permanent link to ‘Tom Brady Taking It on the Chin With FTX Holdings’"  href="https://daringfireball.net/linked/2023/01/10/brady-ftx">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Eddy Cue on Apple’s Year in Services and Original Content</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.apple.com/newsroom/2023/01/apple-celebrates-a-groundbreaking-year-in-entertainment/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/uk5"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/01/10/cue-services-year"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39605</id>
+        <published>2023-01-10T19:41:42Z</published>
+        <updated>2023-01-13T19:04:50Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Eddy Cue, in a rare personally-signed post to Apple Newsroom (“Thoughts on Services”?):</p>
+
+<blockquote>
+  <p>At Apple, we have the privilege of partnering with creators of all
+kinds, while building products and services that enable even more
+creativity. Our mission has always been to enrich people’s lives
+and to leave the world better than we found it, and we know that
+takes more than technical skill. It requires leading with our
+values in everything we do. We believe that our products and
+services should be made for everyone. We believe that privacy is a
+fundamental human right, and that our highest obligation to our
+customers is security. We believe that a culture where everybody
+belongs can drive innovation, and that we must stand up for the
+change we want to see in the world.</p>
+
+<p>When we started Apple TV+ a few years ago, we did so to tell
+stories that reflect our broader humanity. And whether it was
+<em>CODA</em> winning the Oscar for Best Picture or <em>Ted Lasso</em> winning
+back-to-back Emmys for Best Comedy, we have seen, in so many ways,
+the validation of this kind of storytelling and the strong desire
+for more of it.</p>
+</blockquote>
+
+<p>Apple’s services initiatives are multivariate, but the overall quality of Apple TV+ content is an unsung story. Apple started on awkward footing with <em><a href="https://daringfireball.net/linked/2016/07/14/planet-of-the-apps">Planet of the Apps</a></em> and <em>Carpool Karaoke</em> as their initial original content releases — but it makes sense that they started with low-stakes reality shows. At this point Apple has established a quality-over-quantity track record with their original shows and movies. The average Apple TV+ show/movie is good. I don’t think that’s true for any other streaming service except HBO, and even for HBO, the “Max” content has watered down their quality considerably. To my thinking, that’s exactly the right strategy and execution for Apple: quality and mainstream appeal above all else.</p>
+
+<p>(Reading between the lines, I can’t help but wonder if this no-news-just-an-update post from Cue is related, timing-wise, to <a href="https://www.bloomberg.com/news/articles/2023-01-09/apple-services-executive-peter-stern-seen-as-successor-to-eddy-cue-to-depart">the weekend news that longtime Cue lieutenant and possible successor Peter Stern has left Apple</a>. My read is that the point of this post is “Fuck you, I’m Eddy Cue, and I’m not going anywhere.”)</p>
+
+<div>
+<a  title="Permanent link to ‘Eddy Cue on Apple’s Year in Services and Original Content’"  href="https://daringfireball.net/linked/2023/01/10/cue-services-year">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Was Salesforce’s Acquisition of Slack a Bust?</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.wsj.com/articles/salesforce-customers-not-swayed-by-slack-analysts-say-11672964706"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/uk4"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/01/10/salesforce-slack"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39604</id>
+        <published>2023-01-10T19:15:05Z</published>
+        <updated>2023-01-10T19:20:57Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Angus Loten writing for The Wall Street Journal:</p>
+
+<blockquote>
+  <p>When Salesforce Inc. bought the messaging application Slack for
+$27.7 billion almost two years ago, it said the marriage would
+“transform the way everyone works in the all-digital,
+work-from-anywhere world.” Corporate technology buyers so far
+aren’t impressed, analysts said.</p>
+
+<p>The acquisition sought to capture the fast-growing market for
+communications and collaboration software during the Covid-19
+pandemic, as employers sent workers home and shifted to remote
+systems.</p>
+
+<p>Today, companies in the market for customer-relationship
+management software — Salesforce’s signature product — don’t
+appear to be swayed one way or another by the addition of
+messaging and collaboration features, said Liz Herbert, a vice
+president and principal analyst at information-technology research
+firm Forrester Research Inc.</p>
+
+<p>“We don’t really see, when it comes to Slack, any pent up demand
+from Salesforce’s base for a tool like that,” Ms. Herbert said.
+“It really hasn’t become something compelling,” she said.</p>
+</blockquote>
+
+<p>I’ll go to the mat arguing that Slack is better-designed and better-implemented than Microsoft Teams. But to make a very broad analogy, I think Slack is to Teams today where Mac OS was to Windows in the mid-1990s: better designed, for sure, but not in a way that makes a difference to the corporate IT decision makers and bean counters who are making the call on which platform to use.</p>
+
+<p>The key is not merely to be better, on some vectors. The key is to be better on the vectors that people with purchasing power care about. Missing this has been the death knell for many good products. One difference between the iPhone and Mac is that the iPhone came of age at the cusp of the “bring your own device to work era”, so factors that appealed to individuals (looks cool, fun to use) outweighed factors that might have swayed traditional corporate IT purchasers (low price, “standards”).</p>
+
+<div>
+<a  title="Permanent link to ‘Was Salesforce’s Acquisition of Slack a Bust?’"  href="https://daringfireball.net/linked/2023/01/10/salesforce-slack">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>U.S. Supreme Court Lets Meta’s WhatsApp Pursue ‘Pegasus’ Spyware Suit</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.reuters.com/legal/us-supreme-court-lets-metas-whatsapp-pursue-pegasus-spyware-suit-2023-01-09/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/uk3"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/01/10/facebook-supreme-court"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39603</id>
+        <published>2023-01-10T19:00:28Z</published>
+        <updated>2023-01-10T19:02:14Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Reuters:</p>
+
+<blockquote>
+  <p>The U.S. Supreme Court on Monday let Meta Platforms Inc’s WhatsApp
+pursue a lawsuit accusing Israel’s NSO Group of exploiting a bug
+in the WhatsApp messaging app to install spy software allowing the
+surveillance of 1,400 people, including journalists, human rights
+activists and dissidents.</p>
+
+<p>The justices turned away NSO’s appeal of a lower court’s decision
+that the lawsuit could move forward. NSO had argued that it is
+immune from being sued because it was acting as an agent for
+unidentified foreign governments when it installed the “Pegasus”
+spyware.</p>
+</blockquote>
+
+<p>Strange times make for strange bedfellows. Very glad to be in agreement with the Supreme Court on this issue. I’m pretty pessimistic about how often I’ll be able to say that in 2023.</p>
+
+<div>
+<a  title="Permanent link to ‘U.S. Supreme Court Lets Meta’s WhatsApp Pursue ‘Pegasus’ Spyware Suit’"  href="https://daringfireball.net/linked/2023/01/10/facebook-supreme-court">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Sports Events Account for 94 of the Top 100 Telecasts of 2022</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.sportsbusinessjournal.com/Journal/Issues/2023/01/09/Upfront/top-100-telecasts.aspx"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/uk1"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/01/09/sports-tv"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39601</id>
+        <published>2023-01-09T22:33:21Z</published>
+        <updated>2023-01-10T19:21:39Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Austin Karp, reporting for Sports Business Journal:</p>
+
+<blockquote>
+  <p>The NFL and college football continued to draw the most viewers of
+any form of programming as viewers watched sports in record
+numbers. Overall, sports accounted for 94 of the 100 most-watched
+telecasts for the year. That was down just one number from last
+year, but up from 75 during the election-heavy 2020 docket, and
+from 92 telecasts in 2019.</p>
+
+<p>The NFL put a record number of telecasts in the top 100 in 2022,
+with a stunning 82 games cracking the list. That figure is up from
+75 in 2021, 72 in 2020 and 78 in 2019. Those numbers came even as
+the league’s “Thursday Night Football” package moved from linear
+television to Amazon this season. No Amazon “TNF” games cracked
+TV’s top 100 in 2022. In comparison, six of the Fox/NFL Network
+“TNF” games in 2021 made the top 100.</p>
+</blockquote>
+
+<p>It makes sense that Thursday Night Football viewership is down. The basic idea for “how do I watch this game?” has always been that you turn on your TV and punch in a channel number. Putting TNF exclusively on Amazon Prime breaks that, and a certain segment of potential viewers don’t understand that, or, even if they do understand it, don’t subscribe to Amazon Prime.</p>
+
+<blockquote>
+  <p>Entertainment continues to lose its influence on the linear TV business. For the second consecutive year — and second time in history — not one scripted TV show made the top 100.</p>
+</blockquote>
+
+<p>This, to me, makes sense, because scripted TV is perfectly suited to watching whenever. What makes sports so different is the obvious motivation to watch live.</p>
+
+<blockquote>
+  <p>The Academy Awards made its way back to the list last year
+following a 2021 when no entertainment awards shows cracked the
+top 100. The Macy’s Thanksgiving Day Parade was another non-sports
+program on the list.</p>
+</blockquote>
+
+<p>The enduring appeal of the Macy’s Thanksgiving Day Parade is, for me, by far the most surprising thing in this report.</p>
+
+<div>
+<a  title="Permanent link to ‘Sports Events Account for 94 of the Top 100 Telecasts of 2022’"  href="https://daringfireball.net/linked/2023/01/09/sports-tv">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>20 Years of Safari and WebKit</title>
+        <link rel="alternate" type="text/html"
+              href="https://donmelton.com/2013/01/10/safari-is-released-to-the-world/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/uk0"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/01/09/melton-safari-webkit"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39600</id>
+        <published>2023-01-09T22:21:28Z</published>
+        <updated>2023-01-09T22:55:01Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Don Melton, on Mastodon:</p>
+
+<blockquote>
+  <p>Today is the twentieth anniversary of #Apple’s #Safari Web browser
+being publicly introduced. That stunning debut happened at the
+Macworld Expo in San Francisco on January 7, 2003. And, of course,
+I was there. Here’s what I wrote about that event ten years ago.</p>
+</blockquote>
+
+<p>From <a href="https://donmelton.com/2013/01/10/safari-is-released-to-the-world/">his decade-ago remembrance</a>:</p>
+
+<blockquote>
+  <p>Until I watched that video I found and posted of the Macworld
+keynote, I had completely forgotten what else was announced that
+day. Which is pretty sad considering I saw Steve rehearse the
+whole thing at least four times.</p>
+
+<p>But you have to realize I was totally focused on Safari. And Scott
+Forstall, my boss, wanted me at those rehearsals in case something
+went wrong with it.</p>
+
+<p>There’s nothing that can fill your underwear faster than seeing
+your product fail during a Steve Jobs demo.</p>
+</blockquote>
+
+<p>Without question one of the most successful software projects in history.</p>
+
+<div>
+<a  title="Permanent link to ‘20 Years of Safari and WebKit’"  href="https://daringfireball.net/linked/2023/01/09/melton-safari-webkit">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>FTC Chair Lina Khan on the Problems With Noncompetes</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.nytimes.com/2023/01/09/opinion/linakhan-ftc-noncompete.html"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ujz"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/01/09/khan-noncompetes"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39599</id>
+        <published>2023-01-09T22:15:11Z</published>
+        <updated>2023-01-09T22:16:50Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Lina Khan, in an essay for The New York Times:</p>
+
+<blockquote>
+  <p>When you add it up, the evidence to date suggests that noncompetes
+suppress wages, reduce competition and keep innovative ideas from
+breaking into the market. One study even found that noncompetes
+lead to higher prices for consumers by reducing competition in the
+heavily concentrated health care sector.</p>
+</blockquote>
+
+<p>I think she makes a compelling case that noncompete agreements reduce competition, and competition is what drives a fair economy.</p>
+
+<div>
+<a  title="Permanent link to ‘FTC Chair Lina Khan on the Problems With Noncompetes’"  href="https://daringfireball.net/linked/2023/01/09/khan-noncompetes">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+
+        <link rel="alternate" type="text/html"
+              href="https://workos.com/?utm_source=daringfireball&amp;utm_medium=newsletter&amp;utm_campaign=df2023"/>
+        <link rel="shorturl" href="http://df4.us/uk2"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/feeds/sponsors/2023/01/workos"/>
+        <id>tag:daringfireball.net,2023:/feeds/sponsors//11.39602</id>
+        <author>
+            <name>Daring Fireball Department of Commerce</name>
+        </author>
+        <published>2023-01-09T19:01:19-05:00</published>
+        <updated>2023-01-09T19:01:20-05:00</updated>
+        <content type="html" xml:base="https://daringfireball.net/feeds/sponsors/" xml:lang="en"><![CDATA[
+<p>WorkOS is like “Stripe for enterprise features.” They make it easy for developers to build features needed by enterprise customers, such as Single Sign-On and SCIM.</p>
+
+<p>Shipping these feature is important because they enable selling upmarket for bigger deals. Without these features, the IT department will reject your app. But these enterprise features are complex and time-consuming to build yourself, usually taking months.</p>
+
+<p>With WorkOS you can integrate and ship enterprise features in minutes. Beautiful API docs guide you through every step of the way, and transparent pricing scales based on usage. It’s a product built by developers, for developers.</p>
+
+<div>
+<a  title="Permanent link to ‘WorkOS’"  href="https://daringfireball.net/feeds/sponsors/2023/01/workos">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+        <title>[Sponsor] WorkOS</title>
+    </entry>
+    <entry>
+        <title>U.S. Moves to Bar Noncompete Agreements in Labor Contracts</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.nytimes.com/2023/01/05/business/economy/ftc-noncompete.html"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ujy"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/01/06/ftc-noncompete-ban"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39598</id>
+        <published>2023-01-06T23:18:12Z</published>
+        <updated>2023-01-07T00:08:56Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Noam Scheiber, reporting yesterday for The New York Times:</p>
+
+<blockquote>
+  <p>The proposed rule would ban provisions of labor contracts known as
+noncompete agreements, which prevent workers from leaving for a
+competitor or starting a competing business for months or years
+after their employment, often within a certain geographic area.
+The agreements have applied to workers as varied as <a href="https://www.huffpost.com/entry/jimmy-johns-non-compete_n_5978180">sandwich
+makers</a>, <a href="https://www.nytimes.com/2014/06/09/business/noncompete-clauses-increasingly-pop-up-in-array-of-jobs.html">hairstylists</a>, <a href="https://eig.org/wp-content/uploads/2019/02/Non-Competes-2.20.19.pdf">doctors</a>
+and software engineers.</p>
+
+<p><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3452240">Studies</a> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2905782">show</a> that noncompetes, which
+appear to directly affect roughly <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2625714">20 percent</a> to <a href="https://www.epi.org/publication/noncompete-agreements/">45
+percent</a> of U.S. workers in the private sector, hold
+down pay because job switching is one of the more reliable ways of
+securing a raise. <a href="https://www.nytimes.com/2021/05/13/business/economy/middle-class-pay.html">Many economists believe</a> they help
+explain why pay for middle-income workers has stagnated in recent
+decades.</p>
+
+<p>Other <a href="https://ideas.repec.org/p/cen/wpaper/18-26.html">studies</a> <a href="https://www.jstor.org/stable/41060682">show</a> that noncompetes
+protect established companies from start-ups, reducing competition
+within industries.</p>
+</blockquote>
+
+<p>I used to think of noncompete agreements as applying mostly to the tech industry, in the name of protecting trade secrets, but that bit about the practice trickling down even to sandwich shops <a href="https://mobile.twitter.com/alyssakeiko/status/1611026713072353284">is no exaggeration</a>.</p>
+
+<div>
+<a  title="Permanent link to ‘U.S. Moves to Bar Noncompete Agreements in Labor Contracts’"  href="https://daringfireball.net/linked/2023/01/06/ftc-noncompete-ban">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Study Suggests That Hardware Buttons in Cars Are Safer and Quicker to Use Than Touchscreens</title>
+        <link rel="alternate" type="text/html"
+              href="https://futurism.com/the-byte/study-finds-that-buttons-in-cars-are-safer-and-quicker-to-use-than-touchscreens"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ujx"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/01/06/swedish-car-button-study"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39597</id>
+        <published>2023-01-06T23:10:46Z</published>
+        <updated>2023-01-07T01:56:25Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Frank Landymore, writing for The Byte on <a href="https://www.vibilagare.se/nyheter/physical-buttons-outperform-touchscreens-new-cars-test-finds#vote">a study conducted by Swedish car magazine Vi Bilägare</a>:</p>
+
+<blockquote>
+  <p>Over the summer, the magazine conducted tests across 12 models of
+cars — eleven modern, along with one 2005 Volvo with physical
+controls — and allowed test drivers to get to know the ins and
+outs of the vehicles. The tests themselves were simple: drivers
+were instructed to cruise down an empty airstrip at 68 miles per
+hour and were timed on the completion of four infotainment tasks,
+ranging from adjusting the AC to messing with the radio.</p>
+
+<p>The Swedish magazine found that the 2005 Volvo far outperformed
+the modern, infotainment screen equipped cars, with a driver
+completing all four tasks in just ten seconds and 1,000 feet
+traveled.</p>
+
+<p>Meanwhile, the best time in the modern cars was nearly 14 seconds.
+But even these speeds were relative outliers, because for the
+majority of infotainment equipped vehicles, it took well over 20
+seconds and at least 2,000 feet.</p>
+</blockquote>
+
+<p>I am nearly certain that everyone knows this is true, especially the designers at car companies. The reason that cars are largely switching to mostly touchscreen controls is the same reason phones switched — software is more flexible than hardware. Cars today do more than cars from 2005 did. But in the same way that all phones still have <em>some</em> hardware buttons (volume, power, mute), cars should too. The trick is getting the balance right. A couple of recent cars I’ve driven have definitely gotten that balance wrong.</p>
+
+<p>It’s also the case that as cars take baby steps toward self-driving, previously stateful hardware controls need to become stateless. A traditional turn signals sticks in place until you complete the turn. That’s tricky with a car that can turn itself. Or just think about <a href="https://knobfeel.tumblr.com/">volume knobs</a> on stereo equipment. In the old days, the physical knob indicated the volume level, usually on a scale of 0–10 (<a href="https://www.youtube.com/watch?v=KOO5S4vxi0o">but not always</a>, of course). Nowadays, though, playback volume is generally adjusted directionally, up or down, and the knob or buttons don’t indicate where the level is set, because the level is a value stored in software, and indicated on a display.</p>
+
+<p>We’re not going back to hardware buttons for everything, but we have a long way to go until touchscreens surpass the usability of familiar hardware buttons.</p>
+
+<div>
+<a  title="Permanent link to ‘Study Suggests That Hardware Buttons in Cars Are Safer and Quicker to Use Than Touchscreens’"  href="https://daringfireball.net/linked/2023/01/06/swedish-car-button-study">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Dahlia Lithwick on the House Speaker Vote</title>
+        <link rel="alternate" type="text/html"
+              href="https://slate.com/news-and-politics/2023/01/mccarthy-speaker-vote-jan-sixth-again.html"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ujw"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/01/06/lithwick-house-speaker"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39596</id>
+        <published>2023-01-06T22:52:47Z</published>
+        <updated>2023-01-06T22:52:48Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Dahlia Lithwick, writing for Slate:</p>
+
+<blockquote>
+  <p>Perhaps one difference is that this time, the ask — what they are
+fighting for — is actually less clear. On Jan. 6, amid the
+chilling cries of “Hang Mike Pence” and “Stop the Steal,” the ask
+was at least coherent: reinstate Donald Trump as president. The
+foggy MAGA ask of 2023? I have no idea. Power, sure. Fame and
+celebrity, definitely. Mumble mumble debt ceiling. OK. As John
+Boehner wrote in his 2021 memoir, the endgame now is chaos itself:</p>
+
+<blockquote>
+  <p>What they’re really interested in is chaos … They want to throw
+sand in the gears of the hated federal government until it fails
+and they’ve finally proved that it is beyond saving. Every time
+they vote down a bill, they get another invitation to go on Fox
+News or talk radio. It’s a narcissistic — and dangerous — feedback loop.</p>
+</blockquote>
+
+<p>Governance is not the point, it’s the enemy. Government is not the
+point, it’s the enemy. In 2021, that was on display in what we
+could all recognize as violence and threats of bodily harm. In
+2023, it’s being done with speeches and backroom negotiations and
+the stand-up-sit-down whack-a-mole energy of a Monty Python
+sketch. Those chairs they are seeking? It’s not to do anything
+with them, beyond further themselves. None of it will lead to a
+better, healthier, more functional or stable government, even if
+the week doesn’t end with feces smeared on the walls.</p>
+</blockquote>
+
+<p>I agree that Republican nihilism — or perhaps better put, burn-it-all-down-ism, is genuinely dangerous. But I disagree that it also hasn’t been very funny to watch.</p>
+
+<div>
+<a  title="Permanent link to ‘Dahlia Lithwick on the House Speaker Vote’"  href="https://daringfireball.net/linked/2023/01/06/lithwick-house-speaker">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Lenovo: Fuck Everything, We’re Doing Five Blades, Err, Two Screens</title>
+        <link rel="alternate" type="text/html"
+              href="https://arstechnica.com/gadgets/2023/01/lenovos-yoga-book-9i-is-an-unprecedented-laptop-for-people-who-hate-foldables/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ujv"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/01/05/lenovo-yoga-book-9i-dual-oled"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39595</id>
+        <published>2023-01-05T21:25:05Z</published>
+        <updated>2023-01-06T03:06:05Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Scharon Harding, writing for Ars Technica:</p>
+
+<blockquote>
+  <p>Lenovo’s press release calls the Yoga Book 9i the “first full-size dual screen OLED laptop” among vendors selling at least 1 million units a year. Targeting creative consumers who also want a machine with strong productivity that’s also fit for entertainment, the laptop has two 13.3-inch OLED panels connected by the soundbar hinge that Lenovo has been using in its Yoga convertible lineup for a while.</p>
+
+<p>Each OLED screen has 2880×1800 pixels in a 16:10 aspect ratio. That’s 255.36 pixels per inch (ppi) for each panel and 10,368,000 pixels total. That’s 12.5 to 25 percent more total pixels than a 4K screen, depending on whether it’s 16:9 or 16:10.</p>
+</blockquote>
+
+<p>It’s like one of <a href="https://bitbang.social/@NanoRaptor/109577253330610718">Dana “@NanoRaptor” Sibera’s renders</a> of imagined devices that never existed, but real.</p>
+
+<div>
+<a  title="Permanent link to ‘Lenovo: Fuck Everything, We’re Doing Five Blades, Err, Two Screens’"  href="https://daringfireball.net/linked/2023/01/05/lenovo-yoga-book-9i-dual-oled">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+
+        <link rel="alternate" type="text/html" href="https://daringfireball.net/2023/01/information_apple_headset"/>
+        <link rel="shorturl" href="http://df4.us/uju"/>
+        <id>tag:daringfireball.net,2023://1.39594</id>
+        <published>2023-01-03T23:55:54Z</published>
+        <updated>2023-01-04T00:05:57Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <summary type="text">If not gaming, then what’s the point?</summary>
+        <content type="html" xml:base="https://daringfireball.net/" xml:lang="en"><![CDATA[
+<p>Wayne Ma has a new report for The Information <a href="https://www.theinformation.com/articles/inside-the-tech-powering-apples-envelope-pushing-risky-mixed-reality-headset?rc=jfy0lk">on Apple’s widely-expected AR/VR headset</a>. (<a href="https://www.macrumors.com/2023/01/03/report-reveals-wave-of-features-for-apple-headset/">MacRumors has a summary</a>.) Some quick reactions:</p>
+
+<blockquote>
+  <p>The headset, which Apple has yet to formally announce, will be
+jam-packed with features Apple will have to get just right if the
+product is going to have the kind of revolutionary impact the
+original iPhone did on the smartphone market.</p>
+</blockquote>
+
+<p>I don’t know why every possible new product from Apple is always framed as though it needs to be an iPhone-esque success or it’s a bust. The iPhone is likely unique in all of computing and consumer electronics history. The iPad, Apple Watch, and AirPods are all huge hits, but not one of them is iPhone-size. Looking at <a href="https://sixcolors.com/post/2022/11/apples-fiscal-2022-in-charts/">Apple’s 2022 revenue</a>, wearables, iPad, and Mac <em>combined</em> account for about half the revenue of the iPhone. But all of them are hit products. A new AR/VR headset product category that generates the revenue that iPad or Mac or Apple Watch does should be considered a huge success, not a disappointment.</p>
+
+<p>(I also don’t understand why rumor reports like this seemingly always are accompanied by an artist’s rendition of the hardware. It’s distracting at best and misleading for most.)</p>
+
+<blockquote>
+  <p>For example, the headset will use small motors to automatically
+adjust its lenses, ensuring that the wearer has the best possible
+viewing experience. A physical dial on the headset will allow
+users to quickly toggle between complete immersion in VR and the
+ability to see their surroundings.</p>
+</blockquote>
+
+<p>A “digital crown” -like dial for switching between AR and VR jibes with what I’ve heard, too.</p>
+
+<blockquote>
+  <p>As of last year, the headset used an external battery pack
+tethered by cable as opposed to a battery integrated into the
+headband. The design choice has been controversial among Apple’s
+engineers given the company’s preference for cable-free designs.</p>
+</blockquote>
+
+<p>This sounds clunky as hell to me. I think it’s already a huge ask to expect users to strap on a headset to use this platform. The history of personal computing has been in the direction of ever more seamless dipping in and out when using new devices. Think about how you can, if you want, just glance at your phone. Pick it up, glance, put it down. The Apple Watch is designed <em>entirely</em> around the idea of just occasionally glancing at it. A VR headset cannot be just dipped into and out of, even if the battery is self contained. An external battery pack tethered by a cable is another level of hassle. The whole point of AirPods is that wearing a device on your head that’s tethered to a cable kind of sucks. I’m in no way prejudging Apple’s headset — which I know <em>very</em> little about — but a battery pack tethered via a cable sounds to me like a deal-breaker. Either Ma is wrong, Apple is about to jump the shark, or this device is going to be so utterly compelling that a tethered battery is worth the hassle.</p>
+
+<blockquote>
+  <p>The company has good reason to be cautious. Meta Platforms’ launch
+of its first AR/VR headset, the Quest Pro, has mostly fallen flat
+with consumers and critics, many of whom say the device’s software
+is half baked and the product lacks a clear purpose.</p>
+</blockquote>
+
+<p>Apple should be cautious with any new product category. But Facebook’s failures on the VR headset front are no more reason to be cautious than, say, all the shitty tablets PC makers tried to sell before the iPad.</p>
+
+<blockquote>
+  <p>Apple’s headset is also expected to be far more expensive than
+most of the company’s other devices, as well as other VR headsets:
+It has discussed pricing it around $3,000 or more depending on its
+configuration, according to four people with knowledge of the
+conversations.</p>
+</blockquote>
+
+<p>It was widely reported in the run-up to the iPad’s debut that it would start at $1,000, but in fact started at just $500. But even if off by a factor of 2, $1,500 would be pricey. If it really does cost $3,000, I don’t think that’s a deal-breaker, but it’d be a sign that the platform is still years away from large-scale adoption.</p>
+
+<blockquote>
+  <p>The headset has inward-facing displays for each eye and a large
+outward-facing display on the front of the device. The external
+display can show the facial expressions of the person wearing the
+headset, along with other types of imagery, to people around the
+user, which is meant to reduce the isolation users might otherwise
+feel when wearing the device.</p>
+</blockquote>
+
+<p>This sounds cringe-y to me. Again, I’m not prejudging something I haven’t seen. But I lack the imagination to see how this could be anything but weird.</p>
+
+<blockquote>
+  <p>The headset will give users a 120-degree field of view, which is
+more than the Meta Quest Pro’s 106-degree field and the same as
+that of the Valve Index, a high-end consumer virtual reality
+headset powered by a PC. Apple’s headset will allow people who
+wear glasses to magnetically clip in custom prescription lenses.</p>
+</blockquote>
+
+<p>So glasses-wearers will need to spend more — on top of $3,000? — just to see the displays clearly?</p>
+
+<blockquote>
+  <p>Third-party bluetooth wireless headphones won’t work well with the
+headset as this results in too much lag between what users see on
+the screen and what they hear. There also isn’t an audio jack on
+the device to plug in wired headphones.</p>
+</blockquote>
+
+<p>Wait, is Ma writing for The Verge or for The Information?</p>
+
+<blockquote>
+  <p>People who have worked on the headset say Apple doesn’t appear to
+have focused much on gaming — for example, it isn’t expected to
+release a dedicated gaming controller, at least not yet.</p>
+</blockquote>
+
+<p>If not gaming, then what’s the point?</p>
+
+<blockquote>
+  <p>Apple sees videoconferencing as a potential killer app for the
+headset, enabling digital avatars that accurately mimic a user’s
+facial and body movements.</p>
+</blockquote>
+
+<p>No one is going to buy a $3,000 headset for videoconferencing.</p>
+
+<blockquote>
+  <p>It also conducted early software experiments that allowed users
+to, for example, drag a maps app off a Mac screen and use it to
+display a 3D model of a city that appeared, through the headset,
+to sit atop a table.</p>
+</blockquote>
+
+<p>No one is going to buy a $3,000 headset for looking at 3D tabletop maps.</p>
+
+<blockquote>
+  <p>Another project by Apple employees in Culver City, Calif.,
+code-named Z50, worked on other content for the device, including
+educational content that allowed users to observe the Apollo moon
+landing.</p>
+</blockquote>
+
+<p>Nope.</p>
+
+<blockquote>
+  <p>Apple is building a new operating system for the device that can
+also run existing apps for iOS, the iPhone’s operating system,
+though these apps will have to be shown in 2D format.</p>
+</blockquote>
+
+<p>That’s my understanding — UIKit and SwiftUI apps running in 2D “windows” within the 3D AR/VR space. (Could be the thing that makes the whole Stage Manager story make sense.)</p>
+
+<blockquote>
+  <p>Apple’s RealityKit engine will be the only way developers can
+build AR apps for the headset, though there is a plan to allow
+Unity Technologies to be the first partner to offer full VR
+experiences in the headset through its game engine.</p>
+</blockquote>
+
+<p>So are they focused on games or not? I appreciate Ma’s reporting this project but he seems to be trying to have it both ways on the gaming front. While the Mac remains an also-ran platform for gaming, given Apple’s enormous focus on gaming revenue from the App Store for iOS, I find it hard to believe that gaming wouldn’t be a high priority for a headset with excellent graphics and spatial audio.</p>
+
+<hr />
+
+<p>This headset project is very much real and, I believe, very much shipping this year. But the fundamental question remains: What’s the point? Think back to Steve Jobs’s presentation announcing the original iPad — the nut of the whole keynote was Jobs explaining where the iPad might fit between an iPhone and MacBook. If it didn’t serve some tasks not just a little but a <em>lot</em> better than either an iPhone or Mac, there was no point to the iPad. The same is true for this headset. And if it costs $3,000 and/or requires a tethered battery strapped around your waist, the “this better be an awesome experience” bar is raised even higher.</p>
+
+
+
+    ]]></content>
+        <title>★ Knee-Jerk Reactions and Thoughts Regarding The Information’s Latest Report on Apple’s Upcoming
+            Headset
+        </title>
+    </entry>
+    <entry>
+        <title>Alcoholic Vodka</title>
+        <link rel="alternate" type="text/html" href="http://alcoholicvodka.com/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ujt"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/01/02/alcoholic-vodka"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39593</id>
+        <published>2023-01-03T00:14:16Z</published>
+        <updated>2023-01-03T00:14:17Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Without question the most honest brand of booze I’ve ever seen. Currently only available in Sweden, alas.</p>
+
+<div>
+<a  title="Permanent link to ‘Alcoholic Vodka’"  href="https://daringfireball.net/linked/2023/01/02/alcoholic-vodka">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>‘Why Not Mars’</title>
+        <link rel="alternate" type="text/html" href="https://idlewords.com/2023/1/why_not_mars.htm"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ujs"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/01/02/why-not-mars"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39592</id>
+        <published>2023-01-03T00:05:53Z</published>
+        <updated>2023-01-03T01:30:08Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Maciej Ceglowski, writing at Idle Words:</p>
+
+<blockquote>
+  <p>Somehow we’ve embarked on the biggest project in history even
+though it has no articulable purpose, offers no benefits, and will
+cost taxpayers more than a good-sized war. Even the builders of
+the Great Pyramid at Giza could at least explain what it was
+<em>for</em>. And yet this project has sailed through an otherwise
+gridlocked system with the effortlessness of a Pentagon budget.
+Presidents of both parties now make landing on Mars an official
+goal of US space policy. Even billionaires who made their fortune
+automating labor on Earth agree that Mars must be artisanally
+explored by hand.</p>
+
+<p>The whole thing is getting weird.</p>
+</blockquote>
+
+<p>Also:</p>
+
+<blockquote>
+  <p>Fourth graders writing to Santa make a stronger case for an X-Box
+than NASA has been able to put together for a Mars landing.</p>
+</blockquote>
+
+<p>To be clear, he’s talking about a <em>manned</em> mission to Mars. I am all in favor of exploring the entirety of our solar system with robots (and I believe Ceglowski is too). What makes almost no sense is exploring — let alone colonizing — Mars with humans.</p>
+
+<p>It makes more sense to colonize the Gobi Desert than to colonize Mars — at least it’s relatively safe and inexpensive to get there and back. But no one proposes doing so because it’s so inhospitable. But the Gobi Desert is <em>far</em> more hospitable than the surface of Mars. (E.g. breathable air.)</p>
+
+<p>This is why we make robots and computers — to do things humans can’t do, don’t want to do, or simply aren’t good at doing.</p>
+
+<div>
+<a  title="Permanent link to ‘‘Why Not Mars’’"  href="https://daringfireball.net/linked/2023/01/02/why-not-mars">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Barbara Walters on Late Night With David Letterman in 1983</title>
+        <link rel="alternate" type="text/html" href="https://www.youtube.com/watch?v=QlbTclBNApc"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ujr"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/01/02/walters-letterman"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39591</id>
+        <published>2023-01-02T20:31:35Z</published>
+        <updated>2023-01-02T22:57:36Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>One good interviewer interviewing another. So great.</p>
+
+<p>(<a href="https://www.youtube.com/watch?v=CNAQRzS-DxE">And here she is with Johnny Carson</a> the same year.)</p>
+
+<div>
+<a  title="Permanent link to ‘Barbara Walters on Late Night With David Letterman in 1983’"  href="https://daringfireball.net/linked/2023/01/02/walters-letterman">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Russell Jacobs on Dark Sky: ‘The Rise and Fall of the Best and Worst Weather App Ever’</title>
+        <link rel="alternate" type="text/html"
+              href="https://slate.com/technology/2022/12/dark-sky-weather-app-apple-meteorologists-rip.html"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ujq"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/01/02/jacobs-dark-sky"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39590</id>
+        <published>2023-01-02T19:53:32Z</published>
+        <updated>2023-01-02T19:53:33Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Russell Jacobs, writing for Slate:</p>
+
+<blockquote>
+  <p>Indeed, Dark Sky’s big innovation wasn’t simply that its map was
+gorgeous and user-friendly: The radar map <em>was</em> the forecast.
+Instead of pulling information about air pressure and humidity and
+temperature and calculating all of the messy variables that
+contribute to the weather — a
+multi-hundred-billion-dollars-a-year international enterprise of
+satellites, weather stations, balloons, buoys, and an army of
+scientists working in tandem around the world (see Blum’s book) — Dark Sky simply monitored changes to the shape, size, speed, and
+direction of shapes on a radar map and fast-forwarded those
+images. “It wasn’t meteorology,” Blum said. “It was just graphics
+practice.”</p>
+</blockquote>
+
+<div>
+<a  title="Permanent link to ‘Russell Jacobs on Dark Sky: ‘The Rise and Fall of the Best and Worst Weather App Ever’’"  href="https://daringfireball.net/linked/2023/01/02/jacobs-dark-sky">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Dark Sky Goes Dark</title>
+        <link rel="alternate" type="text/html" href="https://support.apple.com/en-us/HT213526"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ujp"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/01/01/dark-sky-goes-dark"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39589</id>
+        <published>2023-01-01T20:35:24Z</published>
+        <updated>2023-01-03T01:37:26Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Apple bought the groundbreaking weather app/service Dark Sky back in March 2020. <a href="https://blog.darksky.net/">As promised</a>, the app stopped working last night at midnight. (The API will keep functioning until the end of March.) Apple has integrated some of Dark Sky’s features into the Weather app — most importantly, hyper-local precipitation forecasts. But the overall interface of Weather is quite different from Dark Sky’s. Me, I long used Dark Sky for precipitation alerts, but I never loved the app’s interface. Many people did, though, and I don’t think there’s any other app with a similar presentation.</p>
+
+<p>So it goes.</p>
+
+<p><strong>Update:</strong> <a href="https://www.meetcarrot.com/weather/">Carrot Weather</a> now has an “Inline” layout that is <a href="https://twitter.com/BrianMueller333/status/1609655951983874049">a pretty good approximation</a> for Dark Sky’s presentation. <a href="https://twitter.com/CARROT_app/status/1609581484091793409">Here’s a promo from the voice of Carrot itself</a>.</p>
+
+<div>
+<a  title="Permanent link to ‘Dark Sky Goes Dark’"  href="https://daringfireball.net/linked/2023/01/01/dark-sky-goes-dark">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>The Talk Show: ‘Measure Seven Times, Cut Once’</title>
+        <link rel="alternate" type="text/html" href="https://daringfireball.net/thetalkshow/2022/12/31/ep-366"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ujo"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2022/12/31/the-talk-show-366"/>
+        <id>tag:daringfireball.net,2022:/linked//6.39588</id>
+        <published>2022-12-31T20:14:16Z</published>
+        <updated>2022-12-31T20:14:17Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Glenn Fleishman returns to the show to talk about reported setbacks in Apple’s silicon division, the LastPass vault leak and password management, and the frontiers of social networking. Also, the joys of modern air travel during the holidays.</p>
+
+<p>Sponsored by:</p>
+
+<ul>
+<li><a href="https://linode.com/thetalkshow">Linode</a>: Instantly deploy and manage an SSD server in the Linode Cloud. New accounts get a $100 credit.</li>
+<li><a href="https://kolide.com/thetalkshow">Kolide</a>: The cross-platform endpoint security solution for teams that value privacy and transparency.</li>
+<li><a href="https://squarespace.com/talkshow">Squarespace</a>: Make your next move. Use code <strong>talkshow</strong> for 10% off your first order.</li>
+</ul>
+
+<div>
+<a  title="Permanent link to ‘The Talk Show: ‘Measure Seven Times, Cut Once’’"  href="https://daringfireball.net/linked/2022/12/31/the-talk-show-366">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Pelé Dies at 82</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.espn.com/soccer/brazil-bra/story/4840126/peleking-of-beautiful-game,-dies-aged-82"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ujn"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2022/12/29/pele"/>
+        <id>tag:daringfireball.net,2022:/linked//6.39587</id>
+        <published>2022-12-29T19:18:55Z</published>
+        <updated>2022-12-30T01:05:00Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>The AP:</p>
+
+<blockquote>
+  <p>Pelé, the Brazilian king of football who won a record three World Cups and became one of the most commanding sports figures of the last century, died on Thursday. He was 82. […]</p>
+
+<p>He was knighted by Britain’s Queen Elizabeth II in 1997. When he visited Washington to help popularise the game in North America, it was the U.S. president who stuck out his hand first.</p>
+
+<p>“My name is Ronald Reagan, I’m the president of the United States of America,” the host said to his visitor. “But you don’t need to introduce yourself because everyone knows who Pelé is.”</p>
+</blockquote>
+
+<p>There was just something about Pelé — an infectious enthusiasm. He spread joy.</p>
+
+<div>
+<a  title="Permanent link to ‘Pelé Dies at 82’"  href="https://daringfireball.net/linked/2022/12/29/pele">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Kansas Governor Imposes TikTok Ban on State-Issued Devices</title>
+        <link rel="alternate" type="text/html"
+              href="https://thehill.com/homenews/ap/ap-u-s-news/ap-explainer-kansas-democratic-governor-imposes-tiktok-ban/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ujm"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2022/12/28/tiktok-kansas"/>
+        <id>tag:daringfireball.net,2022:/linked//6.39586</id>
+        <published>2022-12-28T22:21:42Z</published>
+        <updated>2022-12-28T22:34:52Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>The AP:</p>
+
+<blockquote>
+  <p>Kansas Gov. Laura Kelly banned the use of TikTok on the state-issued devices of government workers under her control on Wednesday, becoming one of the first Democratic governors to restrict the popular social media app.</p>
+
+<p>Kelly’s action came five days after Congress approved the $1.7 trillion omnibus spending bill that banned TikTok from most U.S. government-issued devices for employees. Republican governors in at least 15 states have already imposed such restrictions.</p>
+</blockquote>
+
+<p>This should not be a partisan issue. What I’d like to see:</p>
+
+<ol>
+<li>A federal ban on TikTok. A flat-out ban.</li>
+<li>App store bans on TikTok from Apple and Google.</li>
+<li>IT bans at the company/institutional level.</li>
+</ol>
+
+<p>The fact that TikTok is phenomenally popular is not a reason to let it slide — it’s exactly the reason it is urgent to ban it. The CCP is using TikTok <a href="https://mashable.com/article/tiktok-spying-internal-report-us-users">to spy on people worldwide</a>, and promote CCP-friendly propaganda. We know that. And yet nobody is taking action. However unpopular such bans might initially be, I think most people will understand when it’s explained that the whole thing is a front for CCP spying and invasive surveillance. (We probably ought to ban everything from Tencent next.)</p>
+
+<div>
+<a  title="Permanent link to ‘Kansas Governor Imposes TikTok Ban on State-Issued Devices’"  href="https://daringfireball.net/linked/2022/12/28/tiktok-kansas">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Southwest Airlines Has Fallen Apart</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.nytimes.com/2022/12/26/us/flights-canceled-holiday-travel.html"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ujl"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2022/12/27/southwest-fallen-apart"/>
+        <id>tag:daringfireball.net,2022:/linked//6.39585</id>
+        <published>2022-12-27T19:21:11Z</published>
+        <updated>2022-12-27T19:50:46Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Amy Qin, Nicholas Bogel-Burroughs, and Steve Lohr, reporting for The New York Times:</p>
+
+<blockquote>
+  <p>Thousands of travelers were stranded at U.S. airports on Monday as a wave of canceled flights — many of them operated by Southwest Airlines — spoiled holiday plans and kept families from returning home during one of the busiest and most stressful travel stretches of the year. The cancellations and delays one day after Christmas left people sleeping on airport floors, standing in hourslong customer service lines and waiting on tarmacs for hours on end.</p>
+
+<p>The problems are likely to continue into Tuesday and later this week. As of Monday night, about 2,600 U.S. flights scheduled for Tuesday were already canceled, including 60 percent of all Southwest flights.</p>
+</blockquote>
+
+<p><a href="https://twitter.com/bgurley/status/1607599306185539584">Bill Gurley, on Twitter</a>:</p>
+
+<blockquote>
+  <p>The crazy thing about this is that throughout my lifetime, Southwest has been the VERY best airline when it comes to execution. Unquestionably. The leader. Which makes this all the more surprising. Interested to hear how it all happened. Sorry for all those stranded.</p>
+</blockquote>
+
+<p>I too was surprised to see Southwest handling this so badly. For the last decade or so I’ve mostly flown American, because they have such a dominant position in Philadelphia and I’ve racked up a slew of points and status with them. But before that I flew on Southwest frequently, and was always impressed by their combination of low prices, great execution, and their outstanding, very friendly customer service. One time I missed a flight home to Philly from Chicago, and I expected it would be a hassle — and expensive — to get rebooked. Instead, I was on the phone for no more than five minutes, and they rebooked me on the very next MDW-PHL flight for no charge. I don’t think that would have happened with any other airline. Southwest also has, in my experience, the very best flight attendants in the industry.</p>
+
+<p>From what I’ve gathered, Southwest’s problem this week is a combination of an outdated scheduling system and their generally high efficiency. They keep roughly 90 percent of their planes in service all day every day, but that means when something unexpected happens — like this past week’s weather across the country — the entire system is susceptible to falling apart. They now effectively need to “reboot”, and that might take an entire week. In normal times, Southwest is better than its competitors because they operate differently; now those differences have grounded most of their fleet. They cancelled a staggering 2,600 flights yesterday, 2,400 today, and 2,300 (and counting) for tomorrow. And keep in mind that part of Southwest’s efficiency is that their flights generally fly full — that adds up to over 300,000 stranded passengers <em>per day</em> this week. They expect <a href="https://thepointsguy.com/news/southwest-airlines-christmas-meltdown/">only to be up to 1,500 flights by Friday</a> — just one third of their usual schedule. Mind boggling chaos. </p>
+
+<p>This is going to be a brutal reputational hit. It’s been a difficult week for all U.S. airlines, but <a href="https://www.cnn.com/2022/12/27/business/southwest-airlines-service-meltdown/index.html">only Southwest</a> has <a href="https://twitter.com/MeredithonFOX7/status/1607499770754650112">completely fallen apart</a>. Delays are one thing, but being stranded for days on end <em>while other airlines are functioning</em> is hard to forgive.</p>
+
+<div>
+<a  title="Permanent link to ‘Southwest Airlines Has Fallen Apart’"  href="https://daringfireball.net/linked/2022/12/27/southwest-fallen-apart">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>LastPass Admits Hackers Stole Customers’ Password Vaults</title>
+        <link rel="alternate" type="text/html"
+              href="https://techcrunch.com/2022/12/22/lastpass-customer-password-vaults-stolen/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ujk"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2022/12/23/lastpass-vaults"/>
+        <id>tag:daringfireball.net,2022:/linked//6.39584</id>
+        <published>2022-12-23T22:25:50Z</published>
+        <updated>2022-12-25T21:47:53Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Zack Whittaker, reporting for TechCrunch:</p>
+
+<blockquote>
+  <p><a href="https://blog.lastpass.com/2022/12/notice-of-recent-security-incident/">In an updated blog post</a> on its disclosure, LastPass CEO Karim Toubba said the intruders took a copy of a backup of customer vault data by using cloud storage keys stolen from a LastPass employee. The cache of customer password vaults is stored in a “proprietary binary format” that contains both unencrypted and encrypted vault data, but technical and security details of this proprietary format weren’t specified. The unencrypted data includes <a href="https://hackernoon.com/psa-lastpass-does-not-encrypt-everything-in-your-vault-8722d69b2032">vault-stored web addresses</a>. It’s not clear how recent the stolen backups are.</p>
+
+<p>LastPass said customers’ password vaults are encrypted and can only be unlocked with the customers’ master password, which is only known to the customer. But the company warned that the cybercriminals behind the intrusion “may attempt to use brute force to guess your master password and decrypt the copies of vault data they took.”</p>
+</blockquote>
+
+<p>In one sense this is a triumph for secure password managers. <em>Even if we get hacked, the hackers can’t access your passwords.</em> That’s true for LastPass. But they did get hacked, badly, so for LastPass <a href="https://blog.lastpass.com/2022/12/notice-of-recent-security-incident/">this</a> seems devastating. It’s a second-order disaster for an attacker to steal users’ encrypted vaults, but it’s stills a disaster. Anyone who uses LastPass who hasn’t spent today moving to something else — me personally, I use, trust, and very much enjoy iCloud Keychain — either hasn’t heard about this breach or is an idiot.</p>
+
+<div>
+<a  title="Permanent link to ‘LastPass Admits Hackers Stole Customers’ Password Vaults’"  href="https://daringfireball.net/linked/2022/12/23/lastpass-vaults">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>PCalc Turns 30</title>
+        <link rel="alternate" type="text/html" href="https://pcalc.com/mac/thirty.html"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ujj"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2022/12/23/pcalc-turns-30"/>
+        <id>tag:daringfireball.net,2022:/linked//6.39583</id>
+        <published>2022-12-23T19:01:59Z</published>
+        <updated>2022-12-23T19:03:21Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>James Thomson:</p>
+
+<blockquote>
+  <p>PCalc actually started out in 1992 as a design for a central heating control panel.</p>
+</blockquote>
+
+<div>
+<a  title="Permanent link to ‘PCalc Turns 30’"  href="https://daringfireball.net/linked/2022/12/23/pcalc-turns-30">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Twitter Adds ‘View Counts’ for Tweets</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.theverge.com/2022/12/23/23523993/twitter-public-view-count-measurement-without-meaning"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/uji"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2022/12/23/twitter-view-counts"/>
+        <id>tag:daringfireball.net,2022:/linked//6.39582</id>
+        <published>2022-12-23T18:33:03Z</published>
+        <updated>2022-12-23T23:27:23Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>If flop sweat could be manifested in a user interface idea, this is it.</p>
+
+<p>(<a href="https://twitter.com/Stammy/status/1606021753725034497">Interesting thread here from former Twitter employee Paul Stamatiou</a> on why Twitter abandoned this idea back in 2015, when first they tried it.)</p>
+
+<div>
+<a  title="Permanent link to ‘Twitter Adds ‘View Counts’ for Tweets’"  href="https://daringfireball.net/linked/2022/12/23/twitter-view-counts">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>TikTok Spied on Forbes Journalists</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.forbes.com/sites/emilybaker-white/2022/12/22/tiktok-tracks-forbes-journalists-bytedance/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ujh"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2022/12/22/tiktok-forbes-spying"/>
+        <id>tag:daringfireball.net,2022:/linked//6.39581</id>
+        <published>2022-12-23T01:29:48Z</published>
+        <updated>2022-12-23T03:32:07Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Emily Baker-White, reporting for Forbes:</p>
+
+<blockquote>
+  <p>An internal investigation by ByteDance, the parent company of
+video-sharing platform TikTok, found that employees tracked
+multiple journalists covering the company, improperly gaining
+access to their IP addresses and user data in an attempt to
+identify whether they had been in the same locales as ByteDance
+employees.</p>
+
+<p>According to materials reviewed by Forbes, ByteDance tracked
+multiple Forbes journalists as part of this covert surveillance
+campaign, which was designed to unearth the source of leaks inside
+the company following a <a href="https://www.forbes.com/sites/emilybaker-white/2022/11/28/tiktoks-china-problem/?sh=658ae7e01ee4">drumbeat</a> of <a href="https://www.forbes.com/sites/emilybaker-white/2022/10/25/bytedance-tiktok-investigation-global-chief-security-officer-roland-cloutier/?sh=6f39cafc6640">stories</a>
+<a href="https://www.forbes.com/sites/emilybaker-white/2022/09/21/tiktok-bleeding-us-execs-china-control-bytedance/?sh=2409e4db9707">exposing</a> the company’s <a href="https://www.forbes.com/sites/emilybaker-white/2022/08/10/bytedance-tiktok-china-state-media-propaganda/?sh=21e9d68f322f">ongoing links</a> to China. As a
+result of the investigation into <a href="https://www.forbes.com/sites/emilybaker-white/2022/10/20/tiktok-bytedance-surveillance-american-user-data/?sh=359380f66c2d">the surveillance tactics</a>,
+ByteDance fired Chris Lepitak, its chief internal auditor who led
+the team responsible for them. The China-based executive Song Ye,
+who Lepitak reported to and who reports directly to ByteDance CEO
+Rubo Liang, resigned. [...]</p>
+
+<p>Forbes <a href="https://www.forbes.com/sites/emilybaker-white/2022/10/20/tiktok-bytedance-surveillance-american-user-data/?sh=6138ebad6c2d">first reported</a> the surveillance tactics, which were
+overseen by a China-based team at ByteDance, in October. Asked for
+comment on that story, <a href="https://twitter.com/JohnPaczkowski/status/1583456585593913345">ByteDance and TikTok did not deny the
+surveillance</a>, but took to Twitter after the story was
+published to say that “TikTok has never been used to ‘target’ any
+members of the U.S. government, activists, public figures or
+journalists,” and that “TikTok could not monitor U.S. users in the
+way the article suggested.” In the internal email, Liang
+acknowledged that TikTok had been used in <em>exactly</em> this way, as
+Forbes had reported.</p>
+</blockquote>
+
+<p>I feel like I’m <a href="https://daringfireball.net/2020/08/on_tiktok_as_a_security_threat">shouting into the void</a> on this issue, but I will reiterate that Chinese-owned internet services should be banned in the United States, and TikTok exemplifies why. <a href="https://www.politico.com/news/2022/12/16/biden-administration-at-odds-over-forcing-tiktok-divestment-00074415">Just ban it</a>.</p>
+
+<div>
+<a  title="Permanent link to ‘TikTok Spied on Forbes Journalists’"  href="https://daringfireball.net/linked/2022/12/22/tiktok-forbes-spying">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>The Talk Show: ‘Permanent September’</title>
+        <link rel="alternate" type="text/html" href="https://daringfireball.net/thetalkshow/2022/12/22/ep-365"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ujg"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2022/12/22/the-talk-show-365"/>
+        <id>tag:daringfireball.net,2022:/linked//6.39580</id>
+        <published>2022-12-22T21:16:03Z</published>
+        <updated>2022-12-22T21:16:04Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Rene Ritchie returns to the show to talk about recent news (Twitter, Freeform, iCloud Advanced Data Protection, the EU’s new Digital Markets Act) and Apple’s 2022 year in review.</p>
+
+<p>Brought to you by these fine sponsors:</p>
+
+<ul>
+<li><a href="https://squarespace.com/talkshow">Squarespace</a>: Make your next move. Use code <strong>talkshow</strong> for 10% off your first order.</li>
+<li><a href="https://www.drinktrade.com/thetalkshow">Trade Coffee</a>: Incredible coffee delivered fresh from the best roasters in the nation.</li>
+<li><a href="https://kolide.com/thetalkshow">Kolide</a>: Cross-platform endpoint security for teams that value privacy and transparency.</li>
+<li><a href="https://memberful.com/talkshow">Memberful</a>: Monetize your passion with membership. Start your free trial today.</li>
+</ul>
+
+<div>
+<a  title="Permanent link to ‘The Talk Show: ‘Permanent September’’"  href="https://daringfireball.net/linked/2022/12/22/the-talk-show-365">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Yours Truly on the Sub Club Podcast With David Barnard and Jacob Eiting</title>
+        <link rel="alternate" type="text/html"
+              href="https://subclub.com/episode/how-will-apple-play-the-digital-markets-act-john-gruber-daring-fireball"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ujf"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2022/12/21/yours-truly-sub-club"/>
+        <id>tag:daringfireball.net,2022:/linked//6.39579</id>
+        <published>2022-12-22T00:35:32Z</published>
+        <updated>2022-12-22T00:35:32Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Sub Club:</p>
+
+<blockquote>
+  <p>On the podcast we talk with John about the far reaching
+implications of the European Union’s Digital Markets Act, how app
+developers should be thinking about the opportunities created, and
+why Apple making so much money from the App Store might be bad for
+Apple long-term.</p>
+</blockquote>
+
+<p>That last point is the nut of it. It’s a nuanced argument, but I’ll go to the mat that the App Store’s financial success is the worst thing that’s happened to Apple this century. It’s a distraction at best, and a profound corruption at worst.</p>
+
+<div>
+<a  title="Permanent link to ‘Yours Truly on the Sub Club Podcast With David Barnard and Jacob Eiting’"  href="https://daringfireball.net/linked/2022/12/21/yours-truly-sub-club">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+
+        <link rel="alternate" type="text/html"
+              href="https://daringfireball.net/2022/12/i_wish_i_could_tell_you_this_is_not_all_about_twitter"/>
+        <link rel="shorturl" href="http://df4.us/uj2"/>
+        <id>tag:daringfireball.net,2022://1.39566</id>
+        <published>2022-12-17T01:38:54Z</published>
+        <updated>2022-12-17T20:44:28Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <summary type="text">There are tough sells, and there are tough sells. Selling shares of Twitter at $54.20 today
+            could be grist for a sequel to *Glengarry Glen Ross*.
+        </summary>
+        <content type="html" xml:base="https://daringfireball.net/" xml:lang="en"><![CDATA[
+<p>I would love to regale you with fun links and clever commentary about subjects other than Twitter “2.0”. I really would. I’m as thirsty for such subject matter as you surely are. But, alas, the continuing saga is simply too entertaining, and moving too fast. If you’ve been successfully ignoring the drama, I salute you.</p>
+
+<p>Let’s start with Jack Dorsey, who <a href="https://www.fastcompany.com/90238982/here-is-jack-dorseys-first-sketch-of-twitters-platform-from-2005">created the original concept for Twitter</a>, posted <a href="https://twitter.com/jack/status/20">the first ever tweet</a>, and was the best-known and longest-serving of Twitter’s <a href="https://en.wikipedia.org/wiki/Twitter,_Inc.#List_of_CEOs">numerous CEOs</a> over the service’s 16-year existence. On Tuesday — three days ago, a veritable epoch in Musk time — Dorsey started a newsletter/blog on <a href="https://www.getrevue.co/">Revue</a>, Twitter’s own Substack-style publishing service. Under the headline (capitalization verbatim, and very Dorsey-y) “a native internet protocol for social media”, <a href="https://www.getrevue.co/profile/jackjack/issues/a-native-internet-protocol-for-social-media-1503112">Dorsey wrote</a>:</p>
+
+<blockquote>
+  <p>I’ll start with the principles I’ve come to believe … based on
+everything I’ve learned and experienced through my past actions as
+a Twitter co-founder and lead:</p>
+
+<ol>
+<li>Social media must be resilient to corporate and government
+control.</li>
+<li>Only the original author may remove content they produce.</li>
+<li>Moderation is best implemented by algorithmic choice.</li>
+</ol>
+
+<p>The Twitter when I led it and the Twitter of today do not meet any
+of these principles. This is my fault alone, as I completely gave
+up pushing for them when an activist entered our stock in 2020. I
+no longer had hope of achieving any of it as a public company with
+no defense mechanisms (lack of dual-class shares being a key one).
+I planned my exit at that moment knowing I was no longer right for
+the company.</p>
+</blockquote>
+
+<p>Put aside the merits of Dorsey’s principles for just a moment and enjoy the fact that, less than 24 hours after starting his newsletter, <a href="https://techcrunch.com/2022/12/14/twitter-shuts-down-revue-its-newsletter-platform/">Twitter shut down Revue</a>. File under “shit that happens when you’re no longer the CEO”. (Dorsey took the timing <a href="https://twitter.com/jack/status/1603073026324664321">with good humor</a> and <a href="https://pastebin.com/HnBUM33b">republished his post to Pastebin</a>.)</p>
+
+<p>As for Dorsey’s principles, #1 and #3 seem unobjectionable, and to my eyes are correct. #2, though, that’s a problem. In a Twitter thread, <a href="https://twitter.com/raphkoster/status/1603111427161497600">Raph Koster summed up just <em>some</em> of the obvious problems</a> with the notion that only the original poster should be able to remove content:</p>
+
+<blockquote>
+  <p>Way too many people think that mute and block are adequate. They
+are nowhere near enough. Trivial example where mute and block
+don’t work: slander.</p>
+
+<p>A life can be utterly ruined by allegations flying and plugging
+your ears and going lalala doesn’t stop it from happening. [...]</p>
+
+<p>Governance is not a technical problem, ever. <em>Everything</em> on the
+net started out technolibertarian. All of it evolved. The idea
+that the slander is now only deletable by the slanderer is... I
+lack words.</p>
+</blockquote>
+
+<p>It is trivial, albeit unpleasant, to imagine numerous other examples where muting and blocking are insufficient. That the man who led Twitter from 2015–2021 seemingly lacks that imagination or understanding at least partially explains how we got here.</p>
+
+<p>Next up: <a href="https://daringfireball.net/linked/2022/12/15/twitter-journalist-suspensions">Musk’s petulant banning last night of over half a dozen prominent journalists</a> for <a href="https://arstechnica.com/tech-policy/2022/12/musk-bans-live-location-sharing-says-hell-sue-creator-of-plane-tracking-bot/">writing about his spat with Jack Sweeney</a>, creator of the ElonJet automated account that tracked the location of Musk’s private jet using publicly available, perfectly legal information from the FAA. Musk, of course, <a href="https://www.techdirt.com/2022/12/14/elons-promise-not-to-ban-account-tracking-his-jet-didnt-last-very-long-at-all-also-bans-guys-personal-account/">just last month tweeted</a>, “My commitment to free speech extends even to not banning the account following my plane, even though that is a direct personal safety risk.”</p>
+
+<p>Reneging on that promise is hypocrisy. Suspending Twitter users who had the temerity to simply post links to the ElonJet accounts <a href="https://www.instagram.com/elonmusksjet/">on Instagram</a> and <a href="https://mastodon.social/@elonjet">Mastodon</a> is beyond hypocrisy. They were just links.</p>
+
+<p>It gets better. After suspending those journalists, BuzzFeed reporter Katie Notopoulos hosted an hours-long Twitter Spaces discussion — Spaces is the group audio call-in feature that was modelled on last summer’s flash-in-the-pan hit Clubhouse — that featured, as speakers, several of the journalists who’d been banned from Twitter earlier last night. That’s right: Twitter’s backend infrastructure is such a mishmash that suspended accounts are still able to join and participate in Spaces.</p>
+
+<p>Eventually, as Notopoulos’s Spaces panel continued to grow in listeners — there were several thousand when I briefly tuned in — Musk himself joined. <a href="https://www.buzzfeednews.com/article/pranavdixit/elon-musk-twitter-space-suspended-journalists">It did not go well</a>. Or rather, it did not go well for Musk. It went just great if you enjoy a good laugh. After being asked a pointed but utterly fair question by Notopoulos, Musk simply bailed. Moments later, the entire Spaces feature was yanked offline by Twitter. Not just the space that was currently being hosted by Notopoulos, <a href="https://techcrunch.com/2022/12/16/twitter-pulls-its-spaces-group-audio-feature-after-musk-run-in-with-banned-journalists/">but the entire feature, Twitter-wide</a>.</p>
+
+<p>Surely a coincidence.</p>
+
+<p>But it gets better. Last night <a href="https://www.theverge.com/2022/12/15/23512113/twitter-blocking-mastodon-links-elon-musk-elonjet">Twitter began classifying all links to all popular Mastodon servers as “malware”</a>. That includes links to one’s own Mastodon account that a Twitter user might put in their account profile — which is how tools like <a href="https://www.movetodon.org/">Movetodon</a> and <a href="https://fedifinder.glitch.me/">Fedifinder</a> help users new to Mastodon find and follow the Mastodon accounts for people they previously followed on Twitter. You put your Mastodon account link in your Twitter profile, then new-to-Mastodon users who already follow you on Twitter can find your new Mastodon account using such tools. But, now, Twitter blocks you from adding any known Mastodon link, whether in your profile or in a tweet, under the false claim that all such links are malicious or dangerous. So if you spot an interesting post on Mastodon and just try to tweet a link to it, you can’t. It’d be bad enough if they banned links to Mastodon accounts as part of a new policy disallowing links to Twitter competitors, but Twitter is flat-out lying that Mastodon is in any way dangerous. Free speech!</p>
+
+<p>Even more free speechy: <a href="https://www.techdirt.com/2022/12/15/elons-commitment-to-free-speech-rapidly-replaced-by-his-commitment-to-blatant-hypocrisy-bans-the-joinmastodon-account/">Twitter has banned Mastodon’s official Twitter account</a> (<a href="https://twitter.com/joinmastodon">@JoinMastodon</a>). Just banned it. Musk isn’t worried about Mastodon at all, no sirree.</p>
+
+<p>Again, this is far beyond the realm of mere hypocrisy. It’s absurdity. It has become increasingly clear, week by week, that Musk is unstable and erratic, and that his definition of “free speech” — his supposed guiding principle for running Twitter — is simply whatever the hell he personally doesn’t mind. Content moderation at Twitter under Musk’s regime is simply raw, unadulterated petulance. He clearly sees the entirety of Twitter as his own personal $44 billion playground and a vicious cudgel to be wielded against his perceived enemies.</p>
+
+<p>Which finally brings us to today, which brought news that Musk is now seeking investors to buy shares of Twitter at the same valuation he paid. <a href="https://www.semafor.com/article/12/16/2022/elon-musks-team-is-seeking-new-investors-for-twitter">Semafor reports</a>:</p>
+
+<blockquote>
+  <p>The managing director of Elon Musk’s family office is seeking new
+equity investors for Twitter as users revolt, advertisers flee,
+and debt payments loom, according to people familiar with the
+fundraising effort.</p>
+
+<p>Musk’s money manager, Jared Birchall, reached out to potential
+investors this week, offering shares of Twitter at the same price,
+$54.20, that Musk paid to take the company private in October, the
+people said. [...]</p>
+
+<p>Asking investors to pay full price for an asset whose value is
+rapidly collapsing is going to be a tough sell.</p>
+</blockquote>
+
+<p>There are tough sells, and there are tough sells. Selling shares of Twitter at $54.20 today could be grist for a sequel to <em>Glengarry Glen Ross</em>. <a href="https://twitter.com/edzitron/status/1603860993142054912">Ed Zitron summed up the pitch perfectly</a>:<sup id="fnr1-2022-12-16"><a href="#fn1-2022-12-16">1</a></sup></p>
+
+<blockquote>
+  <p>Hey do you want to buy shares of a company I have publicly reduced
+the value and revenue of? Don’t worry there’s also just an
+astounding amount of debt.</p>
+</blockquote>
+
+<p>Musk is not just sinking Twitter with his ostentatious public descent into madness. He might be taking Tesla down with him. Over the last month, when the stock market overall has been flat, Tesla shares are down about 20 percent. Tesla shareholders are ... <a href="https://www.autoblog.com/2022/12/15/elon-abandoned-tesla-shareholder-koguan-leo-calls-for-new-ceo/">displeased</a>.</p>
+
+<p>Tesla has long traded at an incredibly high valuation. Apple’s price-to-earnings (PE) ratio is 22; Google’s 18; fellow carmakers Ford and General Motors have PEs around 6. Tesla’s PE today remains a sky-high 48. Wait, that was this morning. After today’s trading it’s down to 46. That’s still <em>really</em> high. That price only makes sense if you think Tesla is going to dominate the entire auto industry, and that only makes sense if you have a <em>lot</em> of faith in Elon Musk and believe his hype on Tesla’s purported expertise in areas like self-driving autonomy.</p>
+
+<p>It seems clear that many people who heretofore bought into Tesla because they bought into Musk’s hype are coming to the realization that he’s an erratic huckster, a liar, and a <a href="https://www.washingtonpost.com/technology/2022/12/12/musk-twitter-harass-yoel-roth/">low-grade (at least) sociopath</a>. Musk’s very public jackassery is also doing <a href="https://boingboing.net/2022/12/12/tesla-is-on-the-way-to-becoming-the-mypillow-of-cars.html">obvious damage to Tesla’s brand image amongst consumers</a>.</p>
+
+<p>Last but not least, keep in mind too that Twitter DMs are <a href="https://www.eff.org/deeplinks/2020/07/after-weeks-hack-it-past-time-twitter-end-end-encrypt-direct-messages">not end-to-end encrypted</a>, and thus are readable (<a href="https://twitter.com/MattGertz/status/1603751916168970240">and leak-able</a>) by anyone at Twitter with sufficient access privileges, which presumably now includes the boss. What could go wrong?</p>
+
+<p>Other than all that, though, things are going just great at Twitter.</p>
+
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1-2022-12-16">
+<p>Also from Zitron, <a href="https://mobile.twitter.com/edzitron/status/1603862819375415297">in that same Twitter thread</a>: “Libertarian psychopaths with too much money are being given the spotlight and they are hitting themselves in the nuts with a kettlebell.”&nbsp;<a href="#fnr1-2022-12-16"  class="footnoteBackLink"  title="Jump back to footnote 1 in the text.">&#x21A9;&#xFE0E;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+    ]]></content>
+        <title>★ I Wish I Could Tell You This One Is Not All About Twitter</title>
+    </entry>
+    <entry>
+
+        <link rel="alternate" type="text/html" href="https://daringfireball.net/2022/12/third_party_app_store_forest"/>
+        <link rel="shorturl" href="http://df4.us/uiw"/>
+        <id>tag:daringfireball.net,2022://1.39560</id>
+        <published>2022-12-15T00:23:20Z</published>
+        <updated>2022-12-15T03:31:18Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <summary type="text">After more than a day of digging through the DMA, I conclude mostly that while it might be
+            well intentioned, it’s horribly written.
+        </summary>
+        <content type="html" xml:base="https://daringfireball.net/" xml:lang="en"><![CDATA[
+<p>Mark Gurman dropped a seemingly-explosive report yesterday at Bloomberg, now under the headline “<a href="https://www.bloomberg.com/news/articles/2022-12-13/will-apple-allow-users-to-install-third-party-app-stores-sideload-in-europe">Apple to Allow Outside App Stores in Overhaul Spurred by EU Laws</a>”. I say <em>now</em> because the original headline was a little less assertive: “Will Apple Allow Users to Install Third-Party App Stores, Sideload in Europe?” I suspect the original headline was more accurate, because most of this seems up in the air.</p>
+
+<p>The Bloomberg report starts:</p>
+
+<blockquote>
+  <p>Apple Inc. is preparing to allow alternative app stores on its
+iPhones and iPads, part of a sweeping overhaul aimed at complying
+with strict European Union requirements coming in 2024.</p>
+
+<p>Software engineering and services employees are engaged in a major
+push to open up key elements of Apple’s platforms, according to
+people familiar with the efforts. As part of the changes,
+customers could ultimately download third-party software to their
+iPhones and iPads without using the company’s App Store,
+sidestepping Apple’s restrictions and the up-to-30% commission it
+imposes on payments.</p>
+</blockquote>
+
+<p>That last bit — that any of this will allow developers to avoid Apple’s commissions on purchases and subscriptions — is the first of my quibbles with Gurman’s report. I don’t think that’s mandated by the EU, and everyone knows it’s not what Apple wants. I think whatever Apple is devising to comply with this law, they’re still going to demand a commission on digital purchases. That last sentence surely strikes many of you as nutty. In most people’s minds, whether they’re personally invested (because, say, they’re developers whose apps are subject to Apple’s App Store commission fees) or just following the saga as interested observers or enthusiasts, these commission fees are seemingly among the most controversial issues, and thus must surely be square in the bullseye of the E.U. regulators who drafted the <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022R1925&amp;qid=1671035664732&amp;from=EN">Digital Markets Act</a> (DMA).</p>
+
+<p>But that’s what many interested observers thought about <a href="https://daringfireball.net/2022/02/going_dutch">Dutch regulators mandating new rules for dating apps</a>, yet Apple’s policy changes to comply with the rules from the Netherlands ACM simply instituted a new 27 percent commission rate for dating apps that use alternate in-app payment processors or links to the web. I suspect Apple has something similar in mind for compliance with the DMA. The commission rate <a href="http://www.fosspatents.com/2022/07/googles-new-european-in-app-payment.html">might be lower</a>, but Apple is going to want a commission. Tim Cook’s testimony in the Epic lawsuit revealed that <a href="https://www.theguardian.com/technology/2021/may/20/apple-epic-games-trial-tim-cook-testimony">Apple doesn’t see its App Store commissions as a fee for the App Store itself</a>, but for being on the iOS platform at all. Collecting those commissions through the App Store is just the easiest and most direct way to do it.</p>
+
+<p>Gurman:</p>
+
+<blockquote>
+  <p>The changes underway within Apple are being led by Andreas
+Wendker, a longtime software engineering vice president who
+reports to Craig Federighi, the company’s top software executive.
+Jeff Robbin — Apple’s top engineering manager for its services,
+who reports to head of services Eddy Cue — is also involved.</p>
+
+<p>Apple is applying a significant amount of resources to the
+companywide endeavor. It hasn’t been a popular initiative within
+Apple, considering that the company has spent years decrying the
+need for “sideloading” — the process of installing software
+without using the official App Store. In lobbying against the new
+European laws, Apple has argued that sideloading could put unsafe
+apps on consumers’ devices and undermine privacy.</p>
+
+<p>Some engineers working on the plan also see it as distraction from
+typical day-to-day development of future features, according to
+the people. The company is aiming for the changes to be ready as
+part of an update to next year’s iOS 17, which would be in line
+with requirements.</p>
+</blockquote>
+
+<p>That Apple is working on this for next year’s iOS 17 is one of those “surprising yet not surprising” stories, much like the rumors that at least some of next year’s new iPhone models will switch from Lightning ports to USB-C. Surprising, because Apple clearly doesn’t want to do these things — at least not at the behest of regulators. But not surprising, because <a href="https://daringfireball.net/linked/2022/10/26/stern-federighi-joz">of course Apple is going to comply with E.U. laws</a>, whether it agrees with those laws or not.</p>
+
+<p>Given that the DMA requires compliance by March 2024, Apple would have to make these changes part of its plans for iOS 17, which is almost certainly going to be released in September 2023.</p>
+
+<p>Gurman:</p>
+
+<blockquote>
+  <p>To help protect against unsafe apps, Apple is discussing the idea
+of mandating certain security requirements even if software is
+distributed outside its store. Such apps also may need to be
+verified by Apple — a process that could carry a fee. Within the
+App Store, Apple takes a 15% to 30% cut of revenue.</p>
+
+<p>Apple hasn’t made a final decision on whether to comply with a
+component of the Digital Markets Act that allows developers to
+install third-party payment systems within their apps. That
+would let users sign up for subscriptions to a travel app, for
+example, or buy in-app content from a game maker — without
+involving Apple.</p>
+</blockquote>
+
+<p>Again, I don’t think the DMA requires Apple or Google to allow third-party in-app payment processing from which they don’t require a commission. I say “think” because the DMA is well over 100 pages, and, well, to my eyes, <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022R1925&amp;qid=1671035664732&amp;from=EN">written in opaque bureaucratic language</a>. One way to glean through the passages you might find interesting is to search for the terms “application store” and “payments”.</p>
+
+<p>As for sideloading apps and allowing for third-party app stores, here’s the relevant passage from the DMA (Chapter III, Article 6, section 4):</p>
+
+<blockquote>
+  <p>The gatekeeper shall allow and technically enable the installation
+and effective use of third-party software applications or software
+application stores using, or interoperating with, its operating
+system and allow those software applications or software
+application stores to be accessed by means other than the relevant
+core platform services of that gatekeeper. The gatekeeper shall,
+where applicable, not prevent the downloaded third-party software
+applications or software application stores from prompting end
+users to decide whether they want to set that downloaded software
+application or software application store as their default. The
+gatekeeper shall technically enable end users who decide to set
+that downloaded software application or software application store
+as their default to carry out that change easily.</p>
+
+<p>The gatekeeper shall not be prevented from taking, to the extent
+that they are strictly necessary and proportionate, measures to
+ensure that third-party software applications or software
+application stores do not endanger the integrity of the hardware
+or operating system provided by the gatekeeper, provided that such
+measures are duly justified by the gatekeeper.</p>
+
+<p>Furthermore, the gatekeeper shall not be prevented from applying,
+to the extent that they are strictly necessary and proportionate,
+measures and settings other than default settings, enabling end
+users to effectively protect security in relation to third-party
+software applications or software application stores, provided
+that such measures and settings other than default settings are
+duly justified by the gatekeeper.</p>
+</blockquote>
+
+<p>Right in the first sentence, there’s a big <em>or</em>: “third-party software applications <em>or</em> software application stores”. I <em>think</em> what the E.U. means here is that “gatekeepers” are required to support both sideloading individual apps <em>and</em> entire third-party app stores (which, I think would really just be front ends to sideloading), but all it says is “or”, which perhaps means a gatekeeper can choose to support one or the other. (The DMA seems overly concerned with users being able to specify defaults, but I don’t even know what a default app store would mean. I guess that it means when you search on the home screen or ask Siri for an app, the home screen or Siri must be allowed to default to providing search results from a third-party app store?)</p>
+
+<p>The second paragraph above seems to be ripe for years of legal squabbling. The E.U.’s intent, I think, is to say that Apple can still require apps be submitted for approval, whether they’re going to be distributed outside the App Store or not. But doesn’t that defeat the entire point? Anyone who is hoping that the DMA is going to force Apple to allow any and all third-party software you can imagine — more or less requiring Apple to treat iOS like it does MacOS — is, I think, setting themselves up for disappointment. That’s certainly not what Apple wants or thinks would be best for (most) iOS users, and I don’t think it’s what the DMA mandates.</p>
+
+<p>Back to that “or”. Riley Testut is the developer behind <a href="https://altstore.io/">AltStore</a>, a no-jailbreak alternative iOS app store that works by distributing apps as developer betas. <a href="https://twitter.com/rileytestut/status/1602803031984279552">Testut wrote a concise Twitter thread</a> arguing in favor of sideloading but, more or less, <em>against</em> third-party app stores:</p>
+
+<blockquote>
+  <p>If, for example, Meta made an app store, they’d want exclusive
+apps. Unfortunately these apps don’t exist yet, so what can
+they do in the meantime? Pay App Store devs to leave the App
+Store of course!</p>
+
+<p>And it wouldn’t be just Meta — <em>every</em> app store would want
+exclusive apps to compete. And because literally all iOS apps
+are currently in the App Store, there’s simply no way to amass
+a competitive app library fast enough without poaching App
+Store apps.</p>
+
+<p>Here’s what I see happening:</p>
+
+<p>Instagram? They moved to Meta’s store for obvious reasons, so you
+can no longer receive updates unless you also install Meta’s store.</p>
+
+<p>That note taking app you’ve been using for years? They’re tired of
+paying Apple 30%, so they’re now in Epic’s store!</p>
+
+<p>Now you HAVE to use 3 different app stores, or else you’ll lose
+access to the apps you’re already using!</p>
+
+<p>So yes, it’s a choice — but the choice is NOT “do I use 3rd party
+stores to get cool new apps”</p>
+
+<p>Instead it’s: do I use 3rd party stores <em>just to keep using my
+current apps</em>.</p>
+</blockquote>
+
+<p>Which leads me to my biggest question: who would get to run these third-party app stores? As far as I can tell, the DMA doesn’t say. Anyone and everyone with an Apple developer account in good standing? Or just anyone and everyone? (Apple has banned Epic Games from publishing games through the App Store, but might be required to allow Epic Games to run an entire app store?)</p>
+
+<p>If this comes to pass, I foresee a byzantine approval system imposed by Apple <em>even if Apple comes into it with nothing but the best intentions</em>. That is to say, even if Apple’s attitude is to make third-party app stores as appealing and useful as possible, the approval process would still come with requirements and contractural obligations that very few companies could comply with. And I somehow doubt that Apple’s attitude would be “let’s make third-party app stores as appealing and useful as possible”. What happens if Apple makes both running and using third-party app stores as unappealing as possible under the law?</p>
+
+<p>After more than a day of digging through the DMA, I conclude mostly that while it might be well intentioned, it’s horribly written. (And, to be honest, I question its intentions.)</p>
+
+<p><a href="https://daringfireball.net/2021/09/why_still_lightning">I disagree</a> with the European Commission’s USB-C mandate, but at least it’s clear: If you make certain types of devices and those devices have charging ports, those charging ports need to be USB-C. The DMA’s third-party app store mandate is not only unclear, it’s like house-building regulations written by people who have no experience with architecture or carpentry — and who apparently don’t think that architecture or carpentry expertise are necessary for dictating how houses should be built.</p>
+
+
+
+    ]]></content>
+        <title>★ If a Third-Party App Store Falls in the Forest and No One Uses It, Does It Make a Sound?</title>
+    </entry>
+    <entry>
+
+        <link rel="alternate" type="text/html"
+              href="https://retool.com/?utm_source=sponsor&amp;utm_medium=newsletter&amp;utm_campaign=daringfireball"/>
+        <link rel="shorturl" href="http://df4.us/uir"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/feeds/sponsors/2022/12/retool_5"/>
+        <id>tag:daringfireball.net,2022:/feeds/sponsors//11.39555</id>
+        <author>
+            <name>Daring Fireball Department of Commerce</name>
+        </author>
+        <published>2022-12-12T18:33:17-05:00</published>
+        <updated>2022-12-12T18:33:17-05:00</updated>
+        <content type="html" xml:base="https://daringfireball.net/feeds/sponsors/" xml:lang="en"><![CDATA[
+<p>Programming hasn’t fundamentally changed in a long time. Building an app usually means searching for the right component library, debugging dependencies, rewriting a lot of boilerplate code, and figuring out where to deploy. Everything but solving the problem at hand.</p>
+
+<p>Retool is a new approach: they’ve unified the ease of visual programming with the power and flexibility of real code. Connect to any database or API. Drag-and-drop a UI while simultaneously live programming it. Deploy instantly and scale as you grow.</p>
+
+<p>Customers use Retool to solve business problems 10× faster: Plaid uses Retool to manage integration product support. Amazon uses Retool to handle GDPR requests. You, too, can use it to manage users and orders, analyze data, run DevOps, or build any business-critical application. </p>
+
+<p>Teams of up to 5 can now build unlimited apps for free on Retool.</p>
+
+<p>Start building faster today.</p>
+
+<div>
+<a  title="Permanent link to ‘Retool’"  href="https://daringfireball.net/feeds/sponsors/2022/12/retool_5">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+        <title>[Sponsor] Retool</title>
+    </entry>
+    <entry>
+
+        <link rel="alternate" type="text/html" href="https://daringfireball.net/2022/12/twitter_still_up"/>
+        <link rel="shorturl" href="http://df4.us/ui5"/>
+        <id>tag:daringfireball.net,2022://1.39533</id>
+        <published>2022-12-02T23:38:26Z</published>
+        <updated>2022-12-02T23:43:05Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <summary type="text">Two weeks later and it seems they *can* run Twitter without that team. Or, perhaps, it’s
+            just been luck and collapse is imminent.
+        </summary>
+        <content type="html" xml:base="https://daringfireball.net/" xml:lang="en"><![CDATA[
+<p>In the immediate aftermath of <a href="https://daringfireball.net/2022/11/twitter_tumult">Twitter’s mass layoffs and subsequent resignations</a>, there were widespread reports that the staffing situation and collective brain drain were so dire that the site would collapse. Two weeks later — with World Cup soccer drama fueling record usage — such concerns seem to have been overblown.</p>
+
+<p><a href="https://www.bloomberg.com/news/articles/2022-11-18/twitter-staff-wipeout-under-musk-spurs-concern-for-site-s-decay">Davey Alba, Jack Gillum, and Margi Murphy, reporting for Bloomberg</a>:</p>
+
+<blockquote>
+  <p>Twitter Inc.’s mass exodus of employees leaves the platform
+vulnerable to a broad range of malfunctions. The social network
+will succumb to a major glitch at some point, technologists
+predict. It’s just a matter of when. [...]</p>
+
+<p>Multiple teams that were critical for keeping the service up and
+running are completely gone, or borrowing engineers from other
+groups, according to people familiar with the matter. That
+includes infrastructure teams to keep the main feed operational
+and maintain tweet databases. #RIPTwitter trended on the site, as
+users and departed employees predicted an imminent shutdown and
+said their goodbyes.</p>
+</blockquote>
+
+<p>Joseph Menn and Cat Zakrzewski at The Washington Post, “<a href="https://www.washingtonpost.com/technology/2022/11/18/twitter-death-watch-chaos-resignations/">Twitter Death Watch Captivates Millions</a>”:</p>
+
+<blockquote>
+  <p>Several critical teams essential to keeping the site functioning
+were cut to a single engineer or none by the departures Thursday,
+leaving the company partially on autopilot and likely to crash
+sooner or later, engineers said.</p>
+</blockquote>
+
+<p><a href="https://www.washingtonpost.com/technology/2022/11/17/twitter-musk-easing-rto-order/">And from a day prior</a>:</p>
+
+<blockquote>
+  <p>“I know of six critical systems (like ‘serving tweets’ levels of
+critical) which no longer have any engineers,” a former employee
+said. “There is no longer even a skeleton crew manning the system.
+It will continue to coast until it runs into something, and then
+it will stop.”</p>
+</blockquote>
+
+<p><a href="https://www.theverge.com/2022/11/17/23465274/hundreds-of-twitter-employees-resign-from-elon-musk-hardcore-deadline">Alex Heath and Mia Sato, reporting for The Verge</a>:</p>
+
+<blockquote>
+  <p>Remaining and departing Twitter employees told The Verge that,
+given the scale of the resignations this week, they expect the
+platform to start breaking soon. One said that they’ve watched
+“legendary engineers” and others they look up to leave one by
+one. [...]</p>
+
+<p>Multiple “critical” teams inside Twitter have now either
+completely or near-completely resigned, said other employees who
+requested anonymity to speak without Musk’s permission. That
+includes Twitter’s traffic and front end teams that route
+engineering requests to the correct backend services. The team
+that maintains Twitter’s core system libraries that every engineer
+at the company uses is also gone. “You cannot run Twitter without
+this team,” a departing employee said.</p>
+</blockquote>
+
+<p>Two weeks later and it seems they <em>can</em> run Twitter without that team. Or, perhaps, it’s just been luck and collapse is imminent.</p>
+
+<p>Chris Stokel-Walker for The Guardian, “<a href="https://www.theguardian.com/technology/2022/nov/19/twitter-crashing-world-cup-elon-musk-social-media-traffic-spikes">Twitter Has ‘50% Chance’ of Major Crash During World Cup, Says Insider</a>”:</p>
+
+<blockquote>
+  <p>Twitter stands a 50% chance of a major outage that could take the
+site offline during the World Cup, according to a recently
+departed employee with knowledge of how the company responds to
+large-scale events.</p>
+
+<p>The former employee, who was granted anonymity because of the
+sensitivity of what was discussed, has knowledge of the workings
+of Twitter Command Centre, the platform’s team of troubleshooters
+who monitor the site for issues such as traffic spikes and data
+centre outages. “Between the lack of preparations and the lack of
+staffing, I think it’s going to be a rough World Cup for Twitter,”
+said the former employee.</p>
+
+<p>He suggested that an incident of some kind — such as a service
+responding slowly or incorrectly — is almost a certainty during
+the 29-day competition in Qatar, estimating a 90% possibility of
+something going wrong that users would see. The likelihood of
+Twitter staying online during the competition, which kicks off on
+Sunday, is no better than even, according to the former employee.</p>
+</blockquote>
+
+<p>The World Cup is only half over. Let’s check back in another two weeks.</p>
+
+<p>But while fears of <em>technical</em> collapse seem to have been overblown, Twitter’s <em>advertising</em> collapse is <a href="https://www.wsj.com/articles/twitter-offers-advertisers-generous-incentives-after-many-marketers-left-platform-11669922354">seemingly continuing unabated</a>.</p>
+
+
+
+    ]]></content>
+        <title>★ Two Weeks Later and Twitter Is Still Up</title>
+    </entry>
+    <entry>
+
+        <link rel="alternate" type="text/html" href="https://daringfireball.net/2022/11/twitter_tumult"/>
+        <link rel="shorturl" href="http://df4.us/ugm"/>
+        <id>tag:daringfireball.net,2022://1.39478</id>
+        <published>2022-11-18T20:41:38Z</published>
+        <updated>2022-12-02T23:15:35Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <summary type="text">If you had told me three weeks ago that Twitter, as a company, would today be embroiled in
+            turmoil over a company-wide email from Elon Musk centered around the phrase “extremely hardcore”, this is
+            not the scenario I’d have imagined.
+        </summary>
+        <content type="html" xml:base="https://daringfireball.net/" xml:lang="en"><![CDATA[
+<p>If you had told me three weeks ago that Twitter, as a company, would today be embroiled in turmoil — perhaps outright existential crisis — over a company-wide email from Elon Musk centered around the phrase “extremely hardcore”, <a href="https://www.theverge.com/2022/11/4/23439790/elon-musk-twitter-layoffs-trust-and-safety-teams-severance">this</a> is not the scenario I’d have imagined.</p>
+
+<p>It’s as though Musk has taken Facebook’s “Move fast and break things” motto and reduced it to “Break everything fast.” Last night, reports of mass resignations inside Twitter seemed so dire that Twitter itself seemed to be documenting its own demise, like HAL 9000 singing “Daisy”, ever more degenerately slurred, near the end of <em>2001: A Space Odyssey</em>. I lost count of how many of the people I follow were seemingly posting what they expected, last night, to be their last-ever tweets.</p>
+
+<p><a href="https://www.nytimes.com/2022/11/17/technology/twitter-elon-musk-ftc.html">The New York Times</a>:</p>
+
+<blockquote>
+  <p>Hours before <a href="https://www.nytimes.com/2022/11/16/technology/elon-musk-twitter-employee-deadline.html">a Thursday deadline</a> that <a href="https://www.nytimes.com/2022/05/03/technology/elon-musk-twitter-plan.html">Elon Musk</a>
+gave Twitter employees to decide whether to stay or leave their
+jobs, the social media company appeared to be in disarray.</p>
+
+<p>Mr. Musk and his advisers held meetings with some Twitter workers
+whom they deemed “critical” to stop them from leaving, four people
+with knowledge of the conversations said. He sent confusing
+messages about the company’s remote work policy, appearing to
+soften his stance on not allowing people to work from home before
+warning their managers, according to those people and internal
+emails viewed by The New York Times.</p>
+
+<p>All the while, two people said, resignations started to roll in.
+By the deadline, 5 p.m. Eastern time, hundreds of Twitter
+employees appeared to have decided to depart with three months of
+severance pay, the people said. Twitter later announced via email
+that it would close “our office buildings” and disable employee
+badge access until Monday.</p>
+</blockquote>
+
+<p><a href="https://twitter.com/zoeschiffer/status/1593649356661436417">Zoë Schiffer, today</a>:</p>
+
+<blockquote>
+  <p>Email from Elon to the engineering team: “Anyone who can actually
+write software, please report to the 10th floor at 2pm today.
+Before doing so, please email me a bullet point summary of what
+your code commits have achieved in the past 6 months.”</p>
+
+<p>Elon Musk is also asking for up 10 screenshots of the “most
+salient lines of code” from Twitter engineers.</p>
+</blockquote>
+
+<p>This latest edict is bananas in several ways, not the least of which is that the company claimed just 12 hours earlier that its offices would be closed today. As I quipped (<a href="https://twitter.com/gruber/status/1593657879558467584">on Twitter</a>, which, as I publish this, is still seemingly fully operational), either (a) the offices <em>aren’t</em> closed until next week; or (b) getting to the 10th floor is an interview puzzle to keep your job?</p>
+
+<p>But at a deeper level, the idea that counting lines of code or looking at “up to 10 screenshots” of code can give any effective measure of a programmer is absurdly wrong. Some of the most elite programmers I’ve ever known have an uncanny knack for <em>reducing</em> lines of code. Programmers working on security issues necessarily code with painstaking care. And, of course, there are dozens of essential roles at Twitter — some highly technical — that don’t involve “code commits” at all.</p>
+
+<p><a href="https://www.theverge.com/2022/11/17/23465274/hundreds-of-twitter-employees-resign-from-elon-musk-hardcore-deadline">Alex Heath and Mia Sato, reporting for The Verge</a>:</p>
+
+<blockquote>
+  <p>Twitter had roughly 2,900 remaining employees before the deadline
+Thursday, thanks to Musk <a href="https://www.theverge.com/2022/11/4/23439790/elon-musk-twitter-layoffs-trust-and-safety-teams-severance">unceremoniously laying off about half of
+the 7,500-person workforce</a> when he took over and the
+resignations that followed. Remaining and departing Twitter
+employees told The Verge that, given the scale of the
+resignations this week, they expect the platform to start breaking
+soon. One said that they’ve watched “legendary engineers” and
+others they look up to leave one by one.</p>
+
+<p>“It feels like all the people who made this place incredible are
+leaving,” the Twitter staffer said. “It will be extremely hard for
+Twitter to recover from here, no matter how hardcore the people
+who remain try to be.”</p>
+
+<p>Multiple “critical” teams inside Twitter have now either
+completely or near-completely resigned, said other employees who
+requested anonymity to speak without Musk’s permission. That
+includes Twitter’s traffic and front end teams that route
+engineering requests to the correct backend services. The team
+that maintains Twitter’s core system libraries that every engineer
+at the company uses is also gone. “You cannot run Twitter without
+this team,” a departing employee said.</p>
+</blockquote>
+
+<p>It’s a fact that there have been mass resignations — on top of last week’s mass layoff — in the face of Musk’s fealty demand. Whether these resignations spell doom for the company remains to be seen.</p>
+
+<p>My <a href="https://twitter.com/cabel/status/1592364830769676288">apparently wrongheaded</a> <a href="https://daringfireball.net/linked/2022/10/27/musk-twitter-open-letter">optimism</a> for Twitter under Musk’s leadership was rooted in the idea that while he might — and almost surely would — make mistakes with product decisions (including content moderation), product decisions can be reversed.</p>
+
+<p>Losing essential talent and destroying employee morale, not so much.</p>
+
+<p><a href="https://twitter.com/peterclowes/status/1593458225533313025">This thoughtful, measured thread from departing Twitter engineer Peter Clowes</a> sums it up:</p>
+
+<blockquote>
+  <p>I didn’t leave because I hate @elonmusk. I definitely didn’t agree
+with many of his decisions or how they were carried out but I also
+understood and respected others.</p>
+
+<p>I don’t know him and if someone tells me to hate a stranger I say
+“no thanks”.</p>
+
+<p>I didn’t leave because of the 50% company wide layoff that missed
+me. We all knew a layoff was coming. Prior management would likely
+have cut too shallow at first and then had to do multiple rounds.
+I think that would have sucked regardless.</p>
+
+<p>I left because I no longer knew what I was staying for. Previously
+I was staying for the people, the vision, and of course the money
+(lets all be honest). All of those were radically changed or
+uncertain. [...]</p>
+
+<p>If I stayed I would have been on-call constantly with little
+support for an indeterminate amount of time on several additional
+complex systems I had no experience in. Maybe for the right vision
+I could have dug deep and done mind numbing work for awhile. But
+that’s the thing…</p>
+
+<p>There was no vision shared with us. No 5 year plan like at Tesla.
+Nothing more than what anyone can see on Twitter. It allegedly is
+coming for those who stayed but the ask was blind faith and
+required signing away the severance offer before seeing it. Pure
+loyalty test.</p>
+</blockquote>
+
+<p>I’ve been struggling to express it succinctly but my shock has been, basically: Layoffs are inherently deeply traumatic, both personally and institutionally, and for a company still trying to do great things and compete in a tight marketplace — and Twitter’s marketplace is the most competitive in the world: <em>attention</em> — the highest post-layoff priority for any company’s leader should be to restore, maintain, and if possible, <em>boost</em> morale.</p>
+
+<p>Yet all of Musk’s actions to date can only be seen as <em>destroying</em> morale. I do not think he’s secretly <a href="https://onefoottsunami.com/2022/11/17/the-most-expensive-intervention-in-history/">trying to destroy</a> his own $44 billion acquisition, but if he were, as though in a real-life <em><a href="https://www.themoviedb.org/movie/11064-brewster-s-millions">Brewster’s Millions</a></em> scenario, this path seems like the surest way. He’s shooting holes into his own sinking ship.</p>
+
+
+
+    ]]></content>
+        <title>★ Twitter Tumult</title>
+    </entry>
+    <entry>
+
+        <link rel="alternate" type="text/html" href="https://daringfireball.net/2022/10/app_store_ads_gone_wild"/>
+        <link rel="shorturl" href="http://df4.us/ufu"/>
+        <id>tag:daringfireball.net,2022://1.39450</id>
+        <published>2022-11-01T00:00:18Z</published>
+        <updated>2022-11-01T02:48:48Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <summary type="text">Apple’s business model is no longer the straightforward selling of great products, and
+            these new ads in the App Store are not designed to make anything better other than Apple’s Services bottom
+            line.
+        </summary>
+        <content type="html" xml:base="https://daringfireball.net/" xml:lang="en"><![CDATA[
+<p><a href="https://developer.apple.com/news/?id=zj4stkq7&amp;1666721941">Apple, last Tuesday</a>:</p>
+
+<blockquote>
+  <p>Apple Search Ads makes it easy to promote your app on the App
+Store. And now with new Today tab and product page ad placements,
+you can drive discovery of your app in more moments across the App
+Store — when customers first arrive, search for something
+specific, and browse apps to download.</p>
+</blockquote>
+
+<p>Upon launching, feedback from the developers of various popular apps and Apple observers shared a common theme. <a href="https://twitter.com/simonbs/status/1585026888455659525">Simon B. Støvring</a>:</p>
+
+<blockquote>
+  <p>With Apple’s recent changes to ads on the App Store, your product
+pages may now show ads for gambling apps. One of my product pages
+just did that 😞</p>
+</blockquote>
+
+<p><a href="https://twitter.com/marcoarment/status/1585054271627837441">Marco Arment</a>:</p>
+
+<blockquote>
+  <p>Now my app’s product page shows gambling ads, which I’m really not
+OK with.</p>
+
+<p>Apple shouldn’t be OK with it, either.</p>
+
+<p>The App Store has corrupted such a great company so deeply. They
+make so much from gambling and manipulative IAPs that they don’t
+even see the problem anymore.</p>
+</blockquote>
+
+<p><a href="https://twitter.com/cabel/status/1585031539079139329">Cabel Sasser</a>:</p>
+
+<blockquote>
+  <p>It is really sad to me that Apple needs to start taking Casino
+Game Ad Money in order to make their line go up for the
+shareholders. When Steve introduced iAds and the whole pitch was,
+“These ads aren’t garbage, you’ll like these ads.” This department
+shouldn’t exist at all, imho.</p>
+</blockquote>
+
+<p><a href="https://twitter.com/sdw/status/1585043114334785537">Sebastiaan de With</a>:</p>
+
+<blockquote>
+  <p>I know it’s not as easily quantifiable, but Apple is utterly
+annihilating brand value, trust and goodwill with these ads. How
+is the revenue possibly worth it?</p>
+
+<p>As a developer, this sucks. As a user, it sucks. As someone who
+cares about Apple products it’s just profoundly sad.</p>
+</blockquote>
+
+<p><a href="https://twitter.com/viticci/status/1585063085471047681">Federico Viticci</a>:</p>
+
+<blockquote>
+  <p>Can you imagine having $48.2 billion cash on hand and YET still
+thinking “ah yes, those House of Fun Casino ads will grow our
+bottom line, let’s do it”.</p>
+</blockquote>
+
+<p><a href="https://twitter.com/fromedome/status/1585042325361033217">Dan Frommer, quoting Steve Jobs</a>:</p>
+
+<blockquote>
+  <p>@cabel And then, a year later, while introducing
+iCloud/MobileMe Mail:</p>
+
+<p>“No ads. We build products that we want for ourselves, too, and we
+just don’t want ads.”</p>
+</blockquote>
+
+<p>The gambling/casino-related ads were so dominating the auctions for these new ad slots that they were even being presented at the bottom of the product pages <a href="https://twitter.com/hot_doggin_jon/status/1585127116672114688">for apps intended to help people with gambling addiction</a>. Other scumminess included ads for <a href="https://twitter.com/BasicAppleGuy/status/1585090997431988225">“psychic” apps on the product page for Disney+</a> and ads for hookup dating apps on the pages for marriage counseling apps. You really couldn’t make this stuff up.</p>
+
+<p>Within one day of the new ad slots going live, <a href="https://www.macrumors.com/2022/10/26/app-store-gambling-ads-complaints/">Apple issued a terse statement</a>:</p>
+
+<blockquote>
+  <p>We have paused ads related to gambling and a few other categories
+on App Store product pages.</p>
+</blockquote>
+
+<p>It’s now nearly a week later, and the gambling/hookup/psychic-type ads still don’t seem to be showing up (well, <a href="https://twitter.com/nickheer/status/1587222218848829440">mostly</a>), but it’s also just as hard to see why Apple is selling these spots in the first place. Well, duh, <em>for the money</em>, yes — that’s obviously the only plausible answer. But how much money can these ads be generating? How much can Apple hope they eventually generate? It can’t possibly be enough money to justify the damage it’s doing to Apple’s brand. These App Store ads are like the “Intel Inside” stickers on PC laptops — they’re worth money, but the money’s not worth it. <a href="https://www.cultofmac.com/227936/watch-steve-jobs-laugh-at-the-idea-of-intel-inside-stickers-on-the-side-of-every-mac-video/">Who’s laughing about those stickers now</a>?</p>
+
+<p>“<em>No ads in the App Store, period</em>” would have been a powerful, appealing message. One that Apple could have used to justify its control over all software on the platform and its much-debated mandatory cut of all app and game transactions. “<em>We sell ads in the App Store, but they’re OK because they don’t track you</em>” seems to be the message Apple is going for, but that’s neither powerful nor appealing. It boils down to “Hey, it could be worse.”</p>
+
+<p>Last month The Information published <a href="https://www.theinformation.com/articles/for-apples-app-boss-a-new-battle-nears?rc=jfy0lk">a piece by Wayne Ma on Phil Schiller’s leadership of the App Store</a>. It contained this bit regarding the Today tab, which is effectively the front page of the store (italic emphasis added):</p>
+
+<blockquote>
+  <p>In 2015, App Store employees pitched a redesign of the store to
+Cue that required hiring and paying for a large editorial staff to
+write stories about apps and their developers. The redesign was
+meant to encourage users to visit the App Store every day to
+discover new apps, rather than having the store act like a vending
+machine that existed merely to peddle software. Cue wasn’t
+receptive to the pitch as he didn’t believe it was worth the
+money, given that the App Store was already performing well,
+according to a person with direct knowledge of the discussions.</p>
+
+<p>Schiller, however, approved the redesign in his first days on the
+job, this person said. He believed the App Store had lost a lot of
+the spontaneity and fun associated with discovering new apps. He
+thought an editorial team could help bring those qualities back,
+according to a second person with direct knowledge of the project.</p>
+
+<p>In 2017, Apple launched the redesign, which included new tabs on
+the App Store called Today, Games and Apps, highlighting various
+apps and developers. <em>While the general perception among users
+Apple surveyed after the redesign was that developers had to pay
+to be featured on the App Store, that wasn’t the case</em>, according
+to people familiar with the matter. Schiller gave the editorial
+team the power to select which games and apps to promote or
+feature on these tabs, without pressuring them to base those
+decisions on business and partnership goals, those people said.</p>
+</blockquote>
+
+<p>I was reminded of that last week, <a href="https://www.reddit.com/r/apple/comments/yaoo24/apple_announces_more_ads_coming_to_app_store/">when I saw this exchange on Reddit in a thread about these new App Store ad units</a>:</p>
+
+<blockquote>
+  <p>sisco98: “Today tab, which until now has only displayed content
+handpicked from the App Store’s editorial staff, without any paid
+placement.” Up to now, I was pretty sure these picks were paid by
+developers.</p>
+
+<p>spack12: Yeah I always figured those were ads too.</p>
+
+<p>rotates-potatoes: Probably why they created the ad unit. If
+everyone’s going to assume it’s paid ads, might as well collect
+revenue from it. Many years ago I had an app featured in the app
+store. Was awesome, like 10× sales overnight. Was a complete
+surprise to me when it happened.</p>
+</blockquote>
+
+<p>Apple is actually scrupulous about labeling paid placements as “ads”, and using different background colors for them. One can certainly argue that ads should be even <em>more</em> clearly demarcated, but if you look for it, it’s always clear. But people don’t look. If the message were clear — that there are no ads or paid placements in the App Store, period — people might learn. But if the message is that there are ads, but not many, but now there are more than there used to be, and but if you look closely you’ll see that the ads have a blue background and a small “ad” label — almost everyone is going to assume that anything that <em>might</em> be an ad <em>is</em> an ad and the whole App Store is pay-for-play all the way down.</p>
+
+<hr />
+
+<p>Back in 2014, the front page of the Privacy section on Apple’s website was an open letter, signed simply by “Tim”. <a href="https://web.archive.org/web/20141013062201/http://www.apple.com/privacy/">Here’s an archived version from The Internet Archive</a>; <a href="https://archive.ph/lQASO#selection-649.0-660.0">here’s one from Archive.today</a>. Cook’s letter read in part:</p>
+
+<blockquote>
+  <p>A few years ago, users of Internet services began to realize that
+when an online service is free, you’re not the customer. You’re
+the product. But at Apple, we believe a great customer experience
+shouldn’t come at the expense of your privacy.</p>
+
+<p>Our business model is very straightforward: We sell great
+products. We don’t build a profile based on your email content or
+web browsing habits to sell to advertisers. We don’t “monetize”
+the information you store on your iPhone or in iCloud. And we
+don’t read your email or your messages to get information to
+market to you. Our software and services are designed to make our
+devices better. Plain and simple.</p>
+</blockquote>
+
+<p>Apple’s commitment to privacy is no less today than it was then. One can well argue that it’s even stronger. But there are aspects of Apple’s position on advertising eight years ago, unrelated to privacy, that don’t square with Apple’s position today. Cook has repeated variations of that “you’re not the customer, you’re the product” mantra umpteen times since 2014. But how are these ads in the App Store not making users the product, and advertisers the customers?</p>
+
+<p>It remains true that Apple is not monetizing the information we store on our devices or in iCloud, but they’re clearly monetizing our attention and their exclusive hold on that attention for all apps and games for iOS. Apple’s business model is no longer the straightforward selling of great products, and these new ads in the App Store are not designed to make anything better other than Apple’s Services bottom line.</p>
+
+
+
+    ]]></content>
+        <title>★ App Store Ads Gone Wild</title>
+    </entry>
+</feed><!-- THE END -->

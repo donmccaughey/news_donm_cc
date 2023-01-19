@@ -25,12 +25,32 @@ def test_url_clean_for_clean_url():
     assert url == URL('https://example.com')
 
 
+def test_url_clean_for_clean_url_with_query():
+    url = URL('https://example.com?id=123&foo=bar').clean()
+
+    assert url == URL('https://example.com?id=123&foo=bar')
+
+
 def test_url_clean_for_dirty_url():
     url = URL(
-        'https://acoup.blog/2022/12/02/collections-why-roman-egypt-was-such-a-strange-province/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=collections-why-roman-egypt-was-such-a-strange-province'
+        'https://acoup.blog/2022/12/02/collections-why-roman-egypt-was-such-a-strange-province/?utm_source=rss&utm_medium=rss&utm_campaign=collections-why-roman-egypt-was-such-a-strange-province'
     ).clean()
 
     assert url == URL('https://acoup.blog/2022/12/02/collections-why-roman-egypt-was-such-a-strange-province/')
+
+
+def test_url_clean_for_clean_and_dirty_url_params():
+    url = URL(
+        'https://queue.acm.org/detail.cfm?id=2898444&utm_source=daringfireball&utm_campaign=df2023'
+    ).clean()
+
+    assert url == URL('https://queue.acm.org/detail.cfm?id=2898444')
+
+
+def test_url_clean_for_fragment():
+    url = URL('https://example.com#some-anchor').clean()
+
+    assert url == URL('https://example.com')
 
 
 def test_identity_for_bare_url():

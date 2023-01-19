@@ -396,19 +396,53 @@ Cache size calculation
 
 ## Links and Identity
 
-### Acoup
+### UTM and other junk
 
-    https://acoup.blog/2022/12/23/fireside-friday-december-23-2022-whither-history/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=fireside-friday-december-23-2022-whither-history
-    https://acoup.blog/2022/12/16/collections-why-rings-of-powers-middle-earth-feels-flat/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=collections-why-rings-of-powers-middle-earth-feels-flat
-    https://acoup.blog/2022/12/09/meet-a-historian-james-baillie-on-digital-humanities-and-the-medieval-caucasus/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=meet-a-historian-james-baillie-on-digital-humanities-and-the-medieval-caucasus
-    https://acoup.blog/2022/12/02/collections-why-roman-egypt-was-such-a-strange-province/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=collections-why-roman-egypt-was-such-a-strange-province
+https://en.wikipedia.org/wiki/UTM_parameters
 
-Queries:
+#### Acoup
 
-    ?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=fireside-friday-december-23-2022-whither-history
-    ?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=collections-why-rings-of-powers-middle-earth-feels-flat
-    ?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=meet-a-historian-james-baillie-on-digital-humanities-and-the-medieval-caucasus
-    ?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=collections-why-roman-egypt-was-such-a-strange-province
+    https://acoup.blog/2022/12/23/fireside-friday-december-23-2022-whither-history/?utm_source=rss&utm_medium=rss&utm_campaign=fireside-friday-december-23-2022-whither-history
+    https://acoup.blog/2022/12/16/collections-why-rings-of-powers-middle-earth-feels-flat/?utm_source=rss&utm_medium=rss&utm_campaign=collections-why-rings-of-powers-middle-earth-feels-flat
+    https://acoup.blog/2022/12/09/meet-a-historian-james-baillie-on-digital-humanities-and-the-medieval-caucasus/?utm_source=rss&utm_medium=rss&utm_campaign=meet-a-historian-james-baillie-on-digital-humanities-and-the-medieval-caucasus
+    https://acoup.blog/2022/12/02/collections-why-roman-egypt-was-such-a-strange-province/?utm_source=rss&utm_medium=rss&utm_campaign=collections-why-roman-egypt-was-such-a-strange-province
+
+#### Daring Fireball
+
+Non-sponsor sponsor link:
+
+    <entry>
+        <title>WorkOS</title>
+        <link rel="alternate" type="text/html"
+              href="https://workos.com/?utm_source=daringfireball&amp;utm_medium=newsletter&amp;utm_campaign=df2023"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ukk"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/01/15/workos"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39620</id>
+        <published>2023-01-15T19:22:35Z</published>
+        <updated>2023-01-15T19:22:36Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>My thanks to WorkOS for sponsoring last week at DF. WorkOS is like “Stripe for enterprise features.” They make it easy for developers to build features needed by enterprise customers, such as Single Sign-On and SCIM.</p>
+
+<p>Shipping these feature is important because they enable selling upmarket for bigger deals. Without these features, the IT department will reject your app. But these enterprise features are complex and time-consuming to build yourself, usually taking months.</p>
+
+<p>With WorkOS you can integrate and ship enterprise features in minutes. Beautiful API docs guide you through every step of the way, and transparent pricing scales based on usage. It’s a product built by developers, for developers.</p>
+
+<div>
+<a  title="Permanent link to ‘WorkOS’"  href="https://daringfireball.net/linked/2023/01/15/workos">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+
+
+#### Others
+
+    https://jobs.ashbyhq.com/motion?utm_source=hn
+
 
 ### CNN
 
@@ -443,6 +477,20 @@ https://medium.com/@AnalyticsAtMeta/notifications-why-less-is-more-how-facebook-
 ### Threadreaderapp
 
 https://threadreaderapp.com/thread/1606701397109796866.html
+
+
+## URL parameters
+
+### Urchin `utm` parameters
+
+  - utm_source
+  - utm_medium
+  - utm_campaign
+
+### Example garbage URL parameters
+
+  https://workos.com/?utm_source=daringfireball&amp;utm_medium=newsletter&amp;utm_campaign=df2023
+  https://acoup.blog/2022/12/23/fireside-friday-december-23-2022-whither-history/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=fireside-friday-december-23-2022-whither-history
 
 
 ## Errors

@@ -19,7 +19,7 @@ class HackerNews(Site):
 
     def parse_entry(self, entry, now: datetime) -> Item:
         return Item(
-            url=URL(entry.link),
+            url=URL(entry.link).clean(),
             title=entry.title,
             source=Source(URL(entry.comments), self.initials),
             created=now,

@@ -33,10 +33,11 @@ class DaringFireball(Site):
         alternate = first_link_with_rel(entry.links, 'alternate')
         link = related or alternate or entry.link
 
+        url = URL(link).clean()
         return Item(
-            url=URL(link),
+            url=url,
             title=entry.title,
-            source=Source(URL(link), self.initials),
+            source=Source(url, self.initials),
             created=now,
             modified=now,
         )
