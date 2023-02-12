@@ -123,3 +123,21 @@ def test_keep_entry_rejects_the_talk_show_link():
     df = DaringFireball()
 
     assert not df.keep_entry(entry)
+
+
+def test_keep_entry_rejects_dithering_link():
+    feed = '''
+    <?xml version="1.0" encoding="utf-8"?>
+    <feed xmlns="http://www.w3.org/2005/Atom">
+        <entry>
+            <link rel="alternate" type="text/html" href="https://dithering.fm/"/>
+            <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/02/03/dithering"/>
+            <title>Dithering</title>
+        </entry>
+    </feed>
+    '''
+    d: FeedParserDict = parse(feed)
+    entry = d.entries[0]
+    df = DaringFireball()
+
+    assert not df.keep_entry(entry)

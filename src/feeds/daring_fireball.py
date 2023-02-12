@@ -28,8 +28,13 @@ class DaringFireball(Site):
         alternate = first_link_with_rel(entry.links, 'alternate')
         if alternate:
             _, netloc, path, query, _ = urlsplit(alternate)
+
+            if netloc == 'dithering.fm':
+                return False
+
             if netloc == 'daringfireball.net' and path.startswith('/thetalkshow/'):
                 return False
+
             parameters = parse_qsl(query)
             if ('utm_source', 'daringfireball') in parameters:
                 return False
