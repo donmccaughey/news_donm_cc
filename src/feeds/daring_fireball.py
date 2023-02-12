@@ -1,4 +1,5 @@
 from datetime import datetime
+from urllib.parse import parse_qsl, urlsplit
 
 from news import Item, Source, URL
 from .site import Site
@@ -19,12 +20,19 @@ class DaringFireball(Site):
             return False
 
         related = first_link_with_rel(entry.links, 'related')
-        if related and related.startswith('https://daringfireball.net/feeds/sponsors/'):
-            return False
+        if related:
+            _, netloc, path, _, _ = urlsplit(related)
+            if netloc == 'daringfireball.net' and path.startswith('/feeds/sponsors/'):
+                return False
 
         alternate = first_link_with_rel(entry.links, 'alternate')
-        if alternate and alternate.startswith('https://daringfireball.net/thetalkshow/'):
-            return False
+        if alternate:
+            _, netloc, path, query, _ = urlsplit(alternate)
+            if netloc == 'daringfireball.net' and path.startswith('/thetalkshow/'):
+                return False
+            parameters = parse_qsl(query)
+            if ('utm_source', 'daringfireball') in parameters:
+                return False
 
         return True
 

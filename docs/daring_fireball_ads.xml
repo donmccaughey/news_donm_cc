@@ -1,0 +1,2095 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Daring Fireball</title>
+    <subtitle>By John Gruber</subtitle>
+    <link rel="alternate" type="text/html" href="https://daringfireball.net/"/>
+    <link rel="self" type="application/atom+xml" href="https://daringfireball.net/feeds/main"/>
+    <id>https://daringfireball.net/feeds/main</id>
+    <updated>2023-02-12T18:38:29Z</updated>
+    <rights>Copyright © 2023, John Gruber</rights>
+    <entry>
+        <title>WorkOS</title>
+        <link rel="alternate" type="text/html"
+              href="https://workos.com/?utm_source=daringfireball&amp;utm_medium=newsletter&amp;utm_campaign=df2023"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ums"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/02/12/workos"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39700</id>
+        <published>2023-02-12T18:38:28Z</published>
+        <updated>2023-02-12T18:38:29Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>My thanks to WorkOS for sponsoring last week at DF. WorkOS is like “Stripe for enterprise features.” They make it easy for developers to build features needed by enterprise customers, such as Single Sign-On and SCIM.</p>
+
+<p>Shipping these feature is important because they enable selling upmarket for bigger deals. Without these features, the IT department will reject your app. But these enterprise features are complex and time-consuming to build yourself, usually taking months.</p>
+
+<p>With WorkOS you can integrate and ship enterprise features in minutes. Beautiful API docs guide you through every step of the way, and transparent pricing scales based on usage. It’s a product built by developers, for developers.</p>
+
+<div>
+<a  title="Permanent link to ‘WorkOS’"  href="https://daringfireball.net/linked/2023/02/12/workos">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Kareem on LeBron Breaking His NBA Scoring Record</title>
+        <link rel="alternate" type="text/html" href="https://kareem.substack.com/p/what-i-think-about-lebron-breaking"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/umr"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/02/11/kareem-on-lebron"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39699</id>
+        <published>2023-02-11T20:17:57Z</published>
+        <updated>2023-02-11T20:19:21Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Kareem Abdul-Jabbar:</p>
+
+<blockquote>
+  <p>That is the magic of sports. To see something seemingly impossi­ble, reminding us that if one person can do it, then we all somehow share in that achievement. It is what sends children onto playgrounds to duplicate a LeBron layup or a Steph Curry three-pointer. Or Mia Hamm inspiring a whole generation of girls to come off the bleachers and onto the field. Millions of children across the country pushing themselves toward excellence because they saw an athlete do something spectacular and they want to do it too. Or at least try. That same kind of drive is behind many of humankind’s greatest achievements.</p>
+
+<p>And it’s all exceptionally glorious.</p>
+</blockquote>
+
+<p>Perfectly said.</p>
+
+<div>
+<a  title="Permanent link to ‘Kareem on LeBron Breaking His NBA Scoring Record’"  href="https://daringfireball.net/linked/2023/02/11/kareem-on-lebron">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+
+        <link rel="alternate" type="text/html" href="https://daringfireball.net/2023/02/my_2022_apple_report_card"/>
+        <link rel="shorturl" href="http://df4.us/umq"/>
+        <id>tag:daringfireball.net,2023://1.39698</id>
+        <published>2023-02-10T23:37:21Z</published>
+        <updated>2023-02-11T23:45:20Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <summary type="text">My remarks on Apple’s year.</summary>
+        <content type="html" xml:base="https://daringfireball.net/" xml:lang="en"><![CDATA[
+<p><a href="https://daringfireball.net/linked/2023/02/09/six-colors-2022-apple-report-card">This week</a> Jason Snell published his annual <a href="https://sixcolors.com/post/2023/02/apple-in-2022-the-six-colors-report-card/">Six Colors Apple Report Card for 2022</a>. As I’ve done for a few years now — <a href="https://daringfireball.net/2022/02/my_2021_apple_report_card">2021</a>, <a href="https://daringfireball.net/2021/01/my_2020_apple_report_card">2020</a>, <a href="https://daringfireball.net/2020/02/my_2019_apple_report_card">2019</a>, <a href="https://daringfireball.net/2019/02/my_2018_apple_report_card">2018</a> — I’m publishing my full remarks and grades here. On Snell’s report card, voters give per-category scores ranging from 5 to 1; I’ve translated these to letter grades, A to E.</p>
+
+<h2>The Mac: A</h2>
+
+<blockquote>
+  <p>How would you rate Apple’s performance in the Mac in 2022?
+Consider new Mac models, the continued Apple Silicon transition,
+new macOS versions, and anything else you deem relevant. 5 is
+best, 1 is worst.</p>
+</blockquote>
+
+<p>MacOS 13 Ventura is a solid upgrade.</p>
+
+<p>The Apple silicon transition continued with another strong year. The MacBook Air is Apple’s most popular and most important Mac, and the M2 models that debuted at WWDC are the best laptops for most people ever made. Thin, light, fast, long-lasting battery life, and they even introduced the midnight colorway — the first truly “dark” laptops from Apple since the black MacBooks sold circa 2006–2008, and before that, the G3 PowerBooks from 2001. Apple silicon is absolutely pantsing its x86 competition, and no one else is making ARM chips for serious PCs.</p>
+
+<p>The Mac Pro was the one Mac that skipped the M1 generation of chips, but while disappointing, that omission was more than made up for by the addition of the Mac Studio — a “small tower for pros” form factor that Mac users have been clamoring for ever since the discontinuation of the G4 Cube.</p>
+
+<p>Apple also finally (no sarcasm intended) introduced the reasonably-priced standalone 5K Studio Display. The built-in webcam is meh at best, but the display itself is wonderful, including the $300 option for “nano-texture” anti-glare/anti-reflective glass. This is my ideal display.</p>
+
+<p>There’s an ongoing clamor for an Apple Silicon version of the 27-inch iMac (or iMac Pro even), but I think that desire is misguided. It is much better to get a Studio Display — which should be a great display for years and years — and a Mac Mini or Mac Studio to connect to it. You’ll be able to replace the Mac Mini or Studio once, twice, maybe even three times before the Studio Display needs to be replaced. The 24-inch iMac is no more “all-in-one” than a Mac Mini connected to a Studio Display — the iMac has an external power brick that’s about the size of an Apple TV. Sure, that power brick is smaller than a Mac Mini, but it’s still a box you need to connect. I think it’s more likely that Apple will stop selling any iMacs at all than add a larger model.</p>
+
+<h2>The iPhone: A</h2>
+
+<blockquote>
+  <p>How would you rate Apple’s performance on the iPhone in 2022?
+Consider the new iPhone models, iOS updates, and anything else you
+deem relevant. 5 is best, 1 is worst.</p>
+</blockquote>
+
+<p>Not a groundbreaking year for iPhone, but it’s neither possible nor desirable to break new ground every year. iOS is 15 years old and it’s appropriate for Apple to treat it as a mature platform, because that’s what it is. iOS 16 is a solid upgrade, with much of Apple’s efforts seemingly directed at polish and reliability. Both technically and conceptually, iOS has a solid foundation.</p>
+
+<p>It’s a shame that the Mini form factor was dropped from the iPhone 14 lineup. But big-ass phones are more popular than elegant small ones, so the addition of the iPhone 14 Plus — Apple’s first non-Pro 6.7-inch iPhone — is a net win. My biggest gripe about the iPhone 14 Pro models remains their use of polished stainless steel for the sides. It feels slippery at times, and steel is so much heavier than aluminum (or, <em>cough</em>, titanium). I bought a 14 Pro because of the camera system and other Pro-exclusive features, but I’d prefer those features in an iPhone that feels like and weighs as little as the non-pro iPhone 14.</p>
+
+<p>The Dynamic Island is a wonderfully inventive design: useful, attractive, fun.</p>
+
+<h2>The iPad: B</h2>
+
+<p>I’d have scored this lower if not for the solid improvements to the consumer-level iPad hardware in 2022. It’s great that the 10th-gen no-adjective iPad starts at just $450 and brings that model into the modern “all-screen/no home-button” design era. I hope Apple eventually moves the non-pro models from Touch ID on their side buttons to Face ID, but that’s a reasonable tradeoff today for lower prices.</p>
+
+<p>I generally don’t complain about mere “speed bump” hardware updates, but the iPad Pro models are unchanged, industrial-design-wise, since 2018. That’s a long time. I can’t help but believe that if not for COVID and two years of work-from-home and severe travel restrictions between the U.S. and China, that we’d have seen a design refresh for the iPads Pro in 2022. It feels like just another sign that among Apple’s three personal computing platforms — Mac, iPhone, and iPad — iPad comes last in terms of attention. Those are my personal priorities, too, so I don’t fault them. But I’m not here to grade Apple on a curve. That said, though — those 2018 designs are excellent. My daily driver iPad remains a 2018 11-inch iPad Pro.</p>
+
+<p>Stage Manager was a major new feature for both MacOS and iPadOS this year, but I can’t help but think it was more important for the iPad. On the Mac, Stage Manager is an alternative new way to manage windows and multiple apps. On the iPad, it feels more like an attempt to enable a level of multi-app productivity that heretofore wasn’t possible. For me, at least, it isn’t appealing and feels half-baked conceptually. The iPad experience offered much more clarity — which I found satisfying, if at times frustrating — in the early 2010s, when it was just a big iPhone. Conceptually I find advanced usage of iPadOS to be muddled. I suppose it’s actually untrue but I’ll be damned if it doesn’t <em>feel</em> like I’m more productive on my small-screen iPhone than I am on my large-screen iPad. It’s the damnedest thing.</p>
+
+<h2>Apple Watch: A</h2>
+
+<p>Apple Watch Ultra is a splendid new interpretation of what an Apple Watch can be. It’s obviously more rugged, but the larger screen and significantly longer battery life offer serious advantages even for the un-athletic and unadventurous. Titanium is an excellent material, more durable than aluminum and far lighter than steel. (Would be cool if, next year, they offer it in a dark-tinted titanium too.)</p>
+
+<p>Software-wise, WatchOS has seemingly achieved platform maturity. Apple knows what WatchOS is for, users agree, and they continue to polish and improve it.</p>
+
+<h2>Wearables: A</h2>
+
+<p>I loved my first-gen AirPods Pro and didn’t think I’d see a need to replace them with the new second-gen model, but holy hell are both the noise cancellation and transparency modes improved. Making the case Find My compatible is a nice addition too. When they were announced in September, <a href="https://daringfireball.net/2022/09/thoughts_and_observations_on_last_weeks_far_out_apple_event">I wrote</a>, “The new AirPods Pro are the best single expression of Apple as a company today. Not the most important product, not the most complicated, not the most essential. But the one that exemplifies everything Apple is trying to do. They are simple, they are useful, and they offer features that <em>most</em> people use and want.” Having owned and used them daily for months now, I stand by that.</p>
+
+<h2>Apple TV (hardware/OS): B</h2>
+
+<p>The best new feature of the new Apple TV hardware is the price. It’s finally in the range where I felt it should have been for years. No, it’s nowhere near as cheap as the HDMI sticks or cheap boxes from competitors, but the real competition for Apple TV is the built-in “smart” software on modern TVs. The current pricing of Apple TV hardware is commensurate with its value.</p>
+
+<p>Apple doesn’t get enough credit for making advanced features like Dolby Vision and Atmos audio “just work”. I can imagine numerous ways that the tvOS interface can be improved, but it’s by far the best such interface I’ve seen. I use it nightly and don’t know what I’d do without it.</p>
+
+<h2>Services: B</h2>
+
+<blockquote>
+  <p>How would you rate Apple’s performance in services in 2022?
+Consider Apple TV+, Apple News+, Apple Fitness+, Apple Music,
+iCloud, Apple Card, Apple Pay, AppleCare, and anything else you
+deem appropriate. 5 is best, 1 is worst.</p>
+</blockquote>
+
+<p>At this point, I find “Services” to be overly broad as a single category for Apple. It’s almost like if there were just one category for “Hardware”. 2022 was a mixed bag. I’ve been a fan of TV+ original content from its inception and it continues to get better. “Severance” was my favorite season of a TV series since “Mad Men” ended in 2015. Apple Music has a great catalog but a lousy confusing software interface — quite possibly Apple’s worst app. iCloud is underrated — many people internalized the “Apple is bad at services and syncing” narrative from a decade ago and don’t realize how good the company has gotten at it. iCloud is secure, fast, and reliable today. iCloud backup for iPhones and iPads is a remarkably good and essential service — not just for disaster recovery, but also for seamless migrations from old to new devices.</p>
+
+<p>It’s starting to feel downright miserly, though, that Apple is still offering only a mere 5 GB of storage at the free tier, and have left the paid-tier storage allotments unchanged since like forever.</p>
+
+<h2>HomeKit/Home: C</h2>
+
+<p>Progress continues, clearly. Anecdotally, the HomeKit stuff in my house seemingly works more reliably than ever. It’s great that Apple contributed HomeKit to serve as the foundation for the open Matter standard, and that Matter devices are now starting to come to market. But big picture, this whole thing still feels like it’s always poised to get good “next year”. 2022 wasn’t that year.</p>
+
+<h2>Hardware Reliability: A</h2>
+
+<p>Anecdotally, no hardware problems for me last year other than my old, much, much-used and still-used 2014 MacBook Pro suffering a swollen battery. A much-used 8-year-old device finally suffering a problem is a sign of how good Apple’s hardware reliability is.</p>
+
+<h2>Software Quality: B</h2>
+
+<blockquote>
+  <p>How would you rate the overall quality of Apple’s software,
+including operating systems, bundled apps, and sold apps, in 2022?
+Consider anything you deem appropriate. 5 is best, 1 is worst.</p>
+</blockquote>
+
+<p>I gave this one a 2 last year, on the grounds of questionable <em>design</em>. I get the impression this category is meant more as a gauge of bugginess, reliability, and performance. I still have the same concerns about the direction of Apple’s software design that I did last year, especially on the Mac. But I think their software reliability has been excellent. Consider the numerous features under the Continuity umbrella. Features like copying something on your iPhone and being able to just paste it on your Mac, and vice-versa. Or starting a new message in Mail on your iPhone and using Handoff to finish writing it on your Mac. Those features have been around for years, but it seems to me they work more reliably than ever. I appreciate that. So, fine here’s a 4 this year.</p>
+
+<h2>Developer Relations: C</h2>
+
+<p>Repeating myself from last year: Resentment over App Store policies continues to build. Frustrations with the App Store review process seem unimproved. Apple’s goal should be for developer relations to be so good that developers want to create software exclusively for Apple’s platforms. The opposite is happening.</p>
+
+<h2>Social and Societal Impact: A</h2>
+
+<p>Again I’ll repeat myself from last year, while upping my grade from 4 to 5:</p>
+
+<p>I believe that climate/carbon is the societal area where a company like Apple can and should make the most difference, and I’m hard-pressed to think how they could be doing more than they are, practically.</p>
+
+<p>We’re living in sensitive times on other social issues, and Apple seems to be managing that very astutely and honestly.</p>
+
+
+
+    ]]></content>
+        <title>★ My 2022 Apple Report Card</title>
+    </entry>
+    <entry>
+        <title>The Six Colors 2022 Apple Report Card</title>
+        <link rel="alternate" type="text/html"
+              href="https://sixcolors.com/post/2023/02/apple-in-2022-the-six-colors-report-card/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ump"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/02/09/six-colors-2022-apple-report-card"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39697</id>
+        <published>2023-02-09T17:14:25Z</published>
+        <updated>2023-02-09T23:55:15Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Jason Snell:</p>
+
+<blockquote>
+  <p>This is the eighth year that I’ve presented this survey to a
+hand-selected group. They were prompted with 12 different
+Apple-related subjects, and asked to rate them on a scale from 1
+to 5 and optionally provide text commentary per category. I
+received 55 replies, with the average results as shown below.</p>
+</blockquote>
+
+<p>I took my time reading this, and recommend you do too. What a wonderful tradition. It really does capture the general consensus regarding the state of the company and its platforms and services.</p>
+
+<p>I’ll post my full report card as a column tomorrow, but here are my observations after reading everyone else’s quoted remarks and grades:</p>
+
+<ul>
+<li><p>There’s seemingly universal agreement that the iPad continues to suffer from a lack of attention and focus. The iPhone remains the iPhone: boring perhaps, but boring by being consistently great. The Mac is going strong in all regards, particularly hardware. The iPad, though, breeds frustration.</p></li>
+<li><p>Stage Manager feels like a bust, both on Mac and iPad. But it’s the iPad where it was needed. Window management and side-by-side multitasking are solved problems on the Mac — for decades. Getting into “the flow” on iPad remains out of reach.</p></li>
+<li><p>Apple’s hardware game is stronger than its software game.</p></li>
+<li><p>AirPods are awesome.</p></li>
+<li><p>HomeKit remains frustrating and confusing.</p></li>
+</ul>
+
+<p>(Also, yes, in my comments praising the M2 MacBook Air and its midnight colorway in particular, I forgot about the black MacBooks sold from 2006–2011. Still it’s been a long time since Apple offered a dark laptop.)</p>
+
+<div>
+<a  title="Permanent link to ‘The Six Colors 2022 Apple Report Card’"  href="https://daringfireball.net/linked/2023/02/09/six-colors-2022-apple-report-card">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>The Kottke.org T-Shirt, a Fine Hypertext Product</title>
+        <link rel="alternate" type="text/html" href="https://kottke.org/23/02/kottke-hypertext-tshirt"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/umo"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/02/07/kottke-tshirts"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39696</id>
+        <published>2023-02-07T23:07:28Z</published>
+        <updated>2023-02-07T23:07:29Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Jason Kottke:</p>
+
+<blockquote>
+  <p>For much of the nearly 25-year lifespan of kottke.org, the site’s
+tagline has been “home of fine hypertext products”. I always liked
+that it felt olde timey and futuristic at the same time, although
+hypertext itself has become antiquated — no one talks of
+hypertextual media anymore even though we’re all soaking in it.</p>
+
+<p>And so but anyway, I thought it would fun to turn that tagline
+into a t-shirt, so I partnered with the good folks at Cotton
+Bureau to make a fine “hypertext” product that you can actually
+buy and wear around and eventually it’ll wear out and then you can
+use it to wash your car. If you want to support the site and look
+good doing it, <a href="https://cottonbureau.com/p/EGM9Q5/shirt/kottkeorg-hypertext-tee">you can order a Kottke.org Hypertext Tee right
+now</a>.</p>
+</blockquote>
+
+<div>
+<a  title="Permanent link to ‘The Kottke.org T-Shirt, a Fine Hypertext Product’"  href="https://daringfireball.net/linked/2023/02/07/kottke-tshirts">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Google and Mozilla Are Working on Versions of Chrome and Firefox for iOS That Don’t Use WebKit</title>
+        <link rel="alternate" type="text/html" href="https://9to5mac.com/2023/02/07/new-iphone-browsers/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/umn"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/02/07/google-mozilla-chrome-firefox-no-webkit"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39695</id>
+        <published>2023-02-07T23:03:55Z</published>
+        <updated>2023-02-07T23:03:55Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Ben Lovejoy, rounding up the latest in mobile browser news for 9to5Mac:</p>
+
+<blockquote>
+  <p>Currently, anyone can create a new iPhone browser, but with one
+huge restriction: Apple insists that it uses the same WebKit
+rendering engine as Safari. [...] Apple is therefore expected to
+drop the WebKit requirement sooner rather than later. In
+particular, the European Digital Markets Act looks set to force
+the hand of the iPhone maker, with reports that Apple will drop
+the requirement as part of iOS 17 later this year.</p>
+
+<p>Both Google and Mozilla are now working on new iOS browsers which
+use the same rendering engines as their desktop browsers.</p>
+
+<p>For Google’s Chrome, <a href="https://9to5google.com/2023/02/06/google-chrome-blink-ios-webkit/">that’s Blink</a>:</p>
+
+<blockquote>
+  <p>Google’s Chromium team has moved full steam ahead on porting
+Blink to iOS, introducing dozens of related code changes in the
+past week. At the pace things are progressing, we may have our
+first look at the browser engine for Chrome — and Microsoft
+Edge, Opera, and more — running on iOS in the coming weeks.</p>
+</blockquote>
+
+<p>For Mozilla’s Firefox, <a href="https://www.theregister.com/2023/02/07/mozilla_google_apple_webkit/">it’s Gecko</a>:</p>
+
+<blockquote>
+  <p>Mozilla is planning for the day when Apple will no longer require
+its competitors to use the WebKit browser engine in iOS. Mozilla
+conducted similar experiments that never went anywhere years ago
+but in October 2022 posted an issue in the GitHub repository
+housing the code for the iOS version of Firefox that includes a
+reference to GeckoView, a wrapper for Firefox’s Gecko rendering
+engine.</p>
+</blockquote>
+</blockquote>
+
+<p>There are a lot of different ways this could play out. If third-party browser engines are allowed, will they be able to use just-in-time compilation for JavaScript — <a href="https://microsoftedge.github.io/edgevr/posts/Super-Duper-Secure-Mode/">a technique that results in faster performance but exposes more exploitable bugs</a>?</p>
+
+<p>I also suspect, if it comes to pass that non-WebKit rendering engines are allowed on iOS, that it will be via an entitlement specifically for general-purpose web browsers like Chrome and Firefox. I would expect Apple to continue disallowing such engines for use in any and all apps — no Electron for iOS. I would also expect that browsers like Chrome and Firefox won’t be able to save web apps to the home screen as standalone web apps.</p>
+
+<div>
+<a  title="Permanent link to ‘Google and Mozilla Are Working on Versions of Chrome and Firefox for iOS That Don’t Use WebKit’"  href="https://daringfireball.net/linked/2023/02/07/google-mozilla-chrome-firefox-no-webkit">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Facebook’s iOS App Architecture</title>
+        <link rel="alternate" type="text/html"
+              href="https://engineering.fb.com/2023/02/06/ios/facebook-ios-app-architecture/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/umm"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/02/07/facebook-ios-app"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39694</id>
+        <published>2023-02-07T22:39:58Z</published>
+        <updated>2023-02-07T22:39:58Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Dustin Shahidehpour, writing for Facebook’s engineering blog:</p>
+
+<blockquote>
+  <p>Facebook for iOS (FBiOS) is the oldest mobile codebase at Meta.
+<a href="https://engineering.fb.com/2012/08/23/ios/under-the-hood-rebuilding-facebook-for-ios/">Since the app was rewritten in 2012</a>, it has been worked on
+by thousands of engineers and shipped to billions of users, and it
+can support hundreds of engineers iterating on it at a time.</p>
+</blockquote>
+
+<p><a href="https://social.pixels.pizza/@pixel/109819707434268308">As Eric Vitiello commented</a> on Mastodon regarding this post, if we assume “thousands of engineers” means just 2,000, that means a new engineer has started adding code to Facebook’s iOS app every two days, nonstop, for a decade. It’s closer to one new engineer <em>every day</em> if we count only weekdays. Someone should check if <a href="https://daringfireball.net/linked/2022/11/19/fred-brooks-rip">Fred Brooks</a> is rolling over in his grave.</p>
+
+<blockquote>
+  <p><a href="https://engineering.fb.com/2012/08/23/ios/under-the-hood-rebuilding-facebook-for-ios/">After years of iteration</a>, the Facebook codebase does not
+resemble a typical iOS codebase:</p>
+
+<ul>
+<li>It’s full of C++, Objective-C(++), and Swift.</li>
+<li>It has dozens of <a href="https://developer.apple.com/library/archive/documentation/DeveloperTools/Conceptual/DynamicLibraries/100-Articles/UsingDynamicLibraries.html">dynamically loaded libraries
+(dylibs)</a>, and so many classes that they can’t be loaded
+into Xcode at once.</li>
+<li>There is almost zero raw usage of Apple’s SDK — everything has
+been wrapped or replaced by an in-house abstraction.</li>
+<li>The app makes heavy use of code generation, spurred by
+<a href="https://www.buck.build/">Buck</a>, our custom build system.</li>
+<li>Without heavy caching from our build system, engineers would
+have to spend an entire workday waiting for the app to build.</li>
+</ul>
+
+<p>FBiOS was never intentionally architected this way. The app’s
+codebase reflects 10 years of <em>evolution</em>, spurred by technical
+decisions necessary to support the growing number of engineers
+working on the app, its stability, and, above all, the user
+experience.</p>
+</blockquote>
+
+<p>I believe Shahidehpour’s post is an attempt at bragging, but to me it reads like a cry for help.</p>
+
+<p>My thoughts turn to <a href="https://duckduckgo.com/?q=conway’s+law">Melvin Conway’s eponymous law</a>: “Any organization that designs a system (defined broadly) will produce a design whose structure is a copy of the organization’s communication structure.” If that’s true regarding Facebook’s system design for their iOS app, it’s a miracle the company ever gets anything done.</p>
+
+<div>
+<a  title="Permanent link to ‘Facebook’s iOS App Architecture’"  href="https://daringfireball.net/linked/2023/02/07/facebook-ios-app">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Joanna Stern on Microsoft’s New AI-Powered Bing</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.wsj.com/articles/i-tried-microsofts-new-ai-powered-bing-search-will-never-be-the-same-11675799762"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/uml"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/02/07/stern-nadella-bing-openai"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39693</id>
+        <published>2023-02-07T22:21:00Z</published>
+        <updated>2023-02-07T22:21:00Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Joanna Stern interviewed Satya Nadella about Microsoft’s OpenAI-powered improvements to Bing and Edge (<a href="https://apple.news/Aa2jw2FzeRqym4fkXILx4sg">News+ link</a>):</p>
+
+<blockquote>
+  <p>“We are grounded in the fact that Google dominates this [search]
+space,” Microsoft Chief Executive Satya Nadella told me in an
+interview. “A new race is starting with a completely new platform
+technology. I’m excited for users to have a choice finally.”</p>
+
+<p>Google — which holds 93% of the global search engine market
+share, according to analytics company StatCounter — is on
+Microsoft’s heels. On Monday, the search company said it is
+working on Bard, a similar chat tool that generates responses from
+web-based information.</p>
+</blockquote>
+
+<p><a href="https://daringfireball.net/linked/2023/02/06/bard">Again</a>, you’d be a fool to count Google out in this race. But shipping talks and bullshit walks. Microsoft is opening up the new Bing to real people now. Not so with Bard.</p>
+
+<div>
+<a  title="Permanent link to ‘Joanna Stern on Microsoft’s New AI-Powered Bing’"  href="https://daringfireball.net/linked/2023/02/07/stern-nadella-bing-openai">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Microsoft Announces New AI-Powered Bing Search and Edge Web Browser</title>
+        <link rel="alternate" type="text/html"
+              href="https://blogs.microsoft.com/blog/2023/02/07/reinventing-search-with-a-new-ai-powered-microsoft-bing-and-edge-your-copilot-for-the-web/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/umk"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/02/07/microsoft-ai-bing-edge"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39692</id>
+        <published>2023-02-07T22:05:58Z</published>
+        <updated>2023-02-07T22:05:59Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Yusuf Mehdi, consumer marketing chief at Microsoft:</p>
+
+<blockquote>
+  <p>The new Bing experience is a culmination of four technical
+breakthroughs:</p>
+
+<ul>
+<li><p><em>Next-generation OpenAI model.</em> We’re excited to announce the
+new Bing is running on a new, next-generation OpenAI large
+language model that is more powerful than ChatGPT and customized
+specifically for search. It takes key learnings and advancements
+from ChatGPT and GPT-3.5 — and it is even faster, more accurate
+and more capable.</p></li>
+<li><p><em>Microsoft Prometheus model.</em> We have developed a proprietary
+way of working with the OpenAI model that allows us to best
+leverage its power. We call this collection of capabilities and
+techniques the Prometheus model. This combination gives you more
+relevant, timely and targeted results, with improved safety.</p></li>
+<li><p><em>Applying AI to core search algorithm.</em> We’ve also applied the
+AI model to our core Bing search ranking engine, which led to
+the largest jump in relevance in two decades. With this AI
+model, even basic search queries are more accurate and more
+relevant.</p></li>
+<li><p><em>New user experience.</em> We’re reimagining how you interact with
+search, browser and chat by pulling them into a unified
+experience. This will unlock a completely new way to interact
+with the web.</p></li>
+</ul>
+
+<p>The new Bing is available today in a limited preview on desktop,
+and everyone can visit Bing.com today to try sample queries and
+sign up for the waitlist. We’re going to scale the preview to
+millions in the coming weeks. A mobile experience will also be in
+preview soon.</p>
+</blockquote>
+
+<p>Microsoft has been doggedly chasing Google Search for over 20 years. Tenacity is arguably <em>the</em> defining cultural principle at Microsoft. If they want to do something, they simply do not give up.</p>
+
+<div>
+<a  title="Permanent link to ‘Microsoft Announces New AI-Powered Bing Search and Edge Web Browser’"  href="https://daringfireball.net/linked/2023/02/07/microsoft-ai-bing-edge">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>‘Shift Happens: A Book About Keyboards’</title>
+        <link rel="alternate" type="text/html" href="https://www.kickstarter.com/projects/mwichary/shift-happens"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/umj"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/02/07/shift-happens"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39691</id>
+        <published>2023-02-07T18:20:06Z</published>
+        <updated>2023-02-07T18:20:07Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Marcin Wichary:</p>
+
+<blockquote>
+  <p>Keyboards fascinated me for years. But it occurred to me that a
+good, comprehensive, and human story of keyboards — starting with
+typewriters and ending with modern computers and phones — has
+never been written. How did we get from then to now? What were the
+steps along the way? And how on earth does QWERTY still look the
+same now as it did 150 years ago?</p>
+
+<p>I wanted a book like this for years. So I wrote it.</p>
+</blockquote>
+
+<p>If this rings a bell, that’s because Glenn Fleishman — who is the editor and print production manager for the book — <a href="https://daringfireball.net/thetalkshow/2022/12/31/ep-366">mentioned this project on The Talk Show a few weeks ago</a>. I’ve been looking forward to supporting it on Kickstarter ever since.</p>
+
+<div>
+<a  title="Permanent link to ‘‘Shift Happens: A Book About Keyboards’’"  href="https://daringfireball.net/linked/2023/02/07/shift-happens">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Poe: New AI Chatbot App From Quora</title>
+        <link rel="alternate" type="text/html"
+              href="https://techcrunch.com/2023/02/06/quora-opens-its-new-ai-chatbot-app-poe-to-the-general-public/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/umi"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/02/07/poe"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39690</id>
+        <published>2023-02-07T18:03:03Z</published>
+        <updated>2023-02-07T18:03:04Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Sarah Perez, reporting for TechCrunch:</p>
+
+<blockquote>
+  <p>Q&amp;A platform <a href="https://www.quora.com/">Quora</a> has opened up public access to its new
+AI chatbot app, <a href="https://apps.apple.com/app/id1640745955?platform=iphone">Poe</a>, which lets users ask questions and
+get answers from a range of AI chatbots, including those from
+ChatGPT maker, <a href="https://openai.com/">OpenAI</a>, and other companies like
+<a href="https://www.anthropic.com/">Anthropic</a>. Beyond allowing users to experiment with new AI
+technologies, Poe’s content will ultimately help to evolve Quora
+itself, the company says.</p>
+
+<p>Quora first announced <a href="https://poe.com/">Poe’s</a> mobile app in December, but at
+the time, it required an invite to try it out. With the public
+launch on Friday, anyone can now use Poe’s app. For now, it’s
+available only to iOS users, but Quora says the service will
+arrive on other platforms in a few months.</p>
+</blockquote>
+
+<p>Impressive results, I must say.</p>
+
+<div>
+<a  title="Permanent link to ‘Poe: New AI Chatbot App From Quora’"  href="https://daringfireball.net/linked/2023/02/07/poe">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Matthew Panzarino Interviews Apple Execs Tim Millet and Bob Borchers Re: M2 Macs</title>
+        <link rel="alternate" type="text/html"
+              href="https://techcrunch.com/2023/02/06/apple-execs-on-m2-chips-winning-gamers-and-when-to-buy-a-mac/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/umh"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/02/06/panzer-millet-borchers"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39689</id>
+        <published>2023-02-07T01:40:35Z</published>
+        <updated>2023-02-07T01:40:36Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Matthew Panzarino, writing at TechCrunch:</p>
+
+<blockquote>
+  <p>The M1 whacked a big old reset button on those restrictions,
+putting portable back into the power computing lexicon. And with
+M2, Millet says, Apple did not want to milk a few percentage
+points of gains out of each generation in perpetuity.</p>
+
+<p>“The M2 family was really now about maintaining that leadership
+position by pushing, again, to the limits of technology. We don’t
+leave things on the table,” says Millet. “We don’t take a 20% bump
+and figure out how to spread it over three years…figure out how to
+eke out incremental gains. We take it all in one year; we just hit
+it really hard. That’s not what happens in the rest of the
+industry or historically.”</p>
+</blockquote>
+
+<p>The conversation turns to gaming:</p>
+
+<blockquote>
+  <p>Millet also is unconvinced that the game dev universe has adapted
+to the unique architecture of the M-series chips quite yet,
+especially the unified memory pool.</p>
+
+<p>“Game developers have never seen 96 gigabytes of graphics memory
+available to them now, on the M2 Max. I think they’re trying to
+get their heads around it, because the possibilities are unusual.
+They’re used to working in much smaller footprints of video
+memory. So I think that’s another place where we’re going to have
+an interesting opportunity to inspire developers to go beyond what
+they’ve been able to do before.”</p>
+</blockquote>
+
+<div>
+<a  title="Permanent link to ‘Matthew Panzarino Interviews Apple Execs Tim Millet and Bob Borchers Re: M2 Macs’"  href="https://daringfireball.net/linked/2023/02/06/panzer-millet-borchers">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Bard: Google’s Conversational AI Chat</title>
+        <link rel="alternate" type="text/html" href="https://blog.google/technology/ai/bard-google-ai-search-updates/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/umg"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/02/06/bard"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39688</id>
+        <published>2023-02-07T01:24:47Z</published>
+        <updated>2023-02-07T17:51:50Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Sundar Pichai, writing for Google’s blog:</p>
+
+<blockquote>
+  <p>We’ve been working on an experimental conversational AI service,
+powered by LaMDA, that we’re calling Bard. And today, we’re taking
+another step forward by opening it up to trusted testers ahead of
+making it more widely available to the public in the coming weeks.</p>
+</blockquote>
+
+<p>Bard is still in very private beta testing, but at the moment, I’d be hesitant to describe this as Google “playing catchup” to ChatGPT, etc. For all we know, Google is way out ahead of them, but have been playing their cards close to their vest.</p>
+
+<p><strong>Update:</strong> On the other hand, <a href="https://twitter.com/levelsio/status/1622682288961249280">Google has announced a lot of AI vaporware in recent years</a>. Ship a real product or shut up.</p>
+
+<div>
+<a  title="Permanent link to ‘Bard: Google’s Conversational AI Chat’"  href="https://daringfireball.net/linked/2023/02/06/bard">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Getty Images Sues AI Art Generator Stable Diffusion in the U.S. for Copyright Infringement</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.theverge.com/2023/2/6/23587393/ai-art-copyright-lawsuit-getty-images-stable-diffusion"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/umf"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/02/06/getty-stable-diffusion"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39687</id>
+        <published>2023-02-07T01:13:11Z</published>
+        <updated>2023-02-07T01:13:11Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>James Vincent, reporting for The Verge:</p>
+
+<blockquote>
+  <p>Getty Images has filed a lawsuit in the US against Stability AI,
+creators of open-source AI art generator Stable Diffusion,
+escalating its legal battle against the firm.</p>
+
+<p>The stock photography company is accusing Stability AI of “brazen
+infringement of Getty Images’ intellectual property on a
+staggering scale.” It claims that Stability AI copied more than 12
+million images from its database “without permission ... or
+compensation ... as part of its efforts to build a competing
+business,” and that the startup has infringed on both the
+company’s copyright and trademark protections.</p>
+</blockquote>
+
+<p>The fact that Stable Diffusion occasionally produces output <em>with Getty Image’s watermark</em> makes this about as open-and-shut a case of copyright infringement as I can imagine. It’s like a plagiarist who copies the byline of the piece they’re stealing from.</p>
+
+<div>
+<a  title="Permanent link to ‘Getty Images Sues AI Art Generator Stable Diffusion in the U.S. for Copyright Infringement’"  href="https://daringfireball.net/linked/2023/02/06/getty-stable-diffusion">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Yours Truly on ‘All Consuming’ With Noah Kalina and Adam Lisagor</title>
+        <link rel="alternate" type="text/html" href="https://twitter.com/noahkalina/status/1622634871645515777"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ume"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/02/06/all-consuming"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39686</id>
+        <published>2023-02-07T01:00:14Z</published>
+        <updated>2023-02-07T01:33:23Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Noah Kalina and Adam Lisagor are back for season 2 of their delightful podcast All Consuming. This season they’re doing a topic per episode, and for “computers”, they had me on. Somehow it isn’t 10 hours long.</p>
+
+<p><a href="https://twitter.com/adamlisagor/status/1622650065897795584">Lisagor</a>:</p>
+
+<blockquote>
+  <p>It feels good to get excited about technology with others.</p>
+</blockquote>
+
+<p>Yes, it did.</p>
+
+<p><a href="https://pod.link/allconsuming">Listen in your favorite podcast app here</a>.</p>
+
+<div>
+<a  title="Permanent link to ‘Yours Truly on ‘All Consuming’ With Noah Kalina and Adam Lisagor’"  href="https://daringfireball.net/linked/2023/02/06/all-consuming">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Feeling Blue, but Not Smelling Green</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.theinformation.com/articles/musks-twitter-has-just-180-000-u-s-subscribers-two-months-after-launch"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/umd"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/02/06/feeling-blue"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39685</id>
+        <published>2023-02-07T00:55:46Z</published>
+        <updated>2023-02-07T23:12:24Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Erin Woo, reporting for The Information:</p>
+
+<blockquote>
+  <p>Around 180,000 people in the U.S. were paying for subscriptions to
+Twitter, including Twitter Blue, as of mid-January, or less than
+0.2% of monthly active users, according to a document viewed by
+The Information. The tiny number signals the challenge Elon Musk
+faces in turning the subscription product into a major source of
+revenue.</p>
+
+<p>The U.S. number is about 62% of Twitter’s global subscriber total,
+the document says, which implies Twitter has 290,000 global
+subscribers. Twitter is charging $8 a month for Blue Verified on
+the web and $11 a month for those who sign up via Apple’s iOS,
+although Apple keeps 30% of that fee.</p>
+
+<p>All together, the global number of subscribers would equate to
+around $28 million in annual revenue — less than 1% of the $3
+billion Musk has said Twitter aims to make in revenue this year.
+In November, days after assuming control of Twitter, Musk told his
+new employees he wanted half the company’s revenue to come from
+subscriptions.</p>
+</blockquote>
+
+<p>Hard to believe people aren’t jumping at the chance to pay $8/month for a website that is crumbling before our eyes. Lucky for Musk, advertising is down too, so maybe if ad revenue keeps dropping, subscriptions <em>will</em> account for half of Twitter’s revenue.</p>
+
+<div>
+<a  title="Permanent link to ‘Feeling Blue, but Not Smelling Green’"  href="https://daringfireball.net/linked/2023/02/06/feeling-blue">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+
+        <link rel="alternate" type="text/html"
+              href="https://workos.com/?utm_source=daringfireball&amp;utm_medium=newsletter&amp;utm_campaign=df2023"/>
+        <link rel="shorturl" href="http://df4.us/umc"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/feeds/sponsors/2023/02/workos_1"/>
+        <id>tag:daringfireball.net,2023:/feeds/sponsors//11.39684</id>
+        <author>
+            <name>Daring Fireball Department of Commerce</name>
+        </author>
+        <published>2023-02-06T13:48:46-05:00</published>
+        <updated>2023-02-06T13:48:46-05:00</updated>
+        <content type="html" xml:base="https://daringfireball.net/feeds/sponsors/" xml:lang="en"><![CDATA[
+<p>WorkOS is like “Stripe for enterprise features.” They make it easy for developers to build features needed by enterprise customers, such as Single Sign-On and SCIM.</p>
+
+<p>Shipping these features is important because they enable selling upmarket for bigger deals. Without these features, the IT department will reject your app. But these enterprise features are complex and time-consuming to build yourself, usually taking months.</p>
+
+<p>With WorkOS you can integrate and ship enterprise features in minutes. Beautiful API docs guide you through every step of the way, and transparent pricing scales based on usage. It’s a product built by developers, for developers.</p>
+
+<div>
+<a  title="Permanent link to ‘WorkOS’"  href="https://daringfireball.net/feeds/sponsors/2023/02/workos_1">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+        <title>[Sponsor] WorkOS</title>
+    </entry>
+    <entry>
+        <title>Connor Oliver’s Favorite Computer: An Old Mac</title>
+        <link rel="alternate" type="text/html" href="http://muezza.ca/thoughts/favourite_computer/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/umb"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/02/05/oliver-classic-ii"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39683</id>
+        <published>2023-02-05T21:15:30Z</published>
+        <updated>2023-02-05T21:16:56Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Connor Oliver:</p>
+
+<blockquote>
+  <p>This Mac has no form of notification system built in, it never
+begs for your attention and its applications never try to distract
+you from what you are doing, begging you to look at them instead.
+If I get distracted while using this Mac the fault lies squarely
+on me, not the computer and not the programs running on it.</p>
+
+<p>This Mac is unchanging in a world where things change by the
+minute. It will never receive another software update and is
+thoroughly obsolete, but it’s comforting to have something that
+you know will stay the same forever, remaining in a known state
+every time you return to it.</p>
+</blockquote>
+
+<div>
+<a  title="Permanent link to ‘Connor Oliver’s Favorite Computer: An Old Mac’"  href="https://daringfireball.net/linked/2023/02/05/oliver-classic-ii">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Louie Mantia: Pixel Pirate</title>
+        <link rel="alternate" type="text/html" href="http://lmnt.me/post/apple.html"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/uma"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/02/05/mantia-pixel-pirate"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39682</id>
+        <published>2023-02-05T19:15:46Z</published>
+        <updated>2023-02-05T19:15:47Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Nice remembrance from Louie Mantia of his days working as an icon/UI designer at Apple circa 2010–2011.</p>
+
+<div>
+<a  title="Permanent link to ‘Louie Mantia: Pixel Pirate’"  href="https://daringfireball.net/linked/2023/02/05/mantia-pixel-pirate">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Glenn Fleishman on Getting Started on Mastodon</title>
+        <link rel="alternate" type="text/html"
+              href="https://tidbits.com/2023/01/27/mastodon-a-new-hope-for-social-networking/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/um9"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/02/04/fleishman-mastodon"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39681</id>
+        <published>2023-02-04T19:46:19Z</published>
+        <updated>2023-02-04T20:44:25Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Glenn Fleishman at TidBITS:</p>
+
+<blockquote>
+  <p>You can think of Mastodon as a flotilla of boats of vastly
+different sizes, whereas Twitter is like being on a cruise ship
+the size of a continent. Some Mastodon boats might be cruise
+liners with as many as 50,000 passengers; others are just dinghies
+with a single occupant! The admin of each instance — the captain
+of your particular boat — might make arbitrary decisions you
+disagree with as heartily as with any commercial operator’s tacks
+and turns. But you’re not stuck on your boat, with drowning as the
+only alternative. Instead, you can hop from one boat to another
+without losing your place in the flotilla community. Parts of a
+flotilla can also splinter off and form their own disconnected
+groups, but no boat, however large, is more important than any
+other in the community.</p>
+
+<p>If you’re a regular Twitter or Facebook user — or avoided both
+those and similar services — and want to understand what Mastodon
+is, where it seems to be headed, and how to join in, read on. You
+don’t need a lot of technical details to understand why Mastodon
+and the Fediverse exist in sharp contrast to commercial social
+networks and why they hearken back to some of the more enjoyable
+aspects of earlier stages of Internet interactions.</p>
+</blockquote>
+
+<p>I don’t think Mastodon is confusing, per se, but its federated nature makes it inherently at least a bit more complex than a centralized commercial network like Twitter or Instagram. Fleishman’s piece here is a wonderful overview.</p>
+
+<div>
+<a  title="Permanent link to ‘Glenn Fleishman on Getting Started on Mastodon’"  href="https://daringfireball.net/linked/2023/02/04/fleishman-mastodon">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>“2001: A Space Odyssey” Directed by George Lucas?</title>
+        <link rel="alternate" type="text/html" href="https://youtu.be/v_suy7gARps"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/um8"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/02/03/2001-george-lucas"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39680</id>
+        <published>2023-02-04T04:05:18Z</published>
+        <updated>2023-02-04T05:58:57Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Holy hell this is absolutely amazing.</p>
+
+<p>Now do <em>Star Wars</em> directed by Stanley Kubrick. Wait, <a href="https://youtu.be/UOuKtJ2A0DA">they did it a year ago</a> — not quite as sublime as Lucas’s <em>2001</em> but the docking scene is great.</p>
+
+<div>
+<a  title="Permanent link to ‘“2001: A Space Odyssey” Directed by George Lucas?’"  href="https://daringfireball.net/linked/2023/02/03/2001-george-lucas">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Dithering</title>
+        <link rel="alternate" type="text/html" href="https://dithering.fm/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/um7"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/02/03/dithering"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39679</id>
+        <published>2023-02-03T23:56:26Z</published>
+        <updated>2023-02-06T18:49:56Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p><a href="https://dithering.fm/" class="noborder">
+<img
+    src = "https://daringfireball.net/misc/2023/02/dithering-feb-2023.jpeg"
+    alt = "February 2023 cover art for Dithering, depicting a woman, circa the mid-20th century, at a large computer terminal/printer of some sort. She is quite dapperly put together."
+    width = "500"
+/></a></p>
+
+<p>Yours truly and Ben Thompson’s podcast — two episodes per week, 15 minutes per episode. Not a minute less, not a minute more. If you’re not listening, you’re missing out. Best $5/month you’ll ever spend, trust me.</p>
+
+<p>Or, for a remarkable price of just $12/month or $120/year, subscribe to Stratechery Plus and get Dithering <em>and</em> <a href="https://stratechery.com/category/daily-email/">Stratechery</a>, <a href="https://sharptech.fm/">Sharp Tech</a>, <a href="https://sharpchina.fm/">Sharp China</a>, and the latest podcast in the bundle, the NBA-focused <a href="https://goat.passport.online/">Greatest of All Talk</a> (Ben’s personal favorite podcast).</p>
+
+<div>
+<a  title="Permanent link to ‘Dithering’"  href="https://daringfireball.net/linked/2023/02/03/dithering">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>The New York Times’s ‘Big Tech’ Jihad Has Little Room for Per-Company Nuance</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.nytimes.com/2023/02/02/technology/big-tech-earnings-austerity.html"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/um6"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/02/03/nyt-big-tech-apple"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39678</id>
+        <published>2023-02-03T23:38:48Z</published>
+        <updated>2023-02-04T00:08:02Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Tripp Mickle, Karen Weise, and Nico Grant, writing for The New York Times in a story that seemingly didn’t need three bylines:</p>
+
+<blockquote>
+  <p>Now chastened, many tech companies have begun the year by
+championing a new and unfamiliar business strategy: austerity.</p>
+
+<p>In recent months, several companies have said they are looking for
+ways to cut costs and eliminate futuristic projects that have
+become money pits. Amazon, Alphabet, Microsoft and Meta have each
+announced plans to lay off more than 10,000 workers.</p>
+</blockquote>
+
+<p>I’m not sure why Apple is included in this story — let alone the subject of the hero photo illustrating it. The other companies have laid off 10,000+ employees and cut benefits and perks. Apple has, at worst, cut a few hundred retail positions — so few that it’s gone under the radar — and hasn’t cut any benefits or perks. Apple’s Q1 revenue was down 5 percent year over year, yes, but the company claims they took an <em>8 percent</em> hit from international currency conversion headwinds. The complete shutdown of the massive Foxconn plant responsible for assembling Apple’s flagship iPhone 14 Pro models was a serious setback, but utterly unlike any of the problems facing Amazon, Google, Microsoft, or Meta. But seemingly nothing can stop The Times from presenting “big tech” as a single monolithic narrative.</p>
+
+<p>(<a href="https://twit.social/@glennf/109798872524239201">Via Glenn Fleishman</a>.)</p>
+
+<div>
+<a  title="Permanent link to ‘The New York Times’s ‘Big Tech’ Jihad Has Little Room for Per-Company Nuance’"  href="https://daringfireball.net/linked/2023/02/03/nyt-big-tech-apple">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Report It All, See What Sticks</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.bloomberg.com/news/newsletters/2023-01-29/apple-aapl-reality-pro-headset-2023-will-it-eventually-replace-the-iphone-ldhhulli"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/um5"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/02/03/report-it-all"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39677</id>
+        <published>2023-02-03T22:55:36Z</published>
+        <updated>2023-02-04T05:15:20Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Mark Gurman, over the weekend in his Power On column/newsletter at Bloomberg:</p>
+
+<blockquote>
+  <p>Apple’s first mixed-reality device, likely to be dubbed the
+Reality Pro, will launch this year with an immense amount of new
+technology, ranging from dual 4K displays to a flexible OLED
+screen on the front that shows a user’s eyes.</p>
+</blockquote>
+
+<p>I am once again <a href="https://daringfireball.net/2023/01/if_a_tree_that_was_never_announced_falls_in_a_forest_does_it_make_a_sound">reminded</a> of the fact that, two weeks prior to its unveiling, Gurman reported that 2021’s Apple Watch Series 7 would be “<a href="https://daringfireball.net/linked/2021/09/14/prosser-flat-edge-watch">all about a new design with a flatter display and edges</a>”, when in fact the Series 7 <a href="https://www.apple.com/newsroom/2021/09/apple-reveals-apple-watch-series-7-featuring-the-largest-most-advanced-display/">was <em>more</em> rounded</a>.</p>
+
+<p>In addition to making me as curious as ever how he (along with fellow rumormeister Ming-Chi Kuo, who also fell for the flat-sided Series 7 bullshit) vets sources, just consider how dumb an idea a front-facing display on a set of VR goggles would be, putting aside how much dumber it would be to use such a screen to display fake eyeballs. Good displays are expensive. All displays consume large amounts of energy. Why add significant cost to an already expensive headset, and consume additional energy from a device so power-thirsty it’s going to ship with an external tethered battery (a fact Gurman does, I am told, have right), for a front-facing display that the user themself will never see?</p>
+
+<div>
+<a  title="Permanent link to ‘Report It All, See What Sticks’"  href="https://daringfireball.net/linked/2023/02/03/report-it-all">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Samsung’s Plans for XR Devices</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.washingtonpost.com/technology/2023/02/01/samsung-headset-qualcomm-google-android/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/um4"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/02/03/samsung-xr"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39676</id>
+        <published>2023-02-03T19:05:19Z</published>
+        <updated>2023-02-03T19:05:20Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Chris Velazco, writing for The Washington Post:</p>
+
+<blockquote>
+  <p>Roh would not elaborate on the specifics of Samsung’s first new XR
+product, which will not appear at Wednesday’s launch event. “We’re
+getting there, but we’re not too far away,” he said.</p>
+</blockquote>
+
+<p>Translation: Just waiting to see what Apple launches.</p>
+
+<div>
+<a  title="Permanent link to ‘Samsung’s Plans for XR Devices’"  href="https://daringfireball.net/linked/2023/02/03/samsung-xr">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Tom Brady Retires Again, Before Dawn</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.si.com/nfl/2023/02/01/tom-brady-retirement-two-options-return-tampa-bay-buccaneers"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/um3"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/02/03/brady-dawn"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39675</id>
+        <published>2023-02-03T18:46:18Z</published>
+        <updated>2023-02-03T19:06:23Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Dan Lyons, Sports Illustrated:</p>
+
+<blockquote>
+  <p>A source told Sports Illustrated’s Greg Bishop that Brady called
+the team around 6 a.m. ET. on Wednesday morning to inform them of
+his decision, two hours before he announced the decision to the
+rest of the world. He was weighing whether to retire until
+Tuesday, and had decided he would either play for Tampa Bay or
+retire, and would not join another franchise. <a href="https://twitter.com/JeffDarlington/status/1620776578077831168">ESPN’s Jeff
+Darlington was first</a> to report on the timing of Brady’s
+decision.</p>
+</blockquote>
+
+<p>Why in the world would you make a phone call like this at 6 in the morning? You call me at 6 a.m., someone better be dead or hospitalized.</p>
+
+<div>
+<a  title="Permanent link to ‘Tom Brady Retires Again, Before Dawn’"  href="https://daringfireball.net/linked/2023/02/03/brady-dawn">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Federico Viticci: ‘The Practicality of Art in Software’</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.macstories.net/stories/the-practicality-of-art-in-software/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/um2"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/02/02/viticci-art-software"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39674</id>
+        <published>2023-02-03T02:08:05Z</published>
+        <updated>2023-02-03T02:08:05Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Federico Viticci:</p>
+
+<blockquote>
+  <p>We can’t talk about art in software in a vacuum. As a computer
+maker or app developer, you have to strike that balance between
+the aspirational and the practical, the artistic and the
+functional — the kind of balance that, by and large, Apple is
+<a href="https://www.macstories.net/stories/rediscovering-the-mac/">achieving on the Mac</a>. Unfortunately, when it comes to
+iPadOS, I feel like Apple has been prioritizing the artistic
+aspect over the functional, and it’s <a href="https://9to5mac.com/2023/01/22/ipad-pro-revamp-design-oled/">not clear</a> when that
+will be rectified.</p>
+</blockquote>
+
+<div>
+<a  title="Permanent link to ‘Federico Viticci: ‘The Practicality of Art in Software’’"  href="https://daringfireball.net/linked/2023/02/02/viticci-art-software">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>‘Twitter Is Killing Off the Fun Bots’</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.buzzfeednews.com/article/katienotopoulos/twitter-bot-api-changes-killing-fun"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/um1"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/02/02/twitter-killing-bots"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39673</id>
+        <published>2023-02-03T01:54:23Z</published>
+        <updated>2023-02-03T19:25:11Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Katie Notopoulos and Pranav Dixit, reporting for BuzzFeed News:</p>
+
+<blockquote>
+  <p>Other bots are simply just fun. @<a href="https://twitter.com/ca_dmv_bot">ca_dmv_bot</a> tweets out
+vanity plates that were rejected by the California Department of
+Motor Vehicles, along with the DMV’s reasoning. The bot’s creation
+was inspired by a <a href="https://www.lamag.com/citythinkblog/rejected-vanity-plates/">Los Angeles magazine article</a> about
+rejected plates, which revealed that they’re often incredibly
+funny.</p>
+</blockquote>
+
+<p>Fantastic Twitter account, run by a 15-year-old kid.</p>
+
+<blockquote>
+  <p>Some bots are just pleasant and surprising additions to your
+timeline. Joe Schoech of Vermont runs @<a href="https://twitter.com/_restaurant_bot">_restaurant_bot</a>
+(random photos of restaurants from Google Maps),
+@<a href="https://twitter.com/_weather_bot_">_weather_bot_</a> (current weather conditions from
+randomized places around the world), @<a href="https://twitter.com/everygoodfella">everygoodfella</a>
+(screenshots of every second of the movie <em>Goodfellas</em>), and a few
+others. He also doesn’t plan on paying and is considering moving
+them all to Mastodon.</p>
+
+<p>“It’s over,” he told BuzzFeed News. “Bots are maybe the best part
+about Twitter! I follow a ton of them, they’re cool and weird, and
+I will miss them. Fuck Elon, I never liked that guy.”</p>
+</blockquote>
+
+<p>Amen, brother.</p>
+
+<p>Onward to Mastodon.</p>
+
+<div>
+<a  title="Permanent link to ‘‘Twitter Is Killing Off the Fun Bots’’"  href="https://daringfireball.net/linked/2023/02/02/twitter-killing-bots">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Apple Q1 2023 Results</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.apple.com/newsroom/2023/02/apple-reports-first-quarter-results/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/um0"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/02/02/aapl-q1-2023"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39672</id>
+        <published>2023-02-02T23:30:47Z</published>
+        <updated>2023-02-03T01:10:11Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Apple Newsroom:</p>
+
+<blockquote>
+  <p>Apple today announced financial results for its fiscal 2023 first
+quarter ended December 31, 2022. The Company posted quarterly
+revenue of $117.2 billion, down 5 percent year over year, and
+quarterly earnings per diluted share of $1.88.</p>
+
+<p>“As we all continue to navigate a challenging environment, we are
+proud to have our best lineup of products and services ever, and
+as always, we remain focused on the long term and are leading with
+our values in everything we do,” said Tim Cook, Apple’s CEO.
+“During the December quarter, we achieved a major milestone and
+are excited to report that we now have more than 2 billion active
+devices as part of our growing installed base.”</p>
+</blockquote>
+
+<p>From Apple’s <a href="https://www.apple.com/newsroom/pdfs/FY23_Q1_Consolidated_Financial_Statements.pdf">Consolidated Financial Statements</a> (PDF), and <a href="https://sixcolors.com/post/2023/02/apple-results-and-charts-117-2b-quarter-is-still-a-step-back/">Jason Snell’s ever-essential charts of that data</a>:</p>
+
+<ul>
+<li>iPhone revenue was down 8% year over year, seemingly attributable to COVID-19 production problems in China preventing Apple from meeting demand. (Also currency exchange rates hit Apple across the board.)</li>
+<li>Mac revenue was down 29%, attributable, at least partially, to the just-launched-this-month new MacBook Pros and Mac Minis not having launched back in October. But I think Mac sales were destined to decline. They jumped two years prior during COVID lockdowns, when people who might otherwise have waited longer before buying bought new MacBooks for work-from-home and school-from-home. (Remember: the quarter prior to Apple silicon’s debut — despite the transition having been announced — <a href="https://daringfireball.net/linked/2020/10/29/aapl-q4-2020">was the best-ever quarter for Mac sales at the time</a>.) And then sales got another one-time bump with the first generation of Apple silicon Macs, which many many people were waiting for.</li>
+<li>iPad revenue was <em>up</em> 30%. It appears <a href="https://daringfireball.net/2022/10/the_2022_ipad">the new models that launched in October</a> are successful.</li>
+<li>Wearables revenue dropped 8%.</li>
+<li>Services revenue grew 6%.</li>
+</ul>
+
+<p>Not bad.</p>
+
+<div>
+<a  title="Permanent link to ‘Apple Q1 2023 Results’"  href="https://daringfireball.net/linked/2023/02/02/aapl-q1-2023">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Meta Lost $13.7 Billion on Reality Labs in 2022</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.cnbc.com/2023/02/01/meta-lost-13point7-billion-on-reality-labs-in-2022-after-metaverse-pivot.html"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ulz"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/02/02/meta-14-fucking-billiion"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39671</id>
+        <published>2023-02-02T23:00:02Z</published>
+        <updated>2023-02-02T23:00:02Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Speaking of Meta’s quarterly results:</p>
+
+<blockquote>
+  <p>In its earnings report after the bell on Wednesday, Meta said its
+Reality Labs division, home to the company’s virtual reality
+technologies and projects, posted a $4.28 billion operating loss
+in the fourth quarter, bringing its total for 2022 to $13.72
+billion.</p>
+</blockquote>
+
+<p>As my <a href="https://daringfireball.net/2023/01/if_a_tree_that_was_never_announced_falls_in_a_forest_does_it_make_a_sound">recent</a> <a href="https://daringfireball.net/2023/01/the_billions-dollar_vr_ar_headset_question">writing</a> suggests, I’m not sure what to expect from Apple’s upcoming headset. I sure as shit don’t expect them to lose $14 billion a year on it though.</p>
+
+<div>
+<a  title="Permanent link to ‘Meta Lost $13.7 Billion on Reality Labs in 2022’"  href="https://daringfireball.net/linked/2023/02/02/meta-14-fucking-billiion">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Meta Reports Strong Earnings, Stock Jumps ~25 Percent</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.cnbc.com/2023/02/01/facebook-parent-meta-earnings-q4-2022.html?&amp;doc=107187980"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ulx"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/02/02/meta-earnings"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39669</id>
+        <published>2023-02-02T22:00:00Z</published>
+        <updated>2023-02-03T06:26:11Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>CNBC:</p>
+
+<blockquote>
+  <p>Meta shares popped in extended trading on Wednesday after the
+company reported fourth-quarter revenue that topped estimates and
+announced a $40 billion stock buyback. Here are the results. [...]</p>
+
+<ul>
+<li>Daily Active Users (DAUs): 2 billion vs 1.99 billion expected</li>
+<li>Monthly Active Users (MAUs): 2.96 billion vs 2.98 billion
+expected</li>
+<li>Average Revenue per User (ARPU): $10.86 vs $10.63 expected</li>
+</ul>
+</blockquote>
+
+<p>Sure seems like it’s time for Zuckerberg to drop his whining about App Tracking Transparency. They still have an almost unimaginably massive audience — 2 billion users per day! — so surely there are ways to monetize that attention that don’t require cross-app tracking.</p>
+
+<p>That ARPU extrapolates to about $45/year. Would you pay, say, $50/year to get an ad-free experience on Facebook’s products? A year or two ago I’d have said yes, just for Instagram. (My Instagram use has decreased significantly since then.) I realize they’re not going to offer that, but “average revenue per user” is an interesting metric.</p>
+
+<p><strong>See also:</strong> “<a href="https://twitter.com/tanayj/status/1621232485270175744">The Inverse Cramer ETF remains undefeated</a>.”</p>
+
+<div>
+<a  title="Permanent link to ‘Meta Reports Strong Earnings, Stock Jumps ~25 Percent’"  href="https://daringfireball.net/linked/2023/02/02/meta-earnings">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Twitter Is Turning Off All Free Access to Their APIs Next Week (Or at Least That’s the Plan as of
+            Today)
+        </title>
+        <link rel="alternate" type="text/html" href="https://twitter.com/TwitterDev/status/1621026986784337922"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/uly"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/02/02/twitter-apis"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39670</id>
+        <published>2023-02-02T21:57:54Z</published>
+        <updated>2023-02-03T22:01:21Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>The Twitter Dev account:</p>
+
+<blockquote>
+  <p>Starting February 9, we will no longer support free access to the
+Twitter API, both v2 and v1.1. A paid basic tier will be available
+instead.</p>
+</blockquote>
+
+<p>At least they gave <em>some</em> notice this time, but it’s emblematic of how seat-of-Musk’s-pants the whole company is now that they can’t even say yet what that pricing will be.</p>
+
+<p>You might be asking, “Wait a second, didn’t Twitter shut down all the APIs for developers a few weeks ago?” But those were just the APIs for full-fledged Twitter clients. Today’s announcement covers all the other ways Twitter APIs could heretofore be used for free. E.g. the bot I wrote back in 2010 to auto-tweet links to each new post on Daring Fireball — that bot will stop working next week unless I pay. I’ll wait to see what the prices are, but I doubt I’ll pay. (<strong>Update:</strong> <a href="https://twitter.com/elonmusk/status/1621259936524300289">Elon Musk, on Twitter, says “~$100/month”</a>.)</p>
+
+<p>There are zillions of tools and bots that use these APIs. <a href="https://hachyderm.io/@molly0xfff/109795691057259606">Molly White posted a few examples</a>. For example, <a href="https://twitter.com/get_alttext">Alt Text Reader</a> is an automated account that sends back the alt text description for any image on Twitter (that has alt text). There are umpteen weather services, traffic alerts, and just plain <a href="https://twitter.com/ca_dmv_bot">fun</a> <a href="https://twitter.com/_restaurant_bot">goofy</a> accounts that send automated tweets. Many of them are run for free and can’t pay; others just won’t pay. This will also break the ability <a href="https://leancrew.com/all-this/2023/01/twitter-via-rss/">to follow a Twitter account’s posts via RSS</a> — a very cool feature in some feed readers like <a href="https://netnewswire.com/help/mac/6.0/en/twitter-feeds">NetNewsWire</a>.</p>
+
+<p>I don’t know what Musk is thinking, but he obviously has the value proposition backwards. These accounts freely produce content Twitter users enjoy. If anything, Twitter should be paying <em>them</em>, not the other way around. It’s like if YouTube started charging creators to post their videos.</p>
+
+<p>And, of course, another use case for these APIs are tools like <a href="https://www.movetodon.org/">Movetodon</a>, that allow people new to Mastodon to find and follow the Mastodon accounts of people they follow on Twitter. Use it now, before it breaks. (And if you’ve already started using Mastodon and used Movetodon, remember that you can re-run it to find people who’ve started Mastodon accounts after the last time you checked.)</p>
+
+<div>
+<a  title="Permanent link to ‘Twitter Is Turning Off All Free Access to Their APIs Next Week (Or at Least That’s the Plan as of Today)’"  href="https://daringfireball.net/linked/2023/02/02/twitter-apis">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+
+        <link rel="alternate" type="text/html" href="https://daringfireball.net/2023/02/making_our_hearts_sing"/>
+        <link rel="shorturl" href="http://df4.us/ulw"/>
+        <id>tag:daringfireball.net,2023://1.39668</id>
+        <published>2023-02-02T02:57:03Z</published>
+        <updated>2023-02-03T00:53:31Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <summary type="text">More on the iOS/Android cultural divide: Technology is not enough.</summary>
+        <content type="html" xml:base="https://daringfireball.net/" xml:lang="en"><![CDATA[
+<p>Matt Birchler, “<a href="https://birchtree.me/blog/the-shocking-state-of-enthusiast-apps-on-android/">The Shocking State of Enthusiast Apps on Android</a>”:</p>
+
+<blockquote>
+  <p>I recently <a href="https://mastodon.social/@birchtree/109749886968446937">commented on Mastodon</a> that I thought when it comes to
+third party apps, iOS is remarkably far ahead of Android. My
+feeling is that you can take the best app in a category on
+Android, and that would be the 3rd to 5th best app in that
+category on iOS.</p>
+
+<p>It’s harsh, I know, but I really think it’s true for basically
+every category of app I care about.</p>
+
+<p>Someone responded to me saying that there are a bunch on Android
+apps that are better than their iOS equivalents. I wanted to be
+open-minded, so I asked what apps they would recommend I look at
+to see how Android is ahead of iOS. They recommended a text
+editor with a UI that looked more like Notepad++ than a modern
+writing tool.</p>
+</blockquote>
+
+<p>Birchler’s Mastodon post was in a thread I started <a href="https://mastodon.social/@gruber/109745760003909477">with my question</a> about the best Android Mastodon clients, but I hadn’t noticed that he’d written this article until today — a day after <a href="https://daringfireball.net/2023/01/meanwhile_over_in_androidtown">my take on the same theme</a>. Birchler goes on to review an Android RSS reader named <a href="https://f-droid.org/packages/me.ash.reader/">Read You</a>, which seems to be the best feed reader on Android. To say that Read You wouldn’t even register on the list of best iOS feed readers is being kind. It’s enough to make you wonder if anyone on Android even knows what a feed reader is. Birchler’s review is more than fair. He’s not cherry-picking one app in one category — I think it’s fair to say that Read You exemplifies the state of Android, for, as Birchler calls them, “enthusiast apps”.</p>
+
+<p>Android enthusiasts don’t want to hear it, but from a design perspective, the apps on Android suck. They may not suck from a feature perspective (but they often do), but they’re aesthetically unpolished and poorly designed even from a “design is how it works” perspective. (E.g., Read You doesn’t offer unread counts for folders, has a bizarrely information-sparse layout, and its only supported sync service was deprecated in 2014. It also requires a frightening number of system permissions to run, including the ability to launch at startup and run in the background.) And as I wrote <a href="https://daringfireball.net/2023/01/meanwhile_over_in_androidtown">yesterday</a>, the cultural chasm between the two mobile platforms is growing, not shrinking. I’ve been keeping a toe dipped in the Android market since I bought a Nexus One in 2010, and the difference in production values between the top apps in any given category has never been greater between Android and iOS. And that’s just talking about phone apps, leaving aside the deplorable state of tablet apps on Android.</p>
+
+<p><a href="https://mjtsai.com/blog/2023/02/01/the-state-of-enthusiast-apps-on-android/">Michael Tsai found</a> two threads on Hacker News with short threads discussing my piece yesterday, <a href="https://news.ycombinator.com/item?id=34605535">here</a> and <a href="https://news.ycombinator.com/item?id=34611552">here</a>.<sup id="fnr1-2023-02-01"><a href="#fn1-2023-02-01">1</a></sup> A representative comment from an Android user skeptical of my take:</p>
+
+<blockquote>
+  <p>What on earth is he asking for out of these apps? How do you
+objectively compare one app’s “panache” with another? If I was a
+developer, what are the steps I can follow to program some
+“comfort” into my app? These complaints seem so wishy-washy and
+underspecified.</p>
+
+<p>Then he leaves with the Kubrick quote: “Sometimes the truth of a
+thing isn’t in the think of it, but in the feel of it.” We’re
+fully in the realm of mysticism now, this is not an attempt to
+fairly compare or measure anything. [...]</p>
+
+<p>I think if he’s going to praise some apps and dunk on the other
+ones, he should compare using measurable criteria. Otherwise,
+it’s only one person’s opinion. Just saying “App X feels right”
+is like saying “App X has a better chakra energy.” What is any
+developer supposed to do with that feedback? The whole article
+could have boiled down to “I personally like these apps and I
+don’t like those.”</p>
+</blockquote>
+
+<p>That’s like asking for “measurable criteria” for evaluating a movie or novel or song or painting. I will offer another quote from Kubrick: “The test of a work of art is, in the end, our affection for it, not our ability to explain why it is good.”</p>
+
+<p><em>Art</em> is the operative word. Either you know that software can be art, and often should be, or you think what I’m talking about here is akin to astrology. One thing I learned long ago is that people who prioritize design, UI, and UX in the software they prefer can empathize with and understand the choices made by people who prioritize other factors (e.g. raw feature count, or the ability to tinker with their software at the system level, or software being free-of-charge). But it doesn’t work the other way: most people who prioritize other things can’t fathom why anyone cares deeply about design/UI/UX <em>because they don’t perceive it</em>. Thus they chalk up iOS and native Mac-app enthusiasm to being hypnotized by marketing, Pied Piper style.</p>
+
+<p>What’s happened over the last decade or so, I think, is that rather than the two platforms reaching any sort of equilibrium, the cultural differences have instead grown because both users and developers have self-sorted. Those who see and value the artistic value in software and interface design have overwhelmingly wound up on iOS; those who don’t have wound up on Android. Of course there are exceptions. Of course there are iOS users and developers who are envious of Android’s more open nature. Of course there are Android users and developers who do see how crude the UIs are for that platform’s best-of-breed apps. But we’re left with two entirely different ecosystems with entirely different cultural values — nothing like (to re-use my example from yesterday) the Coke-vs.-Pepsi state of affairs in console gaming platforms. On mobile, the cultural differences are as polarized and clearly delineated as the politics of our national affairs.</p>
+
+<p>It’s no fluke that among Steve Jobs’s final words on stage was his soliloquy about Apple existing at the intersection of technology and the liberal arts. <a href="https://www.youtube.com/watch?v=KlI1MR-qNt8">March 2011</a>:</p>
+
+<blockquote>
+  <p>It is in Apple’s DNA that technology alone is not enough — it’s
+technology married with liberal arts, married with the humanities,
+that yields us the results that make our heart sing.</p>
+</blockquote>
+
+<p><em>Making your heart sing</em>. That’s the difference.</p>
+
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1-2023-02-01">
+<p>It sounds a bit conspirational, but for many years now it’s seemed clear to me that Hacker News has Daring Fireball in some sort of graylist. It’s not blacklisted, obviously, given the aforementioned <a href="https://news.ycombinator.com/item?id=34605535">two</a> <a href="https://news.ycombinator.com/item?id=34611552">threads</a> about yesterday’s piece, but nothing I write here ever gains any significant traction there. Ever. And the reason there are two threads for yesterday’s piece is that the first one disappeared from the home page soon after it was posted. I think? In <a href="https://news.ycombinator.com/from?site=daringfireball.net">this list of recent Hacker News threads for articles from DF</a>, going back four months, only three have more than 10 comments — and two of those are the threads from yesterday. I don’t know who I pissed off there or why, but I’ve never seen an explanation for this. <strong>Update:</strong> <a href="https://news.ycombinator.com/item?id=34626587">HN commenter Michiel de Mare has quantified the apparent suppression</a>, based on the ranking of this very article. Exactly what I’ve noticed for years.&nbsp;<a href="#fnr1-2023-02-01"  class="footnoteBackLink"  title="Jump back to footnote 1 in the text.">&#x21A9;&#xFE0E;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+    ]]></content>
+        <title>★ Making Our Hearts Sing</title>
+    </entry>
+    <entry>
+        <title>The Onion’s Exclusive Interview With George Santos</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.theonion.com/exclusive-interview-with-george-santos-1850060147/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ulv"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/02/01/onion-santos"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39667</id>
+        <published>2023-02-02T00:52:25Z</published>
+        <updated>2023-02-02T00:52:26Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>The Onion:</p>
+
+<blockquote>
+  <p>The Onion: Are you a Yankees fan or a Mets fan?</p>
+
+<p>Santos: A Mets <em>fan</em>? Baby, I was <em>on</em> the Mets!</p>
+</blockquote>
+
+<div>
+<a  title="Permanent link to ‘The Onion’s Exclusive Interview With George Santos’"  href="https://daringfireball.net/linked/2023/02/01/onion-santos">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>The Talk Show: ‘Tweeter and the Monkey Man’</title>
+        <link rel="alternate" type="text/html" href="https://daringfireball.net/thetalkshow/2023/01/31/ep-368"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ulu"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/01/31/the-talk-show-368"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39666</id>
+        <published>2023-02-01T04:43:18Z</published>
+        <updated>2023-02-01T17:09:19Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Special guest Dan Moren joins the show to talk about the new M2 MacBook Pros and Mac Minis, the state of Mac gaming, and the triumphant return of the full-sized HomePod.</p>
+
+<p>Brought to you by:</p>
+
+<ul>
+<li><a href="https://kolide.com/thetalkshow">Kolide</a>: The cross-platform endpoint security solution for teams that value privacy and transparency.</li>
+<li><a href="https://squarespace.com/talkshow">Squarespace</a>: Make your next move. Use code <strong>talkshow</strong> for 10% off your first order.</li>
+</ul>
+
+<div>
+<a  title="Permanent link to ‘The Talk Show: ‘Tweeter and the Monkey Man’’"  href="https://daringfireball.net/linked/2023/01/31/the-talk-show-368">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Artifact: News-Focused Social App From Instagram Co-Founders Kevin Systrom and Mike Krieger</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.platformer.news/p/instagrams-co-founders-are-mounting"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ult"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/01/31/artifact"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39665</id>
+        <published>2023-02-01T04:32:11Z</published>
+        <updated>2023-02-01T21:52:53Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Casey Newton, writing at Platformer:</p>
+
+<blockquote>
+  <p>Kevin Systrom and Mike Krieger are back.</p>
+
+<p>The Instagram co-founders, <a href="https://www.theverge.com/2018/10/15/17979282/kevin-systrom-instagram-quitting-ceo-facebook">who departed Facebook in 2018</a> amid
+tensions with their parent company, have formed a new venture to
+explore ideas for next-generation social apps. Their first product
+is Artifact, a personalized news feed that uses machine learning
+to understand your interests and will soon let you discuss those
+articles with friends.</p>
+</blockquote>
+
+<p>I lucked into an invitation from a friend. I’m square in the bullseye of the Artifact target audience, as both an inveterate news junkie and a huge fan of Systrom and Krieger’s original Instagram. Newton:</p>
+
+<blockquote>
+  <p>Users who come in from the waitlist today will see only that
+central ranked feed. But Artifact beta users are currently testing
+two more features that Systrom expects to become core pillars of
+the app. One is a feed showing articles posted by users that you
+have chosen to follow, along with their commentary on those posts.
+(You won’t be able to post raw text without a link, at least for
+now.) The second is a direct-message inbox so you can discuss the
+posts you read privately with friends.</p>
+</blockquote>
+
+<p>I’ll give it some time, but at the moment, it’s a disappointment. The articles they show come directly from publishers’ websites, but because Artifact isn’t a web browser, per se, there’s no ad filtering. It’s just <em>ads ads ads</em>, interrupting seemingly every single article, every couple of paragraphs. This same “<em>man, I miss ad blockers</em>” feeling strikes me when I use Apple News too, but Apple News articles have way fewer ads, and better ads, than what I’m seeing so far in articles I read in Artifact. “Like Apple News but worse” is not a good elevator pitch.</p>
+
+<p>To be clear, these aren’t Artifact’s ads. They’re the ads shown on the original web pages. But because the article design on most news websites sucks, the article design for most of the content in Artifact sucks. <strong>Update:</strong> Another annoyance: Because Artifact is using a custom web view rather than Safari’s <a href="https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller">embeddable view controller</a>, you don’t get password autofill. I happily pay for subscriptions to over half a dozen sites, but I don’t know the passwords for any of them, because I rely on autofill from iCloud Keychain in Safari or Safari’s embeddable view controller. In some ways Artifact feels like it’s just a subpar web browser with decent suggestions for what to read. </p>
+
+<p>Instagram was an instant sensation because it was obviously such a premium experience. Great photos, with cool filters (which filters were necessary to make phone camera pictures look great a decade ago), a simple social concept, all wrapped in a great app. Artifact does feel like a nice app, but the reading experience, at least today, is anything but premium. It feels cheap. And the social aspect isn’t there yet.</p>
+
+<div>
+<a  title="Permanent link to ‘Artifact: News-Focused Social App From Instagram Co-Founders Kevin Systrom and Mike Krieger’"  href="https://daringfireball.net/linked/2023/01/31/artifact">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Was a Popular Brazilian Food Delivery App Bypassing Apple’s Location Privacy Settings on iOS?</title>
+        <link rel="alternate" type="text/html"
+              href="https://notes.ghed.in/posts/2023/ifood-bypassing-ios-privacy-location/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/uls"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/01/31/ifood-ios-location"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39664</id>
+        <published>2023-02-01T02:31:56Z</published>
+        <updated>2023-02-01T02:31:57Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Rodrigo Ghedin:</p>
+
+<blockquote>
+  <p><a href="https://www.ifood.com.br/">iFood</a>, Brazilian largest food delivering app evaluated at USD
+5.4 billion, was accessing his location when not open/in use,
+bypassing an iOS setting that restrict an app’s access to certain
+phone’s features. Even when the reader completely denied location
+access to it, iFood’s app continued to access his phone’s
+location.</p>
+
+<p>We got intrigued: how was iFood getting away with this?</p>
+
+<p>An educated guess was revealed by <a href="https://support.apple.com/en-us/HT213606">iOS 16.3 release notes</a>,
+launched on January 23th. Apple mentions a security issue in Maps
+in that “an app may be able to bypass Privacy preferences”. It’s
+<a href="https://www.cve.org/CVERecord?id=CVE-2023-23503">CVE-2023-23503</a>, submitted by an anonymous researcher and, so
+far, “reserved” in CVE’s system — which means details are pending
+to be published.</p>
+</blockquote>
+
+<p><a href="https://infosec.exchange/@dangoodin/109785704068700107">Via Dan Goodin</a>, who asks:</p>
+
+<blockquote>
+  <p>I wonder how long this vulnerability was in effect. There may have
+been massive amounts of location data that was collected without
+users suspecting a thing.</p>
+</blockquote>
+
+<p>If the iFood app was really doing this, why is it <a href="https://apps.apple.com/us/app/ifood-pedir-delivery-em-casa/id483017239">still in the App Store</a>? If circumventing location privacy by exploiting a bug doesn’t get you kicked out of the store, what does? My hope would be that iFood wasn’t doing this maliciously. But if they were, that should be a one-strike-and-you’re-out violation.</p>
+
+<div>
+<a  title="Permanent link to ‘Was a Popular Brazilian Food Delivery App Bypassing Apple’s Location Privacy Settings on iOS?’"  href="https://daringfireball.net/linked/2023/01/31/ifood-ios-location">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+
+        <link rel="alternate" type="text/html" href="https://daringfireball.net/2023/01/meanwhile_over_in_androidtown"/>
+        <link rel="shorturl" href="http://df4.us/ulr"/>
+        <id>tag:daringfireball.net,2023://1.39663</id>
+        <published>2023-02-01T02:18:19Z</published>
+        <updated>2023-02-03T19:13:14Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <summary type="text">Spending a few hours perusing the state of the art in Android Mastodon clients gives me the
+            distinct impression that Android is forever stuck in its Window 3.x era of UI polish and design. It’s rough.
+        </summary>
+        <content type="html" xml:base="https://daringfireball.net/" xml:lang="en"><![CDATA[
+<p>Whilst we iOS users celebrate the recent releases of <a href="https://mastodon.cloud/@icecubesapp">Thomas Ricouard’s Ice Cubes</a>, <a href="https://tapbots.com/ivory/">Tapbots’s Ivory</a>, and <a href="https://vaccor.space/tusker/">Tusker</a>, and look forward to the imminent release of other new Mastodon clients like Shihab Mehboob’s <a href="https://www.getmammoth.app/">Mammoth</a>, over on Mastodon <a href="https://mastodon.social/@gruber/109745760003909477">I asked what the best clients for Android are</a>.</p>
+
+<p>Long story short: <em>crickets chirping</em>.</p>
+
+<p>The app that got the most recommendations is <a href="https://tusky.app/">Tusky</a>, an <a href="https://github.com/tuskyapp">open-source</a> client available free of charge. It’s fine, and for now, it’s what I’ve got on my home screen on my Pixel 4. But if Tusky were an iOS app, it wouldn’t make the top 5 for Mastodon clients. I’d describe its UI as brutalist. (Tusky does have fun “burst” animations when you tap the Like or Bookmark buttons on a post.)</p>
+
+<p>Honorable mentions to <a href="https://play.google.com/store/apps/details?id=com.xmflsct.app.tooot&amp;hl=en_US&amp;gl=US">Tooot</a>, the <a href="https://play.google.com/store/apps/details?id=org.joinmastodon.android&amp;gl=US">official Mastodon client</a>, and some open-source forks of the Mastodon app like <a href="https://play.google.com/store/apps/details?id=org.joinmastodon.android.sk&amp;gl=US&amp;pli=1">Megalodon</a>. There’s also <a href="https://fedilab.app/">Fedilab</a>, which costs $2.50 on the Play Store but is also open source. I find Fedilab homely, even by the standards of Android apps, but it’s fast and has some neat features like built-in translation. (Bonus points to the fellow who <a href="https://mastodon.social/@zachnfine/109745767807847160">suggested</a> <a href="https://codeberg.org/martianh/mastodon.el">this Emacs mode</a>, I believe non-sarcastically.) All of these apps are more brutalist than Tusky.</p>
+
+<p>None of these Android clients would garner any attention at all on iOS. Tooot and the official Mastodon client are also available on iOS, and seemingly offer the same features and same basic interfaces on both platforms. There’s a reason third-party clients are overwhelmingly more popular on iOS than Mastodon’s official client — yet the Mastodon app is clearly among the best on Android. It’s really just a different world over in Androidtown. Things like fluid scrolling, swipe gestures, and tap-and-hold contextual menus are table stakes for an iOS app. None of the Android clients scroll fluidly, none offer swipe gestures, and only Tooot seems to offer a tap-and-hold contextual menu. But more broadly they all just look and especially <em>feel</em> inert and rigid. Nothing shrinks or stretches. There’s no life to them. </p>
+
+<p>Google’s Android system software and first-party apps try. (The Chrome Android app in particular is iOS-caliber. Not iOS-<em>style</em>, but iOS-caliber, in terms of fluidity, originality, and attention to detail.) The Instagram app for Android tries. But for the most part, it seems like third-party Android apps don’t even try to achieve the look-and-feel comfort, fun, and panache of iOS apps. It’s a weird thing. The chasm between how iOS and Android apps look and feel is growing, not shrinking. The opposite happened with the Mac and Windows back in the ’90s. Windows itself and Windows software in the Window 3.x era were just awful. Starting with Windows 95, the gap closed significantly. Spending a few hours perusing the state of the art in Android Mastodon clients gives me the distinct impression that Android is forever stuck in its Window 3.x era of UI polish and design. It’s rough.</p>
+
+<p>iOS and Android are, from a macro perspective, rival peer platforms. But it’s not like, say, game consoles — PlayStation vs. Xbox vs. Switch — where all of the major games on all of the consoles are striving for the highest possible production values. Not one Android Mastodon client seems to be striving for iOS-level production values. Again, not iOS <em>style</em> — just the baseline level of polish and detail-sweating that are <em>de rigueur</em> for apps like new Mastodon clients on iOS. Your bank’s iOS app probably sucks (mine does), but that’s because it’s probably a cross-platform web wrapper that’s nearly identical on Android (mine is). Nintendo Switch games don’t have the same style as PlayStation or Xbox games, but all of them are trying to be really <em>nice</em>. That’s just not a thing on Android. It’s banking apps almost all the way down. It’s an entirely different culture, with a different value system from iOS.</p>
+
+<p>20 years ago my friend Brent Simmons <a href="https://inessential.com/2002/09/19/why_i_develop_for_mac_os_x">wrote about why he chose to create apps exclusively for the Mac</a>, despite the Windows market being so much larger:</p>
+
+<blockquote>
+  <p>One of the reasons I develop for OS X is that, when it comes to
+user interface, this is the big leagues, this is <em>the show</em>.
+That’s probably what Joel would call an “emotional appeal” — and
+to call it that, that’s fine by me. [...]</p>
+
+<p>The other path is honorable and sensible and has its rewards too.</p>
+
+<p>But to me it’s the difference between an empty night sky and a
+night sky with all the stars shining and a big, bright <em>bella
+luna</em>. “Emotional appeal?” Oh yes indeed. And I don’t apologize
+for that for one second.</p>
+</blockquote>
+
+<p>I’m well aware there are Android enthusiasts who choose and embrace the platform because they strongly prefer it. But the differing priorities of both users and developers between iOS and Android are rendered stark by looking at Mastodon client apps. There doesn’t seem to be a single developer trying to make a commercial Mastodon client for Android, for one thing. Everything feels like a hobby app because everything is. Android seems to be the platform for people who consider <a href="https://docs.google.com/spreadsheets/d/1De5KRwqMIdwEryfoeBLARgxF7QgKkeOQBCilKuIdAXE/edit#gid=0">this comprehensive feature checklist</a> to be a helpful resource for evaluating which apps they should try. iOS is the platform for users and developers who care about craftsmanship, who see emotional appeal as something far more essential than any feature comparison that can be expressed in a spreadsheet. I often cite this quote from Stanley Kubrick: “Sometimes the truth of a thing isn’t in the think of it, but in the feel of it.” It’s the feel of iOS Mastodon clients that makes them outclass those on Android.</p>
+
+<p>iOS is now <em>the show</em>.</p>
+
+
+
+    ]]></content>
+        <title>★ Meanwhile, Over in Androidtown</title>
+    </entry>
+    <entry>
+        <title>Vivid</title>
+        <link rel="alternate" type="text/html" href="https://getvivid.app/?ref=daringfireball"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ulq"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/01/28/vivid"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39662</id>
+        <published>2023-01-28T18:26:48Z</published>
+        <updated>2023-01-28T20:08:18Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>My thanks to Vivid for sponsoring this week at DF. The latest MacBook Pros have displays that can reach 1,600 nits of brightness. Out of the box, you only see this brightness when viewing HDR videos or photos. Vivid is a utility that unlocks the full brightness of your screen, system-wide. It works on the 14- and 16-inch MacBook Pro with an M1 or M2 chip, as well as the Pro Display XDR.</p>
+
+<p>Try Vivid for free and see the difference yourself. It is not just a little brighter — it’s a <em>lot</em> brighter. It’s worth downloading and installing to see it in action. Whether you ordered a new M2 MacBook Pro this week, or if you want to give your “old” 2021 M1 Pro a cheap upgrade, you can get Vivid for 30 percent off — this week only.</p>
+
+<div>
+<a  title="Permanent link to ‘Vivid’"  href="https://daringfireball.net/linked/2023/01/28/vivid">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Wayne Ma: ‘Apple Devising Software to Help Anyone Build AR Apps’ Using Siri, Not Code</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.theinformation.com/articles/apple-devising-software-to-help-anyone-build-ar-apps-to-drive-headset-sales"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ulp"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/01/27/ma-apple-ar-apps"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39661</id>
+        <published>2023-01-27T23:55:40Z</published>
+        <updated>2023-01-28T00:45:52Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Wayne Ma, reporting for The Information (<a href="https://www.macrumors.com/2023/01/27/apple-headset-ar-apps-via-siri/">MacRumors summary</a>):</p>
+
+<blockquote>
+  <p>Apple is developing software to make it easy for users of its
+upcoming mixed-reality headset to build their own augmented
+reality apps, according to four people who have worked on the
+headset.</p>
+
+<p>With the software tools, Apple hopes that even people who don’t
+know computer code could tell the headset, via the Siri voice
+assistant, to build an AR app that could then be made available
+via Apple’s App Store for others to download. The tool, for
+example, could allow users to build an app with virtual animals
+moving around a room and over or around real-life objects without
+the need to design the animal from scratch and calculate its
+movement in a 3D space with obstacles.</p>
+</blockquote>
+
+<p>Ma says “apps”, and if they’d go in the App Store I guess they’d be apps, but what he describes sounds more like AR <em>content</em> than AR <em>apps</em>.</p>
+
+<blockquote>
+  <p>Some former Apple engineers have likened Apple’s content creation
+tool to the popular games “Minecraft” and “Roblox,” which make it
+easy for children to build their own 3D worlds and objects with
+simple interfaces.</p>
+</blockquote>
+
+<p>Minecraft and Roblox are for children, LOL.</p>
+
+<blockquote>
+  <p>The current status of Apple’s app development tool couldn’t be
+learned. But some people familiar with it had seen demonstrations
+as recently as 2021.</p>
+</blockquote>
+
+<p>Four people saw this tool over a year ago, and it’s news? Says me, the guy linking to it — but it’s such a cool idea to have an AR content creation tool right there in the AR headset environment. I think Ma is missing a <em>lot</em> of information about Reality Composer (or whatever the tool is going to be named), but establishing the platform as something for <em>creation</em> out of the box is exciting. (It took over a decade to be able to create iPad software on an iPad with Swift Playgrounds.)</p>
+
+<div>
+<a  title="Permanent link to ‘Wayne Ma: ‘Apple Devising Software to Help Anyone Build AR Apps’ Using Siri, Not Code’"  href="https://daringfireball.net/linked/2023/01/27/ma-apple-ar-apps">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+
+        <link rel="alternate" type="text/html"
+              href="https://daringfireball.net/2023/01/the_billions-dollar_vr_ar_headset_question"/>
+        <link rel="shorturl" href="http://df4.us/ulo"/>
+        <id>tag:daringfireball.net,2023://1.39660</id>
+        <published>2023-01-27T02:03:24Z</published>
+        <updated>2023-01-27T20:21:21Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <summary type="text">I believe Apple must have answers to the question of why we will want to buy it, carry it,
+            and use it in addition to and alongside all the devices we already buy, carry, and use. Why else bring it to
+            market? But damned if I can imagine those answers.
+        </summary>
+        <content type="html" xml:base="https://daringfireball.net/" xml:lang="en"><![CDATA[
+<p>Matthew Ball wrote a thoughtful, deeply-considered essay worth your attention, “<a href="https://www.matthewball.vc/all/why-vrar-gets-farther-away-as-it-comes-into-focus">Why VR/AR Gets Farther Away as It Comes Into Focus</a>”:</p>
+
+<blockquote>
+  <p>Throughout 2015 and 2016, Mark Zuckerberg <a href="https://www.csmonitor.com/Technology/2015/0701/AR-goggles-will-replace-phones-says-Facebook-CEO-Zuckerberg">repeated</a> his
+<a href="https://www.theverge.com/2016/4/12/11415366/mark-zuckerberg-facebook-f8-virtual-augmented-reality-glasses">belief</a> that within a decade, “normal-looking” AR glasses
+might be a part of daily life, replacing the need to bring out a
+smartphone to take a call, share a photo, or browse the web, while
+a big-screen TV would be transformed into a $1 AR app. Now it looks
+like Facebook won’t launch a dedicated AR headset by 2025 — let
+alone an edition that hundreds of millions might want.</p>
+
+<p>In 2016, Epic Games founder/CEO Tim Sweeney <a href="https://venturebeat.com/games/the-deanbeat-epic-boss-tim-sweeney-makes-the-case-for-the-open-metaverse/">predicted not
+only</a> that within five to seven years, we would have not
+just PC-grade VR devices but also that these devices would have
+shrunk down into Oakley-style sunglasses. Seven years later, this
+still seems at best seven years away.</p>
+</blockquote>
+
+<p>The appeal and utility of all-day AR glasses is obvious. But we are obviously very far away from such devices being possible, at <em>any</em> price. And I don’t think such devices will ever be goggles with a screen, using cameras to show the real world. I think they must be see-through lenses that somehow include display technology that can project opaque objects and virtual “screens” within your field of vision. I am convinced we will get there. I am equally convinced we are not close to being able to make such devices.</p>
+
+<p>It’s like <a href="https://blog.codinghorror.com/remembering-the-dynabook/">Alan Kay’s 1972 Dynabook concept</a>, which clearly articulated the laptops and tablets that now dominate personal computing, and but we’re as far from practical AR glasses today as we were from Kay’s Dynabook in the early ’80s, if not the late ’70s, with several extremely difficult technical problems to be solved. The <a href="https://appleinsider.com/articles/21/10/21/apples-powerbook-reinvented-the-laptop-thirty-years-ago">original PowerBooks</a> didn’t arrive until 1991. Or perhaps AR glasses are to VR goggles as the smartphone is to the laptop, and as the laptop is to the desktop PC. The modern smartphone, I would argue, is just a pocket-sized Dynabook. Mass-market laptops took over a decade to arrive after desktop PCs. The iPhone took about 15 years after the PowerBook. VR goggles are seemingly poised to arrive about 15 years after the iPhone.<sup id="fnr1-2023-01-26"><a href="#fn1-2023-01-26">1</a></sup></p>
+
+<p>My strong gut feeling is that mass-market all-day AR glasses won’t be feasible until 15 or so years after the first sensational VR goggles. They’ll require that much of, and that many, generational leaps forward: chip miniaturization, battery tech, display tech, and sensor tech.</p>
+
+<p>Ball, on the <a href="https://daringfireball.net/2023/01/information_apple_headset">use-case question</a> for VR/XR goggles today:</p>
+
+<blockquote>
+  <p>The examples listed above are technically impressive, meaningful,
+and better than ever. But the future was supposed to have arrived
+by <em>now</em>. In 2023, it’s difficult to say that a critical mass of
+consumers or businesses believe there’s a “killer” AR/VR/MR
+experience in market today; just familiar promises of the killer
+use cases that might be a few years away. These devices are even
+farther from substituting for the devices we currently use (and it
+doesn’t seem like they’re on precipice of mainstream adoption,
+either). There are some games with strong sales — a few titles
+have done over $100MM — but none where one might argue that, if
+only graphics were to improve by X%, large swaths of the
+population would use VR devices or those titles on a regular
+basis. I strongly prefer doing VR-based presentations to those on
+Zoom — where I spend 30-60 minutes staring at a camera as though
+no one else is there. But the experience remains fraught;
+functionality is limited; and onboarding other individuals is
+rarely worth the benefit because its participants seem to find
+these benefits both few and small. When the iPhone launched, Steve
+Jobs touted it did three distinct things — MP3 player, phone,
+internet communicator — better at launch than the single-use
+devices then on the market. The following year, the iPhone
+launched its App Store and “There’s an App for That” proliferated,
+with tens of millions doing everything they could on the device.
+The “killer app” was that it <em>already had</em> dozens of them.</p>
+</blockquote>
+
+<p>This is, quite literally, the billions-dollar question: What are the intended use cases for Apple’s headset? After you buy it, unbox it, and power it on, what are you supposed to do with it? What features and experiences will seem worth spending a thousand or even thousands of dollars? I ponder this every day and I come up short:</p>
+
+<ul>
+<li><p><strong>Games</strong> — The visual appeal of a VR headset for gaming is obvious. But what’s the input story for an Apple headset that doesn’t come with handheld controller hardware? If Apple hasn’t been able to make its TV set-top box a major gaming platform after 16 years, how likely are they to do it for a headset priced like a premium PC, not like a gaming console?</p></li>
+<li><p><strong>Movies and TV</strong> — The visual appeal of a headset for watching video content is also obvious. In theory it’d be great while sitting on a plane or train — both visually and aurally immersive, like AirPods Pro but for both your vision <em>and</em> hearing. But who’s going to think that’s worth a thousand dollars, let alone perhaps <em>thousands</em>, when you’re still travelling with and carrying-on both an iPhone and a MacBook or iPad? Now that I carry tiny AirPods Pro with me everywhere I go, I don’t pack over-the-ear headphones (like, say, AirPods Max) in my travel kit, for reasons of bulk and weight — and Apple’s purportedly imminent VR/XR headset is almost certainly heavier and larger than AirPods Max.</p></li>
+<li><p><strong>Virtual meetings and FaceTime-style calls</strong> — Supposedly meetings in virtual reality with headsets are far more compelling than via Zoom with desktop/laptop/tablet displays and speakers. For the sake of argument, let’s just concede that that’s true. But for a $1,000+ headset to be compelling for such use presents a chicken-and-egg problem: it’s only possible when all or at least most of the people in the meetings are wearing compatible headsets. A virtual meeting where everyone else is participating Zoom-style but you are wearing a VR headset is going to make you look weird. And while FaceTime is phenomenally popular and much-used for personal calls, it is an utter non-entity for business meetings. Even Apple itself uses Webex for remote work meetings. Every successful platform Apple has ever established has been fundamentally driven by <em>fun</em>. The Apple II was a fun computer. The Macintosh was even more fun. The iPod and Apple TV are entirely about entertainment. The iPhone was the first fun phone. Apple Watch is Apple’s least fun platform, but I’d argue it’s the most “fun” wristwatch ever made. I suppose it’s true that work meetings in VR are more fun than via Zoom because they’re so much more immersive, but they can’t be more immersive than meetings in real life, and in-person real-life work meetings are seldom “fun”, and typically are dreadfully un-fun.</p></li>
+<li><p><strong>Personal computing via virtual projected displays</strong> — <a href="https://www.bloomberg.com/news/articles/2023-01-23/apple-reality-pro-details-eye-hand-tracking-app-store-3d-ios-like-interface">Mark Gurman’s latest report on the headset</a> claims it “will be able to show immersive video content, serve as an external display for a connected Mac, and replicate many functions of iPhones and iPads”. But if you’re connected to a MacBook with a built-in display, why go through the hassle of carrying around and strapping on a headset? The obvious answer is that virtual displays in the headset might be far “larger” than even a 16-inch laptop display, and bigger displays are better.  But all reports suggest that Apple’s headset will offer a 4K display per eye. 4K is generally 3,840 × 2,160 pixels. But Apple’s old 27-inch iMac and current Studio Display are 5K: 5,120 × 2,880 pixels. I don’t see how a headset with only 4K per eye can possibly simulate a virtual display with the field-of-view size and can’t-perceive-the-individual-pixels “retina” quality of a Studio Display. At your desk, I can’t imagine how wearing a headset would be better than sitting in front of a Studio Display. When travelling — even if your “travel” is no farther than your couch or the local coffee shop — it doesn’t seem worthwhile to wear a headset when your MacBook already has an excellent display, even if only 13 inches. Perhaps I simply lack imagination in this regard, and the experience will be far more compelling than I think it would be. But I just don’t see people spending $1,000+ to do their computing work wearing a headset when their MacBook already has a display built in, and the ability to see and participate in the real world <em>around</em> your display is inherent and entirely natural. If you’re carrying a hardware keyboard and a mouse/trackpad, why not carry an all-in-one laptop? And if you’re not carrying a hardware keyboard and mouse/trackpad, you’re never going to be as productive as you’d be if you did.<sup id="fnr2-2023-01-26"><a href="#fn2-2023-01-26">2</a></sup> And I haven’t even mentioned compute performance or battery life.</p></li>
+</ul>
+
+<p>I can’t think of any other use cases for a VR/XR headset. I cannot believe that such a headset would be intended for wearing around as you go about daily life, augmenting the real world with virtual displays and ambient contextual information. That’s what we need AR glasses for, not VR goggles.</p>
+
+<p>As I’ve repeated in <a href="https://daringfireball.net/2023/01/information_apple_headset">my recent speculation about Apple’s headset</a>, I am <em>not</em> dismissing it in advance. Quite the opposite — I look forward to experiencing it with great anticipation. I believe Apple must have answers to the question of why we will want to buy it, carry it, and use it in addition to and alongside all the devices we already buy, carry, and use. Why else bring it to market? But damned if I can imagine those answers, given the state of chip, display, and battery technology today.</p>
+
+<div class="footnotes">
+<hr />
+<ol>
+
+<li id="fn1-2023-01-26">
+<p>One can certainly argue that there was a solid market for smartphones about 5 years before the iPhone — the heyday of BlackBerry and Symbian. Similarly, there have been popular VR headsets for sale — PlayStation VR, HTC Vive, and Facebook’s Oculus and Quest — for about 5 years. The Macintosh came about 5 years after the command-line Apple II. There were crappy but serviceable notebook computers <a href="https://www.mentalfloss.com/article/49718/what-portable-computers-were-1987">5 years before the PowerBook</a>. So the pattern I’m talking about seems to be that it takes about 10 years to <em>start</em> one of these generational leaps with clumsy primordial products, and another 5 years for Apple to hit upon and ship the paradigm that really sticks and winds up defining the entire category henceforth. It’s not that Apple is <em>seldom</em> first — they’re <em>never</em> first, because they don’t ship their prototypes.&nbsp;<a href="#fnr1-2023-01-26"  class="footnoteBackLink"  title="Jump back to footnote 1 in the text.">&#x21A9;&#xFE0E;</a></p>
+</li>
+
+<li id="fn2-2023-01-26">
+<p>Do you type as well on an iPad touchscreen as you do on a real keyboard? Do you think Apple is going to ship a virtual reality keyboard where you move your fingers in the air that works as well as even an iPad touchscreen keyboard? I do not.&nbsp;<a href="#fnr2-2023-01-26"  class="footnoteBackLink"  title="Jump back to footnote 2 in the text.">&#x21A9;&#xFE0E;︎</a></p>
+</li>
+
+</ol>
+</div>
+
+
+
+    ]]></content>
+        <title>★ The Billions-Dollar VR/AR Headset Question</title>
+    </entry>
+    <entry>
+        <title>1982 TV News Report on Arcade Video Games</title>
+        <link rel="alternate" type="text/html" href="https://m.youtube.com/watch?v=7JJywbVZvCI"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/uln"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/01/26/1982-tv-news-pacman-defender"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39659</id>
+        <published>2023-01-26T20:41:44Z</published>
+        <updated>2023-01-27T02:53:59Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>This brief report was remarkably well-done. I love everything about it, including their choice of games: Pac-Man and Defender. Includes <a href="https://daringfireball.net/misc/2023/01/midway-pacman-factory.jpeg">a great shot of Midway’s Pac-Man factory floor in Chicago</a>, where they were manufacturing 350 cabinets a day.</p>
+
+<div>
+<a  title="Permanent link to ‘1982 TV News Report on Arcade Video Games’"  href="https://daringfireball.net/linked/2023/01/26/1982-tv-news-pacman-defender">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>U.S. State Department Is Phasing Out Times New Roman, Adopting Calibri</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.washingtonpost.com/world/2023/01/18/state-department-times-new-roman-calibri/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ulm"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/01/26/state-dept-font"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39658</id>
+        <published>2023-01-26T20:29:05Z</published>
+        <updated>2023-01-26T21:00:47Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>John Hudson and Annabelle Timsit, reporting last week for The Washington Post:</p>
+
+<blockquote>
+  <p>In a cable sent Tuesday and obtained by The Washington Post,
+Secretary of State Antony Blinken directed the department to use a
+larger sans-serif font in high-level internal documents, and gave
+the department’s domestic and overseas offices until Feb. 6 to
+“adopt Calibri as the standard font for all requested papers.”</p>
+
+<p>“The Times (New Roman) are a-Changin,” read the subject line.</p>
+</blockquote>
+
+<p>It is correct for the State Department to have a house style for documents. I’m not sure what font they should use, but it wasn’t Times, and it shouldn’t be Calibri. Off the top of my head, I’d suggest Caslon — a sturdy, serious typeface <a href="https://www.mcsweeneys.net/articles/caslon-baskerville-and-franklin-revolutionary-types">that looked good 250 years ago</a>, looks good now, and should look good 250 years from now.</p>
+
+<div>
+<a  title="Permanent link to ‘U.S. State Department Is Phasing Out Times New Roman, Adopting Calibri’"  href="https://daringfireball.net/linked/2023/01/26/state-dept-font">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Facebook Reinstates Trump’s Accounts</title>
+        <link rel="alternate" type="text/html"
+              href="https://about.fb.com/news/2023/01/trump-facebook-instagram-account-suspension/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ull"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/01/26/facebook-trump"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39657</id>
+        <published>2023-01-26T19:56:30Z</published>
+        <updated>2023-01-27T02:30:32Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Nick Clegg, president of global affairs at Meta:</p>
+
+<blockquote>
+  <p>Like any other Facebook or Instagram user, Mr. Trump is subject to
+our Community Standards. In light of his violations, he now also
+faces heightened penalties for repeat offenses — penalties which
+will apply to other public figures whose accounts are reinstated
+from suspensions related to civil unrest under our <a href="https://transparency.fb.com/en-gb/enforcement/taking-action/restricting-accounts-by-public-figures/">updated
+protocol</a>. In the event that Mr. Trump posts further violating
+content, the content will be removed and he will be suspended for
+between one month and two years, depending on the severity of the
+violation.</p>
+</blockquote>
+
+<p>So no matter what Trump does, the longest they’ll suspend him is another two years? This is whistling past the graveyard. Trump wasn’t suspended because he posted something, say, <a href="https://www.politico.com/news/2023/01/25/elaine-chao-donald-trump-racist-attacks-00079478">racist</a> or untruthful or hateful. It’s not about Trump and his supporters being on the political right. The man <a href="https://www.newyorker.com/news/american-chronicles/the-devastating-new-history-of-the-january-sixth-insurrection">tried to overthrow the democratically elected government of the United States</a> while serving as President of the United States. He still insists he was correct to do so, and quite obviously intends to try again. If there were only one person in the world suspended from Facebook’s platforms, it should be Donald Trump. No one is more dangerous. No one is more deserving of being outcast as a pariah.</p>
+
+<div>
+<a  title="Permanent link to ‘Facebook Reinstates Trump’s Accounts’"  href="https://daringfireball.net/linked/2023/01/26/facebook-trump">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Twitter(rific) and Accessibility</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.forbes.com/sites/stevenaquino/2023/01/25/the-iconfactory-co-founder-gedeon-maheux-talks-accessibility-on-twitter-the-blow-of-losing-twitterrific-in-new-interview/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ulj"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/01/25/twitterrific-accessibility"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39655</id>
+        <published>2023-01-25T21:26:44Z</published>
+        <updated>2023-01-25T21:26:45Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p><a href="https://daringfireball.net/linked/2023/01/25/linea-sketch-4-2">Speaking of</a> The Iconfactory’s Ged Maheux, Steven Aquino has a brief interview with him regarding Twitterrific’s long-excellent accessibility support, and the whole Twitter shitshow:</p>
+
+<blockquote>
+  <p>For his part, Maheux told me in an recent interview conducted over
+email “accessibility should be important to any developer” but
+added The Iconfactory’s resolve to support it to the fullest
+extent possible certainly has strengthened over time. The company,
+he said, has garnered much feedback from people in the disability
+community over the years, who continually have asked for improved
+accessibility in Twitterrific. Moreover, Maheux explained it
+“really means the world to us” to have members of the community
+get in touch and thank them for all the hard work put into making
+the app as accessible as it can be to everyone.</p>
+</blockquote>
+
+<p>I’ll repeat this until I’m hoarse, but the apps that best support accessibility features for disabled people invariably are also the most usable for <em>everyone</em>. As for the future, it’s ominous:</p>
+
+<blockquote>
+  <p>The loss of Twitterrific is one The Iconfactory, and especially
+disabled Twitter users, will mourn for some time. To its credit,
+Twitter’s own first-party app used to be pretty solid in terms of
+adopting system accessibility features like Dynamic Type and
+Increase Contrast on both iOS and the Mac. Of course, that all
+changed drastically and (likely) irreparably when Musk
+inexplicably and unconscionably gutted the company’s entire
+accessibility team as part of <a href="https://techcrunch.com/2022/11/04/elon-musk-twitter-layoffs/">the layoffs</a> that occurred in early
+November.</p>
+</blockquote>
+
+<div>
+<a  title="Permanent link to ‘Twitter(rific) and Accessibility’"  href="https://daringfireball.net/linked/2023/01/25/twitterrific-accessibility">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+
+        <link rel="alternate" type="text/html" href="https://getvivid.app/?ref=daringfireball"/>
+        <link rel="shorturl" href="http://df4.us/ulk"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/feeds/sponsors/2023/01/double_the_brightness_of_your"/>
+        <id>tag:daringfireball.net,2023:/feeds/sponsors//11.39656</id>
+        <author>
+            <name>Daring Fireball Department of Commerce</name>
+        </author>
+        <published>2023-01-25T17:04:11-05:00</published>
+        <updated>2023-01-25T17:04:11-05:00</updated>
+        <content type="html" xml:base="https://daringfireball.net/feeds/sponsors/" xml:lang="en"><![CDATA[
+<p>The latest MacBook Pro has a display that can reach 1600 nits of brightness. This brightness could only be reached when watching HDR videos, so we made Vivid!</p>
+
+<p>Vivid unlocks the full brightness of your screen, system-wide. It works on the 14- and 16-inch MacBook Pro with an M1 or M2 chip, as well as the Pro Display XDR.</p>
+
+<p>Try Vivid for free and see the difference yourself. Whether you bought a new MacBook Pro this week, or if you want to give your “old” M1 Pro a cheap upgrade, get Vivid for 30% off this week!</p>
+
+<div>
+<a  title="Permanent link to ‘Double the Brightness of Your MacBook Pro With Vivid’"  href="https://daringfireball.net/feeds/sponsors/2023/01/double_the_brightness_of_your">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+        <title>[Sponsor] Double the Brightness of Your MacBook Pro With Vivid</title>
+    </entry>
+    <entry>
+
+        <link rel="alternate" type="text/html" href="https://daringfireball.net/2023/01/sponsorship_openings"/>
+        <link rel="shorturl" href="http://df4.us/ul8"/>
+        <id>tag:daringfireball.net,2023://1.39644</id>
+        <published>2023-01-23T21:39:16Z</published>
+        <updated>2023-01-23T21:39:17Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <summary type="text">Q1 openings for weekly sponsorships and The Talk Show.</summary>
+        <content type="html" xml:base="https://daringfireball.net/" xml:lang="en"><![CDATA[
+<p>The <a href="https://daringfireball.net/feeds/sponsors/">upcoming sponsorship schedule</a> at DF is a bit weird at the moment — this very week remains open, along with three of the next four, but then it’s sold out into April and even May is starting to fill up. The new year is always a bit of a weird time, advertising-budget-wise, but this year seems a bit weirder and more skittish than most.</p>
+
+<p>Weekly sponsorships have been the top source of revenue for Daring Fireball ever since I started selling them <a href="https://daringfireball.net/feeds/sponsors/archive">back in 2007</a>. They’ve succeeded, I think, because they make everyone happy. They generate good money. There’s only one sponsor per week and the sponsors are always relevant to at least some sizable portion of the DF audience, so you, the reader, are never annoyed and hopefully often intrigued by them. And, from the sponsors’ perspective, they work. My favorite thing about them is how many sponsors <a href="https://daringfireball.net/feeds/sponsors/archive">return for subsequent weeks</a> after seeing the results.</p>
+
+<p>If you’ve got a product or service you think would be of interest to DF’s audience of people obsessed with high quality and good design, <a href="mailto:sponsors@daringfireball.net?subject=Feed%20Sponsorship">get in touch</a>. And again, this very week remains open, and it should be a busy week.</p>
+
+<p>Also, this is something I seldom mention here on Daring Fireball, but <a href="http://neat.fm/">sponsoring The Talk Show</a> is a great opportunity for a lot of the same services and products that sponsor the website. I love the regular sponsors of the show — and the fact that so many of them return repeatedly speaks well to the results they see. But I would love to get some more variety into the list of sponsors for the show. I don’t sell these myself, but if you have a product or service you think would be of interest to The Talk Show’s audience, <a href="http://neat.fm/">get in touch with Elaine Pow at Neat.fm</a>. We have a few openings for the remainder of Q1.</p>
+
+
+
+    ]]></content>
+        <title>★ Sponsorship Openings at Daring Fireball and The Talk Show, Early 2023 Edition</title>
+    </entry>
+    <entry>
+
+        <link rel="alternate" type="text/html" href="https://daringfireball.net/2023/01/homepod_lives"/>
+        <link rel="shorturl" href="http://df4.us/ul7"/>
+        <id>tag:daringfireball.net,2023://1.39643</id>
+        <published>2023-01-23T21:18:22Z</published>
+        <updated>2023-01-24T06:08:23Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <summary type="text">We’ll have to wait for actual reviews of the new HomePod to drop before we know whether
+            audio quality is as good or better, and whether Siri responsiveness and accuracy are actually improved, but
+            just knowing that HomePod is back makes me happy.
+        </summary>
+        <content type="html" xml:base="https://daringfireball.net/" xml:lang="en"><![CDATA[
+<p><a href="https://www.apple.com/newsroom/2023/01/apple-introduces-the-new-homepod-with-breakthrough-sound-and-intelligence/">Finally</a>:</p>
+
+<blockquote>
+  <p>Apple today announced <a href="https://www.apple.com/homepod-2nd-generation/">HomePod</a> (2nd generation), a powerful smart
+speaker that delivers next-level acoustics in a gorgeous, iconic
+design. Packed with Apple innovations and Siri intelligence,
+HomePod offers advanced computational audio for a groundbreaking
+listening experience, including support for immersive Spatial
+Audio tracks. With convenient new ways to manage everyday tasks
+and control the smart home, users can now create smart home
+automations using Siri, get notified when a smoke or carbon
+monoxide alarm is detected in their home, and check temperature
+and humidity in a room — all hands-free.</p>
+
+<p>The new HomePod is available to order online and in the Apple
+Store app starting today, with availability beginning Friday,
+February 3.</p>
+
+<p>“Leveraging our audio expertise and innovations, the new HomePod
+delivers rich, deep bass, natural mid-range, and clear, detailed
+highs,” said Greg Joswiak, Apple’s senior vice president of
+Worldwide Marketing. “With the popularity of HomePod mini, we’ve
+seen growing interest in even more powerful acoustics achievable
+in a larger HomePod. We’re thrilled to bring the next generation
+of HomePod to customers around the world.”</p>
+</blockquote>
+
+<p>I first wish to note how deftly this announcement is written. Joz’s quote <em>alludes</em>, ever so slightly, to the fact that Apple is not merely updating the HomePod with a new model, but bringing it back after a long absence. But anyone who hasn’t been paying close attention would never notice that.</p>
+
+<p>The original HomePod had an unusual run, to say the least. It was <a href="https://www.apple.com/newsroom/2017/06/homepod-reinvents-music-in-the-home/">announced on stage at WWDC in June 2017</a>, and originally slated to go on sale — initially only in Australia, the U.K., and U.S.<sup id="fnr1-2023-01-23"><a href="#fn1-2023-01-23">1</a></sup> — in December. It didn’t actually ship until February 2018, though — the first warning sign that something was amiss. And even then, <a href="https://daringfireball.net/2018/02/homepod">as my review noted</a>, it was missing promised features like multi-room audio and stereo pairing of two HomePods together. Those features eventually came in software updates, but months after originally promised. </p>
+
+<p>Throughout its brief life, the original HomePod faced reports of rocky sales and <a href="https://www.reddit.com/r/HomePod/comments/qw4unv/og_hp_siri_decline_marco_on_latest_atp_says_what/">flaky reliability</a>.</p>
+
+<p>Apple end-of-lifed the original HomePod in March 2021, a few months after the debut of HomePod Mini, with no word on the product’s future. It seemed like the HomePod Mini was the one and only HomePod, but the name <em>Mini</em> suggested that a big HomePod might someday return. In the nearly two years since, the original HomePod did receive numerous software updates, adding significant features, which, for me at least, kept hope alive that a true replacement was forthcoming. And lo, here we are.</p>
+
+<p>The conventional wisdom was strongly on the side that the problem with the original HomePod was its price — $350 originally, <a href="https://9to5mac.com/2019/04/04/apple-homepod-price-cut/">reduced to $300 in April 2019</a>. Even I succumbed to that price-centric thinking <a href="https://daringfireball.net/linked/2021/03/12/homepod-discontinued">in my brief item noting its discontinuation</a>. I am now convinced that was wrong, though. I got it right back in 2018, when I wrote “<a href="https://daringfireball.net/2018/01/homepod_priorities">HomePod’s Priorities</a>”:</p>
+
+<blockquote>
+  <p>The difference between HomePod and Amazon Echo isn’t that they’re
+in different product categories. They’re in the same category. No
+one other than a gadget reviewer is going to put both a HomePod
+and Echo in their kitchen. They’re going to have one. It is, most
+certainly, a competition.</p>
+
+<p>The difference is in the priorities behind the devices. All of
+them are meant to be audio players and useful voice-driven
+assistants for information, communication, and smart home control.
+They’re intended to be adopted fairly widely. But it makes a huge
+difference what order those priorities are in. HomePod’s first
+priority is clearly audio quality. That’s why it costs $350.
+Amazon has placed a higher priority on price, which is one reason
+why Echo doesn’t sound great.</p>
+</blockquote>
+
+<p>The top priority for the original HomePod was its audio quality. The top priority for the new 2nd-generation HomePod remains audio quality. It’s a home theater component first, and a voice assistant second. And I continue to believe that the true HomePod experience costs $600, with a pair of them. I’ve got paired OG HomePods in both my kitchen and living room, and they sound <em>way</em> more than twice as good as a stereo pair than a single HomePod. Last week I got a hands-on experience with the new 2nd-generation HomePods, and the same thing is true: one of them sounds surprisingly good for its size and price, but two of them paired together sound <em>way</em> more than twice as good.</p>
+
+<p>I suspect that reliability was the problem with the original models — some sort of design or engineering flaw that sent Apple back to the drawing board years before they expected to need a 2nd-generation model. HomePod Minis are great for what they are, but they’re no replacement for the full-size models in terms of room-filling sound quality. There are also new features in the new HomePod: temperature and humidity sensors, and, purportedly, much-improved response times for Siri commands. Heretofore latent temperature and humidity sensors <a href="https://www.macrumors.com/2023/01/18/homepods-now-feature-temperature-humidity-sensor/">have also been unlocked in the existing HomePod Minis</a> with a software update.</p>
+
+<p>We’ll have to wait for actual reviews of the new HomePod to drop before we know whether audio quality is as good or better, and whether Siri responsiveness and accuracy are actually improved, but just knowing that HomePod is back makes me happy. It’s a “you need to hear it to get it” product.</p>
+
+<p>Here’s to hoping that Apple brings back the <a href="https://daringfireball.net/linked/2018/09/17/dickson-airpower">AirPower</a> next.</p>
+
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1-2023-01-23">
+<p>English language being the obvious connection.&nbsp;<a href="#fnr1-2023-01-23"  class="footnoteBackLink"  title="Jump back to footnote 1 in the text.">&#x21A9;&#xFE0E;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+    ]]></content>
+        <title>★ HomePod Lives</title>
+    </entry>
+</feed><!-- THE END -->

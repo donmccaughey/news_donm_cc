@@ -3,7 +3,7 @@ from feedparser import FeedParserDict, parse
 from .daring_fireball import DaringFireball
 
 
-def test_keep_entry():
+def test_keep_entry_keeps_essay():
     feed = '''
     <?xml version="1.0" encoding="utf-8"?>
     <feed xmlns="http://www.w3.org/2005/Atom">
@@ -20,7 +20,7 @@ def test_keep_entry():
     assert df.keep_entry(entry)
 
 
-def test_keep_entry_linked():
+def test_keep_entry_keeps_linked():
     feed = '''
     <?xml version="1.0" encoding="utf-8"?>
     <feed xmlns="http://www.w3.org/2005/Atom">
@@ -38,7 +38,25 @@ def test_keep_entry_linked():
     assert df.keep_entry(entry)
 
 
-def test_keep_entry_no_title():
+def test_keep_entry_rejects_linked_sponsor():
+    feed = '''
+    <?xml version="1.0" encoding="utf-8"?>
+    <feed xmlns="http://www.w3.org/2005/Atom">
+        <entry>
+            <link rel="alternate" type="text/html" href="https://workos.com/?utm_source=daringfireball&amp;utm_medium=newsletter&amp;utm_campaign=df2023"/>
+            <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/02/12/workos"/>
+            <title>WorkOS</title>
+        </entry>
+    </feed>
+    '''
+    d: FeedParserDict = parse(feed)
+    entry = d.entries[0]
+    df = DaringFireball()
+
+    assert not df.keep_entry(entry)
+
+
+def test_keep_entry_rejects_no_title():
     feed = '''
     <?xml version="1.0" encoding="utf-8"?>
     <feed xmlns="http://www.w3.org/2005/Atom">
@@ -55,7 +73,7 @@ def test_keep_entry_no_title():
     assert not df.keep_entry(entry)
 
 
-def test_keep_entry_no_links():
+def test_keep_entry_rejects_no_links():
     feed = '''
     <?xml version="1.0" encoding="utf-8"?>
     <feed xmlns="http://www.w3.org/2005/Atom">
@@ -71,7 +89,7 @@ def test_keep_entry_no_links():
     assert not df.keep_entry(entry)
 
 
-def test_keep_entry_sponsors_link():
+def test_keep_entry_rejects_sponsors_link():
     feed = '''
     <?xml version="1.0" encoding="utf-8"?>
     <feed xmlns="http://www.w3.org/2005/Atom">
@@ -89,7 +107,7 @@ def test_keep_entry_sponsors_link():
     assert not df.keep_entry(entry)
 
 
-def test_keep_entry_the_talk_show_link():
+def test_keep_entry_rejects_the_talk_show_link():
     feed = '''
     <?xml version="1.0" encoding="utf-8"?>
     <feed xmlns="http://www.w3.org/2005/Atom">
