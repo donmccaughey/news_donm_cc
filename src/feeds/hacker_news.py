@@ -1,7 +1,15 @@
 from datetime import datetime
+from urllib.parse import urlsplit
 
 from news import Item, Source, URL
 from .site import Site
+
+
+SKIP_SITES = [
+    'newscientist.com',
+    'paulgraham.com',
+    'sive.rs',
+]
 
 
 class HackerNews(Site):
@@ -15,7 +23,14 @@ class HackerNews(Site):
         return 'HackerNews()'
 
     def keep_entry(self, entry) -> bool:
-        return self.entry_has_keys(entry, ['link', 'title', 'comments'])
+        if not self.entry_has_keys(entry, ['link', 'title', 'comments']):
+            return False
+
+        url = URL(entry.link)
+        if url.identity in SKIP_SITES:
+            return False
+
+        return True
 
     def parse_entry(self, entry, now: datetime) -> Item:
         return Item(
