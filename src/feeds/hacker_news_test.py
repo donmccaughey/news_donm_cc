@@ -1,6 +1,45 @@
+from datetime import datetime, timezone
 from feedparser import FeedParserDict, parse
 
 from .hacker_news import HackerNews
+
+
+def test_parse_entry_decodes_html_entities():
+    feed = '''
+    <rss version="2.0">
+    	<channel>
+            <item>
+                <title>&amp;lt;3 Deno</title>
+                <link>https://matklad.github.io/2023/02/12/a-love-letter-to-deno.html</link>
+                <comments>https://news.ycombinator.com/item?id=34767795</comments>
+            </item>
+    	</channel>
+    </rss>
+    '''
+    d: FeedParserDict = parse(feed)
+    entry = d.entries[0]
+    hn = HackerNews()
+    item = hn.parse_entry(entry, datetime.now(timezone.utc))
+    assert item.title == '<3 Deno'
+
+
+def test_parse_entry_decodes_hex_char_entities():
+    feed = '''
+    <rss version="2.0">
+    	<channel>
+            <item>
+                <title>NameCheap&amp;#x27;s email hacked to send Metamask, DHL phishing emails</title>
+                <link>https://www.bleepingcomputer.com/news/security/namecheaps-email-hacked-to-send-metamask-dhl-phishing-emails/</link>
+                <comments>https://news.ycombinator.com/item?id=34768550</comments>
+            </item>
+    	</channel>
+    </rss>
+    '''
+    d: FeedParserDict = parse(feed)
+    entry = d.entries[0]
+    hn = HackerNews()
+    item = hn.parse_entry(entry, datetime.now(timezone.utc))
+    assert item.title == "NameCheap's email hacked to send Metamask, DHL phishing emails"
 
 
 def test_keep_entry_keeps_typical_entry():

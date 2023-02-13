@@ -1,0 +1,223 @@
+<rss version="2.0">
+    <channel>
+        <title>Hacker News</title>
+        <link>https://news.ycombinator.com/</link>
+        <description>Links for the intellectually curious, ranked by readers.</description>
+        <item>
+            <title>Multi-Account Containers</title>
+            <link>https://support.mozilla.org/en-US/kb/containers</link>
+            <pubDate>Sun, 12 Feb 2023 20:50:34 +0000</pubDate>
+            <comments>https://news.ycombinator.com/item?id=34766801</comments>
+            <description><![CDATA[<a href="https://news.ycombinator.com/item?id=34766801">Comments</a>]]></description>
+        </item>
+        <item>
+            <title>A little bit of slope makes up for a lot of y-intercept (2012)</title>
+            <link>https://gist.github.com/gtallen1187/e83ed02eac6cc8d7e185</link>
+            <pubDate>Sun, 12 Feb 2023 20:17:30 +0000</pubDate>
+            <comments>https://news.ycombinator.com/item?id=34766444</comments>
+            <description><![CDATA[<a href="https://news.ycombinator.com/item?id=34766444">Comments</a>]]></description>
+        </item>
+        <item>
+            <title>Algorithmic Trading: A Practitioner’s Guide</title>
+            <link>https://henrikwarne.com/2023/02/12/algorithmic-trading-a-practitioners-guide/</link>
+            <pubDate>Sun, 12 Feb 2023 20:44:03 +0000</pubDate>
+            <comments>https://news.ycombinator.com/item?id=34766728</comments>
+            <description><![CDATA[<a href="https://news.ycombinator.com/item?id=34766728">Comments</a>]]></description>
+        </item>
+        <item>
+            <title>NameCheap&amp;#x27;s email hacked to send Metamask, DHL phishing emails</title>
+            <link>
+                https://www.bleepingcomputer.com/news/security/namecheaps-email-hacked-to-send-metamask-dhl-phishing-emails/
+            </link>
+            <pubDate>Mon, 13 Feb 2023 00:02:23 +0000</pubDate>
+            <comments>https://news.ycombinator.com/item?id=34768550</comments>
+            <description><![CDATA[<a href="https://news.ycombinator.com/item?id=34768550">Comments</a>]]></description>
+        </item>
+        <item>
+            <title>Amiga with Titanic miniature shoot video taps is treasure-trove of VFX history</title>
+            <link>
+                https://beforesandafters.com/2023/02/10/an-old-amiga-with-titanic-miniature-shoot-video-taps-on-it-is-a-treasure-trove-of-vfx-history/
+            </link>
+            <pubDate>Sun, 12 Feb 2023 20:20:00 +0000</pubDate>
+            <comments>https://news.ycombinator.com/item?id=34766456</comments>
+            <description><![CDATA[<a href="https://news.ycombinator.com/item?id=34766456">Comments</a>]]></description>
+        </item>
+        <item>
+            <title>&amp;lt;3 Deno</title>
+            <link>https://matklad.github.io/2023/02/12/a-love-letter-to-deno.html</link>
+            <pubDate>Sun, 12 Feb 2023 22:26:41 +0000</pubDate>
+            <comments>https://news.ycombinator.com/item?id=34767795</comments>
+            <description><![CDATA[<a href="https://news.ycombinator.com/item?id=34767795">Comments</a>]]></description>
+        </item>
+        <item>
+            <title>Re-License Vaultwarden to AGPLv3</title>
+            <link>https://github.com/dani-garcia/vaultwarden/pull/2561</link>
+            <pubDate>Mon, 13 Feb 2023 00:22:21 +0000</pubDate>
+            <comments>https://news.ycombinator.com/item?id=34768668</comments>
+            <description><![CDATA[<a href="https://news.ycombinator.com/item?id=34768668">Comments</a>]]></description>
+        </item>
+        <item>
+            <title>Purego – A library for calling C functions from Go without Cgo</title>
+            <link>https://github.com/ebitengine/purego</link>
+            <pubDate>Sun, 12 Feb 2023 15:46:01 +0000</pubDate>
+            <comments>https://news.ycombinator.com/item?id=34763681</comments>
+            <description><![CDATA[<a href="https://news.ycombinator.com/item?id=34763681">Comments</a>]]></description>
+        </item>
+        <item>
+            <title>I chose OpenAI over academia: reflections on academic and industry job markets</title>
+            <link>https://rowanzellers.com/blog/rowan-job-search2/</link>
+            <pubDate>Sun, 12 Feb 2023 21:54:19 +0000</pubDate>
+            <comments>https://news.ycombinator.com/item?id=34767466</comments>
+            <description><![CDATA[<a href="https://news.ycombinator.com/item?id=34767466">Comments</a>]]></description>
+        </item>
+        <item>
+            <title>Raytheon High-Energy Laser</title>
+            <link>https://www.raytheonintelligenceandspace.com/what-we-do/advanced-tech/lasers</link>
+            <pubDate>Fri, 10 Feb 2023 21:31:40 +0000</pubDate>
+            <comments>https://news.ycombinator.com/item?id=34746162</comments>
+            <description><![CDATA[<a href="https://news.ycombinator.com/item?id=34746162">Comments</a>]]></description>
+        </item>
+        <item>
+            <title>Google stores billions of lines of code in a single repository (2016) [pdf]</title>
+            <link>https://dl.acm.org/doi/pdf/10.1145/2854146</link>
+            <pubDate>Sun, 12 Feb 2023 20:11:01 +0000</pubDate>
+            <comments>https://news.ycombinator.com/item?id=34766387</comments>
+            <description><![CDATA[<a href="https://news.ycombinator.com/item?id=34766387">Comments</a>]]></description>
+        </item>
+        <item>
+            <title>Call GPT-3 from Terminal</title>
+            <link>https://github.com/TheR1D/shell_gpt</link>
+            <pubDate>Sun, 12 Feb 2023 18:04:59 +0000</pubDate>
+            <comments>https://news.ycombinator.com/item?id=34765093</comments>
+            <description><![CDATA[<a href="https://news.ycombinator.com/item?id=34765093">Comments</a>]]></description>
+        </item>
+        <item>
+            <title>ESA: Small meteorite will safely impact atmosphere tonight over northern France</title>
+            <link>https://twitter.com/esaoperations/status/1624901825785724929</link>
+            <pubDate>Sun, 12 Feb 2023 23:29:34 +0000</pubDate>
+            <comments>https://news.ycombinator.com/item?id=34768320</comments>
+            <description><![CDATA[<a href="https://news.ycombinator.com/item?id=34768320">Comments</a>]]></description>
+        </item>
+        <item>
+            <title>Military shoots down another high-altitude object, over Lake Huron: officials</title>
+            <link>
+                https://abcnews.go.com/US/military-shoots-high-altitude-object-lake-huron-officials/story?id=97068247
+            </link>
+            <pubDate>Sun, 12 Feb 2023 21:18:29 +0000</pubDate>
+            <comments>https://news.ycombinator.com/item?id=34767096</comments>
+            <description><![CDATA[<a href="https://news.ycombinator.com/item?id=34767096">Comments</a>]]></description>
+        </item>
+        <item>
+            <title>Flow Manifest(o)</title>
+            <link>https://flowmanifest.org/</link>
+            <pubDate>Sun, 12 Feb 2023 18:36:03 +0000</pubDate>
+            <comments>https://news.ycombinator.com/item?id=34765437</comments>
+            <description><![CDATA[<a href="https://news.ycombinator.com/item?id=34765437">Comments</a>]]></description>
+        </item>
+        <item>
+            <title>Ping Your Part</title>
+            <link>https://jae.fi/blog/2023/02/05/ping-your-part!/</link>
+            <pubDate>Sat, 11 Feb 2023 07:56:31 +0000</pubDate>
+            <comments>https://news.ycombinator.com/item?id=34750488</comments>
+            <description><![CDATA[<a href="https://news.ycombinator.com/item?id=34750488">Comments</a>]]></description>
+        </item>
+        <item>
+            <title>The fundamental thermodynamic costs of communication</title>
+            <link>https://arxiv.org/abs/2302.04320</link>
+            <pubDate>Sun, 12 Feb 2023 18:32:58 +0000</pubDate>
+            <comments>https://news.ycombinator.com/item?id=34765393</comments>
+            <description><![CDATA[<a href="https://news.ycombinator.com/item?id=34765393">Comments</a>]]></description>
+        </item>
+        <item>
+            <title>Async message-oriented systems vs. REST for inter-microservice communications</title>
+            <link>https://mats3.io/background/rationale-for-mats/</link>
+            <pubDate>Sun, 12 Feb 2023 18:48:09 +0000</pubDate>
+            <comments>https://news.ycombinator.com/item?id=34765578</comments>
+            <description><![CDATA[<a href="https://news.ycombinator.com/item?id=34765578">Comments</a>]]></description>
+        </item>
+        <item>
+            <title>Designing Access Methods: The RUM Conjecture</title>
+            <link>http://muratbuffalo.blogspot.com/2023/02/designing-access-methods-rum-conjecture.html</link>
+            <pubDate>Sat, 11 Feb 2023 07:42:11 +0000</pubDate>
+            <comments>https://news.ycombinator.com/item?id=34750420</comments>
+            <description><![CDATA[<a href="https://news.ycombinator.com/item?id=34750420">Comments</a>]]></description>
+        </item>
+        <item>
+            <title>Skio (YC S20) Is Hiring</title>
+            <link>https://skio.com/careers/</link>
+            <pubDate>Sun, 12 Feb 2023 17:03:05 +0000</pubDate>
+            <comments>https://news.ycombinator.com/item?id=34764456</comments>
+            <description><![CDATA[<a href="https://news.ycombinator.com/item?id=34764456">Comments</a>]]></description>
+        </item>
+        <item>
+            <title>A tiny genetic change inflicts old age on young kids</title>
+            <link>https://www.nature.com/articles/d41586-023-00355-z</link>
+            <pubDate>Sun, 12 Feb 2023 18:44:18 +0000</pubDate>
+            <comments>https://news.ycombinator.com/item?id=34765539</comments>
+            <description><![CDATA[<a href="https://news.ycombinator.com/item?id=34765539">Comments</a>]]></description>
+        </item>
+        <item>
+            <title>Where is ChatGPT taking us? And do we want to follow?</title>
+            <link>https://hub.jhu.edu/2023/02/09/chatgpt-qa-khashabi/</link>
+            <pubDate>Sun, 12 Feb 2023 22:25:38 +0000</pubDate>
+            <comments>https://news.ycombinator.com/item?id=34767787</comments>
+            <description><![CDATA[<a href="https://news.ycombinator.com/item?id=34767787">Comments</a>]]></description>
+        </item>
+        <item>
+            <title>Siliwiz – A Semiconductor Simulator</title>
+            <link>https://app.siliwiz.com/</link>
+            <pubDate>Sat, 11 Feb 2023 13:32:32 +0000</pubDate>
+            <comments>https://news.ycombinator.com/item?id=34752173</comments>
+            <description><![CDATA[<a href="https://news.ycombinator.com/item?id=34752173">Comments</a>]]></description>
+        </item>
+        <item>
+            <title>New Hampshire on the cusp of enshrining software freedom into law</title>
+            <link>https://libreboot.org/news/usa-libre-part2.html</link>
+            <pubDate>Sun, 12 Feb 2023 17:34:47 +0000</pubDate>
+            <comments>https://news.ycombinator.com/item?id=34764805</comments>
+            <description><![CDATA[<a href="https://news.ycombinator.com/item?id=34764805">Comments</a>]]></description>
+        </item>
+        <item>
+            <title>Update on recent unsolicited phishing emails from Namecheap</title>
+            <link>https://www.namecheap.com/status-updates/archives/74848</link>
+            <pubDate>Sun, 12 Feb 2023 23:44:26 +0000</pubDate>
+            <comments>https://news.ycombinator.com/item?id=34768432</comments>
+            <description><![CDATA[<a href="https://news.ycombinator.com/item?id=34768432">Comments</a>]]></description>
+        </item>
+        <item>
+            <title>By way of introduction – EWD 1041 (1989)</title>
+            <link>https://www.cs.utexas.edu/users/EWD/transcriptions/EWD10xx/EWD1041.html</link>
+            <pubDate>Sun, 12 Feb 2023 14:16:47 +0000</pubDate>
+            <comments>https://news.ycombinator.com/item?id=34762941</comments>
+            <description><![CDATA[<a href="https://news.ycombinator.com/item?id=34762941">Comments</a>]]></description>
+        </item>
+        <item>
+            <title>Plant remains from a 15th century royal shipwreck in the Baltic Sea</title>
+            <link>https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0281010</link>
+            <pubDate>Sat, 11 Feb 2023 07:18:42 +0000</pubDate>
+            <comments>https://news.ycombinator.com/item?id=34750305</comments>
+            <description><![CDATA[<a href="https://news.ycombinator.com/item?id=34750305">Comments</a>]]></description>
+        </item>
+        <item>
+            <title>Testing the Lua kernel interpreter in NetBSD (2021)</title>
+            <link>https://www.unitedbsd.com/d/590-testing-the-lua-kernel-interpreter</link>
+            <pubDate>Sun, 12 Feb 2023 13:41:54 +0000</pubDate>
+            <comments>https://news.ycombinator.com/item?id=34762748</comments>
+            <description><![CDATA[<a href="https://news.ycombinator.com/item?id=34762748">Comments</a>]]></description>
+        </item>
+        <item>
+            <title>Communicating with Interactive Articles</title>
+            <link>https://distill.pub/2020/communicating-with-interactive-articles/</link>
+            <pubDate>Sun, 12 Feb 2023 13:32:45 +0000</pubDate>
+            <comments>https://news.ycombinator.com/item?id=34762683</comments>
+            <description><![CDATA[<a href="https://news.ycombinator.com/item?id=34762683">Comments</a>]]></description>
+        </item>
+        <item>
+            <title>Creatively Misusing TLA+</title>
+            <link>https://buttondown.email/hillelwayne/archive/creatively-misusing-tla/</link>
+            <pubDate>Sat, 11 Feb 2023 09:19:54 +0000</pubDate>
+            <comments>https://news.ycombinator.com/item?id=34750798</comments>
+            <description><![CDATA[<a href="https://news.ycombinator.com/item?id=34750798">Comments</a>]]></description>
+        </item>
+    </channel>
+</rss>

@@ -1,9 +1,8 @@
+import html
 from datetime import datetime
-from urllib.parse import urlsplit
 
 from news import Item, Source, URL
 from .site import Site
-
 
 SKIP_SITES = [
     'newscientist.com',
@@ -35,7 +34,7 @@ class HackerNews(Site):
     def parse_entry(self, entry, now: datetime) -> Item:
         return Item(
             url=URL(entry.link).clean(),
-            title=entry.title,
+            title=html.unescape(entry.title),
             source=Source(URL(entry.comments), self.initials),
             created=now,
             modified=now,
