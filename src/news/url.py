@@ -66,25 +66,24 @@ class URL:
 
 
 def clean_query(query: str) -> str:
-    try:
-        parameters = parse_qsl(
-            query, keep_blank_values=True, strict_parsing=True,
-            encoding='utf-8', errors='strict'
-        )
-        clean_parameters = [
-            parameter for parameter in parameters
-            if not is_dirty(parameter)
-        ]
-        if len(parameters) == len(clean_parameters):
-            return query
-        else:
-            return urlencode(
-                list(clean_parameters), encoding='utf-8', errors='strict'
+    if query:
+        try:
+            parameters = parse_qsl(
+                query, keep_blank_values=True, strict_parsing=True,
+                encoding='utf-8', errors='strict'
             )
-    except UnicodeError as e:
-        log.warning(f'Unicode Error parsing "{query}": {e}')
-    except ValueError as e:
-        log.warning(f'Value Error parsing "{query}": {e}')
+            clean_parameters = [
+                parameter for parameter in parameters
+                if not is_dirty(parameter)
+            ]
+            if len(parameters) != len(clean_parameters):
+                return urlencode(
+                    list(clean_parameters), encoding='utf-8', errors='strict'
+                )
+        except UnicodeError as e:
+            log.warning(f'Unicode Error parsing "{query}": {e}')
+        except ValueError as e:
+            log.warning(f'Value Error parsing "{query}": {e}')
     return query
 
 

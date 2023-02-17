@@ -1,4 +1,4 @@
-from .url import URL
+from .url import clean_query, URL
 
 
 def test_eq_and_hash():
@@ -17,6 +17,19 @@ def test_str_and_repr():
 
     assert 'https://www.example.com/foo/bar?baz#fid' == str(url)
     assert "URL('https://www.example.com/foo/bar?baz#fid')" == repr(url)
+
+
+def test_clean_query_for_clean():
+    assert clean_query('id=123&foo=bar') == 'id=123&foo=bar'
+
+
+def test_clean_query_for_dirty():
+    assert clean_query('utm_source=rss&utm_medium=rss&utm_campaign=foo') == ''
+
+
+def test_clean_query_for_empty(caplog):
+    assert clean_query('') == ''
+    assert len(caplog.messages) == 0
 
 
 def test_url_clean_for_clean_url():
