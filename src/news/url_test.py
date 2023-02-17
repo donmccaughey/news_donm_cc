@@ -156,6 +156,12 @@ def test_identity_for_old_reddit():
     assert url.identity == 'reddit.com/r/YouShouldKnow'
 
 
+def test_identity_for_source_hut():
+    url = URL('https://sr.ht/~icefox/oorandom/')
+
+    assert url.identity == 'sr.ht/~icefox'
+
+
 def test_identity_for_twitter():
     url = URL('https://twitter.com/app4soft/status/1606784614793633794')
 

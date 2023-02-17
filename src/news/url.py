@@ -57,6 +57,7 @@ class URL:
             'github.com': '/*',
             'devblogs.microsoft.com': '/*',
             'reddit.com': '/r/*',
+            'sr.ht': '/*',
             'twitter.com': '/*',
         }
         if hostname in path_map:
