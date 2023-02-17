@@ -5,9 +5,11 @@ from news import Item, Source, URL
 from .site import Site
 
 SKIP_SITES = [
+    'lynalden.com',
     'newscientist.com',
     'paulgraham.com',
     'sive.rs',
+    'theepochtimes.com',
 ]
 
 

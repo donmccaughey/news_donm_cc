@@ -2,6 +2,8 @@
 
 ## To Do
 
+- should fragments be allowed in URLs?
+  - https://sr.ht/~icefox/oorandom/#a-brief-history-of-random-numbers
 - transform `keep_entry()` method into a score and bubble the score up
 - change `News.add_new() to take (items, now) instead of news`
 - split `modified` into `items_added` and `items_removed`
