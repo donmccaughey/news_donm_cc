@@ -56,6 +56,7 @@ class URL:
         path_map = {
             'github.com': '/*',
             'devblogs.microsoft.com': '/*',
+            'mastodon.social': '/*',
             'reddit.com': '/r/*',
             'sr.ht': '/*',
             'twitter.com': '/*',
