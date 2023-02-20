@@ -17,8 +17,8 @@ class News:
                  modified: datetime | None = None,
                  lifetime: timedelta | None = LIFETIME,
                  ):
-        self.items = list()
-        self.index = set()
+        self.ordered_items = list()
+        self.unique_items = set()
 
         now = datetime.now(timezone.utc)
         self.created = created or now
@@ -30,29 +30,33 @@ class News:
             self.add_item(item, at_head=False)
 
     def __iter__(self) -> Iterable[Item]:
-        return iter(self.items)
+        return iter(self.ordered_items)
 
     def __len__(self) -> int:
-        return len(self.items)
+        return len(self.ordered_items)
 
     def __repr__(self) -> str:
         modified = ', modified' if self.is_modified else ''
-        return f'<News: {len(self.items)} items{modified}>'
+        return f'<News: {len(self.ordered_items)} items{modified}>'
 
     def __str__(self) -> str:
         modified = ' (modified)' if self.is_modified else ''
-        return f'{len(self.items)} news items{modified}'
+        return f'{len(self.ordered_items)} news items{modified}'
+
+    @property
+    def items(self) -> list[Item]:
+        return self.items
 
     def add_item(self, item: Item, *, at_head: bool):
         item.age = Age.NEW if self.modified == item.modified else Age.OLD
-        self.index.add(item)
+        self.unique_items.add(item)
         if at_head:
-            self.items.insert(0, item)
+            self.ordered_items.insert(0, item)
         else:
-            self.items.append(item)
+            self.ordered_items.append(item)
 
     def add_new(self, other: 'News') -> int:
-        new_items = [item for item in other if item not in self.index]
+        new_items = [item for item in other if item not in self.unique_items]
         if new_items:
             self.modified = other.modified
             self.is_modified = True
@@ -65,12 +69,15 @@ class News:
     def expired(self) -> datetime:
         return self.modified - self.lifetime
 
+    def remove_item_at(self, i: int):
+        self.unique_items.remove(self.ordered_items[i])
+        del self.ordered_items[i]
+
     def remove_old(self, now: datetime) -> int:
         old_count = 0
-        i = len(self.items) - 1
-        while i >= 0 and self.items[i].created <= self.expired:
-            self.index.remove(self.items[i])
-            del self.items[i]
+        i = len(self.ordered_items) - 1
+        while i >= 0 and self.ordered_items[i].created <= self.expired:
+            self.remove_item_at(i)
             self.modified = now
             self.is_modified = True
             old_count += 1
@@ -81,9 +88,9 @@ class News:
 
     def update_ages(self):
         i = 0
-        while i < len(self.items) and self.items[i].age == Age.NEW:
-            self.items[i].age = (
-                Age.NEW if self.modified == self.items[i].modified else Age.OLD
+        while i < len(self.ordered_items) and self.ordered_items[i].age == Age.NEW:
+            self.ordered_items[i].age = (
+                Age.NEW if self.modified == self.ordered_items[i].modified else Age.OLD
             )
             i += 1
 
@@ -98,7 +105,7 @@ class News:
 
     def encode(self) -> dict[str, Any]:
         return {
-            'items': [item.encode() for item in self.items],
+            'items': [item.encode() for item in self.ordered_items],
             'created': datetime.isoformat(self.created),
             'modified': datetime.isoformat(self.modified),
             'expired': datetime.isoformat(self.expired),
