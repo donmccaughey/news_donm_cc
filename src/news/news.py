@@ -1,5 +1,6 @@
 import json
 
+from collections import defaultdict
 from datetime import datetime, timedelta, timezone
 from typing import Iterable, Any
 
@@ -19,6 +20,7 @@ class News:
                  ):
         self.ordered_items = list()
         self.unique_items = set()
+        self.by_site = defaultdict(list)
 
         now = datetime.now(timezone.utc)
         self.created = created or now
@@ -45,7 +47,7 @@ class News:
 
     @property
     def items(self) -> list[Item]:
-        return self.items
+        return self.ordered_items
 
     def add_item(self, item: Item, *, at_head: bool):
         item.age = Age.NEW if self.modified == item.modified else Age.OLD
@@ -54,6 +56,7 @@ class News:
             self.ordered_items.insert(0, item)
         else:
             self.ordered_items.append(item)
+        self.by_site[item.url.identity].append(item)
 
     def add_new(self, other: 'News') -> int:
         new_items = [item for item in other if item not in self.unique_items]
@@ -70,7 +73,15 @@ class News:
         return self.modified - self.lifetime
 
     def remove_item_at(self, i: int):
-        self.unique_items.remove(self.ordered_items[i])
+        item = self.ordered_items[i]
+        identity = item.url.identity
+
+        self.unique_items.remove(item)
+
+        self.by_site[identity].remove(item)
+        if not self.by_site[identity]:
+            del self.by_site[identity]
+
         del self.ordered_items[i]
 
     def remove_old(self, now: datetime) -> int:

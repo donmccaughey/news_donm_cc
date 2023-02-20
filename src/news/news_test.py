@@ -27,6 +27,7 @@ def test_add_new():
     assert news.is_modified
     assert len(news) == 2
     assert list(news) == [item1, item2]
+    assert news.by_site == {'example.com': [item1], 'example.net': [item2]}
 
 
 def test_add_new_updates_item_age():
@@ -64,6 +65,11 @@ def test_add_new_for_all_duplicates():
     assert new_count == 0
     assert not news.is_modified
     assert len(news) == 4
+    assert news.by_site == {
+            'example.com': [item1, item4],
+            'example.net': [item2],
+            'example.org': [item3]
+        }
 
 
 def test_add_new_for_some_duplicates():
@@ -97,6 +103,7 @@ def test_remove_old_odd_1():
     assert news.is_modified
     assert news.modified == TODAY
     assert len(news) == 2
+    assert news.by_site == {'example.net': [item2], 'example.org': [item3]}
 
 
 def test_remove_old_odd_2():
@@ -108,6 +115,7 @@ def test_remove_old_odd_2():
     assert news.is_modified
     assert news.modified == TODAY
     assert len(news) == 1
+    assert news.by_site == {'example.org': [item3]}
 
 
 def test_remove_old_even_1():
@@ -119,6 +127,11 @@ def test_remove_old_even_1():
     assert news.is_modified
     assert news.modified == TODAY
     assert len(news) == 3
+    assert news.by_site == {
+            'example.net': [item2],
+            'example.org': [item3],
+            'example.com': [item4],
+        }
 
 
 def test_remove_old_even_2():
@@ -130,6 +143,10 @@ def test_remove_old_even_2():
     assert news.is_modified
     assert news.modified == TODAY
     assert len(news) == 2
+    assert news.by_site == {
+            'example.org': [item3],
+            'example.com': [item4],
+        }
 
 
 def test_remove_old_when_none_expired():
@@ -140,6 +157,11 @@ def test_remove_old_when_none_expired():
     assert old_count == 0
     assert not news.is_modified
     assert news.modified == AN_HOUR_AGO
+    assert news.by_site == {
+            'example.com': [item1],
+            'example.net': [item2],
+            'example.org': [item3],
+        }
 
 
 def test_remove_old_when_all_expired():
@@ -151,6 +173,7 @@ def test_remove_old_when_all_expired():
     assert news.is_modified
     assert news.modified == TODAY
     assert len(news) == 0
+    assert news.by_site == {}
 
 
 def test_remove_old_and_add_new_duplicate_item():
@@ -188,17 +211,17 @@ item1_old = Item(
 )
 
 item2 = Item(
-    URL('https://example.com/item2'), 'Item 2', Source(URL('https://source.com/2'), 'so'),
+    URL('https://example.net/item2'), 'Item 2', Source(URL('https://source.com/2'), 'so'),
     TWO_DAYS_AGO, TWO_DAYS_AGO
 )
 
 item2_old = Item(
-    URL('https://example.com/item2'), 'Item 2 Old', Source(URL('https://source.com/2'), 'so'),
+    URL('https://example.net/item2'), 'Item 2 Old', Source(URL('https://source.com/2'), 'so'),
     SIX_DAYS_AGO, SIX_DAYS_AGO
 )
 
 item3 = Item(
-    URL('https://example.com/item3'), 'Item 3', Source(URL('https://source.com/3'), 'so'),
+    URL('https://example.org/item3'), 'Item 3', Source(URL('https://source.com/3'), 'so'),
     YESTERDAY, YESTERDAY
 )
 
