@@ -7,6 +7,7 @@ from .daring_fireball import DaringFireball
 from .hacker_news import HackerNews
 from .site import Site
 from .streetsblog import Streetsblog
+from .tilde_news import TildeNews
 
 
 class Sites:
@@ -17,6 +18,7 @@ class Sites:
             DaringFireball(),
             HackerNews(),
             Streetsblog(),
+            TildeNews(),
         ]
 
     def __iter__(self) -> Iterable[Site]:

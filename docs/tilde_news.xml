@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>tilde news</title>
+        <description></description>
+        <link>https://tilde.news/</link>
+        <atom:link href="https://tilde.news/rss" rel="self" type="application/rss+xml"/>
+
+        <item>
+            <title>YubiKey as an SSH Certificate Authority</title>
+            <link>https://jamesog.net/2023/03/03/yubikey-as-an-ssh-certificate-authority/</link>
+            <guid isPermaLink="false">https://tilde.news/s/zzw8ko</guid>
+            <author>sevan@users.tilde.news (sevan)</author>
+            <pubDate>Fri, 03 Mar 2023 11:56:13 -0600</pubDate>
+            <comments>https://tilde.news/s/zzw8ko/yubikey_as_ssh_certificate_authority</comments>
+            <description>
+
+                &#60;p&#62;&#60;a href=&#34;https://tilde.news/s/zzw8ko/yubikey_as_ssh_certificate_authority&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+            </description>
+            <category>security</category>
+            <category>Hardware</category>
+            <category>system administration</category>
+        </item>
+        <item>
+            <title>Fix your mutt</title>
+            <link>https://people.kernel.org/monsieuricon/fix-your-mutt</link>
+            <guid isPermaLink="false">https://tilde.news/s/zjywvb</guid>
+            <author>sevan@users.tilde.news (sevan)</author>
+            <pubDate>Wed, 01 Mar 2023 12:06:24 -0600</pubDate>
+            <comments>https://tilde.news/s/zjywvb/fix_your_mutt</comments>
+            <description>
+
+                &#60;p&#62;&#60;a href=&#34;https://tilde.news/s/zjywvb/fix_your_mutt&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+            </description>
+            <category>email</category>
+            <category>Linux</category>
+            <category>open-source</category>
+        </item>
+        <item>
+            <title>GNU poke - The extensible editor for structured binary data</title>
+            <link>https://fosdem.org/2023/schedule/event/bintools_poke/</link>
+            <guid isPermaLink="false">https://tilde.news/s/9kpzgs</guid>
+            <author>sevan@users.tilde.news (sevan)</author>
+            <pubDate>Tue, 28 Feb 2023 17:23:02 -0600</pubDate>
+            <comments>https://tilde.news/s/9kpzgs/gnu_poke_extensible_editor_for</comments>
+            <description>
+
+                &#60;p&#62;&#60;a href=&#34;https://tilde.news/s/9kpzgs/gnu_poke_extensible_editor_for&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+            </description>
+            <category>data-analysis</category>
+            <category>GNU</category>
+            <category>open-source</category>
+            <category>Video</category>
+        </item>
+        <item>
+            <title>MusicBrainz Picard</title>
+            <link>https://picard.musicbrainz.org</link>
+            <guid isPermaLink="false">https://tilde.news/s/umnbd2</guid>
+            <author>sevan@users.tilde.news (sevan)</author>
+            <pubDate>Mon, 27 Feb 2023 16:58:55 -0600</pubDate>
+            <comments>https://tilde.news/s/umnbd2/musicbrainz_picard</comments>
+            <description>
+
+                &#60;p&#62;&#60;a href=&#34;https://tilde.news/s/umnbd2/musicbrainz_picard&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+            </description>
+            <category>Art</category>
+            <category>open-source</category>
+        </item>
+        <item>
+            <title>don&#39;t be one of those people</title>
+            <link>https://anelki.net/post/2023/02/linux/</link>
+            <guid isPermaLink="false">https://tilde.news/s/hzqrsf</guid>
+            <author>anelki@users.tilde.news (anelki)</author>
+            <pubDate>Mon, 27 Feb 2023 00:01:23 -0600</pubDate>
+            <comments>https://tilde.news/s/hzqrsf/don_t_be_one_those_people</comments>
+            <description>
+
+                &#60;p&#62;&#60;a href=&#34;https://tilde.news/s/hzqrsf/don_t_be_one_those_people&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+            </description>
+            <category>Linux</category>
+            <category>macos</category>
+        </item>
+        <item>
+            <title>don&#39;t be one of those people, part 2</title>
+            <link>https://anelki.net/post/2023/02/linux-2/</link>
+            <guid isPermaLink="false">https://tilde.news/s/vgrafu</guid>
+            <author>anelki@users.tilde.news (anelki)</author>
+            <pubDate>Mon, 27 Feb 2023 00:02:38 -0600</pubDate>
+            <comments>https://tilde.news/s/vgrafu/don_t_be_one_those_people_part_2</comments>
+            <description>
+
+                &#60;p&#62;&#60;a href=&#34;https://tilde.news/s/vgrafu/don_t_be_one_those_people_part_2&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+            </description>
+            <category>Linux</category>
+            <category>macos</category>
+        </item>
+        <item>
+            <title>Again on 0-based vs. 1-based indexing (2021)</title>
+            <link>https://hisham.hm/2021/01/18/again-on-0-based-vs-1-based-indexing/</link>
+            <guid isPermaLink="false">https://tilde.news/s/xiy5he</guid>
+            <author>sevan@users.tilde.news (sevan)</author>
+            <pubDate>Sun, 26 Feb 2023 10:28:42 -0600</pubDate>
+            <comments>https://tilde.news/s/xiy5he/again_on_0_based_vs_1_based_indexing_2021</comments>
+            <description>
+
+                &#60;p&#62;&#60;a href=&#34;https://tilde.news/s/xiy5he/again_on_0_based_vs_1_based_indexing_2021&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+            </description>
+            <category>History</category>
+            <category>programming</category>
+        </item>
+        <item>
+            <title>SSD Tutorial Video &#38; Slides Available (2013)</title>
+            <link>https://standalone-sysadmin.com/ssd-tutorial-video-slides-available-4a1fe38aa4ea</link>
+            <guid isPermaLink="false">https://tilde.news/s/kk8qzs</guid>
+            <author>sevan@users.tilde.news (sevan)</author>
+            <pubDate>Sun, 26 Feb 2023 06:43:23 -0600</pubDate>
+            <comments>https://tilde.news/s/kk8qzs/ssd_tutorial_video_slides_available_2013</comments>
+            <description>
+
+                &#60;p&#62;&#60;a href=&#34;https://tilde.news/s/kk8qzs/ssd_tutorial_video_slides_available_2013&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+            </description>
+            <category>Hardware</category>
+            <category>system administration</category>
+        </item>
+        <item>
+            <title>Dave&#39;s Forth Talk 2023</title>
+            <link>https://ratfactor.com/forth/forth_talk_2023.html</link>
+            <guid isPermaLink="false">https://tilde.news/s/cmaxyu</guid>
+            <author>sevan@users.tilde.news (sevan)</author>
+            <pubDate>Sat, 25 Feb 2023 12:56:12 -0600</pubDate>
+            <comments>https://tilde.news/s/cmaxyu/dave_s_forth_talk_2023</comments>
+            <description>
+
+                &#60;p&#62;&#60;a href=&#34;https://tilde.news/s/cmaxyu/dave_s_forth_talk_2023&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+            </description>
+            <category>propaganda</category>
+            <category>programming</category>
+        </item>
+        <item>
+            <title>The Fediverse is Already Dead</title>
+            <link>https://nora.codes/post/the-fediverse-is-already-dead/</link>
+            <guid isPermaLink="false">https://tilde.news/s/ebhwph</guid>
+            <author>noracodes@users.tilde.news (noracodes)</author>
+            <pubDate>Fri, 24 Feb 2023 09:27:52 -0600</pubDate>
+            <comments>https://tilde.news/s/ebhwph/fediverse_is_already_dead</comments>
+            <description>
+
+                &#60;p&#62;&#60;a href=&#34;https://tilde.news/s/ebhwph/fediverse_is_already_dead&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+            </description>
+            <category>social-media</category>
+            <category>fediverse</category>
+        </item>
+        <item>
+            <title>Anonymous Coward&#39;s &#34;V&#39;ger XT&#34; - 10MHz V30 (2009)</title>
+            <link>https://sites.google.com/site/misterzeropage/</link>
+            <guid isPermaLink="false">https://tilde.news/s/cjgtqa</guid>
+            <author>sevan@users.tilde.news (sevan)</author>
+            <pubDate>Fri, 24 Feb 2023 11:46:03 -0600</pubDate>
+            <comments>https://tilde.news/s/cjgtqa/anonymous_coward_s_v_ger_xt_10mhz_v30_2009</comments>
+            <description>
+
+                &#60;p&#62;&#60;a href=&#34;https://tilde.news/s/cjgtqa/anonymous_coward_s_v_ger_xt_10mhz_v30_2009&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+            </description>
+            <category>Hardware</category>
+        </item>
+        <item>
+            <title>Introduction to Pre-Scheme</title>
+            <link>https://fosdem.org/2023/schedule/event/prescheme/</link>
+            <guid isPermaLink="false">https://tilde.news/s/ghsbbq</guid>
+            <author>sevan@users.tilde.news (sevan)</author>
+            <pubDate>Fri, 24 Feb 2023 02:18:40 -0600</pubDate>
+            <comments>https://tilde.news/s/ghsbbq/introduction_pre_scheme</comments>
+            <description>
+
+                &#60;p&#62;&#60;a href=&#34;https://tilde.news/s/ghsbbq/introduction_pre_scheme&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+            </description>
+            <category>lisp</category>
+        </item>
+        <item>
+            <title>Q&#38;A: GB Interceptor</title>
+            <link>https://www.youtube.com/watch?v=e8fHzE0ywkw</link>
+            <guid isPermaLink="false">https://tilde.news/s/dauvza</guid>
+            <author>sevan@users.tilde.news (sevan)</author>
+            <pubDate>Tue, 21 Feb 2023 14:51:26 -0600</pubDate>
+            <comments>https://tilde.news/s/dauvza/q_gb_interceptor</comments>
+            <description>
+
+                &#60;p&#62;&#60;a href=&#34;https://tilde.news/s/dauvza/q_gb_interceptor&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+            </description>
+            <category>gaming</category>
+            <category>Hardware</category>
+            <category>Video</category>
+        </item>
+        <item>
+            <title>What is textmode art?</title>
+            <link>http://polyducks.co.uk/what-is-textmode/</link>
+            <guid isPermaLink="false">https://tilde.news/s/yyke7l</guid>
+            <author>evn@users.tilde.news (evn)</author>
+            <pubDate>Mon, 20 Feb 2023 18:33:22 -0600</pubDate>
+            <comments>https://tilde.news/s/yyke7l/what_is_textmode_art</comments>
+            <description>
+
+                &#60;p&#62;&#60;a href=&#34;https://tilde.news/s/yyke7l/what_is_textmode_art&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+            </description>
+            <category>Art</category>
+            <category>text</category>
+        </item>
+        <item>
+            <title>jmcbray/cosmarmot: A proxy server that translates from gemini servers to gopher clients</title>
+            <link>https://git.carcosa.net/jmcbray/cosmarmot/</link>
+            <guid isPermaLink="false">https://tilde.news/s/xv4v5v</guid>
+            <author>sevan@users.tilde.news (sevan)</author>
+            <pubDate>Sun, 19 Feb 2023 07:11:03 -0600</pubDate>
+            <comments>https://tilde.news/s/xv4v5v/jmcbray_cosmarmot_proxy_server</comments>
+            <description>
+
+                &#60;p&#62;&#60;a href=&#34;https://tilde.news/s/xv4v5v/jmcbray_cosmarmot_proxy_server&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+            </description>
+            <category>gopher</category>
+            <category>gemini</category>
+            <category>lisp</category>
+        </item>
+        <item>
+            <title>osresearch/pixel-wrangler: HDMI to whatever adapter</title>
+            <link>https://github.com/osresearch/pixel-wrangler</link>
+            <guid isPermaLink="false">https://tilde.news/s/znzmtd</guid>
+            <author>sevan@users.tilde.news (sevan)</author>
+            <pubDate>Sat, 18 Feb 2023 06:33:55 -0600</pubDate>
+            <comments>https://tilde.news/s/znzmtd/osresearch_pixel_wrangler_hdmi_whatever</comments>
+            <description>
+
+                &#60;p&#62;&#60;a href=&#34;https://tilde.news/s/znzmtd/osresearch_pixel_wrangler_hdmi_whatever&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+            </description>
+            <category>Hardware</category>
+        </item>
+        <item>
+            <title>&#39;Time traveller&#39; in wild prediction 15,000 to fall into Valentine&#39;s Day portal</title>
+            <link>https://www.mirror.co.uk/news/us-news/time-traveller-baffling-prediction-15000-29205637</link>
+            <guid isPermaLink="false">https://tilde.news/s/oo2ndi</guid>
+            <author>alexlehm@users.tilde.news (alexlehm)</author>
+            <pubDate>Sat, 18 Feb 2023 06:39:39 -0600</pubDate>
+            <comments>https://tilde.news/s/oo2ndi/time_traveller_wild_prediction_15_000</comments>
+            <description>
+                &#60;p&#62;And again nothing happened&#60;/p&#62;&#10;
+                &#60;p&#62;&#60;a href=&#34;https://tilde.news/s/oo2ndi/time_traveller_wild_prediction_15_000&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+            </description>
+            <category>History</category>
+        </item>
+        <item>
+            <title>My site is getting url spam via the piwik image pixels</title>
+            <link>https://alexlehm.bearblog.dev/my-site-is-getting-url-spam-via-the-piwik-image-pixels/</link>
+            <guid isPermaLink="false">https://tilde.news/s/va4ptd</guid>
+            <author>alexlehm@users.tilde.news (alexlehm)</author>
+            <pubDate>Fri, 17 Feb 2023 18:25:52 -0600</pubDate>
+            <comments>https://tilde.news/s/va4ptd/my_site_is_getting_url_spam_via_piwik_image</comments>
+            <description>
+
+                &#60;p&#62;&#60;a href=&#34;https://tilde.news/s/va4ptd/my_site_is_getting_url_spam_via_piwik_image&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+            </description>
+            <category>web</category>
+        </item>
+        <item>
+            <title>Moog 960 sequencer (clone) demo</title>
+            <link>https://www.youtube.com/watch?v=vF4Nx60ln5w</link>
+            <guid isPermaLink="false">https://tilde.news/s/ksf8hn</guid>
+            <author>sevan@users.tilde.news (sevan)</author>
+            <pubDate>Thu, 16 Feb 2023 11:48:30 -0600</pubDate>
+            <comments>https://tilde.news/s/ksf8hn/moog_960_sequencer_clone_demo</comments>
+            <description>
+
+                &#60;p&#62;&#60;a href=&#34;https://tilde.news/s/ksf8hn/moog_960_sequencer_clone_demo&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+            </description>
+            <category>Hardware</category>
+            <category>Art</category>
+            <category>Video</category>
+        </item>
+        <item>
+            <title>RJ45 jumper box</title>
+            <link>https://osmocom.org/projects/misc-hardware/wiki/RJ45_jumper_box</link>
+            <guid isPermaLink="false">https://tilde.news/s/4yvfju</guid>
+            <author>sevan@users.tilde.news (sevan)</author>
+            <pubDate>Tue, 14 Feb 2023 12:20:23 -0600</pubDate>
+            <comments>https://tilde.news/s/4yvfju/rj45_jumper_box</comments>
+            <description>
+
+                &#60;p&#62;&#60;a href=&#34;https://tilde.news/s/4yvfju/rj45_jumper_box&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+            </description>
+            <category>Hardware</category>
+        </item>
+        <item>
+            <title>Donald Hoffman: Do we see reality as it is?</title>
+            <link>https://www.ted.com/talks/donald_hoffman_do_we_see_reality_as_it_is</link>
+            <guid isPermaLink="false">https://tilde.news/s/tyj6ke</guid>
+            <author>akkartik@users.tilde.news (akkartik)</author>
+            <pubDate>Mon, 13 Feb 2023 00:50:31 -0600</pubDate>
+            <comments>https://tilde.news/s/tyj6ke/donald_hoffman_do_we_see_reality_as_it_is</comments>
+            <description>
+
+                &#60;p&#62;&#60;a href=&#34;https://tilde.news/s/tyj6ke/donald_hoffman_do_we_see_reality_as_it_is&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+            </description>
+            <category>science</category>
+            <category>Video</category>
+        </item>
+        <item>
+            <title>Oral History of Ken Thompson</title>
+            <link>https://www.youtube.com/watch?v=wqI7MrtxPnk</link>
+            <guid isPermaLink="false">https://tilde.news/s/og6qdw</guid>
+            <author>sevan@users.tilde.news (sevan)</author>
+            <pubDate>Thu, 09 Feb 2023 20:34:16 -0600</pubDate>
+            <comments>https://tilde.news/s/og6qdw/oral_history_ken_thompson</comments>
+            <description>
+
+                &#60;p&#62;&#60;a href=&#34;https://tilde.news/s/og6qdw/oral_history_ken_thompson&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+            </description>
+            <category>gaming</category>
+            <category>History</category>
+        </item>
+        <item>
+            <title>Gix: Literate Programming with Emacs org-mode &#38; GNU/Guix (2022)</title>
+            <link>https://simfish.dev/projects/gix/</link>
+            <guid isPermaLink="false">https://tilde.news/s/qkdi69</guid>
+            <author>sevan@users.tilde.news (sevan)</author>
+            <pubDate>Thu, 09 Feb 2023 18:52:07 -0600</pubDate>
+            <comments>https://tilde.news/s/qkdi69/gix_literate_programming_with_emacs_org</comments>
+            <description>
+
+                &#60;p&#62;&#60;a href=&#34;https://tilde.news/s/qkdi69/gix_literate_programming_with_emacs_org&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+            </description>
+            <category>emacs</category>
+            <category>Linux</category>
+        </item>
+        <item>
+            <title>In Paris demo, Google scrambles to counter ChatGPT but ends up embarrassing itself</title>
+            <link>
+                https://arstechnica.com/information-technology/2023/02/in-paris-demo-google-scrambles-to-counter-chatgpt-but-ends-up-embarrassing-itself/
+            </link>
+            <guid isPermaLink="false">https://tilde.news/s/eopcjb</guid>
+            <author>x51@users.tilde.news (x51)</author>
+            <pubDate>Thu, 09 Feb 2023 06:07:17 -0600</pubDate>
+            <comments>https://tilde.news/s/eopcjb/paris_demo_google_scrambles_counter</comments>
+            <description>
+
+                &#60;p&#62;&#60;a href=&#34;https://tilde.news/s/eopcjb/paris_demo_google_scrambles_counter&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+            </description>
+            <category>artificial-intelligence</category>
+            <category>machine-learning</category>
+            <category>microsoft</category>
+            <category>search engines</category>
+            <category>Google</category>
+        </item>
+        <item>
+            <title>Shift Happens: A book about keyboards</title>
+            <link>https://shifthappens.site/</link>
+            <guid isPermaLink="false">https://tilde.news/s/83yvyq</guid>
+            <author>sevan@users.tilde.news (sevan)</author>
+            <pubDate>Mon, 06 Feb 2023 22:50:05 -0600</pubDate>
+            <comments>https://tilde.news/s/83yvyq/shift_happens_book_about_keyboards</comments>
+            <description>
+
+                &#60;p&#62;&#60;a href=&#34;https://tilde.news/s/83yvyq/shift_happens_book_about_keyboards&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+            </description>
+            <category>Hardware</category>
+            <category>Art</category>
+            <category>text</category>
+        </item>
+    </channel>
+</rss>
