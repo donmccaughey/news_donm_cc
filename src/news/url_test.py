@@ -130,6 +130,16 @@ def test_identity_for_github():
     assert url.identity == 'github.com/timvisee'
 
 
+def test_identity_for_medium():
+    url = URL('https://felipepepe.medium.com/before-genshin-impact-a-brief-history-of-chinese-rpgs-bc962fc29908')
+
+    assert url.identity == 'felipepepe.medium.com'
+
+    url = URL('https://medium.com/@ElizAyer/meetings-are-the-work-9e429dde6aa3')
+
+    assert url.identity == 'medium.com/@ElizAyer'
+
+
 def test_identity_for_microsoft_devblogs():
     url = URL('https://devblogs.microsoft.com/oldnewthing/20221216-00/?p=107598')
 
@@ -174,6 +184,12 @@ def test_identity_for_source_hut():
     url = URL('https://sr.ht/~icefox/oorandom/')
 
     assert url.identity == 'sr.ht/~icefox'
+
+
+def test_identity_for_treehouse():
+    url = URL('https://social.treehouse.systems/@marcan/109917995005981968')
+
+    assert url.identity == 'social.treehouse.systems/@marcan'
 
 
 def test_identity_for_twitter():

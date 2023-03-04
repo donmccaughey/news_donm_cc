@@ -58,7 +58,9 @@ class URL:
             'github.com': '/*',
             'devblogs.microsoft.com': '/*',
             'mastodon.social': '/*',
+            'medium.com': '/*',
             'reddit.com': '/r/*',
+            'social.treehouse.systems': '/*',
             'sr.ht': '/*',
             'twitter.com': '/*',
         }
