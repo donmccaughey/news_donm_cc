@@ -42,11 +42,12 @@ class URL:
         hostname = url_parts.hostname
         path = url_parts.path
 
-        subdomains = ['blog', 'blogs', 'community', 'docs', 'en', 'www']
+        subdomains = ['blog', 'blogs', 'community', 'docs', 'en', 'web', 'www', 'www2']
         hostname = remove_subdomain(hostname, subdomains)
 
         hostname_map = {
             'lite.cnn.com': 'cnn.com',
+            'gist.github.com': 'github.com',
             'text.npr.org': 'npr.org',
             'old.reddit.com': 'reddit.com',
         }

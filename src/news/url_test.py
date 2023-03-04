@@ -72,6 +72,12 @@ def test_identity_for_bare_url():
     assert url.identity == 'fivethirtyeight.com'
 
 
+def test_identity_for_web_url():
+    url = URL('https://web.archive.org')
+
+    assert url.identity == 'archive.org'
+
+
 def test_identity_for_www_url():
     url = URL('https://www.nature.com/articles/srep00487')
 
@@ -80,6 +86,10 @@ def test_identity_for_www_url():
     url = URL('https://www.com')
 
     assert url.identity == 'www.com'
+
+    url = URL('https://www2.lib.uchicago.edu/keith/emacs/')
+
+    assert url.identity == 'lib.uchicago.edu'
 
 
 def test_identity_for_blog_url():
@@ -114,6 +124,10 @@ def test_identity_for_github():
     url = URL('https://github.com')
 
     assert url.identity == 'github.com'
+
+    url = URL('https://gist.github.com/timvisee/fcda9bbdff88d45cc9061606b4b923ca')
+
+    assert url.identity == 'github.com/timvisee'
 
 
 def test_identity_for_microsoft_devblogs():
