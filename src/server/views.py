@@ -2,6 +2,7 @@ from flask import abort, make_response, redirect, render_template, request, Resp
 
 from utility import Cache
 from .news_page import NewsPage
+from .site_page import SitePage
 
 
 def news_page(news_cache: Cache, version: str, page_number: int) -> Response:
@@ -29,6 +30,20 @@ def numbered_page(news_cache: Cache, version: str, page_number: int) -> Response
     if page_number == 1:
         return redirect('/', 308)
     return news_page(news_cache, version, page_number)
+
+
+def site_page(news_cache: Cache, version: str, identity: str) -> Response:
+    site = SitePage(news_cache, version, identity)
+    html = render_template('site.html', news=site)
+    response = make_response(html)
+
+    response.add_etag()
+    response.last_modified = site.modified
+
+    response.make_conditional(request)
+    add_cache_control(response)
+
+    return response
 
 
 def add_cache_control(response: Response):

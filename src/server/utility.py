@@ -1,4 +1,5 @@
 from pathlib import Path
+from typing import Collection
 
 
 def get_version() -> str:
@@ -12,3 +13,9 @@ def get_version() -> str:
         except OSError:
             pass
     return 'unknown'
+
+
+def count_phrase(collection: Collection, word: str) -> str:
+    count = len(collection)
+    phrase = f'{count} {word}'
+    return phrase if count == 1 else phrase + 's'

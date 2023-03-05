@@ -8,7 +8,7 @@ from utility import Cache, iso, utc
 from .error_handlers import not_found
 from .template_filters import age, href
 from .utility import get_version
-from .views import first_page, numbered_page
+from .views import first_page, numbered_page, site_page
 
 
 def create_app() -> Flask:
@@ -29,6 +29,11 @@ def create_app() -> Flask:
     app.add_url_rule(
         '/<int:page_number>', 'numbered_page',
         partial(numbered_page, news_cache, version),
+        methods=['GET']
+    )
+    app.add_url_rule(
+        '/site/<path:identity>', 'site_page',
+        partial(site_page, news_cache, version),
         methods=['GET']
     )
 

@@ -17,6 +17,8 @@ class NewsPage:
             or (self.page.number == 1 and self.page.count == 0)
         )
 
+        self.counter_reset_item = self.page.begin
+
         # navigation URLs
         self.first_url = './' if self.page.number > 1 else None
 

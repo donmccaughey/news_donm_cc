@@ -1,0 +1,24 @@
+{% extends 'page.html' %}
+{% block title %}News from {{news.identity}}{% endblock %}
+{% block header %}
+    <h1>News from {{news.identity}}</h1>
+    {{news.count_phrase}}
+{% endblock %}
+{% block main %}
+    <ol>
+    {% for item in news %}
+        <li{{item|age}}>
+            <a href={{item.url|href|safe}} rel=noreferrer target=_blank>{{item.title}}</a>
+            <p>
+                {{item.url.identity}}
+                {% if item.source.url != item.url %}
+                —
+                <a href={{item.source.url|href|safe}} rel=noreferrer target=_blank>{{item.source.site_id}}</a>
+                {% endif %}
+                —
+                <time datetime={{item.created|iso}}>{{item.created|utc}}</time>
+    {% endfor %}
+    </ol>
+{% endblock %}
+{% block footer %}
+{% endblock %}
