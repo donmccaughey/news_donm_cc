@@ -101,11 +101,15 @@ source_files := \
 	src/query.py \
 	src/feeds/__init__.py \
 	src/feeds/acoup.py \
+	src/feeds/charity_wtf.py \
+	src/feeds/cmake_tags.py \
 	src/feeds/daring_fireball.py \
 	src/feeds/hacker_news.py \
+	src/feeds/rust_blog.py \
 	src/feeds/site.py \
 	src/feeds/sites.py \
 	src/feeds/streetsblog.py \
+	src/feeds/tilde_news.py \
 	src/health/__init__.py \
 	src/health/health.py \
 	src/health/jobs.py \
@@ -117,20 +121,25 @@ source_files := \
 	src/news/source.py \
 	src/news/store.py \
 	src/news/url.py \
-	src/utility/cache.py \
-	src/utility/formats.py \
-	src/utility/page.py \
 	src/server/__init__.py \
 	src/server/create_app.py \
 	src/server/error_handlers.py \
 	src/server/news_page.py \
+	src/server/site_page.py \
 	src/server/template_filters.py \
 	src/server/utility.py \
 	src/server/views.py \
-	src/server/templates/news.html
+	src/server/templates/news.html \
+	src/server/templates/page.html \
+	src/server/templates/site.html \
+	src/utility/__init__.py \
+	src/utility/cache.py \
+	src/utility/formats.py \
+	src/utility/page.py
 
 test_files := \
 	src/feeds/daring_fireball_test.py \
+	src/feeds/hacker_news_test.py \
 	src/feeds/site_test.py \
 	src/feeds/streetsblog_test.py \
 	src/health/health_test.py \
