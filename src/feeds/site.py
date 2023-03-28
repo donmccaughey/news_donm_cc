@@ -32,6 +32,9 @@ class Site:
             modified=self.last_modified,
             agent='News +https://news.donm.cc',
         )
+        if 'status' not in d:
+            log.warning(f'{self.name} failed without status code')
+            return News()
         if d.status in [200, 302]:
             if 'etag' in d:
                 self.etag = d.etag
