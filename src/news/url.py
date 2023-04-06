@@ -57,9 +57,11 @@ class URL:
         path_map = {
             'github.com': '/*',
             'devblogs.microsoft.com': '/*',
+            'flipboard.social': '/*',
             'mastodon.social': '/*',
             'medium.com': '/*',
             'reddit.com': '/r/*',
+            'social.network.europa.eu': '/*',
             'social.treehouse.systems': '/*',
             'sr.ht': '/*',
             'twitter.com': '/*',

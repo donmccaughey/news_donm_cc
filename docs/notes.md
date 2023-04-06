@@ -2,6 +2,15 @@
 
 ## To Do
 
+- in `URL.identity` handle mastodon URLs generically
+  - https://social.afront.org/@pbarker/109993372907209176
+  - https://social.panic.com/@cabel/109977366338856750
+- other `URL.identity` special handling:
+  - https://people.kernel.org/monsieuricon/fix-your-mutt
+  - https://sites.google.com/site/misterzeropage/
+  - https://web.archive.org/web/20150315073817/http://www.xprogramming.com/testfram.htm
+- get YouTube user from YouTube URL
+  - youtube.com/@kevinsyoza from https://www.youtube.com/watch?v=LGUR3YmYA8s
 - should fragments be allowed in URLs?
   - https://sr.ht/~icefox/oorandom/#a-brief-history-of-random-numbers
 - transform `keep_entry()` method into a score and bubble the score up

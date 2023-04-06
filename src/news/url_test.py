@@ -104,6 +104,18 @@ def test_identity_for_cnn():
     assert url.identity == 'cnn.com'
 
 
+def test_identity_for_europa():
+    url = URL('https://social.network.europa.eu/@EU_Commission/110140022257601348')
+
+    assert url.identity == 'social.network.europa.eu/@EU_Commission'
+
+
+def test_identity_for_flipboard():
+    url = URL('https://flipboard.social/@mike/110137461654913391')
+
+    assert url.identity == 'flipboard.social/@mike'
+
+
 def test_identity_for_github():
     url = URL('https://github.com/electronicarts/EAStdC/blob/master/include/EAStdC/EABitTricks.h')
 
