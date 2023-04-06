@@ -5,6 +5,7 @@ from news import Item, Source, URL
 from .site import Site
 
 SKIP_SITES = [
+    'english.elpais.com',
     'laphamsquarterly.org',
     'lynalden.com',
     'newscientist.com',

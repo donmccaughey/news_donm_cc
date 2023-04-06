@@ -61,6 +61,25 @@ def test_keep_entry_keeps_typical_entry():
     assert hn.keep_entry(entry)
 
 
+def test_keep_entry_rejects_elpais():
+    feed = '''
+    <rss version="2.0">
+    	<channel>
+            <item>
+                <title>If Parrots Can Talk, Why Can’t Monkeys?</title>
+                <link>https://english.elpais.com/science-tech/2023-01-10/if-parrots-can-talk-why-cant-monkeys.html</link>
+                <comments>https://news.ycombinator.com/item?id=35431466</comments>
+            </item>
+    	</channel>
+    </rss>
+    '''
+    d: FeedParserDict = parse(feed)
+    entry = d.entries[0]
+    hn = HackerNews()
+
+    assert not hn.keep_entry(entry)
+
+
 def test_keep_entry_rejects_newscientist():
     feed = '''
     <rss version="2.0">
