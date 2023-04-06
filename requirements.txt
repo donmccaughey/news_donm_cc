@@ -1,4 +1,4 @@
-boto3==1.26.41
+boto3==1.26.107
 feedparser == 6.0.10
-Flask == 2.2.2
+Flask==2.2.3
 gunicorn == 20.1.0
