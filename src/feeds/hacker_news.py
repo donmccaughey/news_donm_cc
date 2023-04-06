@@ -7,6 +7,7 @@ from .site import Site
 SKIP_SITES = [
     'english.elpais.com',
     'laphamsquarterly.org',
+    'lareviewofbooks.org',
     'lynalden.com',
     'newscientist.com',
     'paulgraham.com',
