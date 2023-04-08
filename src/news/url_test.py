@@ -1,3 +1,4 @@
+from pytest import mark
 from .url import clean_query, URL
 
 
@@ -66,145 +67,80 @@ def test_url_clean_for_fragment():
     assert url == URL('https://example.com')
 
 
-def test_identity_for_bare_url():
-    url = URL('https://fivethirtyeight.com/features/lionel-messi-is-impossible/')
+IDENTITY_TESTS = [
+    # bare domain is untouched
+    ('fivethirtyeight.com', 'https://fivethirtyeight.com/features/lionel-messi-is-impossible/'),
 
-    assert url.identity == 'fivethirtyeight.com'
+    # less than three domain parts is unchanged
+    ('www.com', 'https://www.com'),
 
 
-def test_identity_for_web_url():
-    url = URL('https://web.archive.org')
+    # -- standard top level domains are removed
 
-    assert url.identity == 'archive.org'
+    # `blog` is removed
+    ('lastpass.com', 'https://blog.lastpass.com/2022/12/notice-of-recent-security-incident/'),
 
+    # `web` is removed
+    ('archive.org', 'https://web.archive.org'),
 
-def test_identity_for_www_url():
-    url = URL('https://www.nature.com/articles/srep00487')
+    # `www` is removed
+    ('nature.com', 'https://www.nature.com/articles/srep00487'),
 
-    assert url.identity == 'nature.com'
+    # `www2` domain is removed
+    ('lib.uchicago.edu', 'https://www2.lib.uchicago.edu/keith/emacs'),
 
-    url = URL('https://www.com')
 
-    assert url.identity == 'www.com'
+    # -- `/<user>/<...>` paths
 
-    url = URL('https://www2.lib.uchicago.edu/keith/emacs/')
+    ('gitlab.com/cznic', 'https://gitlab.com/cznic/sqlite'),
+    ('devblogs.microsoft.com/oldnewthing', 'https://devblogs.microsoft.com/oldnewthing/20221216-00/?p=107598'),
+    ('sr.ht/~icefox', 'https://sr.ht/~icefox/oorandom/'),
+    ('twitter.com/app4soft', 'https://twitter.com/app4soft/status/1606784614793633794'),
 
-    assert url.identity == 'lib.uchicago.edu'
+    # -- `/@<user>/<...>` paths
 
+    ('social.network.europa.eu/@EU_Commission', 'https://social.network.europa.eu/@EU_Commission/110140022257601348'),
+    ('flipboard.social/@mike', 'https://flipboard.social/@mike/110137461654913391'),
+    ('social.treehouse.systems/@marcan', 'https://social.treehouse.systems/@marcan/109917995005981968'),
 
-def test_identity_for_blog_url():
-    url = URL('https://blog.lastpass.com/2022/12/notice-of-recent-security-incident/')
 
-    assert url.identity == 'lastpass.com'
+    # -- github
+    ('github.com', 'https://github.com'),
+    ('github.com/electronicarts', 'https://github.com/electronicarts/EAStdC/blob/master/include/EAStdC/EABitTricks.h'),
+    ('github.com/Immediate-Mode-UI', 'https://github.com/Immediate-Mode-UI'),
+    ('github.com/Immediate-Mode-UI', 'https://github.com/Immediate-Mode-UI/Nuklear'),
+    ('github.com/microsoft', 'https://github.com/microsoft/WSA/discussions/167'),
+    ('github.com/timvisee', 'https://gist.github.com/timvisee/fcda9bbdff88d45cc9061606b4b923ca'),
 
 
-def test_identity_for_cnn():
-    url = URL('https://lite.cnn.com/en/article/h_83938cfff92036cf0e1b55ced9febc77')
+    # -- medium
 
-    assert url.identity == 'cnn.com'
+    ('felipepepe.medium.com', 'https://felipepepe.medium.com/before-genshin-impact-a-brief-history-of-chinese-rpgs-bc962fc29908'),
+    ('medium.com/@ElizAyer', 'https://medium.com/@ElizAyer/meetings-are-the-work-9e429dde6aa3'),
 
 
-def test_identity_for_europa():
-    url = URL('https://social.network.europa.eu/@EU_Commission/110140022257601348')
+    # -- reddit
 
-    assert url.identity == 'social.network.europa.eu/@EU_Commission'
+    ('reddit.com/r/printSF', 'https://www.reddit.com/r/printSF'),
+    ('reddit.com/r/printSF', 'https://www.reddit.com/r/printSF/comments/zuit3f/best_place_to_start_reading_isaac_asimov/'),
+    ('reddit.com', 'https://www.reddit.com'),
+    ('reddit.com', 'https://www.reddit.com/rules/'),
+    ('reddit.com', 'https://www.reddit.com/wiki/reddiquette/'),
 
+    # `old.reddit.com`
+    ('reddit.com/r/YouShouldKnow', 'https://old.reddit.com/r/YouShouldKnow/comments/zl8ko3/ysk_apple_music_deletes_your_original_songs_and/'),
 
-def test_identity_for_flipboard():
-    url = URL('https://flipboard.social/@mike/110137461654913391')
 
-    assert url.identity == 'flipboard.social/@mike'
+    # -- special cases
 
+    # `lite.cnn.com`
+    ('cnn.com', 'https://lite.cnn.com/en/article/h_83938cfff92036cf0e1b55ced9febc77'),
 
-def test_identity_for_github():
-    url = URL('https://github.com/electronicarts/EAStdC/blob/master/include/EAStdC/EABitTricks.h')
+    # `text.npr.org'
+    ('npr.org', 'https://text.npr.org/1144331954'),
+]
 
-    assert url.identity == 'github.com/electronicarts'
 
-    url = URL('https://github.com/microsoft/WSA/discussions/167')
-
-    assert url.identity == 'github.com/microsoft'
-
-    url = URL('https://github.com/Immediate-Mode-UI/Nuklear')
-
-    assert url.identity == 'github.com/Immediate-Mode-UI'
-
-    url = URL('https://github.com/Immediate-Mode-UI')
-
-    assert url.identity == 'github.com/Immediate-Mode-UI'
-
-    url = URL('https://github.com')
-
-    assert url.identity == 'github.com'
-
-    url = URL('https://gist.github.com/timvisee/fcda9bbdff88d45cc9061606b4b923ca')
-
-    assert url.identity == 'github.com/timvisee'
-
-
-def test_identity_for_medium():
-    url = URL('https://felipepepe.medium.com/before-genshin-impact-a-brief-history-of-chinese-rpgs-bc962fc29908')
-
-    assert url.identity == 'felipepepe.medium.com'
-
-    url = URL('https://medium.com/@ElizAyer/meetings-are-the-work-9e429dde6aa3')
-
-    assert url.identity == 'medium.com/@ElizAyer'
-
-
-def test_identity_for_microsoft_devblogs():
-    url = URL('https://devblogs.microsoft.com/oldnewthing/20221216-00/?p=107598')
-
-    assert url.identity == 'devblogs.microsoft.com/oldnewthing'
-
-
-def test_identity_for_npr():
-    url = URL('https://text.npr.org/1144331954')
-
-    assert url.identity == 'npr.org'
-
-
-def test_identity_for_reddit():
-    url = URL('https://www.reddit.com/r/printSF/comments/zuit3f/best_place_to_start_reading_isaac_asimov/')
-
-    assert url.identity == 'reddit.com/r/printSF'
-
-    url = URL('https://www.reddit.com/r/printSF')
-
-    assert url.identity == 'reddit.com/r/printSF'
-
-    url = URL('https://www.reddit.com/wiki/reddiquette/')
-
-    assert url.identity == 'reddit.com'
-
-    url = URL('https://www.reddit.com/rules/')
-
-    assert url.identity == 'reddit.com'
-
-    url = URL('https://www.reddit.com')
-
-    assert url.identity == 'reddit.com'
-
-
-def test_identity_for_old_reddit():
-    url = URL('https://old.reddit.com/r/YouShouldKnow/comments/zl8ko3/ysk_apple_music_deletes_your_original_songs_and/')
-
-    assert url.identity == 'reddit.com/r/YouShouldKnow'
-
-
-def test_identity_for_source_hut():
-    url = URL('https://sr.ht/~icefox/oorandom/')
-
-    assert url.identity == 'sr.ht/~icefox'
-
-
-def test_identity_for_treehouse():
-    url = URL('https://social.treehouse.systems/@marcan/109917995005981968')
-
-    assert url.identity == 'social.treehouse.systems/@marcan'
-
-
-def test_identity_for_twitter():
-    url = URL('https://twitter.com/app4soft/status/1606784614793633794')
-
-    assert url.identity == 'twitter.com/app4soft'
+@mark.parametrize('identity, url', IDENTITY_TESTS)
+def test_identity(identity, url):
+    assert URL(url).identity == identity

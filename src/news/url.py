@@ -56,6 +56,7 @@ class URL:
 
         path_map = {
             'github.com': '/*',
+            'gitlab.com': '/*',
             'devblogs.microsoft.com': '/*',
             'flipboard.social': '/*',
             'mastodon.social': '/*',
