@@ -101,9 +101,10 @@ IDENTITY_TESTS = [
 
     # -- `/@<user>/<...>` paths
 
+    ('flipboard.social/@mike', 'https://flipboard.social/@mike/110137461654913391'),
+    ('floss.social/@ademalsasa', 'https://floss.social/@ademalsasa/109597861116785251'),
     ('mastodon.social/@mastodonusercount', 'https://mastodon.social/@mastodonusercount/110051957865629817'),
     ('social.network.europa.eu/@EU_Commission', 'https://social.network.europa.eu/@EU_Commission/110140022257601348'),
-    ('flipboard.social/@mike', 'https://flipboard.social/@mike/110137461654913391'),
     ('social.treehouse.systems/@marcan', 'https://social.treehouse.systems/@marcan/109917995005981968'),
 
 

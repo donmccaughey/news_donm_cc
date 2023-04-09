@@ -2,14 +2,23 @@
 
 ## To Do
 
-- other `URL.identity` special handling:
+- handle wayback machine URLs
   - https://web.archive.org/web/20150315073817/http://www.xprogramming.com/testfram.htm
+  - http://web.archive.org/web/20180516153837/http://www.adreca.net/NAND-Flash-Data-Recovery-Cookbook.pdf
+  - https://web.archive.org/web/20081225064415/http://pcmcia.org/
+  - https://web.archive.org/web/20150516094013/http://www.the-tls.co.uk/tls/public/article1555487.ece
+  - https://web.archive.org/web/20160304085903/http://thestartuptoolkit.com/blog/2011/10/the_coffeeshop_fallacy/
+  - https://web.archive.org/web/20180101160950/https://squid314.livejournal.com/324957.html
+  - https://web.archive.org/web/20230314015249/https://twitter.com/vxunderground/status/1635427567271329792
 - get YouTube user from YouTube URL
   - youtube.com/@kevinsyoza from https://www.youtube.com/watch?v=LGUR3YmYA8s
         <span itemprop="author" itemscope itemtype="http://schema.org/Person">
             <link itemprop="url" href="http://www.youtube.com/@allones3078">
             <link itemprop="name" content="All Ones">
         </span>
+  - https://www.youtube.com/@cgtimemachine1257/videos
+  - https://www.youtube.com/playlist?list=PL3GWPKM6L17H0RyU2o7p9gCnepjSTaHia
+
 - should fragments be allowed in URLs?
   - https://sr.ht/~icefox/oorandom/#a-brief-history-of-random-numbers
 - transform `keep_entry()` method into a score and bubble the score up
@@ -29,6 +38,12 @@
   - reddit links to old reddit
   - cnn to https://lite.cnn.com/en
   - npr to https://text.npr.org
+    - https://text.npr.org/1165680024
+    - https://www.npr.org/2023/03/23/1165680024/perennial-rice-plant-once-harvest-again-and-again
+    - https://text.npr.org/1162588784
+    - https://www.npr.org/sections/health-shots/2023/03/15/1162588784/the-peoples-hospital-ricardo-nuila-treats-mostly-uninsured-undocumented
+    - https://text.npr.org/542238978
+    - https://www.npr.org/sections/thetwo-way/2017/08/08/542238978/-financial-times-issues-103-year-old-correction
   - https://www.nytimes.com/timeswire
   - https://youtubetranscript.com
   - https://threadreaderapp.com
