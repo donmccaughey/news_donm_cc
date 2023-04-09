@@ -42,11 +42,10 @@ class URL:
         hostname = url_parts.hostname
         path = url_parts.path
 
-        subdomains = ['blog', 'blogs', 'community', 'docs', 'en', 'web', 'www', 'www2']
-        hostname = remove_subdomain(hostname, subdomains)
-
-        if looks_social(hostname, path):
-            return keep_path_matching(hostname, path, '/*')
+        unimportant_subdomains = [
+            'blog', 'blogs', 'community', 'docs', 'en', 'web', 'www', 'www2'
+        ]
+        hostname = remove_subdomain(hostname, unimportant_subdomains)
 
         hostname_map = {
             'lite.cnn.com': 'cnn.com',
@@ -57,20 +56,25 @@ class URL:
         if hostname in hostname_map:
             hostname = hostname_map[hostname]
 
-        path_map = {
+        social_sites = [
+            'github.com',
+            'gitlab.com',
+            'medium.com',
+            'devblogs.microsoft.com',
+            'sr.ht',
+            'twitter.com',
+        ]
+        if looks_social(hostname, path) or hostname in social_sites:
+            return keep_path_matching(hostname, path, '/*')
+
+        pattern_map = {
             'crates.io': '/crates/*',
-            'github.com': '/*',
-            'gitlab.com': '/*',
-            'devblogs.microsoft.com': '/*',
-            'medium.com': '/*',
             'npmjs.com': '/package/*',
             'pypi.org': '/project/*',
             'reddit.com': '/r/*',
-            'sr.ht': '/*',
-            'twitter.com': '/*',
         }
-        if hostname in path_map:
-            return keep_path_matching(hostname, path, path_map[hostname])
+        if hostname in pattern_map:
+            return keep_path_matching(hostname, path, pattern_map[hostname])
 
         return hostname
 
