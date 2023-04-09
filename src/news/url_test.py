@@ -105,6 +105,13 @@ IDENTITY_TESTS = [
     ('social.treehouse.systems/@marcan', 'https://social.treehouse.systems/@marcan/109917995005981968'),
 
 
+    # -- package repositories
+
+    ('crates.io/crates/fundsp', 'https://crates.io/crates/fundsp/0.13.0'),
+    ('npmjs.com/package/express', 'https://www.npmjs.com/package/express'),
+    ('pypi.org/project/pytest', 'https://pypi.org/project/pytest/'),
+
+
     # -- github
 
     ('github.com', 'https://github.com'),

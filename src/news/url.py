@@ -58,10 +58,13 @@ class URL:
             hostname = hostname_map[hostname]
 
         path_map = {
+            'crates.io': '/crates/*',
             'github.com': '/*',
             'gitlab.com': '/*',
             'devblogs.microsoft.com': '/*',
             'medium.com': '/*',
+            'npmjs.com': '/package/*',
+            'pypi.org': '/project/*',
             'reddit.com': '/r/*',
             'sr.ht': '/*',
             'twitter.com': '/*',
