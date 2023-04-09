@@ -45,6 +45,9 @@ class URL:
         subdomains = ['blog', 'blogs', 'community', 'docs', 'en', 'web', 'www', 'www2']
         hostname = remove_subdomain(hostname, subdomains)
 
+        if looks_social(hostname, path):
+            return keep_path_matching(hostname, path, '/*')
+
         hostname_map = {
             'lite.cnn.com': 'cnn.com',
             'gist.github.com': 'github.com',
@@ -58,12 +61,8 @@ class URL:
             'github.com': '/*',
             'gitlab.com': '/*',
             'devblogs.microsoft.com': '/*',
-            'flipboard.social': '/*',
-            'mastodon.social': '/*',
             'medium.com': '/*',
             'reddit.com': '/r/*',
-            'social.network.europa.eu': '/*',
-            'social.treehouse.systems': '/*',
             'sr.ht': '/*',
             'twitter.com': '/*',
         }
@@ -98,6 +97,15 @@ def clean_query(query: str) -> str:
 def is_dirty(parameter: tuple[AnyStr, AnyStr]) -> bool:
     name, value = parameter
     return name.startswith('utm_')
+
+
+def looks_social(hostname: str, path: str) -> bool:
+    subdomains = hostname.split('.')
+    return (
+        'social' in subdomains
+        and path.startswith('/@')
+        and len(path) > 2
+    )
 
 
 def remove_subdomain(hostname: str, subdomains: list[str]) -> str:

@@ -99,12 +99,14 @@ IDENTITY_TESTS = [
 
     # -- `/@<user>/<...>` paths
 
+    ('mastodon.social/@mastodonusercount', 'https://mastodon.social/@mastodonusercount/110051957865629817'),
     ('social.network.europa.eu/@EU_Commission', 'https://social.network.europa.eu/@EU_Commission/110140022257601348'),
     ('flipboard.social/@mike', 'https://flipboard.social/@mike/110137461654913391'),
     ('social.treehouse.systems/@marcan', 'https://social.treehouse.systems/@marcan/109917995005981968'),
 
 
     # -- github
+
     ('github.com', 'https://github.com'),
     ('github.com/electronicarts', 'https://github.com/electronicarts/EAStdC/blob/master/include/EAStdC/EABitTricks.h'),
     ('github.com/Immediate-Mode-UI', 'https://github.com/Immediate-Mode-UI'),
