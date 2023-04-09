@@ -59,6 +59,7 @@ class URL:
         social_sites = [
             'github.com',
             'gitlab.com',
+            'people.kernel.org',
             'medium.com',
             'devblogs.microsoft.com',
             'sr.ht',
@@ -69,6 +70,7 @@ class URL:
 
         pattern_map = {
             'crates.io': '/crates/*',
+            'sites.google.com': '/site/*',
             'npmjs.com': '/package/*',
             'pypi.org': '/project/*',
             'reddit.com': '/r/*',

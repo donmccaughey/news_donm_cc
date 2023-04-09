@@ -93,6 +93,8 @@ IDENTITY_TESTS = [
     # -- `/<user>/<...>` paths
 
     ('gitlab.com/cznic', 'https://gitlab.com/cznic/sqlite'),
+    ('sites.google.com/site/misterzeropage', 'https://sites.google.com/site/misterzeropage/'),
+    ('people.kernel.org/monsieuricon', 'https://people.kernel.org/monsieuricon/fix-your-mutt'),
     ('devblogs.microsoft.com/oldnewthing', 'https://devblogs.microsoft.com/oldnewthing/20221216-00/?p=107598'),
     ('sr.ht/~icefox', 'https://sr.ht/~icefox/oorandom/'),
     ('twitter.com/app4soft', 'https://twitter.com/app4soft/status/1606784614793633794'),
