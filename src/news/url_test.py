@@ -95,6 +95,7 @@ IDENTITY_TESTS = [
     ('gitlab.com/cznic', 'https://gitlab.com/cznic/sqlite'),
     ('sites.google.com/site/misterzeropage', 'https://sites.google.com/site/misterzeropage/'),
     ('people.kernel.org/monsieuricon', 'https://people.kernel.org/monsieuricon/fix-your-mutt'),
+    ('kickstarter.com/projects/robwalling', 'https://www.kickstarter.com/projects/robwalling/the-saas-playbook-by-rob-walling'),
     ('devblogs.microsoft.com/oldnewthing', 'https://devblogs.microsoft.com/oldnewthing/20221216-00/?p=107598'),
     ('sr.ht/~icefox', 'https://sr.ht/~icefox/oorandom/'),
     ('twitter.com/app4soft', 'https://twitter.com/app4soft/status/1606784614793633794'),
@@ -122,6 +123,7 @@ IDENTITY_TESTS = [
     ('github.com/Immediate-Mode-UI', 'https://github.com/Immediate-Mode-UI'),
     ('github.com/Immediate-Mode-UI', 'https://github.com/Immediate-Mode-UI/Nuklear'),
     ('github.com/microsoft', 'https://github.com/microsoft/WSA/discussions/167'),
+    ('github.com/readme', 'https://github.com/readme/featured/nuclear-fusion-open-source'),
     ('github.com/timvisee', 'https://gist.github.com/timvisee/fcda9bbdff88d45cc9061606b4b923ca'),
 
 

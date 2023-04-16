@@ -70,6 +70,7 @@ class URL:
 
         pattern_map = {
             'crates.io': '/crates/*',
+            'kickstarter.com': '/projects/*',
             'sites.google.com': '/site/*',
             'npmjs.com': '/package/*',
             'pypi.org': '/project/*',

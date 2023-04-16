@@ -22,12 +22,8 @@
 - `docked` - Python alternative to `Dockerfile` https://github.com/orsinium-labs/docked
 - should fragments be allowed in URLs?
   - https://sr.ht/~icefox/oorandom/#a-brief-history-of-random-numbers
-- special handling for github
-  - https://github.com/readme/featured/nuclear-fusion-open-source
-- special handling for kickstarter
-  - https://www.kickstarter.com/projects/robwalling/the-saas-playbook-by-rob-walling
 - special handling for archive.org
-  - https://news.donm.cc/site/ia601707.us.archive.org
+  - https://ia601707.us.archive.org/28/items/gov.uscourts.cand.364454/gov.uscourts.cand.364454.385.0.pdf
 - transform `keep_entry()` method into a score and bubble the score up
 - change `News.add_new() to take (items, now) instead of news`
 - split `modified` into `items_added` and `items_removed`
