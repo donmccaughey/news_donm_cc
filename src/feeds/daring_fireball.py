@@ -32,8 +32,11 @@ class DaringFireball(Site):
             if netloc == 'dithering.fm':
                 return False
 
-            if netloc == 'daringfireball.net' and path.startswith('/thetalkshow/'):
-                return False
+            if netloc == 'daringfireball.net':
+                if path.startswith('/thetalkshow/'):
+                    return False
+                if path.startswith('/feeds/sponsors/'):
+                    return False
 
             parameters = parse_qsl(query)
             if ('utm_source', 'daringfireball') in parameters:

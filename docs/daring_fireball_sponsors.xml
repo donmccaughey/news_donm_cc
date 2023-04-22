@@ -1,0 +1,2929 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Daring Fireball</title>
+    <subtitle>By John Gruber</subtitle>
+    <link rel="alternate" type="text/html" href="https://daringfireball.net/"/>
+    <link rel="self" type="application/atom+xml" href="https://daringfireball.net/feeds/main"/>
+    <id>https://daringfireball.net/feeds/main</id>
+    <updated>2023-04-22T17:43:32Z</updated>
+    <rights>Copyright © 2023, John Gruber</rights>
+    <entry>
+        <title>DF Sponsorship Openings</title>
+        <link rel="alternate" type="text/html" href="https://daringfireball.net/feeds/sponsors/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/uro"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/04/22/df-sponsorship-openings"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39876</id>
+        <published>2023-04-22T17:43:32Z</published>
+        <updated>2023-04-22T17:43:32Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p><a href="https://daringfireball.net/linked/2023/04/22/kolide">Speaking of</a> weekly sponsorships,
+                there’s only one opening left before the end of June: next week.</p>
+
+            <p>Weekly sponsorships have been the top source of revenue for Daring Fireball ever since I started selling
+                them <a href="https://daringfireball.net/feeds/sponsors/archive">back in 2007</a>. They’ve succeeded, I
+                think, because they make everyone happy. There’s only one sponsor per week and the sponsors are always
+                relevant to at least some sizable portion of the DF audience, so you, the reader, are never annoyed and
+                hopefully often intrigued by them. And, from the sponsors’ perspective, they work. My favorite thing
+                about them is how many sponsors <a href="https://daringfireball.net/feeds/sponsors/archive">return for
+                    subsequent weeks</a> after seeing the results.</p>
+
+            <p>If you’ve got a product or service you think would be of interest to DF’s audience of people obsessed
+                with high quality and good design, <a
+                        href="mailto:sponsors@daringfireball.net?subject=Feed%20Sponsorship">get in touch</a>. If this
+                quarter is a sign, the summer months will start filling up soon. And as I mentioned above, if you’ve got
+                something to promote right now, next week is the opening left this quarter.</p>
+
+            <div>
+                <a title="Permanent link to ‘DF Sponsorship Openings’"
+                   href="https://daringfireball.net/linked/2023/04/22/df-sponsorship-openings">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Kolide</title>
+        <link rel="alternate" type="text/html" href="https://l.kolide.co/3JWbXEv"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/urn"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/04/22/kolide"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39875</id>
+        <published>2023-04-22T17:37:12Z</published>
+        <updated>2023-04-22T17:37:13Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p>My thanks to Kolide for their continuing sponsorship support here at DF — they co-sponsored <a
+                    href="https://daringfireball.net/thetalkshow/2023/03/31/ep-371">the latest episode of The Talk
+                Show</a> that dropped last night, and they sponsored this entire week here at the website. They’re a
+                great company with a great product.</p>
+
+            <p>Here’s an uncomfortable fact: at most companies, employees can download sensitive company data onto any
+                device, keep it there forever, and never even know that they’re doing something wrong. Kolide’s new
+                report, <a href="https://l.kolide.co/3I7025A">The State of Sensitive Data</a>, addresses this issue
+                head-on.</p>
+
+            <p>Kolide offers a more nuanced approach than MDM solutions to setting and enforcing sensitive data
+                policies. Their premise is simple: if an employee’s device is out of compliance, it can’t access your
+                apps. Kolide lets admins run queries to detect sensitive data, flag devices that have violated policies,
+                and enforce OS and browser updates so vulnerable devices aren’t accessing data.</p>
+
+            <p>To learn more and see Kolide in action, <a href="https://l.kolide.co/3XlSqAq">visit kolide.com</a>.</p>
+
+            <div>
+                <a title="Permanent link to ‘Kolide’" href="https://daringfireball.net/linked/2023/04/22/kolide">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>The Talk Show: ‘$8 Billion in Late Fees’</title>
+        <link rel="alternate" type="text/html" href="https://daringfireball.net/thetalkshow/2023/04/21/ep-372"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/urm"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/04/21/the-talk-show-372"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39874</id>
+        <published>2023-04-22T02:59:52Z</published>
+        <updated>2023-04-22T02:59:53Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p>Rene Ritchie returns to the show to discuss generative AI (and what Apple might soon do with it), iPhone
+                passcodes and iCloud device security, HBO Max turning into just plain Max, and Make Something
+                Wonderful  —  one more thing from Steve Jobs.</p>
+
+            <p>Brought to you by:</p>
+
+            <ul>
+                <li><a href="squarespace.com/talkshow">Squarespace</a>: Make your next move. Use code
+                    <strong>talkshow</strong> for 10% off your first order.
+                </li>
+                <li><a href="http://kolide.com/thetalkshow">Kolide</a>: Cross-platform endpoint security solution for
+                    teams that value privacy and transparency.
+                </li>
+            </ul>
+
+            <div>
+                <a title="Permanent link to ‘The Talk Show: ‘$8 Billion in Late Fees’’"
+                   href="https://daringfireball.net/linked/2023/04/21/the-talk-show-372">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+
+        <link rel="alternate" type="text/html" href="https://daringfireball.net/2023/04/if_you_come_at_the_king"/>
+        <link rel="shorturl" href="http://df4.us/url"/>
+        <id>tag:daringfireball.net,2023://1.39873</id>
+        <published>2023-04-22T00:57:00Z</published>
+        <updated>2023-04-22T02:20:22Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <summary type="text">Anything that attempts to establish a post-phone beachhead has to do the things we love to
+            do with our phones, or entertain us in new ways that make us forget about them. I don’t see how a laser
+            projector on a chest badge does that.
+        </summary>
+        <content type="html" xml:base="https://daringfireball.net/" xml:lang="en"><![CDATA[
+            <p>Raymond Wong, reporting for Inverse, “<a
+                    href="https://www.inverse.com/tech/humane-ai-wearable-camera-sensor-projector-video-demo">Watch
+                Humane’s Wearable AI Projector in Action</a>”:</p>
+
+            <blockquote>
+                <p>Humane, the top-secret tech startup founded by <a
+                        href="https://www.inverse.com/input/tech/the-ipads-original-software-designer-and-program-lead-look-back-on-the-devices-first-10-years">ex-Apple
+                    vets
+                    Imran Chaudhri and Bethany Bongiorno</a>, just showed off the
+                    first demo for its projector-based wearable at a TED talk.
+                    <a href="https://www.axios.com/2023/04/21/humane-ai-powered-wearable">Axios’s Ina Fried broke the
+                        news</a>, and Inverse has seen a
+                    recording of the full TED talk given by Chaudhri.</p>
+
+                <p>Journalist Zarif Ali, who had <a href="https://twitter.com/ZarifAli9/status/1649230439322664968">tweeted
+                    out an image</a> of
+                    Humane’s wearable projecting a phone call function onto Chaudhri’s
+                    palm, says the full TED talk video is not slated to become
+                    available until April 22.</p>
+            </blockquote>
+
+            <p>So the full video should be out tomorrow, but in the meantime, Wong has pulled a bunch of clips. There’s
+                some cool technology being shown, including on-the-fly translation from English to French using an
+                AI-trained version of Chaudhri’s own voice, but what I fundamentally don’t get about Humane is their
+                anti-phone slant. Chaudhri emphasizes that you don’t need a phone to use the unnamed Humane device, but
+                if the device can receive and place phone calls, and has a network connection, must not their device
+                itself be ... a phone? Just a phone in a different form factor.</p>
+
+            <p>Back in February when LeBron James broke the all-time NBA scoring title, <a
+                    href="https://twitter.com/imranchaudhri/status/1624041258778763265">Chaudhri retweeted someone</a>
+                comparing a photo of James’s record-breaking shot (with a seeming majority of the fans in the background
+                holding their phones to capture the moment — <a
+                        href="https://twitter.com/imranchaudhri/status/1624041258778763265">almost all of them
+                    iPhones</a>, natch) with Michael Jordan’s iconic 1998 championship-winning shot against the Utah
+                Jazz (with, of course, not a single fan with a phone in hand).<sup id="fnr1-2023-04-21"><a
+                        href="#fn1-2023-04-21">1</a></sup> Chaudhri’s comment on the comparison: “we all deserve
+                better.”</p>
+
+            <p>The thought being, I surmise, that Chaudhri thinks something is wrong that so many of us turn to our
+                phones to photograph or film major moments in our lives, rather than just enjoying them through our own
+                senses. I get it to some degree. If I’d been at that Lakers game, my phone would’ve been in my pocket at
+                that moment, not just to absorb the actual game experience, but because I know that no photo I could
+                take could possibly be as as good as those being taken by courtside professional sports photographers.
+                But those thousands of fans who did have their phones out for that moment weren’t thinking “<em>This
+                    sucks, I wish I didn’t have to stare at my phone to capture this.</em>” They were thinking “<em>This
+                    is awesome and I’m glad I can capture this.</em>”</p>
+
+            <p>People take their own photos at major events not because they think those will be great photos, but
+                because they’re proof that they were there. Selfies are the new autographs, and a shaky iPhone photo
+                from the perspective of your own seat at the event is the new certificate of attendance.</p>
+
+            <p>We still don’t know much about Humane’s device, as Wong’s colleague at Inverse <a
+                    href="https://www.inverse.com/tech/humane-wearable-ai-projector-apps-price">Ian Carlos Campbell
+                notes in this follow-up piece</a>. But everything we do know seems positioned around the notion of
+                relieving us of the burden of being tethered to our iPhones all day every day. The fundamental flaw in
+                Humane’s entire premise, as I see it, is that people don’t feel burdened by their phones. People <em>love</em>
+                them — especially iPhone owners. And those who are ambivalent or even downright antipathetic toward
+                their phones surely aren’t the sort of people who are interested in a newfangled laser-projecting
+                AI-driven chest-badge computer.</p>
+
+            <p><a href="https://daringfireball.net/linked/2010/10/25/season-of-the-witch">I wrote about this all the way
+                back in 2010</a>, in the era of the iPhone 4, when Microsoft debuted a high-budget ad campaign for their
+                answer to the iPhone, Windows Phone 7. The ads were very entertaining — <a
+                        href="https://www.youtube.com/watch?v=Lg1gbVGk19k">particularly this one</a> — but the whole
+                premise was fundamentally flawed. Microsoft’s message was that if you switched to Windows Phone you
+                wouldn’t need to stare at your phone all the time. The problem is that people stare at their phones all
+                the time not because they have to but <em>because they want to</em>.</p>
+
+            <p>“<em>Finally, you can replace this thing that you despise</em>” is a powerful marketing message. “<em>Finally,
+                you can replace this thing that you love</em>” is not.</p>
+
+            <p>So far, it feels like Humane’s entire premise is founded on that same mistake: building a new device
+                intended to replace our phones, without that new device being able to do any of the dozens of things we
+                <em>love</em> to do on our phones that require a display. Apple Watch and AirPods thrive because they’re
+                satellites to our iPhones, not ostensible replacements. Our iPhones aren’t a burden — they’re a
+                pleasure. I’m not arguing there are no downsides to our collective mass addiction to our phones. There’s
+                undeniably a nostalgic appeal to many aspects of the pre-iPhone age. But the notion of even a single
+                trip to the grocery store without a phone to provide (unlimited!) material to read or watch while I wait
+                at the checkout line seems like veritable torture to me now. Anything that attempts to establish a
+                post-phone beachhead has to do the things we love to do with our phones, or entertain us in new ways
+                that make us forget about them. I don’t see how a laser projector on a chest badge does that.</p>
+
+            <div class="footnotes">
+                <hr/>
+                <ol>
+                    <li id="fn1-2023-04-21">
+                        <p>Not only are there no fans with cell phones in hand in the Jordan photo, there are none with
+                            <em>any</em> sort of camera in hand. Cell phone cameras were uncommon in 1998, but regular
+                            cameras were not. But before the iPhone age, when such policies became untenable, events
+                            like concerts and indoor sporting events banned cameras. Same thing with casinos. And even
+                            if the rules didn’t prohibit cameras, people just didn’t have the habit of taking their own
+                            photographs. Today we don’t just take photos with our phones instead of with standalone
+                            cameras — we take thousands of photos every year that we never would have taken in the first
+                            place, because we wouldn’t have had a camera with us. The best camera really is the one you
+                            have with you.&nbsp;<a href="#fnr1-2023-04-21" class="footnoteBackLink"
+                                                   title="Jump back to footnote 1 in the text.">&#x21A9;&#xFE0E;</a></p>
+                    </li>
+                </ol>
+            </div>
+
+
+            ]]>
+        </content>
+        <title>★ If You Come at the King</title></entry>
+    <entry>
+        <title>BuzzFeed News Is Shutting Down</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.semafor.com/article/04/20/2023/the-end-of-the-buzzfeed-era-in-news"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/urk"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/04/20/buzzfeed-news-shutting-down"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39872</id>
+        <published>2023-04-21T03:38:19Z</published>
+        <updated>2023-04-22T03:18:38Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p>Ben Smith, writing at Semafor:</p>
+
+            <blockquote>
+                <p>My old boss and partner Jonah Peretti announced today that he’s
+                    shutting down BuzzFeed News, which we built together starting
+                    in 2012.</p>
+
+                <p>He wrote to staff that he’d been ​​”slow to accept that the big
+                    platforms wouldn’t provide the distribution or financial support
+                    required to support premium-free journalism purpose-built for
+                    social media.” And he wrote that he could have managed the many
+                    business challenges that BuzzFeed has faced better.</p>
+
+                <p>The news makes me heartsick.</p>
+
+                <p>Peretti hired me in 2012 to build a news organization for the
+                    exploding social web. For a few years, we felt the wind of
+                    Facebook, Twitter, and Pinterest at our backs, and we did
+                    journalism that treated those sites as the front page of the new
+                    internet. At first, we celebrated and immersed ourselves in an
+                    optimistic web culture that imagined a reader who cared about
+                    which Disney princess she was, and also the <a
+                            href="https://www.buzzfeednews.com/article/alexcampbell/this-battered-woman-wants-to-get-out-of-prison">worst</a>
+                    of how
+                    the American justice system treated abused women, who wanted to
+                    argue about the color of <a
+                            href="https://www.buzzfeed.com/catesish/help-am-i-going-insane-its-definitely-blue?utm_term=.wnrMEoO6y#.agDJKQPRB">the
+                        dress</a> and also understand the
+                    <a href="https://www.buzzfeednews.com/article/virginiahughes/science-of-the-dress">science</a>
+                    behind it. That was back when all of it mixed up
+                    in your Facebook feed, and it felt novel.</p>
+            </blockquote>
+
+            <p>BuzzFeed News did great work and employed some terrific reporters, but they <em>never</em> had a plan to
+                turn a profit that made any more sense than that of <a
+                        href="https://observer.com/2016/01/the-cautionary-tale-of-south-parks-underpants-gnomes/">the
+                    underwear-collecting gnomes</a> on <em>South Park</em>.</p>
+
+            <div>
+                <a title="Permanent link to ‘BuzzFeed News Is Shutting Down’"
+                   href="https://daringfireball.net/linked/2023/04/20/buzzfeed-news-shutting-down">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Humane Previews AI-Powered Wearable at TED</title>
+        <link rel="alternate" type="text/html" href="https://www.axios.com/2023/04/21/humane-ai-powered-wearable"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/urj"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/04/20/humane-ted-demo"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39871</id>
+        <published>2023-04-21T02:28:57Z</published>
+        <updated>2023-04-21T19:32:56Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p>Ina Fried, reporting for Axios:</p>
+
+            <blockquote>
+                <p>Ex-Apple employee Imran Chaudhri gave TED attendees on Thursday an
+                    early glimpse of the AI-powered wearable that his startup, Humane,
+                    has been developing. [...]</p>
+
+                <p>The screenless device, which does not require a nearby cell phone
+                    to work, uses a combination of voice and gestures for input and
+                    can display information by projecting it onto nearby objects.</p>
+
+                <p>Details: In his TED talk, Chaudhri showed the wearable, which sat
+                    in his jacket pocket, translating his own voice into French.</p>
+
+                <ul>
+                    <li><p>He also answered a phone call from his wife with the call
+                        information appearing as a green image projected onto his hand.</p></li>
+                    <li><p>“This is good AI in action,” he said, promising more details
+                        would be released in the coming months.</p></li>
+                </ul>
+            </blockquote>
+
+            <p>The device — which seemingly doesn’t yet have an announced name? — looks about 2 inches wide and 1 inch
+                high, and is worn on your chest like a Star Trek communicator badge. <a
+                        href="https://daringfireball.net/misc/2023/04/humane-ted-bethany-is-calling.jpeg">Here’s an
+                    image of the phone call information projected onto Chaudhri’s hand</a>. Hope the whole demo is
+                released on video soon.</p>
+
+            <p><strong>Update:</strong> Actually, now that I look at the video clips that are available, I think the
+                device is quite a bit bigger, and Chaudhri has it peaking out of a pocket on his jacket? Unclear.</p>
+
+            <div>
+                <a title="Permanent link to ‘Humane Previews AI-Powered Wearable at TED’"
+                   href="https://daringfireball.net/linked/2023/04/20/humane-ted-demo">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>‘Arcade Game Typography’ by Toshi Omagari</title>
+        <link rel="alternate" type="text/html" href="https://readonlymemory.vg/shop/book/arcade-game-typography/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/uri"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/04/20/arcade-game-typography"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39870</id>
+        <published>2023-04-21T01:46:45Z</published>
+        <updated>2023-04-21T01:46:46Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p>Read-Only Memory, video game book publishers <a href="https://readonlymemory.vg">extraordinaire</a>:</p>
+
+            <blockquote>
+                <p>The first book of its kind — a definitive and beautifully
+                    designed survey of ’70s, ’80s and early ’90s arcade game pixel
+                    typography. Exhaustively researched by author Toshi Omagari (a
+                    celebrated typeface designer at Monotype UK) <em>Arcade Game
+                        Typography</em> gathers together 250 pixel typefaces, all carefully
+                    chosen, extracted, redrawn and categorised by style, and each with
+                    an accompanying commentary by Omagari. The title also features 4
+                    illustrated essays on videogame typography theory and practice,
+                    documenting the unique advantages and challenges presented to
+                    designers of these bold, playful and often quirky alphabets.</p>
+            </blockquote>
+
+            <p>I bought and devoured this book back in October 2019, but somehow never recommended it here on Daring
+                Fireball. I should be arrested for dereliction of duty. But I was reminded of it today by <a
+                        href="https://mastodon.social/@antonyjohnston/110232389169824182">this toot from Antony
+                    Johnston</a>.</p>
+
+            <p>A book about classic arcade game fonts is <em>so</em> obviously up my alley that I’d probably enjoy a bad
+                book about them. But <em>Arcade Game Typography</em> is an exquisitely good book: deeply researched,
+                beautifully illustrated with copious screenshots and close-up pixel-by-pixel details, and engagingly
+                written by Omagari. I’m linking here to the limited edition hardcover, which costs $46, but <a
+                        href="https://www.amazon.com/Arcade-Game-Typography-Pixel-Type/dp/0500021740/?tag=df-amzn-20">there’s
+                    also a high-quality paperback edition for $28</a>. (Buy through that Amazon link and you’ll make me
+                rich with a cut of the dough.) If you <em>don’t</em> want this book you’re either too young or you’re
+                not hooked up right.</p>
+
+            <p><strong>See also:</strong> <a href="https://www.youtube.com/watch?v=C5NiAoT3xsY">Estelle Caswell
+                interviewed Omagari in 2020 in a video for Vox</a>, focusing specifically on the 8x8 pixel Quiz Show
+                font, a.k.a. <em>the</em> arcade font.</p>
+
+            <div>
+                <a title="Permanent link to ‘‘Arcade Game Typography’ by Toshi Omagari’"
+                   href="https://daringfireball.net/linked/2023/04/20/arcade-game-typography">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>The Oakland A’s Are Moving to Las Vegas</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.reviewjournal.com/sports/athletics/major-league-deal-as-to-purchase-land-near-strip-for-new-ballpark-2764701/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/urh"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/04/20/athletics-to-vegas"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39869</id>
+        <published>2023-04-21T00:58:56Z</published>
+        <updated>2023-04-21T00:58:56Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p>Mick Akers, reporting for The Las Vegas Review-Journal:</p>
+
+            <blockquote>
+                <p>The Oakland Athletics have zeroed in on Southern Nevada, signing a
+                    binding purchase agreement for land just west of the Strip where a
+                    major-league ballpark could be constructed. The agreement is for
+                    49 acres at Dean Martin Drive and Tropicana Avenue, owned by Red
+                    Rock Resorts, parent company of Station Casinos.</p>
+            </blockquote>
+
+            <p>That’s close to T-Mobile Arena (home of the NHL Golden Knights), behind the New York New York casino
+                complex.</p>
+
+            <blockquote>
+                <p>“For a while we were on parallel paths (with Oakland), but we have
+                    turned our attention to Las Vegas to get a deal here for the A’s
+                    and find a long-term home,” A’s President Dave Kaval told the
+                    Review-Journal on Wednesday. “Oakland has been a great home for us
+                    for over 50 years, but we really need this 20-year saga completed
+                    and we feel there’s a path here in Southern Nevada to do that.”</p>
+
+                <p>With the announcement of the purchase agreement, MLB Commissioner
+                    Rob Manfred concurs with Kaval and hopes the A’s shifting their
+                    efforts solely to Southern Nevada will lead to the end of the
+                    team’s <a
+                            href="https://www.reviewjournal.com/sports/athletics/the-as-are-bad-would-a-move-to-vegas-help-2594529/">yearslong
+                        quest to leave crumbling Oakland
+                        Coliseum.</a></p>
+            </blockquote>
+
+            <p>Recent embarrassments for the A’s in Oakland include a game against the Cleveland Guardians <a
+                    href="https://whitecleatbeat.com/posts/the-season-just-started-and-the-oakland-a-s-attendance-is-already-embarrassing-01gxca55xk93">that
+                drew just 3,000 fans</a>, and <a
+                    href="https://www.sfgate.com/athletics/article/oakland-as-stink-worse-than-possum-poop-17905039.php">a
+                possum that lives within the walls of the visiting press boxes</a>, which stunk them up so badly that
+                the Mets’ broadcast team had to move to another box.</p>
+
+            <div>
+                <a title="Permanent link to ‘The Oakland A’s Are Moving to Las Vegas’"
+                   href="https://daringfireball.net/linked/2023/04/20/athletics-to-vegas">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+
+        <link rel="alternate" type="text/html" href="https://daringfireball.net/2023/04/ios_adware"/>
+        <link rel="shorturl" href="http://df4.us/urg"/>
+        <id>tag:daringfireball.net,2023://1.39868</id>
+        <published>2023-04-20T14:41:43Z</published>
+        <updated>2023-04-20T14:41:44Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <summary type="text">Promotions for services I might want? Maybe, but Apple should be extremely conservative
+            about presenting them — especially in push notifications. Promotions for services I already pay for? That
+            shouldn’t happen.
+        </summary>
+        <content type="html" xml:base="https://daringfireball.net/" xml:lang="en"><![CDATA[
+            <p><a href="https://stevestreza.com/2020/02/17/ios-adware/">Steve Streza, all the way back in February
+                2020</a> (innocent times, that month):</p>
+
+            <blockquote>
+                <p>Over the years, Apple has built up a portfolio of services and
+                    add-ons that you pay for. Starting with AppleCare extended
+                    warranties and iCloud data subscriptions, they expanded to Apple
+                    Music a few years ago, only to dramatically ramp up their
+                    offerings last year with TV+, News+, Arcade, and Card. Their
+                    services business, taken as a whole, is quickly becoming massive;
+                    Apple reported <a
+                            href="https://www.macrumors.com/2020/01/28/apple-services-revenue-12-7-billion-q1-2020/">$12.7
+                        billion in Q1 2020</a> alone, nearly a
+                    sixth of its already gigantic quarterly revenue. [...]</p>
+
+                <p>If you don’t subscribe to these services, you’ll be forced to look
+                    at these ads constantly, either in the apps you use or the push
+                    notifications they have turned on by default. The pervasiveness of
+                    ads in iOS is a topic largely unexplored, perhaps due to these
+                    services having a lot of adoption among the early adopter crowd
+                    that tends to discuss Apple and their design. This isn’t a value
+                    call on the services themselves, but a look at how aggressively
+                    Apple pushes you to pay for them, and how that
+                    <a href="https://en.wikipedia.org/wiki/Growth_hacking">growth-hack</a>-style design comes at the
+                    expense of the user
+                    experience. In this post, I’ll break down all of the places in iOS
+                    that I’ve found that have Apple-manufactured ads. You can
+                    replicate these results yourself by doing a factory reset of an
+                    iPhone (backup first!), installing iOS 13, and signing up for a
+                    new iCloud account.</p>
+            </blockquote>
+
+            <p>Streza’s post emphasizes the new-user experience, and he’s right that longtime users (like you, dear
+                reader, probably) don’t see a lot of this. But I do, because when reviewing new devices or new OS
+                releases, I’ll sometimes set up as new (and use a spare Apple ID dedicated to testing) to see the
+                factory-fresh Cupertino default experience. Is it too much advertising? I don’t know — but it’s a lot.
+                One thing that’s clear is that Apple sees Music and TV as Apple-service properties. Yes, you can use
+                them for listening to your own music and watching your own video files, but first and foremost these are
+                client apps to Apple’s Music and TV+ services. These are not the iTunes and Video apps of yore.</p>
+
+            <p>But what got me thinking about this issue this week is the dumbest adware in iOS I’ve seen. For the last
+                several weeks, I’ve noticed <a
+                        href="https://daringfireball.net/misc/2023/04/ios-settings-arcade-ad.png">an ad in Settings on
+                    my iPhone</a>, in the iCloud section at the very top of the first screen: “Apple Arcade Free for 3
+                Months”. The reason this is dumb is that I pay for a family account for Apple One, <em>so we already
+                    have Apple Arcade</em>. But here’s Apple badgering me to sign up for a 3-month free trial that I
+                don’t need.</p>
+
+            <p>If I tap into that ad’s section in Settings it explains why they’re offering it: “Services Included With
+                Purchase”. I’m not even sure what device I bought that earned me this offer, but it shouldn’t matter.
+                Why are they showing me something I already pay for?</p>
+
+            <p>To be clear, I was able to make this ad go away by tapping “Not Now” on the offer screen in Settings. (I
+                waited for weeks before doing so to see if it would go away on its own.) And I’m not blankly opposed to
+                using this top-of-the-first-screen space in Settings to show offers for Apple’s services or AppleCare
+                warranty coverage. But they ought to be presented conservatively, and with surgical precision. Apple is
+                doing users a favor if they’re reminding them of offers — like three free months of Apple Arcade — that
+                they’ve already qualified for with a hardware purchase. But it’s annoying and confusing that it’s the
+                very app where I manage my Apple One subscription that’s suggesting I sign up for a service included in
+                Apple One.</p>
+
+            <p>We — including Apple itself and Tim Cook personally — decry the invasiveness of the surveillance
+                advertising complex, by which they develop profiles of us so accurate that the ads they deliver are so
+                on-point to our recent interests that millions of people falsely believe their devices are somehow
+                surreptitiously listening to their real-world conversations. This stupid Apple Arcade prompt in Settings
+                is the opposite: I’m being shown it because Apple knows I recently bought a new device from them, but
+                somehow doesn’t know that I already pay them for a subscription that includes Arcade. How can they be so
+                contextually unaware?</p>
+
+            <p>Promotions for services I might want? Maybe, but Apple should be extremely conservative about presenting
+                them — especially in push notifications. Promotions for services I already pay for? That shouldn’t
+                happen.</p>
+
+
+            ]]>
+        </content>
+        <title>★ Adware for Apple Services in iOS</title></entry>
+    <entry>
+        <title>Warren Buffett on Apple</title>
+        <link rel="alternate" type="text/html"
+              href="https://9to5mac.com/2023/04/12/warren-buffett-apple-iphone-loyalty/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/urf"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/04/19/buffett-apple"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39867</id>
+        <published>2023-04-20T00:22:45Z</published>
+        <updated>2023-04-20T00:22:46Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p>Warren Buffett, <a href="https://twitter.com/SquawkCNBC/status/1646136625355710464">asked on CNBC</a>
+                about Berkshire Hathaway’s largest holding, Apple (<a
+                        href="https://appleinsider.com/articles/23/02/15/berkshire-hathaway-now-owns-58-of-public-apple-stock">they
+                    own nearly 6 percent of Apple’s stock</a>)</p>
+
+            <blockquote>
+                <p>“If you’re an Apple user and somebody offers you $10,000, but the
+                    only proviso is they’ll take away your iPhone and you’ll never be
+                    able to buy another, you’re not going to take it. If they tell you
+                    if you buy another Ford car — they’ll give you $10,000 not to do
+                    that — you’ll take the $10,000 and you’ll buy a Chevy instead.”</p>
+            </blockquote>
+
+            <p>Buffett, famously, isn’t technically minded. But I think that helps him understand Apple’s value. He’s
+                right: Apple’s moat is customer loyalty, and that loyalty is earned through user experiences that other
+                companies <em>can’t</em> match.</p>
+
+            <p>Using Ford and Chevy as his counterexamples is serendipitous, <a
+                    href="https://twitter.com/carnage4life/status/1647997065589592064">as Dare Obasanjo quipped</a>:</p>
+
+            <blockquote>
+                <p>Someone should print this tweet out, frame it and give it to the
+                    CEO of GM in commemoration of their decision to stop supporting
+                    CarPlay in their vehicles.</p>
+            </blockquote>
+
+            <p>It’s true. The <a href="https://sixcolors.com/post/2023/04/general-motors-hates-your-iphone/">anger over
+                GM’s decision to drop CarPlay</a> and Android Auto support in its EVs is really only anger about
+                dropping CarPlay.</p>
+
+            <div>
+                <a title="Permanent link to ‘Warren Buffett on Apple’"
+                   href="https://daringfireball.net/linked/2023/04/19/buffett-apple">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>WhatsApp, Signal, and Other Secure Messaging Platforms Write Open Letter to the UK Government Defending
+            End-to-End Encryption</title>
+        <link rel="alternate" type="text/html" href="https://blog.whatsapp.com/an-open-letter"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ure"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/04/19/whatsapp-signal-uk-open-letter"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39866</id>
+        <published>2023-04-19T23:55:56Z</published>
+        <updated>2023-04-21T02:53:06Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p>From an open letter signed by the leaders of WhatsApp, Signal, Viber, and a few other secure
+                services:</p>
+
+            <blockquote>
+                <p>Proponents say that they appreciate the importance of encryption
+                    and privacy while also claiming that it’s possible to surveil
+                    everyone’s messages without undermining end-to-end encryption. The
+                    truth is that this is not possible.</p>
+
+                <p>We aren’t the only ones who share concerns about the UK Bill. The
+                    United Nations has warned that the UK Government’s efforts to
+                    impose backdoor requirements constitute “a paradigm shift that
+                    raises a host of serious problems with potentially dire
+                    consequences”. Even the UK Government itself has acknowledged the
+                    privacy risks that the text of the Bill poses, but has said its
+                    “intention” isn’t for the Bill to be interpreted this way.</p>
+
+                <p>Global providers of end-to-end encrypted products and services
+                    cannot weaken the security of their products and services to suit
+                    individual governments. There cannot be a “British internet,” or a
+                    version of end-to-end encryption that is specific to the UK.</p>
+
+                <p>The UK Government must urgently rethink the Bill, revising it to
+                    encourage companies to offer more privacy and security to its
+                    residents, not less. Weakening encryption, undermining privacy,
+                    and introducing the mass surveillance of people’s private
+                    communications is not the way forward.</p>
+            </blockquote>
+
+            <p>I’m glad to see these companies defending end-to-end encryption, but this letter dances around the
+                repercussions of this proposed legislation in the U.K. What they mean in the third paragraph quoted
+                above is that if the legislation passes, people in the U.K. won’t be able to use WhatsApp or Signal or
+                any other end-to-end encrypted service. Apple isn’t a signatory of the letter, but I think iMessage
+                would be banned too.</p>
+
+            <p>Some reports are portraying this as though these services would begrudgingly comply if the law passes,
+                but they <em>can’t</em>. End-to-end encryption is inherent to the protocols. If end-to-end encrypted
+                messaging is banned in the U.K., it won’t mean that WhatsApp, Signal, et al will somehow switch to
+                insecure protocols in order to comply — it will mean that people in the U.K. can’t use these apps.</p>
+
+            <p>It’s tough, messaging-wise, because coming right out and saying that <em>sounds</em> like these companies
+                <em>won’t</em> comply, by choice. Laypeople seemingly can’t be made to understand that a “good-guys-only
+                back door” is cryptographically impossible. But that’s the truth. <a
+                        href="https://www.statista.com/statistics/1311229/whatsapp-usage-messaging-app-users-by-country/">WhatsApp
+                    is incredibly popular in the U.K.</a> — the message should not be that U.K. lawmakers are trying to
+                weaken WhatsApp’s encryption, but rather that U.K. lawmakers are going to make WhatsApp illegal.</p>
+
+            <div>
+                <a title="Permanent link to ‘WhatsApp, Signal, and Other Secure Messaging Platforms Write Open Letter to the UK Government Defending End-to-End Encryption’"
+                   href="https://daringfireball.net/linked/2023/04/19/whatsapp-signal-uk-open-letter">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Washington Post Analysis of the Content That Trained Google’s ‘C4’ LLM Data Set</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.washingtonpost.com/technology/interactive/2023/ai-chatbot-learning/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/urd"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/04/19/wapo-google-c4"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39865</id>
+        <published>2023-04-19T23:09:20Z</published>
+        <updated>2023-04-19T23:09:21Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p>The Washington Post:</p>
+
+            <blockquote>
+                <p>Tech companies have grown secretive about what they feed the AI.
+                    So The Washington Post set out to analyze one of these data sets
+                    to fully reveal the types of proprietary, personal, and often
+                    offensive websites that go into an AI’s training data.</p>
+
+                <p>To look inside this black box, we analyzed <a
+                        href="https://www.semanticscholar.org/paper/Documenting-the-English-Colossal-Clean-Crawled-Dodge-Sap/40c3327a6ddb0603b6892344509c7f428ab43d81">Google’s
+                    C4 data
+                    set</a>, a massive snapshot of the contents of 15 million
+                    websites that have been used to instruct some high-profile
+                    English-language AIs, called large language models, including
+                    Google’s T5 and Facebook’s LLaMA. (OpenAI does not disclose what
+                    datasets it uses to train the models backing its popular chatbot,
+                    ChatGPT).</p>
+            </blockquote>
+
+            <p>Scroll the bottom and they have a tool that lets you search for the ranking of a particular website. <a
+                    href="https://daringfireball.net/misc/2023/04/wapo-c4-dataset-daring.png">Daring Fireball is
+                #24,293</a>; Kottke.org is right behind at #25,310; Six Colors is #38,783; Stratechery is #57,283.
+                MacRumors is way up at #761. <a
+                        href="https://daringfireball.net/misc/2023/04/wapo-c4-dataset-forums.png">MacRumors’s forums are
+                    at #45</a>, and Apple Insider’s forums are at #211. The New York Times is #4, and The Washington
+                Post itself #11.</p>
+
+            <div>
+                <a title="Permanent link to ‘Washington Post Analysis of the Content That Trained Google’s ‘C4’ LLM Data Set’"
+                   href="https://daringfireball.net/linked/2023/04/19/wapo-google-c4">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>App of the Day: Glucomate</title>
+        <link rel="alternate" type="text/html" href="https://glucomate.app/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/urb"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/04/19/glucomate"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39863</id>
+        <published>2023-04-19T21:16:00Z</published>
+        <updated>2023-04-21T02:52:13Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p>New app from developer Zach Simone — an iPhone and Apple Watch app for blood glucose recording, tracking,
+                and monitoring. I don’t have diabetes, but I know many people who do or have loved ones who do, and it
+                seems hard to overstate how important blood glucose monitoring is. <a
+                        href="https://zachsim.one/blog/2023/4/19/introducing-glucomate">Simone, on his blog</a>:</p>
+
+            <blockquote>
+                <p>For over 20 years, I’ve had to monitor my blood glucose every
+                    single day. The way in which I monitor it has changed a bit
+                    over the years, but the need to stay on top of the readings
+                    hasn’t. [...]</p>
+
+                <p>A [continuous glucose monitor] generates a lot of data, and the
+                    one I use <a href="https://zachsim.one/blog/2017/12/5/cgm-diaries-day-2">even writes that data to
+                        HealthKit</a> (though
+                    admittedly with a 3-hour delay). Real-time information is only
+                    available via the manufacturers app, unless you’re willing to jump
+                    through many hoops. No matter, there’s still a huge amount of data
+                    being collected. And it starts to build up. But surely all of this
+                    data is good for something. What can we do with it?</p>
+
+                <p>That’s where Glucomate comes in. It’s an app for people who
+                    record, track, and monitor their blood glucose and use HealthKit
+                    to do it. Glucomate is the app that finally does something with
+                    all that data. You can analyse recent readings, spot trends, or go
+                    back to any date and view its history. It does all this while
+                    trying to look as good as possible. A notable feature is the
+                    ability to customise each of the tabs by reordering the displayed
+                    data. You can even choose to hide the data that isn’t relevant to you.</p>
+            </blockquote>
+
+            <p>The best apps, almost invariably, come from developers scratching their own itches. It looks to me like
+                Simone has made a terrifically practical tool for anyone monitoring their blood glucose levels. If you
+                have diabetes or know someone who does, Glucomate seems worth a look.</p>
+
+            <p>(There are <a
+                    href="https://www.bloomberg.com/news/articles/2023-02-22/apple-watch-blood-glucose-monitor-could-revolutionize-diabetes-care-aapl">rumors</a>
+                that future Apple Watch models might integrate sensors that read blood glucose levels continuously and
+                non-invasively (read: without puncturing your skin), but that’s just a rumor, and even if it comes to
+                pass, diabetics will still need ways to monitor their trends.)</p>
+
+            <div>
+                <a title="Permanent link to ‘App of the Day: Glucomate’"
+                   href="https://daringfireball.net/linked/2023/04/19/glucomate">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Four Takeaways From the Dominion v. Fox News Settlement</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.washingtonpost.com/politics/2023/04/18/fox-news-dominion-takeaways/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/urc"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/04/19/dominion-fox-news-takeaways"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39864</id>
+        <published>2023-04-19T21:15:33Z</published>
+        <updated>2023-04-19T21:15:34Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p>Great piece by Aaron Blake for The Washington Post that covers a lot of ground succinctly. This point
+                stuck out to me:</p>
+
+            <blockquote>
+                <p>Dominion says it’s not done, either, with lawyer Stephen
+                    Shackelford saying: “We’ve got some other people who have some
+                    accountability coming toward them. And we’ll move right on to the
+                    next one.”</p>
+
+                <p>Dominion is also <a
+                        href="https://www.nytimes.com/2023/04/06/technology/dominion-voting-mike-lindell-trump.html">suing
+                    MyPillow CEO Mike Lindell</a>, who
+                    promoted the false <a href="https://www.washingtonpost.com/elections/?itid=lk_inline_manual_44">election</a>
+                    claims on Fox and elsewhere.
+                    (Lindell’s fate would also seem to matter greatly to Fox, given
+                    that documents in the Dominion case show Fox referring to him as
+                    the network’s top advertiser.)</p>
+            </blockquote>
+
+            <p>Part of the way Fox News dug itself such a hole on this matter is that they were satisfying two demands
+                at once: their audience wanted to hear these nonsensical lies about the election being rigged, and their
+                top advertiser — Lindell — desperately <a
+                        href="https://www.cnn.com/2023/02/27/media/dominion-fox-news/index.html">wanted to come on the
+                    air to promulgate them</a>.</p>
+
+            <p><strong>See also:</strong> <a
+                    href="https://www.washingtonpost.com/media/2023/04/19/fox-news-coverage-dominion-lawsuit/">Elahe
+                Izadi’s report for the Post</a> on the one cable news channel that is reporting on this settlement very
+                quietly. You’ll never guess which.</p>
+
+            <div>
+                <a title="Permanent link to ‘Four Takeaways From the Dominion v. Fox News Settlement’"
+                   href="https://daringfireball.net/linked/2023/04/19/dominion-fox-news-takeaways">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>The Savings Account Is Half Empty</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.theinformation.com/articles/apples-new-savings-account-makes-iphones-more-valuable-for-thieves"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ura"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/04/18/savings-account-is-half-empty"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39862</id>
+        <published>2023-04-19T03:13:59Z</published>
+        <updated>2023-04-20T00:08:51Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p>Martin Peers, writing for The Information (paywalled, alas), “Apple’s New Savings Account Makes iPhones
+                More Valuable — for Thieves”:</p>
+
+            <blockquote>
+                <p>Whether this is smart for consumers depends on whether you’re
+                    comfortable having your life ruined if someone steals your iPhone.
+                    <a href="https://www.wsj.com/articles/apple-iphone-security-theft-passcode-data-privacya-basic-iphone-feature-helps-criminals-steal-your-digital-life-cbf14b1a">The
+                        Wall Street Journal recently published</a> an excellent
+                    report about how iPhone thieves are draining people’s bank
+                    accounts. That’s a result of people storing credit cards on Apple
+                    Pay and very often keeping photos of sensitive personal documents — passports and drivers’ licenses,
+                    for example — on their
+                    phones. Some people even write down their passwords in the Notes
+                    app on the phone. When you stop to think about it, storing all
+                    this stuff on a phone does seem kind of crazy.</p>
+            </blockquote>
+
+            <p>That Wall Street Journal report by Joanna Stern and Nicole Nguyen is indeed excellent (and I still intend
+                to follow-up on it here, but still haven’t finished), but Peers makes it sound like all a thief needs to
+                empty your bank account is your phone. What the Journal story made clear is that thieves need both your
+                phone <em>and</em> your device passcode. That’s a big difference.</p>
+
+            <p>Is the threat serious if a thief obtains both your phone <em>and</em> your device passcode? Very. But so
+                long as you’re protective of your passcode, you’re safe overall. Passwords protected in your keychain,
+                or even in Notes, are safer than passwords written on paper. You’ve got to store them somewhere.
+                Promulgating a message that it’s reckless to put any sensitive information in your phone, even using
+                features that are designed to store that information securely, is terrible advice. There’s nothing crazy
+                about it. It’s simply worth remembering, at all times, just how much your device passcode is protecting.
+            </p>
+
+            <p>And the new <a href="https://daringfireball.net/linked/2023/04/18/apple-card-savings-account">interest-paying
+                savings accounts</a> are just an alternative to having your Apple Card cash-back go to your Apple Cash
+                account — which pays no interest. So if Peers has successfully spooked any Information readers from
+                signing up for these savings accounts, all he’s succeeded in doing is keeping them from earning
+                interest. There’s zero difference in security. It’s news for Luddites.</p>
+
+            <blockquote>
+                <p>This isn’t solely Apple’s doing, of course. Most banks and the
+                    like now have phone apps, all of which make people vulnerable. But
+                    Apple has encouraged it, going so far as to allow people to store
+                    their drivers’ licenses on their iPhones and to <a
+                            href="https://support.apple.com/guide/iphone/unlock-your-door-with-a-home-key-iph0dc255875/ios">unlock
+                        their front
+                        doors</a> with their iPhones. And now there’s this savings account — iPhone thieves must be
+                    rubbing their hands in anticipation.</p>
+
+                <p>It’s a little hard to square Apple’s moves in this direction with
+                    Apple CEO Tim Cook’s evangelism regarding privacy and tech, not to
+                    mention his warnings about the dangers of people using technology
+                    too much. [...] Could it be Cook is only concerned about data
+                    security and privacy when it comes to social media, a business run
+                    by other companies?</p>
+            </blockquote>
+
+            <p>This is just looking to piss on Apple no matter what the story. A <a
+                    href="https://support.apple.com/en-us/HT213046">digital state ID stored in Apple Wallet</a> is <em>more</em>
+                secure than a printed card stored in your physical wallet. If one thief takes my iPhone, and another
+                takes my wallet and keys, the first thief needs my device passcode to get anything. The second thief
+                instantly knows everything that’s printed on my driver’s license and credit cards — including the
+                address of my home, where the keys will unlock the doors. The digitization of banking does carry risks,
+                but the pre-digital world of banking revolved around paper checks and signatures.</p>
+
+            <p>There’s nothing hard to square about Apple’s initiative in this regard at all. I’ll bet Tim Cook <s>has
+                his driver’s license in Apple Wallet</s> — and I practically guarantee that he has his credit cards in
+                Apple Wallet. Apple Wallet really is more secure that a physical wallet and cards. And the new savings
+                accounts simply offer Apple Card customers a way to earn interest on cash accounts that heretofore did
+                not pay any interest at all. There’s nothing to be cynical about with this.</p>
+
+            <p>[<strong>Update:</strong> California isn’t on the very short list of states that currently support IDs in
+                Apple Wallet — it’s still just Arizona, Colorado, and Maryland. But my point stands: I’d wager good
+                money that as soon as California does support it, Tim Cook will put his ID in Wallet.</p>
+
+            <p>Also, because these savings accounts pay industry-leading interest rates, it’s certain that many people
+                will transfer more money into them than they would with regular Apple Cash accounts, which means more
+                money is at risk if a thief obtains their phone <em>and</em> device passcode.]</p>
+
+            <div>
+                <a title="Permanent link to ‘The Savings Account Is Half Empty’"
+                   href="https://daringfireball.net/linked/2023/04/18/savings-account-is-half-empty">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Fox News Settles With Dominion for $787 Million, Averting Defamation Trial Over Its 2020 Election
+            Lies</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.cnn.com/2023/04/18/media/fox-dominion-settlement/index.html"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ur9"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/04/18/fox-news-settles-with-dominion"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39861</id>
+        <published>2023-04-19T00:33:15Z</published>
+        <updated>2023-04-19T02:49:46Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p>CNN:</p>
+
+            <blockquote>
+                <p>Fox News reached a last-second settlement with Dominion Voting
+                    Systems on Tuesday as the case raced toward opening statements,
+                    paying more than $787 million to end a colossal two-year legal
+                    battle that publicly shredded the right-wing network’s
+                    credibility.</p>
+
+                <p>Fox News’ $787.5 million settlement with Dominion Voting Systems
+                    is the largest publicly known defamation settlement in US history
+                    involving a media company. [...]</p>
+
+                <p>The right-wing network said in a statement that it “acknowledge[s]
+                    the Court’s rulings finding certain claims about Dominion to be
+                    false,” referring to <a
+                            href="https://www.cnn.com/2023/03/31/media/fox-news-dominion-lawsuit/index.html">Davis’
+                        recent ruling</a> that 20 Fox
+                    News broadcasts from late 2020 contained blatantly untrue
+                    assertions that Dominion rigged the presidential election. But Fox
+                    won’t have to admit on-air that it spread lies about Dominion, a
+                    Dominion representative told CNN.</p>
+
+                <p>The $787.5 million payout is roughly half of the $1.6 billion that
+                    Dominion <a
+                            href="https://www.cnn.com/2021/03/26/media/dominion-voting-systems-fox-news-lawsuit/index.html">initially
+                        sought</a>, though it is nearly 10 times
+                    the company’s valuation from 2018, and roughly eight times its
+                    annual revenue in 2021, according to court filings.</p>
+            </blockquote>
+
+            <p>What a <a href="https://www.bbc.com/news/world-us-canada-64886188">gift to humanity</a> this lawsuit has
+                been.</p>
+
+            <p>On the face of it, it makes no sense that anyone still watches Fox News. But that assumes that people
+                choose their news sources based on trustworthiness and a desire to learn the truth. That’s how and why
+                <em>I</em> pick my news sources. It’s probably how and why <em>you</em> do too. But Fox News appeals to
+                a whole swath of people who have an entirely different mindset.</p>
+
+            <p>Fox News addicts justify their continuing viewership on the grounds that, more or less, “everyone does
+                it” — that MSNBC, CNN, The New York Times, The Washington Post, the BBC, etc. all blatantly lie to their
+                viewers/readers in the same way Dominion proved that Fox News lies to its viewers. <em>They’re all liars
+                    and thieves, every system is rigged, and everyone in a position of power or authority is
+                    crooked.</em> It’s a form of nihilism that, I think, explains exactly how Trump got elected and how
+                he still has significant electoral support. If you believe everyone is a corrupt liar, you might as well
+                vote for the corrupt liar who (a) is on your side in the culture wars, and (b) wears his corruption and
+                dishonesty on his shirtsleeve. And might as well keep watching the cable “news” network that’s on your
+                side in the culture wars, proven liars or not.</p>
+
+            <p>Fox is paying <a href="https://twitter.com/NicoleSganga/status/1648465435384504327">a serious price
+                here</a>, but I suspect it’s purely financial, not attention.</p>
+
+            <div>
+                <a title="Permanent link to ‘Fox News Settles With Dominion for $787 Million, Averting Defamation Trial Over Its 2020 Election Lies’"
+                   href="https://daringfireball.net/linked/2023/04/18/fox-news-settles-with-dominion">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Adios, Parler</title>
+        <link rel="alternate" type="text/html"
+              href="https://variety.com/2023/digital/news/parler-shut-down-new-owner-starboard-twitter-clone-conservatives-1235583709/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ur8"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/04/18/parler-shut-down"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39860</id>
+        <published>2023-04-18T21:09:55Z</published>
+        <updated>2023-04-18T21:09:56Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p>Todd Spangler, reporting for Variety:</p>
+
+            <blockquote>
+                <p>Parler, the self-described “uncancelable free-speech social
+                    platform” that catered to right-wing users — which was <a
+                            href="https://variety.com/2022/digital/news/kanye-west-parler-deal-terminated-1235447337/">nearly
+                        acquired by Kanye West last year</a> — has been shut down by its
+                    new owner.</p>
+
+                <p>“No reasonable person believes that a Twitter clone just for
+                    conservatives is a viable business any more,” Arlington, Va.-based
+                    digital media company Starboard <a href="https://parler.com/">said in announcing Friday that it
+                        had acquired Parler</a>.</p>
+            </blockquote>
+
+            <p>No reasonable person believes Parler is ever going to successfully rebrand, either, so it’s a curiosity
+                what they bought it for. (Also, there’s <a href="https://truthsocial.com/@realDonaldTrump">at least
+                    one</a> unreasonable person who ostensibly believes a Twitter clone just for conservatives is a
+                viable business.)</p>
+
+            <div>
+                <a title="Permanent link to ‘Adios, Parler’"
+                   href="https://daringfireball.net/linked/2023/04/18/parler-shut-down">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>The End of Computer Magazines in America</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.technologizer.com/2023/04/15/the-end-of-computer-magazines-in-america/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ur7"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/04/18/computer-magazines-mccracken"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39859</id>
+        <published>2023-04-18T19:43:38Z</published>
+        <updated>2023-04-18T19:43:38Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p>Harry McCracken, writing at Technologizer:</p>
+
+            <blockquote>
+                <p>The April issues of Maximum PC and MacLife are currently on sale
+                    at a newsstand near you — assuming there is a newsstand near
+                    you. They’re the last print issues of these two venerable
+                    computer magazines, both of which date to 1996 (and were
+                    originally known, respectively, as Boot and MacAddict). Starting
+                    with their next editions, both publications will be available in
+                    digital form only.</p>
+
+                <p>But I’m not writing this article because the dead-tree versions of
+                    Maximum PC and MacLife are no more. I’m writing it because they
+                    were the last two extant U.S. computer magazines that had managed
+                    to cling to life until now. With their abandonment of print, the
+                    computer magazine era has officially ended. [...]</p>
+
+                <p>I take the loss personally, and not just because computer
+                    magazines kept me gainfully employed from 1991-2008. As a junior
+                    high student and <a href="https://techland.time.com/2012/08/03/trs-80/">Radio Shack TRS-80
+                        fanatic</a>, I bought my
+                    first computer magazine in late 1978, three years after Byte
+                    invented the category. It was a momentous enough moment in my life
+                    that I can tell you what it was (the <a
+                            href="https://archive.org/details/creativecomputing-1978-11">November-December 1978 issue
+                        of Creative Computing</a>) and where I got it (Harvard Square’s
+                    Out of Town News, the same newsstand that had <a
+                            href="https://www.technologizer.com/2009/01/02/the-newsstand-that-spawned-microsoft-is-set-to-close/">played
+                        a critical
+                        role in the founding of Microsoft just four years earlier)</a>.
+                    Even before I purchased that Creative Computing , our mailman had
+                    misdelivered a neighbor’s copy of Byte to our house, an error I
+                    welcomed and did not attempt to correct. From the moment I
+                    discovered computer magazines, I loved them almost as much as I
+                    loved computers, which is why I ended up working in the field for
+                    so long.</p>
+            </blockquote>
+
+            <p>As McCracken himself notes, it’s impossible to overstate the essential role computer magazines played
+                before the web. I read Macworld and MacUser cover-to-cover every month. Magazines were how you learned
+                to do stuff, how you learned about new applications and new hardware products, how you learned what you
+                might want to buy. When I eventually started writing occasional back-page columns for Macworld, it was
+                an indescribable thrill.</p>
+
+            <div>
+                <a title="Permanent link to ‘The End of Computer Magazines in America’"
+                   href="https://daringfireball.net/linked/2023/04/18/computer-magazines-mccracken">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Apple BKC in Mumbai, the First Apple Store in India, Opened Today</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.apple.com/newsroom/2023/04/apple-bkc-in-mumbai-opens-for-customers-this-tuesday/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ur6"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/04/18/apple-bkc-india"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39858</id>
+        <published>2023-04-18T19:29:37Z</published>
+        <updated>2023-04-18T19:29:37Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p>Looks beautiful. Some architectural details from Apple Newsroom:</p>
+
+            <blockquote>
+                <p>Apple BKC features a triangular handcrafted timber ceiling that
+                    extends beyond the glass façade to the underside of the exterior
+                    canopy, reflecting the unique geometry of the store. Each tile is
+                    made from 408 pieces of timber, forming 31 modules per tile with a
+                    total of 1,000 tiles that make up the ceiling. There are over
+                    450,000 individual timber elements, all of which were assembled in
+                    Delhi. Upon entering the store, customers are greeted by two stone
+                    walls sourced from Rajasthan and a 14-meter-long stainless steel
+                    staircase connecting the ground level and the cantilevered
+                    mezzanine.</p>
+            </blockquote>
+
+            <p><a href="https://mastodon.social/@ChanceHMiller/110221138059961880">Chance Miller on Mastodon</a>:</p>
+
+            <blockquote>
+                <p>Tim Cook reacting to someone who brought a Macintosh SE to the
+                    opening of the Apple BKC store in Mumbai today.</p>
+
+                <p>Maybe the happiest I’ve ever seen him.</p>
+            </blockquote>
+
+            <p>Those things <a href="https://everymac.com/systems/apple/mac_classic/specs/mac_se.html">weigh 17
+                pounds</a>.</p>
+
+            <div>
+                <a title="Permanent link to ‘Apple BKC in Mumbai, the First Apple Store in India, Opened Today’"
+                   href="https://daringfireball.net/linked/2023/04/18/apple-bkc-india">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Apple Card’s Savings Account Is Now Available, Offering 4.15 Percent Interest</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.apple.com/newsroom/2023/04/apple-cards-new-high-yield-savings-account-is-now-available-offering-a-4-point-15-percent-apy/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ur5"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/04/18/apple-card-savings-account"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39857</id>
+        <published>2023-04-18T19:15:21Z</published>
+        <updated>2023-04-18T19:15:22Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p>Apple Newsroom:</p>
+
+            <blockquote>
+                <p>Starting today, Apple Card users can choose to grow their Daily
+                    Cash rewards with a Savings account from Goldman Sachs, which
+                    offers a high-yield APY of 4.15 percent — a rate that’s more
+                    than 10 times the national average. With no fees, no minimum
+                    deposits, and no minimum balance requirements, users can easily
+                    set up and manage their Savings account directly from Apple Card
+                    in Wallet. [...]</p>
+
+                <p>Once a Savings account is set up, all future Daily Cash earned by
+                    the user will be automatically deposited into the account. The
+                    Daily Cash destination can also be changed at any time, and
+                    there’s no limit on how much Daily Cash users can earn. To build
+                    on their savings even further, users can deposit additional funds
+                    into their Savings account through a linked bank account, or from
+                    their Apple Cash balance.</p>
+            </blockquote>
+
+            <p><a href="https://www.investopedia.com/best-high-yield-savings-accounts-4770633">If you shop around</a>,
+                you can find some accounts offering closer to 5 percent, but 4.15 is indeed a very good interest rate
+                right now. There’s no catch here — it’s simply another reward for having an Apple Card. You just <a
+                        href="https://support.apple.com/en-us/HT213451">sign up in the Wallet app</a>, and boom, your
+                cash rewards go into the savings accounts and you start earning interest.</p>
+
+            <div>
+                <a title="Permanent link to ‘Apple Card’s Savings Account Is Now Available, Offering 4.15 Percent Interest’"
+                   href="https://daringfireball.net/linked/2023/04/18/apple-card-savings-account">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+
+        <link rel="alternate" type="text/html" href="https://l.kolide.co/3JWbXEv"/>
+        <link rel="shorturl" href="http://df4.us/ur4"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/feeds/sponsors/2023/04/kolide_--_zero_trust_for_okta_2"/>
+        <id>tag:daringfireball.net,2023:/feeds/sponsors//11.39856</id>
+        <author>
+            <name>Daring Fireball Department of Commerce</name>
+        </author>
+        <published>2023-04-18T03:00:37Z</published>
+        <updated>2023-04-18T20:55:02Z</updated>
+        <content type="html" xml:base="https://daringfireball.net/feeds/sponsors/" xml:lang="en"><![CDATA[
+            <p>Here’s an uncomfortable fact: at most companies, employees can download sensitive company data onto any
+                device, keep it there forever, and never even know that they’re doing something wrong.</p>
+
+            <p>Kolide’s new report, <a href="https://l.kolide.co/3I7025A">The State of Sensitive Data</a>, shines a
+                light on an area of security that is often ignored, but is nevertheless a massive hole in many
+                companies’ Zero Trust fortress.</p>
+
+            <p><img
+                    src="https://daringfireball.net/martini/images/kolide-survey-results.png"
+                    width=600
+                    alt="Study results showing that companies have poor policies for requiring user authentication to access sensitive data (65%); prohibiting downloading sensitive data onto personal devices (46%); ensuring plain-text access credentions are not stored on employee devices (38%); setting a specified time period sensitive data can reside on an employee device (16%)."
+            /></p>
+
+            <p>These findings are particularly alarming given the overall state of device security. IT teams routinely
+                struggle to enforce timely OS updates and patch management, meaning that end users are storing your most
+                sensitive data–things like customer records, confidential IP, and plain-text access credentials–on
+                devices that are vulnerable to attack.</p>
+
+            <p>This problem has gone unaddressed because until now there hasn’t been a good solution for it. <a
+                    href="https://l.kolide.co/3lch4WK">MDM solutions are too blunt an instrument</a> for dealing with
+                sensitive data, and <a href="https://l.kolide.co/3DTTpRA">DLP tools are too extreme and invasive</a> for
+                most companies. After all, you’re not trying to ban downloads together, nor regard every download as
+                suspicious. You’re just trying to make sure employees aren’t keeping data for longer than they need or
+                keeping it on an unmanaged or un-secure device.</p>
+
+            <p>Kolide offers a more nuanced approach to setting and enforcing sensitive data policies. </p>
+
+            <p><em>Our premise is simple: if an employee’s device is out of compliance, it can’t access your apps.</em>
+            </p>
+
+            <p>Kolide lets admins run queries to detect sensitive data, flag devices that have violated policies, and
+                enforce OS and browser updates so vulnerable devices aren’t accessing data.</p>
+
+            <p>Our unique approach makes device compliance part of the authentication process. If a device isn’t
+                compliant, users can’t log in to their cloud apps until they’ve fixed the problem. But instead of
+                creating more work for IT, Kolide provides instructions so users can get unblocked on their own.</p>
+
+            <p>To learn more and see our product in action, <a href="https://l.kolide.co/3XlSqAq">visit kolide.com</a>.
+            </p>
+
+            <div>
+                <a title="Permanent link to ‘Kolide — Zero Trust for Okta’"
+                   href="https://daringfireball.net/feeds/sponsors/2023/04/kolide_--_zero_trust_for_okta_2">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+        <title>[Sponsor] Kolide — Zero Trust for Okta</title></entry>
+    <entry>
+        <title>‘Headless Body in Topless Bar’</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.inquirer.com/opinion/commentary/headless-body-topless-bar-headline-40th-anniversary-20230414.html"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ur3"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/04/17/headless-body-in-topless-bar"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39855</id>
+        <published>2023-04-18T01:50:26Z</published>
+        <updated>2023-04-18T01:50:26Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p>Michael Klein, writing for The Philadelphia Inquirer:</p>
+
+            <blockquote>
+                <p>This month marks the 40th anniversary of a watershed moment in
+                    journalism: the publication of the “Headless Body in Topless Bar”
+                    headline on the front page of the New York Post. [...]</p>
+
+                <p>Vincent A. Musetto, one of the Post’s managing editors, gets the
+                    credit for “Headless Body in Topless Bar.” In a madcap newsroom
+                    run largely by owner Rupert Murdoch’s Fleet Street-hardened crew
+                    of Brits, Aussies, and Kiwis, Musetto was a real-deal,
+                    prototypical New Yorker: brash, zany, unafraid to drop-kick a
+                    trash can during a debate.</p>
+
+                <p>From that day, I wanted to work for Vinnie. Two years later, as a
+                    pun-loving 25-year-old copy editor at a South Jersey paper, I
+                    tried out as a Post sub-editor, designing pages and writing
+                    headlines. On the first day of my tryout, the editors sent me a
+                    goofy filler story about male dogs being electrocuted by a poorly
+                    grounded lamppost. The headline I submitted: “Piss of death.” It
+                    ran in exactly one edition before someone pointed out that such a
+                    four-letter word in 18-point type might be too much, even for the
+                    New York Post, which five years before had paid a morgue worker to
+                    unzip John Lennon’s body bag and take a photo of the slain Beatle
+                    in repose.</p>
+
+                <p>Musetto slapped my back, shot me a grin, and offered me a job.</p>
+            </blockquote>
+
+            <p>The best detail: the Post got two sources to confirm that the bar did indeed feature topless dancing.</p>
+
+            <div>
+                <a title="Permanent link to ‘‘Headless Body in Topless Bar’’"
+                   href="https://daringfireball.net/linked/2023/04/17/headless-body-in-topless-bar">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Play — Watch Later App for YouTube (and Other) Videos</title>
+        <link rel="alternate" type="text/html" href="https://apps.apple.com/us/app/id1596506190"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ur2"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/04/17/play"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39854</id>
+        <published>2023-04-17T23:18:39Z</published>
+        <updated>2023-04-17T23:19:45Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p>Another deceptively simple, very well-crafted app I’ve been meaning to recommend: Play, a “watch later”
+                app by <a href="https://marcosatanaka.com/">Marcos Tanaka</a>. Play is a great native app on iOS and
+                Mac, and includes a Share sheet extension for adding new videos to your queue. You can categorize videos
+                with tags, but that’s not necessary. What I really like is that Play is also a great app on Apple TV. I
+                queue videos from my Mac and iPhone, then watch them later on my TV. I like this way better than using
+                YouTube itself. One-time purchase of $3 gets you access to Play across all platforms. (That’s too
+                cheap — I wish it cost more.)</p>
+
+            <p><a href="https://daringfireball.net/linked/2016/12/15/zinc">For years</a> I’d been using an app called <a
+                    href="https://zinc.video/">Zinc</a> for the same purpose, but I find myself using Play more than I
+                ever used Zinc, because it has a Mac app, and Play’s Share sheet interface is better than Zinc’s
+                bookmarklet. Play pulls in all sorts of metadata from YouTube automatically — it’s just great. (Zinc
+                still works, if you have it installed, but it appears that the app is no longer available in the App
+                Store.)</p>
+
+            <div>
+                <a title="Permanent link to ‘Play — Watch Later App for YouTube (and Other) Videos’"
+                   href="https://daringfireball.net/linked/2023/04/17/play">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Short Circuit — ChatGPT App for iOS</title>
+        <link rel="alternate" type="text/html" href="https://shortcircuit.chat/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ur1"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/04/17/short-circuit"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39853</id>
+        <published>2023-04-17T20:15:29Z</published>
+        <updated>2023-04-18T01:57:39Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p>Developer Joe Fabisevich, <a href="https://mastodon.social/@mergesort@macaw.social/110108604558091308">on
+                Mastodon two weeks ago</a>:</p>
+
+            <blockquote>
+                <p>28 days ago I started built a prototype of Siri powered by
+                    ChatGPT, and was immediately drawn to the idea of a
+                    premium-feeling iOS, iPad, and Mac app for ChatGPT. This amazing
+                    technology deserves a good user experience, and we gave it one.</p>
+
+                <p>Partnering with <a href="http://www.mastodon.social/@soroush">@Soroush</a> to make that happen has
+                    been a dream,
+                    and I’m so excited to share Short Circuit with you.</p>
+            </blockquote>
+
+            <p>Very nicely done AI chat app for iOS. Worth checking out for the splendid icon alone — which itself <a
+                    href="https://macaw.social/@mergesort/109984019996932151">was crafted by AI</a>. (Short Circuit
+                works OK on MacOS via Catalyst, but the developers have a proper Mac app in the works.) If you’re new to
+                ChatGPT and aren’t sure what to do, there’s a fun “random prompt” button in the chat input field. The
+                integration with Shortcuts means you can just say “Hey Siri, ask Shorty...” and get answers from ChatGPT
+                instead of Siri itself. It’s free to try for a limited number of answers; after that, reasonably priced
+                subscriptions (ChatGPT is not free):</p>
+
+            <ul>
+                <li>$3/month: 100 answers</li>
+                <li>$6/month: 300 answers</li>
+                <li>$15/month: 1,000 answers</li>
+            </ul>
+
+            <p>They also offer a $30 lifetime unlock, if you have your own OpenAI developer token.</p>
+
+            <div>
+                <a title="Permanent link to ‘Short Circuit — ChatGPT App for iOS’"
+                   href="https://daringfireball.net/linked/2023/04/17/short-circuit">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>The Magic Highlighter Safari Extension</title>
+        <link rel="alternate" type="text/html"
+              href="https://themagichighlighter.com/blog/introducing-the-magic-highlighter/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/ur0"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/04/17/the-magic-highlighter"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39852</id>
+        <published>2023-04-17T19:19:47Z</published>
+        <updated>2023-04-17T19:19:48Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p>$2 Safari extension from Caleb Hailey:</p>
+
+            <blockquote>
+                <p>The Magic Highlighter is a brand new <a
+                        href="https://themagichighlighter.com/blog/safari-extensions">Safari Extension</a> that
+                    automatically highlights your Google.com, DuckDuckGo.com, and
+                    Bing.com search terms <em>and phrases</em> on search result web pages — saving you time, and helping
+                    you find what you’ve been searching
+                    for. The Magic Highlighter is available to download for iPhone,
+                    iPad, and Mac. It’s easy to use thanks to direct integration with
+                    Safari — just install the app, enable the extension, and use
+                    Safari like you normally would.</p>
+            </blockquote>
+
+            <p>Clever and simple. In addition to highlighting terms you entered from a search engine, you can highlight
+                whatever terms you want on any page, via the extension’s toolbar button.</p>
+
+            <div>
+                <a title="Permanent link to ‘The Magic Highlighter Safari Extension’"
+                   href="https://daringfireball.net/linked/2023/04/17/the-magic-highlighter">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>DPReview Is Working on Some Sort of ‘Archive’</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.dpreview.com/news/0507902613/dpreview-closure-an-update"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/uqz"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/04/17/dpreview-update"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39851</id>
+        <published>2023-04-17T17:56:48Z</published>
+        <updated>2023-04-17T18:42:18Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p>Scott Everett, general manager of the <a
+                    href="https://daringfireball.net/linked/2023/03/22/amazon-layoffs-dpreview">soon</a>-to-<a
+                    href="https://daringfireball.net/linked/2023/03/23/coldeway-dpreview">close</a> Amazon subsidiary
+                DPReview:</p>
+
+            <blockquote>
+                <p>We’ve received a lot of questions about what’s next for the site.
+                    We hear your concerns about losing the content that has been
+                    carefully curated over the years, and want to assure you that the
+                    content will remain available as an archive.</p>
+
+                <p>We’ve also heard that you need more time to access the site, so
+                    we’re going to keep publishing some more stories while we work on
+                    archiving.</p>
+            </blockquote>
+
+            <p>I don’t understand either of these paragraphs. I mean, I’m glad they’re still publishing new content, but
+                I don’t understand what publishing new stories has to do with giving readers more time to access the
+                site. And it’s completely unclear what sort of “archive” is going to be available after it closes.</p>
+
+            <p>What I’d really like to see is for Amazon to change its mind, and keep DPReview going. Or sell it to
+                someone else who will. But if it’s going to close, the right way to “archive” it is simply to keep the
+                site as-is and make it read-only. When you search for reviews of a specific camera model, DPReview’s
+                articles are always at or near the top in the results. Keep those old URLs available, unchanged.</p>
+
+            <p>As for that new content, here’s a good one: <a
+                    href="https://www.dpreview.com/articles/5191963353/most-significant-cameras-of-the-dpreview-era-part-1">a
+                look back at the most significant cameras DPReview has reviewed over the last 25 years</a>. Remember <a
+                    href="https://www.dpreview.com/articles/5191963353/most-significant-cameras-of-the-dpreview-era-part-1?slide=3">the
+                Nikons that looked like this</a>? I owned <a
+                    href="https://www.dpreview.com/articles/5191963353/most-significant-cameras-of-the-dpreview-era-part-1?slide=9">this
+                one</a> and <a
+                    href="https://www.dpreview.com/articles/2137384734/most-significant-cameras-of-the-dpreview-era-part-2?slide=3">this
+                one</a>, both purchased in part because of DPReview’s review.</p>
+
+            <div>
+                <a title="Permanent link to ‘DPReview Is Working on Some Sort of ‘Archive’’"
+                   href="https://daringfireball.net/linked/2023/04/17/dpreview-update">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Meh</title>
+        <link rel="alternate" type="text/html" href="https://meh.com/go/df"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/uqy"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/04/16/meh"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39850</id>
+        <published>2023-04-16T18:51:59Z</published>
+        <updated>2023-04-16T18:52:00Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p>My thanks to Meh for sponsoring last week at DF, and for having a logo that looks so good against DF’s
+                background color. Meh sells shit you can buy everywhere. But they’ve got it cheaper than anywhere.
+                That’s the deal.</p>
+
+            <p>If you like endless selection, unbelievable promotions, hip marketing, and non-stop hype, go somewhere
+                else.</p>
+
+            <div>
+                <a title="Permanent link to ‘Meh’"
+                   href="https://daringfireball.net/linked/2023/04/16/meh">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Montana Passes Bill Blocking Users From Downloading TikTok</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.nbcnews.com/tech/internet/montana-passes-bill-blocking-users-downloading-tiktok-rcna79622"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/uqx"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/04/14/montana-tiktok-ban"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39849</id>
+        <published>2023-04-15T01:36:13Z</published>
+        <updated>2023-04-16T18:50:22Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p>Uwa Ede-Osifo, reporting for NBC News:</p>
+
+            <blockquote>
+                <p>Montana lawmakers passed a bill Friday blocking downloads of TikTok, the most significant action yet
+                    by a state yet against the app. The bill, <a
+                            href="https://leg.mt.gov/bills/2023/billhtml/SB0419.htm">SB 419</a>, makes it illegal for
+                    app stores to give users the option to download the app and also illegal for the company to operate
+                    within the state. The bill does not, however, make it illegal for people who already have TikTok to
+                    use the app. A previous version of the bill sought to force internet providers to block TikTok, but
+                    that language was later removed.</p>
+
+                <p>The bill passed by a vote of 54-43.</p>
+            </blockquote>
+
+            <p>Putting aside the fact that Montana is a small state (44th in population, 1.1 million people), it just
+                doesn’t seem feasible to ban TikTok at the state level. Even if this goes into law and Apple and Google
+                comply, Montanans can just cross state lines to download it. And what constitutes a “download”? When you
+                buy a new phone and restore from your backup, your phone re-downloads all the apps you had installed on
+                your old phone. Does this mean Montanans who already have TikTok will lose it if they buy a new device,
+                or restore their current one?</p>
+
+            <p>I do think the U.S. should ban TikTok nationwide. But it seems futile — silly even — for states to do it
+                piecemeal.</p>
+
+            <div>
+                <a title="Permanent link to ‘Montana Passes Bill Blocking Users From Downloading TikTok’"
+                   href="https://daringfireball.net/linked/2023/04/14/montana-tiktok-ban">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Print Editions of ‘Make Something Wonderful’ for Sale on eBay</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.ebay.com/sch/i.html?_from=R40&amp;_trksid=p4432023.m570.l1313&amp;_nkw=make+something+wonderful&amp;_sacat=0"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/uqw"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/04/14/make-something-wonderful-ebay"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39848</id>
+        <published>2023-04-14T11:58:19Z</published>
+        <updated>2023-04-15T02:18:29Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p><a href="https://daringfireball.net/linked/2023/04/13/shareware-heroes">Speaking of books</a>, print
+                copies of the Steve Jobs Archive’s <a href="https://stevejobsarchive.com/book"><em>Make Something
+                    Wonderful: Steve Jobs in His Own Words</em></a> — presumably copies given to folks at Apple and
+                Disney — have hit eBay. Prices are really high — $500–1,000.</p>
+
+            <p>The website edition is a fantastic experience — <a
+                    href="https://twitter.com/mike_matas/status/1645790693758242819">thoughtfully designed</a>, and <a
+                    href="https://twitter.com/lorenb">implemented with handcrafted care</a> — but I do wish the SJA had
+                made the print edition available for retail purchase by the public. (I get it that the SJA doesn’t want
+                to monetize this stuff, but they could sell these books and donate the proceeds to charities that
+                Laurene Powell Jobs is involved with.)</p>
+
+            <p>I’ve lucked my way into a copy, and it’s as nice an object as you’d expect. Books can be such lovely
+                artifacts in hand, tactile experiences, and this is one. The whole thing — web and print editions
+                alike — is exemplary work from LoveFrom.</p>
+
+            <div>
+                <a title="Permanent link to ‘Print Editions of ‘Make Something Wonderful’ for Sale on eBay’"
+                   href="https://daringfireball.net/linked/2023/04/14/make-something-wonderful-ebay">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>‘Shareware Heroes’ by Richard Moss</title>
+        <link rel="alternate" type="text/html" href="https://sharewareheroes.com/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/uqv"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/04/13/shareware-heroes"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39847</id>
+        <published>2023-04-14T02:35:21Z</published>
+        <updated>2023-04-14T11:52:53Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p>From Richard Moss, author of the excellent <a href="https://secrethistoryofmacgaming.com/"><em>The Secret
+                History of Mac Gaming</em></a>:</p>
+
+            <blockquote>
+                <p><em>Shareware Heroes</em> takes readers on a journey through a critical
+                    yet long overlooked chapter in video game history: the rise and
+                    eventual fall of the shareware model.</p>
+
+                <p>As commercial game distribution professionalised in the 1980s,
+                    independent creators with scant resources or contacts were
+                    squeezed out of the market. But not entirely. New technologies and
+                    distribution concepts were creating a hidden games publishing
+                    market — one that operated by different rules and that, at least
+                    for the first several years, had no powerful giants.</p>
+
+                <p>It was a land of opportunity and promise, and a glimpse of the
+                    digital-first future. This is the story of the games and
+                    developers who relied on nascent networking technologies combined
+                    with word-of-mouth marketing in an era before social media.</p>
+            </blockquote>
+
+            <p>What a fun website Moss made for this. It’s just perfect. He’s got <a
+                    href="https://sharewareheroes.com/doomed.html">a preview from the chapter on Id Software’s Doom</a>
+                to whet your appetite. The book is available in hardcover, paperback, audio book, and e-book formats.
+            </p>
+
+            <div>
+                <a title="Permanent link to ‘‘Shareware Heroes’ by Richard Moss’"
+                   href="https://daringfireball.net/linked/2023/04/13/shareware-heroes">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>IDC: PC Sales, Including Macs, Are Way Down From a Year Ago</title>
+        <link rel="alternate" type="text/html" href="https://www.idc.com/getdoc.jsp?containerId=prUS50565723"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/uqu"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/04/13/idc-pc-sales-slump"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39846</id>
+        <published>2023-04-13T22:49:01Z</published>
+        <updated>2023-04-13T22:49:02Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p>IDC:</p>
+
+            <blockquote>
+                <p>Weak demand, excess inventory, and a worsening macroeconomic
+                    climate were all contributing factors for the precipitous drop in
+                    shipments of traditional PCs during the first quarter of 2023
+                    (1Q23). Global shipments numbered 56.9 million, marking a
+                    contraction of 29.0% compared to the same quarter in 2022,
+                    according to preliminary results from the International Data
+                    Corporation (IDC) <a href="https://www.idc.com/tracker/showproductinfo.jsp?containerId=IDC_P36344">Worldwide
+                        Quarterly Personal Computing Device
+                        Tracker</a>.</p>
+
+                <p>The preliminary results also represented a coda to the era of
+                    COVID-driven demand and at least a temporary return to pre-COVID
+                    patterns. Shipment volume in 1Q23 was noticeably lower than the
+                    59.2 million units shipped in 1Q19 and 60.6 million in 1Q18.</p>
+            </blockquote>
+
+            <p>According to IDC, Windows PC sales are down about 30 percent for the first quarter, year-over-year, and
+                Mac sales are down 40 percent. Are IDC’s numbers accurate? We should get a sense of that when Apple
+                announces results for the January–March quarter on May 4.</p>
+
+            <p>But we’ve already seen how strong the pull-forward effect from COVID and work-from-home has been: for the
+                October–December 2022 quarter, <a
+                        href="https://www.apple.com/newsroom/pdfs/FY23_Q1_Consolidated_Financial_Statements.pdf">Mac
+                    revenue was down 31 percent</a>. And most strikingly, Apple had a record-breaking quarter for Mac
+                sales <a
+                        href="https://sixcolors.com/post/2020/10/apple-q4-2020-results-record-mac-revenue-iphone-down/">in
+                    the July–September quarter of 2020</a> — <em>after</em> Apple had announced the transition to Apple
+                Silicon at WWDC, but months before those much-anticipated Macs shipped. People buy new PCs when they
+                need them, and zillions of people needed new PCs during COVID and with the post-COVID continuing
+                transition to more work from home.</p>
+
+            <div>
+                <a title="Permanent link to ‘IDC: PC Sales, Including Macs, Are Way Down From a Year Ago’"
+                   href="https://daringfireball.net/linked/2023/04/13/idc-pc-sales-slump">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>InsideSticker</title>
+        <link rel="alternate" type="text/html" href="https://insidesticker.com/en-us"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/uqt"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/04/13/insidesticker"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39845</id>
+        <published>2023-04-13T22:02:31Z</published>
+        <updated>2023-04-13T22:02:31Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p>An idea so grotesque that it’s awesome: exquisitely designed holographic “Inside” stickers for Apple’s
+                M-series chips. From the talented but obviously twisted mind of <a
+                        href="https://twitter.com/helvetiica">Vinoth Ragunathan</a>.</p>
+
+            <div>
+                <a title="Permanent link to ‘InsideSticker’"
+                   href="https://daringfireball.net/linked/2023/04/13/insidesticker">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+
+        <link rel="alternate" type="text/html" href="https://meh.com/go/df"/>
+        <link rel="shorturl" href="http://df4.us/uqs"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/feeds/sponsors/2023/04/meh_1"/>
+        <id>tag:daringfireball.net,2023:/feeds/sponsors//11.39844</id>
+        <author>
+            <name>Daring Fireball Department of Commerce</name>
+        </author>
+        <published>2023-04-13T21:02:08Z</published>
+        <updated>2023-04-13T21:02:16Z</updated>
+        <content type="html" xml:base="https://daringfireball.net/feeds/sponsors/" xml:lang="en"><![CDATA[
+            <p>We’re selling shit you can buy everywhere. But we’ve got it cheaper than anywhere. That’s the deal.</p>
+
+            <p>If you like endless selection, unbelievable promotions, hip marketing and non-stop hype, go somewhere
+                else.</p>
+
+            <div>
+                <a title="Permanent link to ‘Meh.com’" href="https://daringfireball.net/feeds/sponsors/2023/04/meh_1">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+        <title>[Sponsor] Meh.com</title></entry>
+    <entry>
+
+        <link rel="alternate" type="text/html" href="https://daringfireball.net/2023/04/warner_max"/>
+        <link rel="shorturl" href="http://df4.us/uqr"/>
+        <id>tag:daringfireball.net,2023://1.39843</id>
+        <published>2023-04-12T21:56:34Z</published>
+        <updated>2023-04-13T20:51:51Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <summary type="text">HBO’s new slogan might as well be “It’s not TV. It’s a tab somewhere in the Max app.”
+        </summary>
+        <content type="html" xml:base="https://daringfireball.net/" xml:lang="en"><![CDATA[
+            <p><a href="https://press.wbd.com/us/media-release/warner-bros-discovery-unveils-max-streaming-service">Warner
+                Bros. Discovery</a>:</p>
+
+            <blockquote>
+                <p>Warner Bros. Discovery today introduced Max, its enhanced
+                    streaming service, which will launch in the U.S. on May 23. Max is
+                    the destination for HBO Originals, Warner Bros. films, Max
+                    Originals, the DC universe, the Wizarding World of Harry Potter,
+                    an expansive offering of kids content, and best-in-class
+                    programming across food, home, reality, lifestyle and
+                    documentaries from leading brands like HGTV, Food Network,
+                    Discovery Channel, TLC, ID and more. Max will stand out amongst
+                    streamers by uniquely combining unrivaled breadth and superior
+                    quality with iconic franchises and strong product experience, all
+                    for great value.</p>
+            </blockquote>
+
+            <p>I would argue the opposite: that by cramming their entire disparate gamut of brands into a single
+                service, none of them stand out, and the Max brand stands for nothing.<sup id="fnr1-2023-04-12"><a
+                        href="#fn1-2023-04-12">1</a></sup></p>
+
+            <blockquote>
+                <p>Max will offer three pricing options, giving subscribers the
+                    choice to select which plan best fits the needs of their
+                    household.</p>
+
+                <ul>
+                    <li>Max Ad-Lite — $9.99/month or $99.99/year <br/>
+                        2 concurrent streams, 1080p resolution, no offline downloads,
+                        5.1 surround sound quality
+                    </li>
+                    <li>Max Ad Free — $15.99/month or $149.99/year <br/>
+                        2 concurrent streams, 1080 resolution, 30 offline downloads, 5.1 surround
+                        sound quality
+                    </li>
+                    <li>Max Ultimate Ad Free — $19.99/month or $199.99/year <br/>
+                        4 concurrent streams, up to 4K UHD resolution, 100 offline
+                        downloads, Dolby Atmos sound quality
+                    </li>
+                </ul>
+            </blockquote>
+
+            <p>These prices are pretty much the same as <a href="https://www.netflix.com/signup/planform">Netflix’s</a>,
+                except that Netflix’s “basic with ads” tier (it’s adorable that Max is calling theirs “ad-lite”) is
+                $7/month and, criminally, still limited to 720p resolution. <a
+                        href="https://www.disneyplus.com/welcome/disney-hulu-espn-bundle">Disney+</a> currently offers
+                two plans: $8/month with ads, or $11/month without (and with offline downloads). Disney+ also offers
+                bundles with Hulu and ESPN+: $13/month with ads, $20/month without. Apple TV+ — with a growing but
+                admittedly boutique-sized library compared to Max, Netflix, and Disney/Hulu — is $7/month, and has no
+                tier with ads.</p>
+
+            <p>When this “Max” name truncation was first rumored in December, <a
+                    href="https://daringfireball.net/linked/2022/12/06/cnbc-warner-max">I wrote</a>:</p>
+
+            <blockquote>
+                <p>Not the worst name they could go with. The mistake with “HBO Max”
+                    was muddying the premium HBO brand with the “anything and
+                    everything” content of a unified app for everything this enormous
+                    content factory conglomerate puts online. My big question is what
+                    happens to HBO content. Is it stuck in a tab inside the “Max” app,
+                    or will there be a standalone “HBO” app too?</p>
+            </blockquote>
+
+            <p>Looks like HBO is now just a brand inside the Max service. They’re ceding the “everything you get on this
+                service is premium content, and there are no ads” ground to Apple TV+. HBO is still HBO on cable, but as
+                the world inexorably moves to an all-streaming future, this feels like “corporate synergy” run amok. The
+                non-HBO content in HBO Max already diluted the brand; now they’re putting even more non-premium content
+                (all the Discovery crap) into the same app. (Today’s New York Times headline says it all: “<a
+                        href="https://www.nytimes.com/2023/04/11/business/media/max-streaming-warner-hbo.html">‘Succession’
+                    and ‘Dr. Pimple Popper’ Together in New Warner Streaming App</a>”.)</p>
+
+            <p>Disney set the example Warner Bros. Discovery should have followed, with Disney+ and Hulu as separate
+                apps, but priced together in a bundle. Disney isn’t relegating Disney+ content into a mere tab in the
+                Hulu app, nor are they allowing Hulu’s content to dilute the prestigious Disney brand in the Disney+
+                app.</p>
+
+            <p>They obviously think they’ve being clever with <a
+                    href="https://daringfireball.net/misc/2023/04/max-logotype.jpeg">the Max logotype</a> having a dot
+                inside the “a”, evoking the “o” in HBO’s, but I find it just sad — the bastardization of an iconic mark.
+                Either Max stands on its own, independent of HBO, or HBO should be <em>the</em> brand for HBO content.
+            </p>
+
+            <p>HBO’s old slogan was “It’s not TV. It’s HBO”. That slogan captured HBO’s prestige: unedited major motion
+                pictures, best-of-breed original content, all without commercial interruptions. HBO’s new slogan might
+                as well be “It’s not TV. It’s a tab somewhere in the Max app.”</p>
+
+            <div class="footnotes">
+                <hr/>
+                <ol>
+                    <li id="fn1-2023-04-12">
+                        <p>The nomenclatural trend <em>du jour</em> for subscription services is to take your company’s
+                            existing well-known brand and tack on a suffix like <em>plus</em>, <em>max</em>, or
+                            <em>one</em>. Hence: Disney+, ESPN+, Paramount+, Apple TV+, Apple One, Google One — <a
+                                    href="https://www.canalplus.com/">even Canal+ in France</a>. I think that’s what
+                            Warner was going for with the “Max” in HBO Max. So in some sense going with just plain “Max”
+                            makes no more branding sense than if Disney+ or Paramount+ had been named just “Plus”. But
+                            for those of you my age or older, <em>Max</em> also brings to mind Cinemax — Warner’s
+                            longtime cable-pay-channel sibling to HBO. Premium and commercial-free, like HBO, but
+                            clearly not <em>as</em> premium. HBO is <a
+                                    href="https://www.baseball-reference.com/players/d/dimagjo01.shtml">Joe DiMaggio</a>;
+                            Cinemax is <a href="https://www.baseball-reference.com/players/d/dimagdo01.shtml">Dom
+                                DiMaggio</a>. HBO is the home of hall-of-fame groundbreaking original series like <em>The
+                                Sopranos</em>, <em>The Wire</em>, <em>The Larry Sanders Show</em>, <em>Curb Your
+                                Enthusiasm</em>, <em>Game of Thrones</em>, and <em>Succession</em>. Cinemax is the home
+                            of ... <a href="https://www.imdb.com/list/ls567109928/">checks notes</a> ...
+                            <em>Banshee</em>, <em>The Knick</em>, <em>Warrior</em>, and <em>Mike Judge Presents: Tales
+                                from the Tour Bus</em>. Cinemax’s biggest claim to fame from my teenage years is that
+                            after a certain hour, they showed movies that earned them the nickname “<a
+                                    href="https://screencrush.com/rip-skinemax/">Skinemax</a>”. (Sleepovers were always
+                            preferably held at the homes of Cinemax subscribers.)</p>
+
+                        <p>No matter what Warner Bros. Discovery intends “Max” to mean, it feels damn stupid to lean
+                            even vaguely on Cinemax, and not at all on HBO, as a brand name.&nbsp;<a
+                                    href="#fnr1-2023-04-12" class="footnoteBackLink"
+                                    title="Jump back to footnote 1 in the text.">&#x21A9;&#xFE0E;</a></p>
+                    </li>
+                </ol>
+            </div>
+
+
+            ]]>
+        </content>
+        <title>★ Warner Bros. Discovery Is Really Going to Drop the ‘HBO’ Brand and Just Call Its Streaming Service
+            ‘Max’</title></entry>
+    <entry>
+        <title>Bob Iger’s Letter to Disney Employees Accompanying Their Copies of ‘Make Something Wonderful’</title>
+        <link rel="alternate" type="text/html"
+              href="https://daringfireball.net/misc/2023/04/iger-disney-jobs-book-letter.jpeg"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/uqq"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/04/12/iger-jobs-book-letter"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39842</id>
+        <published>2023-04-12T16:12:54Z</published>
+        <updated>2023-04-12T18:00:29Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p>Bob Iger, in a company-wide memo:</p>
+
+            <blockquote>
+                <p>What makes it different is that it is a collection of Steve’s own
+                    words, drawn from his speeches, interviews, and correspondence. In
+                    these pages, we are offered a glimpse into his unique and
+                    wonderful mind. In a sense, this book is another tool from Steve — a resource for you, the reader,
+                    to spark the creativity that
+                    lives inside all of us and make your own mark on the world.</p>
+            </blockquote>
+
+            <p>My link on this post is to a photo of the letter, via a little birdie at Disney — here’s <a
+                    href="https://daringfireball.net/misc/2023/04/iger-disney-jobs-book-letter.text">the text of the
+                letter</a>, and <a href="https://mastodon.social/@gruber/110187006998782806">my post on Mastodon</a>.
+            </p>
+
+            <p>Also, for everyone enjoying the book on the website, due to a regression in the latest version of
+                Safari/WebKit, it works best in Chromium browser. (Example: the full-screen pages lock into place as you
+                swipe.)</p>
+
+            <div>
+                <a title="Permanent link to ‘Bob Iger’s Letter to Disney Employees Accompanying Their Copies of ‘Make Something Wonderful’’"
+                   href="https://daringfireball.net/linked/2023/04/12/iger-jobs-book-letter">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>‘Make Something Wonderful: Steve Jobs in His Own Words’</title>
+        <link rel="alternate" type="text/html" href="https://stevejobsarchive.com/book"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/uqp"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/04/11/make-something-wonderful"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39841</id>
+        <published>2023-04-11T20:34:58Z</published>
+        <updated>2023-04-11T20:34:59Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p>New, from The Steve Jobs Archive:</p>
+
+            <blockquote>
+                <p>A curated collection of Steve’s speeches, interviews and
+                    correspondence, Make Something Wonderful offers an unparalleled
+                    window into how one of the world’s most creative entrepreneurs
+                    approached his life and work. In these pages, Steve shares his
+                    perspective on his childhood, on launching and being pushed out of
+                    Apple, on his time with Pixar and NeXT, and on his ultimate return
+                    to the company that started it all.</p>
+            </blockquote>
+
+            <p>From Laurene Powell Jobs’s introduction:</p>
+
+            <blockquote>
+                <p>Steve once told a group of students, “You appear, have a chance to
+                    blaze in the sky, then you disappear.” He gave an extraordinary
+                    amount of thought to how best to use our fleeting time. He was
+                    compelled by the notion of being part of the arc of human
+                    existence, animated by the thought that he — or that any of us — might elevate or expedite human
+                    progress.</p>
+
+                <p>It is hard enough to see what is already there, to gain a clear
+                    view. Steve’s gift was greater still: he saw clearly what was not
+                    there, what could be there, what had to be there. His mind was
+                    never a captive of reality. Quite the contrary: he imagined what
+                    reality lacked and set out to remedy it. His ideas were not
+                    arguments, but intuitions, born of a true inner freedom and an
+                    epic sense of possibility.</p>
+            </blockquote>
+
+            <p>There’s a (very?) limited print edition that is not for sale, but is being given to Apple employees and
+                others who were close to Jobs (such as Jony Ive’s team at LoveFrom, who clearly produced this work and
+                the lovely apple tree logomark). It’s freely available <a href="http://apple.co/sja">on Apple Books</a>
+                (nice URL), but I think the best way to read it, if you’re not fortunate enough to have access to the
+                printed book, is the website. It’s just lovely.</p>
+
+            <p><a href="https://twitter.com/sdw/status/1645833999762472960">Sebastiaan de With, on Twitter</a>:</p>
+
+            <blockquote>
+                <p>It’s hard to capture the delight of a real book, but this website
+                    does a fantastic job coming close. Lots delightful, thoughtful
+                    little details.</p>
+
+                <p>I say ‘ebook’ because it isn’t a word used anywhere on the
+                    website, likely for good reason: there are no good ebooks. The
+                    ePub file lacks all the delight of the beautiful website. Books on
+                    Apple Books are objectively worse than their written counterparts.
+                    This might be nicer.</p>
+
+                <p>Try jumping around using the ‘line of contents’. Super nice stuff.
+                    The website even remembers where you left off.</p>
+            </blockquote>
+
+            <div>
+                <a title="Permanent link to ‘‘Make Something Wonderful: Steve Jobs in His Own Words’’"
+                   href="https://daringfireball.net/linked/2023/04/11/make-something-wonderful">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Microsoft Now Supports Windows 11 on Apple Silicon Macs, but Only Through Parallels</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.theverge.com/2023/2/16/23602718/microsoft-windows-11-apple-mac-m1-m2-support-parallels-virtual-machines"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/uqo"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/04/11/windows-11-apple-silicon"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39840</id>
+        <published>2023-04-11T19:46:53Z</published>
+        <updated>2023-04-11T23:49:41Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p>Tom Warren, reporting for The Verge back in February:</p>
+
+            <blockquote>
+                <p>Still, Microsoft’s plan to officially authorize Parallels to
+                    support this way of running Windows 11 on Apple’s latest Macs is a
+                    step beyond what we’ve had so far. Up until now, Microsoft has
+                    only licensed Windows versions of Arm directly to OEMs, making it
+                    difficult for M1 and M2 users to officially run it in VM.</p>
+
+                <p>Parallels started supporting Windows on M1 chips with the
+                    Parallels Desktop 16.5 release, but this latest version lets you
+                    download and install Windows 11 in a single click. Parallels is
+                    also handling the complexity of Windows 11’s TPM and Secure Boot
+                    requirements with a virtual TPM that’s paired with Apple silicon.</p>
+            </blockquote>
+
+            <p>It’s nice to be able to run Windows at all on Apple Silicon Macs, but I find it a bit strange that
+                Microsoft doesn’t simply allow the direct installation of Windows via Boot Camp, like on Intel Macs. My
+                understanding is that Apple would welcome this and work with Microsoft to make it work as well as
+                possible, and it’s Microsoft’s decision not to license the ARM version of Windows for direct
+                installation on Macs. Note, for example, the existence of <a href="https://asahilinux.org/about/">Asahi
+                    Linux</a> — a project that already has a working (although incomplete, driver-wise) version of Linux
+                you can install directly on Apple Silicon Macs.</p>
+
+            <p>[<strong>Update:</strong> A little birdie at Microsoft reports that running Windows via Parallels was in
+                fact <em>Apple’s</em> preferred solution, and the birdie was left with the impression that Apple does
+                not want to support Boot Camp on Apple Silicon Macs. Interesting then, that installing and booting into
+                non-Mac OSes — like Asahi Linux — is supported at all. You certainly can’t do that with iPhones or iPads
+                or Apple TVs.]</p>
+
+            <p>For people who need or just want to run Windows on their Macs: how well does it work going through
+                Parallels? As everyone now knows, MacOS running on Apple Silicon hardware runs both faster <em>and</em>
+                more efficiently (longer battery life) than it does on Intel hardware. Does practical day-to-day usage
+                of Windows, through Parallels, running on Apple Silicon hardware show similar performance and battery
+                life gains? I would imagine that some, but not all, of MacOS’s efficiency on Apple Silicon comes from
+                having the entire OS tuned not just for ARM CPUs in general but <a
+                        href="https://daringfireball.net/2020/11/the_m1_macs#bespoke-architecture">for Apple’s M-series
+                    SoCs specifically</a>. Anyone out there who’s using this, <a
+                        href="https://daringfireball.net/contact/">let me know</a>.</p>
+
+            <div>
+                <a title="Permanent link to ‘Microsoft Now Supports Windows 11 on Apple Silicon Macs, but Only Through Parallels’"
+                   href="https://daringfireball.net/linked/2023/04/11/windows-11-apple-silicon">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>‘Katie Knows Everything’</title>
+        <link rel="alternate" type="text/html" href="https://daringfireball.net/2014/05/katie_cotton"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/uqn"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/04/11/katie-knows-everything"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39839</id>
+        <published>2023-04-11T19:23:59Z</published>
+        <updated>2023-04-11T19:23:59Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p>From the DF archive, my piece in 2014 remarking upon her retirement from Apple, with an anecdote from the
+                iPhone 4 “antennagate” press conference in 2010:</p>
+
+            <blockquote>
+                <p>I was wearing a large SLR camera on a strap around my neck. As I
+                    filed in to find a seat, I was offered a choice: if I wanted to
+                    take photos during the event, I could sit toward the back; if I
+                    were willing to forgo taking photos, I could sit up front in the
+                    third row. I only had my camera with me on a lark — the
+                    advantages of publishing a website that runs photographs only
+                    rarely — so I took the seat in the third row. The first two rows,
+                    as usual, were occupied by senior Apple executives and employees.</p>
+
+                <p>As I took my seat, Katie Cotton, sitting in the second row, smiled
+                    and greeted me. “Hi John, glad you could make it. How’s the cold?”</p>
+
+                <p>I was feeling fine, the cold not much more than a memory at that
+                    point, and told her so. But I had to ask, laughing, “How did you
+                    even know I had a cold?”</p>
+
+                <p>Before she could answer, <a href="https://www.google.com/search?q=greg%20joswiak">Greg Joswiak</a>,
+                    sitting directly in
+                    front of me, turned around. “John, Katie knows <em>everything</em>.”</p>
+            </blockquote>
+
+            <div>
+                <a title="Permanent link to ‘‘Katie Knows Everything’’"
+                   href="https://daringfireball.net/linked/2023/04/11/katie-knows-everything">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Kara Swisher on Katie Cotton</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.vox.com/2014/5/30/11627500/goodbye-to-all-that-today-is-katie-cottons-last-day-at-apple"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/uqm"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/04/10/swisher-on-cotton"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39838</id>
+        <published>2023-04-11T01:50:03Z</published>
+        <updated>2023-04-11T02:45:09Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p>Kara Swisher, back in 2014, on Katie Cotton’s retirement from Apple:</p>
+
+            <blockquote>
+                <p>Did she sometimes ice our reporters out, ignore calls or reply
+                    with newsless answers? Sometimes. [...] Did she try her hardest
+                    to showcase Apple and its products in a way that benefited it?
+                    Yep. [...] Was she vocal when she did not like something we did?
+                    And how.</p>
+
+                <p><em>So what?</em></p>
+
+                <p>That kind of hard driving is part and parcel to the business, even
+                    if she was harder driving and, because of that, more successful
+                    than most. As she once told me when we talked about her outsize
+                    reputation in the tech press: “I am not here to make friends with
+                    reporters, I am here to put a light on and sell Apple products.”</p>
+
+                <p>It was no surprise that some used the opportunity of her exit to
+                    drag out their complaints in the kind of strange rage that has
+                    been — at least to my mind — oddly emotional and sometimes full
+                    of vitriol that would never be directed at a man who was
+                    similarly strong.</p>
+
+                <p>Consider the various words used to describe her: “Queen of Evil,”
+                    “wicked witch,” “cold and distant,” “frigid supremacy,” “queen
+                    bee” and, perhaps most obviously misogynistic, “dominatrix.”</p>
+            </blockquote>
+
+            <p>I always appreciated Cotton’s forthrightness, and part of that is Apple’s institutional default to “no
+                comment” when asked about anything other than what Apple wants to talk about. Those “no comments” seem
+                to downright offend some reporters, but to me, they’re a sign of respect. Better not to say anything at
+                all, and waste no one’s time, than to offer up a lengthy but meaningless pile of bullshit, which in my
+                experience is how most PR teams operate. If you wanted Katie Cotton to coddle you or bullshit you for an
+                hour, you were going to be disappointed. If you wanted Katie Cotton to respect you, you simply needed to
+                respect her and her team at Apple.</p>
+
+            <p>As for the misogyny she faced at every step of her career, a lasting part of Cotton’s legacy is that
+                Apple’s PR team remains full of women. I’d wager that Apple PR is majority women, in fact. I could
+                contact Apple to ask about that, but I think I know the answer I’d get.</p>
+
+            <div>
+                <a title="Permanent link to ‘Kara Swisher on Katie Cotton’"
+                   href="https://daringfireball.net/linked/2023/04/10/swisher-on-cotton">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Katie Cotton, Rest in Peace</title>
+        <link rel="alternate" type="text/html"
+              href="https://obits.lehighvalleylive.com/us/obituaries/etpa/name/kathryn-cotton-obituary?id=51601641"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/uql"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/04/10/katie-cotton-rip"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39837</id>
+        <published>2023-04-10T23:56:39Z</published>
+        <updated>2023-04-10T23:56:39Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p>Terribly sad news: former Apple PR leader Katie Cotton has died, apparently after a long illness:</p>
+
+            <blockquote>
+                <p>It is with great sadness that the family of Kathryn Elizabeth
+                    Cotton announces her passing. Fondly known to family, friends and
+                    all who loved her as Katie. She passed peacefully on Thursday
+                    evening, April 6, surrounded by family and close friends. [...]</p>
+
+                <p>Katie is recognized as one of the most remarkable women in Public
+                    Relations and Marketing in Technology. In her role as Vice
+                    President of Worldwide Corporate Communications for Apple Inc.,
+                    she worked most of her 18-year career directly for Steve Jobs. She
+                    was a strong and unwavering proponent for the company, helping to
+                    elevate its products and brand.</p>
+
+                <p>If you would like to honor Katie’s life and charitable work,
+                    please consider a donation to <a href="https://www.petsinneed.org/">Pets In
+                        Need</a> in Redwood City or
+                    <a href="https://safespace.org/">SafeSpace</a> in Menlo Park.</p>
+            </blockquote>
+
+            <div>
+                <a title="Permanent link to ‘Katie Cotton, Rest in Peace’"
+                   href="https://daringfireball.net/linked/2023/04/10/katie-cotton-rip">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Ostensibly Private Twitter Circle Tweets Are Being Shown Publicly</title>
+        <link rel="alternate" type="text/html"
+              href="https://techcrunch.com/2023/04/10/twitter-circle-bug-not-private/?guccounter=1"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/uqk"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/04/10/twitter-circle"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39836</id>
+        <published>2023-04-10T23:34:01Z</published>
+        <updated>2023-04-10T23:34:02Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p>Amanda Silberling, writing for TechCrunch:</p>
+
+            <blockquote>
+                <p>Numerous Twitter users are reporting a bug in which Circle tweets — which are supposed to reach a
+                    select group, like an Instagram
+                    <a href="https://techcrunch.com/2018/11/30/how-instagram-close-friends-works/">Close Friends</a>
+                    story — are surfacing on the
+                    algorithmically generated <a
+                            href="https://techcrunch.com/2023/01/24/twitter-wont-force-you-to-the-for-you-timeline-on-web-anymore/">For
+                        You</a> timeline. That means
+                    that your supposedly private posts might breach containment to
+                    reach an unintended audience, which could quickly spark some
+                    uncomfortable situations.</p>
+
+                <p>I observed this bug when a tweet from someone I follow appeared on
+                    my For You timeline, but the retweet button was disabled, despite
+                    the person’s account being public. When I clicked on the tweet, it
+                    disappeared. I asked the tweeter if that post was intended for
+                    their Circle — which I am not in — and they confirmed this was
+                    the case. [...]</p>
+
+                <p>TechCrunch has spoken to multiple users who have also experienced
+                    this glitch firsthand; <a href="https://twitter.com/adamjmoussa/status/1644460901779615745">many</a>
+                    <a href="https://twitter.com/AC3ATTORN3Y/status/1644526438786146304">more</a> <a
+                            href="https://twitter.com/ERnurse86/status/1644733902840365060">have</a>
+                    <a href="https://twitter.com/DaricCott/status/1644541029641752578">reported</a> the glitch in their
+                    tweets. Most often, it seems
+                    that Circle tweets are being surfaced in the For You timeline to
+                    users who follow the poster, but are not in their Circle. Others
+                    have reported that their Circle tweets are reaching even further
+                    than those who follow them.</p>
+            </blockquote>
+
+            <p>Other privacy-related bugs I’ve seen people mention recently:</p>
+
+            <ul>
+                <li><a href="https://twitter.com/WillOremus/status/1639297936499658753">Will Oremus saw tweets in his
+                    timeline from people who had blocked him</a>.
+                </li>
+                <li>Ian Coldwater, testing the privacy of Twitter Circles, created a circle with just one other person,
+                    sent a tweet to that circle, <a href="https://twitter.com/IanColdwater/status/1645468617394331649">and
+                        it was shown to several people not in the circle</a>.
+                </li>
+                <li>Replying to Coldwater, <a href="https://twitter.com/wbm312/status/1645497243708067841">Whitney
+                    Merrill argues that this is a data breach under EU law</a>, and could result in hefty fines.
+                </li>
+            </ul>
+
+            <p>I don’t trust anything “private” about Twitter, including and especially DMs. Some kind of breach
+                regarding DMs seems inevitable at this point, given how sloppy Twitter is getting under Phony Stark.</p>
+
+            <div>
+                <a title="Permanent link to ‘Ostensibly Private Twitter Circle Tweets Are Being Shown Publicly’"
+                   href="https://daringfireball.net/linked/2023/04/10/twitter-circle">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>CGP Grey Grades America’s State Flags</title>
+        <link rel="alternate" type="text/html" href="https://www.youtube.com/watch?v=l4w6808wJcU"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/uqj"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/04/10/cgp-grey-americas-flags"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39835</id>
+        <published>2023-04-10T21:29:39Z</published>
+        <updated>2023-04-10T21:29:40Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p>I love CGP Grey’s videos, and I know firsthand that we largely share similar design taste. (At some
+                long-ago WWDC in San Francisco, Grey and I realized we carried not only <a
+                        href="https://bellroy.com/products/card-sleeve-wallet">the exact same wallet</a>, but the same
+                (alas, now discontinued) <em>color</em> of that wallet.) So I expected to largely agree with his grading
+                of the 50 American state flags. I did not expect to agree with his grades completely. 50 for 50, no
+                notes.</p>
+
+            <div>
+                <a title="Permanent link to ‘CGP Grey Grades America’s State Flags’"
+                   href="https://daringfireball.net/linked/2023/04/10/cgp-grey-americas-flags">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>‘The Real-World Costs of the Digital Race for Bitcoin’</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.nytimes.com/2023/04/09/business/bitcoin-mining-electricity-pollution.html?smid=nytcore-ios-share&amp;referringSource=articleShare"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/uqi"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/04/10/nyt-costs-of-bitcoin"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39834</id>
+        <published>2023-04-10T21:12:40Z</published>
+        <updated>2023-04-10T21:12:41Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p>Gabriel J.X. Dance, reporting for The New York Times (with informative graphics by Tim Wallace and Zach
+                Levitt) on the Bitcoin mining industry:</p>
+
+            <blockquote>
+                <p>It is as if another New York City’s worth of residences were now
+                    drawing on the nation’s power supply, The Times found.</p>
+
+                <p>In some areas, this has led prices to surge. In Texas, where 10 of
+                    the 34 mines are connected to the state’s grid, the increased
+                    demand has caused electric bills for power customers to rise
+                    nearly 5 percent, or $1.8 billion per year, according to a
+                    simulation performed for The Times by the energy research and
+                    consulting firm Wood Mackenzie.</p>
+
+                <p>The additional power use across the country also causes as much
+                    carbon pollution as adding 3.5 million gas-powered cars to
+                    America’s roads, according to an analysis by WattTime, a nonprofit
+                    tech company. Many of the Bitcoin operations promote themselves as
+                    environmentally friendly and set up in areas rich with renewable
+                    energy, but their power needs are far too great to be satisfied by
+                    those sources alone. As a result, they have become a boon for the
+                    fossil fuel industry: WattTime found that coal and natural gas
+                    plants kick in to meet 85 percent of the demand these Bitcoin
+                    operations add to their grids.</p>
+            </blockquote>
+
+            <p>The costs of Bitcoin seem clear: higher energy prices and more carbon emissions. Totally unclear: what we
+                should, or even can, do about it.</p>
+
+            <div>
+                <a title="Permanent link to ‘‘The Real-World Costs of the Digital Race for Bitcoin’’"
+                   href="https://daringfireball.net/linked/2023/04/10/nyt-costs-of-bitcoin">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+
+        <link rel="alternate" type="text/html" href="https://daringfireball.net/2023/04/gm_carplay_iphones"/>
+        <link rel="shorturl" href="http://df4.us/uqh"/>
+        <id>tag:daringfireball.net,2023://1.39833</id>
+        <published>2023-04-10T21:01:49Z</published>
+        <updated>2023-04-11T02:14:20Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <summary type="text">In many ways our phones are our new digital hubs, and CarPlay exemplifies that role.
+        </summary>
+        <content type="html" xml:base="https://daringfireball.net/" xml:lang="en"><![CDATA[
+            <p>Jason Snell, writing at Six Colors, “<a
+                    href="https://sixcolors.com/post/2023/04/general-motors-hates-your-iphone/">General Motors Hates
+                Your iPhone</a>”:</p>
+
+            <blockquote>
+                <p>I get the impulse to want to control everything that happens in
+                    your car, if you’re an automaker. But given the fact that the
+                    smartphone is everyone’s <em>real</em> ride-or-die, the best choice is to
+                    integrate tightly with the supercomputer we all keep in our
+                    pockets, not to say “let them eat Bluetooth” and be happy
+                    degrading the customer experience in the interest of control and
+                    incremental revenue. [...]</p>
+
+                <p>Will GM’s competitors follow its lead, relieved that the world is
+                    finally starting to trend away from bring-your-own-device support
+                    in cars? Or will they consider CarPlay a competitive advantage
+                    that will allow them to market their own vehicles against GM’s? I
+                    sure hope it’s the latter, because we’re never going to give up
+                    our smartphones — and if our cars don’t talk to them properly,
+                    our in-car experiences will always be second-rate.</p>
+            </blockquote>
+
+            <p>One thought I had regarding this decision by GM is that it’s a bit like selling “smart” TV sets that
+                don’t support HDMI input. You get the TV maker’s interface for using apps, games, and streaming
+                services, with no choice to plug in a third-party device like an Apple TV, Chromecast stick, or Roku. I
+                don’t know of any TV sets like that, but HomePods are sort of like that as speakers. HomePods have no
+                traditional line-in for audio — whatever sound comes out of your HomePods, it comes through Apple’s own
+                software stack. GM is more like a traditional speaker company. It’d be really weird if, say, Bose sold a
+                set of smart speakers that didn’t support line-in, because unlike Apple, Bose isn’t a leading software
+                platform company.</p>
+
+            <p>Tesla is seemingly thriving while going its own way software-wise. Rivian is following Tesla’s lead, and
+                can’t manufacture their vehicles fast enough to keep up with demand. But both of those companies have
+                roots in Silicon Valley, not Detroit. Both Tesla and Rivian seem more like Apple than they do General
+                Motors.</p>
+
+            <p>Marques Brownlee had Rivian CEO R.J. Scaringe as his guest on his Waveform podcast this week (recorded in
+                the cabin of a Rivian R1S), and asked him about Rivian’s decision not to support CarPlay or Android
+                Auto. <a href="https://youtu.be/RdjDDtHvUXA?t=709">Scaringe’s answer (11m:49s) was good</a>:</p>
+
+            <blockquote>
+                <p>“I mean a lot of the things we do, like whether it’s music or
+                    mapping, we have to make sure we integrate in with the
+                    best-in-class platforms. But by controlling the system it just
+                    allows us to be the ... arbiter, the head chef, in terms of the
+                    experience that you get, versus handing over control of what we
+                    think is one of the most important parts of the experience.”</p>
+            </blockquote>
+
+            <p>Rivian sees itself as much as a software company as a hardware one. That’s an ambitious gamble, to be
+                sure, but Scaringe’s comments clearly show that Rivian understands the stakes, and are doing this to put
+                the overall driving/ownership experience first.<sup id="fnr1-2023-04-10"><a href="#fn1-2023-04-10">1</a></sup>
+            </p>
+
+            <p>The system that runs the onboard computer is a major factor in car-buying decisions today, and it’s only
+                increasing in importance with each passing year. If GM, in collaboration with Google, creates their own
+                custom platform that makes people as happy as Tesla’s and Rivian’s do, well, OK. But I have no faith in
+                GM or Google to pull that off. I personally know several Tesla owners whose number one complaint is that
+                Teslas don’t support CarPlay, and I know other people who have chosen cars other than Teslas solely for
+                that reason. A lot of Tesla owners and would-be owners wish Tesla supported CarPlay — and I would wager
+                heavily that GM never delivers a system that’s as good as Tesla’s, let alone CarPlay.</p>
+
+            <p>And the fact that GM is doing this in collaboration with Google already puts them in different territory
+                than Tesla or Rivian, who’ve created their own entire software stacks. If GM is only going to support
+                its own automotive software system, they ought to be willing <em>and able</em> to do the entire thing
+                themselves, with confidence that they’ll provide a best-in-class experience for owners. Otherwise this
+                seems like a data grab by Google — collecting location, search, and music/podcast listening data from
+                every driver of every vehicle GM eventually sells with this system — and a SaaS revenue grab by GM. <a
+                        href="https://www.reuters.com/technology/gm-plans-phase-out-apple-carplay-evs-with-googles-help-2023-03-31/">From
+                    the Reuters report that broke this news</a>:</p>
+
+            <blockquote>
+                <p>Buyers of GM EVs with the new systems will get access to Google
+                    Maps and Google Assistant, a voice command system, at no extra
+                    cost for eight years, GM said. GM said the future infotainment
+                    systems will offer applications such as Spotify’s music service,
+                    Audible and other services that many drivers now access via
+                    smartphones.</p>
+
+                <p>“We do believe there are subscription revenue opportunities for
+                    us,” Kummer said. GM Chief Executive Mary Barra is aiming for
+                    $20 billion to $25 billion in annual revenue from subscriptions
+                    by 2030.</p>
+            </blockquote>
+
+            <p>This sounds like a decision motivated entirely by a desire to generate a significant new services revenue
+                stream, and not at all motivated by a desire to create the best possible driving/passenger
+                experience.</p>
+
+            <p>One influential group that knows the importance of CarPlay integration are car dealers. Say what you want
+                about car salespeople, they know exactly what motivates buying decisions. I suspect GM corporate is
+                getting an earful from GM dealers regarding this decision. I don’t know if GM is planning to share that
+                future subscription revenue with dealers, but they won’t get a penny from every sale lost to a rival
+                whose cars do support CarPlay.<sup id="fnr2-2023-04-10"><a href="#fn2-2023-04-10">2</a></sup></p>
+
+            <p>20 years ago Apple presented the Mac as the ideal “digital hub” — the connection between all of one’s
+                disparate devices, from MP3 players to cameras. A decade later, Apple went all-in on iCloud, and cloud
+                computing in general, as the new hub. But in many ways our phones are our new digital hubs. They serve a
+                very different role from what Macs and PCs did 20 years ago. Rather than serve as a hub for
+                <em>hardware</em> peripherals, our phones serve as our primary hub for <em>software</em> services and
+                apps. CarPlay exemplifies that role.</p>
+
+            <div class="footnotes">
+                <hr/>
+                <ol>
+
+                    <li id="fn1-2023-04-10">
+                        <p>I wonder how much of a factor it is that Apple has spent the last decade not-so-secretly
+                            working on creating its own line of cars? There’s no way GM would ever integrate a software
+                            system from, say, Ford or Honda. But so why integrate CarPlay, which comes from a company
+                            that seemingly wants to compete with existing automakers? Apple’s own car ambitions make
+                            CarPlay integration, to some extent, seem like a wolf in sheep’s clothing.&nbsp;<a
+                                    href="#fnr1-2023-04-10" class="footnoteBackLink"
+                                    title="Jump back to footnote 1 in the text.">&#x21A9;&#xFE0E;︎</a></p>
+                    </li>
+
+                    <li id="fn2-2023-04-10">
+                        <p>I wonder too about car rental fleets. I’d be furious today if I rented a car that didn’t
+                            support CarPlay. I might be willing to learn a new system in a new car I bought, but when I
+                            rent a car, I just want to connect my iPhone and get the navigation, music, and podcast
+                            experience I already know.&nbsp;<a href="#fnr2-2023-04-10" class="footnoteBackLink"
+                                                               title="Jump back to footnote 2 in the text.">&#x21A9;&#xFE0E;</a>
+                        </p>
+                    </li>
+
+                </ol>
+            </div>
+
+
+            ]]>
+        </content>
+        <title>★ GM, CarPlay, and iPhones</title></entry>
+    <entry>
+        <title>WorkOS</title>
+        <link rel="alternate" type="text/html"
+              href="https://workos.com/?utm_source=daringfireball&amp;utm_medium=newsletter&amp;utm_campaign=df2023"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/uqg"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/04/09/workos"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39832</id>
+        <published>2023-04-09T19:17:25Z</published>
+        <updated>2023-04-09T19:17:25Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p>My thanks to WorkOS for sponsoring last week at DF. WorkOS is like “Stripe for enterprise features.” They
+                make it easy for developers to build features needed by enterprise customers, such as Single Sign-On and
+                SCIM.</p>
+
+            <p>Shipping these feature is important because they enable selling upmarket for bigger deals. Without these
+                features, the IT department will reject your app. But these enterprise features are complex and
+                time-consuming to build yourself, usually taking months.</p>
+
+            <p>With WorkOS you can integrate and ship enterprise features in minutes. Beautiful API docs guide you
+                through every step of the way, and transparent pricing scales based on usage. It’s a product built by
+                developers, for developers.</p>
+
+            <div>
+                <a title="Permanent link to ‘WorkOS’" href="https://daringfireball.net/linked/2023/04/09/workos">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Kirk McElhearn: ‘Apple Music Classical (Mostly) Plays the Right Chords’</title>
+        <link rel="alternate" type="text/html"
+              href="https://tidbits.com/2023/03/29/apple-music-classical-mostly-plays-the-right-chords/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/uqf"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/04/08/mcelhearn-apple-music-classical"/>
+        <id>tag:daringfireball.net,2023:/linked//6.39831</id>
+        <published>2023-04-08T19:12:29Z</published>
+        <updated>2023-04-09T00:30:33Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+            <p>Kirk McElhearn has a comprehensive review of the new Apple Music Classical app/catalog at TidBITS:</p>
+
+            <blockquote>
+                <p>Due to the way classical works have been cataloged over time, many
+                    of their names are unique, at least for the most famous composers.
+                    Schubert’s compositions are <a href="https://en.m.wikipedia.org/wiki/Schubert_Thematic_Catalogue">cataloged
+                        according to the work of
+                        Otto Erich Deutsch</a>, hence the D before work numbers. Bach’s
+                    works have BWV numbers, for <a href="https://en.m.wikipedia.org/wiki/Bach-Werke-Verzeichnis">Bach-Werke-Verzeichnis,
+                        or Bach works
+                        catalog</a>. For other composers, opus numbers are used,
+                    referring to a specific publication. So for Beethoven, we have Op.
+                    26: Piano Sonata No. 12 in A♭ major, which is a single piano
+                    sonata, and Op. 27, which contains two piano sonatas, No. 1: Piano
+                    Sonata No. 13 in E♭ major, and No. 2: Piano Sonata No. 14 in C♯
+                    minor, also known as the Moonlight Sonata.</p>
+
+                <p>The point of this somewhat lengthy preamble is to explain why
+                    searching for classical music is so much more complicated than
+                    searching for popular music. You may want to listen to a specific
+                    work by a given composer, but also by one of your favorite
+                    performers. And, as you can see with the example of the Schubert
+                    sonata, work names are not always as simple as Bach’s Goldberg
+                    Variations. Metadata is the key to managing classical music.</p>
+            </blockquote>
+
+            <p>I’ve seen some people wondering if Apple Music Classical is the first step toward per-genre apps: Apple
+                Music Rock, Apple Music Rap, Apple Music Jazz, etc. That’s almost certainly not going to happen.
+                Classical music is different, because it doesn’t fit in the simple categorization of artist → album →
+                song. Classical music demands different and more metadata attached to the music, <em>and</em> a
+                different interface for browsing, discovering, and managing that music.</p>
+
+            <p>One seemingly weird thing about Apple Music Classical: it’s iPhone-only for now. McElhearn writes:</p>
+
+            <blockquote>
+                <p>It also seems like it should be trivial to add Apple Music
+                    Classical to the Music app on the desktop. Adding a sidebar entry
+                    would not change the interface much, and since all of the content
+                    in the Apple Music Classical app is HTML, the Music app would have
+                    no problem displaying it. It’s the exact same type of content that
+                    Apple Music uses.</p>
+
+                <p>All this makes the Apple Music Classical app seem like an
+                    experiment. It’s quite polished for a 1.0 release, and, despite
+                    the issues that I’ve mentioned above that will irritate classical
+                    music fans, it’s a generally successful attempt to provide a
+                    better way to access classical music. Apple should be praised for
+                    paying so much attention to a genre that represents only 2–3% of
+                    the overall music market.</p>
+            </blockquote>
+
+            <div>
+                <a title="Permanent link to ‘Kirk McElhearn: ‘Apple Music Classical (Mostly) Plays the Right Chords’’"
+                   href="https://daringfireball.net/linked/2023/04/08/mcelhearn-apple-music-classical">&nbsp;★&nbsp;</a>
+            </div>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+
+        <link rel="alternate" type="text/html"
+              href="https://daringfireball.net/2023/04/a_bit_of_follow-up_on_wavelength"/>
+        <link rel="shorturl" href="http://df4.us/uqc"/>
+        <id>tag:daringfireball.net,2023://1.39828</id>
+        <published>2023-04-05T00:00:46Z</published>
+        <updated>2023-04-08T19:50:03Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <summary type="text">A few additional tidbits regarding Wavelength.</summary>
+        <content type="html" xml:base="https://daringfireball.net/" xml:lang="en"><![CDATA[
+            <p>Lots of great feedback from <a href="https://daringfireball.net/2023/03/wavelength">my post last week</a>
+                about <a href="https://www.wavelength.app/">Wavelength</a>. A few that I’ve noted:</p>
+
+            <ul>
+                <li><p>Ben Thompson and I spent last Friday’s episode of <a href="https://dithering.fm/">Dithering</a>
+                    talking about Wavelength. You should subscribe! We even started a Dithering group in
+                    Wavelength — the link is in the show notes for the episode. (And speaking of Dithering, the show is
+                    on vacation this week — a fact we neglected to mention on air. Sorry about that.)</p></li>
+                <li><p>Semafor editor-in-chief Ben Smith devoted the “One Good Chat” feature <a
+                        href="https://www.semafor.com/newsletter/03/29/2023/vinod-khosla-openais-first-vc-investor">in
+                    this newsletter last week</a> to a group chat between him, Wavelength’s founders, and the Wavelength
+                    AI bot. It’s brief, but it conveys a sense of how fun it is to engage AI chat in a group context.
+                </p></li>
+                <li><p><a href="https://news.ycombinator.com/item?id=35334613#35335289">Hacker News had a pretty good
+                    thread</a> about Wavelength (and my post about it). </p></li>
+                <li><p><a href="https://twitter.com/wattmaller1/status/1641605786349580289">Matt Waller tweeted my very
+                    favorite AI interaction</a> with Wavelength’s bot to date.</p></li>
+            </ul>
+
+            <p><strong>Everything else:</strong> Feedback from those of you who’ve started using Wavelength has been
+                very consistent. The top missing features: reactions/tapbacks, editing messages to fix typos, and
+                search. And the biggest issue is, perhaps, group discoverability: How do you find good groups to join? A
+                side effect of Wavelength’s focus on privacy is that there’s no public directory of groups. I suspect
+                this will sort itself out as Wavelength gains traction, but in the meantime, it can seem a bit quiet if
+                you don’t know many other people using Wavelength.</p>
+
+            <p><strong>One more thing:</strong> The fact that Wavelength has no Android app yet comes up repeatedly, for
+                obvious reasons. Less obvious and very curious to me is this: I haven’t seen a single complaint about
+                the fact that there is no Windows app, nor any announced plans to create one. I’m not sure why that is.
+                The Mac app is very important to me — I really can’t imagine spending much time using any messaging
+                platform that doesn’t have a Mac client, or at the very least a web app. But Windows users are OK with
+                that?</p>
+
+            <p><strong>Bonus postscript:</strong> <a href="https://nickpunt.com/blog/group-messagings-balancing-act/">Nick
+                Punt wrote a thoughtful post</a> with suggestions for making the presentation of threads in Wavelength
+                feel more organized without increasing friction.</p>
+
+
+            ]]>
+        </content>
+        <title>★ A Bit of Follow-Up on Wavelength</title></entry>
+    <entry>
+
+        <link rel="alternate" type="text/html"
+              href="https://daringfireball.net/2023/04/the_case_of_the_iphone_case_poll"/>
+        <link rel="shorturl" href="http://df4.us/uq9"/>
+        <id>tag:daringfireball.net,2023://1.39825</id>
+        <published>2023-04-04T00:56:14Z</published>
+        <updated>2023-04-10T19:17:13Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <summary type="text">A poll about iPhone case usage, and my own iPhone 14 case recommendations.</summary>
+        <content type="html" xml:base="https://daringfireball.net/" xml:lang="en"><![CDATA[
+            <p>Last month <a href="https://mastodon.social/@gruber/109956599103256092">I posted to Mastodon</a> to
+                complain that I’d somehow cracked the back of my iPhone for the second year running. I say “somehow”
+                because I hadn’t dropped my phone — I have no idea what caused the crack. My complaint:</p>
+
+            <blockquote>
+                <p>Second year in a row that the back cracked on my iPhone. Can’t
+                    wait until they figure out a way to stop making the backs out of
+                    glass. What a terrible material for a phone frame in every regard
+                    other than allowing for inductive charging.</p>
+            </blockquote>
+
+            <p>My complaint, I think, is undeniably valid: glass, all things considered, is a rather terrible material
+                for the back of a phone. The biggest upside of glass is that it allows for inductive charging. It’s also
+                good for allowing wireless antennas to pass through signals. Subjectively, you can argue that glass
+                makes for a premium look and feel. But glass is undeniably fragile. An expensive product you carry
+                around in your pocket or purse ought to be made of sturdy materials, not fragile ones. Plastic would
+                work, but plastic isn’t a luxury material.</p>
+
+            <p>Inevitably, many of the responses I got were along the lines of “<em>That’s what you get for not using a
+                case.</em>” There’s a subset of people who consider phone cases mandatory, not optional. That’s not an
+                altogether unreasonable stance, but to me it only proves the point that, if the inductive charging and
+                wireless signal pass-through issues could be solved, phone backs ought to be made out of a much more
+                durable material than glass. Apple has <a
+                        href="https://www.cnet.com/pictures/scenes-from-the-iphone-4-antenna-press-event-photos/24/">never</a>
+                designed iPhones thinking they <em>need</em> to be in a case.</p>
+
+            <p>I’m not a materials engineer and I have no suggestions for a material to replace glass. I’m just saying
+                that ideally, Apple would find a material that looks good, feels good, isn’t slippery, allows inductive
+                charging and wireless signals to pass through, <em>and</em> is crack and scratch-resistant. Also:
+                lightweight. At the moment, only <a href="https://en.wikipedia.org/wiki/Unobtainium">unobtainium</a>
+                seemingly fits the bill.</p>
+
+            <p>The whole thing got me wondering how many of my followers use a case on their phones. So I asked in a
+                poll, <a href="https://mastodon.social/@gruber/109967265407586630">on both Mastodon</a> <a
+                        href="https://twitter.com/gruber/status/1632180244743323654">and Twitter</a>:</p>
+
+            <blockquote>
+                <p>How do you typically — meaning, majority of the time — carry
+                    your iPhone?</p>
+
+                <ul>
+                    <li>No case</li>
+                    <li>Apple case</li>
+                    <li>Third-party case</li>
+                </ul>
+            </blockquote>
+
+            <p>Let’s just get this out of the way: the people who follow me on Mastodon and Twitter are, of course, not
+                representative of the general public. I mean come on, that should go without saying. (My question even
+                presupposes that everyone answering owns an iPhone.) But that doesn’t mean that the case choices of
+                people who follow me aren’t interesting.</p>
+
+            <p>This poll intrigued me in two ways: (a) the answers to the poll, and (b) as a test of my relative
+                engagement on Mastodon and Twitter. Both aspects surprised me. Here are the overall poll results,
+                combining over 17,000 responses from Mastodon and Twitter:</p>
+
+            <ul>
+                <li>No case: 31%</li>
+                <li>Apple case: 34%</li>
+                <li>Third-party case: 36%</li>
+            </ul>
+
+            <p>I started the Twitter poll a few hours after the Mastodon poll, but ran them on the same day (March 4),
+                for the same duration (24 hours), and with the exact same language. There were 9,171 responses on
+                Mastodon (split 30/35/35 percent, respectively) and 7,880 responses on Twitter (split 31/32/37
+                percent).</p>
+
+            <p>So on the engagement front, Mastodon flat out won, by a margin of over 1,000 responses, despite the fact
+                that I have only <a href="https://mastodon.social/@gruber">39,000 followers on Mastodon</a>, compared to
+                <a href="https://twitter.com/gruber">362,500 followers on Twitter</a>. Again, by no means am I even
+                vaguely trying to argue that Mastodon is a more popular platform with more engagement than Twitter <em>overall</em>.
+                But amongst <em>my</em> followers, it clearly is. I expected Mastodon to fare well in this test, but I
+                did not expect it to win.<sup id="fnr1-2023-04-03"><a href="#fn1-2023-04-03">1</a></sup></p>
+
+            <p>As for the poll results, I was even more surprised, both by the number of “no case” responses (nearly a
+                full third)<sup id="fnr2-2023-04-03"><a href="#fn2-2023-04-03">2</a></sup> and by the number of case
+                users who buy Apple’s own.</p>
+
+            <p>It seems hard to find any polling or surveys on case usage amongst the general population. Best I’ve
+                found is <a
+                        href="https://www.statista.com/statistics/368627/us-protective-case-usage-among-smartphone-owners/">this
+                    poll of U.S. smartphone owners from 2017</a> that showed 79 percent use a case. Observationally I’d
+                have guessed the answer would be more like 85–90 percent, but ~80 percent certainly feels plausible.</p>
+
+            <h2>I Don’t Always Drink Beer, but When I Do, I Prefer Dos Equis</h2>
+
+            <p>For most of the year, in most situations, I have always carried my iPhones sans case. But I do buy a few
+                cases each year, and I do use them occasionally. Sometimes I use a case in the coldest months of winter,
+                when I wear gloves outdoors and my ungloved hands are often cold — I seem more likely to drop, or almost
+                drop, my iPhone in cold weather. Sometimes I use a case while travelling, when I use my phone as a
+                camera more often than on typical days, for added grip. And sometimes I just get bored and put on a case
+                for a few days just for the hell of it.</p>
+
+            <p>I don’t care for Apple’s silicone cases because I don’t like the rubbery, mushy-feeling buttons. And I
+                don’t care for the look or feel of Apple’s clear cases. Apple’s leather cases look and feel nice, and
+                their metal buttons are, by far, the best-feeling buttons on any cases I’ve ever tried. But there’s one
+                aspect shared by all of Apple’s cases that I dislike: the protective rim goes around the entire edge of
+                the iPhone, including the bottom.</p>
+
+            <p>I much prefer iPhone cases with no bottom lip — it makes the swipe-up-from-the-bottom gesture more
+                pleasant, and that’s a gesture I make dozens of times per day every day. Apple’s cases <a
+                        href="https://www.apple.com/sg_smb_5200/shop/product/MR6F2FE/A/iphone-x-silicone-case-spicy-orange">used
+                    to have no bottom lip</a> — but a couple of years ago they changed. My guess is that <a
+                        href="https://youtu.be/_UnXGBotjwo?t=146">too many people</a> feel like they “need” a case whose
+                protective edge goes all the way around. With each passing year it seems harder to find any iPhone cases
+                with no bottom lip.</p>
+
+            <p>I own two cases for my iPhone 14 Pro that I’m happy to recommend, and a third worthy of an honorable
+                mention. All have built-in MagSafe support, and none have a bottom lip:</p>
+
+            <ul>
+                <li><p><a
+                        href="https://bullstrap.co/collections/magsafe-gear/products/magsafe-iphone-cases-sienna?variant=42427776762050">Bullstrap’s
+                    $85 leather case</a>. I’ve bought cases from Bullstrap now for a few years running. They’re a lot
+                    like Apple’s own leather cases, but with no bottom lip, and with a distinctive rounded bulge for the
+                    camera cutout. I find Bullstrap’s rounded camera bulge much more pleasant-feeling than Apple’s sharp
+                    plastic insert. I don’t understand why more cases don’t have a camera cutout like this. Bullstrap
+                    also has a slightly bigger, and thus slightly nicer, cutout for the mute switch than Apple’s cases
+                    do. Bullstrap’s leather is nice, and ages well. I have almost embarrassingly sweaty hands during hot
+                    weather, so leather cases tend to darken, quickly, in my grip. <a
+                            href="https://daringfireball.net/misc/2023/04/bullstrap-case-before-after.jpeg">Here’s a
+                        side-by-side shot</a> of my year-old Bullstrap iPhone 13 Pro case and my then-brand-new iPhone
+                    14 Pro case, both in “Sienna” brown. My one and only knock against Bullstrap’s case is their plastic
+                    buttons. They’re fine buttons, but they’re not as nice as Apple’s metal ones, and for $85 I don’t
+                    think it’s unreasonable to expect excellent buttons.</p></li>
+                <li><p><a href="https://www.ipitaka.com/products/magez-case-3-for-iphone-14?variant=40305657479238">Pitaka’s
+                    $60 MagEZ Case 3 aramid fiber case</a>. <a href="https://en.wikipedia.org/wiki/Aramid">Aramid
+                    fiber</a> is both lightweight and strong — it’s used in body armor under the brand name Kevlar. I’ve
+                    been buying Pitaka cases for a few years, too. These cases are lightweight and so thin that they
+                    have cutouts for the side buttons and mute switch. This case is less about drop protection and more
+                    about grip. The feel of aramid fiber is a bit hard to describe — it’s soft, and feels a bit like
+                    leather. It doesn’t feel rubbery or plasticky at all. It’s not grippy per se, but it’s not at all
+                    slippery. If I could make one request of Pitaka, it would be for a case that is all black, instead
+                    of striped black-and-gray.</p></li>
+                <li><p>Honorable mention: <a href="https://ansoncalder.com/products/iphone-14-cases-with-magsafe">Anson
+                    Calder’s $80 leather case</a>. This case is sort of a cross between Bullstrap’s and Pitaka’s — it’s
+                    leather, like Bullstrap’s, but has cutouts for the buttons on both sides, like Pitaka’s. Those
+                    cutouts eliminate any complaints about buttons on the case itself, but because leather cases are
+                    thicker than Pitaka’s super-thin aramid cases, it’s a bit harder to press the buttons on the phone
+                    itself than with Pitaka’s. Bonus points to Anson Calder for having no logo or indicia on the outside
+                    of the case at all.</p></li>
+                <li><p>Special mention: <a
+                        href="https://ryanlondon.com/collections/iphone-14-series-leather-case/products/leather-iphone-14-pro-shell-case-magsafe-black">Ryan
+                    London’s $56 leather case</a>. I neither own nor have seen one of these in person, but <a
+                        href="https://atp.fm/510">as discussed on Accidental Tech Podcast back in November</a>, my
+                    fellow nitpicker extraordinaire John Siracusa bought both the Bullstrap and Ryan London cases, and
+                    deems them indistinguishable, aside from their embossed logos. (Perhaps they’re both based on some
+                    sort of white-label design from a manufacturer in China?) Bullstrap embosses their logo centered on
+                    the back of the case, like Apple does. Ryan London’s branding is more subtle (and in fact isn’t
+                    pictured in their own product photography): a subtle “R” embossed on the edge with the volume
+                    buttons.</p></li>
+            </ul>
+
+            <div class="footnotes">
+                <hr/>
+                <ol>
+
+                    <li id="fn1-2023-04-03">
+                        <p>I will also note that I didn’t mention that I was running the same poll on both platforms. I
+                            know none of these polls are rigorous, but I was thinking that if I mentioned up front that
+                            I was running it on both, Mastodon users might have been encouraged to respond to show their
+                            support for the fledgling platform. I just wanted to see how many people responded to the
+                            poll simply because they wanted to answer the question.&nbsp;<a href="#fnr1-2023-04-03"
+                                                                                            class="footnoteBackLink"
+                                                                                            title="Jump back to footnote 1 in the text.">&#x21A9;&#xFE0E;︎</a>
+                        </p>
+                    </li>
+
+
+                    <li id="fn2-2023-04-03">
+                        <p>My friend Cabel Sasser, back in September: “AppleCare+ is my go-to iPhone case.” If you read
+                            the replies to my poll, you’ll see <a href="https://www.apple.com/support/products/iphone/">AppleCare+</a>
+                            mentioned several times amongst the no-casers. AppleCare+ is expensive (two years of
+                            coverage: $150 for an iPhone SE; $220–270 for iPhones 12-14, depending on the model) but
+                            with it, screen or back glass repairs cost just $29 per incident. Me personally, though, I’m
+                            a gambler: I haven’t purchased AppleCare for any product since my Macintosh LC for college
+                            in 1991, and through some combination of good fortune and careful handling, I’m now way
+                            ahead for having forgone it so many times. If I could get the cracked back glass on my
+                            iPhone 14 Pro repaired for just a $29 deductible, I suppose I’d do it, but as it stands I’ll
+                            tell myself the crack adds character.&nbsp;<a href="#fnr2-2023-04-03"
+                                                                          class="footnoteBackLink"
+                                                                          title="Jump back to footnote 2 in the text.">&#x21A9;&#xFE0E;</a>
+                        </p>
+                    </li>
+
+                </ol>
+            </div>
+
+
+            ]]>
+        </content>
+        <title>★ The Case of the iPhone Case Poll</title></entry>
+</feed><!-- THE END -->
