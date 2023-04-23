@@ -107,6 +107,8 @@ IDENTITY_TESTS = [
     ('mastodon.social/@mastodonusercount', 'https://mastodon.social/@mastodonusercount/110051957865629817'),
     ('social.network.europa.eu/@EU_Commission', 'https://social.network.europa.eu/@EU_Commission/110140022257601348'),
     ('social.treehouse.systems/@marcan', 'https://social.treehouse.systems/@marcan/109917995005981968'),
+    ('mastodon.nl/@vickyvdtogt', 'https://mastodon.nl/@vickyvdtogt/110196805189572082'),
+    ('masto.ai/@mg', 'https://masto.ai/@mg/110212843144499061'),
 
 
     # -- package repositories

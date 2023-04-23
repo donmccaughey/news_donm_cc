@@ -3,8 +3,7 @@
 ## To Do
 
 - more mastodon links
-  - https://mastodon.nl/@vickyvdtogt/110196805189572082
-  - https://masto.ai/@mg/110212843144499061
+  - 
 - medium blog post
   - https://blog.medium.com/now-you-can-embed-mastodon-posts-in-medium-stories-99b11d0baa7f
 - AWS site

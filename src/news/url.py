@@ -1,4 +1,5 @@
 import logging
+import re
 from pathlib import Path
 from typing import AnyStr
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
@@ -65,7 +66,7 @@ class URL:
             'sr.ht',
             'twitter.com',
         ]
-        if looks_social(hostname, path) or hostname in social_sites:
+        if looks_social(path) or hostname in social_sites:
             return keep_path_matching(hostname, path, '/*')
 
         pattern_map = {
@@ -109,13 +110,20 @@ def is_dirty(parameter: tuple[AnyStr, AnyStr]) -> bool:
     return name.startswith('utm_')
 
 
-def looks_social(hostname: str, path: str) -> bool:
-    subdomains = hostname.split('.')
-    return (
-        'social' in subdomains
-        and path.startswith('/@')
-        and len(path) > 2
-    )
+SOCIAL_PATH_PATTERN = re.compile(
+    r'''
+        /@[^/]+  # first path element looks like "/@username"
+        (
+            /\d+    # optional second path element looks like "/12345"
+            (/.*)?  # optional trailing slash and extra path elements
+        )?
+    ''',
+    re.VERBOSE,
+)
+
+
+def looks_social(path: str) -> bool:
+    return re.match(SOCIAL_PATH_PATTERN, path) is not None
 
 
 def remove_subdomain(hostname: str, subdomains: list[str]) -> str:
