@@ -2,6 +2,15 @@
 
 ## To Do
 
+- more mastodon links
+  - https://mastodon.nl/@vickyvdtogt/110196805189572082
+  - https://masto.ai/@mg/110212843144499061
+- medium blog post
+  - https://blog.medium.com/now-you-can-embed-mastodon-posts-in-medium-stories-99b11d0baa7f
+- AWS site
+  - http://reasoning-machines.s3-website.ca-central-1.amazonaws.com/
+- filter out
+  - 
 - handle wayback machine URLs
   - https://web.archive.org/web/20150315073817/http://www.xprogramming.com/testfram.htm
   - http://web.archive.org/web/20180516153837/http://www.adreca.net/NAND-Flash-Data-Recovery-Cookbook.pdf

@@ -114,13 +114,9 @@ def build_df_feed(alternate: str, related: str, title: str) -> FeedParserDict:
         '<entry>',
     ]
     if alternate:
-        feed.append(
-            f'<link rel="alternate" type="text/html" href="{alternate}"/>'
-        )
+        feed.append(f'<link rel="alternate" type="text/html" href="{alternate}"/>')
     if related:
-        feed.append(
-            f'<link rel="related" type="text/html" href="{related}"/>'
-        )
+        feed.append(f'<link rel="related" type="text/html" href="{related}"/>')
     if title:
         feed.append(f'<title>{title}</title>')
     feed += [
