@@ -11,6 +11,8 @@ SKIP_SITES = [
     'lynalden.com',
     'newscientist.com',
     'paulgraham.com',
+    'quillette.com',
+    'reason.com',
     'sive.rs',
     'astralcodexten.substack.com',
     'noahpinion.substack.com',

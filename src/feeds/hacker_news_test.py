@@ -80,6 +80,18 @@ REJECT_SITE_TESTS = [
         'https://news.ycombinator.com/item?id=35668072',
         id='noahpinion.substack.com',
     ),
+    pytest.param(
+        'Philosophy’s No-Go Zone',
+        'https://quillette.com/2023/04/17/philosophys-no-go-zone/',
+        'https://news.ycombinator.com/item?id=35678299',
+        id='quillette.com',
+    ),
+    pytest.param(
+        'Borrowers with High Credit Scores Penalized Under New Federal Mortgage Fee Plan',
+        'https://reason.com/2023/04/21/borrowers-with-high-credit-scores-penalized-under-new-federal-mortgage-fee-plan/',
+        'https://news.ycombinator.com/item?id=35676765',
+        id='reason.com',
+    ),
 ]
 
 
