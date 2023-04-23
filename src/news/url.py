@@ -63,7 +63,6 @@ class URL:
             'people.kernel.org',
             'medium.com',
             'devblogs.microsoft.com',
-            'sr.ht',
             'twitter.com',
         ]
         if looks_social(path) or hostname in social_sites:
@@ -112,11 +111,8 @@ def is_dirty(parameter: tuple[AnyStr, AnyStr]) -> bool:
 
 SOCIAL_PATH_PATTERN = re.compile(
     r'''
-        /@[^/]+  # first path element looks like "/@username"
-        (
-            /\d+    # optional second path element looks like "/12345"
-            (/.*)?  # optional trailing slash and extra path elements
-        )?
+        /[@~][^/]+  # first path element looks like "/@username" or "/~username"
+        (/.*)?      # optional trailing slash and more path elements
     ''',
     re.VERBOSE,
 )

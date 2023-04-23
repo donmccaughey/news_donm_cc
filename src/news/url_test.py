@@ -97,8 +97,14 @@ IDENTITY_TESTS = [
     ('people.kernel.org/monsieuricon', 'https://people.kernel.org/monsieuricon/fix-your-mutt'),
     ('kickstarter.com/projects/robwalling', 'https://www.kickstarter.com/projects/robwalling/the-saas-playbook-by-rob-walling'),
     ('devblogs.microsoft.com/oldnewthing', 'https://devblogs.microsoft.com/oldnewthing/20221216-00/?p=107598'),
-    ('sr.ht/~icefox', 'https://sr.ht/~icefox/oorandom/'),
     ('twitter.com/app4soft', 'https://twitter.com/app4soft/status/1606784614793633794'),
+
+
+    # == `/~<user>/<...>` paths
+
+    ('sr.ht/~icefox', 'https://sr.ht/~icefox/oorandom/'),
+    ('git.sr.ht/~akkartik', 'https://git.sr.ht/~akkartik/snap.love'),
+
 
     # -- `/@<user>/<...>` paths
 
