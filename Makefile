@@ -182,6 +182,7 @@ $(TMP)/create-container-service-deployment.json : aws/create-container-service-d
 	sed \
 		-e "s/{{AWS_ACCESS_KEY_ID}}/$(AWS_ACCESS_KEY_ID)/g" \
 		-e "s/{{AWS_SECRET_ACCESS_KEY}}/$(AWS_SECRET_ACCESS_KEY)/g" \
+		-e "s/{{REDDIT_PRIVATE_RSS_FEED}}/$(REDDIT_PRIVATE_RSS_FEED)/g" \
 		$< > $@
 	chmod 600 $@
 

@@ -8,7 +8,8 @@
                 "AWS_ACCESS_KEY_ID": "{{AWS_ACCESS_KEY_ID}}",
                 "AWS_SECRET_ACCESS_KEY": "{{AWS_SECRET_ACCESS_KEY}}",
                 "AWS_DEFAULT_REGION": "us-west-2",
-                "EXTRACTOR_READ_WRITE": "1"
+                "EXTRACTOR_READ_WRITE": "1",
+                "REDDIT_PRIVATE_RSS_FEED": "{{REDDIT_PRIVATE_RSS_FEED}}"
             },
             "ports": {
                 "80": "HTTP"
