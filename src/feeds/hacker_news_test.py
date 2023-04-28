@@ -92,6 +92,18 @@ REJECT_SITE_TESTS = [
         'https://news.ycombinator.com/item?id=35676765',
         id='reason.com',
     ),
+    pytest.param(
+        'Someone Has to Run the Fabs',
+        'https://www.noahpinion.blog/p/repost-someone-has-to-run-the-fabs',
+        'https://news.ycombinator.com/item?id=35715679',
+        id='noahpinion.blog',
+    ),
+    pytest.param(
+        'Brave Search removes last remnant of Bing from search results page',
+        'https://brave.com/search-independence/',
+        'https://news.ycombinator.com/item?id=35730711',
+        id='brave.com',
+    ),
 ]
 
 

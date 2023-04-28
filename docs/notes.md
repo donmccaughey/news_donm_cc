@@ -15,6 +15,7 @@
 			"modified": "2023-04-24T16:10:04.637352+00:00"
 		},
 
+- shared block list between hacker news and reddit
 - about page
 - more mastodon links
   - 
