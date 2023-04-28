@@ -1,5 +1,6 @@
 AWS_ACCESS_KEY_ID ?= $(shell aws configure get aws_access_key_id)
 AWS_SECRET_ACCESS_KEY ?= $(shell aws configure get aws_secret_access_key)
+REDDIT_PRIVATE_RSS_FEED ?= $(shell cat secrets/reddit-private-rss-feed.txt)
 TMP ?= $(abspath tmp)
 
 NEWS := news  # container name
@@ -99,12 +100,14 @@ source_files := \
 	src/gunicorn.conf.py \
 	src/health_check.py \
 	src/query.py \
+	src/youtube_user.py \
 	src/feeds/__init__.py \
 	src/feeds/acoup.py \
 	src/feeds/charity_wtf.py \
 	src/feeds/cmake_tags.py \
 	src/feeds/daring_fireball.py \
 	src/feeds/hacker_news.py \
+	src/feeds/reddit.py \
 	src/feeds/rust_blog.py \
 	src/feeds/site.py \
 	src/feeds/sites.py \
@@ -140,6 +143,7 @@ source_files := \
 test_files := \
 	src/feeds/daring_fireball_test.py \
 	src/feeds/hacker_news_test.py \
+	src/feeds/reddit_test.py \
 	src/feeds/site_test.py \
 	src/feeds/streetsblog_test.py \
 	src/health/health_test.py \
@@ -157,6 +161,7 @@ $(TMP)/.env : | $$(dir $$@)
 	printf "AWS_ACCESS_KEY_ID=%s\n" "$(AWS_ACCESS_KEY_ID)" >> $@
 	printf "AWS_SECRET_ACCESS_KEY=%s\n" "$(AWS_SECRET_ACCESS_KEY)" >> $@
 	printf "AWS_DEFAULT_REGION=us-west-2\n" >> $@
+	printf "REDDIT_PRIVATE_RSS_FEED=%s\n" "$(REDDIT_PRIVATE_RSS_FEED)" >> $@
 	chmod 600 $@
 
 

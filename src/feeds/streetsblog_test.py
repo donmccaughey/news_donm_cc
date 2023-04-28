@@ -18,7 +18,7 @@ def test_keep_entry_todays_headlines():
     '''
     d: FeedParserDict = parse(feed)
     entry = d.entries[0]
-    sb = Streetsblog()
+    sb = Streetsblog({})
 
     assert sb.keep_entry(entry)
 
@@ -38,7 +38,7 @@ def test_keep_entry_other_category():
     '''
     d: FeedParserDict = parse(feed)
     entry = d.entries[0]
-    sb = Streetsblog()
+    sb = Streetsblog({})
 
     assert not sb.keep_entry(entry)
 
@@ -57,7 +57,7 @@ def test_keep_entry_no_title():
     '''
     d: FeedParserDict = parse(feed)
     entry = d.entries[0]
-    sb = Streetsblog()
+    sb = Streetsblog({})
 
     assert not sb.keep_entry(entry)
 
@@ -76,7 +76,7 @@ def test_keep_entry_no_link():
     '''
     d: FeedParserDict = parse(feed)
     entry = d.entries[0]
-    sb = Streetsblog()
+    sb = Streetsblog({})
 
     assert not sb.keep_entry(entry)
 
@@ -95,6 +95,6 @@ def test_keep_entry_no_category():
     '''
     d: FeedParserDict = parse(feed)
     entry = d.entries[0]
-    sb = Streetsblog()
+    sb = Streetsblog({})
 
     assert not sb.keep_entry(entry)

@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Streetsblog San Francisco</title>
+	<atom:link href="https://sf.streetsblog.org/feed/" rel="self" type="application/rss+xml" />
+	<link>https://sf.streetsblog.org</link>
+	<description>Covering San Francisco&#039;s livable streets movement</description>
+	<lastBuildDate>Mon, 24 Apr 2023 16:13:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.2</generator>
+
+<image>
+	<url>https://sf.streetsblog.org/wp-content/uploads/sites/3/2016/12/streetsblog-favicon.png?w=16</url>
+	<title>Streetsblog San Francisco</title>
+	<link>https://sf.streetsblog.org</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Today&#8217;s Headlines</title>
+		<link>https://sf.streetsblog.org/2023/04/24/423264/</link>
+					<comments>https://sf.streetsblog.org/2023/04/24/423264/#respond</comments>
+		
+		<dc:creator><![CDATA[Damien Newton]]></dc:creator>
+		<pubDate>Mon, 24 Apr 2023 16:08:52 +0000</pubDate>
+				<category><![CDATA[Today's Headlines]]></category>
+		<guid isPermaLink="false">https://sf.streetsblog.org/?p=423264</guid>
+
+					<description><![CDATA[ICYMI: We Are Temporarily Rogerless (SFSB) ER Doc: Let Me Tell You About What Car Crashes Do to the Human Body (Chron) Salesforce Transit Center &#8220;An Empty Cavern&#8221; (Chron) AC Transit Line Seven Between Berkeley/Emeryville Returns After Pandemic Pause (Berkeleyside) Berkeley Pedestrian Signal Finally Turned On After Second Crash at Intersection (Berkelyside) Woman Dead, Two [&#8230;]]]></description>
+										<content:encoded><![CDATA[<ul>
+<li><strong>ICYMI: We Are Temporarily Rogerless (<a href="https://sf.streetsblog.org/2023/04/20/streetsblog-s-f-editor-is-on-sabbatical/">SFSB</a>)</strong></li>
+<li>ER Doc: Let Me Tell You About What Car Crashes Do to the Human Body (<a href="https://t.co/D6qCvtk22D">Chron</a>)</li>
+<li>Salesforce Transit Center &#8220;An Empty Cavern&#8221; (<a href="https://www.sfchronicle.com/projects/2023/sf-transit-center/">Chron</a>)</li>
+<li>AC Transit Line Seven Between Berkeley/Emeryville Returns After Pandemic Pause (<a href="https://www.berkeleyside.org/2023/04/20/ashby-bus-service-return-pilot-ac-transit">Berkeleyside</a>)</li>
+<li>Berkeley Pedestrian Signal Finally Turned On After <em>Second</em> Crash at Intersection (<a href="https://www.berkeleyside.org/2023/04/20/berkeley-san-pablo-avenue-pedestrian-signal-caltrans">Berkelyside</a>)</li>
+<li>Woman Dead, Two Injured, In Wrong-Way Crash on 280 (<a href="https://www.sfgate.com/news/bayarea/article/update-1-dead-2-injured-in-wrong-way-crash-on-17913203.php?IPID=SFGate-HP-CP-Spotlight">GATE</a>)</li>
+<li>Bay Area Home Prices Spiking Again (<a href="https://www.eastbaytimes.com/2023/04/24/bay-area-home-prices-spike-17-as-sellers-pull-back/">East Bay Times</a>)</li>
+<li>CA Reshapes Sea Rise Plan as, Well, Seas Rise (<a href="https://www.kqed.org/science/1979603/california-overhauls-its-sea-level-rise-plan-as-climate-change-reshapes-coastal-life">KQED</a>)</li>
+<li>&#8220;The Big Melt&#8221; Has Begun (<a href="https://www.sfchronicle.com/climate/article/snowmelt-california-rivers-rafting-17881287.php">Chron</a>)</li>
+<li>Utilities Have Plan to Change How They Bill Customers (<a href="https://ktla.com/news/local-news/fixed-rate-electricity-bill-charges-how-they-would-work/">KTLA</a>, <a href="https://www.mercurynews.com/2023/04/22/pge-san-jose-oakland-bill-electric-customer-ratepayer-economy-utility/">Mercury News</a>)</li>
+</ul>
+<p>Get state headlines at <a href="https://cal.streetsblog.org/" target="_blank" rel="noopener">Streetsblog California</a>, national headlines at <a href="https://usa.streetsblog.org/" target="_blank" rel="noopener">Streetsblog USA</a></p>
+<p><em>Local journalism is more important than ever. <a href="https://sf.streetsblog.org/make-a-donation-to-streetsblog-san-francisco/">Won’t you contribute</a>?</em></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://sf.streetsblog.org/2023/04/24/423264/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Talking Headways Podcast: Zero Emissions Delivery Zones</title>
+		<link>https://usa.streetsblog.org/2023/04/20/talking-headways-podcast-zero-emissions-delivery-zones/</link>
+		
+		<dc:creator><![CDATA[Jeff Wood]]></dc:creator>
+		<pubDate>Fri, 21 Apr 2023 14:52:07 +0000</pubDate>
+				<category><![CDATA[Greenhouse Gas]]></category>
+		<category><![CDATA[Greenhouse Gas Emissions]]></category>
+		<category><![CDATA[Podcast]]></category>
+		<guid isPermaLink="false">https://usa.streetsblog.org/?p=237638</guid>
+
+					<description><![CDATA[<p><img src="https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/pollution-montage.jpg?w=640"></p><!-- FeaturedImageEnd -->This week we’re joined by Hamilton Steimer of the World Resources Institute to talk about electrification of fleets, what cities have the best programs for ZEDZ, and the current moment in urban delivery.]]></description>
+										<content:encoded><![CDATA[<p><img src="https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/pollution-montage.jpg?w=640"></p><!-- FeaturedImageEnd --><p>This week we’re joined by Hamilton Steimer of the World Resources Institute to talk about their report, <em>Zero-emission Delivery Zones: A New Way to Cut Traffic, Air Pollution and Greenhouse Gases</em>. We chat about electrification of fleets, what cities have the best programs for ZEDZ, and the current moment in urban delivery.</p>
+<p>Listen here, <a href="https://streetsblog.libsyn.com/episode-429-zero-emissions-delivery-zones">on Libsyn,</a> or anywhere else you get your podcasts.</p>
+<p><a href="https://embeds.streetsblog.org/protected-iframe/8f138683489f004f15ff0d49bb9b9d35">https://embeds.streetsblog.org/protected-iframe/8f138683489f004f15ff0d49bb9b9d35</a></p>
+<p>( function() {<br />
+var func = function() {<br />
+var iframe = document.getElementById(&#8216;wpcom-iframe-8f138683489f004f15ff0d49bb9b9d35&#8217;)<br />
+if ( iframe ) {<br />
+iframe.onload = function() {<br />
+iframe.contentWindow.postMessage( {<br />
+&#8216;msg_type&#8217;: &#8216;poll_size&#8217;,<br />
+&#8216;frame_id&#8217;: &#8216;wpcom-iframe-8f138683489f004f15ff0d49bb9b9d35&#8217;<br />
+}, &#8220;https://embeds.streetsblog.org&#8221; );<br />
+}<br />
+}</p>
+<p>// Autosize iframe<br />
+var funcSizeResponse = function( e ) {</p>
+<p>var origin = document.createElement( &#8216;a&#8217; );<br />
+origin.href = e.origin;</p>
+<p>// Verify message origin<br />
+if ( &#8217;embeds.streetsblog.org&#8217; !== origin.host )<br />
+return;</p>
+<p>// Verify message is in a format we expect<br />
+if ( &#8216;object&#8217; !== typeof e.data || undefined === e.data.msg_type )<br />
+return;</p>
+<p>switch ( e.data.msg_type ) {<br />
+case &#8216;poll_size:response&#8217;:<br />
+var iframe = document.getElementById( e.data._request.frame_id );</p>
+<p>if ( iframe &amp;&amp; &#8221; === iframe.width )<br />
+iframe.width = &#8216;100%&#8217;;<br />
+if ( iframe &amp;&amp; &#8221; === iframe.height )<br />
+iframe.height = parseInt( e.data.height );</p>
+<p>return;<br />
+default:<br />
+return;<br />
+}<br />
+}</p>
+<p>if ( &#8216;function&#8217; === typeof window.addEventListener ) {<br />
+window.addEventListener( &#8216;message&#8217;, funcSizeResponse, false );<br />
+} else if ( &#8216;function&#8217; === typeof window.attachEvent ) {<br />
+window.attachEvent( &#8216;onmessage&#8217;, funcSizeResponse );<br />
+}<br />
+}<br />
+if (document.readyState === &#8216;complete&#8217;) { func.apply(); /* compat for infinite scroll */ }<br />
+else if ( document.addEventListener ) { document.addEventListener( &#8216;DOMContentLoaded&#8217;, func, false ); }<br />
+else if ( document.attachEvent ) { document.attachEvent( &#8216;onreadystatechange&#8217;, func ); }<br />
+} )();</p>
+]]></content:encoded>
+					
+		
+		<enclosure url="" length="0" type="" />
+
+		      <dc:image>https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/pollution-montage.jpg?w=640</dc:image>
+	</item>
+		<item>
+		<title>Coalition Working to Save Transit Asks You to Join</title>
+		<link>https://cal.streetsblog.org/2023/04/20/coalition-working-to-save-transit-asks-you-to-join/</link>
+		
+		<dc:creator><![CDATA[Melanie Curry]]></dc:creator>
+		<pubDate>Fri, 21 Apr 2023 14:52:03 +0000</pubDate>
+				<category><![CDATA[Advocacy]]></category>
+		<category><![CDATA[Budget]]></category>
+		<category><![CDATA[Funding & Finance]]></category>
+		<category><![CDATA[GJEL3]]></category>
+		<category><![CDATA[Promoted]]></category>
+		<category><![CDATA[Public Transportation]]></category>
+		<category><![CDATA[State Capitol Updates]]></category>
+		<category><![CDATA[Streetsblog California]]></category>
+		<guid isPermaLink="false">https://cal.streetsblog.org/?p=40024</guid>
+
+					<description><![CDATA[<p><img src="https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/Screen-Shot-2022-10-21-at-10.30.17-AM.png?w=646"></p><!-- FeaturedImageEnd -->Advocates ask people and organizations to sign on to a letter asking the legislature to support public transit in its hour of need]]></description>
+										<content:encoded><![CDATA[<p><img src="https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/Screen-Shot-2022-10-21-at-10.30.17-AM.png?w=646"></p><!-- FeaturedImageEnd --><blockquote>
+<h6>Note: <a href="https://www.gjel.com/">GJEL Accident Attorneys</a> regularly sponsors coverage on Streetsblog San Francisco and Streetsblog California. Unless noted in the story, <a href="https://www.gjel.com/">GJEL Accident Attorneys</a> is not consulted for the content or editorial direction of the sponsored content.</h6>
+</blockquote>
+<p>The “fiscal cliff” that <a href="https://www.sfchronicle.com/projects/2023/bart-finance-qa/">transit advocates are ringing bells about lately</a> is no joke. Pandemic-era federal assistance for transit operations is about to end, but ridership and revenue have not fully recovered from pandemic losses. The budget gap is not something that transit agencies can just fix by themselves; any potential action they could take – cutting service, raising fares – would have to be so massive that transit would be almost useless, and would lead to further drops in ridership and revenue in a downward spiral.</p>
+<p>The advocacy coalition “<a href="https://www.savecaliforniatransit.org/">Survive &amp; Thrive</a>,” in a letter to the legislature requesting transit funding, uses the <a href="https://www.sfchronicle.com/projects/2023/bart-finance-qa/">Bay Area Rapid Transit District (BART)</a> as an example. To achieve the savings needed to meet its budget, “BART would need to cut service by 65 to 85 percent, eliminating access to jobs, schools, grocery stores, and other essential services for many current riders. This, in turn, would further reduce passengers, leading to further cuts.”</p>
+<p>Survive and Thrive is coordinating a push to find transit funding, asking people to help out by calling their legislators, getting their city to send a letter, signing the petition, and volunteering to help spread the word. <a href="https://www.savecaliforniatransit.org/">Information about how to do all of these things is available on their website</a>.</p>
+<p>Transit is not just a nice amenity. It is a crucial lifeline for many people, which is why the federal government unhesitatingly provided funding to keep it going during the pandemic, for those people who had to get to work despite the shutdowns. <a href="https://www.governing.com/community/new-evidence-links-transit-cuts-with-poverty-and-unemployment">Recent research shows that when transit disappears or is greatly curtailed, poverty and unemployment increase</a>.</p>
+<p>The coalition, in its letter to the legislature, points out that</p>
+<blockquote>
+<p>…almost sixty percent of California residents who commute via public transit have a household income below $35,000. Over half a million California households own no vehicle and count on public transit for their daily needs, including access to K-12 education and college. Public transit is an economic lifeline for these residents, especially seniors and persons with disabilities. Yet residents of all income levels also depend on transit to access their jobs and maintaining the viability of the transit systems is essential for the future of the state’s economy and quality of life. Public transit also supports good-paying jobs, employing over 31,000 California workers statewide in FY [Fiscal Year] 2021.</p>
+</blockquote>
+<p>Even more than being crucial to personal survival, transit is absolutely necessary for environmental, climate, safety, and livability reasons. <a href="https://www.scientificamerican.com/article/better-bus-systems-could-slow-climate-change/">Our cities need buses</a>. Even the simple geometry problem of space for all the number of cars in our cities becomes impossible to solve without transit. The California Air Resources Board “has urged the state to support efforts to double local transit coverage and service frequencies by 2030” writes the coalition in its letter. “Without a multi-year commitment of state funds to help sustain transit and put it on a path to attracting millions of new riders, the state’s climate strategy is in serious jeopardy,” says the letter.</p>
+<p>There are few statewide sources of operations funding, and it’s not obvious what, if any, conversations are happening around creating more. Governor Newsom <a href="https://cal.streetsblog.org/2023/02/15/legislative-analyst-studies-newsoms-transportation-budget-solutions/">proposed to cut transit capital funding, rather than hold it steady</a>. The Senate <a href="https://cal.streetsblog.org/2023/02/21/new-ca-senate-select-committee-formed-to-study-bay-area-transit-issues/">formed a Select Committee on Bay Area Transit</a>, but it hasn’t met yet. The Survive and Thrive coalition plans to send its letter to legislative leaders and budget committees ahead of the Governor’s May budget revision, asking for a short-term but multi-year commitment to fund transit operations, to give transit agencies the time to develop long-term funding plans.</p>
+<blockquote>
+<p>The funding picture for each transit system is unique and there is no one-size-fits-all path to financial sustainability. While some agencies need assistance to stave off service cuts next year, other agencies face deficits in the hundreds of millions of dollars starting in FY2024-25 or FY 2025-26. Others may not face near-term service cuts but have priorities that, if funded, could attract significantly more riders (advancing the state’s climate goals) and help avoid budgetary challenges down the road.</p>
+</blockquote>
+<p>The letter has already been signed by multiple transit agencies and advocacy organizations throughout the state, including the California Coalition for Clean Air, the Greenbelt Alliance, NRDC, Seamless Bay Area, Climate Resolve, 1000 Grandmothers for Future Generations; 350; Asian Pacific Environmental Network; Bay Area Council; California Environmental Justice Alliance; Center for Independent Living; MoveLA; Peninsula Interfaith Climate Action; San Jose State University, Associated Students; Sierra Club; and Silicon Valley Leadership Group – among numerous others.</p>
+]]></content:encoded>
+					
+		
+		<enclosure url="https://usa.streetsblog.org/" length="0" type="" />
+
+		      <dc:image>https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/Screen-Shot-2022-10-21-at-10.30.17-AM.png?w=646</dc:image>
+	</item>
+		<item>
+		<title>Oklahoma Turnpike Authority Stops Work on $15 Billion Turnpike Expansion</title>
+		<link>https://usa.streetsblog.org/2023/04/21/oklahoma-turnpike-authority-stops-work-on-15-billion-turnpike-expansion/</link>
+		
+		<dc:creator><![CDATA[Asia Mieleszko]]></dc:creator>
+		<pubDate>Fri, 21 Apr 2023 14:51:34 +0000</pubDate>
+				<category><![CDATA[Freeway Fighters]]></category>
+		<category><![CDATA[Freeways]]></category>
+		<category><![CDATA[Highway Boondoggles]]></category>
+		<category><![CDATA[Oklahoma]]></category>
+		<guid isPermaLink="false">https://usa.streetsblog.org/?p=237688</guid>
+
+					<description><![CDATA[<p><img src="https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/Screenshot-2023-04-20-at-4.31.53-PM.png?w=998"></p><!-- FeaturedImageEnd -->Oklahoma’s freeway fighters are resting a little easier this week, having learned that the Oklahoma Turnpike Authority (OTA) is halting all work related to the $15 billion turnpike expansion, ACCESS Oklahoma.]]></description>
+										<content:encoded><![CDATA[<p><img src="https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/Screenshot-2023-04-20-at-4.31.53-PM.png?w=998"></p><!-- FeaturedImageEnd --><p class="">Oklahoma’s freeway fighters are resting a little easier this week, having learned that the Oklahoma Turnpike Authority (OTA) is halting all work related to the $15 billion turnpike expansion, ACCESS Oklahoma.</p>
+<p class="">Back in January,<a href="https://www.strongtowns.org/journal/2023/1/16/oklahoma-turnpike-authority-willfully-misled-public-to-force-5-billion-expansion-project"> Strong Towns reported</a> that Oklahoma residents took the OTA to court, arguing that its plans for a $15 billion turnpike expansion not only lacked transparency, but were illegal. The judge presiding agreed, ruling that the OTA “wilfully violated” Oklahoma’s<a href="https://oklahoma.gov/libraries/law-legislative-reference/library-laws-and-regulations/statutes-and-rules--open-meetings-act.html"> Open Meetings Act</a>. As a result, over 200 plaintiffs celebrated their first major legal victory in the fight against the project, known as<a href="https://www.accessoklahoma.com/"> ACCESS Oklahoma</a>. On March 15, 2023, Oklahoma’s attorney general stepped in and seemingly sided with the plaintiffs, requesting an audit of the OTA.</p>
+<p class="">Almost exactly a month later, <a href="https://oklahoma.gov/content/dam/ok/en/ota/documents/news-articles/2023/015_23_OTA%20Suspending%20Work%20on%20Access%20Oklahoma%20Projects.pdf">OTA notified its board and consultants</a> that all work on ACCESS will cease as of Friday, April 14, 2023. While the press release concludes with a pledge to resume the project once “roadblocks are resolved and a path to the bond market is clear,” opponents to the project are still encouraged by the news. At the very least, the devastation of hundreds of homes, businesses, and<a href="https://youtu.be/E2rbKOLEbVY"> natural areas</a> necessary for the project’s scope is being put on hold.</p>
+<p class="">“The community has come together and has fought off the biggest bully in the state, and I think this is the first time in 70 years that the Oklahoma Turnpike Authority has ever lost or had to stop a proposed turnpike after they have already paid to have it designed,” Pike Off OTA President Dr. Amy Cerato said in a <a href="https://nondoc.com/2023/04/11/turnpike-authority-pauses-access-oklahoma-expansion-plan/">comment for <em>NonDoc</em></a>.</p>
+<p class="">Nevertheless, for Cerato and many Oklahomans, the fight isn’t over until the OTA is held accountable for its surreptitious practices. In a <a href="https://pikeoffota.com/2023-04-14-statement-on-ota-decision-to-pause-all-access-work/">press release</a> dated April 12, <a href="https://pikeoffota.com/about-us/">Pike Off OTA</a>, a group that mobilized against ACCESS since <a href="https://www.strongtowns.org/journal/2023/1/16/oklahoma-turnpike-authority-willfully-misled-public-to-force-5-billion-expansion-project">the project “surprised” Oklahomans</a> in February 2022, wrote:</p>
+<blockquote>
+<p class="">This $5 billion, all-or-nothing approach has been an exercise in questionable judgment and lack of transparency from the beginning. If the OTA is truly putting the safety of its patrons first, why has the OTA  prioritized the pursuit of questionable, contested new alignments over much needed maintenance and improvement obligations on existing toll roads?</p>
+</blockquote>
+<p class="">While the project is currently on hold, the findings of the audit issued by the Attorney General are still pending. “I am certain that the investigative audit I have ordered is needed now more than ever,” Attorney General Drummond said in a <a href="https://twitter.com/PikeOffOTA/status/1646117034202210304">statement</a>. Pike Off OTA is likewise eager to see what the investigative audit may reveal about the OTA. “It is time for all Oklahomans to insist on transparency, accountability, and lawful conduct from our government agencies,” the group concluded in their <a href="https://twitter.com/PikeOffOTA/status/1646163974768009217">press release</a>.</p>
+<blockquote>
+<p><i>This article originally appeared on <a href="https://www.strongtowns.org/journal/2023/4/14/breaking-news-oklahoma-turnpike-authority-stops-work-on-15-billion-turnpike-expansion">Strong Towns</a> and is republished with permission. </i></p>
+</blockquote>
+]]></content:encoded>
+					
+		
+		<enclosure url="https://cal.streetsblog.org/" length="0" type="" />
+
+		      <dc:image>https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/Screenshot-2023-04-20-at-4.31.53-PM.png?w=998</dc:image>
+	</item>
+		<item>
+		<title>Today&#8217;s Headlines</title>
+		<link>https://sf.streetsblog.org/2023/04/21/todays-headlines-3449/</link>
+					<comments>https://sf.streetsblog.org/2023/04/21/todays-headlines-3449/#respond</comments>
+		
+		<dc:creator><![CDATA[Roger Rudick]]></dc:creator>
+		<pubDate>Fri, 21 Apr 2023 14:50:24 +0000</pubDate>
+				<category><![CDATA[Today's Headlines]]></category>
+		<guid isPermaLink="false">https://sf.streetsblog.org/?p=423218</guid>
+
+					<description><![CDATA[BART Has Highest Ridership Day (SFChron) Bus Service to Return to Ashby Avenue (Berkeleyside) High-Speed Rail Projects Vie for Dollars (SmartCities) Man Charged in Hate Incidents on Muni (SFChron, SFExaminer) Concern About Proposed Freeway Demo in Mission (MissionLocal) California Cities Still Smoggy (SFStandard) Tree Came out of Nowhere, House Wasn&#8217;t Wearing Hi-Viz (SFChron) Housing Approved for [&#8230;]]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>BART Has Highest Ridership Day (<a href="https://www.sfchronicle.com/bayarea/article/bart-highest-ridership-day-2023-17909178.php">SFChron</a>)</li>
+<li>Bus Service to Return to Ashby Avenue (<a href="https://www.berkeleyside.org/2023/04/20/ashby-bus-service-return-pilot-ac-transit">Berkeleyside</a>)</li>
+<li>High-Speed Rail Projects Vie for Dollars (<a href="https://www.smartcitiesdive.com/news/california-high-speed-rail-projects-compete-federal-dollars-brightline/647977/">SmartCities</a>)</li>
+<li>Man Charged in Hate Incidents on Muni (<a href="https://www.sfchronicle.com/bayarea/article/san-francisco-muni-hate-crime-man-charged-17909287.php">SFChron</a>, <a href="https://www.sfexaminer.com/news/crime/suspect-arrested-in-string-of-hate-crimes-on-muni/article_e8882328-dfc9-11ed-90cd-a336a5b17d1d.html">SFExaminer</a>)</li>
+<li>Concern About Proposed Freeway Demo in Mission (<a href="https://missionlocal.org/2023/04/mission-community-groups-skeptical-of-central-freeway-demolition/">MissionLocal</a>)</li>
+<li>California Cities Still Smoggy (<a href="https://sfstandard.com/public-health/most-californians-live-in-areas-with-harmful-air-pollution-report/">SFStandard</a>)</li>
+<li>Tree Came out of Nowhere, House Wasn&#8217;t Wearing Hi-Viz (<a href="https://www.sfchronicle.com/california/article/car-crash-second-story-placer-county-17908467.php">SFChron</a>)</li>
+<li>Housing Approved for Nordstrom Parking Lot (<a href="https://www.sfchronicle.com/sf/article/s-f-approves-housing-nordstrom-parking-lot-17908727.php">SFChron</a>)</li>
+<li>Atherton NIMBYs go Nuts Over State Housing Mandates (<a href="https://www.sfgate.com/local/article/atherton-housing-element-revisions-multifamily-17907641.php">SFGate</a>)</li>
+<li>Sonoma County Removing Redlining Language from Housing Covenants (<a href="https://www.sfgate.com/local/article/sonoma-county-racist-real-estate-documents-17906742.php">SFGate</a>)</li>
+<li>So When Will the A&#8217;s Leave Oakland? (<a href="https://www.sfgate.com/athletics/article/when-will-as-leave-oakland-17908527.php?IPID=SFGate-HP-Editors-Picks">SFGate</a>)</li>
+<li>Can Coliseum be Salvaged? (<a href="https://www.sfchronicle.com/eastbay/article/oakland-coliseum-ballpark-stadium-17909234.php">SFChron</a>)</li>
+</ul>
+<p>Get state headlines at <a href="https://cal.streetsblog.org/" target="_blank" rel="noopener">Streetsblog California</a>, national headlines at <a href="https://usa.streetsblog.org/" target="_blank" rel="noopener">Streetsblog USA</a></p>
+<p><em>Local journalism is more important than ever. <a href="https://sf.streetsblog.org/make-a-donation-to-streetsblog-san-francisco/">Won’t you contribute</a>?</em></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://sf.streetsblog.org/2023/04/21/todays-headlines-3449/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Streetsblog S.F. Editor is on Sabbatical</title>
+		<link>https://sf.streetsblog.org/2023/04/20/streetsblog-s-f-editor-is-on-sabbatical/</link>
+					<comments>https://sf.streetsblog.org/2023/04/20/streetsblog-s-f-editor-is-on-sabbatical/#respond</comments>
+		
+		<dc:creator><![CDATA[Roger Rudick]]></dc:creator>
+		<pubDate>Thu, 20 Apr 2023 22:42:23 +0000</pubDate>
+				<category><![CDATA[Bicycling]]></category>
+		<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">https://sf.streetsblog.org/?p=423159</guid>
+
+					<description><![CDATA[<p><img src="https://sf.streetsblog.org/wp-content/uploads/sites/3/2022/09/Lange_Elisabethstraat_Mariaplaats_3511_Utrecht_Netherlands_-_panoramio-e1662508250994.jpg?w=604"></p><!-- FeaturedImageEnd -->You can't write about best practices without knowing what they are. Roger's off to update his knowledge]]></description>
+										<content:encoded><![CDATA[<p><img src="https://sf.streetsblog.org/wp-content/uploads/sites/3/2022/09/Lange_Elisabethstraat_Mariaplaats_3511_Utrecht_Netherlands_-_panoramio-e1662508250994.jpg?w=604"></p><!-- FeaturedImageEnd --><blockquote>
+<p><em>If a reader has a story they&#8217;d like to submit, now would be a great time to do it. Reach out to our publisher, Damien Newton at damien@streetsblog.org.</em></p>
+</blockquote>
+<p>I am taking a month-long sabbatical.</p>
+<p>Bay Area policymakers talk about best practices when it comes to achieving Vision Zero. They make bold promises about bicycle mode share, reducing emissions, and all that goes with it.</p>
+<p>But to formulate&#8211;or effectively criticize&#8211;policies, one has to actually know how these things work.  <a href="https://sf.streetsblog.org/2023/04/05/sfmta-board-votes-unanimously-to-support-only-option-they-were-given-on-valencia/">A few weeks ago, during the SFMTA&#8217;s hearing on Valencia</a> and <a href="https://sf.streetsblog.org/2022/10/05/op-ed-new-heights-of-hypocrisy-in-berkeley/">the ongoing strife over Hopkins in Berkeley</a>, it was made clear that many of our lawmakers and transportation officials <a href="https://sf.streetsblog.org/2023/03/22/a-deep-dive-into-center-running-bike-lanes-a-known-infrastructure-failure/">simply don&#8217;t know</a> or <a href="https://sf.streetsblog.org/2022/09/01/qa-dutch-safety-experts-coming-to-san-francisco/" target="_blank" rel="noopener">don&#8217;t care what constitutes global best practices</a> for safety. Sadly, that&#8217;s borne out by <a href="https://sf.streetsblog.org/2023/04/11/call-for-protected-bike-lanes-on-arguello/">the ongoing carnage</a>.</p>
+<p>Late in 2022, San Francisco made what <a href="https://sf.streetsblog.org/2022/11/14/safe-streets-advocates-celebrate-j-f-k-triumph/">I thought was a huge breakthrough with the vote to make J.F.K. car-free.</a> But despite a clear referendum in favor of safe and livable streets, city leaders <a href="https://sf.streetsblog.org/2022/09/19/sfmta-re-proposes-ridiculous-center-running-valencia-bike-lanes/">decided to squander this opportunity</a>. They hollowed out safety projects on <a href="https://sf.streetsblog.org/2022/12/01/commentary-hey-sfmta-stop-calling-everything-a-protected-bike-lane/">Evans</a>, <a href="https://sf.streetsblog.org/2022/09/19/sfmta-re-proposes-ridiculous-center-running-valencia-bike-lanes/">Valencia</a>, and <a href="https://sf.streetsblog.org/2023/02/08/open-letter-to-sfmta-stop-watering-down-slow-streets/">elsewhere</a>. Meanwhile, Berkeley leaders sabotaged the <a href="https://sf.streetsblog.org/2023/04/19/berkeley-safety-advocates-stage-a-die-in-to-protest-delay-on-hopkins/">protected bike lane project on Hopkins</a>. We even had <a href="https://sf.streetsblog.org/2023/02/13/sociopaths-intentionally-door-east-bay-cyclists/">people intentionally driving around and dooring cyclists in the East Bay</a>.</p>
+<p>Sure, there <a href="https://sf.streetsblog.org/2023/01/20/eyes-on-the-street-mr-barricade-keeps-crushing-in-emeryville/">are still signs of progress here and there</a>. But I know I share this feeling with many of Streetsblog&#8217;s readers: I&#8217;m disgusted and demoralized. That&#8217;s why this sabbatical&#8211;which has been in the works for many months&#8211;feels well-timed.</p>
+<p>Throughout <a href="https://www.nytimes.com/1990/01/27/opinion/paris-city-of-farebeaters.html">my many years of writing about transportation</a>, I&#8217;ve made a point of studying the most successful bike and transit infrastructure around the world. I also lived in Europe for two and a half years and I&#8217;ve been back more times than I can remember. But it&#8217;s been more than a minute.</p>
+<p>First stop, I&#8217;ll be taking a few days off on the East Coast, where I grew up, visiting old friends. Then I&#8217;ll be hanging with my counterparts at the Streetsblog mother-ship in New York, as well as exploring some of my hometown&#8217;s massive new street and transit projects, such as <a href="https://nyc.streetsblog.org/category/landmarks/grand-central-madison/">Grand Central Madison.</a></p>
+<p>Next: friends in Paris offered me the use of their apartment while they&#8217;re traveling, so I&#8217;ll be flying to see that city&#8217;s remarkable transformation. I&#8217;m looking forward to seeing the accomplishments of Paris Mayor Anne Hidalgo and her staff with my own eyes. I&#8217;ll be meeting with consultants and officials and learning about their ongoing work.</p>
+<p>And, of course, I&#8217;ll be eating my body weight in French bread to fuel all that walking and cycling.</p>
+<p>Next stop: Leipzig, Germany, to attend <a href="https://velo-city2023.com/">the Velo-city conference</a>, &#8220;where advocates, cities, decision- and policymakers, researchers and industry leaders meet to shape the future of cycling.&#8221; I&#8217;m looking forward to hearing what other cities in Europe have accomplished. Paris gets the ink because it&#8217;s a capital city, but other, smaller cities have undergone similar transformations.</p>
+<p>Last, but not least, I&#8217;ll head to the Netherlands, to learn some more, but mostly just to enjoy a few days basking in the safe, livable environment we ultimately want for the Bay Area.</p>
+<p>During this time, other Streetsblog editors will post stories from our network. I might also publish a post or two along the way if I&#8217;m so inspired. And, if I&#8217;m just in an airport or on a train with my laptop, I might even help out with some of the more mundane tasks involved in keeping a Streetsblog going. But I won&#8217;t be contributing regular posts again for about four weeks.</p>
+<p>If a reader has a story they&#8217;d like to submit, now would be a great time to do it. Reach out to our publisher, Damien Newton at damien@streetsblog.org, who will be updating headlines and syndication at Streetsblog San Francisco while I&#8217;m gone.</p>
+<p>Thanks to our readers for their untiring support. And let&#8217;s all try to reboot and see if, together, we can get the Bay Area back on track to a future of safe and livable streets.</p>
+<p>Best wishes,</p>
+<p>Roger &#8211; Editor, Streetsblog San Francisco</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://sf.streetsblog.org/2023/04/20/streetsblog-s-f-editor-is-on-sabbatical/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		      <dc:image>https://sf.streetsblog.org/wp-content/uploads/sites/3/2022/09/Lange_Elisabethstraat_Mariaplaats_3511_Utrecht_Netherlands_-_panoramio-e1662508250994.jpg?w=604</dc:image>
+	</item>
+		<item>
+		<title>How Every Government In America Could Stop Its Own Cars From Speeding</title>
+		<link>https://usa.streetsblog.org/2023/04/20/how-every-government-in-america-could-stop-its-own-cars-from-speeding/</link>
+		
+		<dc:creator><![CDATA[Kea Wilson]]></dc:creator>
+		<pubDate>Thu, 20 Apr 2023 14:54:32 +0000</pubDate>
+				<category><![CDATA[California]]></category>
+		<category><![CDATA[New York]]></category>
+		<category><![CDATA[Promoted]]></category>
+		<category><![CDATA[San Francisco]]></category>
+		<guid isPermaLink="false">https://usa.streetsblog.org/?p=237606</guid>
+
+					<description><![CDATA[<p><img src="https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/NYC-speed-limiter.jpeg?w=1240"></p><!-- FeaturedImageEnd -->Some of America's most prominent sustainable transportation advocacy organizations are challenging governments to embrace a ground-breaking technology that makes it impossible for drivers to speed — starting with the vehicles in their own fleets.]]></description>
+										<content:encoded><![CDATA[<p><img src="https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/NYC-speed-limiter.jpeg?w=1240"></p><!-- FeaturedImageEnd --><p>Some of America’s most prominent sustainable transportation advocacy organizations are challenging governments to embrace a ground-breaking technology that makes it impossible for drivers to speed — starting with the vehicles in their own fleets.</p>
+<p>In a <a href="https://www.youtube.com/watch?v=nYTSV-Vt4Mo">webinar</a> aired last week, a coalition of nonprofit leaders announced an ambitious goal to get 50 United States communities to install Intelligent Speed Assist (ISA) technology on at least a portion of their municipally-owned fleets by 2025 — an effort they’re calling the Safer Fleets Challenge.</p>
+<p>Already required on new cars in Europe and piloted<a href="https://nyc.streetsblog.org/2022/08/12/city-is-slowly-rolling-out-new-tech-to-stop-govt-workers-from-speeding/"> on city-owned vehicles in New York City</a> and elsewhere, ISA systems use GPS or road-sign recognition cameras to detect the current limit, and either warn the driver to slow down when they exceed it or automatically throttle the car’s velocity, with an override option that allows motorists to speed up briefly to pass.</p>
+<p>If municipalities accept the challenge to demonstrate the life-saving potential of ISA on U.S. roads, the team behind the campaign hopes that it will demonstrate to federal regulators that <em>all </em>cars should come equipped with it by law.</p>
+<p>“It’s hard for me to understand why public employees, [if they’re not operating] emergency vehicles, should violate the speed limits set by their own government,” said Mike McGinn, executive director for America Walks, which is leading the effort.</p>
+<p>“I think it’s a it’s a great starting point to build acceptance, build understanding, and ultimately, lead to broader safety standards.”</p>
+<blockquote class="wp-embedded-content" data-secret="GMJHWo1AvF">
+<p><a href="https://usa.streetsblog.org/2022/09/06/six-arguments-against-speed-limiting-technology-and-how-to-quash-them/">Six Arguments Against ‘Speed Limiting’ Technology — And How to Quash Them</a></p>
+</blockquote>
+<p>For McGinn and his co-panelists, the fact that those standards aren’t <em>already</em> in place, despite the fact that speed limiters have been around since the early 80s, is a sign that American transportation officials don’t view exceeding the speed limit as a major problem — even though it was a factor in <a href="https://injuryfacts.nsc.org/motor-vehicle/motor-vehicle-safety-issues/speeding/">29 percent</a> of crash fatalities in 2020 alone.</p>
+<p>And the drivers of publicly-owned cars certainly aren’t immune to lead-foot syndrome, either: A 2020 <a href="https://sfbos.org/policy-analysis-vehicle-telematics-update">study</a> of vehicle telematics data in San Francisco found over 148,000 separate instances of the drivers of municipal cars exceeding the speed limit by at least 10 miles per hour — and that data<em> excluded </em>many vehicles not yet equipped with telematics systems, including all of the city’s police patrol cars.</p>
+<p>In Ventura County, Calif. a similar analysis logged incidences of non-emergency services employees driving as fast as 103 miles per hour, prompting the region to begin its own ISA pilot.</p>
+<p>“If this was their vehicle, they probably wouldn’t drive them like that,” said Jorge Bonilla, who manages the county’s fleet.</p>
+<figure id="attachment_237612" class="wp-caption alignright" style="width: 283px" aria-describedby="caption-attachment-237612"><a href="https://usa.streetsblog.org/wp-content/uploads/sites/5/2023/04/Screenshot-2023-04-19-at-1.49.48-PM.png"><img decoding="async" class="wp-image-237612 " src="https://i0.wp.com/usa.streetsblog.org/wp-content/uploads/sites/5/2023/04/Screenshot-2023-04-19-at-1.49.48-PM.png?w=888&amp;h=1338" alt="Graphic: America Walks" width="283" height="428" /></a><figcaption id="caption-attachment-237612" class="wp-caption-text">Graphic: America Walks</figcaption></figure>
+<p>Despite some grumbling from employees, Bonilla said the program has been mostly well-received in the region, which has reduced speeding 99 percent among retrofitted vehicles, reduced hard-braking events by 36 percent, and relieved supervisors of the responsibility of disciplining their most dangerous drivers by simply making speeding impossible.</p>
+<p>Data from other cities suggests that ISA will have other benefits for the region over time; one study found that the fuel savings alone from limiting drivers’ top speeds paid for the technology’s installation in under a year, while reducing emissions to boot.</p>
+<p>And that’s to say nothing of the astronomical savings due to avoided damage to infrastructure, hospital bills, and lawsuits when city vehicles are involved in speeding-related crashes.</p>
+<p>“I just think about when I was a council member, how many cases we had to take on where people would sue the city [after a crash],” said Erica Gilmore, metropolitan trustee for the city of Nashville. “It would happen quite often …  Greater safety, of course, would lead to budget savings over the long run for cities and towns.”</p>
+<p>The panelists acknowledged that before those savings come in, cash-strapped municipalities may struggle to find the start-up money necessary for a speed limiting pilot, which costs roughly $1,100 to $1,250 per retrofitted vehicle up front.</p>
+<p>They also acknowledged that ISA isn’t a silver bullet for all dangerous driving behaviors – and it certainly won’t stop city employees from reaching deadly speeds when local speed limit signs and road designs actively encourage them.</p>
+<p>Still, considering that fleet retrofits can generally be requested by executive order alone — and that America Walks has even <a href="https://docs.google.com/document/d/1mcd0IlLBD-I8nuiz0FWc4Cj8OaiaKGU2Gk4tSNNIihg/edit">provided a template</a> for officials to quickly write their own — forward-thinking leaders are long overdue to finally pluck this low-hanging fruit, and help cement the case that Intelligent Speed Assist belongs on every U.S. vehicle.</p>
+<p>“This is not something cutting edge,” said Cathy Chase, president of the Advocates for Highway and Auto Safety.</p>
+<p>“This is the U.S. falling behind and needing to catch up what’s happening in other countries … If you ask a parent if they would like to have this technology in their cars for their teenagers, I would venture to guess almost every parent would say yes. If we want it for our teenagers, we should want it for everyone — because everyone is sharing the roads with each other.”</p>
+<blockquote>
+<p><a href="https://aw2021.wpenginepowered.com/wp-content/uploads/2023/04/Intelligent-Speed-Assistance-Fact-Sheet_FINAL.pdf"><i>View a printable fact-sheet about the Safer Fleets Challenge here. </i></a></p>
+</blockquote>
+]]></content:encoded>
+					
+		
+		<enclosure url="https://nyc.streetsblog.org/" length="0" type="" />
+
+		      <dc:image>https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/NYC-speed-limiter.jpeg?w=1240</dc:image>
+	</item>
+		<item>
+		<title>Today&#8217;s Headlines</title>
+		<link>https://sf.streetsblog.org/2023/04/20/todays-headlines-3448/</link>
+					<comments>https://sf.streetsblog.org/2023/04/20/todays-headlines-3448/#respond</comments>
+		
+		<dc:creator><![CDATA[Roger Rudick]]></dc:creator>
+		<pubDate>Thu, 20 Apr 2023 14:49:23 +0000</pubDate>
+				<category><![CDATA[Today's Headlines]]></category>
+		<guid isPermaLink="false">https://sf.streetsblog.org/?p=423032</guid>
+
+					<description><![CDATA[More on Supes Push for Transit Funding (KRON4) BART Employee Arrested in Connection with Fatal Hit and Run (MercNews) More on SFMTA Board Director&#8217;s Illegal Lobbying (SFChron) New Elevator for 16th Street BART (MissionLocal) Petition for Safety in Oakland (Oaklandside) How Weather Hit Scooter Ridership (SFExaminer) More on Drunk, Hit and Run Assemblymember&#8216;s Bill to Kill [&#8230;]]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>More on Supes Push for Transit Funding (<a href="https://www.kron4.com/news/bay-area/sf-supes-urge-governor-to-prioritize-bay-area-public-transit-funding/">KRON4</a>)</li>
+<li>BART Employee Arrested in Connection with Fatal Hit and Run (<a href="https://www.mercurynews.com/2023/04/19/south-san-francisco-arrest-made-in-fatal-hit-and-run/">MercNews</a>)</li>
+<li>More on SFMTA Board Director&#8217;s Illegal Lobbying (<a href="https://www.sfchronicle.com/bayarea/article/sfmta-board-director-gwyneth-borden-illegally-17906337.php">SFChron</a>)</li>
+<li>New Elevator for 16th Street BART (<a href="https://missionlocal.org/2023/04/16th-st-bart-could-get-new-elevator-at-a-cost-of-5m/">MissionLocal</a>)</li>
+<li>Petition for Safety in Oakland (<a href="https://oaklandside.org/2023/04/19/traffic-safety-advocates-deliver-oakland-budget-petition-to-city-council/">Oaklandside</a>)</li>
+<li>How Weather Hit Scooter Ridership (<a href="https://www.sfexaminer.com/news/transit/how-sf-weather-torpedoed-scooter-ridership-this-wet-winter/article_7bc84174-dedd-11ed-bb45-5b9d5d6c44da.html">SFExaminer</a>)</li>
+<li>More on <a href="https://sf.streetsblog.org/2022/05/03/commentary-reject-reckless-drivers-from-transportation-leadership/">Drunk, Hit and Run Assemblymember</a>&#8216;s Bill to Kill Bridge Bike Path (<a href="https://www.eastbaytimes.com/2023/04/20/marin-assemblymans-bill-calls-for-third-westbound-lane-on-richmond-bridge/">EastBayTimes</a>)</li>
+<li>San Jose Mayor Disses San Francisco (<a href="https://sfstandard.com/criminal-justice/shots-fired-san-jose-mayor-says-city-will-not-become-san-francisco/">SFStandard</a>)</li>
+<li>Bye Oakland A&#8217;s (<a href="https://www.sfchronicle.com/eastbay/article/oakland-a-s-reportedly-close-stadium-deal-las-17907710.php">SFChron</a>, <a href="https://sfstandard.com/sports/oakland-as-move-las-vegas-leaving-oakland/">SFStandard</a>, <a href="https://www.eastbaytimes.com/2023/04/19/on-the-move-oakland-athletics-announce-las-vegas-land-deal/">EastBayTimes</a>)</li>
+<li>City&#8217;s Satisfaction Survey (<a href="https://www.sfchronicle.com/sf/article/financial-district-neighborhood-unhappy-17902585.php">SFChron</a>)</li>
+<li>The Bay Area&#8217;s Carbon Sink (<a href="https://www.sfchronicle.com/climate/article/dutch-slough-wetland-carbon-17883469.php">SFChron</a>)</li>
+</ul>
+<p>Get state headlines at <a href="https://cal.streetsblog.org/" target="_blank" rel="noopener">Streetsblog California</a>, national headlines at <a href="https://usa.streetsblog.org/" target="_blank" rel="noopener">Streetsblog USA</a></p>
+<p><em>Local journalism is more important than ever. <a href="https://sf.streetsblog.org/make-a-donation-to-streetsblog-san-francisco/">Won’t you contribute</a>?</em></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://sf.streetsblog.org/2023/04/20/todays-headlines-3448/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Berkeley Safety Advocates Stage a &#8220;Die-In&#8221; to Protest Delay on Hopkins</title>
+		<link>https://sf.streetsblog.org/2023/04/19/berkeley-safety-advocates-stage-a-die-in-to-protest-delay-on-hopkins/</link>
+					<comments>https://sf.streetsblog.org/2023/04/19/berkeley-safety-advocates-stage-a-die-in-to-protest-delay-on-hopkins/#respond</comments>
+		
+		<dc:creator><![CDATA[Melanie Curry]]></dc:creator>
+		<pubDate>Wed, 19 Apr 2023 22:00:52 +0000</pubDate>
+				<category><![CDATA[Bicycle Infrastructure]]></category>
+		<category><![CDATA[Bicycling]]></category>
+		<category><![CDATA[Pedestrian Safety]]></category>
+		<category><![CDATA[Promoted]]></category>
+		<guid isPermaLink="false">https://sf.streetsblog.org/?p=423058</guid>
+
+					<description><![CDATA[<p><img src="https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/Die-in.jpg?w=900"></p><!-- FeaturedImageEnd -->To goad the city into prioritizing safety changes along Hopkins, several local advocacy groups sponsored a "die-in" on that section of the street Wednesday.]]></description>
+										<content:encoded><![CDATA[<p><img src="https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/Die-in.jpg?w=900"></p><!-- FeaturedImageEnd --><p>When the Berkeley City Council <a href="https://sf.streetsblog.org/2023/04/05/berkeley-trying-to-ko-hopkins-protected-bike-lane/">canceled a meeting</a> to discuss proposed safety changes along a tree-lined neighborhood shopping district, advocates who had worked for years on the project were stunned. To goad the city into prioritizing safety changes along Hopkins, several local advocacy groups sponsored a "die-in" on that section of the street Wednesday.</p>
+<p>As soon as the #12 bus passed by, volunteers blocked the road with cones and bikes and directed car traffic around the block. Children and parents, seniors, students, and other random bike riders filled the badly rutted road with their prone bodies to emphasize the seriousness of the dangers they face navigating this part of town.</p>
+<p>[caption id="attachment_423096" align="aligncenter" width="583"]<img class="wp-image-423096" src="https://i0.wp.com/sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/Cargobike.jpg?w=1280&amp;h=927" sizes="(min-width: 80em) 1280px,(min-width: 64em) and (max-width: 80em) 1280px,(min-width: 48em) and (max-width: 64em) 1024px,(min-width: 32em) and (max-width: 64em) 1024px,(min-width: 32em) and (max-width: 48em) 768px,(max-width: 32em) 512px,(max-width: 48em) 768px,2363px" srcset="https://i0.wp.com/sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/Cargobike.jpg?w=1280&amp;h=927 1280w,https://i0.wp.com/sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/Cargobike.jpg?w=1024&amp;h=741 1024w,https://i0.wp.com/sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/Cargobike.jpg?w=768&amp;h=556 768w,https://i0.wp.com/sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/Cargobike.jpg?w=512&amp;h=371 512w,https://i0.wp.com/sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/Cargobike.jpg?w=2363&amp;h=1711 2363w" alt="" width="583" height="422" /> Mom and daughter leave their cargo bike and prepare to join the "die-in." Photo by Melanie Curry/Streetsblog[/caption]</p>
+<p>Organizers with Walk Bike Berkeley and Telegraph for People came up with this dramatic way to illustrate their fears out of frustration with the glacial progress on a plan that was approved last year by the city council to add protected bike lanes, bus improvements, and traffic calming in this busy shopping district.</p>
+<p>"For years now, Berkeley has professed to be a Vision Zero city, committed to eliminating severe and fatal collisions," said Walk Bike Berkeley's Ben Gerhardstein through a megaphone to people gathering at the intersection of Hopkins and Monterey before the "die-in" began. "But we aren’t making enough progress."</p>
+<p>Hopkins is a high injury street where "since 2016, four people have been severely injured and two have been killed while walking or biking on Hopkins," he said.</p>
+<p>"To be clear," he added, "We oppose paving Hopkins without bicycle and pedestrian safety improvements. As we have seen with the HAWK beacon at Virginia and San Pablo, when safety projects are delayed, more people get hurt."</p>
+<p>[caption id="attachment_423100" align="aligncenter" width="600"]<img class="wp-image-423100 " src="https://i0.wp.com/sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/NoMoreDeadFriends.jpg?w=1000&amp;h=1018" sizes="(min-width: 80em) 1000px,(min-width: 64em) and (max-width: 80em) 1000px,(min-width: 48em) and (max-width: 64em) 1000px,(min-width: 32em) and (max-width: 64em) 1000px,(min-width: 32em) and (max-width: 48em) 768px,(max-width: 32em) 512px,(max-width: 48em) 768px,1000px" srcset="https://i0.wp.com/sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/NoMoreDeadFriends.jpg?w=1000&amp;h=1018 1000w,https://i0.wp.com/sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/NoMoreDeadFriends.jpg?w=768&amp;h=782 768w,https://i0.wp.com/sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/NoMoreDeadFriends.jpg?w=512&amp;h=521 512w" alt="The sign says everything. Photo by Melanie Curry/Streetsblog" width="600" height="611" /> The sign says everything. Photo by Melanie Curry/Streetsblog[/caption]</p>
+<p>Hopkins is a key link in the city's planned bicycle network and is included in the 2017 Bicycle Plan [<a href="https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/Berkeley-Bicycle-Plan-2017-Executive-Summary.pdf">PDF</a>] as a future low-stress bikeway. It needs to be repaved, but as the city moved forward with the repaving plan it also had to take into consideration the Bicycle Plan's recommendations. Advocates have been pushing for the best possible safety design that could accommodate bike riders of all ages.</p>
+<p>Opponents reacted with panic to the proposed removal of parking, and have accused the plan's supporters of being a monolithic "radical bike lobby" out to destroy Berkeley (not a good description of the diverse crowd that filled the street yesterday, although the accusation spurred <a href="https://twitter.com/BikeEastBay/status/1580255646015889409?lang=en">an enthusiastic response plus a t-shirt design</a>). The councilmember for the district, <a href="https://sf.streetsblog.org/2022/10/05/op-ed-new-heights-of-hypocrisy-in-berkeley/">Sophie Hahn, supported the design last year but then did an about-face and has been pushing to reduce or delete the safety elements from the paving project</a>.</p>
+<p>However, if the street is paved without including traffic calming measures, it is likely to become an even faster through-way for cars. Potholes are terrible, but at least they tend to force drivers to slow down, in a way that the presence of bike riders and people crossing the street may not.</p>
+<p>In addition, this Berkeley corridor has few alternative routes, and none of them are great for biking. Karen Parolek, a city Transportation Commissioner who used to live close by but moved about three quarters of a mile away, described how hard it is to bike in this area. It wasn't safe for her children to bike to school at Martin Luther King Jr. Middle School, a few blocks beyond; there were no reasonable alternatives, and she felt she couldn't allow them to bike on Hopkins itself.</p>
+<p>After years of patronizing the various shops in the area, "we had to give up coming here," she said. It wasn't what they wanted, but for their own safety, and because they couldn't figure out how to safely get through the neighborhood, they went elsewhere.</p>
+<p>A meeting originally scheduled for last night was supposed to feature city staff presenting three options [<a href="https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/Berkeley-Bicycle-Plan-2017-Executive-Summary.pdf">PDF</a>] to discuss, differentiated primarily by how far the new bike lanes extend and how many parking places would be removed. The plan was to decide on an option last night, so that bids could go out and the project could be built this summer at the same time that Hopkins is repaved.</p>
+<p>Then on April 4, <a href="https://www.berkeleyside.org/2023/04/05/hopkins-street-bike-lane-postponement">the City Manager sent out a memo requesting a postponement of that discussion</a>, blaming "operational concerns with moving forward" that seem to stem from even deeper staffing problems.</p>
+<p>[caption id="attachment_423099" align="aligncenter" width="528"]<img class="wp-image-423099 " src="https://i0.wp.com/sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/Isupportbikelanes.jpg?w=1280&amp;h=1359" sizes="(min-width: 80em) 1280px,(min-width: 64em) and (max-width: 80em) 1280px,(min-width: 48em) and (max-width: 64em) 1024px,(min-width: 32em) and (max-width: 64em) 1024px,(min-width: 32em) and (max-width: 48em) 768px,(max-width: 32em) 512px,(max-width: 48em) 768px,2622px" srcset="https://i0.wp.com/sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/Isupportbikelanes.jpg?w=1280&amp;h=1359 1280w,https://i0.wp.com/sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/Isupportbikelanes.jpg?w=1024&amp;h=1087 1024w,https://i0.wp.com/sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/Isupportbikelanes.jpg?w=768&amp;h=815 768w,https://i0.wp.com/sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/Isupportbikelanes.jpg?w=512&amp;h=544 512w,https://i0.wp.com/sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/Isupportbikelanes.jpg?w=2622&amp;h=2784 2622w" alt="A nearby sign. Photo by Melanie Curry/Streetsblog" width="528" height="560" /> A nearby sign. Photo by Melanie Curry/Streetsblog[/caption]</p>
+<p>Public agencies keep personnel issues away from the public eye, so there isn't any more publicly available information to explain why the staffing problem is suddenly dire. But as noted in a different City Manager memo, sent in December [<a href="https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/Berkeley-Bicycle-Plan-2017-Executive-Summary.pdf">PDF</a>], those staffing problems are not new. That memo pointed to low morale among remaining staff as a potential contributing factor.</p>
+<p>In his speech, Gerhardstein acknowledged that "the staffing shortage in Berkeley’s Public Works Department is a huge problem. The city must fill vacancies and retain staff so that safety projects like Hopkins, Telegraph, and the Ohlone Greenway don’t languish."</p>
+<p>"But the decision to postpone Hopkins sends the wrong message," he said, making it even more difficult "to attract staff who want to deliver safe streets."</p>
+<p>Sooner or later, the city will have to address its staffing problems publicly, to quell speculation about what has become a contentious and emotional battle. Supporters also worry that city staff are feeling unsupported in their efforts to meet the city's goals, and that the lack of support may be contributing to the staff shortage.</p>
+<p>Other cities are also experiencing staff shortages, making it difficult to build safer streets.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://sf.streetsblog.org/2023/04/19/berkeley-safety-advocates-stage-a-die-in-to-protest-delay-on-hopkins/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		<enclosure url="https://cal.streetsblog.org/" length="0" type="" />
+
+		      <dc:image>https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/Die-in.jpg?w=900</dc:image>
+	</item>
+		<item>
+		<title>Today&#8217;s Headlines</title>
+		<link>https://sf.streetsblog.org/2023/04/19/todays-headlines-3447/</link>
+					<comments>https://sf.streetsblog.org/2023/04/19/todays-headlines-3447/#respond</comments>
+		
+		<dc:creator><![CDATA[Roger Rudick]]></dc:creator>
+		<pubDate>Wed, 19 Apr 2023 14:58:30 +0000</pubDate>
+				<category><![CDATA[Today's Headlines]]></category>
+		<guid isPermaLink="false">https://sf.streetsblog.org/?p=423018</guid>
+
+					<description><![CDATA[S.F. Leaders Call for Bailout of Transit (SFExaminer, ABC7, SFStandard) SFMTA Board Director Takes $$ for Lobbying (MissionLocal) BART Approves New Fare Gates (SFStandard) Pod People Continue San Jose Airport Con (SV) Cyclists/Scooterists Sue City for Clay Street Bump (SFStandard) A Look Back at S.F.&#8217;s Bad Plans (SFChron) Traffic Nightmare Expected this Week (SFChron) Climate [&#8230;]]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>S.F. Leaders Call for Bailout of Transit (<a href="https://www.sfexaminer.com/news/politics/sf-leaders-call-for-major-state-bailout-of-muni-bart/article_6f810a36-de06-11ed-89f4-97807bce228a.html">SFExaminer</a>, <a href="https://abc7news.com/san-francisco-board-of-supervisors-bay-area-public-transit-california-muni-bart-state-funding/13151284/">ABC7</a>, <a href="https://sfstandard.com/politics/sf-supervisors-boost-police-pay-talk-toiletgate-2-0-and-urge-transit-funding/">SFStandard</a>)</li>
+<li>SFMTA Board Director Takes $$ for Lobbying (<a href="https://missionlocal.org/2023/04/sfmta-commissioner-gwyneth-borden-lobbying/">MissionLocal</a>)</li>
+<li>BART Approves New Fare Gates (<a href="https://sfstandard.com/transportation/curbing-the-bad-behavior-bart-approves-47m-contract-for-improved-fare-gates/">SFStandard</a>)</li>
+<li>Pod People Continue San Jose Airport Con (<a href="https://www.siliconvalley.com/2023/04/18/robot-shuttles-at-san-jose-airport-major-transit-plan-moves-forward/">SV</a>)</li>
+<li>Cyclists/Scooterists Sue City for Clay Street Bump (<a href="https://sfstandard.com/transportation/san-francisco-sued-for-thousands-over-bump-in-road-that-injured-4/">SFStandard</a>)</li>
+<li>A Look Back at S.F.&#8217;s Bad Plans (<a href="https://www.sfchronicle.com/sf/article/bad-plans-s-f-bay-development-schemes-we-ve-17904176.php">SFChron</a>)</li>
+<li>Traffic Nightmare Expected this Week (<a href="https://www.sfchronicle.com/sf/article/san-francisco-420-warriors-kings-giants-traffic-17902220.php">SFChron</a>)</li>
+<li>Climate Change Killing California&#8217;s Trees (<a href="https://www.eastbaytimes.com/2023/04/18/what-california-can-learn-from-texas-trees/">EastBayTimes</a>)</li>
+<li>Drunk Driver Gets Five Years Probation&#8211;But Gets his License Back in One Year? (<a href="https://www.eastbaytimes.com/2023/04/19/tiburon-physician-faces-state-discipline-over-dui-crash/">EastBayTimes</a>)</li>
+<li>Mayor Breed Introduces Legislation to Speed Up Housing (<a href="https://www.sfchronicle.com/bayarea/article/mayor-breed-introduces-legislation-speed-s-f-s-17904201.php">SFChron</a>)</li>
+<li>Commentary: Toiletgate Now Gets Two Toilets Instead of One (<a href="https://www.sfchronicle.com/sf/bayarea/heatherknight/article/1-7-million-toilet-cost-shocked-s-f-now-1-4-17904102.php">SFChron</a>)</li>
+<li>Commentary: Bus Riders don&#8217;t Matter! Preserve all Private Car Storage (<a href="https://www.sfexaminer.com/our_sections/forum/will-the-end-of-parking-spaces-end-small-businesses/article_15468938-de33-11ed-a789-b7abf2e5330f.html">SFExaminer</a>)</li>
+</ul>
+<p>Get state headlines at <a href="https://cal.streetsblog.org/" target="_blank" rel="noopener">Streetsblog California</a>, national headlines at <a href="https://usa.streetsblog.org/" target="_blank" rel="noopener">Streetsblog USA</a></p>
+<p><em>Local journalism is more important than ever. <a href="https://sf.streetsblog.org/make-a-donation-to-streetsblog-san-francisco/">Won’t you contribute</a>?</em></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://sf.streetsblog.org/2023/04/19/todays-headlines-3447/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>These 10 Urban Freeways Deserve To Be Demolished — But Will They?</title>
+		<link>https://usa.streetsblog.org/2023/04/19/these-10-urban-freeways-deserve-to-be-demolished-but-will-they/</link>
+		
+		<dc:creator><![CDATA[Kea Wilson]]></dc:creator>
+		<pubDate>Wed, 19 Apr 2023 04:01:22 +0000</pubDate>
+				<category><![CDATA[Freeway Fighters]]></category>
+		<category><![CDATA[Freeways]]></category>
+		<category><![CDATA[Highway Expansion]]></category>
+		<category><![CDATA[Highway Removal]]></category>
+		<category><![CDATA[Highway Repair]]></category>
+		<category><![CDATA[Promoted]]></category>
+		<category><![CDATA[Racism]]></category>
+		<category><![CDATA[Urban Renewal]]></category>
+		<guid isPermaLink="false">https://usa.streetsblog.org/?p=237525</guid>
+
+					<description><![CDATA[<p><img src="https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/Highway-to-nowhere.jpg?w=800"></p><!-- FeaturedImageEnd -->America is at a watershed moment in the fight to heal the harms of urban freeways that tore apart predominantly BIPOC and low-income communities, a new report argues — but what that healing will look like, exactly, is still an open question. ]]></description>
+										<content:encoded><![CDATA[<p><img src="https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/Highway-to-nowhere.jpg?w=800"></p><!-- FeaturedImageEnd --><p>America is at a watershed moment in the fight to heal the harms of urban freeways that tore apart predominantly BIPOC and low-income communities, a new report argues — but what that healing will look like, exactly, is still an open question.</p>
+<p class="p1">The Congress for the New Urbanism’s latest <a href="https://www.cnu.org/highways-boulevards/freeways-without-futures/2023"><span class="s1"><i>Freeways Without Futures</i></span></a><i> </i>report identified 10 aging urban highway projects that are particularly prime candidates for conversion into boulevards.</p>
+<p class="p1">CNU’s list — selected by a panel of experts every other year since 2008 — has become a powerful advocacy tool, with 18 of its nominated roads actually being demolished and replaced with human-scaled designs over the years.</p>
+<p>This year’s candidates are the first to be nominated at a time when the federal government is actually giving out money to U.S. communities — specifically to make their freeway-fighting dreams come true. Several highways on the list have already won federal grant money.</p>
+<figure id="attachment_237539" class="wp-caption alignnone" style="width: 1430px" aria-describedby="caption-attachment-237539"><a href="https://usa.streetsblog.org/wp-content/uploads/sites/5/2023/04/Freeways-without-futures-map-.jpg"><img decoding="async" class="wp-image-237539 size-full" src="https://i0.wp.com/usa.streetsblog.org/wp-content/uploads/sites/5/2023/04/Freeways-without-futures-map-.jpg?w=1280&amp;h=848" alt="Ten highways ready to be remade as boulevards. Map: CNU" width="1430" /></a><figcaption id="caption-attachment-237539" class="wp-caption-text">Ten highways ready to be remade as boulevards. Map: CNU</figcaption></figure>
+<p>Half of this year’s list received funding during the<a href="https://usa.streetsblog.org/2023/03/02/advocates-applaud-reconnecting-communities-grantees-with-some-exceptions/"> first round</a> of the new Reconnecting Communities Program, which will provide $1 billion over five years to remediate the negative impacts of highway projects — and the report authors suspect the others are likely to apply for the upcoming Neighborhood Access and Equity Grants program, which will devote $3 billion to similar projects over the same period.</p>
+<p>Both programs, like the CNU report itself, emphasize projects that will not induce residential displacement while maximizing benefits to legacy residents — and even communities that haven’t yet won a grant say the programs have inspired them to explore better options for their transportation futures.</p>
+<p>“Just the existence of this funding has really moved up the conversation in a lot of cities,” said Lauren Mayer, CNU’s communications manager and the lead author of the report.</p>
+<p>“In <strong>Youngstown,</strong> for instance, they basically saw the Reconnecting Communities notice of funding, and it prompted them to start saying, ‘Oh; we<em> can</em> actually start studying what it would take to remove this piece of burdensome infrastructure [known as Route 422].&#8217;”</p>
+<p>Mayer is careful to note, though, that the new federal money won’t <em>necessarily</em> be spent on freeway removals — at least not everywhere.</p>
+<p>A local campaign in <strong>Minnesota’s Twin Cities</strong>, for instance, recently won a federal grant to study the completion of a 0.5 mile-wide <a href="https://usa.streetsblog.org/2021/02/19/land-bridge-seeks-to-restore-minnesota-black-neighborhood/">land bridge</a> across Interstate 94 that some advocates hope will restore mobility and opportunity to the historically Black community of Rondo that was demolished to make way for the highway. The campaign that was nominated for the CNU list, however, argues that a full boulevard conversion of the outdated highway <em>is </em>possible, and would be an even more radical act of spatial justice.</p>
+<p>“It’s great that this community is trying to do something that they very much need… But why not do that for this whole 7.5 mile stretch of trenched highway — versus a small, half-mile stretch that would would be very good for one community, but then would shut other communities out?” Mayer asked.</p>
+<figure id="attachment_237531" class="wp-caption alignnone" style="width: 2140px" aria-describedby="caption-attachment-237531"><a href="https://usa.streetsblog.org/wp-content/uploads/sites/5/2023/04/Albany-before-and-after.png"><img decoding="async" class="wp-image-237531 size-full" src="https://i0.wp.com/usa.streetsblog.org/wp-content/uploads/sites/5/2023/04/Albany-before-and-after.png?w=1280&amp;h=725" alt="Albany's I-787 today and a proposed alternative. Graphics: Adam Bonosky and Albany Riverfront Collaborative" width="2140" /></a><figcaption id="caption-attachment-237531" class="wp-caption-text">Albany’s I-787 today and a proposed alternative. Graphics: Adam Bonosky and Albany Riverfront Collaborative</figcaption></figure>
+<p style="font-weight: 400">Another controversial grantee on CNU’s list is the city of <strong>Austin, Texas,</strong> which won funding to study the possibility of capping sections of Interstate 35 — <em>without</em> pausing an ongoing project to widen that same road. As in Rondo, some advocates have mounted passionate campaigns in favor of the federally-funded project, while others have fought for a more radical vision — in I-35’s case,  re-routing the highway away from downtown Violet Crown entirely.</p>
+<p style="font-weight: 400">Mayer suspects those sorts of tensions are unlikely to go away anytime soon. That’s why it’s more critical than ever that advocates keep pushing for true transformations rather than band-aids, she said. If they do, Mayor hopes the future of the Freeways Without Futures report will soon look very different.</p>
+<p>“My biggest hope of all, of course, would be that all the freeways are torn down in cities, so we don’t have to even be harping on this,” she joked. “But really, the dream of this report going forward is that it becomes less about trying to fight these expansions that are still happening, and becomes more about showcasing all the different approaches that the community can take to make freeway-fighting —and freeway removal — a reality.”</p>
+<p>Here are the other seven selections for this year’s <em>Freeways without Futures </em>list, which Mayer emphasizes is non-exhaustive:</p>
+<ul>
+<li><strong>Albany, N.Y.</strong> and its riverfront highway Interstate 787, for which NYSDOT has already committed to a $5 million feasibility removal study</li>
+<li><strong>Baltimore,</strong> home to the infamous “highway to nowhere” US 40, which received a $2 million Reconnecting Communities grant to study removing, retrofitting or modifying the road</li>
+<li><strong>Milwaukee, </strong>where advocates are building support for the removal of Interstate 794 following the successful removal of the Park East highway in the Wisconsin community</li>
+<li>State Highway 55 in <strong>Minneapolis,</strong> a surface “stroad” and frequent site of roadway crashes which advocates are fighting to reconstruct at  human scale.</li>
+<li><strong>Oakland, Calif., </strong>which recently won a Reconnecting Communities grant to study the possibility of removing I-980, among other alternatives, and which Streetsblog SF has <a href="https://sf.streetsblog.org/2023/01/26/i-980-makes-list-of-top-freeway-removal-proposals/">written about in depth</a></li>
+<li><strong>Seattle, </strong>which is also considering removal among the possible futures for urban highway with the aid of a Reconnecting Communities grant for State Route 99</li>
+<li><strong>Tulsa, Okla., </strong>where transportation officials demolished the “Black Wall Street” neighborhood to make way for I-244; the Reconnecting Communities program is supporting a feasibility study for removing it.</li>
+</ul>
+]]></content:encoded>
+					
+		
+		<enclosure url="https://sf.streetsblog.org/" length="0" type="" />
+
+		      <dc:image>https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/Highway-to-nowhere.jpg?w=800</dc:image>
+	</item>
+		<item>
+		<title>Advocates Demand Protected Bike Lanes on Arguello</title>
+		<link>https://sf.streetsblog.org/2023/04/18/advocates-demand-protected-bike-lanes-on-arguello/</link>
+					<comments>https://sf.streetsblog.org/2023/04/18/advocates-demand-protected-bike-lanes-on-arguello/#respond</comments>
+		
+		<dc:creator><![CDATA[Roger Rudick]]></dc:creator>
+		<pubDate>Tue, 18 Apr 2023 23:27:16 +0000</pubDate>
+				<category><![CDATA[Bicycle Infrastructure]]></category>
+		<category><![CDATA[Bicycling]]></category>
+		<category><![CDATA[GJEL]]></category>
+		<category><![CDATA[Promoted]]></category>
+		<guid isPermaLink="false">https://sf.streetsblog.org/?p=422922</guid>
+
+					<description><![CDATA[<p><img src="https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/PXL_20230418_161541130.jpg?w=931"></p><!-- FeaturedImageEnd -->"I'm sick of it," said District 7 Supervisor Myrna Melgar, addressing a crowd of some 60 people Tuesday morning on the steps of San Francisco City Hall at a rally for protected bike lanes on Arguello.]]></description>
+										<content:encoded><![CDATA[<p><img src="https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/PXL_20230418_161541130.jpg?w=931"></p><!-- FeaturedImageEnd --><blockquote><p><em>Note: <a href="https://www.gjel.com/" target="_blank" rel="noopener noreferrer">GJEL Accident Attorneys</a> regularly sponsors coverage on Streetsblog San Francisco and Streetsblog California. Unless noted in the story, GJEL Accident Attorneys is not consulted for the content or editorial direction of the sponsored content.</em></p></blockquote>
+<p>"I'm sick of it," said District 7 Supervisor Myrna Melgar, addressing a crowd of some sixty people Tuesday morning on the steps of San Francisco City Hall at a rally for protected bike lanes on Arguello. As she explained to Streetsblog prior to the rally, she's had enough of the death, the severe injuries, and <a href="https://sf.streetsblog.org/2023/04/05/sfmta-board-votes-unanimously-to-support-only-option-they-were-given-on-valencia/">a transportation agency that fails, again and again, to make streets safe</a>. "It's <a href="https://sf.streetsblog.org/2021/01/08/sfs-vision-zero-failure-in-one-callout/">been decades</a>."</p>
+<p>Melgar was part of a coalition of grassroots advocates. The protest comes two weeks <a href="https://sf.streetsblog.org/2023/04/07/driver-kills-cyclist-on-arguello-in-presidio/">after an errant driver plowed across the </a><a href="https://sf.streetsblog.org/2023/04/07/driver-kills-cyclist-on-arguello-in-presidio/">center of Arguello in the Presidio, killing cyclist Ethan Boyes</a>. "Every day I encounter drivers speeding in San Francisco, looking at their phones," said James Grady, a friend of Boyes who also attended the rally. "I face <a href="https://sf.streetsblog.org/2023/03/02/jeffrey-tumlin-stereotypes-cyclists-fans-anti-bike-hate/">an attitude from many that I don't deserve to exist because I ride a bike</a>."</p>
+<p>[caption id="attachment_422962" align="aligncenter" width="4032"]<img class="wp-image-422962 size-full" src="https://i0.wp.com/sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/PXL_20230418_162336502.jpg?w=1280&amp;h=960" alt="Boyes's friend Grady at the mic at Tuesday morning's rally" width="4032" /> Boyes's friend Grady at the mic at Tuesday morning's rally[/caption]</p>
+<p>“Ethan’s death was preventable with protected bike infrastructure, and our city needs to be taking immediate action to build a connected network of protected bike lanes to make it safe for people to bike in San Francisco. Ethan’s death has left a huge hole in the community," said Grady. "We need change now.”</p>
+<p><a href="https://sf.streetsblog.org/2019/06/04/on-arguello-city-again-fails-to-protect-cyclists/">Boyes isn't the only person to die or be seriously injured on Arguello</a>. In Nov. 2022 a sixteen-year-old was severely injured by a motorist. And as if to punctuate the incessant reckless driving and unsafe conditions on the street, on Monday a motorist drove off the road near the location where Boyes was killed.</p>
+<p>[caption id="attachment_422926" align="alignnone" width="4032"]<img class="wp-image-422926 size-full" src="https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/IMG_20230417_205219.jpg" alt="Jason Henderson was cycling Arguello in the Presidio on Monday and came across this wreck, more evidence of the unsafe conditions on Arguello. Photo: Jason Henderson" width="4032" height="2268" /> Jason Henderson was cycling Arguello in the Presidio on Monday and came across this wreck. This is not the driver who killed Boyes, rather it is more evidence of the unsafe conditions. Photo: Jason Henderson[/caption]</p>
+<p><span style="font-size: 16px">Advocates want physically protected bike lanes -- <a href="https://sf.streetsblog.org/2021/02/11/commentary-use-physics-not-plastic-for-safety/">with concrete</a> -- so reckless driving doesn't result in loss of life. </span>"No more plans, no more studies, no more outreach," said advocate Luke Bornheimer, who helped put the rally together. "<a href="https://sf.streetsblog.org/2023/03/02/jeffrey-tumlin-stereotypes-cyclists-fans-anti-bike-hate/">Our city leaders</a> are failing us."</p>
+<p>"District 1 has zero protected bike lanes and we need to fix that immediately,” Richmond District parent Dave Alexander said. “Arguello Boulevard is a critical route for people on bikes and it’s long past time for this street to get protected bike lanes and for our city to stop accepting death and severe injury as the status quo on our streets.”</p>
+<p>Supervisor Connie Chan, who was not at the rally but whose district includes Arguello, issued the following statement: "I have also requested a District 1 Mobility Study to improve traffic safety and transit connectivity in the District, and I am urging SFMTA to explore the possibility of protective bike lanes on Arguello between Geary and the entrance to the Presidio."</p>
+<p>[caption id="attachment_422960" align="aligncenter" width="4032"]<img class="wp-image-422960 size-full" src="https://i0.wp.com/sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/PXL_20230418_163306298.jpg?w=1280&amp;h=960" alt="An advocate at Tuesday's rally" width="4032" /> Advocates at Tuesday's rally. That's Chan's deputy Kelly Groth and Supervisor Melgar just behind the sign and to the right[/caption]</p>
+<p>“Ethan’s death and the sixteen-year-old's critical injury are a reminder of the urgent need for protected bike lanes on Arguello and throughout our city,”<a href="https://sf.streetsblog.org/2016/03/30/bike-advisory-committee-works-for-better-bicycling-in-san-francisco/"> San Francisco Bicycle Advisory Committee</a> Vice Chair Kristin Tieche said. “Protected bike lanes save lives. We have proof and we have the data. We need to immediately install safe bicycle infrastructure on Arguello to prevent future tragedies in our community.”</p>
+<p><img class="aligncenter wp-image-422968 size-full" src="https://i0.wp.com/sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/PXL_20230418_161348664.jpg?w=1280&amp;h=960" alt="" /></p>
+<p>In addition to pushing the Presidio to protect its section of Arguello, the coalition wants Supervisors Chan and Catherine Stefani to have protected bike lanes installed immediately between Fulton Street and the Presidio. They want them to write a resolution directing the San Francisco Municipal Transportation Agency to do it without delay.</p>
+<p>Nevertheless, Melgar was the only Supervisor to show up in person at the rally, despite the fact that Arguello doesn't run through her district. As someone who rides her bike everywhere, she said it was her duty to be there. "Safety shouldn't be a district issue."</p>
+<p>The campaign can be found at <a href="http://ProtectedArguello.com" target="_blank" rel="noopener">ProtectedArguello.com</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://sf.streetsblog.org/2023/04/18/advocates-demand-protected-bike-lanes-on-arguello/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		<enclosure url="https://usa.streetsblog.org/" length="0" type="" />
+
+		      <dc:image>https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/PXL_20230418_161541130.jpg?w=931</dc:image>
+	</item>
+		<item>
+		<title>Speed Cameras, Bike Lane Camera Enforcement, and RSR Bridge Bills Pass First Committee</title>
+		<link>https://cal.streetsblog.org/2023/04/18/speed-cameras-bike-lane-camera-enforcement-and-rsr-bridge-bills-pass-first-committee/</link>
+		
+		<dc:creator><![CDATA[Melanie Curry]]></dc:creator>
+		<pubDate>Tue, 18 Apr 2023 20:54:40 +0000</pubDate>
+				<category><![CDATA[Assembly]]></category>
+		<category><![CDATA[Caltrans]]></category>
+		<category><![CDATA[GJEL2]]></category>
+		<category><![CDATA[Legislation]]></category>
+		<category><![CDATA[Promoted]]></category>
+		<category><![CDATA[State Capitol Updates]]></category>
+		<category><![CDATA[Streetsblog California]]></category>
+		<guid isPermaLink="false">https://cal.streetsblog.org/?p=39926</guid>
+
+					<description><![CDATA[<p><img src="https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/Bike-CapitolupdatecroppedsmallWORDS-1.jpg?w=844"></p><!-- FeaturedImageEnd -->Note: GJEL Accident Attorneys regularly sponsors coverage on Streetsblog San Francisco and Streetsblog California. Unless noted in the story, GJEL Accident Attorneys is not consulted for the content or editorial direction of the sponsored content. California legislative update: Here’s a brief recap of yesterday’s Assembly Transportation Hearing Speed Cameras Assembly Transportation Chair Laura Friedman’s A.B. 645, to create a […]]]></description>
+										<content:encoded><![CDATA[<p><img src="https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/Bike-CapitolupdatecroppedsmallWORDS-1.jpg?w=844"></p><!-- FeaturedImageEnd --><blockquote>
+<h6>Note: <a href="https://www.gjel.com/">GJEL Accident Attorneys</a> regularly sponsors coverage on Streetsblog San Francisco and Streetsblog California. Unless noted in the story, <a href="https://www.gjel.com/">GJEL Accident Attorneys</a> is not consulted for the content or editorial direction of the sponsored content.</h6>
+</blockquote>
+<p>California legislative update: Here’s a brief recap of yesterday’s Assembly Transportation Hearing</p>
+<p><strong>Speed Cameras</strong></p>
+<p>Assembly Transportation Chair Laura Friedman’s <a href="https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240AB645">A.B. 645</a>, to create a pilot program for automated speed enforcement, passed the Assembly Transportation Committee. This was not surprising; it has passed the same committee twice in past years, and the author’s position as committee chair counts for a lot.</p>
+<p>In addition, there has been a lot of vocal support for the bill. <a href="https://cal.streetsblog.org/2023/04/13/speed-camera-bill-up-for-the-umpteenth-time-supporters-are-speaking-up/">This recent post goes over details in the proposed legislation</a>.</p>
+<p>“This bill as been very carefully crafted to removes almost all opposition,” said Friedman during the hearing. It addresses many of the previously stated opposition arguments, among them the potential for automated enforcement to be used purely to raise revenue (there are strict limitations on what it could be used for) and concerns about privacy (images can only be made of license plates, and must be destroyed within a short period of time). See the bill’s detailed, twelve-page analysis [<a href="https://cal.streetsblog.org/wp-content/uploads/sites/13/2023/04/202320240AB645_Assembly-Transportation.pdf">PDF</a>] for even more details.</p>
+<p>At this hearing, no witnesses spoke in opposition, and the analysis also lists no official opposition. However, that doesn’t mean it is in the clear. The bill’s next stop is the Committee on Privacy and Consumer Protection, which is likely to produce a more complicated discussion. If it passes that committee, it would proceed to the Assembly Appropriations committee, where <a href="https://cal.streetsblog.org/2021/05/21/california-wont-be-getting-speed-enforcement-cameras/">in the last several years similar bills were stopped cold</a> without any discussion.</p>
+<p>In other words, there may be official opposition that hasn’t yet been made public, and there may also be unofficial pressure to kill the bill again.</p>
+<p>Advocates for automated speed enforcement are asking supporters <a href="https://www.change.org/p/reign-in-reckless-speeding-in-california">to sign a petition</a> to ask Assembly leaders to pass the bill.</p>
+<p><strong>Bike Lane Violations</strong></p>
+<p>Another bill that passed the committee yesterday was <a href="https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240AB361">A.B. 361</a>, from Assemblymember Christopher Ward, which would allow cities to use vehicle-mounted cameras to issue citations to drivers who park in bike lanes. Transit agencies are already allowed to enforce transit lanes with bus-mounted cameras; this would allow agencies and city-owned vehicles to do the same for bike lane violations.</p>
+<p><strong>Another Car Lane on the Richmond-San Rafael Bridge</strong></p>
+<p>Also in today’s Assembly Transportation Committee, Assemblymember Damon Connolly’s bill to have Caltrans and the Bay Area Toll Authority consider turning the bicycle lane on the top of the Richmond-San Rafael Bridge over to cars, <a href="https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240AB1464">A.B. 1464</a>, also passed easily. The only opposition was from a single caller.</p>
+<p>Assemblymember Connolly leaned heavily on claims that expanding car access would bring environmental benefits. He argued that the people driving on the bridge every day were poor people of color forced to travel long distances and spend “sixteen minutes in gridlocked traffic” every morning. For them, he said, “biking and walking and public transit is impractical.”</p>
+<p>These claims serve mainly to reveal how deeply pro-car, anti-transit bias runs. Transit may be impractical for many people right now, but that is due to the fact that California keeps accommodating personal vehicles instead of investing in cleaner, better alternatives. If California stays committed to expanding car capacity, then biking and walking and public transit will remain “impractical” for many years into the future.</p>
+<p>No one on the committee seemed to notice that one of the witnesses in favor of the bill undercut Connolly’s argument here. This witness lives in Richmond and fishes at Point Molate, a few miles from home. He complained about being stuck in that “six minutes of gridlock” every morning to get to his fishing spot. Imagine if there were a bus – or pedestrian and bike access – across that chokepoint! Note that one of the reasons he “has to drive” on that freeway is because the Chevron refinery blocks all other access through that area.</p>
+<p>There’s another question here that no one raised: why is this bill necessary? That is, it simply directs Caltrans and the Toll Authority to “consider” Connolly’s convoluted plan. Couldn’t they just do that anyway?</p>
+<p>And if they are not doing so, it’s fair to ask why not. Maybe – or is this just a pipe dream? – there are some in those agencies who <a href="https://cal.streetsblog.org/2022/03/02/induced-demand-is-hard-to-explain-but-its-crucial-to-get-it/">understand the concept of induced demand</a> and/or are growing tired of <a href="http://usa.streetsblog.org/2017/06/21/the-science-is-clear-more-highways-equals-more-traffic-why-are-dots-still-ignoring-it/">constantly accommodating more cars</a> on <a href="https://cal.streetsblog.org/2019/11/15/the-battle-for-the-richmond-bridge-bike-path/">that bridge.</a></p>
+<p><strong>A Conversation About Gas Prices</strong></p>
+<p>Also at yesterday’s hearing, Assemblymember James Gallagher made a valiant attempt to convince the committee that removing fuel and refineries from cap-and-trade rules would lead to cheaper gas prices for consumers. His idea, encapsulated in <a href="https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240AB1265">A.B. 1265</a>, is meritless, and could have led to long arguments about whether cap-and-trade is a tax or how much it costs consumers. Or, as it might have under Assemblymember Friedman’s predecessor Jim Frazier, it could have led to the chair peering over the top of a pair of glasses and delivering a patronizing scolding.</p>
+<p>Instead, she and the committee listened politely, and she pointed out that, in fact, there is no way to guarantee that the oil companies would pass on any cost savings to consumers. In fact, <a href="https://cal.streetsblog.org/2023/02/23/leg-hearing-on-how-to-stop-oil-profiteering-shows-how-little-anyone-knows/">they have lately done the exact opposite</a>.</p>
+<p>And, she reminded everyone listening, the whole point of cap-and-trade – and of California’s requirement for gas stations to sell a slightly more expensive “summer blend” of fuels – is to enhance public health.</p>
+<p>No one spoke in support or opposition to Gallagher’s bill, and it was destined to go nowhere. But there was a polite conversation about it before the committee voted it down.</p>
+]]></content:encoded>
+					
+		
+		<enclosure url="https://sf.streetsblog.org/" length="0" type="" />
+
+		      <dc:image>https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/Bike-CapitolupdatecroppedsmallWORDS-1.jpg?w=844</dc:image>
+	</item>
+		<item>
+		<title>What if we applied the Transit Ambassadors model to create safe, orderly public spaces?</title>
+		<link>https://chi.streetsblog.org/2023/04/18/what-if-we-applied-the-transit-ambassadors-model-to-promoting-safe-orderly-public-spaces/</link>
+		
+		<dc:creator><![CDATA[John Greenfield]]></dc:creator>
+		<pubDate>Tue, 18 Apr 2023 16:58:23 +0000</pubDate>
+				<category><![CDATA[Eyes on the Street]]></category>
+		<category><![CDATA[Neighborhoods]]></category>
+		<category><![CDATA[Promoted]]></category>
+		<category><![CDATA[Rail Transit]]></category>
+		<category><![CDATA[Walking]]></category>
+		<guid isPermaLink="false">https://chi.streetsblog.org/?p=164407</guid>
+
+					<description><![CDATA[<p><img src="https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/ambassador.jpeg?w=1047"></p><!-- FeaturedImageEnd -->This could be a cost-effective way to promote public safety, help at-risk individuals, create jobs, and improve downtown's reputation as a safe, fun place to spend time.]]></description>
+										<content:encoded><![CDATA[<p><img src="https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/ambassador.jpeg?w=1047"></p><!-- FeaturedImageEnd --><p>Last weekend’s <a href="https://www.chicagotribune.com/news/breaking/ct-teens-shot-loop-20230416-wcb2jspkjfgcxavvaiw6m42p4e-story.html" rel="noopener">youth-involved civil unrest and shootings</a> downtown and at 31st Street Beach were the latest in a series of such incidents in recent years. This kind of chaos poses a serious threat to public safety, not to mention damaging Chicago’s reputation as a place to live, work, do business, and visit. The $10,000 question is, what will Mayor-elect Brandon Johnson do to address this problem? I thought his statement in the wake of the violence was pretty good, if not perfect.</p>
+<blockquote class="twitter-tweet" data-width="500" data-dnt="true">
+<p dir="ltr" lang="zxx"><a href="https://t.co/cwZb9n1Q9i">pic.twitter.com/cwZb9n1Q9i</a></p>
+<p>— Brandon Johnson (@Brandon4Chicago) <a href="https://twitter.com/Brandon4Chicago/status/1647737808260583424?ref_src=twsrc%5Etfw">April 16, 2023</a></p>
+</blockquote>
+<p><a href="https://platform.twitter.com/widgets.js">https://platform.twitter.com/widgets.js</a></p>
+<p>Johnson was about two-thirds correct. He was right to say that 1. Such behavior is unacceptable and 2. We shouldn’t demonize the underserved youth who engaged in criminal activity, because antisocial behavior is the predictable outcome of not providing kids with enough options for constructive activities. Changing that would be an effective longterm solution.</p>
+<p>But the third element that was missing from Johnson’s statement is what should be done in the <em>short</em> term to prevent violence downtown and in other potential hotspots. Chicagoans who voted for tough-on-crime candidate Paul Vallas in the mayoral election would surely say the answer is deploying more police. But most voters rejected that approach, reasoning that our city already <a href="https://news.wttw.com/2022/11/03/194b-budget-chicago-police-not-being-used-effectively-or-equitably-commission" rel="noopener">spends billions on cops each year</a>, and heavy-handed policing has the potential to <a href="https://chi.streetsblog.org/2020/02/29/police-decision-to-arrest-a-man-for-breaking-a-minor-cta-rule-ends-in-tragedy/" rel="noopener">escalate the enforcement of minor infractions to tragic violence</a>. Johnson ran as a police reformer, so he’s probably not considering that tactic.</p>
+<p>But here’s an alternative public safety idea the new mayor should consider. In recent years, public transportation systems across the country have recently been deploying well-trained, unarmed Transit Ambassadors to deter crime and serious rule-breaking, and promote a peaceful, orderly environment on trains and in stations. What if we applied this strategy to the Loop and other outdoor public spaces in addition to the CTA?</p>
+<p>While data on the effectiveness of Transit Ambassador programs <a href="https://illinoisanswers.org/2023/02/07/would-transit-ambassadors-improve-the-cta/" rel="noopener">is limited so far</a>, there is some reason to believe they are working. For example Bay Area Rapid Transit’s ambassadors conducted over 12,000 “educational interactions” with riders during the first year of the program, <a href="https://www.bart.gov/news/articles/2021/news20210210" rel="noopener noreferrer">according to the transit agency</a>, but out of those incidents, the ambassadors only had to call for police backup on 132 occasions, or about 1.1 percent of the cases.</p>
+<p>The Chicago Loop Alliance already runs <a href="https://loopchicago.com/join/about-state-street-ssa1-2015/chicago-loop-ambassadors/#:~:text=Chicago%20Loop%20Alliance%20Ambassadors%20provide,beautiful%20seven%20days%20a%20week.&amp;text=The%20Street%20Team%20Ambassadors%20monitor%20State%20Street%20from%20Ida%20B." rel="noopener">an ambassador program on State Street</a> in the Loop, and the Magnificent Mile Association manages <a href="https://www.nbcchicago.com/news/local/street-ambassadors-seek-to-improve-safety-along-magnificent-mile/2855036/" rel="noopener">one on North Michigan Avenue</a>. These workers already do some of the tasks I’ll outline below. <a href="https://www.cps.edu/services-and-supports/student-safety-and-security/safe-passage-program/#:~:text=The%20Chicago%20Public%20Schools%20Safe,arrival%20and%20dismissal%20bell%20times." rel="noopener">The Chicago Public Schools’ Safe Passages program</a>, featuring community members who supervise kids’ routes to and from school, is another example of this tactic that has been credited with <a href="https://chicagopolicyreview.org/2019/12/23/keeping-students-safe-positive-results-from-chicagos-safe-passage-program/#:~:text=schools%20participating%20in%20Safe%20Passage,after%20the%20program%20was%20implemented." rel="noopener">reducing violent crime along these corridors</a> by 14.3 percent.</p>
+<figure id="attachment_164410" class="wp-caption alignnone" style="width: 650px" aria-describedby="caption-attachment-164410"><a href="https://chi.streetsblog.org/wp-content/uploads/sites/4/2023/04/07__FocusFillWzY1MCw0ODcsIngiLDQwXQ.15.20-Street-Team-02-credit-Organic-Headshots.jpeg"><img decoding="async" class="wp-image-164410 size-full" src="https://i0.wp.com/chi.streetsblog.org/wp-content/uploads/sites/4/2023/04/07__FocusFillWzY1MCw0ODcsIngiLDQwXQ.15.20-Street-Team-02-credit-Organic-Headshots.jpeg?w=650&amp;h=487" alt="A Chicago Loop Alliance Ambassador checks in with a person panhandling on State Street." width="650" /></a><figcaption id="caption-attachment-164410" class="wp-caption-text">A Chicago Loop Alliance Street Team Ambassador checks in with a person panhandling on State Street. According to the Alliance, these ambassadors “assist individuals experiencing homelessness and poverty” and “have helped hundreds of individuals gain access to housing and other resources.”</figcaption></figure>
+<p>But I’m thinking the city could greatly expand this approach downtown, with Ambassadors stationed on weekends on major intersections every two blocks or so across the Central Business District.</p>
+<p>As I envision it, like Transit Ambassadors the Downtown Ambassadors would be pairs of unarmed, uniformed outreach employees, well-trained in crisis intervention and conflict de-escalation. They would be knowledgeable about the CTA and local landmarks. They’d provide a high-visibility authority presence in potential hotspots to discourage violence and other crime. If there’s a flare-up, the Ambassadors wouldn’t directly intervene, but would serve as additional eyes and ears to notify police if an armed response is warranted.</p>
+<p>Meanwhile, the Ambassadors would make themselves useful doing outreach to unhoused folks, offering them water, snacks, hygiene items, and providing referrals to social services like housing and healthcare. However, these workers would <em>not</em> be responsible for enforcing rules or laws.</p>
+<p>The Ambassadors would also serve as a reassuring presence to locals and visitors. They’d be available to provide advice on accessing transit, government offices, cultural amenities, and tourist attractions.</p>
+<p>As long as the Downtown Ambassadors are <a href="https://blockclubchicago.org/2022/04/27/the-cta-boosted-unarmed-security-to-battle-violence-bad-behavior-on-trains-and-buses-but-riders-say-nothing-has-changed/" rel="noopener">well-trained</a> and <a href="https://twitter.com/AldReilly/status/1631757736110170112" rel="noopener">behave professionally</a>, this could be a cost-effective way to promote public safety, help at-risk individuals, create jobs, and improve downtown Chicago’s reputation as a safe, fun place to spend time.</p>
+<p>What do you think Mayor-elect Johnson – how about giving this a go?</p>
+]]></content:encoded>
+					
+		
+		<enclosure url="https://usa.streetsblog.org/" length="0" type="" />
+
+		      <dc:image>https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/ambassador.jpeg?w=1047</dc:image>
+	</item>
+		<item>
+		<title>For Safer, Greener Streets, Cities Must Speed Up and Fund Infrastructure: Report</title>
+		<link>https://nyc.streetsblog.org/2023/04/14/for-safer-greener-streets-city-must-speed-up-fund-infrastructure-report/</link>
+		
+		<dc:creator><![CDATA[Julianne Cuba]]></dc:creator>
+		<pubDate>Tue, 18 Apr 2023 14:09:09 +0000</pubDate>
+				<category><![CDATA[Bicycle Infrastructure]]></category>
+		<category><![CDATA[Infrastructure]]></category>
+		<category><![CDATA[Promoted]]></category>
+		<category><![CDATA[Regional Plan Association]]></category>
+		<guid isPermaLink="false">https://nyc.streetsblog.org/?p=498445</guid>
+
+					<description><![CDATA[<p><img src="https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/bikeways.png?w=933"></p><!-- FeaturedImageEnd -->A study by the Regional Plan Association offers a new analysis into why infrastructure in New York City costs more than in other cities and countries around the world. And offers solutions that likely go behind the Big Apple.]]></description>
+										<content:encoded><![CDATA[<p><img src="https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/bikeways.png?w=933"></p><!-- FeaturedImageEnd --><p>The city must reform and accelerate the way it builds infrastructure if it has any hope of transforming the streetscape into true public space filled with protected bike lanes, bus lanes, and wider sidewalks, according to a <a href="https://rpa.org/work/reports/building-better-streets#next-steps" rel="noopener">new report</a> by the Regional Plan Association.</p>
+<p>Changes to the city’s streetscape often get bogged down by delays. But if the city streamlined the process, it would save $1 billion a year, according to the RPA.</p>
+<p>The RPA report, <a href="https://rpa.org/work/reports/building-better-streets#next-steps" rel="noopener">“Building Better Streets, Improving Capital Street Infrastructure Delivery for a Re-envisioned Right-of-Way</a>” offers a new analysis into why infrastructure in New York City costs more than in other cities and countries around the world. It’s no surprise that land and labor costs here are among the highest in the world — just look at the <a href="https://gothamist.com/news/cost-of-second-ave-subway-extension-to-east-harlem-balloons-to-77b" rel="noopener">Second Avenue Subway extension</a>, or the cost of a <a href="https://www.thecity.nyc/2019/4/4/21211167/no-relief-as-pricey-park-bathrooms-put-pressure-on-taxpayers" rel="noopener">bathroom in a city park. </a></p>
+<p>“In New York City, we try to pack so much infrastructure into this very confined space,” said Christopher Jones, a senior research fellow at RPA and one of the co-authors of the report. “If we want the type of streets that everybody thinks we need with bike lanes and green infrastructure and broadband that reaches everyone, we have to be able to construct this type of infrastructure much faster and much more cost effectively than we do now.”</p>
+<blockquote class="twitter-tweet" data-width="500" data-dnt="true">
+<p dir="ltr" lang="en">NEW: Part of <a href="https://twitter.com/NYCMayor?ref_src=twsrc%5Etfw">@NYCMayor</a>‘s &amp; <a href="https://twitter.com/NYCPlanning?ref_src=twsrc%5Etfw">@NYCPlanning</a>‘s City of Yes initiative is speeding up the capital infrastructure delivery process. Our new report, “Building Better Streets,” explores ways to improve the process to create a better right-of-way in NYC. ?<a href="https://t.co/HaYF2fqw16">https://t.co/HaYF2fqw16</a></p>
+<p>— Regional Plan (@RegionalPlan) <a href="https://twitter.com/RegionalPlan/status/1638192204513509378?ref_src=twsrc%5Etfw">March 21, 2023</a></p>
+</blockquote>
+<p><a href="https://platform.twitter.com/widgets.js">https://platform.twitter.com/widgets.js</a></p>
+<p>There are three main factors that contribute to the problem of exorbitant costs and delays. One is that both the private and public sector each own and operate their own sets of wires, tubes, and conduits, aka the “spaghetti” of infrastructure on top of and below the surface of the street. This makes it difficult to distinguish and coordinate who is in charge of what.</p>
+<figure id="attachment_498532" class="wp-caption alignnone" style="width: 924px" aria-describedby="caption-attachment-498532"><a href="https://nyc.streetsblog.org/wp-content/uploads/2023/04/undergroundspaghetti.png"><img decoding="async" loading="lazy" class="wp-image-498532 size-full" src="https://nyc.streetsblog.org/wp-content/uploads/2023/04/undergroundspaghetti-e1681392480836.png" alt="What the right-of-way looks like underneath. Photo: RPA" width="924" height="891" /></a><figcaption id="caption-attachment-498532" class="wp-caption-text">What lies berneath. Photo: RPA</figcaption></figure>
+<p>The second factor is that the city has no comprehensive dataset for what is beneath the right-of-way. It’s basically a clusterf–k of wires and pipes, said Jones.</p>
+<p>“We don’t know exactly where all the pipes and cables are underneath the street,” he said.</p>
+<p>As a result, projects are often delayed while the complications are worked out.</p>
+<p>“In addition, outdated systems compound slow procurement and payment processes, which are critical to efficient project delivery,” the report said.</p>
+<p>And the third factor is that the city lacks holistic planning.</p>
+<p>The result is that a capital project — meaning anything over $25 million — takes an average of nine years to complete, from the start of design to the end of construction. And the longer a project takes, the more it costs — at least 5 percent more per each year, the report says.</p>
+<p>In order to transform what’s currently 77 percent of the city streetscape dominated by car usage into the type of green infrastructure the city needs, the whole process must be reformed.</p>
+<p>“New York City needs to greatly increase investments in pedestrian, bike, and green infrastructure, and to transition from a car-oriented right-of-way that currently devotes 77 percent of surface area to auto-related uses to one that better serves pedestrians, micromobility, and multi-modal travel. To achieve this transformation, NYC needs to change the way that infrastructure is built, maintained, and governed,” the report says.</p>
+<p>To do that, the RPA offers a slate of eight recommendations the city should implement, building off of the ones produced earlier this year by Mayor Adams’s own <a href="https://www.nyc.gov/office-of-the-mayor/news/004-23/mayor-adams-recommendations-will-cut-years-off-capital-process-save-taxpayers-tens#:~:text=The%20Capital%20Process%20Reform%20Task%20Force%2C%20formed%20by,and%20recommending%20reforms%2C%20from%20project%20initiation%20to%20closeout." rel="noopener">Capital Process Reform Task Force</a>.</p>
+<p>Nine of the city’s task force <a href="https://www.nyc.gov/office-of-the-mayor/news/004-23/mayor-adams-recommendations-will-cut-years-off-capital-process-save-taxpayers-tens#:~:text=The%20Capital%20Process%20Reform%20Task%20Force%2C%20formed%20by,and%20recommending%20reforms%2C%20from%20project%20initiation%20to%20closeout." rel="noopener">recommendations</a> require support from Albany, like allowing the city to use the streamlined process known as design-build, or even something as simple as electronic bidding. Now, all paperwork must be submitted in writing — an archaic process that inherently slows things down, said Jones.</p>
+<p>“The city still can’t put out bids electronically, everything has to be done by paper,” he said.</p>
+<p>The RPA’s eight recommendations include calling on the state legislature to enact the city’s nine reforms that require Albany approval; developing one capital project tracker to more easily keep track of what’s in the pipeline; creating a three-dimensional map of all of the underground infrastructure; having the mayor’s new <a href="https://nyc.streetsblog.org/2022/12/15/new-new-york-mayor-adams-will-create-a-public-realm-czar/" rel="noopener">Director of the Public Realm</a> <a href="https://www.nyc.gov/office-of-the-mayor/news/115-23/mayor-adams-appoints-ya-ting-liu-nyc-s-first-ever-chief-public-realm-officer" rel="noopener">Ya-Ting Liu</a> “synthesize interdepartmental street planning efforts and promote multidimensional infrastructure;” and empowering the Department of Transportation to implement capital projects like protected bike lanes in the right-of-way.</p>
+<p>If those reforms are adopted, the city could save more than $1 billion a year and more quickly build out the type of green infrastructure the city desperately needs, said Jones.</p>
+<p>“There’s a window of opportunity for making street infrastructure less expensive and much faster,” said Jones.</p>
+]]></content:encoded>
+					
+		
+		<enclosure url="https://usa.streetsblog.org/" length="0" type="" />
+
+		      <dc:image>https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/bikeways.png?w=933</dc:image>
+	</item>
+		<item>
+		<title>Today&#8217;s Headlines</title>
+		<link>https://sf.streetsblog.org/2023/04/18/todays-headlines-3446/</link>
+					<comments>https://sf.streetsblog.org/2023/04/18/todays-headlines-3446/#respond</comments>
+		
+		<dc:creator><![CDATA[Roger Rudick]]></dc:creator>
+		<pubDate>Tue, 18 Apr 2023 14:07:40 +0000</pubDate>
+				<category><![CDATA[Today's Headlines]]></category>
+		<guid isPermaLink="false">https://sf.streetsblog.org/?p=422913</guid>
+
+					<description><![CDATA[Rally for Protected Bike Lanes on Arguello (SFGate) Major Berkeley Streets Could Get Bus Lanes (Berkeleyside) Twitter Charging for Transit Alerts (Crain&#8217;s) D.C. Considers Screen Doors for Metro as BART Backs Off (NBCWashington) Transit Agencies Turn to State for Funding (Route50) More on Federal Transportation Grants (SmartCitiesDive) Housing for Rockridge BART (Oaklandside) Another Pedestrian Hit [&#8230;]]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>Rally for Protected Bike Lanes on Arguello (<a href="https://www.sfgate.com/news/bayarea/article/rally-to-demand-protected-bike-lanes-on-arguello-17902211.php">SFGate</a>)</li>
+<li>Major Berkeley Streets Could Get Bus Lanes (<a href="https://www.berkeleyside.org/2023/04/14/berkeley-bus-lane-telegraph-university-shattuck">Berkeleyside</a>)</li>
+<li>Twitter Charging for Transit Alerts (<a href="https://www.crainsnewyork.com/transportation/subway-alerts-risk-under-twitter-plan-make-mta-pay">Crain&#8217;s</a>)</li>
+<li>D.C. Considers Screen Doors for Metro as BART Backs Off (<a href="https://www.nbcwashington.com/news/local/transportation/metro-considering-platform-screen-doors-to-protect-riders/3330741/">NBCWashington</a>)</li>
+<li>Transit Agencies Turn to State for Funding (<a href="https://www.route-fifty.com/infrastructure/2023/04/transit-agencies-turn-states-avert-fiscal-cliff/385242/">Route50</a>)</li>
+<li>More on Federal Transportation Grants (<a href="https://www.smartcitiesdive.com/news/FTA-14B-cities-states-formula-grants-transit-2023/647792/">SmartCitiesDive</a>)</li>
+<li>Housing for Rockridge BART (<a href="https://oaklandside.org/2023/04/14/bart-gearing-up-to-build-housing-at-oakland-rockridge-station/">Oaklandside</a>)</li>
+<li>Another Pedestrian Hit on San Pablo While Caltrans Fails to Illuminate Signal (<a href="https://www.berkeleyside.org/2023/04/17/berkeley-san-pablo-avenue-pedestrian-signal-caltrans">Berkeleyside</a>)</li>
+<li>More on Pop Up Shop Plan to Help Downtown (<a href="https://sfstandard.com/business/sf-will-give-you-thousands-to-open-pop-ups-in-empty-downtown-storefronts-heres-how-to-apply/">SFStandard</a>)</li>
+<li>Downtown IKEA Will Have Nonstop Security (<a href="https://sfstandard.com/business/new-downtown-sf-ikea-will-have-nonstop-security-company-says-after-whole-foods-shutters/">SFStandard</a>)</li>
+<li>Court Strikes Down Berkeley Gas Ban in New Construction (<a href="https://www.kqed.org/news/11946999/court-strikes-down-berkeleys-landmark-ban-on-natural-gas-in-new-construction">KQED</a>)</li>
+</ul>
+<p>Get state headlines at <a href="https://cal.streetsblog.org/" target="_blank" rel="noopener">Streetsblog California</a>, national headlines at <a href="https://usa.streetsblog.org/" target="_blank" rel="noopener">Streetsblog USA</a></p>
+<p><em>Local journalism is more important than ever. <a href="https://sf.streetsblog.org/make-a-donation-to-streetsblog-san-francisco/">Won’t you contribute</a>?</em></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://sf.streetsblog.org/2023/04/18/todays-headlines-3446/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>DOT Rolls Out New Tech To Better Analyze How People Move on City Streets </title>
+		<link>https://nyc.streetsblog.org/2023/04/14/dot-rolls-out-new-tech-to-better-analyze-how-people-move-on-city-streets/</link>
+		
+		<dc:creator><![CDATA[Julianne Cuba]]></dc:creator>
+		<pubDate>Tue, 18 Apr 2023 14:01:44 +0000</pubDate>
+				<category><![CDATA[Bicycling]]></category>
+		<category><![CDATA[Pedestrian Safety]]></category>
+		<category><![CDATA[Promoted]]></category>
+		<category><![CDATA[Public Space]]></category>
+		<category><![CDATA[DOT]]></category>
+		<guid isPermaLink="false">https://nyc.streetsblog.org/?p=499101</guid>
+
+					<description><![CDATA[<p><img src="https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/34th-Avenue-post-paseo-park.jpg?w=931"></p><!-- FeaturedImageEnd -->The sensors could help resolve misallocations of public space, where cars often get the bulk of room despite being outnumbered by pedestrians or cyclists.]]></description>
+										<content:encoded><![CDATA[<p><img src="https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/34th-Avenue-post-paseo-park.jpg?w=931"></p><!-- FeaturedImageEnd --><p>The Department of Transportation is rolling out new technology to track how people move about the street, whether in a car, on foot, or on two wheels — a significant upgrade from the time-consuming manual work to log traffic that the agency does now, which slows down life-saving upgrades.</p>
+<p>The DOT has placed sensors at 12 locations across the city as part of a pilot program with the tech company <a href="https://vivacitylabs.com/north-america/about-us/" rel="noopener">Viva</a> to better analyze street designs and programs, learn where safety projects work best, and better understand how people are using public space.</p>
+<p>“This street activity sensor technology will allow us to make our streets safer more quickly,” Mayor Adams said in a statement. “This technology has the potential to save time, money, and lives. We will be monitoring its effectiveness closely and deploying it strategically to understand how we can best maximize its impact.”</p>
+<p>According to preliminary data collected in March from one sensor at 34th Avenue and 77th Street — the heart of the gold standard of open streets, now called Paseo Park — people on foot start flocking to the area as soon as the barricades get set up at about 7 am. The number of pedestrians nearly hits 400 people by around 2 p.m., and 300 around just before 6 p.m. Cyclists steadily use the street throughout the day, with nearly 200 riding the blocks at about 5 p.m., according to the data, which was first published by <a href="https://www.curbed.com/2023/04/nyc-dot-street-sensors-viva.html" rel="noopener">Curbed</a>.</p>
+<figure id="attachment_499122" class="wp-caption alignnone" style="width: 1296px" aria-describedby="caption-attachment-499122"><a href="https://nyc.streetsblog.org/wp-content/uploads/2023/04/34th-avenue-counts.jpg"><img class="wp-image-499122 size-full" src="https://i0.wp.com/nyc.streetsblog.org/wp-content/uploads/2023/04/34th-avenue-counts.jpg?w=1280&amp;h=595" alt="A visual of who is using the 34th Avenue open street and when. Graphic: NYC DOT" width="1296" /></a><figcaption id="caption-attachment-499122" class="wp-caption-text">A visual of who is using the 34th Avenue open street and when. Graphic: NYC DOT</figcaption></figure>
+<p>The sensors will be able to count and identify up to nine different modes of travel, including pedestrians, bicyclists and e-scooters, analyze travel patterns and how they change seasonally, measure how fast each mode of transportation is traveling, and detect near-crashes.</p>
+<p>The new technology will be piloted in every borough but Staten Island.</p>
+<ul>
+<li>In Brooklyn, it’ll be at Schermerhorn and Smith streets, Flushing and Vanderbilt avenues, Berry and N. Sixth streets, and Hoyt and Warren streets.</li>
+<li>In the Bronx, there will be one sensor located at Willis Avenue and East 135th Street.</li>
+<li>In Manhattan, the sensors will be located at Central Park West Drive and Columbus Circle, First Avenue and E. 59th Street, Sixth Avenue and W. 23rd Street, and the Brooklyn Bridge.</li>
+<li>And in Queens, they will be stationed at 34th Avenue and 77th Street, Broadway and Vietor Avenue, and 11th Street and 44th Drive.</li>
+</ul>
+<p>The DOT says the sensors will be purposely placed in areas with high concentrations of micro mobility users, bikers, and pedestrians in order to provide crucial, real time analytics needed for street redesigns — eliminating the need for a staffer to manually count the vehicles over hours, a time-consuming and inefficient process, according to a spokesperson for the agency.</p>
+<p>And on Berry and N. Sixth streets, a sensor spits out a colorful analysis of the roadway’s traffic patterns — highlighting just how many more pedestrians than cars traverse the roadway, and where and how cyclists move about.</p>
+<figure id="attachment_499125" class="wp-caption alignnone" style="width: 1200px" aria-describedby="caption-attachment-499125"><a href="https://nyc.streetsblog.org/wp-content/uploads/2023/04/berrystreet.png"><img class="wp-image-499125 size-full" src="https://i0.wp.com/nyc.streetsblog.org/wp-content/uploads/2023/04/berrystreet.png?w=1200&amp;h=745" alt="Modes of transit visualized from a sensor on Berry Street. Graphic: NYC DOT" width="1200" /></a><figcaption id="caption-attachment-499125" class="wp-caption-text">Modes of transit visualized from a sensor on Berry Street. Graphic: NYC DOT</figcaption></figure>
+<p>The sensors could also help resolve misallocations of public space, where cars often get the bulk of room despite being outnumbered by pedestrians or cyclists.</p>
+<p>On Lexington Avenue, for example, the city plans to take a lane away from cars to expand the sidewalk after a manual DOT analysis revealed that cars, which get three vehicular travel lanes, comprise just 17 percent of its usage, and that pedestrians, who get just one-third of the public space available, make up 76 percent of the roadway’s users. At some points throughout the day, pedestrians even outnumber drivers more than four to one, according to DOT.</p>
+<p>And on the popular First Avenue bike lane, a vehicle count conducted in 2021 <a href="https://nyc.streetsblog.org/2021/03/31/cyclists-agonistes-new-video-shows-that-first-avenue-also-needs-wider-bike-lanes/" rel="noopener">revealed</a> that cars and trucks barely outnumbered bikes, despite drivers getting almost 12 times as much space on the uptown roadway. One of the sensors will be placed at First Avenue and E. 59th Street.</p>
+<p>Those numbers followed a similar pattern on <a href="https://nyc.streetsblog.org/2021/03/26/electeds-call-for-wider-bike-lanes-on-second-avenue-and-beyond/" rel="noopener">Second Avenue</a>, where a count revealed that there were 323 cars and trucks and 171 bikes, or 1.9 cars and trucks for every bike, despite bikes having just eight feet of space on the wide road, compared to 100 feet for the movement and storage of cars.</p>
+<p>But advocates are skeptical that it’ll make a difference. The city lacks enforcement and political gutsiness, not data. Case in point, bike lanes <a href="https://nyc.streetsblog.org/2023/04/06/nypd-tickets-fewer-than-2-of-blocked-bike-lane-complaints-analysis/" rel="noopener">blocked</a> by cars with placards on them.</p>
+<p>“Additional information is always good, but it won’t clear the court officers out of the Lafayette Street bike lane. Our yawning gap is in leadership and management, not technology and data,” said Bike New York’s Jon Orcutt.</p>
+]]></content:encoded>
+					
+		
+		<enclosure url="https://usa.streetsblog.org/" length="0" type="" />
+
+		      <dc:image>https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/34th-Avenue-post-paseo-park.jpg?w=931</dc:image>
+	</item>
+		<item>
+		<title>Biden’s ‘EV Revolution’ Will Pay Americans to Drive Some Really Dangerous Cars</title>
+		<link>https://usa.streetsblog.org/2023/04/17/bidens-ev-revolution-will-pay-americans-to-drive-some-really-dangerous-cars/</link>
+		
+		<dc:creator><![CDATA[Kea Wilson]]></dc:creator>
+		<pubDate>Tue, 18 Apr 2023 14:00:29 +0000</pubDate>
+				<category><![CDATA[Electric Cars]]></category>
+		<category><![CDATA[Megacar Crisis]]></category>
+		<category><![CDATA[Promoted]]></category>
+		<guid isPermaLink="false">https://usa.streetsblog.org/?p=237461</guid>
+
+					<description><![CDATA[<p><img src="https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/2023_Ford_F-150_Lightning-with-biden.jpg?w=766"></p><!-- FeaturedImageEnd -->The government is poised to pay Americans to buy big electric cars that 1) are known to be more dangerous, 2) that require a maximum amount of exploitative and destructive mineral extraction, and 3) will disproportionately benefit the wealthiest Americans. Mission accomplished.]]></description>
+										<content:encoded><![CDATA[<p><img src="https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/2023_Ford_F-150_Lightning-with-biden.jpg?w=766"></p><!-- FeaturedImageEnd --><p>The Biden Administration’s new EV tax credit will have a deadly impact on America’s road death totals because nearly all of the vehicles qualifying for a subsidy is a heavy SUV or pickup, advocates warn.</p>
+<p>On Monday, the Treasury announced the <a href="https://www.politico.com/news/2023/04/17/ev-treasury-department-regulation-00092123">14 electric and plug-in-hybrid vehicle models</a> for which consumers will be able to claim up to $7,500 in tax breaks under new standards established in the Inflation Reduction and Jobs Act. And the list is dominated by heavy megacars that will require significantly more battery power than smaller models — and excludes smaller models that, until the new rules, <em>did</em> qualify for the credit.</p>
+<p>With the exception of the subcompact hatchback and subcompact SUV version of the Chevy Bolt, and the Tesla Model 3, sedan, all the cars on the list are either SUVs, pick-ups or vans, with most classified as full-size or luxury models.</p>
+<p>Put another way: of the 14 cars on the market that the government will pay Americans to buy, 11 are megacars.</p>
+<blockquote class="twitter-tweet" data-width="500" data-dnt="true">
+<p dir="ltr" lang="en">This morning Biden&#8217;s EPA unveiled new regs to ensure that 2/3 of new cars are electric by 2032.</p>
+<p>Sounds good — but be careful. The EPA said nothing re: vehicle size. Today’s hulking SUVs and trucks could get even more massive.</p>
+<p>That would be very bad. ?<a href="https://t.co/YHhzZERlkF">https://t.co/YHhzZERlkF</a></p>
+<p>— David Zipper (@DavidZipper) <a href="https://twitter.com/DavidZipper/status/1646181082293829632?ref_src=twsrc%5Etfw">April 12, 2023</a></p>
+</blockquote>
+<p><a href="https://platform.twitter.com/widgets.js">https://platform.twitter.com/widgets.js</a></p>
+<p>Some experts argue the problems with paying Americans to buy heavy EVs are manifold — and that they arguably outweigh the benefits of losing the tailpipe emissions.</p>
+<p>For one, even without the near-silent motor and lightning-fast acceleration of electric vehicles, SUVs of <em>all </em>powertrain types are already a leading factor in America’s skyrocketing pedestrian and cyclist death totals, which researchers believe is attributable to those vehicles’ <a href="https://usa.streetsblog.org/2023/04/13/study-suv-drivers-cause-55-more-injuries-to-bicyclists-they-hit/">high front ends</a> and <a href="https://usa.streetsblog.org/2022/03/17/study-megacar-drivers-up-to-4x-more-likely-to-hit-walkers-while-turning/">massive blind spots.</a> Adding an EV battery into the mix, meanwhile, increases the weight of a comparable gas-powered car by <a href="https://www.cnet.com/roadshow/news/americas-new-weight-problem-electric-cars/">about one-third</a>, which safety experts <a href="https://www.cnet.com/roadshow/news/americas-new-weight-problem-electric-cars/">warn</a> acts as a force multiplier when green cars collide, making crashes less survivable for the occupants of lighter models.</p>
+<p>Big electric cars also gobble up more of the scarce battery components that could be used to power more efficient vehicles, like e-bikes, even when they’re hauling little more than a single person on a short commute — and they do so often at <a href="https://usa.streetsblog.org/2021/02/09/lithium-mining-and-the-hidden-environmental-costs-of-evs/">stunning costs to fragile ecosystems</a> and to the people who work in mines, no matter <a href="https://usa.streetsblog.org/2022/05/03/why-lithium-mining-for-ev-batteries-should-be-our-absolute-last-resort/">where those mines are located.</a> And while it’s hotly debated, there’s also <a href="https://www.oecd.org/environment/measures-needed-to-curb-particulate-matter-emitted-by-wear-of-car-parts-and-road-surfaces.htm">some evidence</a> that the heaviest cars on the road may generate heavier loads of tire and brake pad particulate pollution, which can contribute to asthma, heart disease and other serious conditions.</p>
+<p>There’s also <a href="https://usa.streetsblog.org/2022/04/13/study-todays-ev-tax-credits-might-actually-increase-emissions/">research </a>that indicates that when electric cars are purchased as <em>secondary</em> vehicles to complement a gas powered car — which they often are, not least because charging on long drives remains a challenge — they don’t actually get driven enough to offset the emissions they incur during their initial production. That’s particularly true among wealthy vehicle owners who are among the only ones who have the resources necessary to take advantage of federal tax credits on super-expensive EVs in the first place; Politico’s Tanya Snyder <a href="https://www.politico.com/news/2023/04/17/ev-treasury-department-regulation-00092123">notes</a> that of the newly eligible models, “just two EVs now on the market will be available for less than $25,000 after the tax credit is deducted — the Bolt, whose cost could fall to $19,000 thanks to the tax break, and a utility vehicle version of the Bolt, which could drop to $20,300. That’s assuming buyers can actually find the vehicles at that price in today’s post-pandemic seller’s market.”</p>
+<p>More than half of the EVs on the list, meanwhile, cost more than the already staggering <a href="https://www.caranddriver.com/news/a43611570/average-new-car-price-down-still-high/#:~:text=The%20cost%20of%20a%20new,%2C%20we'll%20take%20it.">$48,000</a> that new cars cost on average across all fuel sources. The most expensive car on the list, the Aviator Grand Touring, costs an even-more-staggering $70,190 — and as Snyder points out, it’s “unclear” how the Biden administration will achieve its <a href="https://www.politico.com/news/2023/04/12/biden-ev-epa-proposal-00091543">recently proposed</a> goal of “EVs accounting for two-thirds of new car and light truck sales by 2032 … with so few [affordable] EVs qualifying for the incentives.”</p>
+<p>So, to recap: unless Chevy can start making a <em>lot </em>of Bolts really quickly, or automakers take the unlikely step of abandoning their <a href="https://jalopytalk.com/profit-margin-on-suvs/">super-profitable love affair</a> with the SUV, the government is poised to pay Americans to buy big electric cars that 1) are known to be more dangerous to pedestrians, cyclists, and even the drivers of smaller vehicles, 2) require a maximum amount of exploitative and destructive mineral extraction, and 3) undermine the goals of broader vehicle electrification — and the discount will likely disproportionately benefit the wealthiest Americans alone, who are also the most likely to leave their new green whips in the garage while they continue running on fossil fuel.</p>
+<p>The federal <a href="https://usa.streetsblog.org/2023/03/22/whats-different-about-the-new-federal-e-bike-credit-proposal/">EBIKE Act,</a> meanwhile, does none of those things, but has not yet been passed.</p>
+]]></content:encoded>
+					
+		
+		<enclosure url="https://sf.streetsblog.org/" length="0" type="" />
+
+		      <dc:image>https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/2023_Ford_F-150_Lightning-with-biden.jpg?w=766</dc:image>
+	</item>
+		<item>
+		<title>Advocates Crash 101 Celebration of Induced Traffic and Pollution</title>
+		<link>https://sf.streetsblog.org/2023/04/17/advocates-crash-101-celebration-of-induced-traffic-and-pollution/</link>
+					<comments>https://sf.streetsblog.org/2023/04/17/advocates-crash-101-celebration-of-induced-traffic-and-pollution/#respond</comments>
+		
+		<dc:creator><![CDATA[Roger Rudick]]></dc:creator>
+		<pubDate>Mon, 17 Apr 2023 22:37:02 +0000</pubDate>
+				<category><![CDATA[Carnage]]></category>
+		<category><![CDATA[GJEL1]]></category>
+		<category><![CDATA[Highway Boondoggles]]></category>
+		<category><![CDATA[Highway Expansion]]></category>
+		<category><![CDATA[Promoted]]></category>
+		<category><![CDATA[San Mateo County]]></category>
+		<category><![CDATA[Streetsblog.net]]></category>
+		<guid isPermaLink="false">https://sf.streetsblog.org/?p=422873</guid>
+
+					<description><![CDATA[<p><img src="https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/101-Express-Lanes-Grand-Opening-67.jpg?w=1134"></p><!-- FeaturedImageEnd -->“It is difficult to get a man to understand something, when his salary depends on his not understanding it.” ― Upton Sinclair]]></description>
+										<content:encoded><![CDATA[<p><img src="https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/101-Express-Lanes-Grand-Opening-67.jpg?w=1134"></p><!-- FeaturedImageEnd --><blockquote>
+<p><em>Note: <a href="https://www.gjel.com/" rel="noopener noreferrer">GJEL Accident Attorneys</a> regularly sponsors coverage on Streetsblog San Francisco and Streetsblog California. Unless noted in the story, GJEL Accident Attorneys is not consulted for the content or editorial direction of the sponsored content.</em></p>
+</blockquote>
+<p><a href="https://cal.streetsblog.org/2022/03/02/induced-demand-is-hard-to-explain-but-its-crucial-to-get-it/" rel="noopener">Induced demand</a>? What’s that?</p>
+<p>Pretending induced demand–<a href="https://usa.streetsblog.org/2021/10/20/new-induced-demand-calculator-shows-exactly-how-much-driving-your-citys-highway-expansion-will-induce/">a well-documented phenomenon</a>–doesn’t exist was the unintentional theme of Saturday’s celebration of the opening of the “managed lanes” project on 101 in San Mateo County (also known as freeway widening). More details on the $600 million project <a href="https://www.kqed.org/news/11946820/san-mateo-101-express-lanes-officially-opened-with-ceremony-but-critics-say-traffic-and-pollution-will-be-worse" rel="noopener">from KQED</a>:</p>
+<blockquote>
+<p>The San Mateo 101 Express Lanes Project officially opened in a ribbon-cutting ceremony on Saturday. The 22 miles of express lanes that extend along Highway 101 from the San Mateo/Santa Clara county line to Interstate 380 in South San Francisco are intended to reduce traffic congestion and encourage carpooling and transit use along one of the busiest thoroughfares on the San Francisco Peninsula. “The express lanes opening in San Mateo County has been years in the making [and] it’s finally come to fruition,” said U.S. Rep. Kevin Mullin of San Mateo, who represents District 15. “It’s good for the economy, it’s good for the environment, and it’s a win for all of the stakeholders who’ve been involved for years now in pulling this project together.”</p>
+</blockquote>
+<p>Of course, Mullin’s claim that it’s “good for the environment” is utter nonsense. If officials wanted to help the environment, they could have converted existing lanes to toll, HOV, and bus lanes instead of adding more lanes.</p>
+<p>Most advocates would probably prefer to be anywhere else on a Saturday than standing in the middle of screaming lanes of car pollution. But Mike Swire, a Peninsula advocate and member of the Citizen’s Advisory Committee of the San Mateo County Transit Authority, Max Mautner, Co-Lead of Move San Mateo, and <a href="https://sf.streetsblog.org/2022/09/21/caltrans-continues-widening-this-time-in-south-san-francisco/">Darryl Yip</a>, who is leading the opposition to further widening of 101 between 380 and San Francisco, went down to try and push back against the gaslighting.</p>
+<figure id="attachment_422882" class="wp-caption aligncenter" style="width: 1048px" aria-describedby="caption-attachment-422882"><img class="wp-image-422882 size-full" src="https://i0.wp.com/sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/Morecarsbad.jpg?w=1048&amp;h=786" alt="__ mike" width="1048" /><figcaption id="caption-attachment-422882" class="wp-caption-text">Mautner, Swire and Yip came to protest the ribbon cutting: Image from Swire’s photo stream</figcaption></figure>
+<p>And since KQED quoted Swire as saying the 101 project was “the worst local environmental decision in recent memory” and that “highway widening has never worked,” it had the desired effect.</p>
+<p>Officials, meanwhile, talked “about the environmental and equity impacts of the project,” Swire wrote in an email to Streetsblog. “No mentions of global warming, air pollution, traffic violence or induced demand. Lots of prominent politicos there and speaking – e.g., newly elected Congressman Kevin Mullin, progressive County Supervisor David Canepa, and newly elected Assemblywoman Diane Papan (the project’s primary sponsor).”</p>
+<p>Sure, as long as the people in those low-income communities hold their breath.</p>
+<figure id="attachment_422876" class="wp-caption aligncenter" style="width: 1093px" aria-describedby="caption-attachment-422876"><img class="wp-image-422876 size-full" src="https://i0.wp.com/sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/Screenshot-from-2023-04-17-12-15-27.png?w=1093&amp;h=675" alt="Photo by Caltrans of their latest widening project" width="1093" /><figcaption id="caption-attachment-422876" class="wp-caption-text">Photo by <a href="https://twitter.com/101ExpressLanes/status/1646906169863155716/photo/1">Caltrans</a> of their latest widening project</figcaption></figure>
+<p>As <a href="https://sf.streetsblog.org/2023/04/12/not-a-surprise-101-freeway-widening-shows-negative-results/" rel="noopener">Streetsblog reported previously</a>, vested interests in widening 101 (and <a href="https://sf.streetsblog.org/2019/06/17/caltrans-gets-award-for-creating-another-bike-and-pedestrian-hellscape/">other roads</a>) sometimes <a href="https://sf.streetsblog.org/2021/07/19/spur-talk-how-do-we-get-california-to-stop-widening-highways/">even acknowledge, at least tacitly, that their projects accomplish nothing–and, in fact, are making things worse</a>. <a href="https://sf.streetsblog.org/2023/04/12/not-a-surprise-101-freeway-widening-shows-negative-results/" rel="noopener">Nevertheless, they continue to do the work, knowing full well it is damaging to the environment and leading to more crashes and other destructive effects</a>. Advocates have to keep <a href="https://sf.streetsblog.org/2022/09/16/commentary-the-dutch-call-dangerous-designs-evil-theyre-right/">calling this evil out</a> until they stop.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://sf.streetsblog.org/2023/04/17/advocates-crash-101-celebration-of-induced-traffic-and-pollution/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		<enclosure url="https://cal.streetsblog.org/" length="0" type="" />
+
+		      <dc:image>https://sf.streetsblog.org/wp-content/uploads/sites/3/2023/04/101-Express-Lanes-Grand-Opening-67.jpg?w=1134</dc:image>
+	</item>
+		<item>
+		<title>This Week: Accessible Sidewalks, Bikes and Brews, Ground Floor</title>
+		<link>https://sf.streetsblog.org/2023/04/17/this-week-accessible-sidewalks-bikes-and-brews-ground-floor/</link>
+					<comments>https://sf.streetsblog.org/2023/04/17/this-week-accessible-sidewalks-bikes-and-brews-ground-floor/#respond</comments>
+		
+		<dc:creator><![CDATA[Roger Rudick]]></dc:creator>
+		<pubDate>Mon, 17 Apr 2023 15:14:50 +0000</pubDate>
+				<category><![CDATA[Events]]></category>
+		<guid isPermaLink="false">https://sf.streetsblog.org/?p=422827</guid>
+
+					<description><![CDATA[<p><img src="https://sf.streetsblog.org/wp-content/uploads/sites/3/2020/08/HiDefEventsLogo.png?w=500"></p><!-- FeaturedImageEnd -->Here is a list of events this week.]]></description>
+										<content:encoded><![CDATA[<p><img src="https://sf.streetsblog.org/wp-content/uploads/sites/3/2020/08/HiDefEventsLogo.png?w=500"></p><!-- FeaturedImageEnd --><p>Here is a list of events this week.</p>
+<ul>
+<li><strong>Wednesday</strong> <a href="https://www.spur.org/events/2023-04-19/connecting-our-city-streets-importance-accessible-sidewalks">The Importance of Accessible Sidewalks</a>. Join SPUR for a talk about what makes a sidewalk accessible and what we can learn about making our streets safe and enjoyable for all. Wednesday, April 19, 12:30-1:30 p.m. Register for <a href="https://spur.secure.nonprofitsoapbox.com/component/events/event/223">Zoom link</a>.</li>
+<li><strong>Wednesday </strong><a href="https://sfbike.org/event/bikes-brews-april-community-happy-hour/" target="_blank" rel="noopener">Bikes and Brews</a>. Join the San Francisco Bicycle Coalition at this social and hear about their programmatic work, including Bike It Forward, Safety and Education programs, and their Valet Bicycle Parking program. Wednesday, April 19, 4-7 p.m. The Page, 298 Divisadero Street, S.F.</li>
+<li><strong>Thursday </strong><a href="https://www.spur.org/events/2023-04-20/common-ground-re-making-ground-floor-person-program" target="_blank" rel="noopener">Re-Making the Ground Floor</a>. The California College of Arts held an advanced urban studio class to re-envision the ground floor of the post 2020 city. Join SPUR to see what they came up with. Thursday, April 20, 5-6 p.m. Register for <a href="http://spur.secure.nonprofitsoapbox.com/component/events/event/224">Zoom link</a>.</li>
+<li><strong>Thursday </strong><a href="https://bikeeastbay.org/civicrm/event/info?reset=1&amp;id=2190" target="_blank" rel="noopener">Bike Theft Prevention</a>. Learn how to lock your bike effectively. Thursday, April 20, 6-7 p.m. Register for <a href="https://bikeeastbay.org/civicrm/event/register?id=2190&amp;reset=1">Zoom link</a>.</li>
+<li><strong>Saturday</strong> <a href="https://sfbike.org/event/lutn-bike-parade-southeast-san-francisco/">Southeast San Francisco Neighborhood Ride – Free Bike Lights</a>. There will be free front and rear bike lights provided by REI at the end of this SFBC ride at Cayuga Park. Saturday, April 22, 5-7 p.m. James Denman Middle School, 241 Oneida Ave., S.F.</li>
+<li><strong>Sunday </strong><a href="https://bikeeastbay.org/civicrm/event/info?reset=1&amp;id=2200">Adult Learn to Ride, Pittsburg.</a> This Bike East Bay class is for adults or teens who have either not yet learned how to ride a bike, or learned a long time ago but want a refresher on the basics of balancing, pedaling and steering. Sunday, April 23, 10 a.m.-1 p.m. Pittsburg High School, Parking Lot, 1750 Harbor Street, Pittsburg.</li>
+</ul>
+<p>Got an event we should know about? <a href="http://sf.streetsblog.org/suggest-event/">Drop us a line</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://sf.streetsblog.org/2023/04/17/this-week-accessible-sidewalks-bikes-and-brews-ground-floor/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		      <dc:image>https://sf.streetsblog.org/wp-content/uploads/sites/3/2020/08/HiDefEventsLogo.png?w=500</dc:image>
+	</item>
+	</channel>
+</rss>

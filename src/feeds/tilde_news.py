@@ -5,10 +5,10 @@ from .site import Site
 
 
 class TildeNews(Site):
-    def __init__(self):
+    def __init__(self, _options: dict):
         super().__init__(
             URL('https://tilde.news/rss'),
-            'tilde.news', 'tn'
+            'tilde.news', 'tn',
         )
 
     def __repr__(self) -> str:

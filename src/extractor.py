@@ -11,8 +11,8 @@ from utility import Cache, iso
 
 def env_is_true(name: str) -> bool:
     return (
-            name in os.environ
-            and os.environ[name].lower() in ['true', 'yes', '1']
+        name in os.environ
+        and os.environ[name].lower() in ['true', 'yes', '1']
     )
 
 
@@ -26,6 +26,7 @@ def parse_options():
     options = arg_parser.parse_args()
 
     options.read_only = not env_is_true('EXTRACTOR_READ_WRITE')
+    options.reddit_private_rss_feed = os.environ['REDDIT_PRIVATE_RSS_FEED']
 
     return options
 
@@ -38,7 +39,7 @@ def main():
     log.name = Path(__file__).name
 
     sites_cache = Cache(options.cache_dir / 'sites.json')
-    sites = Sites.from_json(sites_cache.get())
+    sites = Sites.from_json(sites_cache.get(), vars(options))
 
     store = NoStore() if options.no_store else S3Store()
     if options.read_only:

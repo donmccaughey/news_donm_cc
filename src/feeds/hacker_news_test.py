@@ -14,7 +14,7 @@ def test_parse_entry_decodes_html_entities():
         comments='https://news.ycombinator.com/item?id=34767795',
     )
     entry = d.entries[0]
-    hn = HackerNews()
+    hn = HackerNews({})
     item = hn.parse_entry(entry, datetime.now(timezone.utc))
     assert item.title == '<3 Deno'
 
@@ -26,7 +26,7 @@ def test_parse_entry_decodes_hex_char_entities():
         comments='https://news.ycombinator.com/item?id=34768550',
     )
     entry = d.entries[0]
-    hn = HackerNews()
+    hn = HackerNews({})
     item = hn.parse_entry(entry, datetime.now(timezone.utc))
     assert item.title == "NameCheap's email hacked to send Metamask, DHL phishing emails"
 
@@ -38,7 +38,7 @@ def test_keep_entry_keeps_typical_entry():
         comments='https://news.ycombinator.com/item?id=34102419',
     )
     entry = d.entries[0]
-    hn = HackerNews()
+    hn = HackerNews({})
 
     assert hn.keep_entry(entry)
 
@@ -97,12 +97,11 @@ REJECT_SITE_TESTS = [
 
 @mark.parametrize('title, link, comments', REJECT_SITE_TESTS)
 def test_keep_entry_rejects_site(title, link, comments):
-    d = build_hn_feed(title=title, link=link, comments=comments,)
+    d = build_hn_feed(str(title), str(link), str(comments))
     entry = d.entries[0]
-    hn = HackerNews()
+    hn = HackerNews({})
 
     assert not hn.keep_entry(entry)
-
 
 
 def build_hn_feed(title: str, link: str, comments: str) -> FeedParserDict:

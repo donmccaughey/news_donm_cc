@@ -5,10 +5,10 @@ from .site import Site
 
 
 class Acoup(Site):
-    def __init__(self):
+    def __init__(self, _options: dict):
         super().__init__(
             URL('https://acoup.blog/feed/'),
-            'A Collection of Unmitigated Pedantry', 'acoup'
+            'A Collection of Unmitigated Pedantry', 'acoup',
         )
 
     def __repr__(self) -> str:

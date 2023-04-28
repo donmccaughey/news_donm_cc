@@ -6,10 +6,10 @@ from .site import Site
 
 
 class DaringFireball(Site):
-    def __init__(self):
+    def __init__(self, _options: dict):
         super().__init__(
             URL('https://daringfireball.net/feeds/main'),
-            'Daring Fireball', 'df'
+            'Daring Fireball', 'df',
         )
 
     def __repr__(self) -> str:

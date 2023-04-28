@@ -10,7 +10,7 @@ def test_keep_entry_keeps_essay():
         title='★ Twitter Tumult',
     )
     entry = d.entries[0]
-    df = DaringFireball()
+    df = DaringFireball({})
 
     assert df.keep_entry(entry)
 
@@ -22,7 +22,7 @@ def test_keep_entry_keeps_linked():
         title='TikTok Spied on Forbes Journalists',
     )
     entry = d.entries[0]
-    df = DaringFireball()
+    df = DaringFireball({})
 
     assert df.keep_entry(entry)
 
@@ -34,7 +34,7 @@ def test_keep_entry_rejects_linked_sponsor():
         title='WorkOS',
     )
     entry = d.entries[0]
-    df = DaringFireball()
+    df = DaringFireball({})
 
     assert not df.keep_entry(entry)
 
@@ -46,7 +46,7 @@ def test_keep_entry_rejects_no_title():
         title='',
     )
     entry = d.entries[0]
-    df = DaringFireball()
+    df = DaringFireball({})
 
     assert not df.keep_entry(entry)
 
@@ -54,7 +54,7 @@ def test_keep_entry_rejects_no_title():
 def test_keep_entry_rejects_no_links():
     d = build_df_feed('', '', 'TikTok Spied on Forbes Journalists')
     entry = d.entries[0]
-    df = DaringFireball()
+    df = DaringFireball({})
 
     assert not df.keep_entry(entry)
 
@@ -66,7 +66,7 @@ def test_keep_entry_rejects_sponsors_alternate_link():
         title='DF Sponsorship Openings',
     )
     entry = d.entries[0]
-    df = DaringFireball()
+    df = DaringFireball({})
 
     assert not df.keep_entry(entry)
 
@@ -78,7 +78,7 @@ def test_keep_entry_rejects_sponsors_related_link():
         title='[Sponsor] Retool',
     )
     entry = d.entries[0]
-    df = DaringFireball()
+    df = DaringFireball({})
 
     assert not df.keep_entry(entry)
 
@@ -90,7 +90,7 @@ def test_keep_entry_rejects_the_talk_show_link():
         title='The Talk Show: ‘Permanent September’',
     )
     entry = d.entries[0]
-    df = DaringFireball()
+    df = DaringFireball({})
 
     assert not df.keep_entry(entry)
 
@@ -102,7 +102,7 @@ def test_keep_entry_rejects_dithering_link():
         title='Dithering',
     )
     entry = d.entries[0]
-    df = DaringFireball()
+    df = DaringFireball({})
 
     assert not df.keep_entry(entry)
 

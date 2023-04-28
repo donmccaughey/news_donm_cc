@@ -5,10 +5,10 @@ from .site import Site
 
 
 class Streetsblog(Site):
-    def __init__(self):
+    def __init__(self, _options: dict):
         super().__init__(
             URL('https://sf.streetsblog.org/feed/'),
-            'Streetsblog SF', 'sb'
+            'Streetsblog SF', 'sb',
         )
 
     def __repr__(self) -> str:

@@ -12,15 +12,15 @@ from .tilde_news import TildeNews
 
 
 class Sites:
-    def __init__(self):
+    def __init__(self, options: dict):
         self.sites = [
-            Acoup(),
-            CharityWTF(),
-            DaringFireball(),
-            HackerNews(),
-            RustBlog(),
-            Streetsblog(),
-            TildeNews(),
+            Acoup(options),
+            CharityWTF(options),
+            DaringFireball(options),
+            HackerNews(options),
+            RustBlog(options),
+            Streetsblog(options),
+            TildeNews(options),
         ]
 
     def __iter__(self) -> Iterable[Site]:
@@ -34,8 +34,8 @@ class Sites:
         return f'<Sites: {site_list}>'
 
     @staticmethod
-    def decode(encoded: list[dict[str, str]]) -> 'Sites':
-        sites = Sites()
+    def decode(encoded: list[dict[str, str]], options: dict) -> 'Sites':
+        sites = Sites(options)
         index = {str(site.feed_url): site for site in sites}
         for encoded_site in encoded:
             site = index.get(encoded_site['feed_url'])
@@ -48,8 +48,8 @@ class Sites:
         return [site.encode() for site in self.sites]
 
     @staticmethod
-    def from_json(s: str) -> 'Sites':
-        return Sites.decode(json.loads(s)) if s else Sites()
+    def from_json(s: str, options: dict) -> 'Sites':
+        return Sites.decode(json.loads(s), options) if s else Sites(options)
 
     def to_json(self) -> str:
         return json.dumps(self.encode(), indent='\t')

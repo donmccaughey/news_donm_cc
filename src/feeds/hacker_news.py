@@ -21,10 +21,10 @@ SKIP_SITES = [
 
 
 class HackerNews(Site):
-    def __init__(self):
+    def __init__(self, _options: dict):
         super().__init__(
             URL('https://news.ycombinator.com/rss'),
-            'Hacker News', 'hn'
+            'Hacker News', 'hn',
         )
 
     def __repr__(self) -> str:
