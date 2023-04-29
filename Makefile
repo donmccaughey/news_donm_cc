@@ -56,7 +56,7 @@ run : $(TMP)/docker-run.stamp.txt
 
 
 .PHONY : shell
-shell: $(TMP)/docker-run.stamp.txt
+shell : $(TMP)/docker-run.stamp.txt
 	docker exec \
 		--interactive \
 		--tty \
@@ -72,6 +72,10 @@ status :
 stop :
 	-docker stop $(NEWS)
 	rm -rf $(TMP)/docker-run.stamp.txt
+
+
+.PHONY : deployment
+deployment : $(TMP)/create-container-service-deployment.json
 
 
 container_files := \
@@ -179,11 +183,12 @@ $(TMP)/aws-lightsail-create-container-service-deployment.stamp.txt : \
 
 
 $(TMP)/create-container-service-deployment.json : aws/create-container-service-deployment.template.json | $$(dir $$@)
-	sed \
-		-e "s/{{AWS_ACCESS_KEY_ID}}/$(AWS_ACCESS_KEY_ID)/g" \
-		-e "s/{{AWS_SECRET_ACCESS_KEY}}/$(AWS_SECRET_ACCESS_KEY)/g" \
-		-e "s/{{REDDIT_PRIVATE_RSS_FEED}}/$(REDDIT_PRIVATE_RSS_FEED)/g" \
-		$< > $@
+	python3 scripts/fillin.py \
+		--input $< \
+		--output $@ \
+		--name 'AWS_ACCESS_KEY_ID' --value '$(AWS_ACCESS_KEY_ID)' \
+		--name 'AWS_SECRET_ACCESS_KEY' --value '$(AWS_SECRET_ACCESS_KEY)' \
+		--name 'REDDIT_PRIVATE_RSS_FEED' --value '$(REDDIT_PRIVATE_RSS_FEED)'
 	chmod 600 $@
 
 
