@@ -1,26 +1,5 @@
 # To Do
 
-- extractor error after adding reddit
-
-    /Users/donmcc/.pyenv/versions/news-venv/bin/python /Users/donmcc/Developer/Don/donm_cc/news/src/extractor.py --cache-dir=tmp 
-    INFO:botocore.credentials:Found credentials in shared credentials file: ~/.aws/credentials
-    WARNING:news.url:Value Error parsing "TupleSpace": bad query field: 'TupleSpace'
-    INFO:extractor.py:Added 24 and removed 1 items.
-
-    {
-        "url": "http://wiki.c2.com/?TupleSpace",
-        "title": "Tuple Space",
-        "source": {
-            "url": "https://news.ycombinator.com/item?id=35741416",
-            "site_id": "hn"
-        },
-        "created": "2023-04-28T14:25:03.968685+00:00",
-        "modified": "2023-04-28T14:25:03.968685+00:00"
-    },
- 
-    
-    Process finished with exit code 0
-
 - sf.streetsblog, no title
 
         {

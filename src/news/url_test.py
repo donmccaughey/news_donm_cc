@@ -20,51 +20,39 @@ def test_str_and_repr():
     assert "URL('https://www.example.com/foo/bar?baz#fid')" == repr(url)
 
 
-def test_clean_query_for_clean():
-    assert clean_query('id=123&foo=bar') == 'id=123&foo=bar'
+CLEAN_QUERY_TESTS = [
+    ('', ''),
+    ('id=123&foo=bar', 'id=123&foo=bar'),
+    ('blank=', 'blank='),
+    ('TupleSpace', 'TupleSpace'),
+    ('utm_source=rss&utm_medium=rss&utm_campaign=foo', ''),
+]
 
 
-def test_clean_query_for_dirty():
-    assert clean_query('utm_source=rss&utm_medium=rss&utm_campaign=foo') == ''
-
-
-def test_clean_query_for_empty(caplog):
-    assert clean_query('') == ''
+@mark.parametrize('query, cleaned', CLEAN_QUERY_TESTS)
+def test_clean_query(query, cleaned, caplog):
+    assert clean_query(query) == cleaned
     assert len(caplog.messages) == 0
 
 
-def test_url_clean_for_clean_url():
-    url = URL('https://example.com').clean()
-
-    assert url == URL('https://example.com')
-
-
-def test_url_clean_for_clean_url_with_query():
-    url = URL('https://example.com?id=123&foo=bar').clean()
-
-    assert url == URL('https://example.com?id=123&foo=bar')
-
-
-def test_url_clean_for_dirty_url():
-    url = URL(
-        'https://acoup.blog/2022/12/02/collections-why-roman-egypt-was-such-a-strange-province/?utm_source=rss&utm_medium=rss&utm_campaign=collections-why-roman-egypt-was-such-a-strange-province'
-    ).clean()
-
-    assert url == URL('https://acoup.blog/2022/12/02/collections-why-roman-egypt-was-such-a-strange-province/')
+URL_CLEAN_TESTS = [
+    ('https://example.com', 'https://example.com'),
+    ('https://example.com?id=123&foo=bar', 'https://example.com?id=123&foo=bar'),
+    (
+        'https://acoup.blog/2022/12/02/collections-why-roman-egypt-was-such-a-strange-province/?utm_source=rss&utm_medium=rss&utm_campaign=collections-why-roman-egypt-was-such-a-strange-province',
+        'https://acoup.blog/2022/12/02/collections-why-roman-egypt-was-such-a-strange-province/',
+    ),
+    (
+        'https://queue.acm.org/detail.cfm?id=2898444&utm_source=daringfireball&utm_campaign=df2023',
+        'https://queue.acm.org/detail.cfm?id=2898444',
+    ),
+    ('https://example.com#some-anchor', 'https://example.com'),
+]
 
 
-def test_url_clean_for_clean_and_dirty_url_params():
-    url = URL(
-        'https://queue.acm.org/detail.cfm?id=2898444&utm_source=daringfireball&utm_campaign=df2023'
-    ).clean()
-
-    assert url == URL('https://queue.acm.org/detail.cfm?id=2898444')
-
-
-def test_url_clean_for_fragment():
-    url = URL('https://example.com#some-anchor').clean()
-
-    assert url == URL('https://example.com')
+@mark.parametrize('url, cleaned', URL_CLEAN_TESTS)
+def test_url_clean(url, cleaned):
+    assert URL(url).clean() == URL(cleaned)
 
 
 IDENTITY_TESTS = [

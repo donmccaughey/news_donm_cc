@@ -89,7 +89,7 @@ def clean_query(query: str) -> str:
     if query:
         try:
             parameters = parse_qsl(
-                query, keep_blank_values=True, strict_parsing=True,
+                query, keep_blank_values=True, strict_parsing=False,
                 encoding='utf-8', errors='strict'
             )
             clean_parameters = [
@@ -102,8 +102,6 @@ def clean_query(query: str) -> str:
                 )
         except UnicodeError as e:
             log.warning(f'Unicode Error parsing "{query}": {e}')
-        except ValueError as e:
-            log.warning(f'Value Error parsing "{query}": {e}')
     return query
 
 
