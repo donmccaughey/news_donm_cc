@@ -12,6 +12,7 @@ SKIP_SITES = [
     'laphamsquarterly.org',
     'lareviewofbooks.org',
     'lynalden.com',
+    'narratively.com',
     'newscientist.com',
     'newstatesman.com',
     'noahpinion.blog',
