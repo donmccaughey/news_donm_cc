@@ -1,18 +1,19 @@
 # To Do
 
-- sf.streetsblog, no title
+- imgur links on Reddit - should identity be 'reddit.com/r/gifs'?
 
-        {
-			"url": "https://sf.streetsblog.org/2023/04/24/423264/",
-			"title": "",
+		{
+			"url": "https://i.imgur.com/QkyYfQJ.gifv",
+			"title": "Let Her Speak",
 			"source": {
-				"url": "https://sf.streetsblog.org/2023/04/24/423264/",
-				"site_id": "sb"
+				"url": "https://www.reddit.com/r/gifs/comments/131wmx5/let_her_speak/",
+				"site_id": "r"
 			},
-			"created": "2023-04-24T16:10:04.637352+00:00",
-			"modified": "2023-04-24T16:10:04.637352+00:00"
+			"created": "2023-04-29T04:21:59.414761+00:00",
+			"modified": "2023-04-29T04:21:59.414761+00:00"
 		},
 
+- update item title when item changes
 - shared block list between hacker news and reddit
 - about page
 - medium blog post

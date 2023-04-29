@@ -1,3 +1,5 @@
+from datetime import datetime, timezone
+
 from feedparser import FeedParserDict, parse
 
 from .streetsblog import Streetsblog
@@ -98,3 +100,23 @@ def test_keep_entry_no_category():
     sb = Streetsblog({})
 
     assert not sb.keep_entry(entry)
+
+
+def test_parse_entry_includes_title():
+    feed = '''
+    <?xml version="1.0" encoding="UTF-8"?>
+    <rss version="2.0">
+        <channel>
+            <item>
+                <title>Today&#8217;s Headlines</title>
+                <link>https://sf.streetsblog.org/2023/04/24/423264/</link>
+            </item>
+        </channel>
+    </rss>
+    '''
+    d: FeedParserDict = parse(feed)
+    entry = d.entries[0]
+    sb = Streetsblog({})
+    item = sb.parse_entry(entry, datetime.now(timezone.utc))
+
+    assert item.title == 'Today’s Headlines'
