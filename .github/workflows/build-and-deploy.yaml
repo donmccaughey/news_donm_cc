@@ -8,6 +8,7 @@ on:
 env:
   AWS_ACCESS_KEY: ${{secrets.AWS_ACCESS_KEY}}
   AWS_ACCESS_KEY_SECRET: ${{secrets.AWS_ACCESS_KEY_SECRET}}
+  REDDIT_PRIVATE_RSS_FEED: ${{secrets.REDDIT_PRIVATE_RSS_FEED}}
 jobs:
   News:
     name: News
