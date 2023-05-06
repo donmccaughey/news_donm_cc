@@ -16,9 +16,6 @@ class DaringFireball(Site):
         return 'DaringFireball()'
 
     def keep_entry(self, entry) -> bool:
-        if not self.entry_has_keys(entry, ['link', 'title']):
-            return False
-
         related = first_link_with_rel(entry.links, 'related')
         if related:
             _, netloc, path, _, _ = urlsplit(related)

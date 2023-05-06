@@ -45,7 +45,7 @@ def test_keep_entry_other_category():
     assert not sb.keep_entry(entry)
 
 
-def test_keep_entry_no_title():
+def test_is_entry_valid_no_title():
     feed = '''
     <?xml version="1.0" encoding="UTF-8"?>
     <rss version="2.0">
@@ -61,10 +61,10 @@ def test_keep_entry_no_title():
     entry = d.entries[0]
     sb = Streetsblog({})
 
-    assert not sb.keep_entry(entry)
+    assert not sb.is_entry_valid(entry)
 
 
-def test_keep_entry_no_link():
+def test_is_entry_valid_no_link():
     feed = '''
     <?xml version="1.0" encoding="UTF-8"?>
     <rss version="2.0">
@@ -80,10 +80,10 @@ def test_keep_entry_no_link():
     entry = d.entries[0]
     sb = Streetsblog({})
 
-    assert not sb.keep_entry(entry)
+    assert not sb.is_entry_valid(entry)
 
 
-def test_keep_entry_no_category():
+def test_is_entry_valid_no_category():
     feed = '''
     <?xml version="1.0" encoding="UTF-8"?>
     <rss version="2.0">
@@ -99,7 +99,27 @@ def test_keep_entry_no_category():
     entry = d.entries[0]
     sb = Streetsblog({})
 
-    assert not sb.keep_entry(entry)
+    assert not sb.is_entry_valid(entry)
+
+
+def test_is_entry_valid():
+    feed = '''
+    <?xml version="1.0" encoding="UTF-8"?>
+    <rss version="2.0">
+        <channel>
+            <item>
+                <title>Today&#8217;s Headlines</title>
+                <link>https://sf.streetsblog.org/2023/01/03/todays-headlines-3375/</link>
+                <category><![CDATA[Today's Headlines]]></category>
+            </item>
+        </channel>
+    </rss>
+    '''
+    d: FeedParserDict = parse(feed)
+    entry = d.entries[0]
+    sb = Streetsblog({})
+
+    assert sb.is_entry_valid(entry)
 
 
 def test_parse_entry_includes_title():

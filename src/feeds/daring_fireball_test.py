@@ -39,7 +39,7 @@ def test_keep_entry_rejects_linked_sponsor():
     assert not df.keep_entry(entry)
 
 
-def test_keep_entry_rejects_no_title():
+def test_is_entry_valid_rejects_no_title():
     d = build_df_feed(
         alternate='https://www.forbes.com/sites/emilybaker-white/2022/12/22/tiktok-tracks-forbes-journalists-bytedance/',
         related='https://daringfireball.net/linked/2022/12/22/tiktok-forbes-spying',
@@ -48,15 +48,15 @@ def test_keep_entry_rejects_no_title():
     entry = d.entries[0]
     df = DaringFireball({})
 
-    assert not df.keep_entry(entry)
+    assert not df.is_entry_valid(entry)
 
 
-def test_keep_entry_rejects_no_links():
+def test_is_entry_valid_rejects_no_links():
     d = build_df_feed('', '', 'TikTok Spied on Forbes Journalists')
     entry = d.entries[0]
     df = DaringFireball({})
 
-    assert not df.keep_entry(entry)
+    assert not df.is_entry_valid(entry)
 
 
 def test_keep_entry_rejects_sponsors_alternate_link():

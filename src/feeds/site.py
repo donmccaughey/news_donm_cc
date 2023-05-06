@@ -1,12 +1,11 @@
 import calendar
 import logging
-import time
 from datetime import datetime, timezone
 from typing import Any
 
 from feedparser import FeedParserDict, parse
 
-from news import LIFETIME, Item, News, URL
+from news import LIFETIME, Item, News, Source, URL
 
 log = logging.getLogger(__name__)
 
@@ -57,6 +56,8 @@ class Site:
     def parse_entries(self, entries: list[FeedParserDict], now: datetime) -> list[Item]:
         items = []
         for entry in entries:
+            if not self.is_entry_valid(entry):
+                continue
             if not is_recent(entry, now):
                 continue
             if not self.keep_entry(entry):
@@ -64,18 +65,28 @@ class Site:
             items.append(self.parse_entry(entry, now))
         return items
 
-    def entry_has_keys(self, entry, keys: list[str]) -> bool:
+    def is_entry_valid(self, entry: dict) -> bool:
+        return self.entry_has_keys(entry, ['link', 'title'])
+
+    def entry_has_keys(self, entry: dict, keys: list[str]) -> bool:
         for key in keys:
             if key not in entry:
                 log.warning(f'Entry {repr(entry)} from {self.name} does not have a "{key}" attribute')
                 return False
         return True
 
-    def keep_entry(self, entry) -> bool:
+    def keep_entry(self, entry: FeedParserDict) -> bool:
         return True
 
-    def parse_entry(self, entry, now: datetime) -> Item:
-        raise NotImplementedError()
+    def parse_entry(self, entry: FeedParserDict, now: datetime) -> Item:
+        url = URL(entry.link).clean()
+        return Item(
+            url=url,
+            title=entry.title,
+            source=Source(url, self.initials),
+            created=now,
+            modified=now,
+        )
 
     def encode(self) -> dict[str, Any]:
         encoded = {
@@ -90,13 +101,16 @@ class Site:
         return encoded
 
 
-def is_recent(entry, now: datetime) -> bool:
+def is_recent(entry: dict, now: datetime) -> bool:
     time_tuple = (
-        entry.published_parsed
-        or entry.updated_parsed
-        or entry.created_parsed
-        or time.gmtime()
+        entry.get('published_parsed')
+        or entry.get('updated_parsed')
+        or entry.get('created_parsed')
+        or None
     )
-    timestamp = calendar.timegm(time_tuple)
-    published = datetime.fromtimestamp(timestamp, timezone.utc)
-    return now - published < LIFETIME
+    if time_tuple:
+        timestamp = calendar.timegm(time_tuple)
+        published = datetime.fromtimestamp(timestamp, timezone.utc)
+        return (now - published) < LIFETIME
+    else:
+        return True

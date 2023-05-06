@@ -16,10 +16,10 @@ class HackerNews(Site):
     def __repr__(self) -> str:
         return 'HackerNews()'
 
-    def keep_entry(self, entry) -> bool:
-        if not self.entry_has_keys(entry, ['link', 'title', 'comments']):
-            return False
+    def is_entry_valid(self, entry: dict) -> bool:
+        return self.entry_has_keys(entry, ['comments', 'link', 'title'])
 
+    def keep_entry(self, entry) -> bool:
         url = URL(entry.link)
         if url.identity in SKIP_SITES:
             return False

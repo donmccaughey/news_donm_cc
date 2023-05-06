@@ -1,5 +1,9 @@
 import logging
 from datetime import datetime,timezone
+from email import utils
+
+from feedparser import FeedParserDict, parse
+
 from news import URL
 from .site import Site, is_recent
 
@@ -26,31 +30,99 @@ def test_entry_has_keys():
     assert site.entry_has_keys(entry, ['link', 'title'])
 
 
-class FakeEntry:
-    def __init__(self, time_tuple):
-        self.published_parsed = time_tuple
+def test_entry_is_valid():
+    site = Site(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
+    entry = {}
+
+    assert not site.is_entry_valid(entry)
+
+    entry = {'link': 'https://example.com/stuff'}
+
+    assert not site.is_entry_valid(entry)
+
+    entry = {'link': 'https://example.com/stuff', 'title': 'Stuff'}
+
+    assert site.is_entry_valid(entry)
 
 
-def test_is_recent():
+def test_is_recent_published_now():
     now = datetime.fromisoformat('2023-01-31T05:34:20+00:00')
+    ago = now
+    pub_date = utils.format_datetime(ago)
+    feed = f'''
+    <?xml version="1.0" encoding="UTF-8"?>
+    <rss version="2.0">
+        <channel>
+            <item>
+                <title>Something or other</title>
+                <link>https://example.com/something</link>
+                <pubDate>{pub_date}</pubDate>
+            </item>
+        </channel>
+    </rss>
+    '''
+    d: FeedParserDict = parse(feed)
 
-    # 2023-01-31
-    entry1 = FakeEntry(
-        (2023, 1, 31, 5, 34, 20, 3, 31, 0)
-    )
-    assert is_recent(entry1, now)
+    assert is_recent(d.entries[0], now)
 
-    # 2023-01-02
-    entry2 = FakeEntry(
-        (2023, 1, 2, 5, 34, 20, 0, 2, 0)
-    )
-    assert is_recent(entry2, now)
 
-    # 2023-01-01
-    entry3 = FakeEntry(
-        (2023, 1, 1, 5, 34, 20, 7, 1, 0)
-    )
-    assert not is_recent(entry3, now)
+def test_is_recent_published_29_days_ago():
+    now = datetime.fromisoformat('2023-01-31T05:34:20+00:00')
+    ago = datetime.fromisoformat('2023-01-02T05:34:20+00:00')
+    pub_date = utils.format_datetime(ago)
+    feed = f'''
+    <?xml version="1.0" encoding="UTF-8"?>
+    <rss version="2.0">
+        <channel>
+            <item>
+                <title>Something or other</title>
+                <link>https://example.com/something</link>
+                <pubDate>{pub_date}</pubDate>
+            </item>
+        </channel>
+    </rss>
+    '''
+    d: FeedParserDict = parse(feed)
+
+    assert is_recent(d.entries[0], now)
+
+
+def test_is_recent_published_30_days_ago():
+    now = datetime.fromisoformat('2023-01-31T05:34:20+00:00')
+    ago = datetime.fromisoformat('2023-01-01T05:34:20+00:00')
+    pub_date = utils.format_datetime(ago)
+    feed = f'''
+    <?xml version="1.0" encoding="UTF-8"?>
+    <rss version="2.0">
+        <channel>
+            <item>
+                <title>Something or other</title>
+                <link>https://example.com/something</link>
+                <pubDate>{pub_date}</pubDate>
+            </item>
+        </channel>
+    </rss>
+    '''
+    d: FeedParserDict = parse(feed)
+
+    assert not is_recent(d.entries[0], now)
+
+
+def test_is_recent_is_missing():
+    feed = '''
+    <?xml version="1.0" encoding="UTF-8"?>
+    <rss version="2.0">
+        <channel>
+            <item>
+                <title>Something or other</title>
+                <link>https://example.com/something</link>
+            </item>
+        </channel>
+    </rss>
+    '''
+    d: FeedParserDict = parse(feed)
+
+    assert is_recent(d.entries[0], datetime.now(timezone.utc))
 
 
 class FakeFeedParserDict:
@@ -64,9 +136,9 @@ class FakeFeedParserDict:
 
 
 def make_parse_function(status):
-    def parse(*args, **kwargs):
+    def fake_parse(*args, **kwargs):
         return FakeFeedParserDict(status=status)
-    return parse
+    return fake_parse
 
 
 def test_get_for_missing_status(caplog, monkeypatch):
@@ -121,3 +193,27 @@ def test_get_for_other_status(caplog, monkeypatch):
     assert len(news) is 0
     assert len(caplog.messages) is 1
     assert caplog.messages[0] == 'Hacker News returned status code 500'
+
+
+def test_parse_entries():
+    feed = '''
+    <?xml version="1.0" encoding="UTF-8"?>
+    <rss version="2.0">
+        <channel>
+            <item>
+                <title>Valid entry</title>
+                <link>https://example.com/valid</link>
+            </item>
+            <item>
+                <title>Invalid entry</title>
+            </item>
+        </channel>
+    </rss>
+    '''
+    d: FeedParserDict = parse(feed)
+    site = Site(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
+
+    items = site.parse_entries(d.entries, datetime.now(timezone.utc))
+
+    assert len(items) == 1
+    assert items[0].title == 'Valid entry'

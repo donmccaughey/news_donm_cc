@@ -116,6 +116,29 @@ def test_keep_entry_rejects_site(title, link, comments):
     assert not hn.keep_entry(entry)
 
 
+def test_is_entry_valid_rejects():
+    hn = HackerNews({})
+    entry = {}
+
+    assert not hn.is_entry_valid(entry)
+
+    entry = {'link': 'https://example.com/stuff'}
+
+    assert not hn.is_entry_valid(entry)
+
+    entry = {'link': 'https://example.com/stuff', 'title': 'Stuff'}
+
+    assert not hn.is_entry_valid(entry)
+
+    entry = {
+        'comments': 'https://example.com/comments',
+        'link': 'https://example.com/stuff',
+        'title': 'Stuff'
+    }
+
+    assert hn.is_entry_valid(entry)
+
+
 def build_hn_feed(title: str, link: str, comments: str) -> FeedParserDict:
     feed = [
         '<rss version="2.0">',
