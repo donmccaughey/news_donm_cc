@@ -42,12 +42,8 @@ class Site:
                 self.last_modified = d.modified
             if self.etag or self.last_modified:
                 log.debug(f'{self.name}: etag={self.etag}, last_modified={self.last_modified}')
-            items = [
-                self.parse_entry(entry, now) for entry in d.entries
-                if is_recent(entry, now) and self.keep_entry(entry)
-            ]
             return News(
-                items=items,
+                items=self.parse_entries(d.entries, now),
                 created=now,
                 modified=now,
             )
@@ -57,6 +53,16 @@ class Site:
         else:
             log.warning(f'{self.name} returned status code {d.status}')
             return News()
+
+    def parse_entries(self, entries: list[FeedParserDict], now: datetime) -> list[Item]:
+        items = []
+        for entry in entries:
+            if not is_recent(entry, now):
+                continue
+            if not self.keep_entry(entry):
+                continue
+            items.append(self.parse_entry(entry, now))
+        return items
 
     def entry_has_keys(self, entry, keys: list[str]) -> bool:
         for key in keys:
@@ -86,7 +92,9 @@ class Site:
 
 def is_recent(entry, now: datetime) -> bool:
     time_tuple = (
-        entry.published_parsed or entry.updated_parsed or entry.created_parsed
+        entry.published_parsed
+        or entry.updated_parsed
+        or entry.created_parsed
         or time.gmtime()
     )
     timestamp = calendar.timegm(time_tuple)
