@@ -2,29 +2,8 @@ import html
 from datetime import datetime
 
 from news import Item, Source, URL
+from .skip_sites import SKIP_SITES
 from .site import Site
-
-SKIP_SITES = [
-    'brave.com',
-    'english.elpais.com',
-    'europeanreviewofbooks.com',
-    'jewishreviewofbooks.com',
-    'laphamsquarterly.org',
-    'lareviewofbooks.org',
-    'lynalden.com',
-    'narratively.com',
-    'newscientist.com',
-    'newstatesman.com',
-    'noahpinion.blog',
-    'paulgraham.com',
-    'quillette.com',
-    'reason.com',
-    'sive.rs',
-    'astralcodexten.substack.com',
-    'noahpinion.substack.com',
-    'theamericanscholar.org',
-    'theepochtimes.com',
-]
 
 
 class HackerNews(Site):

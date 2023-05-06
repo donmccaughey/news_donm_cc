@@ -13,8 +13,8 @@
 			"modified": "2023-04-29T04:21:59.414761+00:00"
 		},
 
+- should Reddit site initials show the subreddit?
 - update item title when item changes
-- shared block list between hacker news and reddit
 - about page
 - medium blog post
   - https://blog.medium.com/now-you-can-embed-mastodon-posts-in-medium-stories-99b11d0baa7f

@@ -206,3 +206,50 @@ def test_extract_links(content, expected_link, expected_comments):
 
     assert link == expected_link
     assert comments == expected_comments
+
+
+REJECT_SITE_TESTS = [
+    pytest.param(
+        'If Parrots Can Talk, Why Can’t Monkeys?',
+        'https://english.elpais.com/science-tech/2023-01-10/if-parrots-can-talk-why-cant-monkeys.html',
+        'https://news.ycombinator.com/item?id=35431466',
+        id='english.elpais.com',
+    ),
+]
+
+
+@mark.parametrize('title, link, comments', REJECT_SITE_TESTS)
+def test_keep_entry_rejects_site(title, link, comments):
+    d = build_reddit_feed(str(title), str(link), str(comments))
+    entry = d.entries[0]
+    reddit = Reddit(OPTIONS)
+
+    assert not reddit.keep_entry(entry)
+
+
+def build_reddit_feed(title: str, link: str, comments: str) -> FeedParserDict:
+    feed = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<feed xmlns="http://www.w3.org/2005/Atom">',
+        '<entry>',
+        '<content type="html">',
+    ]
+
+    if link:
+        feed.append(f'&lt;a href=&quot;{link}&quot;&gt;[link]&lt;/a&gt;')
+    if comments:
+        feed.append(f'&lt;a href=&quot;{comments}&quot;&gt;[comments]&lt;/a&gt;')
+
+    feed.append('</content>')
+
+    if link:
+        feed.append(f'<link href="{link}"/>')
+    if title:
+        feed.append(f'<title>{title}</title>')
+
+    feed += [
+        '</content>',
+        '</entry>',
+        '</feed>',
+    ]
+    return parse('\n'.join(feed))

@@ -4,7 +4,8 @@ from typing import Tuple
 from urllib.parse import urlsplit
 
 import bs4
-from feeds.site import Site
+from .skip_sites import SKIP_SITES
+from .site import Site
 from news import Item, Source, URL
 
 log = logging.getLogger(__name__)
@@ -19,6 +20,21 @@ class Reddit(Site):
 
     def __repr__(self) -> str:
         return 'Reddit()'
+
+    def keep_entry(self, entry) -> bool:
+        if len(entry.content):
+            content = entry.content[0].value
+        else:
+            content = ''
+            log.warning(f'No content for "{entry.title}" (entry.link)')
+
+        link, comments = extract_links(content, default=URL(entry.link))
+
+        url = URL(entry.link)
+        if link.identity in SKIP_SITES:
+            return False
+
+        return True
 
     def parse_entry(self, entry, now: datetime) -> Item:
         if len(entry.content):
