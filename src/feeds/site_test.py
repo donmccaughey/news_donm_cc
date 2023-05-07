@@ -171,16 +171,13 @@ def test_get_for_302_status(monkeypatch):
     assert len(news) is 0
 
 
-def test_get_for_304_status(caplog, monkeypatch):
-    caplog.set_level(logging.DEBUG)
+def test_get_for_304_status(monkeypatch):
     monkeypatch.setattr('feeds.site.parse', make_parse_function(status=304))
 
     site = Site(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
     news = site.get(datetime.now(timezone.utc))
 
     assert len(news) is 0
-    assert len(caplog.messages) is 1
-    assert caplog.messages[0] == 'Hacker News is unmodified'
 
 
 def test_get_for_other_status(caplog, monkeypatch):
