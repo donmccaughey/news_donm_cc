@@ -60,16 +60,18 @@ def extract_links(content, default: URL | None = None) -> Tuple[URL, URL]:
     for anchor in soup.find_all('a'):
         if anchor.text.strip() == '[link]':
             href = anchor['href']
-            if not is_reddit_media_links(href):
+            if not is_reddit_media_link(href):
                 link = URL(href).clean()
         elif anchor.text.strip() == '[comments]':
             comments = URL(anchor['href'])
     return link, comments
 
 
-def is_reddit_media_links(link: str) -> bool:
+def is_reddit_media_link(link: str) -> bool:
     scheme, netloc, path, query, fragment = urlsplit(link)
-    if netloc in ['i.redd.it', 'v.redd.it']:
+    if netloc in ['i.imgur.com', 'i.redd.it', 'v.redd.it']:
+        return True
+    if netloc == 'imgur.com' and path.startswith('/a/'):
         return True
     if netloc == 'www.reddit.com' and path.startswith('/gallery/'):
         return True

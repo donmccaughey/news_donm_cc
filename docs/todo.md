@@ -1,18 +1,5 @@
 # To Do
 
-- imgur links on Reddit - should identity be 'reddit.com/r/gifs'?
-
-		{
-			"url": "https://i.imgur.com/QkyYfQJ.gifv",
-			"title": "Let Her Speak",
-			"source": {
-				"url": "https://www.reddit.com/r/gifs/comments/131wmx5/let_her_speak/",
-				"site_id": "r"
-			},
-			"created": "2023-04-29T04:21:59.414761+00:00",
-			"modified": "2023-04-29T04:21:59.414761+00:00"
-		},
-
 - should Reddit site initials show the subreddit?
 - update item title when item changes
 - about page

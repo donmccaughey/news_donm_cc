@@ -5,8 +5,7 @@ from feedparser import FeedParserDict, parse
 from pytest import mark
 
 from news import URL
-from .reddit import extract_links, Reddit
-
+from .reddit import extract_links, Reddit, is_reddit_media_link
 
 OPTIONS = {
     'reddit_private_rss_feed': 'https://www.reddit.com/.rss?feed=12345&user=alice',
@@ -253,3 +252,14 @@ def build_reddit_feed(title: str, link: str, comments: str) -> FeedParserDict:
         '</feed>',
     ]
     return parse('\n'.join(feed))
+
+
+def test_is_reddit_media_link():
+    assert is_reddit_media_link('https://i.imgur.com/w717qCT.jpg')
+    assert is_reddit_media_link('https://i.redd.it/2yj5se3u8ewa1.jpg')
+    assert is_reddit_media_link('https://v.redd.it/pwfzw8zs9fwa1')
+    assert is_reddit_media_link('https://imgur.com/a/8Hx39hy')
+    assert is_reddit_media_link('https://www.reddit.com/gallery/130ncpd')
+
+    assert not is_reddit_media_link('https://imgurinc.com/rules')
+    assert not is_reddit_media_link('https://www.reddit.com/r/greatpyrenees/comments/130qn68/mini_photo_shoot_with_my_pyr_sushi/')
