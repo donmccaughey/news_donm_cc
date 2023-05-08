@@ -76,7 +76,7 @@ class Site:
         return True
 
     def parse_entry(self, entry: FeedParserDict, now: datetime) -> Item:
-        url = URL(entry.link).clean()
+        url = URL(entry.link)
         return Item(
             url=url,
             title=entry.title,

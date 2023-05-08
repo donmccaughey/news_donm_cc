@@ -16,7 +16,7 @@ class TildeNews(Site):
 
     def parse_entry(self, entry, now: datetime) -> Item:
         return Item(
-            url=URL(entry.link).clean(),
+            url=URL(entry.link),
             title=entry.title,
             source=Source(URL(entry.comments), self.initials),
             created=now,

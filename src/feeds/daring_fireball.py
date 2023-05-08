@@ -46,7 +46,7 @@ class DaringFireball(Site):
         alternate = first_link_with_rel(entry.links, 'alternate')
         link = related or alternate or entry.link
 
-        url = URL(link).clean()
+        url = URL(link)
         return Item(
             url=url,
             title=entry.title,

@@ -5,6 +5,16 @@ from .source import Source
 from .url import URL
 
 
+def test_item_cleans_url():
+    item = Item(
+        URL('https://queue.acm.org/detail.cfm?id=2898444&utm_source=daringfireball&utm_campaign=df2023'),
+        'Item 1',
+        Source(URL('https://source.com/1'), 'so'),
+    )
+
+    assert item.url == URL('https://queue.acm.org/detail.cfm?id=2898444')
+
+
 def test_eq_and_hash():
     item1 = Item(
         URL('https://example.com/1'),
