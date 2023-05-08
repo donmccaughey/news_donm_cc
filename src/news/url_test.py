@@ -154,3 +154,31 @@ IDENTITY_TESTS = [
 @mark.parametrize('identity, url', IDENTITY_TESTS)
 def test_identity(identity, url):
     assert URL(url).identity == identity
+
+
+URL_REWRITE_TESTS = [
+    (
+        'https://languagelearningwithnetflix.com/',
+        'https://languagelearningwithnetflix.com/'
+    ),
+    (
+        'https://www.reddit.com/r/pics/comments/13a00ge/a_canadian_goose_that_comes_back_year_after_year/',
+        'https://old.reddit.com/r/pics/comments/13a00ge/a_canadian_goose_that_comes_back_year_after_year/'
+    ),
+
+    # NPR, no section
+    (
+        'https://www.npr.org/2023/03/23/1165680024/perennial-rice-plant-once-harvest-again-and-again',
+        'https://text.npr.org/1165680024',
+    ),
+    # NPR, sections
+    (
+        'https://www.npr.org/sections/money/2023/05/02/1172791281/this-company-adopted-ai-heres-what-happened-to-its-human-workers',
+        'https://text.npr.org/1172791281',
+    ),
+]
+
+
+@mark.parametrize('url, rewritten', URL_REWRITE_TESTS)
+def test_url_rewrite(url, rewritten):
+    assert URL(url).rewrite() == URL(rewritten)

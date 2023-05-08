@@ -11,6 +11,10 @@ class URL:
     def __init__(self, url: str):
         self.url = url
 
+    @staticmethod
+    def from_components(scheme: str, netloc: str, path: str, query: str, fragment: str) -> 'URL':
+        return URL(urlunsplit((scheme, netloc, path, query, fragment)))
+
     def __eq__(self, other: 'URL') -> bool:
         return self.url == other.url
 
@@ -80,6 +84,34 @@ class URL:
             return keep_path_matching(hostname, path, pattern_map[hostname])
 
         return hostname
+
+    def rewrite(self) -> 'URL':
+        scheme, netloc, path, query, fragment = urlsplit(self.url)
+        match netloc:
+            case 'www.reddit.com':
+                return self.rewrite_reddit(scheme, path, query, fragment)
+            case 'www.npr.org':
+                return self.rewrite_npr(scheme, path)
+            case _:
+                return self
+
+    def rewrite_npr(self, scheme: str, path: str) -> 'URL':
+        parts = path.split('/')
+        numbers = [
+            part for part in parts
+            if part.isdecimal() and len(part) > 4
+        ]
+        if not numbers:
+            return self
+        story_id = numbers[0]
+        return URL.from_components(
+            scheme, 'text.npr.org', '/' + story_id, '', ''
+        )
+
+    def rewrite_reddit(self, scheme: str, path: str, query: str, fragment: str) -> 'URL':
+        return URL.from_components(
+            scheme, 'old.reddit.com', path, query, fragment
+        )
 
     def split(self) -> SplitResult:
         return urlsplit(self.url)

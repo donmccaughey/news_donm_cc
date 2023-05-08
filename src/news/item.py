@@ -19,7 +19,7 @@ class Item:
                  created: datetime | None = None,
                  modified: datetime | None = None,
                  ):
-        self.url = url.clean()
+        self.url = url.clean().rewrite()
         self.title = title
         self.source = source
 

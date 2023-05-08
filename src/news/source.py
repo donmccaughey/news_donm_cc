@@ -3,7 +3,7 @@ from .url import URL
 
 class Source:
     def __init__(self, url: URL, site_id: str):
-        self.url = url
+        self.url = url.clean().rewrite()
         self.site_id = site_id
 
     def __repr__(self) -> str:

@@ -15,6 +15,26 @@ def test_item_cleans_url():
     assert item.url == URL('https://queue.acm.org/detail.cfm?id=2898444')
 
 
+def test_item_rewrites_url():
+    item = Item(
+        URL('https://www.npr.org/sections/money/2023/05/02/1172791281/this-company-adopted-ai-heres-what-happened-to-its-human-workers'),
+        'Item 1',
+        Source(URL('https://source.com/1'), 'so'),
+    )
+
+    assert item.url == URL('https://text.npr.org/1172791281')
+
+
+def test_item_rewrites_source_url():
+    item = Item(
+        URL('https://www.reddit.com/r/pics/comments/13a00ge/a_canadian_goose_that_comes_back_year_after_year/'),
+        'Item 1',
+        Source(URL('https://www.reddit.com/r/pics/comments/13a00ge/a_canadian_goose_that_comes_back_year_after_year/'), 'so'),
+    )
+
+    assert item.source.url == URL('https://old.reddit.com/r/pics/comments/13a00ge/a_canadian_goose_that_comes_back_year_after_year/')
+
+
 def test_eq_and_hash():
     item1 = Item(
         URL('https://example.com/1'),
