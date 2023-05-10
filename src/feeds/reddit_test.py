@@ -199,6 +199,7 @@ CONTENT_TESTS = [
     ),
 ]
 
+
 @mark.parametrize('content, expected_link, expected_comments', CONTENT_TESTS)
 def test_extract_links(content, expected_link, expected_comments):
     link, comments = extract_links(content)
@@ -218,12 +219,13 @@ REJECT_SITE_TESTS = [
 
 
 @mark.parametrize('title, link, comments', REJECT_SITE_TESTS)
-def test_keep_entry_rejects_site(title, link, comments):
+def test_keep_item_rejects_site(title, link, comments):
     d = build_reddit_feed(str(title), str(link), str(comments))
     entry = d.entries[0]
-    reddit = Reddit(OPTIONS)
+    r = Reddit(OPTIONS)
+    item = r.parse_entry(entry, datetime.now(timezone.utc))
 
-    assert not reddit.keep_entry(entry)
+    assert not r.keep_item(item)
 
 
 def build_reddit_feed(title: str, link: str, comments: str) -> FeedParserDict:

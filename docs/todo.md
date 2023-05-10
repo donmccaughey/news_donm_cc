@@ -51,6 +51,9 @@
     - https://archive.vn/rsxDl --> archive.today --> source site
     - wsj
     - economist
+  - Twitter, tweet and sub-tweet media links
+    - https://twitter.com/TurnerNovak/status/1654577231937544192
+    - https://twitter.com/TurnerNovak/status/1654577231937544192/photo/1
 - filter / search news
   - by domain name
   - by keywords

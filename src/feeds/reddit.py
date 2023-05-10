@@ -21,20 +21,8 @@ class Reddit(Site):
     def __repr__(self) -> str:
         return 'Reddit()'
 
-    def keep_entry(self, entry) -> bool:
-        if len(entry.content):
-            content = entry.content[0].value
-        else:
-            content = ''
-            log.warning(f'No content for "{entry.title}" (entry.link)')
-
-        link, comments = extract_links(content, default=URL(entry.link))
-
-        url = URL(entry.link)
-        if link.identity in SKIP_SITES:
-            return False
-
-        return True
+    def keep_item(self, item: Item) -> bool:
+        return item.url.identity not in SKIP_SITES
 
     def parse_entry(self, entry, now: datetime) -> Item:
         if len(entry.content):

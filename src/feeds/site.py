@@ -53,13 +53,14 @@ class Site:
     def parse_entries(self, entries: list[FeedParserDict], now: datetime) -> list[Item]:
         items = []
         for entry in entries:
-            if not self.is_entry_valid(entry):
-                continue
-            if not is_recent(entry, now):
-                continue
-            if not self.keep_entry(entry):
-                continue
-            items.append(self.parse_entry(entry, now))
+            if (
+                    self.is_entry_valid(entry)
+                    and is_recent(entry, now)
+                    and self.keep_entry(entry)
+            ):
+                item = self.parse_entry(entry, now)
+                if self.keep_item(item):
+                    items.append(item)
         return items
 
     def is_entry_valid(self, entry: dict) -> bool:
@@ -73,6 +74,9 @@ class Site:
         return True
 
     def keep_entry(self, entry: FeedParserDict) -> bool:
+        return True
+
+    def keep_item(self, item: Item) -> bool:
         return True
 
     def parse_entry(self, entry: FeedParserDict, now: datetime) -> Item:
