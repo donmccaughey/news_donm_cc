@@ -55,7 +55,7 @@ class Site:
         for entry in entries:
             if (
                     self.is_entry_valid(entry)
-                    and is_recent(entry, now)
+                    and self.is_entry_recent(entry, now)
                     and self.keep_entry(entry)
             ):
                 item = self.parse_entry(entry, now)
@@ -65,6 +65,20 @@ class Site:
 
     def is_entry_valid(self, entry: dict) -> bool:
         return self.entry_has_keys(entry, ['link', 'title'])
+
+    def is_entry_recent(self, entry: dict, now: datetime) -> bool:
+        time_tuple = (
+                entry.get('published_parsed')
+                or entry.get('updated_parsed')
+                or entry.get('created_parsed')
+                or None
+        )
+        if time_tuple:
+            timestamp = calendar.timegm(time_tuple)
+            published = datetime.fromtimestamp(timestamp, timezone.utc)
+            return (now - published) < LIFETIME
+        else:
+            return True
 
     def entry_has_keys(self, entry: dict, keys: list[str]) -> bool:
         for key in keys:
@@ -100,18 +114,3 @@ class Site:
         if self.last_modified:
             encoded['last_modified'] = self.last_modified
         return encoded
-
-
-def is_recent(entry: dict, now: datetime) -> bool:
-    time_tuple = (
-        entry.get('published_parsed')
-        or entry.get('updated_parsed')
-        or entry.get('created_parsed')
-        or None
-    )
-    if time_tuple:
-        timestamp = calendar.timegm(time_tuple)
-        published = datetime.fromtimestamp(timestamp, timezone.utc)
-        return (now - published) < LIFETIME
-    else:
-        return True

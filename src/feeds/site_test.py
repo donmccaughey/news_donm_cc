@@ -5,7 +5,7 @@ from email import utils
 from feedparser import FeedParserDict, parse
 
 from news import URL
-from .site import Site, is_recent
+from .site import Site
 
 
 def test_str_and_repr():
@@ -30,7 +30,7 @@ def test_entry_has_keys():
     assert site.entry_has_keys(entry, ['link', 'title'])
 
 
-def test_entry_is_valid():
+def test_is_entry_valid():
     site = Site(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
     entry = {}
 
@@ -62,8 +62,9 @@ def test_is_recent_published_now():
     </rss>
     '''
     d: FeedParserDict = parse(feed)
+    site = Site(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
 
-    assert is_recent(d.entries[0], now)
+    assert site.is_entry_recent(d.entries[0], now)
 
 
 def test_is_recent_published_29_days_ago():
@@ -83,8 +84,9 @@ def test_is_recent_published_29_days_ago():
     </rss>
     '''
     d: FeedParserDict = parse(feed)
+    site = Site(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
 
-    assert is_recent(d.entries[0], now)
+    assert site.is_entry_recent(d.entries[0], now)
 
 
 def test_is_recent_published_30_days_ago():
@@ -104,8 +106,9 @@ def test_is_recent_published_30_days_ago():
     </rss>
     '''
     d: FeedParserDict = parse(feed)
+    site = Site(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
 
-    assert not is_recent(d.entries[0], now)
+    assert not site.is_entry_recent(d.entries[0], now)
 
 
 def test_is_recent_is_missing():
@@ -121,8 +124,9 @@ def test_is_recent_is_missing():
     </rss>
     '''
     d: FeedParserDict = parse(feed)
+    site = Site(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
 
-    assert is_recent(d.entries[0], datetime.now(timezone.utc))
+    assert site.is_entry_recent(d.entries[0], datetime.now(timezone.utc))
 
 
 class FakeFeedParserDict:
