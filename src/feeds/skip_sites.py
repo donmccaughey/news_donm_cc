@@ -1,6 +1,8 @@
 SKIP_SITES = [
     'brave.com',
 
+    'dissentmagazine.org',
+
     'emergencemagazine.org',
     'english.elpais.com',
     'europeanreviewofbooks.com',
@@ -21,6 +23,7 @@ SKIP_SITES = [
     'nplusonemag.com',
 
     'paulgraham.com',
+    'publicdomainreview.org',
 
     'quillette.com',
 
