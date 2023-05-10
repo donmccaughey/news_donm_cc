@@ -26,6 +26,9 @@ class HackerNews(Site):
 
         return True
 
+    def keep_item(self, item: Item) -> bool:
+        return item.url.identity not in SKIP_SITES
+
     def parse_entry(self, entry, now: datetime) -> Item:
         return Item(
             url=URL(entry.link),
