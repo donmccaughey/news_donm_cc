@@ -24,6 +24,25 @@ class Site:
     def __str__(self) -> str:
         return str(self.name)
 
+    def encode(self) -> dict[str, Any]:
+        encoded = {
+            'feed_url': str(self.feed_url),
+            'name': self.name,
+            'initials': self.initials,
+        }
+        if self.etag:
+            encoded['etag'] = self.etag
+        if self.last_modified:
+            encoded['last_modified'] = self.last_modified
+        return encoded
+
+    def entry_has_keys(self, entry: dict, keys: list[str]) -> bool:
+        for key in keys:
+            if key not in entry:
+                log.warning(f'Entry {repr(entry)} from {self.name} does not have a "{key}" attribute')
+                return False
+        return True
+
     def get(self, now: datetime) -> News:
         d: FeedParserDict = parse(
             str(self.feed_url),
@@ -50,22 +69,6 @@ class Site:
             log.warning(f'{self.name} returned status code {d.status}')
             return News()
 
-    def parse_entries(self, entries: list[FeedParserDict], now: datetime) -> list[Item]:
-        items = []
-        for entry in entries:
-            if (
-                    self.is_entry_valid(entry)
-                    and self.is_entry_recent(entry, now)
-                    and self.keep_entry(entry)
-            ):
-                item = self.parse_entry(entry, now)
-                if self.keep_item(item):
-                    items.append(item)
-        return items
-
-    def is_entry_valid(self, entry: dict) -> bool:
-        return self.entry_has_keys(entry, ['link', 'title'])
-
     def is_entry_recent(self, entry: dict, now: datetime) -> bool:
         time_tuple = (
                 entry.get('published_parsed')
@@ -80,18 +83,27 @@ class Site:
         else:
             return True
 
-    def entry_has_keys(self, entry: dict, keys: list[str]) -> bool:
-        for key in keys:
-            if key not in entry:
-                log.warning(f'Entry {repr(entry)} from {self.name} does not have a "{key}" attribute')
-                return False
-        return True
+    def is_entry_valid(self, entry: dict) -> bool:
+        return self.entry_has_keys(entry, ['link', 'title'])
 
     def keep_entry(self, entry: FeedParserDict) -> bool:
         return True
 
     def keep_item(self, item: Item) -> bool:
         return True
+
+    def parse_entries(self, entries: list[FeedParserDict], now: datetime) -> list[Item]:
+        items = []
+        for entry in entries:
+            if (
+                    self.is_entry_valid(entry)
+                    and self.is_entry_recent(entry, now)
+                    and self.keep_entry(entry)
+            ):
+                item = self.parse_entry(entry, now)
+                if self.keep_item(item):
+                    items.append(item)
+        return items
 
     def parse_entry(self, entry: FeedParserDict, now: datetime) -> Item:
         url = URL(entry.link)
@@ -102,15 +114,3 @@ class Site:
             created=now,
             modified=now,
         )
-
-    def encode(self) -> dict[str, Any]:
-        encoded = {
-            'feed_url': str(self.feed_url),
-            'name': self.name,
-            'initials': self.initials,
-        }
-        if self.etag:
-            encoded['etag'] = self.etag
-        if self.last_modified:
-            encoded['last_modified'] = self.last_modified
-        return encoded
