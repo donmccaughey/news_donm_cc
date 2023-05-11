@@ -24,7 +24,7 @@
             <a href={{item.url|href|safe}} rel=noreferrer target=_blank>{{item.title}}</a>
             <p>
                 <a href=./site/{{item.url.identity}} rel=noreferrer>{{item.url.identity}}</a>
-                {% if item.source.url != item.url %}
+                {% if item.show_source %}
                 —
                 <a href={{item.source.url|href|safe}} rel=noreferrer target=_blank>{{item.source.site_id}}</a>
                 {% endif %}

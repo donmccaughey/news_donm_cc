@@ -69,6 +69,24 @@ def test_str_and_repr():
     assert repr(item) == "Item(URL('https://example.com/1'), 'Item 1', Source(URL('https://source.com/1'), 'so'))"
 
 
+def test_show_source():
+    item1 = Item(
+        URL('https://example.com/1'),
+        'Item 1',
+        Source(URL('https://source.com/1'), 'so'),
+    )
+
+    assert item1.show_source
+
+    item2 = Item(
+        URL('https://example.com/2'),
+        'Item 2',
+        Source(URL('https://example.com/2'), 'so'),
+    )
+
+    assert not item2.show_source
+
+
 def test_decode_from_source_str():
     encoded = {
         'url': 'https://example.com/1',

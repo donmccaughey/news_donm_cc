@@ -41,6 +41,10 @@ class Item:
     def __str__(self) -> str:
         return f'"{self.title}" ({self.url})'
 
+    @property
+    def show_source(self) -> bool:
+        return self.url != self.source.url
+
     @staticmethod
     def decode(encoded: dict[str, dict[str, str] | str]) -> 'Item':
         return Item(

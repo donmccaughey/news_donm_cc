@@ -33,10 +33,13 @@ class Reddit(Site):
 
         url, source = extract_links(content, default=URL(entry.link))
 
+        identity_parts = source.identity.split('/')
+        site_id = '/'.join(identity_parts[1:])
+
         return Item(
             url=url,
             title=entry.title,
-            source=Source(source, self.initials),
+            source=Source(source, site_id),
             created=now,
             modified=now,
         )
