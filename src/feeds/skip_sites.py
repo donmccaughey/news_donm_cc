@@ -1,4 +1,6 @@
 SKIP_SITES = [
+    'aeon.co',
+    
     'brave.com',
 
     'dissentmagazine.org',
@@ -35,6 +37,7 @@ SKIP_SITES = [
     'noahpinion.substack.com',
 
     'theamericanscholar.org',
+    'thedriftmag.com',
     'theepochtimes.com',
     'theparisreview.org',
 ]
