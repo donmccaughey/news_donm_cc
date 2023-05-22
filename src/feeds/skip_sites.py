@@ -3,11 +3,15 @@ SKIP_SITES = [
     
     'brave.com',
 
+    'chronicle.com',
+
     'dissentmagazine.org',
 
     'emergencemagazine.org',
     'english.elpais.com',
     'europeanreviewofbooks.com',
+
+    'hedgehogreview.com',
 
     'jacobin.com',
     'jewishreviewofbooks.com',
@@ -23,6 +27,7 @@ SKIP_SITES = [
     'newstatesman.com',
     'noahpinion.blog',
     'nplusonemag.com',
+    'nybooks.com',
 
     'paulgraham.com',
     'publicdomainreview.org',
@@ -39,5 +44,8 @@ SKIP_SITES = [
     'theamericanscholar.org',
     'thedriftmag.com',
     'theepochtimes.com',
+    'thenewatlantis.com',
     'theparisreview.org',
+
+    'xtramagazine.com',
 ]
