@@ -139,7 +139,7 @@ def clean_query(query: str) -> str:
 
 def is_dirty(parameter: tuple[AnyStr, AnyStr]) -> bool:
     name, value = parameter
-    return name.startswith('utm_')
+    return name.startswith('utm_') or name == 'smid'
 
 
 SOCIAL_PATH_PATTERN = re.compile(

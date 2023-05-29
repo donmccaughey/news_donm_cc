@@ -46,6 +46,10 @@ URL_CLEAN_TESTS = [
         'https://queue.acm.org/detail.cfm?id=2898444&utm_source=daringfireball&utm_campaign=df2023',
         'https://queue.acm.org/detail.cfm?id=2898444',
     ),
+    (
+        'https://www.nytimes.com/live/2023/05/24/us/desantis-2024-election-president/ron-desantis-2024-presidential-election?smid=url-share',
+        'https://www.nytimes.com/live/2023/05/24/us/desantis-2024-election-president/ron-desantis-2024-presidential-election',
+    ),
     ('https://example.com#some-anchor', 'https://example.com'),
 ]
 
@@ -70,6 +74,7 @@ IDENTITY_TESTS = [
 
     # `web` is removed
     ('archive.org', 'https://web.archive.org'),
+    ('lrb.co.uk', 'https://www.lrb.co.uk/the-paper/v45/n11/neal-ascherson/kings-grew-pale'),
 
     # `www` is removed
     ('nature.com', 'https://www.nature.com/articles/srep00487'),

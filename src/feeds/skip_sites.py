@@ -12,6 +12,7 @@ SKIP_SITES = [
     'europeanreviewofbooks.com',
 
     'hedgehogreview.com',
+    'hudsonreview.com',
 
     'jacobin.com',
     'jewishreviewofbooks.com',
@@ -20,6 +21,7 @@ SKIP_SITES = [
     'lareviewofbooks.org',
     'lithub.com',
     'longreads.com',
+    'lrb.co.uk',
     'lynalden.com',
 
     'narratively.com',
@@ -28,6 +30,8 @@ SKIP_SITES = [
     'noahpinion.blog',
     'nplusonemag.com',
     'nybooks.com',
+
+    'openthemagazine.com',
 
     'paulgraham.com',
     'publicdomainreview.org',
