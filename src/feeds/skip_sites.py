@@ -1,6 +1,7 @@
 SKIP_SITES = [
     'aeon.co',
-    
+
+    'betonit.substack.com',
     'brave.com',
 
     'chronicle.com',
@@ -23,6 +24,8 @@ SKIP_SITES = [
     'longreads.com',
     'lrb.co.uk',
     'lynalden.com',
+
+    'milkyeggs.com',
 
     'narratively.com',
     'newscientist.com',
