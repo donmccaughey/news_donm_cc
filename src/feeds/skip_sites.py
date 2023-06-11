@@ -6,6 +6,7 @@ SKIP_SITES = [
 
     'chronicle.com',
 
+    'dirt.fyi',
     'dissentmagazine.org',
 
     'emergencemagazine.org',
@@ -18,8 +19,11 @@ SKIP_SITES = [
     'jacobin.com',
     'jewishreviewofbooks.com',
 
+    'knowablemagazine.org',
+
     'laphamsquarterly.org',
     'lareviewofbooks.org',
+    'literaryreview.co.uk',
     'lithub.com',
     'longreads.com',
     'lrb.co.uk',
@@ -28,6 +32,7 @@ SKIP_SITES = [
     'milkyeggs.com',
 
     'narratively.com',
+    'newcriterion.com',
     'newscientist.com',
     'newstatesman.com',
     'noahpinion.blog',
@@ -53,6 +58,11 @@ SKIP_SITES = [
     'theepochtimes.com',
     'thenewatlantis.com',
     'theparisreview.org',
+    'thewalrus.ca',
+
+    'unherd.com',
+
+    'versobooks.com',
 
     'xtramagazine.com',
 ]
