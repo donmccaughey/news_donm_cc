@@ -39,8 +39,8 @@ def test_parse_entry_for_image_link():
     item = r.parse_entry(entry, datetime.now(timezone.utc))
     assert item.title == 'Spolia: repurposed Roman inscriptions in València, Spain (facade of the Basilica of Our Lady of the Forsaken)'
     assert item.url == URL('https://old.reddit.com/r/latin/comments/131102k/spolia_repurposed_roman_inscriptions_in_valència/')
-    assert item.source.url == URL('https://old.reddit.com/r/latin/comments/131102k/spolia_repurposed_roman_inscriptions_in_valència/')
-    assert item.source.site_id == 'r/latin'
+    assert item.sources[0].url == URL('https://old.reddit.com/r/latin/comments/131102k/spolia_repurposed_roman_inscriptions_in_valència/')
+    assert item.sources[0].site_id == 'r/latin'
 
 
 def test_parse_entry_for_gallery_link():
@@ -68,8 +68,8 @@ def test_parse_entry_for_gallery_link():
     item = r.parse_entry(entry, datetime.now(timezone.utc))
     assert item.title == 'Mini photo shoot with my Pyr Sushi'
     assert item.url == URL('https://old.reddit.com/r/greatpyrenees/comments/130qn68/mini_photo_shoot_with_my_pyr_sushi/')
-    assert item.source.url == URL('https://old.reddit.com/r/greatpyrenees/comments/130qn68/mini_photo_shoot_with_my_pyr_sushi/')
-    assert item.source.site_id == 'r/greatpyrenees'
+    assert item.sources[0].url == URL('https://old.reddit.com/r/greatpyrenees/comments/130qn68/mini_photo_shoot_with_my_pyr_sushi/')
+    assert item.sources[0].site_id == 'r/greatpyrenees'
 
 
 def test_parse_entry_for_website_link():
@@ -97,8 +97,8 @@ def test_parse_entry_for_website_link():
     item = r.parse_entry(entry, datetime.now(timezone.utc))
     assert item.title == 'Report on surprise hyper CVE from 2023-04-11'
     assert item.url == URL('https://seanmonstar.com/post/715784167270596608/coe-surpise-hyper-cve')
-    assert item.source.url == URL('https://old.reddit.com/r/rust/comments/13147i3/report_on_surprise_hyper_cve_from_20230411/')
-    assert item.source.site_id == 'r/rust'
+    assert item.sources[0].url == URL('https://old.reddit.com/r/rust/comments/13147i3/report_on_surprise_hyper_cve_from_20230411/')
+    assert item.sources[0].site_id == 'r/rust'
 
 
 def test_parse_entry_for_website_link_cleans_url():
@@ -122,8 +122,8 @@ def test_parse_entry_for_website_link_cleans_url():
     item = r.parse_entry(entry, datetime.now(timezone.utc))
     assert item.title == 'US adult cigarette smoking rate hits new all-time low'
     assert item.url == URL('https://apnews.com/article/how-many-people-smoke-us-64987fe2b7bf764c64d4594e5b02e6ea')
-    assert item.source.url == URL('https://old.reddit.com/r/news/comments/130kndv/us_adult_cigarette_smoking_rate_hits_new_alltime/')
-    assert item.source.site_id == 'r/news'
+    assert item.sources[0].url == URL('https://old.reddit.com/r/news/comments/130kndv/us_adult_cigarette_smoking_rate_hits_new_alltime/')
+    assert item.sources[0].site_id == 'r/news'
 
 
 CONTENT_TESTS = [

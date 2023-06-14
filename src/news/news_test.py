@@ -201,36 +201,43 @@ SIX_DAYS_AGO = TODAY - timedelta(days=6)
 SEVEN_DAYS_AGO = TODAY - timedelta(days=7)
 
 item1 = Item(
-    URL('https://example.com/item1'), 'Item 1', Source(URL('https://source.com/1'), 'so'),
+    URL('https://example.com/item1'), 'Item 1',
+    [Source(URL('https://source.com/1'), 'so')],
     THREE_DAYS_AGO, THREE_DAYS_AGO
 )
 
 item1_old = Item(
-    URL('https://example.com/item1'), 'Item 1 Old', Source(URL('https://source.com/1'), 'so'),
+    URL('https://example.com/item1'), 'Item 1 Old',
+    [Source(URL('https://source.com/1'), 'so')],
     SEVEN_DAYS_AGO, SEVEN_DAYS_AGO
 )
 
 item2 = Item(
-    URL('https://example.net/item2'), 'Item 2', Source(URL('https://source.com/2'), 'so'),
+    URL('https://example.net/item2'), 'Item 2',
+    [Source(URL('https://source.com/2'), 'so')],
     TWO_DAYS_AGO, TWO_DAYS_AGO
 )
 
 item2_old = Item(
-    URL('https://example.net/item2'), 'Item 2 Old', Source(URL('https://source.com/2'), 'so'),
+    URL('https://example.net/item2'), 'Item 2 Old',
+    [Source(URL('https://source.com/2'), 'so')],
     SIX_DAYS_AGO, SIX_DAYS_AGO
 )
 
 item3 = Item(
-    URL('https://example.org/item3'), 'Item 3', Source(URL('https://source.com/3'), 'so'),
+    URL('https://example.org/item3'), 'Item 3',
+    [Source(URL('https://source.com/3'), 'so')],
     YESTERDAY, YESTERDAY
 )
 
 item4 = Item(
-    URL('https://example.com/item4'), 'Item 4', Source(URL('https://source.com/4'), 'so'),
+    URL('https://example.com/item4'), 'Item 4',
+    [Source(URL('https://source.com/4'), 'so')],
     AN_HOUR_AGO, AN_HOUR_AGO
 )
 
 item5 = Item(
-    URL('https://example.com/item5'), 'Item 5', Source(URL('https://source.com/5'), 'so'),
+    URL('https://example.com/item5'), 'Item 5',
+    [Source(URL('https://source.com/5'), 'so')],
     TODAY, TODAY
 )

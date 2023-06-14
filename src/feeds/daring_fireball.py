@@ -50,7 +50,7 @@ class DaringFireball(Site):
         return Item(
             url=url,
             title=entry.title,
-            source=Source(url, self.initials),
+            sources=[Source(url, self.initials)],
             created=now,
             modified=now,
         )

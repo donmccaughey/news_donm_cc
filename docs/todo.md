@@ -1,5 +1,6 @@
 # To Do
 
+- improved error message for 308 Permanent Redirect status from feed
 - `Item` supports multiple sources
   - in `News.add_new()`, call `update_item()` when an incoming item is already in `unique_items`
   - add `News.sources` property to replace `News.show_source`, filters out same site source
@@ -10,6 +11,8 @@
     (e.g. count > 3 for hn & r, any count for blogs)
   - add `visible` property to `Item` that aggregates `visible` flags from `Source`s
   - add `visible_items` property to `News` to iterate over visible items
+- remove support for single source from `Item.decode()`
+- better "JSON" type for `encode()`/`decode()` than `dict[str, str] | str]` 
 - update item title when item changes
   - keep a history of item titles
 - about page

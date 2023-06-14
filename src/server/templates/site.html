@@ -11,9 +11,9 @@
             <a href={{item.url|href|safe}} rel=noreferrer target=_blank>{{item.title}}</a>
             <p>
                 {{item.url.identity}}
-                {% if item.source.url != item.url %}
+                {% if item.show_source %}
                 —
-                <a href={{item.source.url|href|safe}} rel=noreferrer target=_blank>{{item.source.site_id}}</a>
+                <a href={{item.sources[0].url|href|safe}} rel=noreferrer target=_blank>{{item.sources[0].site_id}}</a>
                 {% endif %}
                 —
                 <time datetime={{item.created|iso}}>{{item.created|utc}}</time>

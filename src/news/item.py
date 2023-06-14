@@ -15,13 +15,13 @@ class Item:
     def __init__(self,
                  url: URL,
                  title: str,
-                 source: Source,
+                 sources: list[Source],
                  created: datetime | None = None,
                  modified: datetime | None = None,
                  ):
         self.url = url.clean().rewrite()
         self.title = title
-        self.source = source
+        self.sources = sources
 
         now = datetime.now(timezone.utc)
         self.created = created if created else now
@@ -36,21 +36,25 @@ class Item:
         return hash(self.url)
 
     def __repr__(self) -> str:
-        return f"Item({repr(self.url)}, '{self.title}', {repr(self.source)})"
+        return f"Item({repr(self.url)}, '{self.title}', {repr(self.sources)})"
 
     def __str__(self) -> str:
         return f'"{self.title}" ({self.url})'
 
     @property
     def show_source(self) -> bool:
-        return self.url != self.source.url
+        return self.sources and self.url != self.sources[0].url
 
     @staticmethod
     def decode(encoded: dict[str, dict[str, str] | str]) -> 'Item':
+        if 'sources' in encoded:
+            sources = encoded['sources']
+        else:
+            sources = [encoded['source']]
         return Item(
             url=URL(encoded['url']),
             title=encoded['title'],
-            source=Source.decode(encoded['source']),
+            sources=[Source.decode(source) for source in sources],
             created=datetime.fromisoformat(encoded['created']),
             modified=datetime.fromisoformat(encoded['modified']),
         )
@@ -59,7 +63,7 @@ class Item:
         return {
             'url': str(self.url),
             'title': self.title,
-            'source': self.source.encode(),
+            'sources': [source.encode() for source in self.sources],
             'created': datetime.isoformat(self.created),
             'modified': datetime.isoformat(self.modified),
         }

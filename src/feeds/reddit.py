@@ -39,7 +39,7 @@ class Reddit(Site):
         return Item(
             url=url,
             title=entry.title,
-            source=Source(source, site_id),
+            sources=[Source(source, site_id)],
             created=now,
             modified=now,
         )

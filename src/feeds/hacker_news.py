@@ -33,7 +33,7 @@ class HackerNews(Site):
         return Item(
             url=URL(entry.link),
             title=html.unescape(entry.title),
-            source=Source(URL(entry.comments), self.initials),
+            sources=[Source(URL(entry.comments), self.initials)],
             created=now,
             modified=now,
         )

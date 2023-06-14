@@ -18,7 +18,7 @@ class Lobsters(Site):
         return Item(
             url=URL(entry.link),
             title=entry.title,
-            source=Source(URL(entry.comments), self.initials),
+            sources=[Source(URL(entry.comments), self.initials)],
             created=now,
             modified=now,
         )
