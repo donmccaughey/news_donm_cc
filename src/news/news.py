@@ -107,9 +107,13 @@ class News:
 
     @staticmethod
     def decode(encoded: dict[str, Any]) -> 'News':
-        items = encoded['items']
+        items = [Item.decode(item) for item in encoded['items']]
+        for item in items:
+            for source in item.sources:
+                if source.site_id == 'tn':
+                    source.site_id = '~n'
         return News(
-            items=[Item.decode(item) for item in items],
+            items=items,
             created=datetime.fromisoformat(encoded['created']),
             modified=datetime.fromisoformat(encoded['modified']),
         )
