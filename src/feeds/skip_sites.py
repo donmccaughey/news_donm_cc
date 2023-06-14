@@ -38,7 +38,9 @@ SKIP_SITES = [
     'noahpinion.blog',
     'nplusonemag.com',
     'nybooks.com',
+    'nypost.com',
 
+    'openculture.com',
     'openthemagazine.com',
 
     'paulgraham.com',
