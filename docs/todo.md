@@ -1,7 +1,17 @@
 # To Do
 
-- should Reddit site initials show the subreddit?
+- `Item` supports multiple sources
+  - in `News.add_new()`, call `update_item()` when an incoming item is already in `unique_items`
+  - add `News.sources` property to replace `News.show_source`, filters out same site source
+  - show list of source site ids on news pages
+- support filtering out items that only appear briefly 
+  - `Source` supports a count of times it's been seen and a `visible` flag
+  - subclass `Source` to calculate `visible` based on source site criteria
+    (e.g. count > 3 for hn & r, any count for blogs)
+  - add `visible` property to `Item` that aggregates `visible` flags from `Source`s
+  - add `visible_items` property to `News` to iterate over visible items
 - update item title when item changes
+  - keep a history of item titles
 - about page
 - medium blog post
   - https://blog.medium.com/now-you-can-embed-mastodon-posts-in-medium-stories-99b11d0baa7f
@@ -44,7 +54,6 @@
 - ENV variable to control logging level
 - link rewriting
   - cnn to https://lite.cnn.com/en
-  - https://www.nytimes.com/timeswire
   - https://youtubetranscript.com
   - https://threadreaderapp.com
   - pay walls to https://archive.ph

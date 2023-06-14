@@ -2,6 +2,19 @@ from .source import Source
 from .url import URL
 
 
+def test_eq_and_hash():
+    source1 = Source(URL('https://source.com/1'), 'so')
+    source1_dup = Source(URL('https://source.com/1'), 'so')
+    source2 = Source(URL('https://source.com/2'), 'so')
+    alt_source = Source(URL('https://alt-source.com/1'), 'as')
+
+    assert source1 == source1_dup
+    assert hash(source1) == hash(source1_dup)
+
+    assert source1 != source2
+    assert source1 != alt_source
+
+
 def test_source_cleans_url():
     source = Source(
         URL('https://queue.acm.org/detail.cfm?id=2898444&utm_source=daringfireball&utm_campaign=df2023'),
