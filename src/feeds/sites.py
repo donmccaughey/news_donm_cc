@@ -5,6 +5,7 @@ from .acoup import Acoup
 from .charity_wtf import CharityWTF
 from .daring_fireball import DaringFireball
 from .hacker_news import HackerNews
+from .lobsters import Lobsters
 from .reddit import Reddit
 from .rust_blog import RustBlog
 from .site import Site
@@ -19,6 +20,7 @@ class Sites:
             CharityWTF(options),
             DaringFireball(options),
             HackerNews(options),
+            Lobsters(options),
             Reddit(options),
             RustBlog(options),
             Streetsblog(options),

@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lobsters</title>
+    <description></description>
+    <link>https://lobste.rs/</link>
+    <atom:link href="https://lobste.rs/rss" rel="self" type="application/rss+xml" />
+
+      <item>
+        <title>I booted Linux 292,612 times</title>
+        <link>https://rwmj.wordpress.com/2023/06/14/i-booted-linux-292612-times/</link>
+        <guid isPermaLink="false">https://lobste.rs/s/h8c2kq</guid>
+        <author>raymii@users.lobste.rs (raymii)</author>
+        <pubDate>Wed, 14 Jun 2023 08:54:28 -0500</pubDate>
+        <comments>https://lobste.rs/s/h8c2kq/i_booted_linux_292_612_times</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/h8c2kq/i_booted_linux_292_612_times&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>linux</category>
+      </item>
+      <item>
+        <title>Learning modern compilers?</title>
+        <link>https://lobste.rs/s/zqa4cc/learning_modern_compilers</link>
+        <guid isPermaLink="false">https://lobste.rs/s/zqa4cc</guid>
+        <author>vector_spaces@users.lobste.rs (vector_spaces)</author>
+        <pubDate>Wed, 14 Jun 2023 10:03:26 -0500</pubDate>
+        <comments>https://lobste.rs/s/zqa4cc/learning_modern_compilers</comments>
+        <description>
+          &#60;p&#62;There was a video a few years ago where Anders Hejlsberg (of C#, TypeScript, Turbo Pascal, and Delphi fame, among others) discussed modern compiler architecture and how it&#8217;s vastly different from what is taught in university compiler courses, or even in recent books on compilers and language implementation&#60;/p&#62;&#10;&#60;p&#62;&#60;a href=&#34;https://www.youtube.com/watch?v=wSdV1M7n4gQ&#34; rel=&#34;ugc&#34;&#62;https://www.youtube.com/watch?v=wSdV1M7n4gQ&#60;/a&#62;&#60;/p&#62;&#10;&#60;p&#62;Specifically, he talks about the Roslyn compiler and how it utilizes a more service oriented architecture, so that, for example, developer tooling can get information about the state of the actual parse tree used by the compiler in real time without forcing a full recompile.&#60;/p&#62;&#10;&#60;p&#62;I recall also that within the last year or so on Hacker News, someone who worked on compilers in industry commented on a thread about compilers that it was hard to hire people because of how vastly different compiler implementation is in practice vs what&#8217;s taught in university courses.&#60;/p&#62;&#10;&#60;p&#62;Anyway, writing to see if anyone else agrees with the last comment, and if any workers in compilers (whether in academia or industry) have any suggestions for how someone can get up to speed on new developments in this field outside of reading the Roslyn source code.&#60;/p&#62;&#10;&#60;ul&#62;&#10;&#60;li&#62;Are there particular papers that have been especially important to recent developments?&#60;/li&#62;&#10;&#60;li&#62;Other than Roslyn, are there any other well known or less well known open source projects one could study?&#60;/li&#62;&#10;&#60;li&#62;Somewhat orthogonal to the last two questions, is &#8220;programming language theory&#8221; (e.g. denotational semantics, abstract interpretation, type theory, lambda calculus, Floyd-Hoare logic, and other more abstract topics) relevant to the practice of modern compiler construction and worth learning? Or is this stuff mostly a distraction? Referring to this sort of material [1]&#60;/li&#62;&#10;&#60;/ul&#62;&#10;&#60;p&#62;[1] &#60;a href=&#34;https://steshaw.org/plt/&#34; rel=&#34;ugc&#34;&#62;https://steshaw.org/plt/&#60;/a&#62;&#60;/p&#62;&#10;
+        </description>
+          <category>ask</category>
+          <category>compilers</category>
+          <category>plt</category>
+      </item>
+      <item>
+        <title>It&#39;s dangerous to go alone, `pub` `mod` `use` this.rs</title>
+        <link>https://www.schneems.com/2023/06/14/its-dangerous-to-go-alone-pub-mod-use-thisrs/</link>
+        <guid isPermaLink="false">https://lobste.rs/s/e3lj0p</guid>
+        <author>schneems@users.lobste.rs (schneems)</author>
+        <pubDate>Wed, 14 Jun 2023 09:21:23 -0500</pubDate>
+        <comments>https://lobste.rs/s/e3lj0p/it_s_dangerous_go_alone_pub_mod_use_this_rs</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/e3lj0p/it_s_dangerous_go_alone_pub_mod_use_this_rs&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>rust</category>
+      </item>
+      <item>
+        <title>Eltanin - An OS project and a Linux distro (Glacies)</title>
+        <link>http://eltaninos.org/en/blog/2023-05-07-00</link>
+        <guid isPermaLink="false">https://lobste.rs/s/xxxezb</guid>
+        <author>eadwardus@users.lobste.rs (eadwardus)</author>
+        <pubDate>Wed, 14 Jun 2023 07:59:28 -0500</pubDate>
+        <comments>https://lobste.rs/s/xxxezb/eltanin_os_project_linux_distro_glacies</comments>
+        <description>
+          &#60;p&#62;The mentioned distro has recently achieved more stable grounds, see &#60;a href=&#34;http://eltaninos.org/en/blog/2023-06-12-00&#34; rel=&#34;ugc&#34;&#62;2023-04-19-00&#60;/a&#62;.&#60;/p&#62;&#10;
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/xxxezb/eltanin_os_project_linux_distro_glacies&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>linux</category>
+          <category>osdev</category>
+      </item>
+      <item>
+        <title>Appsmith&#39;s Deployment Architecture</title>
+        <link>https://www.appsmith.com/blog/appsmith-deployment-architecture</link>
+        <guid isPermaLink="false">https://lobste.rs/s/e58dqr</guid>
+        <author>mohanarpit@users.lobste.rs (mohanarpit)</author>
+        <pubDate>Wed, 14 Jun 2023 09:17:23 -0500</pubDate>
+        <comments>https://lobste.rs/s/e58dqr/appsmith_s_deployment_architecture</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/e58dqr/appsmith_s_deployment_architecture&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>scaling</category>
+          <category>practices</category>
+      </item>
+      <item>
+        <title>&#8220;Clearly predatory&#8221;: Western Digital sparks panic, anger for age-shaming HDDs [after 3 years uptime]</title>
+        <link>https://arstechnica.com/gadgets/2023/06/clearly-predatory-western-digital-sparks-panic-anger-for-age-shaming-hdds/</link>
+        <guid isPermaLink="false">https://lobste.rs/s/iudmph</guid>
+        <author>indrora@users.lobste.rs (indrora)</author>
+        <pubDate>Tue, 13 Jun 2023 12:40:58 -0500</pubDate>
+        <comments>https://lobste.rs/s/iudmph/clearly_predatory_western_digital</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/iudmph/clearly_predatory_western_digital&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>hardware</category>
+      </item>
+      <item>
+        <title>Digg&#39;s v4 launch: an optimism born of necessity</title>
+        <link>https://lethain.com/digg-v4/</link>
+        <guid isPermaLink="false">https://lobste.rs/s/oonovp</guid>
+        <author>WilhelmVonWeiner@users.lobste.rs (WilhelmVonWeiner)</author>
+        <pubDate>Wed, 14 Jun 2023 09:40:22 -0500</pubDate>
+        <comments>https://lobste.rs/s/oonovp/digg_s_v4_launch_optimism_born_necessity</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/oonovp/digg_s_v4_launch_optimism_born_necessity&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>python</category>
+          <category>practices</category>
+      </item>
+      <item>
+        <title>Rewriting the Ruby parser</title>
+        <link>https://railsatscale.com/2023-06-12-rewriting-the-ruby-parser/</link>
+        <guid isPermaLink="false">https://lobste.rs/s/1y78kf</guid>
+        <author>offby1@users.lobste.rs (offby1)</author>
+        <pubDate>Tue, 13 Jun 2023 11:22:30 -0500</pubDate>
+        <comments>https://lobste.rs/s/1y78kf/rewriting_ruby_parser</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/1y78kf/rewriting_ruby_parser&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>ruby</category>
+          <category>programming</category>
+          <category>compilers</category>
+      </item>
+      <item>
+        <title>State of screen reading on desktop Linux</title>
+        <link>https://samthursfield.wordpress.com/2023/06/07/state-of-screen-reading-reading-on-desktop-linux/</link>
+        <guid isPermaLink="false">https://lobste.rs/s/hbjsyg</guid>
+        <author>gioele@users.lobste.rs (gioele)</author>
+        <pubDate>Wed, 14 Jun 2023 02:42:18 -0500</pubDate>
+        <comments>https://lobste.rs/s/hbjsyg/state_screen_reading_on_desktop_linux</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/hbjsyg/state_screen_reading_on_desktop_linux&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>a11y</category>
+      </item>
+      <item>
+        <title>WASI socket extensions for Go 1.21</title>
+        <link>https://github.com/stealthrocket/net</link>
+        <guid isPermaLink="false">https://lobste.rs/s/ymnile</guid>
+        <author>aroussel@users.lobste.rs (aroussel)</author>
+        <pubDate>Tue, 13 Jun 2023 15:19:05 -0500</pubDate>
+        <comments>https://lobste.rs/s/ymnile/wasi_socket_extensions_for_go_1_21</comments>
+        <description>
+          &#60;p&#62;The WASI preview 1 specification was missing socket APIs so some WebAssembly runtimes added extensions to allow applications to do more than basic file I/O.&#10;This package enables a large class of Go programs (almost any program doing networking) to run when compiled to WebAssembly using the WASI preview 1 spec. It exposes functions similar to net.Dial and net.Listen that can be used to leverage the socket extensions thanks to the new //go:wasmimport compiler directive.&#60;/p&#62;&#10;&#60;p&#62;It also has a set of examples of how to use popular Go packages when compiling to GOOS=wasip1.&#60;/p&#62;&#10;&#60;p&#62;Contributions and feedback are welcome, give it a try and let us know what you think!&#60;/p&#62;&#10;
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/ymnile/wasi_socket_extensions_for_go_1_21&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>go</category>
+          <category>wasm</category>
+      </item>
+      <item>
+        <title>A Gentle Introduction to Graph Neural Networks (2021)</title>
+        <link>https://distill.pub/2021/gnn-intro/</link>
+        <guid isPermaLink="false">https://lobste.rs/s/kzgl7z</guid>
+        <author>river@users.lobste.rs (river)</author>
+        <pubDate>Wed, 14 Jun 2023 05:17:08 -0500</pubDate>
+        <comments>https://lobste.rs/s/kzgl7z/gentle_introduction_graph_neural</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/kzgl7z/gentle_introduction_graph_neural&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>math</category>
+          <category>ai</category>
+      </item>
+      <item>
+        <title>Set theoretic typing for Elixir - demo</title>
+        <link>https://typex.fly.dev</link>
+        <guid isPermaLink="false">https://lobste.rs/s/n4hqy2</guid>
+        <author>hauleth@users.lobste.rs (hauleth)</author>
+        <pubDate>Wed, 14 Jun 2023 05:15:30 -0500</pubDate>
+        <comments>https://lobste.rs/s/n4hqy2/set_theoretic_typing_for_elixir_demo</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/n4hqy2/set_theoretic_typing_for_elixir_demo&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>elixir</category>
+          <category>plt</category>
+      </item>
+      <item>
+        <title>It&#39;s great that you provide operator overloads, but it&#39;s also nice to have names</title>
+        <link>https://devblogs.microsoft.com/oldnewthing/20230605-00/?p=108289</link>
+        <guid isPermaLink="false">https://lobste.rs/s/uuayrc</guid>
+        <author>raymii@users.lobste.rs (raymii)</author>
+        <pubDate>Tue, 13 Jun 2023 13:23:41 -0500</pubDate>
+        <comments>https://lobste.rs/s/uuayrc/it_s_great_you_provide_operator_overloads</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/uuayrc/it_s_great_you_provide_operator_overloads&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>c++</category>
+      </item>
+      <item>
+        <title>[Pre-PATCH] Overhaul of the LaTeX preview system - Timothy</title>
+        <link>https://list.orgmode.org/87lek2up0w.fsf@tec.tecosaur.net/</link>
+        <guid isPermaLink="false">https://lobste.rs/s/5kiumr</guid>
+        <author>Kchousos@users.lobste.rs (Kchousos)</author>
+        <pubDate>Wed, 14 Jun 2023 09:36:43 -0500</pubDate>
+        <comments>https://lobste.rs/s/5kiumr/pre_patch_overhaul_latex_preview_system</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/5kiumr/pre_patch_overhaul_latex_preview_system&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>emacs</category>
+      </item>
+      <item>
+        <title>End-to-end Tracing</title>
+        <link>https://www.canva.dev/blog/engineering/end-to-end-tracing/</link>
+        <guid isPermaLink="false">https://lobste.rs/s/dhm20r</guid>
+        <author>serce@users.lobste.rs (serce)</author>
+        <pubDate>Tue, 13 Jun 2023 23:13:33 -0500</pubDate>
+        <comments>https://lobste.rs/s/dhm20r/end_end_tracing</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/dhm20r/end_end_tracing&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>performance</category>
+      </item>
+      <item>
+        <title>FishFuzz: Catch Deeper Bugs by Throwing Larger Nets</title>
+        <link>https://nebelwelt.net/publications/files/23SEC5.pdf</link>
+        <guid isPermaLink="false">https://lobste.rs/s/cuxs9f</guid>
+        <author>teymour@users.lobste.rs (teymour)</author>
+        <pubDate>Wed, 14 Jun 2023 03:07:02 -0500</pubDate>
+        <comments>https://lobste.rs/s/cuxs9f/fishfuzz_catch_deeper_bugs_by_throwing</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/cuxs9f/fishfuzz_catch_deeper_bugs_by_throwing&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>pdf</category>
+          <category>testing</category>
+      </item>
+      <item>
+        <title>Anti-Personas</title>
+        <link>http://ignorethecode.net/blog/2023/06/13/anti_personas/</link>
+        <guid isPermaLink="false">https://lobste.rs/s/wlf4r5</guid>
+        <author>carlmjohnson@users.lobste.rs (carlmjohnson)</author>
+        <pubDate>Tue, 13 Jun 2023 15:46:01 -0500</pubDate>
+        <comments>https://lobste.rs/s/wlf4r5/anti_personas</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/wlf4r5/anti_personas&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>design</category>
+      </item>
+      <item>
+        <title>How to implement dependent type theory I (2012)</title>
+        <link>https://math.andrej.com/2012/11/08/how-to-implement-dependent-type-theory-i/</link>
+        <guid isPermaLink="false">https://lobste.rs/s/z6uewd</guid>
+        <author>5d22b@users.lobste.rs (5d22b)</author>
+        <pubDate>Tue, 13 Jun 2023 23:08:04 -0500</pubDate>
+        <comments>https://lobste.rs/s/z6uewd/how_implement_dependent_type_theory_i</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/z6uewd/how_implement_dependent_type_theory_i&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>ml</category>
+          <category>compilers</category>
+          <category>plt</category>
+      </item>
+      <item>
+        <title>Qt for MCUs 2.5 LTS released</title>
+        <link>https://www.qt.io/blog/qt-for-mcus-2.5-lts-released</link>
+        <guid isPermaLink="false">https://lobste.rs/s/ebqrnx</guid>
+        <author>raymii@users.lobste.rs (raymii)</author>
+        <pubDate>Wed, 14 Jun 2023 08:57:32 -0500</pubDate>
+        <comments>https://lobste.rs/s/ebqrnx/qt_for_mcus_2_5_lts_released</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/ebqrnx/qt_for_mcus_2_5_lts_released&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>release</category>
+          <category>c++</category>
+      </item>
+      <item>
+        <title>Why not tell people to &#34;simply&#34; use pyenv, poetry or anaconda</title>
+        <link>https://bitecode.substack.com/p/why-not-tell-people-to-simply-use</link>
+        <guid isPermaLink="false">https://lobste.rs/s/vtghvu</guid>
+        <author>BiteCode@users.lobste.rs (BiteCode)</author>
+        <pubDate>Mon, 12 Jun 2023 10:31:52 -0500</pubDate>
+        <comments>https://lobste.rs/s/vtghvu/why_not_tell_people_simply_use_pyenv</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/vtghvu/why_not_tell_people_simply_use_pyenv&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>python</category>
+      </item>
+      <item>
+        <title>radio on the tv</title>
+        <link>https://computer.rip/2023-06-12-radio-on-the-tv.html</link>
+        <guid isPermaLink="false">https://lobste.rs/s/r6hqv9</guid>
+        <author>unlobito@users.lobste.rs (unlobito)</author>
+        <pubDate>Tue, 13 Jun 2023 13:31:07 -0500</pubDate>
+        <comments>https://lobste.rs/s/r6hqv9/radio_on_tv</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/r6hqv9/radio_on_tv&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>historical</category>
+      </item>
+      <item>
+        <title>A simple hash table in C</title>
+        <link>https://theleo.zone/posts/hashmap-in-c/</link>
+        <guid isPermaLink="false">https://lobste.rs/s/hwhuvh</guid>
+        <author>robinovitch61@users.lobste.rs (robinovitch61)</author>
+        <pubDate>Mon, 12 Jun 2023 17:48:14 -0500</pubDate>
+        <comments>https://lobste.rs/s/hwhuvh/simple_hash_table_c</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/hwhuvh/simple_hash_table_c&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>c</category>
+          <category>compsci</category>
+      </item>
+      <item>
+        <title>Porting FSR 2 to OpenGL</title>
+        <link>https://juandiegomontoya.github.io/porting_fsr2.html</link>
+        <guid isPermaLink="false">https://lobste.rs/s/ahc31s</guid>
+        <author>jussi@users.lobste.rs (jussi)</author>
+        <pubDate>Tue, 13 Jun 2023 16:09:46 -0500</pubDate>
+        <comments>https://lobste.rs/s/ahc31s/porting_fsr_2_opengl</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/ahc31s/porting_fsr_2_opengl&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>graphics</category>
+      </item>
+      <item>
+        <title>GHC Language Extensions Compatibility</title>
+        <link>http://ghcaniuse.damianfral.com/</link>
+        <guid isPermaLink="false">https://lobste.rs/s/il0zix</guid>
+        <author>puffnfresh@users.lobste.rs (puffnfresh)</author>
+        <pubDate>Tue, 13 Jun 2023 05:18:09 -0500</pubDate>
+        <comments>https://lobste.rs/s/il0zix/ghc_language_extensions_compatibility</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/il0zix/ghc_language_extensions_compatibility&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>haskell</category>
+      </item>
+      <item>
+        <title>Stack Overflow Developer Survey 2023</title>
+        <link>https://survey.stackoverflow.co/2023/</link>
+        <guid isPermaLink="false">https://lobste.rs/s/rpt0cg</guid>
+        <author>toastal@users.lobste.rs (toastal)</author>
+        <pubDate>Tue, 13 Jun 2023 09:17:47 -0500</pubDate>
+        <comments>https://lobste.rs/s/rpt0cg/stack_overflow_developer_survey_2023</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/rpt0cg/stack_overflow_developer_survey_2023&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>programming</category>
+          <category>culture</category>
+      </item>
+  </channel>
+</rss>
