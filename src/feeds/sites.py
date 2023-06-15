@@ -3,6 +3,7 @@ from typing import Iterable
 
 from .acoup import Acoup
 from .charity_wtf import CharityWTF
+from .cmake_tags import CMakeTags
 from .daring_fireball import DaringFireball
 from .hacker_news import HackerNews
 from .lobsters import Lobsters
@@ -18,6 +19,7 @@ class Sites:
         self.sites = [
             Acoup(options),
             CharityWTF(options),
+            CMakeTags(options),
             DaringFireball(options),
             HackerNews(options),
             Lobsters(options),
