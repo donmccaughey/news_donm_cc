@@ -53,7 +53,7 @@ class Site:
         if 'status' not in d:
             log.warning(f'{self.name} failed without status code')
             return News()
-        if d.status in [200, 302]:
+        if d.status in [200, 302]:  # OK, Found
             if 'etag' in d:
                 self.etag = d.etag
             if 'modified' in d:
@@ -63,7 +63,11 @@ class Site:
                 created=now,
                 modified=now,
             )
-        elif d.status == 304:
+        elif d.status in [301, 308]:  # Moved Permanently, Permanent Redirect
+            location = f': {d.href}' if 'href' in d else ''
+            log.warning(f'{self.name} returned status code {d.status}{location}')
+            return News()
+        elif d.status == 304:  # Not Modified
             return News()
         else:
             log.warning(f'{self.name} returned status code {d.status}')

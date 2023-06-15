@@ -130,18 +130,20 @@ def test_is_recent_is_missing():
 
 
 class FakeFeedParserDict:
-    def __init__(self, status):
+    def __init__(self, status, href=None):
         self.entries = []
         if status:
             self.status = status
+        if href:
+            self.href = href
 
     def __contains__(self, item):
         return hasattr(self, item)
 
 
-def make_parse_function(status):
+def make_parse_function(status, href=None):
     def fake_parse(*args, **kwargs):
-        return FakeFeedParserDict(status=status)
+        return FakeFeedParserDict(status=status, href=href)
     return fake_parse
 
 
@@ -182,6 +184,18 @@ def test_get_for_304_status(monkeypatch):
     news = site.get(datetime.now(timezone.utc))
 
     assert len(news) is 0
+
+
+def test_get_for_308_status(caplog, monkeypatch):
+    parse_function = make_parse_function(status=308, href='https://example.com/redirect')
+    monkeypatch.setattr('feeds.site.parse', parse_function)
+
+    site = Site(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
+    news = site.get(datetime.now(timezone.utc))
+
+    assert len(news) is 0
+    assert len(caplog.messages) is 1
+    assert caplog.messages[0] == 'Hacker News returned status code 308: https://example.com/redirect'
 
 
 def test_get_for_other_status(caplog, monkeypatch):

@@ -12,6 +12,7 @@
   - add `visible` property to `Item` that aggregates `visible` flags from `Source`s
   - add `visible_items` property to `News` to iterate over visible items
 - remove support for single source from `Item.decode()`
+- remove "tn" -> "~n" conversion code from `News.decode()`
 - better "JSON" type for `encode()`/`decode()` than `dict[str, str] | str]` 
 - update item title when item changes
   - keep a history of item titles
