@@ -69,6 +69,21 @@ def test_str_and_repr():
     assert repr(item) == "Item(URL('https://example.com/1'), 'Item 1', [Source(URL('https://source.com/1'), 'so')])"
 
 
+def test_has_source():
+    source = Source(URL('https://source.com/1'), 'so')
+    source_dup = Source(URL('https://source.com/1'), 'so')
+    alt_source = Source(URL('https://alt-source.com/2'), 'alt')
+    item = Item(
+        URL('https://example.com/1'),
+        'Item 1',
+        [source],
+    )
+
+    assert item.has_source(source)
+    assert item.has_source(source_dup)
+    assert not item.has_source(alt_source)
+
+
 def test_show_source():
     item1 = Item(
         URL('https://example.com/1'),

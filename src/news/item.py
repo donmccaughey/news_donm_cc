@@ -42,6 +42,9 @@ class Item:
     def __str__(self) -> str:
         return f'"{self.title}" ({self.url})'
 
+    def has_source(self, source: Source) -> bool:
+        return source in self.sources
+
     @property
     def show_source(self) -> bool:
         return self.sources and self.url != self.sources[0].url
