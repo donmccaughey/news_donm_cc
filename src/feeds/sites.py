@@ -1,6 +1,7 @@
 import json
 from typing import Iterable
 
+from utility.jsontype import JSONList
 from .acoup import Acoup
 from .charity_wtf import CharityWTF
 from .cmake_tags import CMakeTags
@@ -40,7 +41,7 @@ class Sites:
         return f'<Sites: {site_list}>'
 
     @staticmethod
-    def decode(encoded: list[dict[str, str]], options: dict) -> 'Sites':
+    def decode(encoded: JSONList, options: dict) -> 'Sites':
         sites = Sites(options)
         index = {str(site.feed_url): site for site in sites}
         for encoded_site in encoded:
@@ -50,7 +51,7 @@ class Sites:
                 site.last_modified = encoded_site.get('last_modified')
         return sites
 
-    def encode(self) -> list[dict[str, str]]:
+    def encode(self) -> JSONList:
         return [site.encode() for site in self.sites]
 
     @staticmethod

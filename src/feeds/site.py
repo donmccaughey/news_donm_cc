@@ -1,11 +1,12 @@
 import calendar
 import logging
 from datetime import datetime, timezone
-from typing import Any
 
 from feedparser import FeedParserDict, parse
 
 from news import LIFETIME, Item, News, Source, URL
+from utility.jsontype import JSONDict
+
 
 log = logging.getLogger(__name__)
 
@@ -24,7 +25,7 @@ class Site:
     def __str__(self) -> str:
         return str(self.name)
 
-    def encode(self) -> dict[str, Any]:
+    def encode(self) -> JSONDict:
         encoded = {
             'feed_url': str(self.feed_url),
             'name': self.name,

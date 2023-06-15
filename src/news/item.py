@@ -1,6 +1,7 @@
 from datetime import datetime, timezone
 from enum import Enum
 
+from utility.jsontype import JSONDict
 from .source import Source
 from .url import URL
 
@@ -46,7 +47,7 @@ class Item:
         return self.sources and self.url != self.sources[0].url
 
     @staticmethod
-    def decode(encoded: dict[str, dict[str, str] | str]) -> 'Item':
+    def decode(encoded: JSONDict) -> 'Item':
         if 'sources' in encoded:
             sources = encoded['sources']
         else:
@@ -59,7 +60,7 @@ class Item:
             modified=datetime.fromisoformat(encoded['modified']),
         )
 
-    def encode(self) -> dict[str, str]:
+    def encode(self) -> JSONDict:
         return {
             'url': str(self.url),
             'title': self.title,

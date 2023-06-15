@@ -2,8 +2,9 @@ import json
 
 from collections import defaultdict
 from datetime import datetime, timedelta, timezone
-from typing import Iterable, Any, Tuple
+from typing import Iterable
 
+from utility.jsontype import JSONDict
 from .item import Age, Item
 
 
@@ -87,7 +88,7 @@ class News:
             self.update_ages()
         return old_count
 
-    def update(self, other: 'News') -> Tuple[int, int]:
+    def update(self, other: 'News') -> tuple[int, int]:
         new_count, modified_count = 0, 0
         new_items = [item for item in other if item not in self.unique_items]
         if new_items:
@@ -108,7 +109,7 @@ class News:
             i += 1
 
     @staticmethod
-    def decode(encoded: dict[str, Any]) -> 'News':
+    def decode(encoded: JSONDict) -> 'News':
         items = [Item.decode(item) for item in encoded['items']]
         for item in items:
             for source in item.sources:
@@ -120,7 +121,7 @@ class News:
             modified=datetime.fromisoformat(encoded['modified']),
         )
 
-    def encode(self) -> dict[str, Any]:
+    def encode(self) -> JSONDict:
         return {
             'items': [item.encode() for item in self.ordered_items],
             'created': datetime.isoformat(self.created),

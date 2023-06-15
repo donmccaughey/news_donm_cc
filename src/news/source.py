@@ -1,3 +1,4 @@
+from utility.jsontype import JSONDict
 from .url import URL
 
 
@@ -20,13 +21,13 @@ class Source:
         return f"Source({repr(self.url)}, '{self.site_id}')"
 
     @staticmethod
-    def decode(encoded: dict[str, str]) -> 'Source':
+    def decode(encoded: JSONDict) -> 'Source':
         return Source(
             url=URL(encoded['url']),
             site_id=encoded['site_id'],
         )
 
-    def encode(self) -> dict[str, str]:
+    def encode(self) -> JSONDict:
         return {
             'url': str(self.url),
             'site_id': self.site_id,

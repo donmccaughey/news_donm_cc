@@ -13,10 +13,11 @@
   - add `visible_items` property to `News` to iterate over visible items
 - remove support for single source from `Item.decode()`
 - remove "tn" -> "~n" conversion code from `News.decode()`
-- better "JSON" type for `encode()`/`decode()` than `dict[str, str] | str]` 
 - update item title when item changes
   - keep a history of item titles
 - about page
+- in `Sites.decode()`, implement `Site.decode()` and add a way to update
+    each sites in the `Site.sites` list
 - medium blog post
   - https://blog.medium.com/now-you-can-embed-mastodon-posts-in-medium-stories-99b11d0baa7f
 - AWS site
