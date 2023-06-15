@@ -18,10 +18,10 @@ def test_str_and_repr():
     assert repr(news) == '<News: 3 items, modified>'
 
 
-def test_add_new():
+def test_update():
     news = News()
 
-    new_count = news.add_new(News([item1, item2]))
+    new_count = news.update(News([item1, item2]))
 
     assert new_count == 2
     assert news.is_modified
@@ -30,37 +30,37 @@ def test_add_new():
     assert news.by_site == {'example.com': [item1], 'example.net': [item2]}
 
 
-def test_add_new_updates_item_age():
+def test_update_sets_item_age():
     news = News(modified=YESTERDAY)
 
     assert item4.age == Age.UNKNOWN
     assert item4.modified == AN_HOUR_AGO
 
-    news.add_new(News([item4], modified=AN_HOUR_AGO))
+    news.update(News([item4], modified=AN_HOUR_AGO))
 
     assert news.is_modified
     assert news.modified == AN_HOUR_AGO
     assert item4.age == Age.NEW
 
-    news.add_new(News([item5], modified=TODAY))
+    news.update(News([item5], modified=TODAY))
 
     assert item4.age == Age.OLD
     assert item5.age == Age.NEW
 
 
-def test_add_new_for_empty():
+def test_update_for_empty():
     news = News()
 
-    new_count = news.add_new(News())
+    new_count = news.update(News())
 
     assert new_count == 0
     assert not news.is_modified
 
 
-def test_add_new_for_all_duplicates():
+def test_update_for_all_duplicates():
     news = News([item1, item2, item3, item4])
 
-    new_count = news.add_new(News([item1, item2]))
+    new_count = news.update(News([item1, item2]))
 
     assert new_count == 0
     assert not news.is_modified
@@ -72,10 +72,10 @@ def test_add_new_for_all_duplicates():
         }
 
 
-def test_add_new_for_some_duplicates():
+def test_update_for_some_duplicates():
     news = News([item1, item3, item4])
 
-    new_count = news.add_new(News([item1, item2]))
+    new_count = news.update(News([item1, item2]))
 
     assert new_count == 1
     assert news.is_modified
@@ -176,13 +176,13 @@ def test_remove_old_when_all_expired():
     assert news.by_site == {}
 
 
-def test_remove_old_and_add_new_duplicate_item():
+def test_remove_old_and_update_for_duplicate_item():
     news = News([item3, item2, item1_old], modified=AN_HOUR_AGO, lifetime=FIVE_DAYS)
     old_count = news.remove_old(TODAY)
 
     assert old_count == 1
 
-    new_count = news.add_new(News([item1]))
+    new_count = news.update(News([item1]))
 
     assert new_count == 1
     assert len(news) == 3

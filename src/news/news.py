@@ -58,16 +58,6 @@ class News:
             self.ordered_items.append(item)
         self.by_site[item.url.identity].append(item)
 
-    def add_new(self, other: 'News') -> int:
-        new_items = [item for item in other if item not in self.unique_items]
-        if new_items:
-            self.modified = other.modified
-            self.is_modified = True
-            self.update_ages()
-            for item in reversed(new_items):
-                self.add_item(item, at_head=True)
-        return len(new_items)
-
     @property
     def expired(self) -> datetime:
         return self.modified - self.lifetime
@@ -96,6 +86,16 @@ class News:
         if self.is_modified:
             self.update_ages()
         return old_count
+
+    def update(self, other: 'News') -> int:
+        new_items = [item for item in other if item not in self.unique_items]
+        if new_items:
+            self.modified = other.modified
+            self.is_modified = True
+            self.update_ages()
+            for item in reversed(new_items):
+                self.add_item(item, at_head=True)
+        return len(new_items)
 
     def update_ages(self):
         i = 0

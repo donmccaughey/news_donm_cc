@@ -1,6 +1,6 @@
 # To Do
 
-- improved error message for 308 Permanent Redirect status from feed
+- change `LIFETIME` to 15 days
 - `Item` supports multiple sources
   - in `News.add_new()`, call `update_item()` when an incoming item is already in `unique_items`
   - add `News.sources` property to replace `News.show_source`, filters out same site source

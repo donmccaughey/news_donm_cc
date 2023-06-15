@@ -55,7 +55,7 @@ def main():
     now = datetime.now(timezone.utc)
     new_count = 0
     for site in sites:
-        new_count += news.add_new(site.get(now))
+        new_count += news.update(site.get(now))
 
     old_count = news.remove_old(now)
 
