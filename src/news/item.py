@@ -30,7 +30,7 @@ class Item:
         self.age = Age.UNKNOWN
 
     def __eq__(self, other: 'Item') -> bool:
-        return self.url == other.url
+        return isinstance(other, Item) and self.url == other.url
 
     def __hash__(self) -> int:
         return hash(self.url)

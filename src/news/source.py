@@ -7,7 +7,11 @@ class Source:
         self.site_id = site_id
 
     def __eq__(self, other: 'Source') -> bool:
-        return self.site_id == other.site_id and self.url == other.url
+        return (
+            isinstance(other, Source)
+            and self.site_id == other.site_id
+            and self.url == other.url
+        )
 
     def __hash__(self) -> int:
         return hash((self.url, self.site_id))

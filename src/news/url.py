@@ -16,7 +16,7 @@ class URL:
         return URL(urlunsplit((scheme, netloc, path, query, fragment)))
 
     def __eq__(self, other: 'URL') -> bool:
-        return self.url == other.url
+        return isinstance(other, URL) and self.url == other.url
 
     def __hash__(self) -> int:
         return hash(self.url)
