@@ -87,6 +87,21 @@ def test_update_for_some_duplicates():
     assert list(news) == [item2, item1, item3, item4]
 
 
+def test_update_for_existing_item_from_new_source():
+    news = News([item1])
+
+    new_count, modified_count = news.update(News([item1_alt_source]))
+
+    assert new_count == 0
+    assert modified_count == 1
+    assert news.is_modified
+    assert len(news) == 1
+    assert news.by_site == {'example.com': [item1]}
+    assert len(news.ordered_items[0].sources) == 2
+    assert news.ordered_items[0].has_source(item1.sources[0])
+    assert news.ordered_items[0].has_source(item1_alt_source.sources[0])
+
+
 def test_remove_old_when_empty():
     news = News(modified=AN_HOUR_AGO, lifetime=FIVE_DAYS)
 
@@ -215,6 +230,12 @@ item1_old = Item(
     URL('https://example.com/item1'), 'Item 1 Old',
     [Source(URL('https://source.com/1'), 'so')],
     SEVEN_DAYS_AGO, SEVEN_DAYS_AGO
+)
+
+item1_alt_source = Item(
+    URL('https://example.com/item1'), 'Item 1',
+    [Source(URL('https://alt-source.com/2'), 'alt')],
+    TODAY, TODAY
 )
 
 item2 = Item(

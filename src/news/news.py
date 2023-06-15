@@ -115,7 +115,10 @@ class News:
             i += 1
 
     def update_item(self, item: Item):
-        pass
+        existing = self.unique_items[item]
+        for source in item.sources:
+            if not existing.has_source(source):
+                existing.sources.append(source)
 
     @staticmethod
     def decode(encoded: JSONDict) -> 'News':
