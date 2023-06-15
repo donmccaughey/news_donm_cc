@@ -20,14 +20,11 @@ class Source:
         return f"Source({repr(self.url)}, '{self.site_id}')"
 
     @staticmethod
-    def decode(encoded: dict[str, str] | str) -> 'Source':
-        match encoded:
-            case dict():
-                return Source(URL(encoded['url']), encoded['site_id'])
-            case str():
-                return Source(URL(encoded), 'hn')
-            case _:
-                raise RuntimeError(repr(encoded))
+    def decode(encoded: dict[str, str]) -> 'Source':
+        return Source(
+            url=URL(encoded['url']),
+            site_id=encoded['site_id'],
+        )
 
     def encode(self) -> dict[str, str]:
         return {
