@@ -46,8 +46,11 @@ class Item:
         return source in self.sources
 
     @property
-    def show_source(self) -> bool:
-        return self.sources and self.url != self.sources[0].url
+    def other_sources(self) -> list[Source]:
+        return sorted(
+            [source for source in self.sources if self.url != source.url],
+            key=lambda source: source.site_id,
+        )
 
     @staticmethod
     def decode(encoded: JSONDict) -> 'Item':

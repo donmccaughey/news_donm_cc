@@ -1,10 +1,8 @@
 # To Do
 
 - change `LIFETIME` to 15 days
-- `Item` supports multiple sources
-  - in `News.add_new()`, call `update_item()` when an incoming item is already in `unique_items`
-  - add `News.sources` property to replace `News.show_source`, filters out same site source
-  - show list of source site ids on news pages
+- `News` object is now frequently `modified` due to item updating and 
+    news page "new item" bar doesn't work as intended
 - support filtering out items that only appear briefly 
   - `Source` supports a count of times it's been seen and a `visible` flag
   - subclass `Source` to calculate `visible` based on source site criteria

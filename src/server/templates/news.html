@@ -24,10 +24,10 @@
             <a href={{item.url|href|safe}} rel=noreferrer target=_blank>{{item.title}}</a>
             <p>
                 <a href=./site/{{item.url.identity}} rel=noreferrer>{{item.url.identity}}</a>
-                {% if item.show_source %}
+                {% for source in item.other_sources %}
                 —
-                <a href={{item.sources[0].url|href|safe}} rel=noreferrer target=_blank>{{item.sources[0].site_id}}</a>
-                {% endif %}
+                <a href={{source.url|href|safe}} rel=noreferrer target=_blank>{{source.site_id}}</a>
+                {% endfor %}
                 —
                 <time datetime={{item.created|iso}}>{{item.created|utc}}</time>
     {% endfor %}

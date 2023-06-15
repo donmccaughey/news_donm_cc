@@ -84,14 +84,14 @@ def test_has_source():
     assert not item.has_source(alt_source)
 
 
-def test_show_source():
+def test_other_sources():
     item1 = Item(
         URL('https://example.com/1'),
         'Item 1',
         [Source(URL('https://source.com/1'), 'so')],
     )
 
-    assert item1.show_source
+    assert len(item1.other_sources) == 1
 
     item2 = Item(
         URL('https://example.com/2'),
@@ -99,7 +99,7 @@ def test_show_source():
         [Source(URL('https://example.com/2'), 'so')],
     )
 
-    assert not item2.show_source
+    assert len(item2.other_sources) == 0
 
 
 def test_decode_from_source():
