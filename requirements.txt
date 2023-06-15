@@ -1,5 +1,5 @@
 beautifulsoup4 == 4.12.2
-boto3==1.26.142
+boto3==1.26.153
 feedparser == 6.0.10
 Flask==2.3.2
 gunicorn == 20.1.0
