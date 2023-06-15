@@ -2,7 +2,7 @@ import json
 
 from collections import defaultdict
 from datetime import datetime, timedelta, timezone
-from typing import Iterable, Any
+from typing import Iterable, Any, Tuple
 
 from .item import Age, Item
 
@@ -87,7 +87,8 @@ class News:
             self.update_ages()
         return old_count
 
-    def update(self, other: 'News') -> int:
+    def update(self, other: 'News') -> Tuple[int, int]:
+        new_count, modified_count = 0, 0
         new_items = [item for item in other if item not in self.unique_items]
         if new_items:
             self.modified = other.modified
@@ -95,7 +96,8 @@ class News:
             self.update_ages()
             for item in reversed(new_items):
                 self.add_item(item, at_head=True)
-        return len(new_items)
+                new_count += 1
+        return new_count, modified_count
 
     def update_ages(self):
         i = 0

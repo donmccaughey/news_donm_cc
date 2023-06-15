@@ -21,9 +21,10 @@ def test_str_and_repr():
 def test_update():
     news = News()
 
-    new_count = news.update(News([item1, item2]))
+    new_count, modified_count = news.update(News([item1, item2]))
 
     assert new_count == 2
+    assert modified_count == 0
     assert news.is_modified
     assert len(news) == 2
     assert list(news) == [item1, item2]
@@ -51,18 +52,20 @@ def test_update_sets_item_age():
 def test_update_for_empty():
     news = News()
 
-    new_count = news.update(News())
+    new_count, modified_count = news.update(News())
 
     assert new_count == 0
+    assert modified_count == 0
     assert not news.is_modified
 
 
 def test_update_for_all_duplicates():
     news = News([item1, item2, item3, item4])
 
-    new_count = news.update(News([item1, item2]))
+    new_count, modified_count = news.update(News([item1, item2]))
 
     assert new_count == 0
+    assert modified_count == 0
     assert not news.is_modified
     assert len(news) == 4
     assert news.by_site == {
@@ -75,9 +78,10 @@ def test_update_for_all_duplicates():
 def test_update_for_some_duplicates():
     news = News([item1, item3, item4])
 
-    new_count = news.update(News([item1, item2]))
+    new_count, modified_count = news.update(News([item1, item2]))
 
     assert new_count == 1
+    assert modified_count == 0
     assert news.is_modified
     assert len(news) == 4
     assert list(news) == [item2, item1, item3, item4]
@@ -182,9 +186,10 @@ def test_remove_old_and_update_for_duplicate_item():
 
     assert old_count == 1
 
-    new_count = news.update(News([item1]))
+    new_count, modified_count = news.update(News([item1]))
 
     assert new_count == 1
+    assert modified_count == 0
     assert len(news) == 3
 
 

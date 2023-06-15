@@ -53,11 +53,13 @@ def main():
         news_cache.put(news.to_json())
 
     now = datetime.now(timezone.utc)
-    new_count = 0
+    new_total, modified_total = 0, 0
     for site in sites:
-        new_count += news.update(site.get(now))
+        new_count, modified_count = news.update(site.get(now))
+        new_total += new_count
+        modified_total += modified_count
 
-    old_count = news.remove_old(now)
+    old_total = news.remove_old(now)
 
     if news.is_modified:
         json = news.to_json()
@@ -66,9 +68,9 @@ def main():
 
     sites_cache.put(sites.to_json())
 
-    message = f'Added {new_count} and removed {old_count} items.'
-    log.info(message)
+    message = f'Added {new_total}, removed {old_total} and modified {modified_total} items.'
 
+    log.info(message)
     last_extraction_path = options.cache_dir / LAST_EXTRACTION_FILE
     last_extraction_path.write_text(f'{iso(now)} {message}\n')
 
