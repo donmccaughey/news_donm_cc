@@ -65,8 +65,8 @@ def test_update_for_all_duplicates():
     new_count, modified_count = news.update(News([item1, item2]))
 
     assert new_count == 0
-    assert modified_count == 0
-    assert not news.is_modified
+    assert modified_count == 2
+    assert news.is_modified
     assert len(news) == 4
     assert news.by_site == {
             'example.com': [item1, item4],
@@ -81,7 +81,7 @@ def test_update_for_some_duplicates():
     new_count, modified_count = news.update(News([item1, item2]))
 
     assert new_count == 1
-    assert modified_count == 0
+    assert modified_count == 1
     assert news.is_modified
     assert len(news) == 4
     assert list(news) == [item2, item1, item3, item4]

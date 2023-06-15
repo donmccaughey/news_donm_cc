@@ -19,8 +19,8 @@ class News:
                  modified: datetime | None = None,
                  lifetime: timedelta | None = LIFETIME,
                  ):
-        self.ordered_items = list()
-        self.unique_items = dict()
+        self.ordered_items: list[Item] = list()
+        self.unique_items: dict[Item, Item] = dict()
         self.by_site = defaultdict(list)
 
         now = datetime.now(timezone.utc)
@@ -89,16 +89,22 @@ class News:
         return old_count
 
     def update(self, other: 'News') -> tuple[int, int]:
-        new_count, modified_count = 0, 0
-        new_items = [item for item in other if item not in self.unique_items]
-        if new_items:
+        new_items, existing_items = [], []
+        for item in other:
+            if item in self.unique_items:
+                existing_items.append(item)
+            else:
+                new_items.append(item)
+        if new_items or existing_items:
             self.modified = other.modified
             self.is_modified = True
             self.update_ages()
-            for item in reversed(new_items):
-                self.add_item(item, at_head=True)
-                new_count += 1
-        return new_count, modified_count
+        for new_item in reversed(new_items):
+            self.add_item(new_item, at_head=True)
+        for existing_item in existing_items:
+            self.update_item(existing_item)
+            pass
+        return len(new_items), len(existing_items)
 
     def update_ages(self):
         i = 0
@@ -107,6 +113,9 @@ class News:
                 Age.NEW if self.modified == self.ordered_items[i].modified else Age.OLD
             )
             i += 1
+
+    def update_item(self, item: Item):
+        pass
 
     @staticmethod
     def decode(encoded: JSONDict) -> 'News':
