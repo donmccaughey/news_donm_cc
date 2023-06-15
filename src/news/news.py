@@ -19,7 +19,7 @@ class News:
                  lifetime: timedelta | None = LIFETIME,
                  ):
         self.ordered_items = list()
-        self.unique_items = set()
+        self.unique_items = dict()
         self.by_site = defaultdict(list)
 
         now = datetime.now(timezone.utc)
@@ -51,7 +51,7 @@ class News:
 
     def add_item(self, item: Item, *, at_head: bool):
         item.age = Age.NEW if self.modified == item.modified else Age.OLD
-        self.unique_items.add(item)
+        self.unique_items[item] = item
         if at_head:
             self.ordered_items.insert(0, item)
         else:
@@ -76,7 +76,7 @@ class News:
         item = self.ordered_items[i]
         identity = item.url.identity
 
-        self.unique_items.remove(item)
+        del self.unique_items[item]
 
         self.by_site[identity].remove(item)
         if not self.by_site[identity]:
