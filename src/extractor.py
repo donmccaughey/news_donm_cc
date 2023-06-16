@@ -61,10 +61,9 @@ def main():
 
     old_total = news.remove_old(now)
 
-    if news.is_modified:
-        json = news.to_json()
-        news_cache.put(json)
-        store.put(json)
+    json = news.to_json()
+    news_cache.put(json)
+    store.put(json)
 
     sites_cache.put(sites.to_json())
 

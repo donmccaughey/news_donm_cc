@@ -27,7 +27,6 @@ class News:
         self.created = created or now
         self.modified = modified or now
         self.lifetime = lifetime
-        self.is_modified = False
 
         for item in (items or []):
             self.add_item(item, at_head=False)
@@ -39,12 +38,10 @@ class News:
         return len(self.ordered_items)
 
     def __repr__(self) -> str:
-        modified = ', modified' if self.is_modified else ''
-        return f'<News: {len(self.ordered_items)} items{modified}>'
+        return f'<News: {len(self.ordered_items)} items>'
 
     def __str__(self) -> str:
-        modified = ' (modified)' if self.is_modified else ''
-        return f'{len(self.ordered_items)} news items{modified}'
+        return f'{len(self.ordered_items)} news items'
 
     @property
     def items(self) -> list[Item]:
@@ -81,11 +78,9 @@ class News:
         while i >= 0 and self.ordered_items[i].created <= self.expired:
             self.remove_item_at(i)
             self.modified = now
-            self.is_modified = True
             old_count += 1
             i -= 1
-        if self.is_modified:
-            self.update_ages()
+        self.update_ages()
         return old_count
 
     def update(self, other: 'News') -> tuple[int, int]:
@@ -97,7 +92,6 @@ class News:
                 new_items.append(item)
         if new_items or existing_items:
             self.modified = other.modified
-            self.is_modified = True
             self.update_ages()
         for new_item in reversed(new_items):
             self.add_item(new_item, at_head=True)
