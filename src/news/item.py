@@ -33,15 +33,15 @@ class Item:
     def __str__(self) -> str:
         return f'"{self.title}" ({self.url})'
 
-    def has_source(self, source: Source) -> bool:
-        return source in self.sources
-
     @property
     def other_sources(self) -> list[Source]:
         return sorted(
             [source for source in self.sources if self.url != source.url],
             key=lambda source: source.site_id,
         )
+
+    def has_source(self, source: Source) -> bool:
+        return source in self.sources
 
     @staticmethod
     def decode(encoded: JSONDict) -> 'Item':

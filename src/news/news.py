@@ -44,6 +44,10 @@ class News:
         return f'{len(self.ordered_items)} news items'
 
     @property
+    def expired(self) -> datetime:
+        return self.modified - self.lifetime
+
+    @property
     def items(self) -> list[Item]:
         return self.ordered_items
 
@@ -54,10 +58,6 @@ class News:
         else:
             self.ordered_items.append(item)
         self.by_site[item.url.identity].append(item)
-
-    @property
-    def expired(self) -> datetime:
-        return self.modified - self.lifetime
 
     def remove_item_at(self, i: int):
         item = self.ordered_items[i]
