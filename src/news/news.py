@@ -5,7 +5,7 @@ from datetime import datetime, timedelta, timezone
 from typing import Iterable
 
 from utility.jsontype import JSONDict
-from .item import Age, Item
+from .item import Item
 
 
 LIFETIME = timedelta(days=15)
@@ -48,7 +48,6 @@ class News:
         return self.ordered_items
 
     def add_item(self, item: Item, *, at_head: bool):
-        item.age = Age.NEW if self.modified == item.modified else Age.OLD
         self.unique_items[item] = item
         if at_head:
             self.ordered_items.insert(0, item)
@@ -80,7 +79,6 @@ class News:
             self.modified = now
             old_count += 1
             i -= 1
-        self.update_ages()
         return old_count
 
     def update(self, other: 'News') -> tuple[int, int]:
@@ -92,21 +90,12 @@ class News:
                 new_items.append(item)
         if new_items or existing_items:
             self.modified = other.modified
-            self.update_ages()
         for new_item in reversed(new_items):
             self.add_item(new_item, at_head=True)
         for existing_item in existing_items:
             self.update_item(existing_item)
             pass
         return len(new_items), len(existing_items)
-
-    def update_ages(self):
-        i = 0
-        while i < len(self.ordered_items) and self.ordered_items[i].age == Age.NEW:
-            self.ordered_items[i].age = (
-                Age.NEW if self.modified == self.ordered_items[i].modified else Age.OLD
-            )
-            i += 1
 
     def update_item(self, item: Item):
         existing = self.unique_items[item]

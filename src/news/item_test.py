@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from .item import Age, Item
+from .item import Item
 from .source import Source
 from .url import URL
 
@@ -120,7 +120,6 @@ def test_decode_from_source():
     assert item.title == 'Item 1'
     assert item.sources[0].url == URL('https://source.com/1')
     assert item.sources[0].site_id == 'so'
-    assert item.age == Age.UNKNOWN
 
 
 def test_decode_from_sources():
@@ -150,7 +149,6 @@ def test_decode_from_sources():
     assert item.sources[0].site_id == 'so'
     assert item.sources[1].url == URL('https://alt-source.com/2')
     assert item.sources[1].site_id == 'alt'
-    assert item.age == Age.UNKNOWN
 
 
 def test_encode():

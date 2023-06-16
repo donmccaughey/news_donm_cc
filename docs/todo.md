@@ -2,6 +2,8 @@
 
 - `News` object is now frequently `modified` due to item updating and 
     news page "new item" bar doesn't work as intended
+    drop `Item.age` for now and rethink
+    drop the `age` filter that sets the `new` CSS class
 - support filtering out items that only appear briefly 
   - `Source` supports a count of times it's been seen and a `visible` flag
   - subclass `Source` to calculate `visible` based on source site criteria

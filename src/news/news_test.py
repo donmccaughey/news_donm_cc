@@ -1,6 +1,6 @@
 from datetime import datetime, timedelta, timezone
 
-from .item import Age, Item
+from .item import Item
 from .news import News
 from .source import Source
 from .url import URL
@@ -23,23 +23,6 @@ def test_update():
     assert len(news) == 2
     assert list(news) == [item1, item2]
     assert news.by_site == {'example.com': [item1], 'example.net': [item2]}
-
-
-def test_update_sets_item_age():
-    news = News(modified=YESTERDAY)
-
-    assert item4.age == Age.UNKNOWN
-    assert item4.modified == AN_HOUR_AGO
-
-    news.update(News([item4], modified=AN_HOUR_AGO))
-
-    assert news.modified == AN_HOUR_AGO
-    assert item4.age == Age.NEW
-
-    news.update(News([item5], modified=TODAY))
-
-    assert item4.age == Age.OLD
-    assert item5.age == Age.NEW
 
 
 def test_update_for_empty():

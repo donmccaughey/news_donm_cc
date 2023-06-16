@@ -1,15 +1,8 @@
 from datetime import datetime, timezone
-from enum import Enum
 
 from utility.jsontype import JSONDict
 from .source import Source
 from .url import URL
-
-
-class Age(Enum):
-    UNKNOWN = 0
-    NEW = 1
-    OLD = 2
 
 
 class Item:
@@ -27,8 +20,6 @@ class Item:
         now = datetime.now(timezone.utc)
         self.created = created if created else now
         self.modified = modified if modified else now
-
-        self.age = Age.UNKNOWN
 
     def __eq__(self, other: 'Item') -> bool:
         return isinstance(other, Item) and self.url == other.url

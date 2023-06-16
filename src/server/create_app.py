@@ -6,7 +6,7 @@ from flask import Flask
 from news import CACHE_DIR, NEWS_FILE
 from utility import Cache, iso, utc
 from .error_handlers import not_found
-from .template_filters import age, href
+from .template_filters import href
 from .utility import get_version
 from .views import first_page, numbered_page, site_page
 
@@ -37,7 +37,6 @@ def create_app() -> Flask:
         methods=['GET']
     )
 
-    app.add_template_filter(age)
     app.add_template_filter(href)
     app.add_template_filter(iso)
     app.add_template_filter(utc)
