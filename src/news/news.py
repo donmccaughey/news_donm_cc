@@ -8,7 +8,7 @@ from utility.jsontype import JSONDict
 from .item import Age, Item
 
 
-LIFETIME = timedelta(days=30)
+LIFETIME = timedelta(days=15)
 
 
 class News:

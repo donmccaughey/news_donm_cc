@@ -67,8 +67,8 @@ def test_is_recent_published_now():
     assert site.is_entry_recent(d.entries[0], now)
 
 
-def test_is_recent_published_29_days_ago():
-    now = datetime.fromisoformat('2023-01-31T05:34:20+00:00')
+def test_is_recent_published_14_days_ago():
+    now = datetime.fromisoformat('2023-01-16T05:34:20+00:00')
     ago = datetime.fromisoformat('2023-01-02T05:34:20+00:00')
     pub_date = utils.format_datetime(ago)
     feed = f'''
@@ -89,8 +89,8 @@ def test_is_recent_published_29_days_ago():
     assert site.is_entry_recent(d.entries[0], now)
 
 
-def test_is_recent_published_30_days_ago():
-    now = datetime.fromisoformat('2023-01-31T05:34:20+00:00')
+def test_is_recent_published_15_days_ago():
+    now = datetime.fromisoformat('2023-01-16T05:34:20+00:00')
     ago = datetime.fromisoformat('2023-01-01T05:34:20+00:00')
     pub_date = utils.format_datetime(ago)
     feed = f'''
