@@ -232,3 +232,65 @@ def test_parse_entries():
 
     assert len(items) == 1
     assert items[0].title == 'Valid entry'
+
+
+def test_decode_without_etag_and_last_modified():
+    encoded = {
+        'feed_url': 'https://example.com/feed',
+        'name': 'Example',
+        'initials': 'ex',
+    }
+
+    feed = Feed.decode(encoded)
+
+    assert feed.feed_url == URL('https://example.com/feed')
+    assert feed.name == 'Example'
+    assert feed.initials == 'ex'
+    assert feed.etag is None
+    assert feed.last_modified is None
+
+
+def test_decode_with_etag_and_last_modified():
+    encoded = {
+        'feed_url': 'https://example.com/feed',
+        'name': 'Example',
+        'initials': 'ex',
+        'etag': 'W/"647aab77-10117"',
+        'last_modified': 'Sat, 03 Jun 2023 02:54:47 GMT',
+    }
+
+    feed = Feed.decode(encoded)
+
+    assert feed.feed_url == URL('https://example.com/feed')
+    assert feed.name == 'Example'
+    assert feed.initials == 'ex'
+    assert feed.etag == 'W/"647aab77-10117"'
+    assert feed.last_modified == 'Sat, 03 Jun 2023 02:54:47 GMT'
+
+
+def test_encode_without_etag_and_last_modified():
+    feed = Feed(URL('https://example.com/feed'), 'Example', 'ex')
+
+    encoded = feed.encode()
+
+    assert encoded['feed_url'] == 'https://example.com/feed'
+    assert encoded['name'] == 'Example'
+    assert encoded['initials'] == 'ex'
+    assert 'etag' not in encoded
+    assert 'last_modified' not in encoded
+
+
+def test_encode_with_etag_and_last_modified():
+    feed = Feed(
+        URL('https://example.com/feed'), 'Example', 'ex',
+        etag='W/"647aab77-10117"',
+        last_modified='Sat, 03 Jun 2023 02:54:47 GMT',
+    )
+
+    encoded = feed.encode()
+
+    assert encoded['feed_url'] == 'https://example.com/feed'
+    assert encoded['name'] == 'Example'
+    assert encoded['initials'] == 'ex'
+    assert encoded['etag'] == 'W/"647aab77-10117"'
+    assert encoded['last_modified'] == 'Sat, 03 Jun 2023 02:54:47 GMT'

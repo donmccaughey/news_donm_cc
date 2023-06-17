@@ -12,30 +12,24 @@ log = logging.getLogger(__name__)
 
 
 class Feed:
-    def __init__(self, feed_url: URL, name: str, initials: str):
+    def __init__(self,
+                 feed_url: URL,
+                 name: str,
+                 initials: str,
+                 etag: str | None = None,
+                 last_modified: str | None = None,
+                 ):
         self.feed_url = feed_url
         self.name = name
         self.initials = initials
-        self.etag = None
-        self.last_modified = None
+        self.etag = etag
+        self.last_modified = last_modified
 
     def __repr__(self) -> str:
         return f"Feed({repr(self.feed_url)}, '{self.name}', '{self.initials}')"
 
     def __str__(self) -> str:
         return str(self.name)
-
-    def encode(self) -> JSONDict:
-        encoded = {
-            'feed_url': str(self.feed_url),
-            'name': self.name,
-            'initials': self.initials,
-        }
-        if self.etag:
-            encoded['etag'] = self.etag
-        if self.last_modified:
-            encoded['last_modified'] = self.last_modified
-        return encoded
 
     def entry_has_keys(self, entry: dict, keys: list[str]) -> bool:
         for key in keys:
@@ -115,3 +109,25 @@ class Feed:
             created=now,
             modified=now,
         )
+
+    @staticmethod
+    def decode(encoded: JSONDict) -> 'Feed':
+        return Feed(
+            feed_url=URL(encoded['feed_url']),
+            name=encoded['name'],
+            initials=encoded['initials'],
+            etag=encoded.get('etag'),
+            last_modified=encoded.get('last_modified'),
+        )
+
+    def encode(self) -> JSONDict:
+        encoded = {
+            'feed_url': str(self.feed_url),
+            'name': self.name,
+            'initials': self.initials,
+        }
+        if self.etag:
+            encoded['etag'] = self.etag
+        if self.last_modified:
+            encoded['last_modified'] = self.last_modified
+        return encoded
