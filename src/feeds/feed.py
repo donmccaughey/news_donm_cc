@@ -25,6 +25,12 @@ class Feed:
         self.etag = etag
         self.last_modified = last_modified
 
+    def __eq__(self, other: 'Feed') -> bool:
+        return isinstance(other, Feed) and self.feed_url == other.feed_url
+
+    def __hash__(self) -> int:
+        return hash(self.feed_url)
+
     def __repr__(self) -> str:
         return f"Feed({repr(self.feed_url)}, '{self.name}', '{self.initials}')"
 

@@ -8,6 +8,17 @@ from news import URL
 from .feed import Feed
 
 
+def test_eq_and_hash():
+    feed1 = Feed(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
+    feed1_dup = Feed(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
+    feed2 = Feed(URL('https://lobste.rs/rss'), 'Lobsters', 'lob')
+
+    assert feed1 == feed1_dup
+    assert hash(feed1) == hash(feed1_dup)
+
+    assert feed1 != feed2
+
+
 def test_str_and_repr():
     feed = Feed(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
 
