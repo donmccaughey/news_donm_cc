@@ -6,9 +6,9 @@ class CMakeTags(Feed):
     def __init__(self, options: dict):
         super().__init__(
             options,
-            URL('https://gitlab.kitware.com/cmake/cmake/-/tags?format=atom'),
             'CMake Tags',
             'cm',
+            URL('https://gitlab.kitware.com/cmake/cmake/-/tags?format=atom')
         )
 
     def __repr__(self) -> str:

@@ -9,9 +9,9 @@ class DaringFireball(Feed):
     def __init__(self, options: dict):
         super().__init__(
             options,
-            URL('https://daringfireball.net/feeds/main'),
             'Daring Fireball',
             'df',
+            URL('https://daringfireball.net/feeds/main')
         )
 
     def __repr__(self) -> str:

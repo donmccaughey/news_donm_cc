@@ -15,9 +15,9 @@ class Reddit(Feed):
     def __init__(self, options: dict):
         super().__init__(
             options,
-            URL(options['reddit_private_rss_feed']),
             'Reddit',
             'r',
+            URL(options['reddit_private_rss_feed']),
         )
 
     def __repr__(self) -> str:

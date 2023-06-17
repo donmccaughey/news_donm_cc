@@ -6,9 +6,9 @@ class CharityWTF(Feed):
     def __init__(self, options: dict):
         super().__init__(
             options,
-            URL('https://charity.wtf/feed/'),
             'charity.wtf',
             'cw',
+            URL('https://charity.wtf/feed/')
         )
 
     def __repr__(self) -> str:

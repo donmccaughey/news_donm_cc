@@ -8,9 +8,9 @@ class TildeNews(Feed):
     def __init__(self, options: dict):
         super().__init__(
             options,
-            URL('https://tilde.news/rss'),
             'tilde.news',
             '~n',
+            URL('https://tilde.news/rss'),
         )
 
     def __repr__(self) -> str:

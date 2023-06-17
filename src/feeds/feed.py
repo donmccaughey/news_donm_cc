@@ -14,9 +14,9 @@ log = logging.getLogger(__name__)
 class Feed:
     def __init__(self,
                  options: dict,
-                 feed_url: URL,
                  name: str,
                  initials: str,
+                 feed_url: URL,
                  etag: str | None = None,
                  last_modified: str | None = None,
                  ):
@@ -128,9 +128,9 @@ class Feed:
     def decode(encoded: JSONDict, options: dict) -> 'Feed':
         return Feed(
             options=options,
-            feed_url=URL(encoded['feed_url']),
             name=encoded['name'],
             initials=encoded['initials'],
+            feed_url=URL(encoded['feed_url']),
             etag=encoded.get('etag'),
             last_modified=encoded.get('last_modified'),
         )

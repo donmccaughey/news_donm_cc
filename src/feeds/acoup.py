@@ -6,9 +6,9 @@ class Acoup(Feed):
     def __init__(self, options: dict):
         super().__init__(
             options,
-            URL('https://acoup.blog/feed/'),
             'A Collection of Unmitigated Pedantry',
             'acoup',
+            URL('https://acoup.blog/feed/')
         )
 
     def __repr__(self) -> str:

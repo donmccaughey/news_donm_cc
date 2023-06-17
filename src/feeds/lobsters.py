@@ -8,9 +8,9 @@ class Lobsters(Feed):
     def __init__(self, options: dict):
         super().__init__(
             options,
-            URL('https://lobste.rs/rss'),
             'Lobsters',
             'lob',
+            URL('https://lobste.rs/rss'),
         )
 
     def __repr__(self) -> str:

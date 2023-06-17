@@ -10,9 +10,9 @@ class HackerNews(Feed):
     def __init__(self, options: dict):
         super().__init__(
             options,
-            URL('https://news.ycombinator.com/rss'),
             'Hacker News',
             'hn',
+            URL('https://news.ycombinator.com/rss'),
         )
 
     def __repr__(self) -> str:

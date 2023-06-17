@@ -6,9 +6,9 @@ class Streetsblog(Feed):
     def __init__(self, options: dict):
         super().__init__(
             options,
-            URL('https://sf.streetsblog.org/feed/'),
             'Streetsblog SF',
             'sb',
+            URL('https://sf.streetsblog.org/feed/'),
         )
 
     def __repr__(self) -> str:
