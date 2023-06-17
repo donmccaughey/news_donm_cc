@@ -44,10 +44,6 @@ class News:
         return f'{len(self.ordered_items)} news items'
 
     @property
-    def expired(self) -> datetime:
-        return self.modified - self.lifetime
-
-    @property
     def items(self) -> list[Item]:
         return self.ordered_items
 
@@ -72,9 +68,10 @@ class News:
         del self.ordered_items[i]
 
     def remove_old(self, now: datetime) -> int:
+        expiration_date = now - self.lifetime
         old_count = 0
         i = len(self.ordered_items) - 1
-        while i >= 0 and self.ordered_items[i].created <= self.expired:
+        while i >= 0 and self.ordered_items[i].created <= expiration_date:
             self.remove_item_at(i)
             self.modified = now
             old_count += 1
@@ -121,7 +118,6 @@ class News:
             'items': [item.encode() for item in self.ordered_items],
             'created': datetime.isoformat(self.created),
             'modified': datetime.isoformat(self.modified),
-            'expired': datetime.isoformat(self.expired),
         }
 
     @staticmethod
