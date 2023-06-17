@@ -14,8 +14,8 @@ class CachedFeeds:
         self.cache = Cache(options.cache_dir / 'feeds.json')
         self.feeds = Feeds.from_json(self.cache.get(), vars(options))
 
-    def __enter__(self):
-        return self
+    def __enter__(self) -> Feeds:
+        return self.feeds
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         self.cache.put(self.feeds.to_json())
@@ -28,12 +28,13 @@ class CachedNews:
             self.store = ReadOnlyStore(self.store)
 
         self.cache = Cache(options.cache_dir / NEWS_FILE)
+
         self.news = News.from_json(
             self.cache.get() or self.store.get() or News().to_json()
         )
 
-    def __enter__(self):
-        return self
+    def __enter__(self) -> News:
+        return self.news
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         json = self.news.to_json()
@@ -70,12 +71,14 @@ def main():
     log = logging.getLogger()
     log.name = Path(__file__).name
 
-    with CachedFeeds(options) as cachedFeeds:
-        with CachedNews(options) as cachedNews:
-            now = datetime.now(timezone.utc)
-            for feed in cachedFeeds.feeds:
-                added_count, modified_count = cachedNews.news.update(feed.get_items(now), now)
-            removed_count = cachedNews.news.remove_old(now)
+    with CachedFeeds(options) as feeds:
+        now = datetime.now(timezone.utc)
+        items = []
+        for feed in feeds:
+            items += feed.get_items(now)
+        with CachedNews(options) as news:
+            added_count, modified_count = news.update(items, now)
+            removed_count = news.remove_old(now)
 
     message = f'Added {added_count}, removed {removed_count} and modified {modified_count} items.'
     log.info(message)
