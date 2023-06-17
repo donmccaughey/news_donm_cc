@@ -4,7 +4,7 @@ from datetime import datetime, timezone
 
 from feedparser import FeedParserDict, parse
 
-from news import LIFETIME, Item, News, Source, URL
+from news import LIFETIME, Item, Source, URL
 from utility.jsontype import JSONDict
 
 
@@ -44,7 +44,7 @@ class Site:
                 return False
         return True
 
-    def get(self, now: datetime) -> News:
+    def get_items(self, now: datetime) -> list[Item]:
         d: FeedParserDict = parse(
             str(self.feed_url),
             etag=self.etag,
@@ -53,26 +53,22 @@ class Site:
         )
         if 'status' not in d:
             log.warning(f'{self.name} failed without status code')
-            return News()
+            return []
         if d.status in [200, 302]:  # OK, Found
             if 'etag' in d:
                 self.etag = d.etag
             if 'modified' in d:
                 self.last_modified = d.modified
-            return News(
-                items=self.parse_entries(d.entries, now),
-                created=now,
-                modified=now,
-            )
+            return self.parse_entries(d.entries, now)
         elif d.status in [301, 308]:  # Moved Permanently, Permanent Redirect
             location = f': {d.href}' if 'href' in d else ''
             log.warning(f'{self.name} returned status code {d.status}{location}')
-            return News()
+            return []
         elif d.status == 304:  # Not Modified
-            return News()
+            return []
         else:
             log.warning(f'{self.name} returned status code {d.status}')
-            return News()
+            return []
 
     def is_entry_recent(self, entry: dict, now: datetime) -> bool:
         time_tuple = (

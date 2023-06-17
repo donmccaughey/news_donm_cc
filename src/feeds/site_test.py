@@ -147,65 +147,65 @@ def make_parse_function(status, href=None):
     return fake_parse
 
 
-def test_get_for_missing_status(caplog, monkeypatch):
+def test_get_items_for_missing_status(caplog, monkeypatch):
     caplog.set_level(logging.WARNING)
     monkeypatch.setattr('feeds.site.parse', make_parse_function(status=None))
 
     site = Site(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
-    news = site.get(datetime.now(timezone.utc))
+    items = site.get_items(datetime.now(timezone.utc))
 
-    assert len(news) is 0
+    assert len(items) is 0
     assert len(caplog.messages) is 1
     assert caplog.messages[0] == 'Hacker News failed without status code'
 
 
-def test_get_for_200_status(monkeypatch):
+def test_get_items_for_200_status(monkeypatch):
     monkeypatch.setattr('feeds.site.parse', make_parse_function(status=200))
 
     site = Site(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
-    news = site.get(datetime.now(timezone.utc))
+    items = site.get_items(datetime.now(timezone.utc))
 
-    assert len(news) is 0
+    assert len(items) is 0
 
 
-def test_get_for_302_status(monkeypatch):
+def test_get_items_for_302_status(monkeypatch):
     monkeypatch.setattr('feeds.site.parse', make_parse_function(status=302))
 
     site = Site(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
-    news = site.get(datetime.now(timezone.utc))
+    items = site.get_items(datetime.now(timezone.utc))
 
-    assert len(news) is 0
+    assert len(items) is 0
 
 
-def test_get_for_304_status(monkeypatch):
+def test_get_items_for_304_status(monkeypatch):
     monkeypatch.setattr('feeds.site.parse', make_parse_function(status=304))
 
     site = Site(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
-    news = site.get(datetime.now(timezone.utc))
+    items = site.get_items(datetime.now(timezone.utc))
 
-    assert len(news) is 0
+    assert len(items) is 0
 
 
-def test_get_for_308_status(caplog, monkeypatch):
+def test_get_items_for_308_status(caplog, monkeypatch):
     parse_function = make_parse_function(status=308, href='https://example.com/redirect')
     monkeypatch.setattr('feeds.site.parse', parse_function)
 
     site = Site(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
-    news = site.get(datetime.now(timezone.utc))
+    items = site.get_items(datetime.now(timezone.utc))
 
-    assert len(news) is 0
+    assert len(items) is 0
     assert len(caplog.messages) is 1
     assert caplog.messages[0] == 'Hacker News returned status code 308: https://example.com/redirect'
 
 
-def test_get_for_other_status(caplog, monkeypatch):
+def test_get_items_for_other_status(caplog, monkeypatch):
     caplog.set_level(logging.WARNING)
     monkeypatch.setattr('feeds.site.parse', make_parse_function(status=500))
 
     site = Site(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
-    news = site.get(datetime.now(timezone.utc))
+    items = site.get_items(datetime.now(timezone.utc))
 
-    assert len(news) is 0
+    assert len(items) is 0
     assert len(caplog.messages) is 1
     assert caplog.messages[0] == 'Hacker News returned status code 500'
 

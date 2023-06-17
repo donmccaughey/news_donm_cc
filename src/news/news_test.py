@@ -16,7 +16,7 @@ def test_str_and_repr():
 def test_update():
     news = News()
 
-    new_count, modified_count = news.update(News([item1, item2]))
+    new_count, modified_count = news.update([item1, item2], NOW)
 
     assert new_count == 2
     assert modified_count == 0
@@ -28,7 +28,7 @@ def test_update():
 def test_update_for_empty():
     news = News()
 
-    new_count, modified_count = news.update(News())
+    new_count, modified_count = news.update([], NOW)
 
     assert new_count == 0
     assert modified_count == 0
@@ -37,7 +37,7 @@ def test_update_for_empty():
 def test_update_for_all_duplicates():
     news = News([item1, item2, item3, item4])
 
-    new_count, modified_count = news.update(News([item1, item2]))
+    new_count, modified_count = news.update([item1, item2], NOW)
 
     assert new_count == 0
     assert modified_count == 2
@@ -52,7 +52,7 @@ def test_update_for_all_duplicates():
 def test_update_for_some_duplicates():
     news = News([item1, item3, item4])
 
-    new_count, modified_count = news.update(News([item1, item2]))
+    new_count, modified_count = news.update([item1, item2], NOW)
 
     assert new_count == 1
     assert modified_count == 1
@@ -63,7 +63,7 @@ def test_update_for_some_duplicates():
 def test_update_for_existing_item_from_new_source():
     news = News([item1])
 
-    new_count, modified_count = news.update(News([item1_alt_source]))
+    new_count, modified_count = news.update([item1_alt_source], NOW)
 
     assert new_count == 0
     assert modified_count == 1
@@ -77,7 +77,7 @@ def test_update_for_existing_item_from_new_source():
 def test_remove_old_when_empty():
     news = News(modified=AN_HOUR_AGO, lifetime=FIVE_DAYS)
 
-    old_count = news.remove_old(TODAY)
+    old_count = news.remove_old(NOW)
 
     assert old_count == 0
     assert news.modified == AN_HOUR_AGO
@@ -87,10 +87,10 @@ def test_remove_old_when_empty():
 def test_remove_old_odd_1():
     news = News([item3, item2, item1_old], modified=AN_HOUR_AGO, lifetime=FIVE_DAYS)
 
-    old_count = news.remove_old(TODAY)
+    old_count = news.remove_old(NOW)
 
     assert old_count == 1
-    assert news.modified == TODAY
+    assert news.modified == NOW
     assert len(news) == 2
     assert news.by_site == {'example.net': [item2], 'example.org': [item3]}
 
@@ -98,10 +98,10 @@ def test_remove_old_odd_1():
 def test_remove_old_odd_2():
     news = News([item3, item2_old, item1_old], modified=AN_HOUR_AGO, lifetime=FIVE_DAYS)
 
-    old_count = news.remove_old(TODAY)
+    old_count = news.remove_old(NOW)
 
     assert old_count == 2
-    assert news.modified == TODAY
+    assert news.modified == NOW
     assert len(news) == 1
     assert news.by_site == {'example.org': [item3]}
 
@@ -109,10 +109,10 @@ def test_remove_old_odd_2():
 def test_remove_old_even_1():
     news = News([item4, item3, item2, item1_old], modified=AN_HOUR_AGO, lifetime=FIVE_DAYS)
 
-    old_count = news.remove_old(TODAY)
+    old_count = news.remove_old(NOW)
 
     assert old_count == 1
-    assert news.modified == TODAY
+    assert news.modified == NOW
     assert len(news) == 3
     assert news.by_site == {
             'example.net': [item2],
@@ -124,10 +124,10 @@ def test_remove_old_even_1():
 def test_remove_old_even_2():
     news = News([item4, item3, item2_old, item1_old], modified=AN_HOUR_AGO, lifetime=FIVE_DAYS)
 
-    old_count = news.remove_old(TODAY)
+    old_count = news.remove_old(NOW)
 
     assert old_count == 2
-    assert news.modified == TODAY
+    assert news.modified == NOW
     assert len(news) == 2
     assert news.by_site == {
             'example.org': [item3],
@@ -138,7 +138,7 @@ def test_remove_old_even_2():
 def test_remove_old_when_none_expired():
     news = News([item3, item2, item1], modified=AN_HOUR_AGO, lifetime=FIVE_DAYS)
 
-    old_count = news.remove_old(TODAY)
+    old_count = news.remove_old(NOW)
 
     assert old_count == 0
     assert news.modified == AN_HOUR_AGO
@@ -152,21 +152,21 @@ def test_remove_old_when_none_expired():
 def test_remove_old_when_all_expired():
     news = News([item2_old, item1_old], modified=AN_HOUR_AGO, lifetime=FIVE_DAYS)
 
-    old_count = news.remove_old(TODAY)
+    old_count = news.remove_old(NOW)
 
     assert old_count == 2
-    assert news.modified == TODAY
+    assert news.modified == NOW
     assert len(news) == 0
     assert news.by_site == {}
 
 
 def test_remove_old_and_update_for_duplicate_item():
     news = News([item3, item2, item1_old], modified=AN_HOUR_AGO, lifetime=FIVE_DAYS)
-    old_count = news.remove_old(TODAY)
+    old_count = news.remove_old(NOW)
 
     assert old_count == 1
 
-    new_count, modified_count = news.update(News([item1]))
+    new_count, modified_count = news.update([item1], NOW)
 
     assert new_count == 1
     assert modified_count == 0
@@ -176,14 +176,14 @@ def test_remove_old_and_update_for_duplicate_item():
 FIVE_DAYS = timedelta(days=5)
 SIX_DAYS = timedelta(days=6)
 
-TODAY = datetime.now(timezone.utc)
-AN_HOUR_AGO = TODAY - timedelta(hours=1)
-YESTERDAY = TODAY - timedelta(days=1)
-TWO_DAYS_AGO = TODAY - timedelta(days=2)
-THREE_DAYS_AGO = TODAY - timedelta(days=3)
+NOW = datetime.now(timezone.utc)
+AN_HOUR_AGO = NOW - timedelta(hours=1)
+YESTERDAY = NOW - timedelta(days=1)
+TWO_DAYS_AGO = NOW - timedelta(days=2)
+THREE_DAYS_AGO = NOW - timedelta(days=3)
 
-SIX_DAYS_AGO = TODAY - timedelta(days=6)
-SEVEN_DAYS_AGO = TODAY - timedelta(days=7)
+SIX_DAYS_AGO = NOW - timedelta(days=6)
+SEVEN_DAYS_AGO = NOW - timedelta(days=7)
 
 item1 = Item(
     URL('https://example.com/item1'), 'Item 1',
@@ -200,7 +200,7 @@ item1_old = Item(
 item1_alt_source = Item(
     URL('https://example.com/item1'), 'Item 1',
     [Source(URL('https://alt-source.com/2'), 'alt')],
-    TODAY, TODAY
+    NOW, NOW
 )
 
 item2 = Item(
@@ -230,5 +230,5 @@ item4 = Item(
 item5 = Item(
     URL('https://example.com/item5'), 'Item 5',
     [Source(URL('https://source.com/5'), 'so')],
-    TODAY, TODAY
+    NOW, NOW
 )

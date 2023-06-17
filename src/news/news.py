@@ -78,7 +78,7 @@ class News:
             i -= 1
         return old_count
 
-    def update(self, other: 'News') -> tuple[int, int]:
+    def update(self, other: list[Item], now: datetime) -> tuple[int, int]:
         new_items, existing_items = [], []
         for item in other:
             if item in self.unique_items:
@@ -86,12 +86,11 @@ class News:
             else:
                 new_items.append(item)
         if new_items or existing_items:
-            self.modified = other.modified
+            self.modified = now
         for new_item in reversed(new_items):
             self.add_item(new_item, at_head=True)
         for existing_item in existing_items:
             self.update_item(existing_item)
-            pass
         return len(new_items), len(existing_items)
 
     def update_item(self, item: Item):
