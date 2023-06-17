@@ -11,7 +11,7 @@ from utility.jsontype import JSONDict
 log = logging.getLogger(__name__)
 
 
-class Site:
+class Feed:
     def __init__(self, feed_url: URL, name: str, initials: str):
         self.feed_url = feed_url
         self.name = name
@@ -20,7 +20,7 @@ class Site:
         self.last_modified = None
 
     def __repr__(self) -> str:
-        return f"Site({repr(self.feed_url)}, '{self.name}', '{self.initials}')"
+        return f"Feed({repr(self.feed_url)}, '{self.name}', '{self.initials}')"
 
     def __str__(self) -> str:
         return str(self.name)

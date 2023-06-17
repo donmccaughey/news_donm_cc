@@ -3,10 +3,10 @@ from datetime import datetime
 
 from news import Item, Source, URL
 from .skip_sites import SKIP_SITES
-from .site import Site
+from .feed import Feed
 
 
-class HackerNews(Site):
+class HackerNews(Feed):
     def __init__(self, _options: dict):
         super().__init__(
             URL('https://news.ycombinator.com/rss'),

@@ -52,8 +52,8 @@ def main():
 
     now = datetime.now(timezone.utc)
     new_total, modified_total = 0, 0
-    for site in feeds:
-        new_count, modified_count = news.update(site.get_items(now), now)
+    for feed in feeds:
+        new_count, modified_count = news.update(feed.get_items(now), now)
         new_total += new_count
         modified_total += modified_count
 

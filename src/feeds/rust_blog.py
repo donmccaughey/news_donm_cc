@@ -1,8 +1,8 @@
 from news import URL
-from .site import Site
+from .feed import Feed
 
 
-class RustBlog(Site):
+class RustBlog(Feed):
     def __init__(self, _options: dict):
         super().__init__(
             URL('https://blog.rust-lang.org/feed.xml'),

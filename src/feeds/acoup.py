@@ -1,8 +1,8 @@
 from news import URL
-from .site import Site
+from .feed import Feed
 
 
-class Acoup(Site):
+class Acoup(Feed):
     def __init__(self, _options: dict):
         super().__init__(
             URL('https://acoup.blog/feed/'),

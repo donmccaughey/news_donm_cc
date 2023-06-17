@@ -1,10 +1,10 @@
 from datetime import datetime
 
 from news import Item, Source, URL
-from .site import Site
+from .feed import Feed
 
 
-class TildeNews(Site):
+class TildeNews(Feed):
     def __init__(self, _options: dict):
         super().__init__(
             URL('https://tilde.news/rss'),

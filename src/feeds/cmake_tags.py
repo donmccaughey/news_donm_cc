@@ -1,8 +1,8 @@
 from news import URL
-from .site import Site
+from .feed import Feed
 
 
-class CMakeTags(Site):
+class CMakeTags(Feed):
     def __init__(self, _options: dict):
         super().__init__(
             URL('https://gitlab.kitware.com/cmake/cmake/-/tags?format=atom'),

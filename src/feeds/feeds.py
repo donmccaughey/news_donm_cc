@@ -10,7 +10,7 @@ from .hacker_news import HackerNews
 from .lobsters import Lobsters
 from .reddit import Reddit
 from .rust_blog import RustBlog
-from .site import Site
+from .feed import Feed
 from .streetsblog import Streetsblog
 from .tilde_news import TildeNews
 
@@ -30,26 +30,26 @@ class Feeds:
             TildeNews(options),
         ]
 
-    def __iter__(self) -> Iterable[Site]:
+    def __iter__(self) -> Iterable[Feed]:
         return iter(self.feeds)
 
     def __len__(self) -> int:
         return len(self.feeds)
 
     def __repr__(self) -> str:
-        site_list = ','.join([repr(site) for site in self.feeds])
-        return f'<Feeds: {site_list}>'
+        feed_list = ','.join([repr(feed) for feed in self.feeds])
+        return f'<Feeds: {feed_list}>'
 
     @staticmethod
     def decode(encoded: JSONList, options: dict) -> 'Feeds':
-        sites = Feeds(options)
-        index = {str(site.feed_url): site for site in sites}
-        for encoded_site in encoded:
-            site = index.get(encoded_site['feed_url'])
-            if site:
-                site.etag = encoded_site.get('etag')
-                site.last_modified = encoded_site.get('last_modified')
-        return sites
+        feeds = Feeds(options)
+        index = {str(feed.feed_url): feed for feed in feeds}
+        for encoded_feed in encoded:
+            feed = index.get(encoded_feed['feed_url'])
+            if feed:
+                feed.etag = encoded_feed.get('etag')
+                feed.last_modified = encoded_feed.get('last_modified')
+        return feeds
 
     def encode(self) -> JSONList:
         return [site.encode() for site in self.feeds]

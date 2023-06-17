@@ -1,10 +1,10 @@
 from datetime import datetime
 
 from news import Item, Source, URL
-from .site import Site
+from .feed import Feed
 
 
-class Lobsters(Site):
+class Lobsters(Feed):
     def __init__(self, _options: dict):
         super().__init__(
             URL('https://lobste.rs/rss'),

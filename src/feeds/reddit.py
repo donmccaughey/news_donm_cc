@@ -5,13 +5,13 @@ from urllib.parse import urlsplit
 
 import bs4
 from .skip_sites import SKIP_SITES
-from .site import Site
+from .feed import Feed
 from news import Item, Source, URL
 
 log = logging.getLogger(__name__)
 
 
-class Reddit(Site):
+class Reddit(Feed):
     def __init__(self, options: dict):
         super().__init__(
             URL(options['reddit_private_rss_feed']),

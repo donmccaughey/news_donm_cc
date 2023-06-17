@@ -5,51 +5,51 @@ from email import utils
 from feedparser import FeedParserDict, parse
 
 from news import URL
-from .site import Site
+from .feed import Feed
 
 
 def test_str_and_repr():
-    site = Site(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
+    feed = Feed(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
 
-    assert str(site) == 'Hacker News'
-    assert repr(site) == "Site(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')"
+    assert str(feed) == 'Hacker News'
+    assert repr(feed) == "Feed(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')"
 
 
 def test_entry_has_keys():
-    site = Site(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
+    feed = Feed(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
     entry = {}
 
-    assert not site.entry_has_keys(entry, ['link', 'title'])
+    assert not feed.entry_has_keys(entry, ['link', 'title'])
 
     entry = {'link': 'https://example.com/stuff'}
 
-    assert not site.entry_has_keys(entry, ['link', 'title'])
+    assert not feed.entry_has_keys(entry, ['link', 'title'])
 
     entry = {'link': 'https://example.com/stuff', 'title': 'Stuff'}
 
-    assert site.entry_has_keys(entry, ['link', 'title'])
+    assert feed.entry_has_keys(entry, ['link', 'title'])
 
 
 def test_is_entry_valid():
-    site = Site(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
+    feed = Feed(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
     entry = {}
 
-    assert not site.is_entry_valid(entry)
+    assert not feed.is_entry_valid(entry)
 
     entry = {'link': 'https://example.com/stuff'}
 
-    assert not site.is_entry_valid(entry)
+    assert not feed.is_entry_valid(entry)
 
     entry = {'link': 'https://example.com/stuff', 'title': 'Stuff'}
 
-    assert site.is_entry_valid(entry)
+    assert feed.is_entry_valid(entry)
 
 
 def test_is_recent_published_now():
     now = datetime.fromisoformat('2023-01-31T05:34:20+00:00')
     ago = now
     pub_date = utils.format_datetime(ago)
-    feed = f'''
+    xml = f'''
     <?xml version="1.0" encoding="UTF-8"?>
     <rss version="2.0">
         <channel>
@@ -61,17 +61,17 @@ def test_is_recent_published_now():
         </channel>
     </rss>
     '''
-    d: FeedParserDict = parse(feed)
-    site = Site(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
+    d: FeedParserDict = parse(xml)
+    feed = Feed(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
 
-    assert site.is_entry_recent(d.entries[0], now)
+    assert feed.is_entry_recent(d.entries[0], now)
 
 
 def test_is_recent_published_14_days_ago():
     now = datetime.fromisoformat('2023-01-16T05:34:20+00:00')
     ago = datetime.fromisoformat('2023-01-02T05:34:20+00:00')
     pub_date = utils.format_datetime(ago)
-    feed = f'''
+    xml = f'''
     <?xml version="1.0" encoding="UTF-8"?>
     <rss version="2.0">
         <channel>
@@ -83,17 +83,17 @@ def test_is_recent_published_14_days_ago():
         </channel>
     </rss>
     '''
-    d: FeedParserDict = parse(feed)
-    site = Site(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
+    d: FeedParserDict = parse(xml)
+    feed = Feed(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
 
-    assert site.is_entry_recent(d.entries[0], now)
+    assert feed.is_entry_recent(d.entries[0], now)
 
 
 def test_is_recent_published_15_days_ago():
     now = datetime.fromisoformat('2023-01-16T05:34:20+00:00')
     ago = datetime.fromisoformat('2023-01-01T05:34:20+00:00')
     pub_date = utils.format_datetime(ago)
-    feed = f'''
+    xml = f'''
     <?xml version="1.0" encoding="UTF-8"?>
     <rss version="2.0">
         <channel>
@@ -105,14 +105,14 @@ def test_is_recent_published_15_days_ago():
         </channel>
     </rss>
     '''
-    d: FeedParserDict = parse(feed)
-    site = Site(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
+    d: FeedParserDict = parse(xml)
+    feed = Feed(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
 
-    assert not site.is_entry_recent(d.entries[0], now)
+    assert not feed.is_entry_recent(d.entries[0], now)
 
 
 def test_is_recent_is_missing():
-    feed = '''
+    xml = '''
     <?xml version="1.0" encoding="UTF-8"?>
     <rss version="2.0">
         <channel>
@@ -123,10 +123,10 @@ def test_is_recent_is_missing():
         </channel>
     </rss>
     '''
-    d: FeedParserDict = parse(feed)
-    site = Site(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
+    d: FeedParserDict = parse(xml)
+    feed = Feed(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
 
-    assert site.is_entry_recent(d.entries[0], datetime.now(timezone.utc))
+    assert feed.is_entry_recent(d.entries[0], datetime.now(timezone.utc))
 
 
 class FakeFeedParserDict:
@@ -149,10 +149,10 @@ def make_parse_function(status, href=None):
 
 def test_get_items_for_missing_status(caplog, monkeypatch):
     caplog.set_level(logging.WARNING)
-    monkeypatch.setattr('feeds.site.parse', make_parse_function(status=None))
+    monkeypatch.setattr('feeds.feed.parse', make_parse_function(status=None))
 
-    site = Site(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
-    items = site.get_items(datetime.now(timezone.utc))
+    feed = Feed(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
+    items = feed.get_items(datetime.now(timezone.utc))
 
     assert len(items) is 0
     assert len(caplog.messages) is 1
@@ -160,38 +160,38 @@ def test_get_items_for_missing_status(caplog, monkeypatch):
 
 
 def test_get_items_for_200_status(monkeypatch):
-    monkeypatch.setattr('feeds.site.parse', make_parse_function(status=200))
+    monkeypatch.setattr('feeds.feed.parse', make_parse_function(status=200))
 
-    site = Site(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
-    items = site.get_items(datetime.now(timezone.utc))
+    feed = Feed(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
+    items = feed.get_items(datetime.now(timezone.utc))
 
     assert len(items) is 0
 
 
 def test_get_items_for_302_status(monkeypatch):
-    monkeypatch.setattr('feeds.site.parse', make_parse_function(status=302))
+    monkeypatch.setattr('feeds.feed.parse', make_parse_function(status=302))
 
-    site = Site(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
-    items = site.get_items(datetime.now(timezone.utc))
+    feed = Feed(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
+    items = feed.get_items(datetime.now(timezone.utc))
 
     assert len(items) is 0
 
 
 def test_get_items_for_304_status(monkeypatch):
-    monkeypatch.setattr('feeds.site.parse', make_parse_function(status=304))
+    monkeypatch.setattr('feeds.feed.parse', make_parse_function(status=304))
 
-    site = Site(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
-    items = site.get_items(datetime.now(timezone.utc))
+    feed = Feed(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
+    items = feed.get_items(datetime.now(timezone.utc))
 
     assert len(items) is 0
 
 
 def test_get_items_for_308_status(caplog, monkeypatch):
     parse_function = make_parse_function(status=308, href='https://example.com/redirect')
-    monkeypatch.setattr('feeds.site.parse', parse_function)
+    monkeypatch.setattr('feeds.feed.parse', parse_function)
 
-    site = Site(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
-    items = site.get_items(datetime.now(timezone.utc))
+    feed = Feed(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
+    items = feed.get_items(datetime.now(timezone.utc))
 
     assert len(items) is 0
     assert len(caplog.messages) is 1
@@ -200,10 +200,10 @@ def test_get_items_for_308_status(caplog, monkeypatch):
 
 def test_get_items_for_other_status(caplog, monkeypatch):
     caplog.set_level(logging.WARNING)
-    monkeypatch.setattr('feeds.site.parse', make_parse_function(status=500))
+    monkeypatch.setattr('feeds.feed.parse', make_parse_function(status=500))
 
-    site = Site(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
-    items = site.get_items(datetime.now(timezone.utc))
+    feed = Feed(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
+    items = feed.get_items(datetime.now(timezone.utc))
 
     assert len(items) is 0
     assert len(caplog.messages) is 1
@@ -211,7 +211,7 @@ def test_get_items_for_other_status(caplog, monkeypatch):
 
 
 def test_parse_entries():
-    feed = '''
+    xml = '''
     <?xml version="1.0" encoding="UTF-8"?>
     <rss version="2.0">
         <channel>
@@ -225,10 +225,10 @@ def test_parse_entries():
         </channel>
     </rss>
     '''
-    d: FeedParserDict = parse(feed)
-    site = Site(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
+    d: FeedParserDict = parse(xml)
+    feed = Feed(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
 
-    items = site.parse_entries(d.entries, datetime.now(timezone.utc))
+    items = feed.parse_entries(d.entries, datetime.now(timezone.utc))
 
     assert len(items) == 1
     assert items[0].title == 'Valid entry'

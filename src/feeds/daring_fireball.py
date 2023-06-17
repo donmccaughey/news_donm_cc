@@ -2,10 +2,10 @@ from datetime import datetime
 from urllib.parse import parse_qsl, urlsplit
 
 from news import Item, Source, URL
-from .site import Site
+from .feed import Feed
 
 
-class DaringFireball(Site):
+class DaringFireball(Feed):
     def __init__(self, _options: dict):
         super().__init__(
             URL('https://daringfireball.net/feeds/main'),

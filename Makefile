@@ -111,11 +111,11 @@ source_files := \
 	src/feeds/charity_wtf.py \
 	src/feeds/cmake_tags.py \
 	src/feeds/daring_fireball.py \
+	src/feeds/feed.py \
 	src/feeds/feeds.py \
 	src/feeds/hacker_news.py \
 	src/feeds/reddit.py \
 	src/feeds/rust_blog.py \
-	src/feeds/site.py \
 	src/feeds/skip_sites.py \
 	src/feeds/streetsblog.py \
 	src/feeds/tilde_news.py \
@@ -153,16 +153,19 @@ source_files := \
 
 test_files := \
 	src/feeds/daring_fireball_test.py \
+	src/feeds/feed_test.py \
 	src/feeds/hacker_news_test.py \
 	src/feeds/reddit_test.py \
-	src/feeds/site_test.py \
 	src/feeds/streetsblog_test.py \
+	\
 	src/health/health_test.py \
+	\
 	src/news/item_test.py \
 	src/news/news_test.py \
 	src/news/source_test.py \
 	src/news/store_test.py \
 	src/news/url_test.py \
+	\
 	src/utility/cache_test.py \
 	src/utility/formats_test.py \
 	src/utility/page_test.py
