@@ -52,7 +52,7 @@ class Feeds:
         return feeds
 
     def encode(self) -> JSONList:
-        return [site.encode() for site in self.feeds]
+        return [feed.encode() for feed in self.feeds]
 
     @staticmethod
     def from_json(s: str, options: dict) -> 'Feeds':
