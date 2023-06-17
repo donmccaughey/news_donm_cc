@@ -1,10 +1,10 @@
-from typing import Iterable
+from typing import Iterable, Iterator
 
 from news import News, Item
 from utility import Cache, Page
 
 
-class NewsPage:
+class NewsPage(Iterable[Item]):
     def __init__(self, news_cache: Cache, version: str, page_number: int):
         self.version = version
 
@@ -34,5 +34,5 @@ class NewsPage:
         else:
             self.previous_url = None
 
-    def __iter__(self) -> Iterable[Item]:
+    def __iter__(self) -> Iterator[Item]:
         return iter(self.page)

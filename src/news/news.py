@@ -2,7 +2,7 @@ import json
 
 from collections import defaultdict
 from datetime import datetime, timedelta, timezone
-from typing import Iterable
+from typing import Iterable, Iterator
 
 from utility.jsontype import JSONDict
 from .item import Item
@@ -11,8 +11,7 @@ from .item import Item
 LIFETIME = timedelta(days=15)
 
 
-class News:
-
+class News(Iterable[Item]):
     def __init__(self,
                  items: list[Item] | None = None,
                  created: datetime | None = None,
@@ -31,7 +30,7 @@ class News:
         for item in (items or []):
             self.add_item(item, at_head=False)
 
-    def __iter__(self) -> Iterable[Item]:
+    def __iter__(self) -> Iterator[Item]:
         return iter(self.ordered_items)
 
     def __len__(self) -> int:

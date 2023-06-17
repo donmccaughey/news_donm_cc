@@ -1,7 +1,7 @@
-from typing import Iterable, Optional
+from typing import Iterable, Optional, Iterator
 
 
-class Page:
+class Page(Iterable):
     def __init__(self, items: list, page_number: int, items_per_page: int):
         self.items = items
         self.items_per_page = items_per_page
@@ -18,7 +18,7 @@ class Page:
 
         self.count = ((items_end - 1) // self.items_per_page) + 1
 
-    def __iter__(self) -> Iterable:
+    def __iter__(self) -> Iterator:
         return iter(self.items[self.begin:self.end])
 
     def __len__(self) -> int:

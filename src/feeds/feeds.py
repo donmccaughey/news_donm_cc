@@ -1,5 +1,5 @@
 import json
-from typing import Iterable
+from typing import Iterable, Iterator
 
 from news import URL
 from utility.jsontype import JSONList
@@ -16,11 +16,11 @@ from .streetsblog import Streetsblog
 from .tilde_news import TildeNews
 
 
-class Feeds:
+class Feeds(Iterable[Feed]):
     def __init__(self, feeds: list[Feed] | None = None):
         self.feeds: dict[Feed, Feed] = {feed: feed for feed in feeds} if feeds else {}
 
-    def __iter__(self) -> Iterable[Feed]:
+    def __iter__(self) -> Iterator[Feed]:
         return iter(self.feeds.keys())
 
     def __len__(self) -> int:

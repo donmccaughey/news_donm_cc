@@ -1,4 +1,4 @@
-from typing import Iterable
+from typing import Iterable, Iterator
 
 from news import News, Item
 from utility import Cache
@@ -6,7 +6,7 @@ from utility import Cache
 from .utility import count_phrase
 
 
-class SitePage:
+class SitePage(Iterable[Item]):
     def __init__(self, news_cache: Cache, version: str, identity: str):
         self.version = version
         self.identity = identity
@@ -18,7 +18,7 @@ class SitePage:
         self.counter_reset_item = 0
         self.count_phrase = count_phrase(self.items, 'item')
 
-    def __iter__(self) -> Iterable[Item]:
+    def __iter__(self) -> Iterator[Item]:
         return iter(self.items)
 
     def __len__(self) -> int:
