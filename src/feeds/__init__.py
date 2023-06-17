@@ -1,1 +1,1 @@
-from .sites import Sites
+from .feeds import Feeds

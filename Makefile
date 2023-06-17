@@ -111,11 +111,11 @@ source_files := \
 	src/feeds/charity_wtf.py \
 	src/feeds/cmake_tags.py \
 	src/feeds/daring_fireball.py \
+	src/feeds/feeds.py \
 	src/feeds/hacker_news.py \
 	src/feeds/reddit.py \
 	src/feeds/rust_blog.py \
 	src/feeds/site.py \
-	src/feeds/sites.py \
 	src/feeds/skip_sites.py \
 	src/feeds/streetsblog.py \
 	src/feeds/tilde_news.py \

@@ -4,7 +4,7 @@ import os
 from datetime import datetime, timezone
 from pathlib import Path
 
-from feeds import Sites
+from feeds import Feeds
 from news import CACHE_DIR, LAST_EXTRACTION_FILE, News, NEWS_FILE, NoStore, ReadOnlyStore, S3Store
 from utility import Cache, iso
 
@@ -38,8 +38,8 @@ def main():
     log = logging.getLogger()
     log.name = Path(__file__).name
 
-    sites_cache = Cache(options.cache_dir / 'sites.json')
-    sites = Sites.from_json(sites_cache.get(), vars(options))
+    feeds_cache = Cache(options.cache_dir / 'feeds.json')
+    feeds = Feeds.from_json(feeds_cache.get(), vars(options))
 
     store = NoStore() if options.no_store else S3Store()
     if options.read_only:
@@ -52,7 +52,7 @@ def main():
 
     now = datetime.now(timezone.utc)
     new_total, modified_total = 0, 0
-    for site in sites:
+    for site in feeds:
         new_count, modified_count = news.update(site.get_items(now), now)
         new_total += new_count
         modified_total += modified_count
@@ -63,7 +63,7 @@ def main():
     news_cache.put(json)
     store.put(json)
 
-    sites_cache.put(sites.to_json())
+    feeds_cache.put(feeds.to_json())
 
     message = f'Added {new_total}, removed {old_total} and modified {modified_total} items.'
 

@@ -15,9 +15,9 @@ from .streetsblog import Streetsblog
 from .tilde_news import TildeNews
 
 
-class Sites:
+class Feeds:
     def __init__(self, options: dict):
-        self.sites = [
+        self.feeds = [
             Acoup(options),
             CharityWTF(options),
             CMakeTags(options),
@@ -31,18 +31,18 @@ class Sites:
         ]
 
     def __iter__(self) -> Iterable[Site]:
-        return iter(self.sites)
+        return iter(self.feeds)
 
     def __len__(self) -> int:
-        return len(self.sites)
+        return len(self.feeds)
 
     def __repr__(self) -> str:
-        site_list = ','.join([repr(site) for site in self.sites])
-        return f'<Sites: {site_list}>'
+        site_list = ','.join([repr(site) for site in self.feeds])
+        return f'<Feeds: {site_list}>'
 
     @staticmethod
-    def decode(encoded: JSONList, options: dict) -> 'Sites':
-        sites = Sites(options)
+    def decode(encoded: JSONList, options: dict) -> 'Feeds':
+        sites = Feeds(options)
         index = {str(site.feed_url): site for site in sites}
         for encoded_site in encoded:
             site = index.get(encoded_site['feed_url'])
@@ -52,11 +52,11 @@ class Sites:
         return sites
 
     def encode(self) -> JSONList:
-        return [site.encode() for site in self.sites]
+        return [site.encode() for site in self.feeds]
 
     @staticmethod
-    def from_json(s: str, options: dict) -> 'Sites':
-        return Sites.decode(json.loads(s), options) if s else Sites(options)
+    def from_json(s: str, options: dict) -> 'Feeds':
+        return Feeds.decode(json.loads(s), options) if s else Feeds(options)
 
     def to_json(self) -> str:
         return json.dumps(self.encode(), indent='\t')
