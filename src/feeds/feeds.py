@@ -16,19 +16,8 @@ from .tilde_news import TildeNews
 
 
 class Feeds:
-    def __init__(self, options: dict):
-        self.feeds = [
-            Acoup(options),
-            CharityWTF(options),
-            CMakeTags(options),
-            DaringFireball(options),
-            HackerNews(options),
-            Lobsters(options),
-            Reddit(options),
-            RustBlog(options),
-            Streetsblog(options),
-            TildeNews(options),
-        ]
+    def __init__(self, feeds: list[Feed]):
+        self.feeds = feeds
 
     def __iter__(self) -> Iterable[Feed]:
         return iter(self.feeds)
@@ -41,8 +30,24 @@ class Feeds:
         return f'<Feeds: {feed_list}>'
 
     @staticmethod
+    def all(options: dict) -> 'Feeds':
+        feeds = [
+            Acoup(options),
+            CharityWTF(options),
+            CMakeTags(options),
+            DaringFireball(options),
+            HackerNews(options),
+            Lobsters(options),
+            Reddit(options),
+            RustBlog(options),
+            Streetsblog(options),
+            TildeNews(options),
+        ]
+        return Feeds(feeds)
+
+    @staticmethod
     def decode(encoded: JSONList, options: dict) -> 'Feeds':
-        feeds = Feeds(options)
+        feeds = Feeds.all(options)
         index = {str(feed.feed_url): feed for feed in feeds}
         for encoded_feed in encoded:
             feed = index.get(encoded_feed['feed_url'])

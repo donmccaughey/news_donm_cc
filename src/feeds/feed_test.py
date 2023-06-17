@@ -23,7 +23,7 @@ def test_str_and_repr():
     feed = Feed({}, 'Hacker News', 'hn', URL('https://news.ycombinator.com/rss'))
 
     assert str(feed) == 'Hacker News'
-    assert repr(feed) == "Feed(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')"
+    assert repr(feed) == "Feed({}, 'Hacker News', 'hn', URL('https://news.ycombinator.com/rss'))"
 
 
 def test_entry_has_keys():

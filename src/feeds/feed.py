@@ -28,13 +28,13 @@ class Feed:
         self.last_modified = last_modified
 
     def __eq__(self, other: 'Feed') -> bool:
-        return isinstance(other, Feed) and self.feed_url == other.feed_url
+        return isinstance(other, Feed) and self.name == other.name
 
     def __hash__(self) -> int:
-        return hash(self.feed_url)
+        return hash(self.name)
 
     def __repr__(self) -> str:
-        return f"Feed({repr(self.feed_url)}, '{self.name}', '{self.initials}')"
+        return f"Feed({repr(self.options)}, '{self.name}', '{self.initials}', {repr(self.feed_url)})"
 
     def __str__(self) -> str:
         return str(self.name)
