@@ -49,9 +49,9 @@ class Feeds:
     @staticmethod
     def decode(encoded: JSONList, options: dict) -> 'Feeds':
         feeds = Feeds.all(options)
-        index = {str(feed.feed_url): feed for feed in feeds}
+        index = {str(feed.name): feed for feed in feeds}
         for encoded_feed in encoded:
-            feed = index.get(encoded_feed['feed_url'])
+            feed = index.get(encoded_feed['name'])
             if feed:
                 feed.etag = encoded_feed.get('etag')
                 feed.last_modified = encoded_feed.get('last_modified')

@@ -15,7 +15,7 @@ class Feed:
     def __init__(self,
                  name: str,
                  initials: str,
-                 feed_url: URL,
+                 feed_url: URL | None = None,
                  etag: str | None = None,
                  last_modified: str | None = None,
                  ):
@@ -45,6 +45,8 @@ class Feed:
         return True
 
     def get_items(self, now: datetime) -> list[Item]:
+        assert self.feed_url
+
         d: FeedParserDict = parse(
             str(self.feed_url),
             etag=self.etag,
@@ -127,7 +129,6 @@ class Feed:
         return Feed(
             name=encoded['name'],
             initials=encoded['initials'],
-            feed_url=URL(encoded['feed_url']),
             etag=encoded.get('etag'),
             last_modified=encoded.get('last_modified'),
         )
@@ -136,7 +137,6 @@ class Feed:
         encoded = {
             'name': self.name,
             'initials': self.initials,
-            'feed_url': str(self.feed_url),
         }
         if self.etag:
             encoded['etag'] = self.etag

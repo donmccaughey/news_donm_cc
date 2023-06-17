@@ -277,14 +277,13 @@ def test_decode_without_etag_and_last_modified():
     encoded = {
         'name': 'Example',
         'initials': 'ex',
-        'feed_url': 'https://example.com/feed',
     }
 
     feed = Feed.decode(encoded)
 
     assert feed.name == 'Example'
     assert feed.initials == 'ex'
-    assert feed.feed_url == URL('https://example.com/feed')
+    assert feed.feed_url is None
     assert feed.etag is None
     assert feed.last_modified is None
 
@@ -293,7 +292,6 @@ def test_decode_with_etag_and_last_modified():
     encoded = {
         'name': 'Example',
         'initials': 'ex',
-        'feed_url': 'https://example.com/feed',
         'etag': 'W/"647aab77-10117"',
         'last_modified': 'Sat, 03 Jun 2023 02:54:47 GMT',
     }
@@ -302,7 +300,7 @@ def test_decode_with_etag_and_last_modified():
 
     assert feed.name == 'Example'
     assert feed.initials == 'ex'
-    assert feed.feed_url == URL('https://example.com/feed')
+    assert feed.feed_url is None
     assert feed.etag == 'W/"647aab77-10117"'
     assert feed.last_modified == 'Sat, 03 Jun 2023 02:54:47 GMT'
 
@@ -314,7 +312,7 @@ def test_encode_without_etag_and_last_modified():
 
     assert encoded['name'] == 'Example'
     assert encoded['initials'] == 'ex'
-    assert encoded['feed_url'] == 'https://example.com/feed'
+    assert 'feed_url' not in encoded
     assert 'etag' not in encoded
     assert 'last_modified' not in encoded
 
@@ -330,6 +328,6 @@ def test_encode_with_etag_and_last_modified():
 
     assert encoded['name'] == 'Example'
     assert encoded['initials'] == 'ex'
-    assert encoded['feed_url'] == 'https://example.com/feed'
+    assert 'feed_url' not in encoded
     assert encoded['etag'] == 'W/"647aab77-10117"'
     assert encoded['last_modified'] == 'Sat, 03 Jun 2023 02:54:47 GMT'
