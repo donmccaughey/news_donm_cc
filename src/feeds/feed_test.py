@@ -245,6 +245,34 @@ def test_parse_entries():
     assert items[0].title == 'Valid entry'
 
 
+def test_update_from_with_etag_and_last_modified():
+    feed1 = Feed({}, URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
+    feed1_dup = Feed(
+        {}, URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn',
+        etag='W/"647aab77-10117"',
+        last_modified='Sat, 03 Jun 2023 02:54:47 GMT',
+    )
+
+    feed1.update_from(feed1_dup)
+
+    assert feed1.etag == 'W/"647aab77-10117"'
+    assert feed1.last_modified == 'Sat, 03 Jun 2023 02:54:47 GMT'
+
+
+def test_update_from_without_etag_and_last_modified():
+    feed1 = Feed(
+        {}, URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn',
+        etag='W/"647aab77-10117"',
+        last_modified='Sat, 03 Jun 2023 02:54:47 GMT',
+    )
+    feed1_dup = Feed({}, URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
+
+    feed1.update_from(feed1_dup)
+
+    assert feed1.etag == 'W/"647aab77-10117"'
+    assert feed1.last_modified == 'Sat, 03 Jun 2023 02:54:47 GMT'
+
+
 def test_decode_without_etag_and_last_modified():
     encoded = {
         'feed_url': 'https://example.com/feed',

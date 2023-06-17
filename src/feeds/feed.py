@@ -118,6 +118,12 @@ class Feed:
             modified=now,
         )
 
+    def update_from(self, other: 'Feed'):
+        if other.etag:
+            self.etag = other.etag
+        if other.last_modified:
+            self.last_modified = other.last_modified
+
     @staticmethod
     def decode(encoded: JSONDict, options: dict) -> 'Feed':
         return Feed(
