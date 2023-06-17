@@ -9,6 +9,38 @@ from news import CACHE_DIR, LAST_EXTRACTION_FILE, News, NEWS_FILE, NoStore, Read
 from utility import Cache, iso
 
 
+class CachedFeeds:
+    def __init__(self, options: Namespace):
+        self.cache = Cache(options.cache_dir / 'feeds.json')
+        self.feeds = Feeds.from_json(self.cache.get(), vars(options))
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        self.cache.put(self.feeds.to_json())
+
+
+class CachedNews:
+    def __init__(self, options: Namespace):
+        self.store = NoStore() if options.no_store else S3Store()
+        if options.read_only:
+            self.store = ReadOnlyStore(self.store)
+
+        self.cache = Cache(options.cache_dir / NEWS_FILE)
+        self.news = News.from_json(
+            self.cache.get() or self.store.get() or News().to_json()
+        )
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        json = self.news.to_json()
+        self.cache.put(json)
+        self.store.put(json)
+
+
 def env_is_true(name: str) -> bool:
     return (
         name in os.environ
@@ -38,35 +70,14 @@ def main():
     log = logging.getLogger()
     log.name = Path(__file__).name
 
-    feeds_cache = Cache(options.cache_dir / 'feeds.json')
-    feeds = Feeds.from_json(feeds_cache.get(), vars(options))
+    with CachedFeeds(options) as cachedFeeds:
+        with CachedNews(options) as cachedNews:
+            now = datetime.now(timezone.utc)
+            for feed in cachedFeeds.feeds:
+                added_count, modified_count = cachedNews.news.update(feed.get_items(now), now)
+            removed_count = cachedNews.news.remove_old(now)
 
-    news_store = NoStore() if options.no_store else S3Store()
-    if options.read_only:
-        news_store = ReadOnlyStore(news_store)
-
-    news_cache = Cache(options.cache_dir / NEWS_FILE)
-    news = News.from_json(
-        news_cache.get() or news_store.get() or News().to_json()
-    )
-
-    now = datetime.now(timezone.utc)
-    new_total, modified_total = 0, 0
-    for feed in feeds:
-        new_count, modified_count = news.update(feed.get_items(now), now)
-        new_total += new_count
-        modified_total += modified_count
-
-    old_total = news.remove_old(now)
-
-    json = news.to_json()
-    news_cache.put(json)
-    news_store.put(json)
-
-    feeds_cache.put(feeds.to_json())
-
-    message = f'Added {new_total}, removed {old_total} and modified {modified_total} items.'
-
+    message = f'Added {added_count}, removed {removed_count} and modified {modified_count} items.'
     log.info(message)
     last_extraction_path = options.cache_dir / LAST_EXTRACTION_FILE
     last_extraction_path.write_text(f'{iso(now)} {message}\n')
