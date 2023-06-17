@@ -1,6 +1,6 @@
-import argparse
 import logging
 import os
+from argparse import ArgumentParser, Namespace
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -16,8 +16,8 @@ def env_is_true(name: str) -> bool:
     )
 
 
-def parse_options():
-    arg_parser = argparse.ArgumentParser(description='News extractor.')
+def parse_options() -> Namespace:
+    arg_parser = ArgumentParser(description='News extractor.')
     arg_parser.add_argument('-c', '--cache-dir', dest='cache_dir',
                             default=CACHE_DIR, type=Path,
                             help='location to store cache files')
@@ -41,13 +41,13 @@ def main():
     feeds_cache = Cache(options.cache_dir / 'feeds.json')
     feeds = Feeds.from_json(feeds_cache.get(), vars(options))
 
-    store = NoStore() if options.no_store else S3Store()
+    news_store = NoStore() if options.no_store else S3Store()
     if options.read_only:
-        store = ReadOnlyStore(store)
+        news_store = ReadOnlyStore(news_store)
 
     news_cache = Cache(options.cache_dir / NEWS_FILE)
     news = News.from_json(
-        news_cache.get() or store.get() or News().to_json()
+        news_cache.get() or news_store.get() or News().to_json()
     )
 
     now = datetime.now(timezone.utc)
@@ -61,7 +61,7 @@ def main():
 
     json = news.to_json()
     news_cache.put(json)
-    store.put(json)
+    news_store.put(json)
 
     feeds_cache.put(feeds.to_json())
 
