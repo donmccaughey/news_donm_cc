@@ -6,10 +6,12 @@ from .feed import Feed
 
 
 class DaringFireball(Feed):
-    def __init__(self, _options: dict):
+    def __init__(self, options: dict):
         super().__init__(
+            options,
             URL('https://daringfireball.net/feeds/main'),
-            'Daring Fireball', 'df',
+            'Daring Fireball',
+            'df',
         )
 
     def __repr__(self) -> str:

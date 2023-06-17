@@ -9,9 +9,9 @@ from .feed import Feed
 
 
 def test_eq_and_hash():
-    feed1 = Feed(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
-    feed1_dup = Feed(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
-    feed2 = Feed(URL('https://lobste.rs/rss'), 'Lobsters', 'lob')
+    feed1 = Feed({}, URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
+    feed1_dup = Feed({}, URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
+    feed2 = Feed({}, URL('https://lobste.rs/rss'), 'Lobsters', 'lob')
 
     assert feed1 == feed1_dup
     assert hash(feed1) == hash(feed1_dup)
@@ -20,14 +20,14 @@ def test_eq_and_hash():
 
 
 def test_str_and_repr():
-    feed = Feed(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
+    feed = Feed({}, URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
 
     assert str(feed) == 'Hacker News'
     assert repr(feed) == "Feed(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')"
 
 
 def test_entry_has_keys():
-    feed = Feed(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
+    feed = Feed({}, URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
     entry = {}
 
     assert not feed.entry_has_keys(entry, ['link', 'title'])
@@ -42,7 +42,7 @@ def test_entry_has_keys():
 
 
 def test_is_entry_valid():
-    feed = Feed(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
+    feed = Feed({}, URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
     entry = {}
 
     assert not feed.is_entry_valid(entry)
@@ -73,7 +73,7 @@ def test_is_recent_published_now():
     </rss>
     '''
     d: FeedParserDict = parse(xml)
-    feed = Feed(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
+    feed = Feed({}, URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
 
     assert feed.is_entry_recent(d.entries[0], now)
 
@@ -95,7 +95,7 @@ def test_is_recent_published_14_days_ago():
     </rss>
     '''
     d: FeedParserDict = parse(xml)
-    feed = Feed(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
+    feed = Feed({}, URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
 
     assert feed.is_entry_recent(d.entries[0], now)
 
@@ -117,7 +117,7 @@ def test_is_recent_published_15_days_ago():
     </rss>
     '''
     d: FeedParserDict = parse(xml)
-    feed = Feed(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
+    feed = Feed({}, URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
 
     assert not feed.is_entry_recent(d.entries[0], now)
 
@@ -135,7 +135,7 @@ def test_is_recent_is_missing():
     </rss>
     '''
     d: FeedParserDict = parse(xml)
-    feed = Feed(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
+    feed = Feed({}, URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
 
     assert feed.is_entry_recent(d.entries[0], datetime.now(timezone.utc))
 
@@ -162,7 +162,7 @@ def test_get_items_for_missing_status(caplog, monkeypatch):
     caplog.set_level(logging.WARNING)
     monkeypatch.setattr('feeds.feed.parse', make_parse_function(status=None))
 
-    feed = Feed(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
+    feed = Feed({}, URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
     items = feed.get_items(datetime.now(timezone.utc))
 
     assert len(items) is 0
@@ -173,7 +173,7 @@ def test_get_items_for_missing_status(caplog, monkeypatch):
 def test_get_items_for_200_status(monkeypatch):
     monkeypatch.setattr('feeds.feed.parse', make_parse_function(status=200))
 
-    feed = Feed(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
+    feed = Feed({}, URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
     items = feed.get_items(datetime.now(timezone.utc))
 
     assert len(items) is 0
@@ -182,7 +182,7 @@ def test_get_items_for_200_status(monkeypatch):
 def test_get_items_for_302_status(monkeypatch):
     monkeypatch.setattr('feeds.feed.parse', make_parse_function(status=302))
 
-    feed = Feed(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
+    feed = Feed({}, URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
     items = feed.get_items(datetime.now(timezone.utc))
 
     assert len(items) is 0
@@ -191,7 +191,7 @@ def test_get_items_for_302_status(monkeypatch):
 def test_get_items_for_304_status(monkeypatch):
     monkeypatch.setattr('feeds.feed.parse', make_parse_function(status=304))
 
-    feed = Feed(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
+    feed = Feed({}, URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
     items = feed.get_items(datetime.now(timezone.utc))
 
     assert len(items) is 0
@@ -201,7 +201,7 @@ def test_get_items_for_308_status(caplog, monkeypatch):
     parse_function = make_parse_function(status=308, href='https://example.com/redirect')
     monkeypatch.setattr('feeds.feed.parse', parse_function)
 
-    feed = Feed(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
+    feed = Feed({}, URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
     items = feed.get_items(datetime.now(timezone.utc))
 
     assert len(items) is 0
@@ -213,7 +213,7 @@ def test_get_items_for_other_status(caplog, monkeypatch):
     caplog.set_level(logging.WARNING)
     monkeypatch.setattr('feeds.feed.parse', make_parse_function(status=500))
 
-    feed = Feed(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
+    feed = Feed({}, URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
     items = feed.get_items(datetime.now(timezone.utc))
 
     assert len(items) is 0
@@ -237,7 +237,7 @@ def test_parse_entries():
     </rss>
     '''
     d: FeedParserDict = parse(xml)
-    feed = Feed(URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
+    feed = Feed({}, URL('https://news.ycombinator.com/rss'), 'Hacker News', 'hn')
 
     items = feed.parse_entries(d.entries, datetime.now(timezone.utc))
 
@@ -252,7 +252,7 @@ def test_decode_without_etag_and_last_modified():
         'initials': 'ex',
     }
 
-    feed = Feed.decode(encoded)
+    feed = Feed.decode(encoded, options={})
 
     assert feed.feed_url == URL('https://example.com/feed')
     assert feed.name == 'Example'
@@ -270,7 +270,7 @@ def test_decode_with_etag_and_last_modified():
         'last_modified': 'Sat, 03 Jun 2023 02:54:47 GMT',
     }
 
-    feed = Feed.decode(encoded)
+    feed = Feed.decode(encoded, options={})
 
     assert feed.feed_url == URL('https://example.com/feed')
     assert feed.name == 'Example'
@@ -280,7 +280,7 @@ def test_decode_with_etag_and_last_modified():
 
 
 def test_encode_without_etag_and_last_modified():
-    feed = Feed(URL('https://example.com/feed'), 'Example', 'ex')
+    feed = Feed({}, URL('https://example.com/feed'), 'Example', 'ex')
 
     encoded = feed.encode()
 
@@ -293,6 +293,7 @@ def test_encode_without_etag_and_last_modified():
 
 def test_encode_with_etag_and_last_modified():
     feed = Feed(
+        {},
         URL('https://example.com/feed'), 'Example', 'ex',
         etag='W/"647aab77-10117"',
         last_modified='Sat, 03 Jun 2023 02:54:47 GMT',

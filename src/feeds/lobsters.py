@@ -5,10 +5,12 @@ from .feed import Feed
 
 
 class Lobsters(Feed):
-    def __init__(self, _options: dict):
+    def __init__(self, options: dict):
         super().__init__(
+            options,
             URL('https://lobste.rs/rss'),
-            'Lobsters', 'lob',
+            'Lobsters',
+            'lob',
         )
 
     def __repr__(self) -> str:

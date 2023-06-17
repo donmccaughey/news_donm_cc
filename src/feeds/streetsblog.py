@@ -3,10 +3,12 @@ from .feed import Feed
 
 
 class Streetsblog(Feed):
-    def __init__(self, _options: dict):
+    def __init__(self, options: dict):
         super().__init__(
+            options,
             URL('https://sf.streetsblog.org/feed/'),
-            'Streetsblog SF', 'sb',
+            'Streetsblog SF',
+            'sb',
         )
 
     def __repr__(self) -> str:

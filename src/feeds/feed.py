@@ -13,12 +13,14 @@ log = logging.getLogger(__name__)
 
 class Feed:
     def __init__(self,
+                 options: dict,
                  feed_url: URL,
                  name: str,
                  initials: str,
                  etag: str | None = None,
                  last_modified: str | None = None,
                  ):
+        self.options = options
         self.feed_url = feed_url
         self.name = name
         self.initials = initials
@@ -117,8 +119,9 @@ class Feed:
         )
 
     @staticmethod
-    def decode(encoded: JSONDict) -> 'Feed':
+    def decode(encoded: JSONDict, options: dict) -> 'Feed':
         return Feed(
+            options=options,
             feed_url=URL(encoded['feed_url']),
             name=encoded['name'],
             initials=encoded['initials'],

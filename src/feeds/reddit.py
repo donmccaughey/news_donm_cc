@@ -14,8 +14,10 @@ log = logging.getLogger(__name__)
 class Reddit(Feed):
     def __init__(self, options: dict):
         super().__init__(
+            options,
             URL(options['reddit_private_rss_feed']),
-            'Reddit', 'r',
+            'Reddit',
+            'r',
         )
 
     def __repr__(self) -> str:
