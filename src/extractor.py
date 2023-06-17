@@ -49,8 +49,6 @@ def main():
     news = News.from_json(
         news_cache.get() or store.get() or News().to_json()
     )
-    if not news_cache.is_present:
-        news_cache.put(news.to_json())
 
     now = datetime.now(timezone.utc)
     new_total, modified_total = 0, 0
