@@ -6,9 +6,8 @@ from .feed import Feed
 
 
 class DaringFireball(Feed):
-    def __init__(self, options: dict):
+    def __init__(self):
         super().__init__(
-            options,
             'Daring Fireball',
             'df',
             URL('https://daringfireball.net/feeds/main')

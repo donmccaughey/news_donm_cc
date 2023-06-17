@@ -7,9 +7,7 @@ from pytest import mark
 from news import URL
 from .reddit import extract_links, Reddit, is_reddit_media_link
 
-OPTIONS = {
-    'reddit_private_rss_feed': 'https://www.reddit.com/.rss?feed=12345&user=alice',
-}
+FEED_URL = URL('https://www.reddit.com/.rss?feed=12345&user=alice')
 
 
 def test_parse_entry_for_image_link():
@@ -34,7 +32,7 @@ def test_parse_entry_for_image_link():
     </feed>
     '''
     d: FeedParserDict = parse(feed)
-    r = Reddit(OPTIONS)
+    r = Reddit(FEED_URL)
     entry = d.entries[0]
     item = r.parse_entry(entry, datetime.now(timezone.utc))
     assert item.title == 'Spolia: repurposed Roman inscriptions in València, Spain (facade of the Basilica of Our Lady of the Forsaken)'
@@ -63,7 +61,7 @@ def test_parse_entry_for_gallery_link():
     </feed>
     '''
     d: FeedParserDict = parse(feed)
-    r = Reddit(OPTIONS)
+    r = Reddit(FEED_URL)
     entry = d.entries[0]
     item = r.parse_entry(entry, datetime.now(timezone.utc))
     assert item.title == 'Mini photo shoot with my Pyr Sushi'
@@ -92,7 +90,7 @@ def test_parse_entry_for_website_link():
     </feed>
     '''
     d: FeedParserDict = parse(feed)
-    r = Reddit(OPTIONS)
+    r = Reddit(FEED_URL)
     entry = d.entries[0]
     item = r.parse_entry(entry, datetime.now(timezone.utc))
     assert item.title == 'Report on surprise hyper CVE from 2023-04-11'
@@ -117,7 +115,7 @@ def test_parse_entry_for_website_link_cleans_url():
     </feed>
     '''
     d: FeedParserDict = parse(feed)
-    r = Reddit(OPTIONS)
+    r = Reddit(FEED_URL)
     entry = d.entries[0]
     item = r.parse_entry(entry, datetime.now(timezone.utc))
     assert item.title == 'US adult cigarette smoking rate hits new all-time low'
@@ -222,7 +220,7 @@ REJECT_SITE_TESTS = [
 def test_keep_item_rejects_site(title, link, comments):
     d = build_reddit_feed(str(title), str(link), str(comments))
     entry = d.entries[0]
-    r = Reddit(OPTIONS)
+    r = Reddit(FEED_URL)
     item = r.parse_entry(entry, datetime.now(timezone.utc))
 
     assert not r.keep_item(item)

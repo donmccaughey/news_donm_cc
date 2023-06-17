@@ -20,7 +20,7 @@ def test_keep_entry_todays_headlines():
     '''
     d: FeedParserDict = parse(feed)
     entry = d.entries[0]
-    sb = Streetsblog({})
+    sb = Streetsblog()
 
     assert sb.keep_entry(entry)
 
@@ -40,7 +40,7 @@ def test_keep_entry_other_category():
     '''
     d: FeedParserDict = parse(feed)
     entry = d.entries[0]
-    sb = Streetsblog({})
+    sb = Streetsblog()
 
     assert not sb.keep_entry(entry)
 
@@ -59,7 +59,7 @@ def test_is_entry_valid_no_title():
     '''
     d: FeedParserDict = parse(feed)
     entry = d.entries[0]
-    sb = Streetsblog({})
+    sb = Streetsblog()
 
     assert not sb.is_entry_valid(entry)
 
@@ -78,7 +78,7 @@ def test_is_entry_valid_no_link():
     '''
     d: FeedParserDict = parse(feed)
     entry = d.entries[0]
-    sb = Streetsblog({})
+    sb = Streetsblog()
 
     assert not sb.is_entry_valid(entry)
 
@@ -97,7 +97,7 @@ def test_is_entry_valid_no_category():
     '''
     d: FeedParserDict = parse(feed)
     entry = d.entries[0]
-    sb = Streetsblog({})
+    sb = Streetsblog()
 
     assert not sb.is_entry_valid(entry)
 
@@ -117,7 +117,7 @@ def test_is_entry_valid():
     '''
     d: FeedParserDict = parse(feed)
     entry = d.entries[0]
-    sb = Streetsblog({})
+    sb = Streetsblog()
 
     assert sb.is_entry_valid(entry)
 
@@ -136,7 +136,7 @@ def test_parse_entry_includes_title():
     '''
     d: FeedParserDict = parse(feed)
     entry = d.entries[0]
-    sb = Streetsblog({})
+    sb = Streetsblog()
     item = sb.parse_entry(entry, datetime.now(timezone.utc))
 
     assert item.title == 'Today’s Headlines'

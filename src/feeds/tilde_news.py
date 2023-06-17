@@ -5,13 +5,8 @@ from .feed import Feed
 
 
 class TildeNews(Feed):
-    def __init__(self, options: dict):
-        super().__init__(
-            options,
-            'tilde.news',
-            '~n',
-            URL('https://tilde.news/rss'),
-        )
+    def __init__(self):
+        super().__init__('tilde.news', '~n', URL('https://tilde.news/rss'))
 
     def __repr__(self) -> str:
         return 'TildeNews()'

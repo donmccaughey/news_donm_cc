@@ -3,9 +3,8 @@ from .feed import Feed
 
 
 class CMakeTags(Feed):
-    def __init__(self, options: dict):
+    def __init__(self):
         super().__init__(
-            options,
             'CMake Tags',
             'cm',
             URL('https://gitlab.kitware.com/cmake/cmake/-/tags?format=atom')

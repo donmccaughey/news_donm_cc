@@ -14,7 +14,7 @@ LIFETIME = timedelta(days=15)
 class News:
 
     def __init__(self,
-                 items: list[Item] = None,
+                 items: list[Item] | None = None,
                  created: datetime | None = None,
                  modified: datetime | None = None,
                  lifetime: timedelta | None = LIFETIME,

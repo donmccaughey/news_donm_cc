@@ -1,6 +1,7 @@
 import json
 from typing import Iterable
 
+from news import URL
 from utility.jsontype import JSONList
 from .acoup import Acoup
 from .charity_wtf import CharityWTF
@@ -16,8 +17,8 @@ from .tilde_news import TildeNews
 
 
 class Feeds:
-    def __init__(self, feeds: list[Feed]):
-        self.feeds = feeds
+    def __init__(self, feeds: list[Feed] | None = None):
+        self.feeds = feeds or []
 
     def __iter__(self) -> Iterable[Feed]:
         return iter(self.feeds)
@@ -32,16 +33,16 @@ class Feeds:
     @staticmethod
     def all(options: dict) -> 'Feeds':
         feeds = [
-            Acoup(options),
-            CharityWTF(options),
-            CMakeTags(options),
-            DaringFireball(options),
-            HackerNews(options),
-            Lobsters(options),
-            Reddit(options),
-            RustBlog(options),
-            Streetsblog(options),
-            TildeNews(options),
+            Acoup(),
+            CharityWTF(),
+            CMakeTags(),
+            DaringFireball(),
+            HackerNews(),
+            Lobsters(),
+            Reddit(URL(options['reddit_private_rss_feed'])),
+            RustBlog(),
+            Streetsblog(),
+            TildeNews(),
         ]
         return Feeds(feeds)
 
@@ -61,7 +62,7 @@ class Feeds:
 
     @staticmethod
     def from_json(s: str, options: dict) -> 'Feeds':
-        return Feeds.decode(json.loads(s), options) if s else Feeds(options)
+        return Feeds.decode(json.loads(s), options)
 
     def to_json(self) -> str:
         return json.dumps(self.encode(), indent='\t')

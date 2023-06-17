@@ -13,17 +13,15 @@ log = logging.getLogger(__name__)
 
 class Feed:
     def __init__(self,
-                 options: dict,
                  name: str,
                  initials: str,
                  feed_url: URL,
                  etag: str | None = None,
                  last_modified: str | None = None,
                  ):
-        self.options = options
-        self.feed_url = feed_url
         self.name = name
         self.initials = initials
+        self.feed_url = feed_url
         self.etag = etag
         self.last_modified = last_modified
 
@@ -34,7 +32,7 @@ class Feed:
         return hash(self.name)
 
     def __repr__(self) -> str:
-        return f"Feed({repr(self.options)}, '{self.name}', '{self.initials}', {repr(self.feed_url)})"
+        return f"Feed('{self.name}', '{self.initials}', {repr(self.feed_url)})"
 
     def __str__(self) -> str:
         return str(self.name)
@@ -125,9 +123,8 @@ class Feed:
             self.last_modified = other.last_modified
 
     @staticmethod
-    def decode(encoded: JSONDict, options: dict) -> 'Feed':
+    def decode(encoded: JSONDict) -> 'Feed':
         return Feed(
-            options=options,
             name=encoded['name'],
             initials=encoded['initials'],
             feed_url=URL(encoded['feed_url']),
@@ -137,9 +134,9 @@ class Feed:
 
     def encode(self) -> JSONDict:
         encoded = {
-            'feed_url': str(self.feed_url),
             'name': self.name,
             'initials': self.initials,
+            'feed_url': str(self.feed_url),
         }
         if self.etag:
             encoded['etag'] = self.etag

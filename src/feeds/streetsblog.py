@@ -3,9 +3,8 @@ from .feed import Feed
 
 
 class Streetsblog(Feed):
-    def __init__(self, options: dict):
+    def __init__(self):
         super().__init__(
-            options,
             'Streetsblog SF',
             'sb',
             URL('https://sf.streetsblog.org/feed/'),

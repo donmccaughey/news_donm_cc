@@ -12,7 +12,10 @@ from utility import Cache, iso
 class CachedFeeds:
     def __init__(self, options: Namespace):
         self.cache = Cache(options.cache_dir / 'feeds.json')
-        self.feeds = Feeds.from_json(self.cache.get(), vars(options))
+        self.feeds = Feeds.from_json(
+            self.cache.get() or Feeds().to_json(),
+            vars(options),
+        )
 
     def __enter__(self) -> Feeds:
         return self.feeds

@@ -12,7 +12,7 @@ def test_is_entry_valid_rejects_no_title():
         title='',
     )
     entry = d.entries[0]
-    df = DaringFireball({})
+    df = DaringFireball()
 
     assert not df.is_entry_valid(entry)
 
@@ -20,7 +20,7 @@ def test_is_entry_valid_rejects_no_title():
 def test_is_entry_valid_rejects_no_links():
     d = build_df_feed('', '', 'TikTok Spied on Forbes Journalists')
     entry = d.entries[0]
-    df = DaringFireball({})
+    df = DaringFireball()
 
     assert not df.is_entry_valid(entry)
 
@@ -49,7 +49,7 @@ def test_keep_entry_accepts_link(alternate, related, title):
         title='★ Twitter Tumult',
     )
     entry = d.entries[0]
-    df = DaringFireball({})
+    df = DaringFireball()
 
     assert df.keep_entry(entry)
 
@@ -92,7 +92,7 @@ REJECT_SITE_TESTS = [
 def test_keep_entry_rejects_link(alternate, related, title):
     d = build_df_feed(str(alternate), str(related), str(title))
     entry = d.entries[0]
-    df = DaringFireball({})
+    df = DaringFireball()
 
     assert not df.keep_entry(entry)
 

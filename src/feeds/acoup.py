@@ -3,9 +3,8 @@ from .feed import Feed
 
 
 class Acoup(Feed):
-    def __init__(self, options: dict):
+    def __init__(self):
         super().__init__(
-            options,
             'A Collection of Unmitigated Pedantry',
             'acoup',
             URL('https://acoup.blog/feed/')

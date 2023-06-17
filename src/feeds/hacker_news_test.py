@@ -14,7 +14,7 @@ def test_parse_entry_decodes_html_entities():
         comments='https://news.ycombinator.com/item?id=34767795',
     )
     entry = d.entries[0]
-    hn = HackerNews({})
+    hn = HackerNews()
     item = hn.parse_entry(entry, datetime.now(timezone.utc))
     assert item.title == '<3 Deno'
 
@@ -26,7 +26,7 @@ def test_parse_entry_decodes_hex_char_entities():
         comments='https://news.ycombinator.com/item?id=34768550',
     )
     entry = d.entries[0]
-    hn = HackerNews({})
+    hn = HackerNews()
     item = hn.parse_entry(entry, datetime.now(timezone.utc))
     assert item.title == "NameCheap's email hacked to send Metamask, DHL phishing emails"
 
@@ -38,7 +38,7 @@ def test_keep_item_keeps_typical_entry():
         comments='https://news.ycombinator.com/item?id=34102419',
     )
     entry = d.entries[0]
-    hn = HackerNews({})
+    hn = HackerNews()
     item = hn.parse_entry(entry, datetime.now(timezone.utc))
 
     assert hn.keep_item(item)
@@ -112,14 +112,14 @@ REJECT_SITE_TESTS = [
 def test_keep_item_rejects_site(title, link, comments):
     d = build_hn_feed(str(title), str(link), str(comments))
     entry = d.entries[0]
-    hn = HackerNews({})
+    hn = HackerNews()
     item = hn.parse_entry(entry, datetime.now(timezone.utc))
 
     assert not hn.keep_item(item)
 
 
 def test_is_entry_valid_rejects():
-    hn = HackerNews({})
+    hn = HackerNews()
     entry = {}
 
     assert not hn.is_entry_valid(entry)

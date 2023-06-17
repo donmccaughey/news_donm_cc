@@ -7,9 +7,8 @@ from .feed import Feed
 
 
 class HackerNews(Feed):
-    def __init__(self, options: dict):
+    def __init__(self):
         super().__init__(
-            options,
             'Hacker News',
             'hn',
             URL('https://news.ycombinator.com/rss'),
