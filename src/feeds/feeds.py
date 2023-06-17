@@ -18,16 +18,16 @@ from .tilde_news import TildeNews
 
 class Feeds:
     def __init__(self, feeds: list[Feed] | None = None):
-        self.feeds = feeds or []
+        self.feeds: dict[Feed, Feed] = {feed: feed for feed in feeds} if feeds else {}
 
     def __iter__(self) -> Iterable[Feed]:
-        return iter(self.feeds)
+        return iter(self.feeds.keys())
 
     def __len__(self) -> int:
         return len(self.feeds)
 
     def __repr__(self) -> str:
-        feed_list = ','.join([repr(feed) for feed in self.feeds])
+        feed_list = ','.join([repr(feed) for feed in self.feeds.keys()])
         return f'<Feeds: {feed_list}>'
 
     @staticmethod
@@ -46,23 +46,22 @@ class Feeds:
         ]
         return Feeds(feeds)
 
+    def update_from(self, other: 'Feeds'):
+        for feed in other:
+            if feed in self.feeds:
+                self.feeds[feed].update_from(feed)
+
     @staticmethod
-    def decode(encoded: JSONList, options: dict) -> 'Feeds':
-        feeds = Feeds.all(options)
-        index = {str(feed.name): feed for feed in feeds}
-        for encoded_feed in encoded:
-            feed = index.get(encoded_feed['name'])
-            if feed:
-                feed.etag = encoded_feed.get('etag')
-                feed.last_modified = encoded_feed.get('last_modified')
-        return feeds
+    def decode(encoded: JSONList) -> 'Feeds':
+        feeds = [Feed.decode(feed) for feed in encoded]
+        return Feeds(feeds)
 
     def encode(self) -> JSONList:
         return [feed.encode() for feed in self.feeds]
 
     @staticmethod
-    def from_json(s: str, options: dict) -> 'Feeds':
-        return Feeds.decode(json.loads(s), options)
+    def from_json(s: str) -> 'Feeds':
+        return Feeds.decode(json.loads(s))
 
     def to_json(self) -> str:
         return json.dumps(self.encode(), indent='\t')

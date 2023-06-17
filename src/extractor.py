@@ -11,11 +11,10 @@ from utility import Cache, iso
 
 class CachedFeeds:
     def __init__(self, options: Namespace):
+        self.feeds = Feeds.all(vars(options))
         self.cache = Cache(options.cache_dir / 'feeds.json')
-        self.feeds = Feeds.from_json(
-            self.cache.get() or Feeds().to_json(),
-            vars(options),
-        )
+        cached_feeds = Feeds.from_json(self.cache.get() or Feeds().to_json())
+        self.feeds.update_from(cached_feeds)
 
     def __enter__(self) -> Feeds:
         return self.feeds
