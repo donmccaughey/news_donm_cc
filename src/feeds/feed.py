@@ -15,13 +15,13 @@ class Feed:
     def __init__(self,
                  name: str,
                  initials: str,
-                 feed_url: URL | None = None,
+                 url: URL | None = None,
                  etag: str | None = None,
                  last_modified: str | None = None,
                  ):
         self.name = name
         self.initials = initials
-        self.feed_url = feed_url
+        self.url = url
         self.etag = etag
         self.last_modified = last_modified
 
@@ -32,7 +32,7 @@ class Feed:
         return hash(self.name)
 
     def __repr__(self) -> str:
-        return f"Feed('{self.name}', '{self.initials}', {repr(self.feed_url)})"
+        return f"Feed('{self.name}', '{self.initials}', {repr(self.url)})"
 
     def __str__(self) -> str:
         return str(self.name)
@@ -45,10 +45,10 @@ class Feed:
         return True
 
     def get_items(self, now: datetime) -> list[Item]:
-        assert self.feed_url
+        assert self.url
 
         d: FeedParserDict = parse(
-            str(self.feed_url),
+            str(self.url),
             etag=self.etag,
             modified=self.last_modified,
             agent='News +https://news.donm.cc',
