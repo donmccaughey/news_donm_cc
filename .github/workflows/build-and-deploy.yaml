@@ -22,5 +22,10 @@ jobs:
           aws-region: us-west-1
       - name: Test
         run : make cov
+      - name: Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          files: ./tmp/coverage.xml
+          token: ${{ secrets.CODECOV_TOKEN }}
       - name: Deploy
         run : make deploy
