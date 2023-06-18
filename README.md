@@ -2,6 +2,12 @@
 
 A service that finds things I'm interested in.
 
+[![Build and Deploy][1]][2]
+
+[1]: https://github.com/donmccaughey/news_donm_cc/actions/workflows/build-and-deploy.yaml/badge.svg
+[2]: https://github.com/donmccaughey/news_donm_cc/actions/workflows/build-and-deploy.yaml
+
+
 ## Development Setup
 
 1. Install `pyenv` and `pyenv-virtualenv`
