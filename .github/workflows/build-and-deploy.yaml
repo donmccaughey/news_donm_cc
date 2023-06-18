@@ -3,7 +3,7 @@ run-name: ${{github.actor}} is building and deploying.
 on:
   push:
     branches:
-      - 'master'
+      - 'main'
   workflow_dispatch:
 env:
   AWS_ACCESS_KEY: ${{secrets.AWS_ACCESS_KEY}}
