@@ -29,11 +29,13 @@ clean : stop
 
 .PHONY : debug
 debug :
+	REDDIT_PRIVATE_RSS_FEED="$(REDDIT_PRIVATE_RSS_FEED)" \
 	python3 src/extractor.py \
 		--cache-dir="$(TMP)" \
 		--no-store
 	FLASK_CACHE_DIR="$(TMP)" \
-		flask \
+	FLASK_RUN_PORT=8001 \
+	flask \
 		--app src/server \
 		--debug \
 		run
@@ -154,6 +156,7 @@ source_files := \
 test_files := \
 	src/feeds/daring_fireball_test.py \
 	src/feeds/feed_test.py \
+	src/feeds/feeds_test.py \
 	src/feeds/hacker_news_test.py \
 	src/feeds/reddit_test.py \
 	src/feeds/streetsblog_test.py \
