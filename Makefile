@@ -21,6 +21,10 @@ build : $(TMP)/docker-build.stamp.txt
 check : $(TMP)/pytest.stamp.txt
 
 
+.PHONY : cov
+cov : $(TMP)/.coverage
+
+
 .PHONY : clean
 clean : stop
 	-docker rm $(NEWS)
@@ -250,14 +254,21 @@ $(TMP)/docker-run.stamp.txt : \
 $(TMP)/pip-install-requirements.stamp.txt : requirements.txt | $$(dir $$@)
 	python3 -m pip install \
 		--quiet --quiet --quiet \
-		--requirement requirements.txt
+		--requirement $<
+	date > $@
+
+
+$(TMP)/pip-install-cov-requirements.stamp.txt : cov-requirements.txt | $$(dir $$@)
+	python3 -m pip install \
+		--quiet --quiet --quiet \
+		--requirement $<
 	date > $@
 
 
 $(TMP)/pip-install-dev-requirements.stamp.txt : dev-requirements.txt | $$(dir $$@)
 	python3 -m pip install \
 		--quiet --quiet --quiet \
-		--requirement dev-requirements.txt
+		--requirement $<
 	date > $@
 
 
@@ -269,6 +280,22 @@ $(TMP)/pytest.stamp.txt : \
 		| $$(dir $$@)
 	python3 -m pytest --quiet --quiet
 	date > $@
+
+
+$(TMP)/.coverage : \
+		.coveragerc \
+		$(source_files) \
+		$(test_files) \
+		$(TMP)/pip-install-requirements.stamp.txt \
+		$(TMP)/pip-install-cov-requirements.stamp.txt \
+		$(TMP)/pip-install-dev-requirements.stamp.txt \
+		| $$(dir $$@)
+	COVERAGE_FILE=$@ \
+	python3 -m pytest --cov \
+		--cov-config=$< \
+		--cov-report=html:"$(TMP)/coverage" \
+		--cov-report=xml:"$(TMP)/coverage.xml" \
+		--quiet --quiet
 
 
 $(TMP)/ :

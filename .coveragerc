@@ -1,0 +1,8 @@
+[run]
+branch = True
+include =
+    src/feeds/*
+    src/health/*
+    src/news/*
+    src/utility/*
+omit = src/**/*_test.py

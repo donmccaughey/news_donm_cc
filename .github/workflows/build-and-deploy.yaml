@@ -21,6 +21,6 @@ jobs:
           aws-secret-access-key: ${{secrets.AWS_ACCESS_KEY_SECRET}}
           aws-region: us-west-1
       - name: Test
-        run : make check
+        run : make cov
       - name: Deploy
         run : make deploy
