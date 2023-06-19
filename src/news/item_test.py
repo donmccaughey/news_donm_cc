@@ -66,7 +66,7 @@ def test_str_and_repr():
     )
 
     assert str(item) == '"Item 1" (https://example.com/1)'
-    assert repr(item) == "Item(URL('https://example.com/1'), 'Item 1', [Source(URL('https://source.com/1'), 'so')])"
+    assert repr(item) == "Item(URL('https://example.com/1'), 'Item 1', [Source(URL('https://source.com/1'), 'so', 1)])"
 
 
 def test_has_source():
@@ -169,6 +169,7 @@ def test_encode():
         {
             'url': 'https://source.com/1',
             'site_id': 'so',
+            'count': 1,
         }
     ]
     assert encoded['created'] == '2022-12-22T16:36:54.143222+00:00'

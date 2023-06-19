@@ -3,10 +3,10 @@ from .url import URL
 
 
 def test_eq_and_hash():
-    source1 = Source(URL('https://source.com/1'), 'so')
-    source1_dup = Source(URL('https://source.com/1'), 'so')
+    source1 = Source(URL('https://source.com/1'), 'so', 2)
+    source1_dup = Source(URL('https://source.com/1'), 'so', 1)
     source2 = Source(URL('https://source.com/2'), 'so')
-    alt_source = Source(URL('https://alt-source.com/1'), 'as')
+    alt_source = Source(URL('https://alt-source.com/1'), 'as', 3)
 
     assert source1 == source1_dup
     assert hash(source1) == hash(source1_dup)
@@ -37,16 +37,30 @@ def test_decode():
     source = Source.decode({
         'url': 'https://source.com/1',
         'site_id': 'so',
+        'count': 2,
     })
 
     assert source.url == URL('https://source.com/1')
     assert source.site_id == 'so'
+    assert source.count == 2
+
+
+def test_decode_missing_count():
+    source = Source.decode({
+        'url': 'https://source.com/1',
+        'site_id': 'so',
+    })
+
+    assert source.url == URL('https://source.com/1')
+    assert source.site_id == 'so'
+    assert source.count == 1
 
 
 def test_encode():
-    source = Source(URL('https://source.com/1'), 'so')
+    source = Source(URL('https://source.com/1'), 'so', 3)
 
     assert source.encode() == {
         'url': 'https://source.com/1',
         'site_id': 'so',
+        'count': 3,
     }
