@@ -1,5 +1,6 @@
 # To Do
 
+- add `extract` makefile target
 - `News` object is now frequently `modified` due to item updating and 
     news page "new item" bar doesn't work as intended
     drop `Item.age` for now and rethink
