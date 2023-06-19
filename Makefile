@@ -87,18 +87,18 @@ stop :
 container_files := \
 	.dockerignore \
 	requirements.txt \
-	crontabs/news \
+	container/crontabs/news \
+	container/profile.d/dir.sh \
+	container/sbin/check-health \
+	container/sbin/extract \
+	container/sbin/news \
+	container/sbin/serve \
 	nginx/nginx.conf \
 	nginx/error_pages/404.html \
 	nginx/error_pages/500.html \
 	nginx/error_pages/502.html \
 	nginx/error_pages/503.html \
 	nginx/error_pages/504.html \
-	profile.d/dir.sh \
-	sbin/check-health \
-	sbin/extract \
-	sbin/news \
-	sbin/serve \
 	wwwroot/robots.txt \
 	wwwroot/sitemap.txt
 

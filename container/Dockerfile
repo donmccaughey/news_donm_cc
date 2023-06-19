@@ -29,15 +29,15 @@ COPY --chown=nginx:nginx \
 
 
 # cron jobs
-COPY crontabs /var/spool/cron/crontabs
+COPY container/crontabs /var/spool/cron/crontabs
 
 
 # control scripts
-COPY sbin /usr/local/sbin
+COPY container/sbin /usr/local/sbin
 
 
 # ash profile
-COPY profile.d /etc/profile.d
+COPY container/profile.d /etc/profile.d
 RUN ln -sf /etc/profile.d/color_prompt.sh.disabled \
         /etc/profile.d/color_prompt.sh
 
