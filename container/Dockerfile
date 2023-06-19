@@ -45,8 +45,8 @@ RUN ln -sf /etc/profile.d/color_prompt.sh.disabled \
 # news app
 RUN mkdir -p /usr/lib/news /var/lib/news
 RUN chown -R news:news /usr/lib/news /var/lib/news
-COPY --chown=news:news \
-        requirements.txt version.txt /usr/lib/news/
+COPY --chown=news:news requirements.txt /usr/lib/news/
+COPY --chown=news:news ${version_file} /usr/lib/news/
 COPY --chown=news:news src /usr/lib/news
 
 WORKDIR /usr/lib/news

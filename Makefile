@@ -214,8 +214,9 @@ $(TMP)/docker-build.stamp.txt : \
 		$(container_files) \
 		$(source_files) \
 		| $$(dir $$@)
-	git rev-parse --short HEAD > version.txt
+	git rev-parse --short HEAD > $(TMP)/version.txt
 	docker build \
+		--build-arg version_file="$(TMP)/version.txt" \
 		--file $< \
 		--platform linux/amd64 \
 		--tag $(NEWS) \

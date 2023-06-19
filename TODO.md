@@ -12,8 +12,6 @@
   - add `visible_items` property to `News` to iterate over visible items
 - remove support for single source from `Item.decode()`
 - remove "tn" -> "~n" conversion code from `News.decode()`
-- `version.txt` is written to the project root so the `Dockerfile` can find it
-  - figure out if this can go in the `$(TMP)` directory
 - inconsistent `FLASK_CACHE_DIR="$(TMP)"` vs `--cache-dir="$(TMP)"`
 - update item title when item changes
   - keep a history of item titles
