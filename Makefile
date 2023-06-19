@@ -21,22 +21,18 @@ build : $(TMP)/docker-build.stamp.txt
 check : $(TMP)/pytest.stamp.txt
 
 
-.PHONY : cov
-cov : $(TMP)/.coverage
-
-
 .PHONY : clean
 clean : stop
 	-docker rm $(NEWS)
 	rm -rf $(TMP)
 
 
+.PHONY : cov
+cov : $(TMP)/.coverage
+
+
 .PHONY : debug
 debug :
-	REDDIT_PRIVATE_RSS_FEED="$(REDDIT_PRIVATE_RSS_FEED)" \
-	python3 src/extractor.py \
-		--cache-dir="$(TMP)" \
-		--no-store
 	FLASK_CACHE_DIR="$(TMP)" \
 	FLASK_RUN_PORT=8001 \
 	flask \
@@ -47,6 +43,14 @@ debug :
 
 .PHONY : deploy
 deploy : $(TMP)/aws-lightsail-create-container-service-deployment.stamp.txt
+
+
+.PHONY : extract
+extract :
+	REDDIT_PRIVATE_RSS_FEED="$(REDDIT_PRIVATE_RSS_FEED)" \
+	python3 src/extractor.py \
+		--cache-dir="$(TMP)" \
+		--no-store
 
 
 .PHONY : logs

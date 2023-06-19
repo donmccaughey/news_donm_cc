@@ -1,6 +1,5 @@
 # To Do
 
-- add `extract` makefile target
 - `News` object is now frequently `modified` due to item updating and 
     news page "new item" bar doesn't work as intended
     drop `Item.age` for now and rethink
@@ -15,6 +14,7 @@
 - remove "tn" -> "~n" conversion code from `News.decode()`
 - `version.txt` is written to the project root so the `Dockerfile` can find it
   - figure out if this can go in the `$(TMP)` directory
+- inconsistent `FLASK_CACHE_DIR="$(TMP)"` vs `--cache-dir="$(TMP)"`
 - update item title when item changes
   - keep a history of item titles
 - about page

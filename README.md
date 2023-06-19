@@ -22,9 +22,10 @@ can find the current list of sources in the [`Feeds.all()`][1] method.
    - `python3 -m pip install -r requirements.txt` 
    - `python3 -m pip install -r dev-requirements.txt`
 4. Run tests: `make check`
-5. Run the server locally for ad hoc testing: `make debug`
-6. Run the container locally and shell into it: `make shell`
-7. Deploy a new version from the current machine: `make deploy`
+5. Run the extractor locally for ad hoc testing: `make extract`
+6. Run the server locally for ad hoc testing: `make debug`
+7. Run the container locally and shell into it: `make shell`
+8. Deploy a new version from the current machine: `make deploy`
 
 
 ## Functional Goals
