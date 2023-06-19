@@ -262,13 +262,6 @@ $(TMP)/pip-install-requirements.stamp.txt : requirements.txt | $$(dir $$@)
 	date > $@
 
 
-$(TMP)/pip-install-cov-requirements.stamp.txt : cov-requirements.txt | $$(dir $$@)
-	python3 -m pip install \
-		--quiet --quiet --quiet \
-		--requirement $<
-	date > $@
-
-
 $(TMP)/pip-install-dev-requirements.stamp.txt : dev-requirements.txt | $$(dir $$@)
 	python3 -m pip install \
 		--quiet --quiet --quiet \
@@ -291,11 +284,11 @@ $(TMP)/.coverage : \
 		$(source_files) \
 		$(test_files) \
 		$(TMP)/pip-install-requirements.stamp.txt \
-		$(TMP)/pip-install-cov-requirements.stamp.txt \
 		$(TMP)/pip-install-dev-requirements.stamp.txt \
 		| $$(dir $$@)
 	COVERAGE_FILE=$@ \
-	python3 -m pytest --cov \
+	python3 -m pytest \
+		--cov \
 		--cov-config=$< \
 		--cov-report=html:"$(TMP)/coverage" \
 		--cov-report=xml:"$(TMP)/coverage.xml" \
