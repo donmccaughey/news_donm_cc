@@ -69,14 +69,14 @@ def test_str_and_repr():
     assert repr(item) == "Item(URL('https://example.com/1'), 'Item 1', [Source(URL('https://source.com/1'), 'so', 1)])"
 
 
-def test_other_sources():
+def test_different_sources():
     item1 = Item(
         URL('https://example.com/1'),
         'Item 1',
         [Source(URL('https://source.com/1'), 'so')],
     )
 
-    assert len(item1.other_sources) == 1
+    assert len(item1.different_sources) == 1
 
     item2 = Item(
         URL('https://example.com/2'),
@@ -84,18 +84,18 @@ def test_other_sources():
         [Source(URL('https://example.com/2'), 'so')],
     )
 
-    assert len(item2.other_sources) == 0
+    assert len(item2.different_sources) == 0
 
 
 def test_update_from_with_new_source():
-    source = Source(URL('https://source.com/1'), 'so')
+    source = Source(URL('https://source.com/1'), 'so', 1)
     existing = Item(
         URL('https://example.com/1'),
         'Item 1',
         [source],
     )
 
-    alt_source = Source(URL('https://alt-source.com/2'), 'alt')
+    alt_source = Source(URL('https://alt-source.com/2'), 'alt', 1)
     other = Item(
         URL('https://example.com/1'),
         'Item 1',
@@ -105,19 +105,21 @@ def test_update_from_with_new_source():
     existing.update_from(other)
 
     assert len(existing.sources) == 2
-    assert source in existing.sources
-    assert alt_source in existing.sources
+    assert existing.sources[0] == source
+    assert existing.sources[0].count == 1
+    assert existing.sources[1] == alt_source
+    assert existing.sources[1].count == 1
 
 
 def test_update_from_with_same_source():
-    source = Source(URL('https://source.com/1'), 'so')
+    source = Source(URL('https://source.com/1'), 'so', 1)
     existing = Item(
         URL('https://example.com/1'),
         'Item 1',
         [source],
     )
 
-    source_dup = Source(URL('https://source.com/1'), 'so')
+    source_dup = Source(URL('https://source.com/1'), 'so', 1)
     other = Item(
         URL('https://example.com/1'),
         'Item 1',
@@ -127,8 +129,10 @@ def test_update_from_with_same_source():
     existing.update_from(other)
 
     assert len(existing.sources) == 1
-    assert source in existing.sources
-    assert source_dup in existing.sources
+    assert existing.sources[0] == source
+    assert existing.sources[0].count == 2
+
+    assert source_dup.count == 1
 
 
 def test_decode_from_source():

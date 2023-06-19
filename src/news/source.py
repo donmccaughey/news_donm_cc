@@ -21,6 +21,9 @@ class Source:
     def __repr__(self) -> str:
         return f"Source({repr(self.url)}, '{self.site_id}', {self.count})"
 
+    def update_from(self, other: 'Source'):
+        self.count += other.count
+
     @staticmethod
     def decode(encoded: JSONDict) -> 'Source':
         return Source(

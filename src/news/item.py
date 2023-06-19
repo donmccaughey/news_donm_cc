@@ -34,16 +34,22 @@ class Item:
         return f'"{self.title}" ({self.url})'
 
     @property
-    def other_sources(self) -> list[Source]:
+    def different_sources(self) -> list[Source]:
         return sorted(
             [source for source in self.sources if self.url != source.url],
             key=lambda source: source.site_id,
         )
 
     def update_from(self, other: 'Item'):
-        for source in other.sources:
-            if source not in self.sources:
-                self.sources.append(source)
+        for other_source in other.sources:
+            self.update_from_source(other_source)
+
+    def update_from_source(self, other_source: Source):
+        for source in self.sources:
+            if source == other_source:
+                source.update_from(other_source)
+                return
+        self.sources.append(other_source)
 
     @staticmethod
     def decode(encoded: JSONDict) -> 'Item':

@@ -33,6 +33,23 @@ def test_source_rewrites_url():
     assert source.url == URL('https://old.reddit.com/r/pics/comments/13a00ge/a_canadian_goose_that_comes_back_year_after_year/')
 
 
+def test_update_from():
+    source = Source.decode({
+        'url': 'https://source.com/1',
+        'site_id': 'so',
+        'count': 2,
+    })
+    source_dup = Source.decode({
+        'url': 'https://source.com/1',
+        'site_id': 'so',
+        'count': 1,
+    })
+
+    source.update_from(source_dup)
+
+    assert source.count == 3
+
+
 def test_decode():
     source = Source.decode({
         'url': 'https://source.com/1',
