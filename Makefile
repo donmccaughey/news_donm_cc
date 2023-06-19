@@ -88,19 +88,19 @@ container_files := \
 	.dockerignore \
 	requirements.txt \
 	container/crontabs/news \
+	container/nginx/nginx.conf \
+	container/nginx/error_pages/404.html \
+	container/nginx/error_pages/500.html \
+	container/nginx/error_pages/502.html \
+	container/nginx/error_pages/503.html \
+	container/nginx/error_pages/504.html \
 	container/profile.d/dir.sh \
 	container/sbin/check-health \
 	container/sbin/extract \
 	container/sbin/news \
 	container/sbin/serve \
-	nginx/nginx.conf \
-	nginx/error_pages/404.html \
-	nginx/error_pages/500.html \
-	nginx/error_pages/502.html \
-	nginx/error_pages/503.html \
-	nginx/error_pages/504.html \
-	wwwroot/robots.txt \
-	wwwroot/sitemap.txt
+	container/wwwroot/robots.txt \
+	container/wwwroot/sitemap.txt
 
 script_files := \
 	scripts/logs.py

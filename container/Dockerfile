@@ -22,10 +22,10 @@ RUN ln -sf /srv/www /var/lib/nginx/html
 RUN mkdir -p /var/cache/nginx
 RUN chown -R nginx:nginx /var/cache/nginx
 
-COPY nginx/nginx.conf /etc/nginx/nginx.conf
-COPY --chown=nginx:www-data wwwroot /srv/www
+COPY container/nginx/nginx.conf /etc/nginx/nginx.conf
+COPY --chown=nginx:www-data container/wwwroot /srv/www
 COPY --chown=nginx:nginx \
-        nginx/error_pages /usr/lib/nginx/error_pages
+        container/nginx/error_pages /usr/lib/nginx/error_pages
 
 
 # cron jobs
