@@ -5,14 +5,14 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from feeds import Feeds
-from news import CACHE_DIR, LAST_EXTRACTION_FILE, News, NEWS_FILE, NoStore, ReadOnlyStore, S3Store
+from news import CACHE_DIR, LAST_EXTRACTION_FILE, News, NEWS_FILE, NoStore, ReadOnlyStore, S3Store, URL
 from utility import Cache, iso
 
 
 class CachedFeeds:
-    def __init__(self, options: Namespace):
-        self.feeds = Feeds.all(vars(options))
-        self.cache = Cache(options.cache_dir / 'feeds.json')
+    def __init__(self, cache_dir: Path, reddit_private_rss_feed: str):
+        self.feeds = Feeds.all(URL(reddit_private_rss_feed))
+        self.cache = Cache(cache_dir / 'feeds.json')
         cached_feeds = Feeds.from_json(self.cache.get() or Feeds().to_json())
         self.feeds.update_from(cached_feeds)
 
@@ -24,12 +24,12 @@ class CachedFeeds:
 
 
 class CachedNews:
-    def __init__(self, options: Namespace):
-        self.store = NoStore() if options.no_store else S3Store()
-        if options.read_only:
+    def __init__(self, cache_dir: Path, no_store: bool, read_only: bool):
+        self.store = NoStore() if no_store else S3Store()
+        if read_only:
             self.store = ReadOnlyStore(self.store)
 
-        self.cache = Cache(options.cache_dir / NEWS_FILE)
+        self.cache = Cache(cache_dir / NEWS_FILE)
 
         self.news = News.from_json(
             self.cache.get() or self.store.get() or News().to_json()
@@ -73,12 +73,12 @@ def main():
     log = logging.getLogger()
     log.name = Path(__file__).name
 
-    with CachedFeeds(options) as feeds:
+    with CachedFeeds(options.cache_dir, options.reddit_private_rss_feed) as feeds:
         now = datetime.now(timezone.utc)
         items = []
         for feed in feeds:
             items += feed.get_items(now)
-        with CachedNews(options) as news:
+        with CachedNews(options.cache_dir, options.no_store, options.read_only) as news:
             added_count, modified_count = news.update(items, now)
             removed_count = news.remove_old(now)
 

@@ -18,7 +18,7 @@ from .tilde_news import TildeNews
 
 class Feeds(Iterable[Feed]):
     @staticmethod
-    def all(options: dict) -> 'Feeds':
+    def all(reddit_url: URL) -> 'Feeds':
         feeds = [
             Acoup(),
             CharityWTF(),
@@ -26,7 +26,7 @@ class Feeds(Iterable[Feed]):
             DaringFireball(),
             HackerNews(),
             Lobsters(),
-            Reddit(URL(options['reddit_private_rss_feed'])),
+            Reddit(reddit_url),
             RustBlog(),
             Streetsblog(),
             TildeNews(),
