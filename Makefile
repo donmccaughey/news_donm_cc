@@ -32,7 +32,7 @@ cov : $(TMP)/.coverage
 
 
 .PHONY : debug
-debug :
+debug : $(TMP)/pip-install-requirements.stamp.txt
 	FLASK_CACHE_DIR="$(TMP)" \
 	FLASK_RUN_PORT=8001 \
 	flask \
@@ -46,7 +46,7 @@ deploy : $(TMP)/aws-lightsail-create-container-service-deployment.stamp.txt
 
 
 .PHONY : extract
-extract :
+extract : $(TMP)/pip-install-requirements.stamp.txt
 	REDDIT_PRIVATE_RSS_FEED="$(REDDIT_PRIVATE_RSS_FEED)" \
 	python3 src/extractor.py \
 		--cache-dir="$(TMP)" \
@@ -82,10 +82,6 @@ status :
 stop :
 	-docker stop $(NEWS)
 	rm -rf $(TMP)/docker-run.stamp.txt
-
-
-.PHONY : deployment
-deployment : $(TMP)/create-container-service-deployment.json
 
 
 container_files := \
@@ -262,7 +258,7 @@ $(TMP)/pip-install-requirements.stamp.txt : requirements.txt | $$(dir $$@)
 	date > $@
 
 
-$(TMP)/pip-install-dev-requirements.stamp.txt : dev-requirements.txt | $$(dir $$@)
+$(TMP)/pip-install-requirements-dev.stamp.txt : requirements-dev.txt | $$(dir $$@)
 	python3 -m pip install \
 		--quiet --quiet --quiet \
 		--requirement $<
@@ -273,7 +269,7 @@ $(TMP)/pytest.stamp.txt : \
 		$(source_files) \
 		$(test_files) \
 		$(TMP)/pip-install-requirements.stamp.txt \
-		$(TMP)/pip-install-dev-requirements.stamp.txt \
+		$(TMP)/pip-install-requirements-dev.stamp.txt \
 		| $$(dir $$@)
 	python3 -m pytest --quiet --quiet
 	date > $@
@@ -284,7 +280,7 @@ $(TMP)/.coverage : \
 		$(source_files) \
 		$(test_files) \
 		$(TMP)/pip-install-requirements.stamp.txt \
-		$(TMP)/pip-install-dev-requirements.stamp.txt \
+		$(TMP)/pip-install-requirements-dev.stamp.txt \
 		| $$(dir $$@)
 	COVERAGE_FILE=$@ \
 	python3 -m pytest \
