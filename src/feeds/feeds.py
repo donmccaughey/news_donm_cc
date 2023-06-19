@@ -17,19 +17,6 @@ from .tilde_news import TildeNews
 
 
 class Feeds(Iterable[Feed]):
-    def __init__(self, feeds: list[Feed] | None = None):
-        self.feeds: dict[Feed, Feed] = {feed: feed for feed in feeds} if feeds else {}
-
-    def __iter__(self) -> Iterator[Feed]:
-        return iter(self.feeds.keys())
-
-    def __len__(self) -> int:
-        return len(self.feeds)
-
-    def __repr__(self) -> str:
-        feed_list = ','.join([repr(feed) for feed in self.feeds.keys()])
-        return f'<Feeds: {feed_list}>'
-
     @staticmethod
     def all(options: dict) -> 'Feeds':
         feeds = [
@@ -45,6 +32,19 @@ class Feeds(Iterable[Feed]):
             TildeNews(),
         ]
         return Feeds(feeds)
+
+    def __init__(self, feeds: list[Feed] | None = None):
+        self.feeds: dict[Feed, Feed] = {feed: feed for feed in feeds} if feeds else {}
+
+    def __iter__(self) -> Iterator[Feed]:
+        return iter(self.feeds.keys())
+
+    def __len__(self) -> int:
+        return len(self.feeds)
+
+    def __repr__(self) -> str:
+        feed_list = ','.join([repr(feed) for feed in self.feeds.keys()])
+        return f'<Feeds: {feed_list}>'
 
     def update_from(self, other: 'Feeds'):
         for feed in other:
