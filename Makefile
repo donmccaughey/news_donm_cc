@@ -210,7 +210,7 @@ $(TMP)/create-container-service-deployment.json : aws/create-container-service-d
 
 
 $(TMP)/docker-build.stamp.txt : \
-		Dockerfile \
+		container/Dockerfile \
 		$(container_files) \
 		$(source_files) \
 		| $$(dir $$@)
@@ -220,7 +220,7 @@ $(TMP)/docker-build.stamp.txt : \
 		--platform linux/amd64 \
 		--tag $(NEWS) \
 		--quiet \
-		$(dir $<)
+		.
 	date > $@
 
 
