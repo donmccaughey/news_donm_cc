@@ -1,69 +1,10 @@
 import logging
-import os
-from argparse import ArgumentParser, Namespace
 from datetime import datetime, timezone
 from pathlib import Path
 
-from feeds import Feeds
-from news import CACHE_DIR, LAST_EXTRACTION_FILE, News, NEWS_FILE, NoStore, ReadOnlyStore, S3Store, URL
-from utility import Cache, iso
-
-
-class CachedFeeds:
-    def __init__(self, cache_dir: Path, reddit_private_rss_feed: str):
-        self.feeds = Feeds.all(URL(reddit_private_rss_feed))
-        self.cache = Cache(cache_dir / 'feeds.json')
-        cached_feeds = Feeds.from_json(self.cache.get() or Feeds().to_json())
-        self.feeds.update_from(cached_feeds)
-
-    def __enter__(self) -> Feeds:
-        return self.feeds
-
-    def __exit__(self, exc_type, exc_val, exc_tb):
-        self.cache.put(self.feeds.to_json())
-
-
-class CachedNews:
-    def __init__(self, cache_dir: Path, no_store: bool, read_only: bool):
-        self.store = NoStore() if no_store else S3Store()
-        if read_only:
-            self.store = ReadOnlyStore(self.store)
-
-        self.cache = Cache(cache_dir / NEWS_FILE)
-
-        self.news = News.from_json(
-            self.cache.get() or self.store.get() or News().to_json()
-        )
-
-    def __enter__(self) -> News:
-        return self.news
-
-    def __exit__(self, exc_type, exc_val, exc_tb):
-        json = self.news.to_json()
-        self.cache.put(json)
-        self.store.put(json)
-
-
-def env_is_true(name: str) -> bool:
-    return (
-        name in os.environ
-        and os.environ[name].lower() in ['true', 'yes', '1']
-    )
-
-
-def parse_options() -> Namespace:
-    arg_parser = ArgumentParser(description='News extractor.')
-    arg_parser.add_argument('-c', '--cache-dir', dest='cache_dir',
-                            default=CACHE_DIR, type=Path,
-                            help='location to store cache files')
-    arg_parser.add_argument('--no-store', dest='no_store', default=False,
-                            action='store_true', help="don't use a persistent store")
-    options = arg_parser.parse_args()
-
-    options.read_only = not env_is_true('EXTRACTOR_READ_WRITE')
-    options.reddit_private_rss_feed = os.environ['REDDIT_PRIVATE_RSS_FEED']
-
-    return options
+from extractor import CachedFeeds, CachedNews, parse_options
+from news import LAST_EXTRACTION_FILE
+from utility import iso
 
 
 def main():
