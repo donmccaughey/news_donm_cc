@@ -70,8 +70,8 @@ def test_update_for_existing_item_from_new_source():
     assert len(news) == 1
     assert news.by_site == {'example.com': [item1]}
     assert len(news.ordered_items[0].sources) == 2
-    assert news.ordered_items[0].has_source(item1.sources[0])
-    assert news.ordered_items[0].has_source(item1_alt_source.sources[0])
+    assert item1.sources[0] in news.ordered_items[0].sources
+    assert item1_alt_source.sources[0] in news.ordered_items[0].sources
 
 
 def test_remove_old_when_empty():

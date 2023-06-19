@@ -69,21 +69,6 @@ def test_str_and_repr():
     assert repr(item) == "Item(URL('https://example.com/1'), 'Item 1', [Source(URL('https://source.com/1'), 'so', 1)])"
 
 
-def test_has_source():
-    source = Source(URL('https://source.com/1'), 'so')
-    source_dup = Source(URL('https://source.com/1'), 'so')
-    alt_source = Source(URL('https://alt-source.com/2'), 'alt')
-    item = Item(
-        URL('https://example.com/1'),
-        'Item 1',
-        [source],
-    )
-
-    assert item.has_source(source)
-    assert item.has_source(source_dup)
-    assert not item.has_source(alt_source)
-
-
 def test_other_sources():
     item1 = Item(
         URL('https://example.com/1'),
@@ -100,6 +85,50 @@ def test_other_sources():
     )
 
     assert len(item2.other_sources) == 0
+
+
+def test_update_from_with_new_source():
+    source = Source(URL('https://source.com/1'), 'so')
+    existing = Item(
+        URL('https://example.com/1'),
+        'Item 1',
+        [source],
+    )
+
+    alt_source = Source(URL('https://alt-source.com/2'), 'alt')
+    other = Item(
+        URL('https://example.com/1'),
+        'Item 1',
+        [alt_source],
+    )
+
+    existing.update_from(other)
+
+    assert len(existing.sources) == 2
+    assert source in existing.sources
+    assert alt_source in existing.sources
+
+
+def test_update_from_with_same_source():
+    source = Source(URL('https://source.com/1'), 'so')
+    existing = Item(
+        URL('https://example.com/1'),
+        'Item 1',
+        [source],
+    )
+
+    source_dup = Source(URL('https://source.com/1'), 'so')
+    other = Item(
+        URL('https://example.com/1'),
+        'Item 1',
+        [source_dup],
+    )
+
+    existing.update_from(other)
+
+    assert len(existing.sources) == 1
+    assert source in existing.sources
+    assert source_dup in existing.sources
 
 
 def test_decode_from_source():

@@ -89,14 +89,8 @@ class News(Iterable[Item]):
         for new_item in reversed(new_items):
             self.add_item(new_item, at_head=True)
         for existing_item in existing_items:
-            self.update_item(existing_item)
+            self.unique_items[existing_item].update_from(existing_item)
         return len(new_items), len(existing_items)
-
-    def update_item(self, item: Item):
-        existing = self.unique_items[item]
-        for source in item.sources:
-            if not existing.has_source(source):
-                existing.sources.append(source)
 
     @staticmethod
     def decode(encoded: JSONDict) -> 'News':

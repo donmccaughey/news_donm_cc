@@ -40,8 +40,10 @@ class Item:
             key=lambda source: source.site_id,
         )
 
-    def has_source(self, source: Source) -> bool:
-        return source in self.sources
+    def update_from(self, other: 'Item'):
+        for source in other.sources:
+            if source not in self.sources:
+                self.sources.append(source)
 
     @staticmethod
     def decode(encoded: JSONDict) -> 'Item':
