@@ -11,7 +11,6 @@
   - add `visible` property to `Item` that aggregates `visible` flags from `Source`s
   - add `visible_items` property to `News` to iterate over visible items
 - remove support for single source from `Item.decode()`
-- remove "tn" -> "~n" conversion code from `News.decode()`
 - inconsistent `FLASK_CACHE_DIR="$(TMP)"` vs `--cache-dir="$(TMP)"`
 - update item title when item changes
   - keep a history of item titles

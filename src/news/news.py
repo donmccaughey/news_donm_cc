@@ -94,13 +94,8 @@ class News(Encodable, Iterable[Item], Serializable):
 
     @staticmethod
     def decode(encoded: JSONDict) -> 'News':
-        items = [Item.decode(item) for item in encoded['items']]
-        for item in items:
-            for source in item.sources:
-                if source.site_id == 'tn':
-                    source.site_id = '~n'
         return News(
-            items=items,
+            items=[Item.decode(item) for item in encoded['items']],
             created=datetime.fromisoformat(encoded['created']),
             modified=datetime.fromisoformat(encoded['modified']),
         )
