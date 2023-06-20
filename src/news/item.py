@@ -63,14 +63,10 @@ class Item(Encodable):
 
     @staticmethod
     def decode(encoded: JSONDict) -> 'Item':
-        if 'sources' in encoded:
-            sources = encoded['sources']
-        else:
-            sources = [encoded['source']]
         return Item(
             url=URL(encoded['url']),
             title=encoded['title'],
-            sources=[Source.decode(source) for source in sources],
+            sources=[Source.decode(source) for source in (encoded['sources'])],
             created=datetime.fromisoformat(encoded['created']),
             modified=datetime.fromisoformat(encoded['modified']),
         )

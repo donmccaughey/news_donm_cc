@@ -211,26 +211,6 @@ def test_update_from_with_same_source():
     assert source_dup.count == 1
 
 
-def test_decode_from_source():
-    encoded = {
-        'url': 'https://example.com/1',
-        'title': 'Item 1',
-        'source': {
-            'url': 'https://source.com/1',
-            'site_id': 'so',
-        },
-        'created': '2022-12-22T16:36:54.143222+00:00',
-        'modified': '2022-12-22T16:36:54.143222+00:00',
-    }
-
-    item = Item.decode(encoded)
-
-    assert item.url == URL('https://example.com/1')
-    assert item.title == 'Item 1'
-    assert item.sources[0].url == URL('https://source.com/1')
-    assert item.sources[0].site_id == 'so'
-
-
 def test_decode_from_sources():
     encoded = {
         'url': 'https://example.com/1',
