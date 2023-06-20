@@ -15,6 +15,20 @@ def test_eq_and_hash():
     assert source1 != alt_source
 
 
+def test_lt_by_sorting():
+    source1 = Source(URL('https://source.com/1'), 'aa', 2)
+    source2 = Source(URL('https://example.com/1'), 'bb', 1)
+    source3 = Source(URL('https://alt-example.com/2'), 'cc')
+    source4 = Source(URL('https://alt-source.com/1'), 'dd', 3)
+
+    sorted_sources = sorted([source3, source1, source4, source2])
+
+    assert sorted_sources[0].site_id == 'aa'
+    assert sorted_sources[1].site_id == 'bb'
+    assert sorted_sources[2].site_id == 'cc'
+    assert sorted_sources[3].site_id == 'dd'
+
+
 def test_source_cleans_url():
     source = Source(
         URL('https://queue.acm.org/detail.cfm?id=2898444&utm_source=daringfireball&utm_campaign=df2023'),

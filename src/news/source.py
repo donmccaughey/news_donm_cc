@@ -18,6 +18,9 @@ class Source:
     def __hash__(self) -> int:
         return hash((self.url, self.site_id))
 
+    def __lt__(self, other: 'Source') -> bool:
+        return self.site_id < other.site_id
+
     def __repr__(self) -> str:
         return f"Source({repr(self.url)}, '{self.site_id}', {self.count})"
 
