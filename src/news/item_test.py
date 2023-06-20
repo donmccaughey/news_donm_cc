@@ -69,6 +69,20 @@ def test_str_and_repr():
     assert repr(item) == "Item(URL('https://example.com/1'), 'Item 1', [Source(URL('https://source.com/1'), 'so', 1)])"
 
 
+def test_count():
+    item = Item(
+        URL('https://example.com/1'),
+        'Item 1',
+        [Source(URL('https://source.com/1'), 'so', 2)],
+    )
+
+    assert item.count == 2
+
+    alt_source = Source(URL('https://alt-source.com/2'), 'alt', 1)
+    item.sources.append(alt_source)
+
+    assert item.count == 3
+
 def test_different_sources():
     item1 = Item(
         URL('https://example.com/1'),

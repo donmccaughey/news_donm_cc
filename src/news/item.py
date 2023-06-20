@@ -34,6 +34,10 @@ class Item:
         return f'"{self.title}" ({self.url})'
 
     @property
+    def count(self) -> int:
+        return sum(source.count for source in self.sources)
+
+    @property
     def different_sources(self) -> list[Source]:
         return sorted(
             [source for source in self.sources if self.url != source.url],
