@@ -5,13 +5,13 @@ from datetime import datetime, timezone
 from feedparser import FeedParserDict, parse
 
 from news import LIFETIME, Item, Source, URL
-from utility.jsontype import JSONDict
+from serialize import Encodable, JSONDict
 
 
 log = logging.getLogger(__name__)
 
 
-class Feed:
+class Feed(Encodable):
     def __init__(self,
                  name: str,
                  initials: str,

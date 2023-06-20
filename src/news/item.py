@@ -1,11 +1,11 @@
 from datetime import datetime, timezone
 
-from utility.jsontype import JSONDict
+from serialize import Encodable, JSONDict
 from .source import Source
 from .url import URL
 
 
-class Item:
+class Item(Encodable):
     def __init__(self,
                  url: URL,
                  title: str,
