@@ -103,6 +103,33 @@ def test_lt_by_sorting():
     assert sorted_items[3].title == 'Item 1'
 
 
+def test_lt_by_sorting_for_equal_created_sorts_on_url():
+    item1 = Item(
+        URL('https://aaa.com/1'),
+        'Item 1',
+        [Source(URL('https://source.com/1'), 'so')],
+        created=AN_HOUR_AGO,
+    )
+    item2 = Item(
+        URL('https://bbb.com/2'),
+        'Item 2',
+        [Source(URL('https://source.com/2'), 'so')],
+        created=AN_HOUR_AGO,
+    )
+    item3 = Item(
+        URL('https://ccc.com/3'),
+        'Item 3',
+        [Source(URL('https://source.com/3'), 'so')],
+        created=AN_HOUR_AGO,
+    )
+
+    sorted_items = sorted([item2, item3, item1])
+
+    assert sorted_items[0].title == 'Item 1'
+    assert sorted_items[1].title == 'Item 2'
+    assert sorted_items[2].title == 'Item 3'
+
+
 def test_count():
     item = Item(
         URL('https://example.com/1'),
