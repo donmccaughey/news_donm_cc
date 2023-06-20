@@ -1,6 +1,7 @@
 from pathlib import Path
 
-from news import NoStore, S3Store, ReadOnlyStore, NEWS_FILE, News
+from news import NEWS_FILE, News
+from .store import NoStore, S3Store, ReadOnlyStore
 from utility import Cache
 
 

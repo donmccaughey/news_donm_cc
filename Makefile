@@ -112,6 +112,12 @@ source_files := \
 	src/query.py \
 	src/youtube_user.py \
 	\
+	src/extractor/__init__.py \
+	src/extractor/cached_feeds.py \
+	src/extractor/cached_news.py \
+	src/extractor/options.py \
+	src/extractor/store.py \
+	\
 	src/feeds/__init__.py \
 	src/feeds/acoup.py \
 	src/feeds/charity_wtf.py \
@@ -136,7 +142,6 @@ source_files := \
 	src/news/item.py \
 	src/news/news.py \
 	src/news/source.py \
-	src/news/store.py \
 	src/news/url.py \
 	\
 	src/server/__init__.py \
@@ -158,6 +163,8 @@ source_files := \
 	src/utility/page.py
 
 test_files := \
+	src/extractor/store_test.py \
+	\
 	src/feeds/daring_fireball_test.py \
 	src/feeds/feed_test.py \
 	src/feeds/feeds_test.py \
@@ -170,7 +177,6 @@ test_files := \
 	src/news/item_test.py \
 	src/news/news_test.py \
 	src/news/source_test.py \
-	src/news/store_test.py \
 	src/news/url_test.py \
 	\
 	src/utility/cache_test.py \

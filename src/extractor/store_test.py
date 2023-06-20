@@ -21,7 +21,7 @@ def make_boto3_client_function():
 
 
 def test_str_and_repr_for_s3_store(monkeypatch):
-    monkeypatch.setattr('news.store.boto3.client', make_boto3_client_function())
+    monkeypatch.setattr('extractor.store.boto3.client', make_boto3_client_function())
 
     store = S3Store()
 

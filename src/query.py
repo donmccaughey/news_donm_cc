@@ -2,7 +2,8 @@ import argparse
 from collections import defaultdict
 from pathlib import Path
 
-from news import News, S3Store
+from news import News
+from extractor import S3Store
 from utility import Cache
 
 
