@@ -27,6 +27,9 @@ class Item:
     def __hash__(self) -> int:
         return hash(self.url)
 
+    def __lt__(self, other: 'Item') -> bool:
+        return self.created > other.created
+
     def __repr__(self) -> str:
         return f"Item({repr(self.url)}, '{self.title}', {repr(self.sources)})"
 

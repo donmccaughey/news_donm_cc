@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 
 from .item import Item
 from .source import Source
@@ -69,6 +69,40 @@ def test_str_and_repr():
     assert repr(item) == "Item(URL('https://example.com/1'), 'Item 1', [Source(URL('https://source.com/1'), 'so', 1)])"
 
 
+def test_lt_by_sorting():
+    item1 = Item(
+        URL('https://example.com/1'),
+        'Item 1',
+        [Source(URL('https://source.com/1'), 'so')],
+        created=THREE_DAYS_AGO,
+    )
+    item2 = Item(
+        URL('https://example.com/2'),
+        'Item 2',
+        [Source(URL('https://source.com/2'), 'so')],
+        created=TWO_DAYS_AGO,
+    )
+    item3 = Item(
+        URL('https://example.com/3'),
+        'Item 3',
+        [Source(URL('https://source.com/3'), 'so')],
+        created=YESTERDAY,
+    )
+    item4 = Item(
+        URL('https://example.com/4'),
+        'Item 4',
+        [Source(URL('https://source.com/4'), 'so')],
+        created=AN_HOUR_AGO,
+    )
+
+    sorted_items = sorted([item2, item4, item1, item3])
+
+    assert sorted_items[0].title == 'Item 4'
+    assert sorted_items[1].title == 'Item 3'
+    assert sorted_items[2].title == 'Item 2'
+    assert sorted_items[3].title == 'Item 1'
+
+
 def test_count():
     item = Item(
         URL('https://example.com/1'),
@@ -82,6 +116,7 @@ def test_count():
     item.sources.append(alt_source)
 
     assert item.count == 3
+
 
 def test_different_sources():
     item1 = Item(
@@ -221,3 +256,10 @@ def test_encode():
     ]
     assert encoded['created'] == '2022-12-22T16:36:54.143222+00:00'
     assert encoded['modified'] == '2022-12-22T16:36:54.143222+00:00'
+
+
+NOW = datetime.now(timezone.utc)
+AN_HOUR_AGO = NOW - timedelta(hours=1)
+YESTERDAY = NOW - timedelta(days=1)
+TWO_DAYS_AGO = NOW - timedelta(days=2)
+THREE_DAYS_AGO = NOW - timedelta(days=3)
