@@ -1,6 +1,5 @@
 # To Do
 
-- mock `boto3.client()` for `S3Store` tests
 - move `Store` classes from `news` into `extractor`
 - `News` object is now frequently `modified` due to item updating and 
     news page "new item" bar doesn't work as intended

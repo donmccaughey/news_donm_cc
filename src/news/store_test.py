@@ -9,7 +9,20 @@ def test_str_and_repr_for_no_store():
     assert repr(store) == 'NoStore()'
 
 
-def test_str_and_repr_for_s3_store():
+class FakeS3Client:
+    def __init__(self):
+        pass
+
+
+def make_boto3_client_function():
+    def fake_client(*args, **kwargs):
+        return FakeS3Client()
+    return fake_client
+
+
+def test_str_and_repr_for_s3_store(monkeypatch):
+    monkeypatch.setattr('news.store.boto3.client', make_boto3_client_function())
+
     store = S3Store()
 
     assert str(store) == "S3Store('news.donm.cc', 'news.json')"
