@@ -4,14 +4,14 @@ from collections import defaultdict
 from datetime import datetime, timedelta, timezone
 from typing import Iterable, Iterator
 
-from serialize import Encodable, JSONDict
+from serialize import Encodable, JSONDict, Serializable
 from .item import Item
 
 
 LIFETIME = timedelta(days=15)
 
 
-class News(Encodable, Iterable[Item]):
+class News(Encodable, Iterable[Item], Serializable):
     def __init__(self,
                  items: list[Item] | None = None,
                  created: datetime | None = None,

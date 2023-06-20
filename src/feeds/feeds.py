@@ -2,7 +2,7 @@ import json
 from typing import Iterable, Iterator
 
 from news import URL
-from serialize import Encodable, JSONList
+from serialize import Encodable, JSONList, Serializable
 from .acoup import Acoup
 from .charity_wtf import CharityWTF
 from .cmake_tags import CMakeTags
@@ -16,7 +16,7 @@ from .streetsblog import Streetsblog
 from .tilde_news import TildeNews
 
 
-class Feeds(Encodable, Iterable[Feed]):
+class Feeds(Encodable, Iterable[Feed], Serializable):
     @staticmethod
     def all(reddit_url: URL) -> 'Feeds':
         feeds = [

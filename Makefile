@@ -126,6 +126,7 @@ source_files := \
 	src/feeds/feed.py \
 	src/feeds/feeds.py \
 	src/feeds/hacker_news.py \
+	src/feeds/lobsters.py \
 	src/feeds/reddit.py \
 	src/feeds/rust_blog.py \
 	src/feeds/skip_sites.py \
@@ -143,6 +144,11 @@ source_files := \
 	src/news/news.py \
 	src/news/source.py \
 	src/news/url.py \
+	\
+	src/serialize/__init__.py \
+	src/serialize/encodable.py \
+	src/serialize/jsontype.py \
+	src/serialize/serializable.py \
 	\
 	src/server/__init__.py \
 	src/server/create_app.py \
