@@ -38,6 +38,7 @@ CLEAN_QUERY_TESTS = [
     ('', ''),
     ('id=123&foo=bar', 'id=123&foo=bar'),
     ('blank=', 'blank='),
+    ('leadSource=uverify%20wall', ''),
     ('TupleSpace', 'TupleSpace'),
     ('utm_source=rss&utm_medium=rss&utm_campaign=foo', ''),
 ]
