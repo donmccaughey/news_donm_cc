@@ -29,6 +29,7 @@ SKIP_SITES = [
     'lrb.co.uk',
     'lynalden.com',
 
+    'marginalrevolution.com',
     'milkyeggs.com',
 
     'narratively.com',
@@ -48,6 +49,7 @@ SKIP_SITES = [
 
     'quillette.com',
 
+    'racket.news',
     'reason.com',
 
     'seths.blog',
@@ -58,9 +60,12 @@ SKIP_SITES = [
     'theamericanscholar.org',
     'thedriftmag.com',
     'theepochtimes.com',
+    'themarginalian.org',
     'thenewatlantis.com',
     'theparisreview.org',
+    'thepointmag.com',
     'thewalrus.ca',
+    'twitter.com',
 
     'unherd.com',
 
