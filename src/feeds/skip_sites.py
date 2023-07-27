@@ -3,11 +3,14 @@ SKIP_SITES = [
 
     'betonit.substack.com',
     'brave.com',
+    'buckleyschool.com',
 
     'chronicle.com',
 
     'dirt.fyi',
+    'discoursemagazine.com',
     'dissentmagazine.org',
+    'documentjournal.com',
 
     'emergencemagazine.org',
     'english.elpais.com',
@@ -25,11 +28,14 @@ SKIP_SITES = [
     'lareviewofbooks.org',
     'literaryreview.co.uk',
     'lithub.com',
+    'longnow.org',
     'longreads.com',
     'lrb.co.uk',
     'lynalden.com',
 
+    'mankindquarterly.org',
     'marginalrevolution.com',
+    'meltingasphalt.com',
     'milkyeggs.com',
 
     'narratively.com',
@@ -43,7 +49,10 @@ SKIP_SITES = [
 
     'openculture.com',
     'openthemagazine.com',
+    'otherlife.co',
+    'oxfordpoliticalreview.com',
 
+    'patrickcollison.com',
     'paulgraham.com',
     'publicdomainreview.org',
 
@@ -54,6 +63,7 @@ SKIP_SITES = [
 
     'seths.blog',
     'sive.rs',
+    'steve-yegge.blogspot.com',
     'astralcodexten.substack.com',
     'noahpinion.substack.com',
 
@@ -66,6 +76,7 @@ SKIP_SITES = [
     'thepointmag.com',
     'thewalrus.ca',
     'twitter.com',
+    'business.twitter.com',
 
     'unherd.com',
 
