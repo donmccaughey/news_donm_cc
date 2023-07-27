@@ -1,4 +1,4 @@
-SKIP_SITES = [
+SKIP_SITES = {
     'aeon.co',
 
     'betonit.substack.com',
@@ -83,4 +83,4 @@ SKIP_SITES = [
     'versobooks.com',
 
     'xtramagazine.com',
-]
+}
