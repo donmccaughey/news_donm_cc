@@ -5,7 +5,6 @@ from news import URL
 from serialize import Encodable, JSONList, Serializable
 from .acoup import Acoup
 from .charity_wtf import CharityWTF
-from .cmake_tags import CMakeTags
 from .daring_fireball import DaringFireball
 from .hacker_news import HackerNews
 from .lobsters import Lobsters
@@ -22,7 +21,6 @@ class Feeds(Encodable, Iterable[Feed], Serializable):
         feeds = [
             Acoup(),
             CharityWTF(),
-            CMakeTags(),
             DaringFireball(),
             HackerNews(),
             Lobsters(),

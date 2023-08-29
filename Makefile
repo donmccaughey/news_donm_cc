@@ -121,7 +121,6 @@ source_files := \
 	src/feeds/__init__.py \
 	src/feeds/acoup.py \
 	src/feeds/charity_wtf.py \
-	src/feeds/cmake_tags.py \
 	src/feeds/daring_fireball.py \
 	src/feeds/feed.py \
 	src/feeds/feeds.py \
