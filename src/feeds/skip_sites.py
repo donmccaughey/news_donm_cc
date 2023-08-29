@@ -2,19 +2,26 @@ SKIP_SITES = {
     'aeon.co',
 
     'betonit.substack.com',
+    'bloodknife.com',
     'brave.com',
     'buckleyschool.com',
 
     'chronicle.com',
+    'city-journal.org',
+    'commonwealmagazine.org',
+    'compactmag.com',
 
     'dirt.fyi',
     'discoursemagazine.com',
     'dissentmagazine.org',
     'documentjournal.com',
+    'dynomight.net',
 
     'emergencemagazine.org',
     'english.elpais.com',
     'europeanreviewofbooks.com',
+
+    'fantasticmetropolis.com',
 
     'hedgehogreview.com',
     'hudsonreview.com',
@@ -39,10 +46,13 @@ SKIP_SITES = {
     'milkyeggs.com',
 
     'narratively.com',
+    'nationalreview.com',
     'newcriterion.com',
+    'newleftreview.org',
     'newscientist.com',
     'newstatesman.com',
     'noahpinion.blog',
+    'noemamag.com',
     'nplusonemag.com',
     'nybooks.com',
     'nypost.com',
@@ -54,6 +64,7 @@ SKIP_SITES = {
 
     'patrickcollison.com',
     'paulgraham.com',
+    'project-syndicate.org',
     'publicdomainreview.org',
 
     'quillette.com',
@@ -63,10 +74,13 @@ SKIP_SITES = {
 
     'seths.blog',
     'sive.rs',
+    'spy.com',
     'steve-yegge.blogspot.com',
     'astralcodexten.substack.com',
+    'dynomight.substack.com',
     'noahpinion.substack.com',
 
+    'the-fence.com',
     'theamericanscholar.org',
     'thedriftmag.com',
     'theepochtimes.com',
@@ -82,5 +96,9 @@ SKIP_SITES = {
 
     'versobooks.com',
 
+    'wmagazine.com',
+
     'xtramagazine.com',
+
+    'yalereview.org',
 }
