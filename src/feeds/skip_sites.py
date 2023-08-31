@@ -3,6 +3,7 @@ SKIP_SITES = {
 
     'betonit.substack.com',
     'bloodknife.com',
+    'bookforum.com',
     'brave.com',
     'buckleyschool.com',
 
