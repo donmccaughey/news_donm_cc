@@ -1,5 +1,7 @@
 # To Do
 
+- Handle sites that hang for a long time
+  - in `Feed.get_items()`, implement a timeout when fetching the feed
 - Support patterns in `SKIP_SITES`
 - `News` object is now frequently `modified` due to item updating and 
     news page "new item" bar doesn't work as intended
