@@ -23,7 +23,7 @@ class Feeds(Encodable, Iterable[Feed], Serializable):
             CharityWTF(),
             DaringFireball(),
             HackerNews(),
-            # Lobsters(),
+            Lobsters(),
             Reddit(reddit_url),
             RustBlog(),
             Streetsblog(),

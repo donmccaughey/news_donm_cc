@@ -3,6 +3,7 @@ from datetime import datetime,timezone
 from email import utils
 
 from feedparser import FeedParserDict, parse
+from requests import ConnectTimeout
 
 from news import URL
 from .feed import Feed
@@ -140,66 +141,72 @@ def test_is_recent_is_missing():
     assert feed.is_entry_recent(d.entries[0], datetime.now(timezone.utc))
 
 
-class FakeFeedParserDict:
-    def __init__(self, status, href=None):
-        self.entries = []
-        if status:
-            self.status = status
-        if href:
-            self.href = href
-
-    def __contains__(self, item):
-        return hasattr(self, item)
-
-
-def make_parse_function(status, href=None):
-    def fake_parse(*args, **kwargs):
-        return FakeFeedParserDict(status=status, href=href)
-    return fake_parse
-
-
-def test_get_items_for_missing_status(caplog, monkeypatch):
-    caplog.set_level(logging.WARNING)
-    monkeypatch.setattr('feeds.feed.parse', make_parse_function(status=None))
-
-    feed = Feed('Hacker News', 'hn', URL('https://news.ycombinator.com/rss'))
-    items = feed.get_items(datetime.now(timezone.utc))
-
-    assert len(items) is 0
-    assert len(caplog.messages) is 1
-    assert caplog.messages[0] == 'Hacker News failed without status code'
+class FakeResponse:
+    def __init__(self, status_code, location=None):
+        self.content = '''
+            <?xml version="1.0" encoding="UTF-8"?>
+            <rss version="2.0">
+                <channel>
+                    <item>
+                        <title>Entry 1</title>
+                        <link>https://example.com/entry1</link>
+                    </item>
+                    <item>
+                        <title>Entry 2</title>
+                        <link>https://example.com/entry2</link>
+                    </item>
+                </channel>
+            </rss>
+            '''.encode('utf-8')
+        self.headers = {}
+        if location:
+            self.headers['Location'] = location
+        self.status_code = status_code
 
 
-def test_get_items_for_200_status(monkeypatch):
-    monkeypatch.setattr('feeds.feed.parse', make_parse_function(status=200))
+def make_get_function(*, exception=None, location=None, status_code=200):
+    def fake_get(*args, **kwargs):
+        if exception:
+            raise exception
+        return FakeResponse(status_code=status_code, location=location)
+    return fake_get
 
-    feed = Feed('Hacker News', 'hn', URL('https://news.ycombinator.com/rss'))
-    items = feed.get_items(datetime.now(timezone.utc))
 
-    assert len(items) is 0
-
-
-def test_get_items_for_302_status(monkeypatch):
-    monkeypatch.setattr('feeds.feed.parse', make_parse_function(status=302))
+def test_get_items_for_200_status(caplog, monkeypatch):
+    monkeypatch.setattr('requests.get', make_get_function(status_code=200))
 
     feed = Feed('Hacker News', 'hn', URL('https://news.ycombinator.com/rss'))
     items = feed.get_items(datetime.now(timezone.utc))
 
-    assert len(items) is 0
+    assert len(caplog.messages) is 0
+    assert len(items) is 2
 
 
-def test_get_items_for_304_status(monkeypatch):
-    monkeypatch.setattr('feeds.feed.parse', make_parse_function(status=304))
+def test_get_items_for_302_status(caplog, monkeypatch):
+    monkeypatch.setattr('requests.get', make_get_function(status_code=302))
 
     feed = Feed('Hacker News', 'hn', URL('https://news.ycombinator.com/rss'))
     items = feed.get_items(datetime.now(timezone.utc))
 
+    assert len(caplog.messages) is 0
+    assert len(items) is 2
+
+
+def test_get_items_for_304_status(caplog, monkeypatch):
+    monkeypatch.setattr('requests.get', make_get_function(status_code=304))
+
+    feed = Feed('Hacker News', 'hn', URL('https://news.ycombinator.com/rss'))
+    items = feed.get_items(datetime.now(timezone.utc))
+
+    assert len(caplog.messages) is 0
     assert len(items) is 0
 
 
 def test_get_items_for_308_status(caplog, monkeypatch):
-    parse_function = make_parse_function(status=308, href='https://example.com/redirect')
-    monkeypatch.setattr('feeds.feed.parse', parse_function)
+    monkeypatch.setattr(
+        'requests.get',
+        make_get_function(status_code=308, location='https://example.com/redirect')
+    )
 
     feed = Feed('Hacker News', 'hn', URL('https://news.ycombinator.com/rss'))
     items = feed.get_items(datetime.now(timezone.utc))
@@ -211,7 +218,7 @@ def test_get_items_for_308_status(caplog, monkeypatch):
 
 def test_get_items_for_other_status(caplog, monkeypatch):
     caplog.set_level(logging.WARNING)
-    monkeypatch.setattr('feeds.feed.parse', make_parse_function(status=500))
+    monkeypatch.setattr('requests.get', make_get_function(status_code=500))
 
     feed = Feed('Hacker News', 'hn', URL('https://news.ycombinator.com/rss'))
     items = feed.get_items(datetime.now(timezone.utc))
@@ -219,6 +226,18 @@ def test_get_items_for_other_status(caplog, monkeypatch):
     assert len(items) is 0
     assert len(caplog.messages) is 1
     assert caplog.messages[0] == 'Hacker News returned status code 500'
+
+
+def test_get_items_if_requests_raises_exception(caplog, monkeypatch):
+    caplog.set_level(logging.WARNING)
+    monkeypatch.setattr('requests.get', make_get_function(exception=ConnectTimeout()))
+
+    feed = Feed('Hacker News', 'hn', URL('https://news.ycombinator.com/rss'))
+    items = feed.get_items(datetime.now(timezone.utc))
+
+    assert len(items) is 0
+    assert len(caplog.messages) is 1
+    assert caplog.messages[0] == 'Hacker News failed: ConnectTimeout()'
 
 
 def test_parse_entries():

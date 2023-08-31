@@ -1,7 +1,9 @@
 import calendar
 import logging
 from datetime import datetime, timezone
+from io import BytesIO
 
+import requests
 from feedparser import FeedParserDict, parse
 
 from news import LIFETIME, Item, Source, URL
@@ -47,29 +49,32 @@ class Feed(Encodable):
     def get_items(self, now: datetime) -> list[Item]:
         assert self.url
 
-        d: FeedParserDict = parse(
-            str(self.url),
-            etag=self.etag,
-            modified=self.last_modified,
-            agent='News +https://news.donm.cc',
-        )
-        if 'status' not in d:
-            log.warning(f'{self.name} failed without status code')
+        try:
+            headers = {'User-Agent': 'News +https://news.donm.cc'}
+            if self.etag:
+                headers['If-None-Match'] = self.etag
+            if self.last_modified:
+                headers['If-Modified-Since'] = self.last_modified
+            response = requests.get(str(self.url), headers=headers, timeout=2)
+        except Exception as e:
+            log.warning(f'{self.name} failed: {repr(e)}')
             return []
-        if d.status in [200, 302]:  # OK, Found
-            if 'etag' in d:
-                self.etag = d.etag
-            if 'modified' in d:
-                self.last_modified = d.modified
+
+        if response.status_code in [200, 302]:  # OK, Found
+            if 'etag' in response.headers:
+                self.etag = response.headers['ETag']
+            if 'modified' in response.headers:
+                self.last_modified = response.headers['Last-Modified']
+            content = BytesIO(response.content)
+            d: FeedParserDict = parse(content)
             return self.parse_entries(d.entries, now)
-        elif d.status in [301, 308]:  # Moved Permanently, Permanent Redirect
-            location = f': {d.href}' if 'href' in d else ''
-            log.warning(f'{self.name} returned status code {d.status}{location}')
+        elif response.status_code in [301, 308]:  # Moved Permanently, Permanent Redirect
+            log.warning(f'{self.name} returned status code {response.status_code}: {response.headers["Location"]}')
             return []
-        elif d.status == 304:  # Not Modified
+        elif response.status_code == 304:  # Not Modified
             return []
         else:
-            log.warning(f'{self.name} returned status code {d.status}')
+            log.warning(f'{self.name} returned status code {response.status_code}')
             return []
 
     def is_entry_recent(self, entry: dict, now: datetime) -> bool:
