@@ -49,6 +49,7 @@ def extract_links(content, default: URL | None = None) -> Tuple[URL, URL]:
         if anchor.text.strip() == '[link]':
             href = anchor['href']
             if not is_reddit_media_link(href):
+                href = make_reddit_absolute(href)
                 link = URL(href).clean()
         elif anchor.text.strip() == '[comments]':
             comments = URL(anchor['href'])
@@ -64,3 +65,12 @@ def is_reddit_media_link(link: str) -> bool:
     if netloc == 'www.reddit.com' and path.startswith('/gallery/'):
         return True
     return False
+
+
+def make_reddit_absolute(href: str) -> str:
+    if href.startswith('/r/u_'):
+        return 'https://www.reddit.com/user/' + href[5:]
+    elif href.startswith('/r/'):
+        return 'https://www.reddit.com' + href
+    else:
+        return href

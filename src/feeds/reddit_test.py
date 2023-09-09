@@ -195,6 +195,15 @@ CONTENT_TESTS = [
         URL('https://www.reddit.com/r/financialindependence/comments/130zdm6/could_contributing_too_much_of_my_paycheck_to/'),
         id='discussion',
     ),
+    pytest.param(
+        '''&#32; submitted by &#32; <a href="https://www.reddit.com/user/CyborgPrime"> /u/CyborgPrime </a> 
+            &#32; to &#32; <a href="https://www.reddit.com/r/traveller/"> r/traveller </a> <br /> 
+            <span><a href="/r/u_CyborgPrime/comments/16cv0ek/is_starfield_like_traveller/">[link]</a></span> 
+            &#32; <span><a href="https://www.reddit.com/r/traveller/comments/16dusai/is_starfield_like_traveller/">[comments]</a></span>''',
+        URL('https://www.reddit.com/user/CyborgPrime/comments/16cv0ek/is_starfield_like_traveller/'),
+        URL('https://www.reddit.com/r/traveller/comments/16dusai/is_starfield_like_traveller/'),
+        id='user comments',
+    )
 ]
 
 
