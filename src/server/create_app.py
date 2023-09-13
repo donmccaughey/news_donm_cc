@@ -20,20 +20,21 @@ def create_app() -> Flask:
     news_cache = Cache(cache_dir / NEWS_FILE)
 
     version = get_version()
+    is_styled = True
 
     app.add_url_rule(
         '/', 'first_page',
-        partial(first_page, news_cache, version),
+        partial(first_page, news_cache, version, is_styled),
         methods=['GET']
     )
     app.add_url_rule(
         '/<int:page_number>', 'numbered_page',
-        partial(numbered_page, news_cache, version),
+        partial(numbered_page, news_cache, version, is_styled),
         methods=['GET']
     )
     app.add_url_rule(
         '/site/<path:identity>', 'site_page',
-        partial(site_page, news_cache, version),
+        partial(site_page, news_cache, version, is_styled),
         methods=['GET']
     )
 

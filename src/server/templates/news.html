@@ -2,8 +2,9 @@
 {% block title %}News{% endblock %}
 {% block header %}
     <h1>News</h1>
-    updated <time datetime={{news.modified|iso}}>{{news.modified|utc}}</time>
-    <span class=page-control>
+    <p class=page-info>
+        updated <time datetime={{news.modified|iso}}>{{news.modified|utc}}</time>
+    <p class=page-control>
         {% if news.first_url %}
         <a href={{news.first_url}}>first</a>
         {% else %}
@@ -15,7 +16,6 @@
         {% else %}
         <span>previous</span>
         {% endif %}
-    </span>
 {% endblock %}
 {% block main %}
     <ol>
@@ -34,8 +34,9 @@
     </ol>
 {% endblock %}
 {% block footer %}
-    page {{news.page.number}} of {{news.page.count}}
-    <span class=page-control>
+    <p class=page-info>
+        page {{news.page.number}} of {{news.page.count}}
+    <p class=page-control>
         {% if news.last_url %}
         <a href={{news.last_url}}>last</a>
         {% else %}
@@ -47,5 +48,4 @@
         {% else %}
         <span>next</span>
         {% endif %}
-    </span>
 {% endblock %}

@@ -5,8 +5,13 @@ from .news_page import NewsPage
 from .site_page import SitePage
 
 
-def news_page(news_cache: Cache, version: str, page_number: int) -> Response:
-    news = NewsPage(news_cache, version, page_number)
+def news_page(
+        news_cache: Cache,
+        version: str,
+        is_styled: bool,
+        page_number: int,
+) -> Response:
+    news = NewsPage(news_cache, version, is_styled, page_number)
     if not news.is_valid:
         abort(404)
 
@@ -22,18 +27,32 @@ def news_page(news_cache: Cache, version: str, page_number: int) -> Response:
     return response
 
 
-def first_page(news_cache: Cache, version: str) -> Response:
-    return news_page(news_cache, version, 1)
+def first_page(
+        news_cache: Cache,
+        version: str,
+        is_styled: bool,
+) -> Response:
+    return news_page(news_cache, version, is_styled, 1)
 
 
-def numbered_page(news_cache: Cache, version: str, page_number: int) -> Response:
+def numbered_page(
+        news_cache: Cache,
+        version: str,
+        is_styled: bool,
+        page_number: int,
+) -> Response:
     if page_number == 1:
         return redirect('/', 308)
-    return news_page(news_cache, version, page_number)
+    return news_page(news_cache, version, is_styled, page_number)
 
 
-def site_page(news_cache: Cache, version: str, identity: str) -> Response:
-    site = SitePage(news_cache, version, identity)
+def site_page(
+        news_cache: Cache,
+        version: str,
+        is_styled: bool,
+        identity: str,
+) -> Response:
+    site = SitePage(news_cache, version, is_styled, identity)
     html = render_template('site.html', news=site)
     response = make_response(html)
 

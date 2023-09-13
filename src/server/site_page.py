@@ -7,9 +7,16 @@ from .utility import count_phrase
 
 
 class SitePage(Iterable[Item]):
-    def __init__(self, news_cache: Cache, version: str, identity: str):
-        self.version = version
+    def __init__(
+            self,
+            news_cache: Cache,
+            version: str,
+            is_styled: bool,
+            identity: str,
+    ):
         self.identity = identity
+        self.is_styled = is_styled
+        self.version = version
 
         self.news = News.from_json(news_cache.get() or News().to_json())
         self.items = self.news.by_site[self.identity]

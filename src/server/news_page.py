@@ -5,7 +5,14 @@ from utility import Cache, Page
 
 
 class NewsPage(Iterable[Item]):
-    def __init__(self, news_cache: Cache, version: str, page_number: int):
+    def __init__(
+            self,
+            news_cache: Cache,
+            version: str,
+            is_styled: bool,
+            page_number: int,
+    ):
+        self.is_styled = is_styled
         self.version = version
 
         self.news = News.from_json(news_cache.get() or News().to_json())
