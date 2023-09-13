@@ -18,6 +18,7 @@ class NewsPage(Iterable[Item]):
         )
 
         self.counter_reset_item = self.page.begin
+        self.first_item_value = self.page.begin + 1
 
         # navigation URLs
         self.first_url = './' if self.page.number > 1 else None

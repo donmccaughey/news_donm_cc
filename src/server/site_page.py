@@ -17,6 +17,7 @@ class SitePage(Iterable[Item]):
 
         self.counter_reset_item = 0
         self.count_phrase = count_phrase(self.items, 'item')
+        self.first_item_value = 1
 
     def __iter__(self) -> Iterator[Item]:
         return iter(self.items)
