@@ -3,6 +3,7 @@ from flask import abort, make_response, redirect, render_template, request, Resp
 from utility import Cache
 from .news_page import NewsPage
 from .site_page import SitePage
+from .sites_page import SitesPage
 
 
 def news_page(
@@ -58,6 +59,24 @@ def site_page(
 
     response.add_etag()
     response.last_modified = site.modified
+
+    response.make_conditional(request)
+    add_cache_control(response)
+
+    return response
+
+
+def sites_page(
+        news_cache: Cache,
+        version: str,
+        is_styled: bool,
+) -> Response:
+    sites = SitesPage(news_cache, version, is_styled)
+    html = render_template('sites.html', news=sites)
+    response = make_response(html)
+
+    response.add_etag()
+    response.last_modified = sites.modified
 
     response.make_conditional(request)
     add_cache_control(response)
