@@ -5,6 +5,7 @@ from datetime import datetime, timedelta, timezone
 from typing import Iterable, Iterator
 
 from serialize import Encodable, JSONDict, Serializable
+from .index import Index
 from .item import Item
 
 
@@ -18,6 +19,8 @@ class News(Encodable, Iterable[Item], Serializable):
                  modified: datetime | None = None,
                  lifetime: timedelta | None = LIFETIME,
                  ):
+        self.__index = None
+
         self.ordered_items: list[Item] = list()
         self.unique_items: dict[Item, Item] = dict()
         self.by_site = defaultdict(list)
@@ -41,6 +44,12 @@ class News(Encodable, Iterable[Item], Serializable):
 
     def __str__(self) -> str:
         return f'{len(self.ordered_items)} news items'
+
+    @property
+    def index(self) -> Index:
+        if not self.__index:
+            self.__index = Index.from_ordered_items(self.ordered_items)
+        return self.__index
 
     @property
     def items(self) -> list[Item]:
@@ -76,6 +85,10 @@ class News(Encodable, Iterable[Item], Serializable):
             old_count += 1
             i -= 1
         return old_count
+
+    def search(self, query: str) -> list[Item]:
+        indices = sorted(self.index.search(query))
+        return [self.ordered_items[i] for i in indices]
 
     def update(self, items: list[Item], now: datetime) -> tuple[int, int]:
         new_items, existing_items = [], []

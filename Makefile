@@ -139,6 +139,7 @@ source_files := \
 	src/health/servers.py \
 	\
 	src/news/__init__.py \
+	src/news/index.py \
 	src/news/item.py \
 	src/news/news.py \
 	src/news/source.py \
@@ -181,6 +182,7 @@ test_files := \
 	\
 	src/health/health_test.py \
 	\
+	src/news/index_test.py \
 	src/news/item_test.py \
 	src/news/news_test.py \
 	src/news/source_test.py \

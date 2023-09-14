@@ -1,8 +1,9 @@
 # To Do
 
-- Understand how requests handles redirects
+- paginate the `/sites` page
+- understand how requests handles redirects
   - Update `Feed.get_items()` to detect redirects correctly
-- Support patterns in `SKIP_SITES`
+- support patterns in `SKIP_SITES`
 - `News` object is now frequently `modified` due to item updating and 
     news page "new item" bar doesn't work as intended
     drop `Item.age` for now and rethink

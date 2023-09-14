@@ -173,6 +173,46 @@ def test_remove_old_and_update_for_duplicate_item():
     assert len(news) == 3
 
 
+def test_search_when_empty():
+    news = News()
+
+    items = news.search('foo')
+
+    assert items == []
+
+
+def test_search_when_not_found():
+    news = News([item1, item2, item3])
+
+    items = news.search('fnord')
+
+    assert items == []
+
+
+def test_search_for_one_term_with_one_match():
+    news = News([item1, item2, item3])
+
+    items = news.search('1')
+
+    assert items == [item1]
+
+
+def test_search_preserves_item_order():
+    news = News([item1, item2, item3])
+
+    items = news.search('Item')
+
+    assert items == [item1, item2, item3]
+
+
+def test_search_for_two_terms():
+    news = News([item1_old, item2_old, item3, item4])
+
+    items = news.search('Old Item')
+
+    assert items == [item1, item2]
+
+
 FIVE_DAYS = timedelta(days=5)
 SIX_DAYS = timedelta(days=6)
 
