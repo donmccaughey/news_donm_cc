@@ -154,6 +154,7 @@ source_files := \
 	src/server/create_app.py \
 	src/server/error_handlers.py \
 	src/server/news_page.py \
+	src/server/search_page.py \
 	src/server/site_page.py \
 	src/server/sites_page.py \
 	src/server/template_filters.py \
@@ -162,6 +163,7 @@ source_files := \
 	\
 	src/server/templates/news.html \
 	src/server/templates/page.html \
+	src/server/templates/search.html \
 	src/server/templates/site.html \
 	src/server/templates/sites.html \
 	\

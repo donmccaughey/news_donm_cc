@@ -2,6 +2,7 @@ from flask import abort, make_response, redirect, render_template, request, Resp
 
 from utility import Cache
 from .news_page import NewsPage
+from .search_page import SearchPage
 from .site_page import SitePage
 from .sites_page import SitesPage
 
@@ -33,7 +34,11 @@ def first_page(
         version: str,
         is_styled: bool,
 ) -> Response:
-    return news_page(news_cache, version, is_styled, 1)
+    if request.query_string:
+        query = request.query_string.decode('utf-8')
+        return search_page(news_cache, version, is_styled, query)
+    else:
+        return news_page(news_cache, version, is_styled, 1)
 
 
 def numbered_page(
@@ -45,6 +50,25 @@ def numbered_page(
     if page_number == 1:
         return redirect('/', 308)
     return news_page(news_cache, version, is_styled, page_number)
+
+
+def search_page(
+        news_cache: Cache,
+        version: str,
+        is_styled: bool,
+        query: str,
+):
+    search = SearchPage(news_cache, version, is_styled, query)
+    html = render_template('search.html', news=search)
+    response = make_response(html)
+
+    response.add_etag()
+    response.last_modified = search.modified
+
+    response.make_conditional(request)
+    add_cache_control(response)
+
+    return response
 
 
 def site_page(
