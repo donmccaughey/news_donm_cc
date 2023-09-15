@@ -1,4 +1,6 @@
-from .index import Index
+import pytest
+
+from .index import Index, get_terms
 
 
 def test_get_indices_for_term_when_empty():
@@ -55,3 +57,18 @@ def test_search_for_three_terms():
     }
     index = Index(terms)
     assert index.search('fnord foo bar') == {3}
+
+
+@pytest.mark.parametrize(
+    'query, expected',
+[
+    ('', set()),
+    ('foo', {'foo'}),
+    ('Foo', {'foo'}),
+    ('foo bar', {'foo', 'bar'}),
+    ('"Foo & Bar"', {'foo', 'bar'}),
+    ('San José', {'san', 'jose'}),
+    ('The bar and a foo', {'foo', 'bar'}),
+])
+def test_get_terms(query, expected):
+    assert get_terms(query) == expected

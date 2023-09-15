@@ -1,3 +1,5 @@
+import re
+import unicodedata
 from collections import defaultdict
 
 from news import Item
@@ -24,5 +26,32 @@ class Index:
         return set.intersection(*matches) if matches else set()
 
 
-def get_terms(query: str) -> list[str]:
-    return query.split()
+NON_TERMS = {
+    'a',
+    'an',
+    'and',
+
+    'not',
+
+    'or',
+
+    's',
+
+    't',
+    'the',
+}
+TERM = re.compile(r'\b\w+\b')
+
+
+def get_terms(query: str) -> set[str]:
+    query = query.lower()
+    query = strip_accents(query)
+    terms = TERM.findall(query)
+    return set(terms) - NON_TERMS
+
+
+def strip_accents(text: str) -> str:
+    return ''.join(
+        ch for ch in unicodedata.normalize('NFD', text)
+        if unicodedata.category(ch) != 'Mn'
+    )
