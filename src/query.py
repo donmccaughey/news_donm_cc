@@ -15,12 +15,35 @@ def parse_options():
                             type=str, action='append',
                             help='site ID to include in results ("df", "hn", "lob", ...)')
 
-    query_choices = ['urls', 'urls-by-site', 'urls-by-source-counts']
+    query_choices = ['terms', 'terms-by-frequency', 'urls', 'urls-by-site', 'urls-by-source-counts']
     arg_parser.add_argument('query', metavar='QUERY',
                             choices=query_choices, default='urls',
                             help=str(query_choices))
 
     return arg_parser.parse_args()
+
+
+def query_terms(news):
+    index = news.index
+    term_width = 0
+    for term in index.terms.keys():
+        term_width = max(term_width, len(term))
+    for term in sorted(index.terms.keys()):
+        print(f'{term:<{term_width}} {len(index.terms[term]):>4}')
+    print('')
+    print(f'{len(index.terms)} terms')
+
+
+def query_terms_by_frequency(news):
+    index = news.index
+    term_width = 0
+    for term in index.terms.keys():
+        term_width = max(term_width, len(term))
+    sorted_terms = sorted(index.terms.items(), key=lambda item: (-len(item[1]), item[0]))
+    for term, indices in sorted_terms:
+        print(f'{term:<{term_width}} {len(indices):>4}')
+    print('')
+    print(f'{len(index.terms)} terms')
 
 
 def query_urls(news):
@@ -74,6 +97,10 @@ def main():
         news = filter(from_site, news)
 
     match options.query:
+        case 'terms':
+            query_terms(news)
+        case 'terms-by-frequency':
+            query_terms_by_frequency(news)
         case 'urls':
             query_urls(news)
         case 'urls-by-site':
