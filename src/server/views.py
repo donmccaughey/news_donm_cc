@@ -34,9 +34,8 @@ def first_page(
         version: str,
         is_styled: bool,
 ) -> Response:
-    if request.query_string:
-        query = request.query_string.decode('utf-8')
-        return search_page(news_cache, version, is_styled, query)
+    if 'q' in request.args:
+        return search_page(news_cache, version, is_styled, request.args['q'])
     else:
         return news_page(news_cache, version, is_styled, 1)
 
