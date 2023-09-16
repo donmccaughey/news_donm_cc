@@ -2,24 +2,18 @@
 {% block title %}News{% endblock %}
 {% block header %}
     <h1>News</h1>
+    <form class=search action=./ method=GET>
+        <input type=search name=q placeholder=search>
+    </form>
     <nav>
         <p class=page-info>
             updated <time datetime={{news.modified|iso}}>{{news.modified|utc}}</time>
-        <form class=search action=./ method=GET>
-            <input type=search name=q placeholder=search>
-        </form>
+        {% if news.first_url %}
         <p class=page-control>
-            {% if news.first_url %}
             <a href={{news.first_url}}>first</a>
-            {% else %}
-            <span>first</span>
-            {% endif %}
             —
-            {% if news.previous_url %}
             <a href={{news.previous_url}} rel=prev>previous</a>
-            {% else %}
-            <span>previous</span>
-            {% endif %}
+        {% endif %}
     </nav>
 {% endblock %}
 {% block main %}
@@ -40,18 +34,12 @@
 {% endblock %}
 {% block footer %}
     <nav>
+        {% if news.last_url %}
         <p class=page-control>
-            {% if news.last_url %}
                 <a href={{news.last_url}}>last</a>
-            {% else %}
-                <span>last</span>
-            {% endif %}
-            —
-            {% if news.next_url %}
+                —
                 <a href={{news.next_url}} rel=next>next</a>
-            {% else %}
-                <span>next</span>
-            {% endif %}
+        {% endif %}
         <p class=page-info>
             page {{news.page.number}} of {{news.page.count}}
     </nav>
