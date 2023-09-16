@@ -39,7 +39,7 @@
   - https://www.youtube.com/playlist?list=PL3GWPKM6L17H0RyU2o7p9gCnepjSTaHia
 - public suffix list https://publicsuffix.org
 - `docked` - Python alternative to `Dockerfile` https://github.com/orsinium-labs/docked
-- should fragments be allowed in URLs?
+- should fragments be allowed in URLs? yes!
   - https://sr.ht/~icefox/oorandom/#a-brief-history-of-random-numbers
 - special handling for archive.org
   - https://ia601707.us.archive.org/28/items/gov.uscourts.cand.364454/gov.uscourts.cand.364454.385.0.pdf
@@ -51,7 +51,6 @@
 - statsd and datadog 
 - where should `query.py` live?
 - improve AWS permissions to read/write S3 bucket
-- make page footer sticky to the window
 - Cache wraps Store and Cache write on first `get()`
 - ecr container versioning
 - unify command line options and ENV
@@ -67,6 +66,13 @@
   - Twitter, tweet and sub-tweet media links
     - https://twitter.com/TurnerNovak/status/1654577231937544192
     - https://twitter.com/TurnerNovak/status/1654577231937544192/photo/1
-- filter / search news
-  - by domain name
-  - by keywords
+- search
+  - include search box on search page, prefilled with query
+  - include "found n of m items" on search page as `.page-info`
+  - paginate search results
+  - include domain name
+    - full domains (`daringfireball.net`)
+    - partial domains('daringfireball')
+- sites page
+  - include links back to main page
+  - don't open individual site pages in new tab

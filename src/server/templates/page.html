@@ -149,8 +149,8 @@
         padding: 0;
     }
     nav {
-        display: flex;
-        justify-content: space-between;
+        height: 1.25rem;
+        position: relative;
     }
     ol {
         counter-reset: item {{news.counter_reset_item}};
@@ -161,6 +161,8 @@
     .page-control {
         margin: 0;
         padding: 0;
+        position: absolute;
+        right: 0;
         text-align: right;
         white-space: nowrap;
     }
@@ -171,8 +173,10 @@
         color: var(--text);
     }
     .page-info {
+        left: 0;
         margin: 0;
         padding: 0;
+        position: absolute;
         white-space: nowrap;
     }
     .search {
