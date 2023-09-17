@@ -4,7 +4,7 @@ from pathlib import Path
 
 from news import Item, News
 from extractor import S3Store
-from utility import Cache
+from utility import CachedFile
 
 
 def parse_options():
@@ -81,7 +81,7 @@ def main():
     options = parse_options()
 
     if options.news_path:
-        json = Cache(options.news_path).read()
+        json = CachedFile(options.news_path).read()
     else:
         json = S3Store().read()
 

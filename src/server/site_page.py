@@ -1,7 +1,7 @@
 from typing import Iterable, Iterator
 
 from news import News, Item
-from utility import Cache
+from utility import CachedFile
 
 from .utility import count_phrase
 
@@ -9,7 +9,7 @@ from .utility import count_phrase
 class SitePage(Iterable[Item]):
     def __init__(
             self,
-            news_cache: Cache,
+            news_cache: CachedFile,
             version: str,
             is_styled: bool,
             identity: str,

@@ -4,7 +4,7 @@ from pathlib import Path
 from flask import Flask
 
 from news import CACHE_DIR, NEWS_FILE
-from utility import Cache, iso, utc
+from utility import CachedFile, iso, utc
 from .error_handlers import not_found
 from .template_filters import href
 from .utility import get_version
@@ -17,7 +17,7 @@ def create_app() -> Flask:
     app.config.from_prefixed_env()
 
     cache_dir = Path(app.config.get('CACHE_DIR', CACHE_DIR))
-    news_cache = Cache(cache_dir / NEWS_FILE)
+    news_cache = CachedFile(cache_dir / NEWS_FILE)
 
     version = get_version()
     is_styled = True

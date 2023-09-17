@@ -1,6 +1,6 @@
 from flask import abort, make_response, redirect, render_template, request, Response
 
-from utility import Cache
+from utility import CachedFile
 from .news_page import NewsPage
 from .search_page import SearchPage
 from .site_page import SitePage
@@ -8,7 +8,7 @@ from .sites_page import SitesPage
 
 
 def news_page(
-        news_cache: Cache,
+        news_cache: CachedFile,
         version: str,
         is_styled: bool,
         page_number: int,
@@ -30,7 +30,7 @@ def news_page(
 
 
 def first_page(
-        news_cache: Cache,
+        news_cache: CachedFile,
         version: str,
         is_styled: bool,
 ) -> Response:
@@ -41,7 +41,7 @@ def first_page(
 
 
 def numbered_page(
-        news_cache: Cache,
+        news_cache: CachedFile,
         version: str,
         is_styled: bool,
         page_number: int,
@@ -52,7 +52,7 @@ def numbered_page(
 
 
 def search_page(
-        news_cache: Cache,
+        news_cache: CachedFile,
         version: str,
         is_styled: bool,
         query: str,
@@ -71,7 +71,7 @@ def search_page(
 
 
 def site_page(
-        news_cache: Cache,
+        news_cache: CachedFile,
         version: str,
         is_styled: bool,
         identity: str,
@@ -90,7 +90,7 @@ def site_page(
 
 
 def sites_page(
-        news_cache: Cache,
+        news_cache: CachedFile,
         version: str,
         is_styled: bool,
 ) -> Response:

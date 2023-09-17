@@ -51,7 +51,8 @@
 - statsd and datadog 
 - where should `query.py` live?
 - improve AWS permissions to read/write S3 bucket
-- Cache wraps Store and Cache write on first `get()`
+- make `S3Store` and other `Store` classes general purpose 
+- Cache wraps Store and Cache write on first `read()`
 - ecr container versioning
 - unify command line options and ENV
 - ENV variable to control logging level

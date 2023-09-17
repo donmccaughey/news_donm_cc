@@ -1,7 +1,7 @@
 from pathlib import Path
 
 
-class Cache:
+class CachedFile:
     def __init__(self, path: Path):
         self.path = path
         self.temp_path = path.with_suffix('.temp' + path.suffix)
@@ -9,7 +9,7 @@ class Cache:
         self.contents = ''
 
     def __repr__(self) -> str:
-        return f"Cache(Path('{self.path}'))"
+        return f"CachedFile(Path('{self.path}'))"
 
     def read(self) -> str:
         if self.path.is_file():

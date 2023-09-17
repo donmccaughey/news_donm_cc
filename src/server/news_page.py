@@ -1,13 +1,13 @@
 from typing import Iterable, Iterator
 
 from news import News, Item
-from utility import Cache, Page
+from utility import CachedFile, Page
 
 
 class NewsPage(Iterable[Item]):
     def __init__(
             self,
-            news_cache: Cache,
+            news_cache: CachedFile,
             version: str,
             is_styled: bool,
             page_number: int,

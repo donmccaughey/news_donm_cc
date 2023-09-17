@@ -2,13 +2,13 @@ from typing import Iterable, Iterator
 
 from news import Item, News
 from server.utility import count_phrase
-from utility import Cache
+from utility import CachedFile
 
 
 class SearchPage(Iterable[Item]):
     def __init__(
             self,
-            news_cache: Cache,
+            news_cache: CachedFile,
             version: str,
             is_styled: bool,
             query: str,
