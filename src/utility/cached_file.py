@@ -11,6 +11,9 @@ class CachedFile:
     def __repr__(self) -> str:
         return f"CachedFile(Path('{self.path}'))"
 
+    def is_invalid(self) -> bool:
+        return self.path.is_file() and self.path.stat().st_mtime != self.mtime
+
     def read(self) -> str:
         if self.path.is_file():
             mtime = self.path.stat().st_mtime

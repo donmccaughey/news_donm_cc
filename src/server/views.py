@@ -1,6 +1,6 @@
 from flask import abort, make_response, redirect, render_template, request, Response
 
-from utility import CachedFile
+from .cached_news import CachedNews
 from .news_page import NewsPage
 from .search_page import SearchPage
 from .site_page import SitePage
@@ -8,12 +8,12 @@ from .sites_page import SitesPage
 
 
 def news_page(
-        news_cache: CachedFile,
+        cached_news: CachedNews,
         version: str,
         is_styled: bool,
         page_number: int,
 ) -> Response:
-    news = NewsPage(news_cache, version, is_styled, page_number)
+    news = NewsPage(cached_news, version, is_styled, page_number)
     if not news.is_valid:
         abort(404)
 
@@ -30,34 +30,34 @@ def news_page(
 
 
 def first_page(
-        news_cache: CachedFile,
+        cached_news: CachedNews,
         version: str,
         is_styled: bool,
 ) -> Response:
     if 'q' in request.args:
-        return search_page(news_cache, version, is_styled, request.args['q'])
+        return search_page(cached_news, version, is_styled, request.args['q'])
     else:
-        return news_page(news_cache, version, is_styled, 1)
+        return news_page(cached_news, version, is_styled, 1)
 
 
 def numbered_page(
-        news_cache: CachedFile,
+        cached_news: CachedNews,
         version: str,
         is_styled: bool,
         page_number: int,
 ) -> Response:
     if page_number == 1:
         return redirect('/', 308)
-    return news_page(news_cache, version, is_styled, page_number)
+    return news_page(cached_news, version, is_styled, page_number)
 
 
 def search_page(
-        news_cache: CachedFile,
+        cached_news: CachedNews,
         version: str,
         is_styled: bool,
         query: str,
 ):
-    search = SearchPage(news_cache, version, is_styled, query)
+    search = SearchPage(cached_news, version, is_styled, query)
     html = render_template('search.html', news=search)
     response = make_response(html)
 
@@ -71,12 +71,12 @@ def search_page(
 
 
 def site_page(
-        news_cache: CachedFile,
+        cached_news: CachedNews,
         version: str,
         is_styled: bool,
         identity: str,
 ) -> Response:
-    site = SitePage(news_cache, version, is_styled, identity)
+    site = SitePage(cached_news, version, is_styled, identity)
     html = render_template('site.html', news=site)
     response = make_response(html)
 
@@ -90,11 +90,11 @@ def site_page(
 
 
 def sites_page(
-        news_cache: CachedFile,
+        cached_news: CachedNews,
         version: str,
         is_styled: bool,
 ) -> Response:
-    sites = SitesPage(news_cache, version, is_styled)
+    sites = SitesPage(cached_news, version, is_styled)
     html = render_template('sites.html', news=sites)
     response = make_response(html)
 

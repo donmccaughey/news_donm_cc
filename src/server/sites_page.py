@@ -1,9 +1,9 @@
 from dataclasses import dataclass
 from typing import Iterable, Iterator
 
-from news import Item, News
-from server.utility import count_phrase
-from utility import CachedFile
+from news import Item
+from .cached_news import CachedNews
+from .utility import count_phrase
 
 
 @dataclass
@@ -16,14 +16,14 @@ class Site:
 class SitesPage(Iterable[Site]):
     def __init__(
             self,
-            news_cache: CachedFile,
+            cached_news: CachedNews,
             version: str,
             is_styled: bool,
     ):
         self.is_styled = is_styled
         self.version = version
 
-        self.news = News.from_json(news_cache.read() or News().to_json())
+        self.news = cached_news.read()
         self.sites = [
             Site(
                 count_phrase(self.news.by_site[site], 'item'),

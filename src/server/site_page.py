@@ -1,15 +1,14 @@
 from typing import Iterable, Iterator
 
-from news import News, Item
-from utility import CachedFile
-
+from news import Item
+from .cached_news import CachedNews
 from .utility import count_phrase
 
 
 class SitePage(Iterable[Item]):
     def __init__(
             self,
-            news_cache: CachedFile,
+            cached_news: CachedNews,
             version: str,
             is_styled: bool,
             identity: str,
@@ -18,7 +17,7 @@ class SitePage(Iterable[Item]):
         self.is_styled = is_styled
         self.version = version
 
-        self.news = News.from_json(news_cache.read() or News().to_json())
+        self.news = cached_news.read()
         self.items = self.news.by_site[self.identity]
         self.modified = self.news.modified
 

@@ -4,7 +4,8 @@ from pathlib import Path
 from flask import Flask
 
 from news import CACHE_DIR, NEWS_FILE
-from utility import CachedFile, iso, utc
+from utility import iso, utc
+from .cached_news import CachedNews
 from .error_handlers import not_found
 from .template_filters import href
 from .utility import get_version
@@ -17,30 +18,30 @@ def create_app() -> Flask:
     app.config.from_prefixed_env()
 
     cache_dir = Path(app.config.get('CACHE_DIR', CACHE_DIR))
-    news_cache = CachedFile(cache_dir / NEWS_FILE)
+    cached_news = CachedNews(cache_dir / NEWS_FILE)
 
     version = get_version()
     is_styled = True
 
     app.add_url_rule(
         '/', 'first_page',
-        partial(first_page, news_cache, version, is_styled),
+        partial(first_page, cached_news, version, is_styled),
         methods=['GET']
     )
     app.add_url_rule(
         '/<int:page_number>', 'numbered_page',
-        partial(numbered_page, news_cache, version, is_styled),
+        partial(numbered_page, cached_news, version, is_styled),
         methods=['GET']
     )
     app.add_url_rule(
         '/site/<path:identity>', 'site_page',
-        partial(site_page, news_cache, version, is_styled),
+        partial(site_page, cached_news, version, is_styled),
         methods=['GET']
     )
 
     app.add_url_rule(
         '/sites', 'sites_page',
-        partial(sites_page, news_cache, version, is_styled),
+        partial(sites_page, cached_news, version, is_styled),
         methods=['GET']
     )
 
