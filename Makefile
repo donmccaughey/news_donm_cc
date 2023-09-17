@@ -116,7 +116,7 @@ source_files := \
 	src/extractor/cached_feeds.py \
 	src/extractor/cached_news.py \
 	src/extractor/options.py \
-	src/extractor/store.py \
+	src/extractor/s3_store.py \
 	\
 	src/feeds/__init__.py \
 	src/feeds/acoup.py \
@@ -168,12 +168,15 @@ source_files := \
 	src/server/templates/sites.html \
 	\
 	src/utility/__init__.py \
-	src/utility/cache.py \
+	src/utility/cached_file.py \
 	src/utility/formats.py \
-	src/utility/page.py
+	src/utility/no_store.py \
+	src/utility/page.py \
+	src/utility/read_only_store.py \
+	src/utility/store.py
 
 test_files := \
-	src/extractor/store_test.py \
+	src/extractor/s3_store_test.py \
 	\
 	src/feeds/daring_fireball_test.py \
 	src/feeds/feed_test.py \
@@ -190,8 +193,9 @@ test_files := \
 	src/news/source_test.py \
 	src/news/url_test.py \
 	\
-	src/utility/cache_test.py \
+	src/utility/cached_file_test.py \
 	src/utility/formats_test.py \
+	src/utility/no_store_test.py \
 	src/utility/page_test.py
 
 
