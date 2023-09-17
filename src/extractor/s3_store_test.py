@@ -1,17 +1,8 @@
-from .store import NoStore
-from .store import S3Store
-
-
-def test_str_and_repr_for_no_store():
-    store = NoStore()
-
-    assert str(store) == 'NoStore()'
-    assert repr(store) == 'NoStore()'
+from .s3_store import S3Store
 
 
 class FakeS3Client:
-    def __init__(self):
-        pass
+    pass
 
 
 def make_boto3_client_function():
@@ -21,7 +12,7 @@ def make_boto3_client_function():
 
 
 def test_str_and_repr_for_s3_store(monkeypatch):
-    monkeypatch.setattr('extractor.store.boto3.client', make_boto3_client_function())
+    monkeypatch.setattr('extractor.s3_store.boto3.client', make_boto3_client_function())
 
     store = S3Store()
 

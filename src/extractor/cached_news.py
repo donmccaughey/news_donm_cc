@@ -1,8 +1,8 @@
 from pathlib import Path
 
 from news import NEWS_FILE, News
-from .store import NoStore, S3Store, ReadOnlyStore
-from utility import CachedFile
+from utility import CachedFile, NoStore, ReadOnlyStore
+from .s3_store import S3Store
 
 
 class CachedNews:

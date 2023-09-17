@@ -1,45 +1,10 @@
-from abc import ABC, abstractmethod
-
 import boto3
 import sys
 
 from botocore.exceptions import ClientError
 from io import BytesIO
 
-
-class Store(ABC):
-    @abstractmethod
-    def read(self) -> str:
-        pass
-
-    @abstractmethod
-    def write(self, contents: str):
-        pass
-
-
-class NoStore(Store):
-    def __repr__(self) -> str:
-        return 'NoStore()'
-
-    def read(self) -> str:
-        return ''
-
-    def write(self, contents: str):
-        pass
-
-
-class ReadOnlyStore(Store):
-    def __init__(self, store):
-        self.store = store
-
-    def __repr__(self) -> str:
-        return f'ReadOnlyStore({repr(self.store)})'
-
-    def read(self) -> str:
-        return self.store.read()
-
-    def write(self, contents: str):
-        pass
+from utility import Store
 
 
 class S3Store(Store):
