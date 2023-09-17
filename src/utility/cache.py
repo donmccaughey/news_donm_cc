@@ -6,7 +6,7 @@ class Cache:
         self.path = path
         self.temp_path = path.with_suffix('.temp' + path.suffix)
         self.mtime = None
-        self.json = ''
+        self.contents = ''
 
     def __repr__(self) -> str:
         return f"Cache(Path('{self.path}'))"
@@ -16,13 +16,13 @@ class Cache:
             mtime = self.path.stat().st_mtime
             if mtime != self.mtime:
                 with self.path.open('r', encoding='utf-8') as f:
-                    self.json = f.read()
+                    self.contents = f.read()
                 self.mtime = mtime
-        return self.json
+        return self.contents
 
-    def put(self, json: str):
+    def put(self, contents: str):
         with self.temp_path.open('w', encoding='utf-8') as f:
-            f.write(json)
+            f.write(contents)
         self.temp_path.rename(self.path)
         self.mtime = self.path.stat().st_mtime
-        self.json = json
+        self.contents = contents

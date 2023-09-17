@@ -21,6 +21,6 @@ class CachedNews:
         return self.news
 
     def __exit__(self, exc_type, exc_val, exc_tb):
-        json = self.news.to_json()
-        self.cache.put(json)
-        self.store.put(json)
+        contents = self.news.to_json()
+        self.cache.put(contents)
+        self.store.put(contents)

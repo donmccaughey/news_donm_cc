@@ -12,7 +12,7 @@ class NoStore:
     def get(self) -> str:
         return ''
 
-    def put(self, json: str):
+    def put(self, contents: str):
         pass
 
 
@@ -26,7 +26,7 @@ class ReadOnlyStore:
     def get(self) -> str:
         return self.store.get()
 
-    def put(self, json: str):
+    def put(self, contents: str):
         pass
 
 
@@ -48,8 +48,8 @@ class S3Store:
             sys.stderr.write(f'{e}\n')
             return ''
 
-    def put(self, json: str):
-        buffer = BytesIO(json.encode())
+    def put(self, contents: str):
+        buffer = BytesIO(contents.encode())
         try:
             self.s3.upload_fileobj(buffer, self.bucket, self.object)
         except ClientError as e:
