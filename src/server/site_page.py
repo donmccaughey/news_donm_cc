@@ -18,7 +18,7 @@ class SitePage(Iterable[Item]):
         self.is_styled = is_styled
         self.version = version
 
-        self.news = News.from_json(news_cache.get() or News().to_json())
+        self.news = News.from_json(news_cache.read() or News().to_json())
         self.items = self.news.by_site[self.identity]
         self.modified = self.news.modified
 

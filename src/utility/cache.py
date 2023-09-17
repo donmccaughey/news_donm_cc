@@ -11,7 +11,7 @@ class Cache:
     def __repr__(self) -> str:
         return f"Cache(Path('{self.path}'))"
 
-    def get(self) -> str:
+    def read(self) -> str:
         if self.path.is_file():
             mtime = self.path.stat().st_mtime
             if mtime != self.mtime:
@@ -20,7 +20,7 @@ class Cache:
                 self.mtime = mtime
         return self.contents
 
-    def put(self, contents: str):
+    def write(self, contents: str):
         with self.temp_path.open('w', encoding='utf-8') as f:
             f.write(contents)
         self.temp_path.rename(self.path)

@@ -15,7 +15,7 @@ class NewsPage(Iterable[Item]):
         self.is_styled = is_styled
         self.version = version
 
-        self.news = News.from_json(news_cache.get() or News().to_json())
+        self.news = News.from_json(news_cache.read() or News().to_json())
         self.modified = self.news.modified
 
         self.page = Page(self.news.items, page_number=page_number, items_per_page=10)
