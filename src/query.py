@@ -83,7 +83,7 @@ def main():
     if options.news_path:
         json = Cache(options.news_path).read()
     else:
-        json = S3Store().get()
+        json = S3Store().read()
 
     news = News.from_json(json)
 

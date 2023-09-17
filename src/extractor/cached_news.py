@@ -14,7 +14,7 @@ class CachedNews:
         self.cache = Cache(cache_dir / NEWS_FILE)
 
         self.news = News.from_json(
-            self.cache.read() or self.store.get() or News().to_json()
+            self.cache.read() or self.store.read() or News().to_json()
         )
 
     def __enter__(self) -> News:
@@ -23,4 +23,4 @@ class CachedNews:
     def __exit__(self, exc_type, exc_val, exc_tb):
         contents = self.news.to_json()
         self.cache.write(contents)
-        self.store.put(contents)
+        self.store.write(contents)
