@@ -66,6 +66,14 @@ URL_CLEAN_TESTS = [
         'https://www.nytimes.com/live/2023/05/24/us/desantis-2024-election-president/ron-desantis-2024-presidential-election',
     ),
     ('https://example.com#some-anchor', 'https://example.com'),
+    (
+        'https://www.bloomberg.com/news/articles/2023-06-15/alphabet-selling-google-domains-assets-to-squarespace?leadSource=uverify%20wall',
+        'https://www.bloomberg.com/news/articles/2023-06-15/alphabet-selling-google-domains-assets-to-squarespace',
+    ),
+    (
+        'https://www.bloomberg.com/opinion/articles/2023-06-27/silicon-valley-is-on-drugs#xj4y7vzkg',
+        'https://www.bloomberg.com/opinion/articles/2023-06-27/silicon-valley-is-on-drugs',
+    ),
 ]
 
 
