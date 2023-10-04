@@ -1,7 +1,10 @@
 SKIP_SITES = {
     'aeon.co',
+    'astralcodexten.com',
 
     'betonit.substack.com',
+    # blogspot.com
+    'steve-yegge.blogspot.com',
     'bloodknife.com',
     'bookforum.com',
     'brave.com',
@@ -45,6 +48,8 @@ SKIP_SITES = {
     'marginalrevolution.com',
     'meltingasphalt.com',
     'milkyeggs.com',
+    'mindmatters.ai',
+    'monthlyreview.org',
 
     'narratively.com',
     'nationalreview.com',
@@ -75,14 +80,17 @@ SKIP_SITES = {
 
     'seths.blog',
     'sive.rs',
+    'slatestarcodex.com',
     'spy.com',
-    'steve-yegge.blogspot.com',
+    # substack.com
     'astralcodexten.substack.com',
     'dynomight.substack.com',
     'noahpinion.substack.com',
+    'thezvi.substack.com',
 
     'the-fence.com',
     'theamericanscholar.org',
+    'thecritic.co.uk',
     'thedriftmag.com',
     'theepochtimes.com',
     'themarginalian.org',
