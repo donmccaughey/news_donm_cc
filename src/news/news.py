@@ -30,8 +30,8 @@ class News(Encodable, Iterable[Item], Serializable):
         self.modified = modified or now
         self.lifetime = lifetime
 
-        for item in (items or []):
-            self.add_item(item, at_head=False)
+        for item in reversed(items or []):
+            self.add_item(item)
 
     def __iter__(self) -> Iterator[Item]:
         return iter(self.ordered_items)
@@ -55,13 +55,10 @@ class News(Encodable, Iterable[Item], Serializable):
     def items(self) -> list[Item]:
         return self.ordered_items
 
-    def add_item(self, item: Item, *, at_head: bool):
+    def add_item(self, item: Item):
         self.unique_items[item] = item
-        if at_head:
-            self.ordered_items.insert(0, item)
-        else:
-            self.ordered_items.append(item)
-        self.by_site[item.url.identity].append(item)
+        self.ordered_items.insert(0, item)
+        self.by_site[item.url.identity].insert(0, item)
 
     def remove_item_at(self, i: int):
         item = self.ordered_items[i]
@@ -100,7 +97,7 @@ class News(Encodable, Iterable[Item], Serializable):
         if new_items or existing_items:
             self.modified = now
         for new_item in reversed(new_items):
-            self.add_item(new_item, at_head=True)
+            self.add_item(new_item)
         for existing_item in existing_items:
             self.unique_items[existing_item].update_from(existing_item)
         return len(new_items), len(existing_items)
