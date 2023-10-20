@@ -10,16 +10,14 @@ class Item(Encodable):
                  url: URL,
                  title: str,
                  sources: list[Source],
-                 created: datetime | None = None,
-                 modified: datetime | None = None,
+                 created: datetime,
+                 modified: datetime,
                  ):
         self.url = url.clean().rewrite()
         self.title = title
         self.sources = sources
-
-        now = datetime.now(timezone.utc)
-        self.created = created if created else now
-        self.modified = modified if modified else now
+        self.created = created
+        self.modified = modified
 
     def __eq__(self, other: 'Item') -> bool:
         return isinstance(other, Item) and self.url == other.url
