@@ -31,15 +31,8 @@ class URL:
         return self.url
 
     def clean(self) -> 'URL':
-        scheme, netloc, path, query, fragment = urlsplit(self.url)
-        if query or fragment:
-            return URL(
-                urlunsplit(
-                    (scheme, netloc, path, clean_query(query), '')
-                )
-            )
-        else:
-            return self
+        cleaned = clean_url(self.url)
+        return self if cleaned is self.url else URL(cleaned)
 
     @property
     def identity(self) -> str:
@@ -135,6 +128,16 @@ def clean_query(query: str) -> str:
         except UnicodeError as e:
             log.warning(f'Unicode Error parsing "{query}": {e}')
     return query
+
+
+def clean_url(url: str) -> str:
+    scheme, netloc, path, query, fragment = urlsplit(url)
+    if query or fragment:
+        return urlunsplit(
+            (scheme, netloc, path, clean_query(query), '')
+        )
+    else:
+        return url
 
 
 def is_dirty(parameter: tuple[AnyStr, AnyStr]) -> bool:
