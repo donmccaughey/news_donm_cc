@@ -13,7 +13,7 @@ class Item(Encodable):
                  created: datetime,
                  modified: datetime,
                  ):
-        self.url = url.clean().rewrite()
+        self.url = url.normalize()
         self.title = title
         self.sources = sources
         self.created = created

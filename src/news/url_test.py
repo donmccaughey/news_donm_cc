@@ -270,3 +270,21 @@ def test_rewrite_reddit_url2():
         '',
         ''
     ) == 'https://old.reddit.com/r/pics/comments/13a00ge/a_canadian_goose_that_comes_back_year_after_year/'
+
+
+URL_NORMALIZE_TESTS = [
+    ('https://example.com', 'https://example.com'),
+    (
+        'https://queue.acm.org/detail.cfm?id=2898444&utm_source=daringfireball&utm_campaign=df2023',
+        'https://queue.acm.org/detail.cfm?id=2898444',
+    ),
+    (
+        'https://www.npr.org/2023/03/23/1165680024/perennial-rice-plant-once-harvest-again-and-again',
+        'https://text.npr.org/1165680024',
+    ),
+]
+
+
+@mark.parametrize('url, normalized', URL_NORMALIZE_TESTS)
+def test_url_normalize(url, normalized):
+    assert URL(url).normalize() == URL(normalized)

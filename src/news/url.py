@@ -74,6 +74,11 @@ class URL:
 
         return hostname
 
+    def normalize(self) -> 'URL':
+        cleaned = clean_url(self.url)
+        rewritten = rewrite_url(cleaned)
+        return self if rewritten is self.url else URL(rewritten)
+
     def rewrite(self) -> 'URL':
         rewritten = rewrite_url(self.url)
         return self if rewritten is self.url else URL(rewritten)

@@ -4,7 +4,7 @@ from .url import URL
 
 class Source(Encodable):
     def __init__(self, url: URL, site_id: str, count: int = 1):
-        self.url = url.clean().rewrite()
+        self.url = url.normalize()
         self.site_id = site_id
         self.count = count
 
