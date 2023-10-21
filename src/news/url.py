@@ -9,6 +9,7 @@ log = logging.getLogger(__name__)
 
 class URL:
     def __init__(self, url: str):
+        self.__identity = None
         self.__url = url
 
     def __eq__(self, other: 'URL') -> bool:
@@ -28,47 +29,9 @@ class URL:
 
     @property
     def identity(self) -> str:
-        url_parts = urlsplit(self.__url)
-        hostname = url_parts.hostname
-        path = url_parts.path
-
-        unimportant_subdomains = [
-            'blog', 'blogs', 'community', 'docs', 'en', 'web', 'www', 'www2'
-        ]
-        hostname = remove_subdomain(hostname, unimportant_subdomains)
-
-        hostname_map = {
-            'lite.cnn.com': 'cnn.com',
-            'gist.github.com': 'github.com',
-            'text.npr.org': 'npr.org',
-            'old.reddit.com': 'reddit.com',
-        }
-        if hostname in hostname_map:
-            hostname = hostname_map[hostname]
-
-        social_sites = [
-            'github.com',
-            'gitlab.com',
-            'people.kernel.org',
-            'medium.com',
-            'devblogs.microsoft.com',
-            'twitter.com',
-        ]
-        if looks_social(path) or hostname in social_sites:
-            return keep_path_matching(hostname, path, '/*')
-
-        pattern_map = {
-            'crates.io': '/crates/*',
-            'kickstarter.com': '/projects/*',
-            'sites.google.com': '/site/*',
-            'npmjs.com': '/package/*',
-            'pypi.org': '/project/*',
-            'reddit.com': '/r/*',
-        }
-        if hostname in pattern_map:
-            return keep_path_matching(hostname, path, pattern_map[hostname])
-
-        return hostname
+        if not self.__identity:
+            self.__identity = url_identity(self.__url)
+        return self.__identity
 
     def normalize(self) -> 'URL':
         cleaned = clean_url(self.__url)
@@ -181,3 +144,47 @@ def keep_path_matching(hostname: str, path: str, pattern: str) -> str:
                     return hostname
 
     return hostname + '/'.join(matching)
+
+
+def url_identity(url: str) -> str:
+    url_parts = urlsplit(url)
+    hostname = url_parts.hostname
+    path = url_parts.path
+
+    unimportant_subdomains = [
+        'blog', 'blogs', 'community', 'docs', 'en', 'web', 'www', 'www2'
+    ]
+    hostname = remove_subdomain(hostname, unimportant_subdomains)
+
+    hostname_map = {
+        'lite.cnn.com': 'cnn.com',
+        'gist.github.com': 'github.com',
+        'text.npr.org': 'npr.org',
+        'old.reddit.com': 'reddit.com',
+    }
+    if hostname in hostname_map:
+        hostname = hostname_map[hostname]
+
+    social_sites = [
+        'github.com',
+        'gitlab.com',
+        'people.kernel.org',
+        'medium.com',
+        'devblogs.microsoft.com',
+        'twitter.com',
+    ]
+    if looks_social(path) or hostname in social_sites:
+        return keep_path_matching(hostname, path, '/*')
+
+    pattern_map = {
+        'crates.io': '/crates/*',
+        'kickstarter.com': '/projects/*',
+        'sites.google.com': '/site/*',
+        'npmjs.com': '/package/*',
+        'pypi.org': '/project/*',
+        'reddit.com': '/r/*',
+    }
+    if hostname in pattern_map:
+        return keep_path_matching(hostname, path, pattern_map[hostname])
+
+    return hostname
