@@ -50,7 +50,7 @@ def extract_links(content, default: URL | None = None) -> Tuple[URL, URL]:
             href = anchor['href']
             if not is_reddit_media_link(href):
                 href = make_reddit_absolute(href)
-                link = URL(href).clean()
+                link = URL(href)
         elif anchor.text.strip() == '[comments]':
             comments = URL(anchor['href'])
     return link, comments
