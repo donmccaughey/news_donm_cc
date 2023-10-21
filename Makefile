@@ -18,7 +18,7 @@ build : $(TMP)/docker-build.stamp.txt
 
 
 .PHONY : check
-check : $(TMP)/pytest.stamp.txt
+check : test/mypy.txt
 
 
 .PHONY : clean
@@ -59,8 +59,7 @@ logs :
 
 
 .PHONY : mypy
-mypy :
-	python3 -m mypy src
+mypy : test/mypy.txt
 
 
 .PHONY : push
@@ -148,6 +147,7 @@ source_files := \
 	src/news/index.py \
 	src/news/item.py \
 	src/news/news.py \
+	src/news/normalized_url.py \
 	src/news/source.py \
 	src/news/url.py \
 	\
@@ -196,6 +196,7 @@ test_files := \
 	src/news/index_test.py \
 	src/news/item_test.py \
 	src/news/news_test.py \
+	src/news/normalized_url_test.py \
 	src/news/source_test.py \
 	src/news/url_test.py \
 	\
@@ -203,6 +204,10 @@ test_files := \
 	src/utility/formats_test.py \
 	src/utility/no_store_test.py \
 	src/utility/page_test.py
+
+
+test/mypy.txt : $(TMP)/pytest.stamp.txt
+	python3 -m mypy src | tee test/mypy.txt
 
 
 $(TMP)/.env : | $$(dir $$@)
