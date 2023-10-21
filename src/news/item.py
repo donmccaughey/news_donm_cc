@@ -1,19 +1,19 @@
-from datetime import datetime, timezone
+from datetime import datetime
 
 from serialize import Encodable, JSONDict
+from .normalized_url import NormalizedURL
 from .source import Source
-from .url import URL
 
 
 class Item(Encodable):
     def __init__(self,
-                 url: URL,
+                 url: NormalizedURL,
                  title: str,
                  sources: list[Source],
                  created: datetime,
                  modified: datetime,
                  ):
-        self.url = url.normalize()
+        self.url = url
         self.title = title
         self.sources = sources
         self.created = created
@@ -62,7 +62,7 @@ class Item(Encodable):
     @staticmethod
     def decode(encoded: JSONDict) -> 'Item':
         return Item(
-            url=URL(encoded['url']),
+            url=NormalizedURL(encoded['url']),
             title=encoded['title'],
             sources=[Source.decode(source) for source in (encoded['sources'])],
             created=datetime.fromisoformat(encoded['created']),

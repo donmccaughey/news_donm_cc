@@ -6,7 +6,8 @@ from urllib.parse import urlsplit
 import bs4
 from .skip_sites import SKIP_SITES
 from .feed import Feed
-from news import Item, Source, URL
+from news import Item, NormalizedURL, Source, URL
+
 
 log = logging.getLogger(__name__)
 
@@ -34,7 +35,7 @@ class Reddit(Feed):
         site_id = '/'.join(identity_parts[1:])
 
         return Item(
-            url=url,
+            url=NormalizedURL(url),
             title=entry.title,
             sources=[Source(source, site_id)],
             created=now,

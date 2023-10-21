@@ -6,7 +6,7 @@ from io import BytesIO
 import requests
 from feedparser import FeedParserDict, parse
 
-from news import LIFETIME, Item, Source, URL
+from news import LIFETIME, Item, NormalizedURL, Source, URL
 from serialize import Encodable, JSONDict
 
 
@@ -114,7 +114,7 @@ class Feed(Encodable):
         return items
 
     def parse_entry(self, entry: FeedParserDict, now: datetime) -> Item:
-        url = URL(entry.link)
+        url = NormalizedURL(entry.link)
         return Item(
             url=url,
             title=entry.title,

@@ -4,8 +4,9 @@ import pytest
 from feedparser import FeedParserDict, parse
 from pytest import mark
 
-from news import URL
+from news import NormalizedURL, URL
 from .reddit import extract_links, Reddit, is_reddit_media_link
+
 
 FEED_URL = URL('https://www.reddit.com/.rss?feed=12345&user=alice')
 
@@ -36,7 +37,7 @@ def test_parse_entry_for_image_link():
     entry = d.entries[0]
     item = r.parse_entry(entry, datetime.now(timezone.utc))
     assert item.title == 'Spolia: repurposed Roman inscriptions in València, Spain (facade of the Basilica of Our Lady of the Forsaken)'
-    assert item.url == URL('https://old.reddit.com/r/latin/comments/131102k/spolia_repurposed_roman_inscriptions_in_valència/')
+    assert item.url == NormalizedURL('https://old.reddit.com/r/latin/comments/131102k/spolia_repurposed_roman_inscriptions_in_valència/')
     assert item.sources[0].url == URL('https://old.reddit.com/r/latin/comments/131102k/spolia_repurposed_roman_inscriptions_in_valència/')
     assert item.sources[0].site_id == 'r/latin'
 
@@ -65,7 +66,7 @@ def test_parse_entry_for_gallery_link():
     entry = d.entries[0]
     item = r.parse_entry(entry, datetime.now(timezone.utc))
     assert item.title == 'Mini photo shoot with my Pyr Sushi'
-    assert item.url == URL('https://old.reddit.com/r/greatpyrenees/comments/130qn68/mini_photo_shoot_with_my_pyr_sushi/')
+    assert item.url == NormalizedURL('https://old.reddit.com/r/greatpyrenees/comments/130qn68/mini_photo_shoot_with_my_pyr_sushi/')
     assert item.sources[0].url == URL('https://old.reddit.com/r/greatpyrenees/comments/130qn68/mini_photo_shoot_with_my_pyr_sushi/')
     assert item.sources[0].site_id == 'r/greatpyrenees'
 
@@ -119,7 +120,7 @@ def test_parse_entry_for_website_link_cleans_url():
     entry = d.entries[0]
     item = r.parse_entry(entry, datetime.now(timezone.utc))
     assert item.title == 'US adult cigarette smoking rate hits new all-time low'
-    assert item.url == URL('https://apnews.com/article/how-many-people-smoke-us-64987fe2b7bf764c64d4594e5b02e6ea')
+    assert item.url == NormalizedURL('https://apnews.com/article/how-many-people-smoke-us-64987fe2b7bf764c64d4594e5b02e6ea')
     assert item.sources[0].url == URL('https://old.reddit.com/r/news/comments/130kndv/us_adult_cigarette_smoking_rate_hits_new_alltime/')
     assert item.sources[0].site_id == 'r/news'
 

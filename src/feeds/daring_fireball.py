@@ -1,7 +1,7 @@
 from datetime import datetime
 from urllib.parse import parse_qsl, urlsplit
 
-from news import Item, Source, URL
+from news import Item, NormalizedURL, Source, URL
 from .feed import Feed
 
 
@@ -47,7 +47,7 @@ class DaringFireball(Feed):
         alternate = first_link_with_rel(entry.links, 'alternate')
         link = related or alternate or entry.link
 
-        url = URL(link)
+        url = NormalizedURL(link)
         return Item(
             url=url,
             title=entry.title,

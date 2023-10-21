@@ -1,37 +1,14 @@
 from datetime import datetime, timezone, timedelta
 
 from .item import Item
+from .normalized_url import NormalizedURL
 from .source import Source
 from .url import URL
 
 
-def test_item_cleans_url():
-    item = Item(
-        URL('https://queue.acm.org/detail.cfm?id=2898444&utm_source=daringfireball&utm_campaign=df2023'),
-        'Item 1',
-        [Source(URL('https://source.com/1'), 'so')],
-        created=NOW,
-        modified=NOW,
-    )
-
-    assert item.url == URL('https://queue.acm.org/detail.cfm?id=2898444')
-
-
-def test_item_rewrites_url():
-    item = Item(
-        URL('https://www.npr.org/sections/money/2023/05/02/1172791281/this-company-adopted-ai-heres-what-happened-to-its-human-workers'),
-        'Item 1',
-        [Source(URL('https://source.com/1'), 'so')],
-        created=NOW,
-        modified=NOW,
-    )
-
-    assert item.url == URL('https://text.npr.org/1172791281')
-
-
 def test_item_rewrites_source_url():
     item = Item(
-        URL('https://www.reddit.com/r/pics/comments/13a00ge/a_canadian_goose_that_comes_back_year_after_year/'),
+        NormalizedURL('https://www.reddit.com/r/pics/comments/13a00ge/a_canadian_goose_that_comes_back_year_after_year/'),
         'Item 1',
         [Source(URL('https://www.reddit.com/r/pics/comments/13a00ge/a_canadian_goose_that_comes_back_year_after_year/'), 'so')],
         created=NOW,
@@ -43,21 +20,21 @@ def test_item_rewrites_source_url():
 
 def test_eq_and_hash():
     item1 = Item(
-        URL('https://example.com/1'),
+        NormalizedURL('https://example.com/1'),
         'Item 1',
         [Source(URL('https://source.com/1'), 'so')],
         created=NOW,
         modified=NOW,
     )
     item1_dup = Item(
-        URL('https://example.com/1'),
+        NormalizedURL('https://example.com/1'),
         'Item 1 Duplicate',
         [Source(URL('https://alt-source.com/1-dup'), 'as')],
         created=NOW,
         modified=NOW,
     )
     item2 = Item(
-        URL('https://example.com/2'),
+        NormalizedURL('https://example.com/2'),
         'Item 2',
         [Source(URL('https://source.com/2'), 'so')],
         created=NOW,
@@ -72,7 +49,7 @@ def test_eq_and_hash():
 
 def test_str_and_repr():
     item = Item(
-        URL('https://example.com/1'),
+        NormalizedURL('https://example.com/1'),
         'Item 1',
         [Source(URL('https://source.com/1'), 'so')],
         created=NOW,
@@ -80,33 +57,33 @@ def test_str_and_repr():
     )
 
     assert str(item) == '"Item 1" (https://example.com/1)'
-    assert repr(item) == "Item(URL('https://example.com/1'), 'Item 1', [Source(URL('https://source.com/1'), 'so', 1)])"
+    assert repr(item) == "Item(NormalizedURL('https://example.com/1'), 'Item 1', [Source(URL('https://source.com/1'), 'so', 1)])"
 
 
 def test_lt_by_sorting():
     item1 = Item(
-        URL('https://example.com/1'),
+        NormalizedURL('https://example.com/1'),
         'Item 1',
         [Source(URL('https://source.com/1'), 'so')],
         created=THREE_DAYS_AGO,
         modified=NOW,
     )
     item2 = Item(
-        URL('https://example.com/2'),
+        NormalizedURL('https://example.com/2'),
         'Item 2',
         [Source(URL('https://source.com/2'), 'so')],
         created=TWO_DAYS_AGO,
         modified=NOW,
     )
     item3 = Item(
-        URL('https://example.com/3'),
+        NormalizedURL('https://example.com/3'),
         'Item 3',
         [Source(URL('https://source.com/3'), 'so')],
         created=YESTERDAY,
         modified=NOW,
     )
     item4 = Item(
-        URL('https://example.com/4'),
+        NormalizedURL('https://example.com/4'),
         'Item 4',
         [Source(URL('https://source.com/4'), 'so')],
         created=AN_HOUR_AGO,
@@ -123,21 +100,21 @@ def test_lt_by_sorting():
 
 def test_lt_by_sorting_for_equal_created_sorts_on_url():
     item1 = Item(
-        URL('https://aaa.com/1'),
+        NormalizedURL('https://aaa.com/1'),
         'Item 1',
         [Source(URL('https://source.com/1'), 'so')],
         created=AN_HOUR_AGO,
         modified=NOW,
     )
     item2 = Item(
-        URL('https://bbb.com/2'),
+        NormalizedURL('https://bbb.com/2'),
         'Item 2',
         [Source(URL('https://source.com/2'), 'so')],
         created=AN_HOUR_AGO,
         modified=NOW,
     )
     item3 = Item(
-        URL('https://ccc.com/3'),
+        NormalizedURL('https://ccc.com/3'),
         'Item 3',
         [Source(URL('https://source.com/3'), 'so')],
         created=AN_HOUR_AGO,
@@ -153,7 +130,7 @@ def test_lt_by_sorting_for_equal_created_sorts_on_url():
 
 def test_count():
     item = Item(
-        URL('https://example.com/1'),
+        NormalizedURL('https://example.com/1'),
         'Item 1',
         [Source(URL('https://source.com/1'), 'so', 2)],
         created=NOW,
@@ -170,7 +147,7 @@ def test_count():
 
 def test_different_sources():
     item1 = Item(
-        URL('https://example.com/1'),
+        NormalizedURL('https://example.com/1'),
         'Item 1',
         [Source(URL('https://source.com/1'), 'so')],
         created=NOW,
@@ -180,7 +157,7 @@ def test_different_sources():
     assert len(item1.different_sources) == 1
 
     item2 = Item(
-        URL('https://example.com/2'),
+        NormalizedURL('https://example.com/2'),
         'Item 2',
         [Source(URL('https://example.com/2'), 'so')],
         created=NOW,
@@ -193,7 +170,7 @@ def test_different_sources():
 def test_update_from_with_new_source():
     source = Source(URL('https://source.com/1'), 'so', 1)
     existing = Item(
-        URL('https://example.com/1'),
+        NormalizedURL('https://example.com/1'),
         'Item 1',
         [source],
         created=NOW,
@@ -202,7 +179,7 @@ def test_update_from_with_new_source():
 
     alt_source = Source(URL('https://alt-source.com/2'), 'alt', 1)
     other = Item(
-        URL('https://example.com/1'),
+        NormalizedURL('https://example.com/1'),
         'Item 1',
         [alt_source],
         created=NOW,
@@ -221,7 +198,7 @@ def test_update_from_with_new_source():
 def test_update_from_with_same_source():
     source = Source(URL('https://source.com/1'), 'so', 1)
     existing = Item(
-        URL('https://example.com/1'),
+        NormalizedURL('https://example.com/1'),
         'Item 1',
         [source],
         created=NOW,
@@ -230,7 +207,7 @@ def test_update_from_with_same_source():
 
     source_dup = Source(URL('https://source.com/1'), 'so', 1)
     other = Item(
-        URL('https://example.com/1'),
+        NormalizedURL('https://example.com/1'),
         'Item 1',
         [source_dup],
         created=NOW,
@@ -278,7 +255,7 @@ def test_decode_from_sources():
 def test_encode():
     dt = datetime.fromisoformat('2022-12-22T16:36:54.143222+00:00')
     item1 = Item(
-        URL('https://example.com/1'),
+        NormalizedURL('https://example.com/1'),
         'Item 1',
         [Source(URL('https://source.com/1'), 'so')],
         created=dt,

@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from news import Item, Source, URL
+from news import Item, NormalizedURL, Source, URL
 from .feed import Feed
 
 
@@ -13,7 +13,7 @@ class TildeNews(Feed):
 
     def parse_entry(self, entry, now: datetime) -> Item:
         return Item(
-            url=URL(entry.link),
+            url=NormalizedURL(entry.link),
             title=entry.title,
             sources=[Source(URL(entry.comments), self.initials)],
             created=now,
