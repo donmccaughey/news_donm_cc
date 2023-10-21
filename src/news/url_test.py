@@ -80,11 +80,6 @@ URL_CLEAN_TESTS = [
 
 
 @mark.parametrize('url, cleaned', URL_CLEAN_TESTS)
-def test_url_clean(url, cleaned):
-    assert URL(url).clean() == URL(cleaned)
-
-
-@mark.parametrize('url, cleaned', URL_CLEAN_TESTS)
 def test_clean_url(url, cleaned):
     assert clean_url(url) == cleaned
 

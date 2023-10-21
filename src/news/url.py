@@ -26,10 +26,6 @@ class URL:
     def __str__(self) -> str:
         return self.__url
 
-    def clean(self) -> 'URL':
-        cleaned = clean_url(self.__url)
-        return self if cleaned is self.__url else URL(cleaned)
-
     @property
     def identity(self) -> str:
         url_parts = urlsplit(self.__url)
