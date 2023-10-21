@@ -7,7 +7,7 @@ from extractor import S3Store
 from utility import CachedFile
 
 
-def parse_options():
+def parse_options() -> argparse.Namespace:
     arg_parser = argparse.ArgumentParser(description='Query news.')
     arg_parser.add_argument('-o', '--open', dest='news_path', type=Path,
                             help='location of news items JSON')
@@ -23,7 +23,7 @@ def parse_options():
     return arg_parser.parse_args()
 
 
-def query_terms(news):
+def query_terms(news: News):
     index = news.index
     term_width = 0
     for term in index.terms.keys():
@@ -34,7 +34,7 @@ def query_terms(news):
     print(f'{len(index.terms)} terms')
 
 
-def query_terms_by_frequency(news):
+def query_terms_by_frequency(news: News):
     index = news.index
     term_width = 0
     for term in index.terms.keys():
@@ -46,14 +46,14 @@ def query_terms_by_frequency(news):
     print(f'{len(index.terms)} terms')
 
 
-def query_urls(news):
+def query_urls(news: News):
     urls = [item.url for item in news]
     urls.sort()
     for url in urls:
         print(url)
 
 
-def query_urls_by_site(news):
+def query_urls_by_site(news: News):
     urls = [item.url for item in news]
     groups = defaultdict(list)
     for url in urls:
@@ -66,7 +66,7 @@ def query_urls_by_site(news):
             print('    ', url)
 
 
-def query_urls_by_source_counts(news):
+def query_urls_by_source_counts(news: News):
     by_count = list(news)
     by_count.sort(key=lambda item: (-item.count, item.sources[0].site_id, item.title))
     w1 = w2 = 0
@@ -94,7 +94,7 @@ def main():
                     return True
             return False
 
-        news = filter(from_site, news)
+        news = News(items=list(filter(from_site, news)))
 
     match options.query:
         case 'terms':
