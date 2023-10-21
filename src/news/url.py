@@ -11,10 +11,6 @@ class URL:
     def __init__(self, url: str):
         self.url = url
 
-    @staticmethod
-    def from_components(scheme: str, netloc: str, path: str, query: str, fragment: str) -> 'URL':
-        return URL(urlunsplit((scheme, netloc, path, query, fragment)))
-
     def __eq__(self, other: 'URL') -> bool:
         return isinstance(other, URL) and self.url == other.url
 
