@@ -1,4 +1,4 @@
-from news import URL
+from news.url import URL
 from .feeds import Feeds
 from .feed import Feed
 

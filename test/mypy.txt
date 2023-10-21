@@ -2,19 +2,19 @@ src/utility/cached_file.py:23: error: Incompatible types in assignment (expressi
 src/utility/cached_file.py:30: error: Incompatible types in assignment (expression has type "float", variable has type "None")  [assignment]
 src/youtube_user.py:4: error: Library stubs not installed for "bs4"  [import-untyped]
 src/youtube_user.py:5: error: Library stubs not installed for "requests"  [import-untyped]
-src/news/url.py:33: error: Incompatible types in assignment (expression has type "str", variable has type "None")  [assignment]
-src/news/url.py:34: error: Incompatible return value type (got "None", expected "str")  [return-value]
-src/news/url.py:74: error: Argument 1 to "startswith" of "bytes" has incompatible type "str"; expected "Buffer | tuple[Buffer, ...]"  [arg-type]
-src/news/url.py:157: error: Argument 1 to "remove_subdomain" has incompatible type "str | None"; expected "str"  [arg-type]
+src/news/url/url.py:33: error: Incompatible types in assignment (expression has type "str", variable has type "None")  [assignment]
+src/news/url/url.py:34: error: Incompatible return value type (got "None", expected "str")  [return-value]
+src/news/url/url.py:74: error: Argument 1 to "startswith" of "bytes" has incompatible type "str"; expected "Buffer | tuple[Buffer, ...]"  [arg-type]
+src/news/url/url.py:157: error: Argument 1 to "remove_subdomain" has incompatible type "str | None"; expected "str"  [arg-type]
+src/extractor/s3_store.py:1: error: Skipping analyzing "boto3": module is installed, but missing library stubs or py.typed marker  [import-untyped]
+src/extractor/s3_store.py:4: error: Skipping analyzing "botocore.exceptions": module is installed, but missing library stubs or py.typed marker  [import-untyped]
+src/extractor/s3_store.py:4: note: See https://mypy.readthedocs.io/en/stable/running_mypy.html#missing-imports
 src/news/source.py:31: error: Argument 1 of "decode" is incompatible with supertype "Encodable"; supertype defines the argument type as "JSONDict | JSONList"  [override]
 src/news/source.py:31: note: This violates the Liskov substitution principle
 src/news/source.py:31: note: See https://mypy.readthedocs.io/en/stable/common_issues.html#incompatible-overrides
 src/news/source.py:33: error: Argument 1 to "NormalizedURL" has incompatible type "JSONDict | JSONList | str | int | float | bool | None"; expected "str"  [arg-type]
 src/news/source.py:34: error: Argument "site_id" to "Source" has incompatible type "JSONDict | JSONList | str | int | float | bool | None"; expected "str"  [arg-type]
 src/news/source.py:35: error: Argument "count" to "Source" has incompatible type "JSONDict | list[JSONType] | tuple[JSONType, ...] | str | int | float | None"; expected "int"  [arg-type]
-src/extractor/s3_store.py:1: error: Skipping analyzing "boto3": module is installed, but missing library stubs or py.typed marker  [import-untyped]
-src/extractor/s3_store.py:4: error: Skipping analyzing "botocore.exceptions": module is installed, but missing library stubs or py.typed marker  [import-untyped]
-src/extractor/s3_store.py:4: note: See https://mypy.readthedocs.io/en/stable/running_mypy.html#missing-imports
 src/news/item.py:63: error: Argument 1 of "decode" is incompatible with supertype "Encodable"; supertype defines the argument type as "JSONDict | JSONList"  [override]
 src/news/item.py:63: note: This violates the Liskov substitution principle
 src/news/item.py:63: note: See https://mypy.readthedocs.io/en/stable/common_issues.html#incompatible-overrides
@@ -49,21 +49,21 @@ src/feeds/feed.py:6: error: Library stubs not installed for "requests"  [import-
 src/feeds/feed.py:6: note: Hint: "python3 -m pip install types-requests"
 src/feeds/feed.py:6: note: (or run "mypy --install-types" to install all missing stub packages)
 src/feeds/feed.py:7: error: Skipping analyzing "feedparser": module is installed, but missing library stubs or py.typed marker  [import-untyped]
-src/feeds/feed.py:133: error: Argument 1 of "decode" is incompatible with supertype "Encodable"; supertype defines the argument type as "JSONDict | JSONList"  [override]
-src/feeds/feed.py:133: note: This violates the Liskov substitution principle
-src/feeds/feed.py:133: note: See https://mypy.readthedocs.io/en/stable/common_issues.html#incompatible-overrides
-src/feeds/feed.py:135: error: Argument "name" to "Feed" has incompatible type "JSONDict | JSONList | str | int | float | bool | None"; expected "str"  [arg-type]
-src/feeds/feed.py:136: error: Argument "initials" to "Feed" has incompatible type "JSONDict | JSONList | str | int | float | bool | None"; expected "str"  [arg-type]
-src/feeds/feed.py:137: error: Argument "etag" to "Feed" has incompatible type "JSONDict | list[JSONType] | tuple[JSONType, ...] | str | int | float | None"; expected "str | None"  [arg-type]
-src/feeds/feed.py:138: error: Argument "last_modified" to "Feed" has incompatible type "JSONDict | list[JSONType] | tuple[JSONType, ...] | str | int | float | None"; expected "str | None"  [arg-type]
-src/feeds/feed.py:150: error: Incompatible return value type (got "dict[str, str]", expected "dict[str, JSONType]")  [return-value]
-src/feeds/feed.py:150: note: "Dict" is invariant -- see https://mypy.readthedocs.io/en/stable/common_issues.html#variance
-src/feeds/feed.py:150: note: Consider using "Mapping" instead, which is covariant in the value type
-src/feeds/feed.py:150: note: Perhaps you need a type annotation for "encoded"? Suggestion: "dict[str, JSONType]"
+src/feeds/feed.py:134: error: Argument 1 of "decode" is incompatible with supertype "Encodable"; supertype defines the argument type as "JSONDict | JSONList"  [override]
+src/feeds/feed.py:134: note: This violates the Liskov substitution principle
+src/feeds/feed.py:134: note: See https://mypy.readthedocs.io/en/stable/common_issues.html#incompatible-overrides
+src/feeds/feed.py:136: error: Argument "name" to "Feed" has incompatible type "JSONDict | JSONList | str | int | float | bool | None"; expected "str"  [arg-type]
+src/feeds/feed.py:137: error: Argument "initials" to "Feed" has incompatible type "JSONDict | JSONList | str | int | float | bool | None"; expected "str"  [arg-type]
+src/feeds/feed.py:138: error: Argument "etag" to "Feed" has incompatible type "JSONDict | list[JSONType] | tuple[JSONType, ...] | str | int | float | None"; expected "str | None"  [arg-type]
+src/feeds/feed.py:139: error: Argument "last_modified" to "Feed" has incompatible type "JSONDict | list[JSONType] | tuple[JSONType, ...] | str | int | float | None"; expected "str | None"  [arg-type]
+src/feeds/feed.py:151: error: Incompatible return value type (got "dict[str, str]", expected "dict[str, JSONType]")  [return-value]
+src/feeds/feed.py:151: note: "Dict" is invariant -- see https://mypy.readthedocs.io/en/stable/common_issues.html#variance
+src/feeds/feed.py:151: note: Consider using "Mapping" instead, which is covariant in the value type
+src/feeds/feed.py:151: note: Perhaps you need a type annotation for "encoded"? Suggestion: "dict[str, JSONType]"
 src/server/news_page.py:44: error: Incompatible types in assignment (expression has type "None", variable has type "str")  [assignment]
 src/feeds/reddit.py:6: error: Library stubs not installed for "bs4"  [import-untyped]
 src/feeds/reddit.py:6: note: Hint: "python3 -m pip install types-beautifulsoup4"
-src/feeds/reddit.py:59: error: Incompatible return value type (got "tuple[NormalizedURL | None, NormalizedURL | None]", expected "tuple[NormalizedURL, NormalizedURL]")  [return-value]
+src/feeds/reddit.py:60: error: Incompatible return value type (got "tuple[NormalizedURL | None, NormalizedURL | None]", expected "tuple[NormalizedURL, NormalizedURL]")  [return-value]
 src/feeds/feed_test.py:5: error: Skipping analyzing "feedparser": module is installed, but missing library stubs or py.typed marker  [import-untyped]
 src/feeds/feed_test.py:6: error: Library stubs not installed for "requests"  [import-untyped]
 src/feeds/feed_test.py:76: note: By default the bodies of untyped functions are not checked, consider using --check-untyped-defs  [annotation-unchecked]
@@ -83,11 +83,6 @@ src/feeds/feeds.py:53: error: Argument 1 of "decode" is incompatible with supert
 src/feeds/feeds.py:53: note: This violates the Liskov substitution principle
 src/feeds/feeds.py:53: note: See https://mypy.readthedocs.io/en/stable/common_issues.html#incompatible-overrides
 src/feeds/feeds.py:54: error: Argument 1 to "decode" of "Feed" has incompatible type "JSONDict | JSONList | str | int | float | bool | None"; expected "JSONDict"  [arg-type]
-src/query.py:61: error: Incompatible types in assignment (expression has type "list[tuple[str, list[NormalizedURL]]]", variable has type "defaultdict[str, list[NormalizedURL]]")  [assignment]
-src/query.py:62: error: "defaultdict[str, list[NormalizedURL]]" has no attribute "sort"  [attr-defined]
-src/query.py:63: error: Unpacking a string is disallowed  [misc]
-src/query.py:64: error: Cannot determine type of "identity"  [has-type]
-src/server/views.py:50: error: Incompatible return value type (got "werkzeug.wrappers.response.Response", expected "flask.wrappers.Response")  [return-value]
 src/feeds/reddit_test.py:4: error: Skipping analyzing "feedparser": module is installed, but missing library stubs or py.typed marker  [import-untyped]
 src/feeds/reddit_test.py:35: note: By default the bodies of untyped functions are not checked, consider using --check-untyped-defs  [annotation-unchecked]
 src/feeds/reddit_test.py:64: note: By default the bodies of untyped functions are not checked, consider using --check-untyped-defs  [annotation-unchecked]
@@ -95,4 +90,9 @@ src/feeds/reddit_test.py:93: note: By default the bodies of untyped functions ar
 src/feeds/reddit_test.py:118: note: By default the bodies of untyped functions are not checked, consider using --check-untyped-defs  [annotation-unchecked]
 src/feeds/hacker_news_test.py:4: error: Skipping analyzing "feedparser": module is installed, but missing library stubs or py.typed marker  [import-untyped]
 src/feeds/daring_fireball_test.py:2: error: Skipping analyzing "feedparser": module is installed, but missing library stubs or py.typed marker  [import-untyped]
-Found 60 errors in 18 files (checked 74 source files)
+src/server/views.py:50: error: Incompatible return value type (got "werkzeug.wrappers.response.Response", expected "flask.wrappers.Response")  [return-value]
+src/query.py:61: error: Incompatible types in assignment (expression has type "list[tuple[str, list[NormalizedURL]]]", variable has type "defaultdict[str, list[NormalizedURL]]")  [assignment]
+src/query.py:62: error: "defaultdict[str, list[NormalizedURL]]" has no attribute "sort"  [attr-defined]
+src/query.py:63: error: Unpacking a string is disallowed  [misc]
+src/query.py:64: error: Cannot determine type of "identity"  [has-type]
+Found 60 errors in 18 files (checked 75 source files)

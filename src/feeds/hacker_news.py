@@ -1,7 +1,8 @@
 import html
 from datetime import datetime
 
-from news import Item, NormalizedURL, Source, URL
+from news import Item, Source
+from news.url import NormalizedURL, URL
 from .skip_sites import SKIP_SITES
 from .feed import Feed
 

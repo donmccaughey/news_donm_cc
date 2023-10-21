@@ -1,6 +1,5 @@
-from .normalized_url import NormalizedURL
 from .source import Source
-from .url import URL
+from .url import NormalizedURL, URL
 
 
 def test_eq_and_hash():

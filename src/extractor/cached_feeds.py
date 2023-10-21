@@ -1,7 +1,7 @@
 from pathlib import Path
 
 from feeds import Feeds
-from news import URL
+from news.url import URL
 from utility import CachedFile
 
 

@@ -1,10 +1,9 @@
 from .item import Item
 from .news import LIFETIME, News
-from .normalized_url import NormalizedURL
 from .source import Source
-from .url import URL
 
 from .index import Index
+
 
 CACHE_DIR = '/var/lib/news'
 NEWS_FILE = 'news.json'

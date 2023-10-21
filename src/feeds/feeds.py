@@ -1,7 +1,7 @@
 import json
 from typing import Iterable, Iterator
 
-from news import URL
+from news.url import URL
 from serialize import Encodable, JSONList, Serializable
 from .acoup import Acoup
 from .charity_wtf import CharityWTF

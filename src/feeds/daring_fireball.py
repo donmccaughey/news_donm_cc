@@ -1,7 +1,8 @@
 from datetime import datetime
 from urllib.parse import parse_qsl, urlsplit
 
-from news import Item, NormalizedURL, Source, URL
+from news import Item, Source
+from news.url import NormalizedURL, URL
 from .feed import Feed
 
 

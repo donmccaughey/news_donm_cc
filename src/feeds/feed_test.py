@@ -5,7 +5,7 @@ from email import utils
 from feedparser import FeedParserDict, parse
 from requests import ConnectTimeout
 
-from news import URL
+from news.url import URL
 from .feed import Feed
 
 

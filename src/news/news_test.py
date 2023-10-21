@@ -2,8 +2,8 @@ from datetime import datetime, timedelta, timezone
 
 from .item import Item
 from .news import News
-from .normalized_url import NormalizedURL
 from .source import Source
+from .url import NormalizedURL
 
 
 def test_str_and_repr():

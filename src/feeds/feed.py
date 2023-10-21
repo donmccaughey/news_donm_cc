@@ -6,7 +6,8 @@ from io import BytesIO
 import requests
 from feedparser import FeedParserDict, parse
 
-from news import LIFETIME, Item, NormalizedURL, Source, URL
+from news import LIFETIME, Item, Source
+from news.url import NormalizedURL, URL
 from serialize import Encodable, JSONDict
 
 

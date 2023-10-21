@@ -1,8 +1,8 @@
 from datetime import datetime
 
 from serialize import Encodable, JSONDict
-from .normalized_url import NormalizedURL
 from .source import Source
+from .url import NormalizedURL
 
 
 class Item(Encodable):

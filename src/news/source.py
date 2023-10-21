@@ -1,5 +1,5 @@
 from serialize import Encodable, JSONDict
-from .normalized_url import NormalizedURL
+from .url import NormalizedURL
 
 
 class Source(Encodable):

@@ -1,4 +1,4 @@
-from news import NormalizedURL, URL
+from news.url import NormalizedURL, URL
 
 
 def test_str_and_repr():

@@ -4,7 +4,7 @@ import pytest
 from feedparser import FeedParserDict, parse
 from pytest import mark
 
-from news import NormalizedURL, URL
+from news.url import NormalizedURL, URL
 from .reddit import extract_links, Reddit, is_reddit_media_link
 
 

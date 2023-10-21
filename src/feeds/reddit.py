@@ -6,7 +6,8 @@ from urllib.parse import urlsplit
 import bs4
 from .skip_sites import SKIP_SITES
 from .feed import Feed
-from news import Item, NormalizedURL, Source, URL
+from news import Item, Source
+from news.url import NormalizedURL, URL
 
 
 log = logging.getLogger(__name__)

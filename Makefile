@@ -147,9 +147,11 @@ source_files := \
 	src/news/index.py \
 	src/news/item.py \
 	src/news/news.py \
-	src/news/normalized_url.py \
 	src/news/source.py \
-	src/news/url.py \
+	\
+	src/news/url/__init__.py \
+	src/news/url/normalized_url.py \
+	src/news/url/url.py \
 	\
 	src/serialize/__init__.py \
 	src/serialize/encodable.py \
@@ -196,9 +198,10 @@ test_files := \
 	src/news/index_test.py \
 	src/news/item_test.py \
 	src/news/news_test.py \
-	src/news/normalized_url_test.py \
 	src/news/source_test.py \
-	src/news/url_test.py \
+	\
+	src/news/url/normalized_url_test.py \
+	src/news/url/url_test.py \
 	\
 	src/utility/cached_file_test.py \
 	src/utility/formats_test.py \

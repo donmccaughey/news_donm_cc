@@ -1,4 +1,4 @@
-from news import URL
+from news.url import URL
 
 
 # TODO: unify with gen/markup/attributes.py
