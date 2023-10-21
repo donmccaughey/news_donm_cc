@@ -8,7 +8,7 @@ class Source(Encodable):
         self.site_id = site_id
         self.count = count
 
-    def __eq__(self, other: 'Source') -> bool:
+    def __eq__(self, other: object) -> bool:
         return (
             isinstance(other, Source)
             and self.site_id == other.site_id

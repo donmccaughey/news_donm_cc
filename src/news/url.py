@@ -12,7 +12,7 @@ class URL:
         self.__identity = None
         self.__url = url
 
-    def __eq__(self, other: 'URL') -> bool:
+    def __eq__(self, other: object) -> bool:
         return isinstance(other, URL) and self.__url == other.__url
 
     def __hash__(self) -> int:

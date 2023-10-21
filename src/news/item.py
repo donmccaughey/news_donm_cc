@@ -19,7 +19,7 @@ class Item(Encodable):
         self.created = created
         self.modified = modified
 
-    def __eq__(self, other: 'Item') -> bool:
+    def __eq__(self, other: object) -> bool:
         return isinstance(other, Item) and self.url == other.url
 
     def __hash__(self) -> int:

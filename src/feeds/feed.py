@@ -27,7 +27,7 @@ class Feed(Encodable):
         self.etag = etag
         self.last_modified = last_modified
 
-    def __eq__(self, other: 'Feed') -> bool:
+    def __eq__(self, other: object) -> bool:
         return isinstance(other, Feed) and self.name == other.name
 
     def __hash__(self) -> int:
