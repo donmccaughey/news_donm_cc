@@ -116,6 +116,7 @@ IDENTITY_TESTS = [
     ('kickstarter.com/projects/robwalling', 'https://www.kickstarter.com/projects/robwalling/the-saas-playbook-by-rob-walling'),
     ('devblogs.microsoft.com/oldnewthing', 'https://devblogs.microsoft.com/oldnewthing/20221216-00/?p=107598'),
     ('twitter.com/app4soft', 'https://twitter.com/app4soft/status/1606784614793633794'),
+    ('codeberg.org/loke', 'https://codeberg.org/loke/array'),
 
 
     # == `/~<user>/<...>` paths

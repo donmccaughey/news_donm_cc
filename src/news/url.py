@@ -166,6 +166,7 @@ def url_identity(url: str) -> str:
         hostname = hostname_map[hostname]
 
     social_sites = [
+        'codeberg.org',
         'github.com',
         'gitlab.com',
         'people.kernel.org',
