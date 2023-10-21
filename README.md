@@ -18,7 +18,7 @@ can find the current list of sources in the [`Feeds.all()`][1] method.
 
 1. Install `aws`, `docker`, `jq` and `make`
 2. Install `pyenv` and `pyenv-virtualenv`
-3. Create a `news-venv` virtual environment using Python 3.10.9 and activate it
+3. Create a `news-venv` virtual environment using Python 3.11.5 and activate it
 4. Run tests: `make check`
 5. Run the extractor locally for ad hoc testing: `make extract`
 6. Run the server locally for ad hoc testing: `make debug`
