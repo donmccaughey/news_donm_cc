@@ -79,10 +79,6 @@ class URL:
         rewritten = rewrite_url(cleaned)
         return self if rewritten is self.__url else URL(rewritten)
 
-    def rewrite(self) -> 'URL':
-        rewritten = rewrite_url(self.__url)
-        return self if rewritten is self.__url else URL(rewritten)
-
 
 def clean_query(query: str) -> str:
     if query:

@@ -215,11 +215,6 @@ URL_REWRITE_TESTS = [
 
 
 @mark.parametrize('url, rewritten', URL_REWRITE_TESTS)
-def test_url_rewrite(url, rewritten):
-    assert URL(url).rewrite() == URL(rewritten)
-
-
-@mark.parametrize('url, rewritten', URL_REWRITE_TESTS)
 def test_rewrite_url(url, rewritten):
     assert rewrite_url(url) == rewritten
 
