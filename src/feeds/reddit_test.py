@@ -138,7 +138,7 @@ CONTENT_TESTS = [
             href="https://www.reddit.com/r/latin/comments/131102k/spolia_repurposed_roman_inscriptions_in_valència/">[comments]</a></span>
             </td></tr></table>''',
         None,  # https://i.redd.it/ylkzznbsfiwa1.jpg
-        URL('https://www.reddit.com/r/latin/comments/131102k/spolia_repurposed_roman_inscriptions_in_valència/'),
+        NormalizedURL('https://www.reddit.com/r/latin/comments/131102k/spolia_repurposed_roman_inscriptions_in_valència/'),
         id='image link',
     ),
     pytest.param(
@@ -151,7 +151,7 @@ CONTENT_TESTS = [
             &#32; <span><a href="https://www.reddit.com/r/aww/comments/130no54/six_little_fwinds/">[comments]</a></span>
             </td></tr></table>''',
         None,  # https://v.redd.it/i90hkj9nrfwa1
-        URL('https://www.reddit.com/r/aww/comments/130no54/six_little_fwinds/'),
+        NormalizedURL('https://www.reddit.com/r/aww/comments/130no54/six_little_fwinds/'),
         id='video link',
     ),
     pytest.param(
@@ -164,7 +164,7 @@ CONTENT_TESTS = [
             &#32; <span><a href="https://www.reddit.com/r/greatpyrenees/comments/130qn68/mini_photo_shoot_with_my_pyr_sushi/">[comments]</a></span>
             </td></tr></table>''',
         None,  # https://www.reddit.com/gallery/130qn68
-        URL('https://www.reddit.com/r/greatpyrenees/comments/130qn68/mini_photo_shoot_with_my_pyr_sushi/'),
+        NormalizedURL('https://www.reddit.com/r/greatpyrenees/comments/130qn68/mini_photo_shoot_with_my_pyr_sushi/'),
         id='gallery link',
     ),
     pytest.param(
@@ -176,8 +176,8 @@ CONTENT_TESTS = [
             r/rust </a> <br/> <span><a href="https://seanmonstar.com/post/715784167270596608/coe-surpise-hyper-cve">[link]</a></span>
             &#32; <span><a href="https://www.reddit.com/r/rust/comments/13147i3/report_on_surprise_hyper_cve_from_20230411/">[comments]</a></span>
             </td></tr></table>''',
-        URL('https://seanmonstar.com/post/715784167270596608/coe-surpise-hyper-cve'),
-        URL('https://www.reddit.com/r/rust/comments/13147i3/report_on_surprise_hyper_cve_from_20230411/'),
+        NormalizedURL('https://seanmonstar.com/post/715784167270596608/coe-surpise-hyper-cve'),
+        NormalizedURL('https://www.reddit.com/r/rust/comments/13147i3/report_on_surprise_hyper_cve_from_20230411/'),
         id='website link',
     ),
     pytest.param(
@@ -192,8 +192,8 @@ CONTENT_TESTS = [
             &#32; to &#32; <a href="https://www.reddit.com/r/financialindependence/">
             r/financialindependence </a> <br/> <span><a href="https://www.reddit.com/r/financialindependence/comments/130zdm6/could_contributing_too_much_of_my_paycheck_to/">[link]</a></span>
             &#32; <span><a href="https://www.reddit.com/r/financialindependence/comments/130zdm6/could_contributing_too_much_of_my_paycheck_to/">[comments]</a></span>''',
-        URL('https://www.reddit.com/r/financialindependence/comments/130zdm6/could_contributing_too_much_of_my_paycheck_to/'),
-        URL('https://www.reddit.com/r/financialindependence/comments/130zdm6/could_contributing_too_much_of_my_paycheck_to/'),
+        NormalizedURL('https://www.reddit.com/r/financialindependence/comments/130zdm6/could_contributing_too_much_of_my_paycheck_to/'),
+        NormalizedURL('https://www.reddit.com/r/financialindependence/comments/130zdm6/could_contributing_too_much_of_my_paycheck_to/'),
         id='discussion',
     ),
     pytest.param(
@@ -201,8 +201,8 @@ CONTENT_TESTS = [
             &#32; to &#32; <a href="https://www.reddit.com/r/traveller/"> r/traveller </a> <br /> 
             <span><a href="/r/u_CyborgPrime/comments/16cv0ek/is_starfield_like_traveller/">[link]</a></span> 
             &#32; <span><a href="https://www.reddit.com/r/traveller/comments/16dusai/is_starfield_like_traveller/">[comments]</a></span>''',
-        URL('https://www.reddit.com/user/CyborgPrime/comments/16cv0ek/is_starfield_like_traveller/'),
-        URL('https://www.reddit.com/r/traveller/comments/16dusai/is_starfield_like_traveller/'),
+        NormalizedURL('https://www.reddit.com/user/CyborgPrime/comments/16cv0ek/is_starfield_like_traveller/'),
+        NormalizedURL('https://www.reddit.com/r/traveller/comments/16dusai/is_starfield_like_traveller/'),
         id='user comments',
     )
 ]
