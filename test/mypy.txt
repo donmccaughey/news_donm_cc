@@ -83,6 +83,11 @@ src/feeds/feeds.py:53: error: Argument 1 of "decode" is incompatible with supert
 src/feeds/feeds.py:53: note: This violates the Liskov substitution principle
 src/feeds/feeds.py:53: note: See https://mypy.readthedocs.io/en/stable/common_issues.html#incompatible-overrides
 src/feeds/feeds.py:54: error: Argument 1 to "decode" of "Feed" has incompatible type "JSONDict | JSONList | str | int | float | bool | None"; expected "JSONDict"  [arg-type]
+src/server/views.py:50: error: Incompatible return value type (got "werkzeug.wrappers.response.Response", expected "flask.wrappers.Response")  [return-value]
+src/query.py:61: error: Incompatible types in assignment (expression has type "list[tuple[str, list[NormalizedURL]]]", variable has type "defaultdict[str, list[NormalizedURL]]")  [assignment]
+src/query.py:62: error: "defaultdict[str, list[NormalizedURL]]" has no attribute "sort"  [attr-defined]
+src/query.py:63: error: Unpacking a string is disallowed  [misc]
+src/query.py:64: error: Cannot determine type of "identity"  [has-type]
 src/feeds/reddit_test.py:4: error: Skipping analyzing "feedparser": module is installed, but missing library stubs or py.typed marker  [import-untyped]
 src/feeds/reddit_test.py:35: note: By default the bodies of untyped functions are not checked, consider using --check-untyped-defs  [annotation-unchecked]
 src/feeds/reddit_test.py:64: note: By default the bodies of untyped functions are not checked, consider using --check-untyped-defs  [annotation-unchecked]
@@ -90,9 +95,4 @@ src/feeds/reddit_test.py:93: note: By default the bodies of untyped functions ar
 src/feeds/reddit_test.py:118: note: By default the bodies of untyped functions are not checked, consider using --check-untyped-defs  [annotation-unchecked]
 src/feeds/hacker_news_test.py:4: error: Skipping analyzing "feedparser": module is installed, but missing library stubs or py.typed marker  [import-untyped]
 src/feeds/daring_fireball_test.py:2: error: Skipping analyzing "feedparser": module is installed, but missing library stubs or py.typed marker  [import-untyped]
-src/server/views.py:50: error: Incompatible return value type (got "werkzeug.wrappers.response.Response", expected "flask.wrappers.Response")  [return-value]
-src/query.py:61: error: Incompatible types in assignment (expression has type "list[tuple[str, list[NormalizedURL]]]", variable has type "defaultdict[str, list[NormalizedURL]]")  [assignment]
-src/query.py:62: error: "defaultdict[str, list[NormalizedURL]]" has no attribute "sort"  [attr-defined]
-src/query.py:63: error: Unpacking a string is disallowed  [misc]
-src/query.py:64: error: Cannot determine type of "identity"  [has-type]
 Found 60 errors in 18 files (checked 75 source files)
