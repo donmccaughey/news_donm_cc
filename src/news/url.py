@@ -22,7 +22,7 @@ class URL:
         return self.__url < other.__url
 
     def __repr__(self) -> str:
-        return f"URL('{self.__url}')"
+        return f"{self.__class__.__name__}('{self.__url}')"
 
     def __str__(self) -> str:
         return self.__url

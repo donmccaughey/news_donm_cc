@@ -1,5 +1,6 @@
 from .item import Item
 from .news import LIFETIME, News
+from .normalized_url import NormalizedURL
 from .source import Source
 from .url import URL
 
