@@ -75,15 +75,8 @@ class URL:
         return hostname
 
     def rewrite(self) -> 'URL':
-        scheme, netloc, path, query, fragment = urlsplit(self.url)
-        match netloc:
-            case 'www.reddit.com':
-                return URL(rewrite_reddit_url(scheme, path, query, fragment))
-            case 'www.npr.org':
-                rewritten = rewrite_npr_url(scheme, path)
-                return URL(rewritten) if rewritten else self
-            case _:
-                return self
+        rewritten = rewrite_url(self.url)
+        return self if rewritten is self.url else URL(rewritten)
 
 
 def clean_query(query: str) -> str:
@@ -157,6 +150,18 @@ def rewrite_npr_url(scheme: str, path: str) -> str | None:
 
 def rewrite_reddit_url(scheme: str, path: str, query: str, fragment: str) -> str:
     return urlunsplit((scheme, 'old.reddit.com', path, query, fragment))
+
+
+def rewrite_url(url: str) -> str:
+    scheme, netloc, path, query, fragment = urlsplit(url)
+    match netloc:
+        case 'www.npr.org':
+            rewritten = rewrite_npr_url(scheme, path)
+            return rewritten if rewritten else url
+        case 'www.reddit.com':
+            return rewrite_reddit_url(scheme, path, query, fragment)
+        case _:
+            return url
 
 
 def keep_path_matching(hostname: str, path: str, pattern: str) -> str:

@@ -1,7 +1,7 @@
 from urllib.parse import urlsplit
 
 from pytest import mark
-from .url import clean_query, clean_url, URL, rewrite_npr_url, rewrite_reddit_url
+from .url import clean_query, clean_url, URL, rewrite_npr_url, rewrite_reddit_url, rewrite_url
 
 
 def test_eq_and_hash():
@@ -217,6 +217,11 @@ URL_REWRITE_TESTS = [
 @mark.parametrize('url, rewritten', URL_REWRITE_TESTS)
 def test_url_rewrite(url, rewritten):
     assert URL(url).rewrite() == URL(rewritten)
+
+
+@mark.parametrize('url, rewritten', URL_REWRITE_TESTS)
+def test_rewrite_url(url, rewritten):
+    assert rewrite_url(url) == rewritten
 
 
 REWRITE_NPR_URL_TESTS = [
