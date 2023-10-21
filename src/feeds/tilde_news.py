@@ -15,7 +15,7 @@ class TildeNews(Feed):
         return Item(
             url=NormalizedURL(entry.link),
             title=entry.title,
-            sources=[Source(URL(entry.comments), self.initials)],
+            sources=[Source(NormalizedURL(entry.comments), self.initials)],
             created=now,
             modified=now,
         )

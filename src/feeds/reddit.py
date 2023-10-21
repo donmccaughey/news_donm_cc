@@ -37,7 +37,7 @@ class Reddit(Feed):
         return Item(
             url=NormalizedURL(url),
             title=entry.title,
-            sources=[Source(source, site_id)],
+            sources=[Source(NormalizedURL(source), site_id)],
             created=now,
             modified=now,
         )

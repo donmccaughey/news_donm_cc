@@ -1,10 +1,10 @@
 from serialize import Encodable, JSONDict
-from .url import URL
+from .normalized_url import NormalizedURL
 
 
 class Source(Encodable):
-    def __init__(self, url: URL, site_id: str, count: int = 1):
-        self.url = url.normalize()
+    def __init__(self, url: NormalizedURL, site_id: str, count: int = 1):
+        self.url = url
         self.site_id = site_id
         self.count = count
 
@@ -30,7 +30,7 @@ class Source(Encodable):
     @staticmethod
     def decode(encoded: JSONDict) -> 'Source':
         return Source(
-            url=URL(encoded['url']),
+            url=NormalizedURL(encoded['url']),
             site_id=encoded['site_id'],
             count=encoded.get('count', 1)
         )

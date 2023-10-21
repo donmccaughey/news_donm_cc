@@ -6,37 +6,25 @@ from .source import Source
 from .url import URL
 
 
-def test_item_rewrites_source_url():
-    item = Item(
-        NormalizedURL('https://www.reddit.com/r/pics/comments/13a00ge/a_canadian_goose_that_comes_back_year_after_year/'),
-        'Item 1',
-        [Source(URL('https://www.reddit.com/r/pics/comments/13a00ge/a_canadian_goose_that_comes_back_year_after_year/'), 'so')],
-        created=NOW,
-        modified=NOW,
-    )
-
-    assert item.sources[0].url == URL('https://old.reddit.com/r/pics/comments/13a00ge/a_canadian_goose_that_comes_back_year_after_year/')
-
-
 def test_eq_and_hash():
     item1 = Item(
         NormalizedURL('https://example.com/1'),
         'Item 1',
-        [Source(URL('https://source.com/1'), 'so')],
+        [Source(NormalizedURL('https://source.com/1'), 'so')],
         created=NOW,
         modified=NOW,
     )
     item1_dup = Item(
         NormalizedURL('https://example.com/1'),
         'Item 1 Duplicate',
-        [Source(URL('https://alt-source.com/1-dup'), 'as')],
+        [Source(NormalizedURL('https://alt-source.com/1-dup'), 'as')],
         created=NOW,
         modified=NOW,
     )
     item2 = Item(
         NormalizedURL('https://example.com/2'),
         'Item 2',
-        [Source(URL('https://source.com/2'), 'so')],
+        [Source(NormalizedURL('https://source.com/2'), 'so')],
         created=NOW,
         modified=NOW,
     )
@@ -51,41 +39,41 @@ def test_str_and_repr():
     item = Item(
         NormalizedURL('https://example.com/1'),
         'Item 1',
-        [Source(URL('https://source.com/1'), 'so')],
+        [Source(NormalizedURL('https://source.com/1'), 'so')],
         created=NOW,
         modified=NOW,
     )
 
     assert str(item) == '"Item 1" (https://example.com/1)'
-    assert repr(item) == "Item(NormalizedURL('https://example.com/1'), 'Item 1', [Source(URL('https://source.com/1'), 'so', 1)])"
+    assert repr(item) == "Item(NormalizedURL('https://example.com/1'), 'Item 1', [Source(NormalizedURL('https://source.com/1'), 'so', 1)])"
 
 
 def test_lt_by_sorting():
     item1 = Item(
         NormalizedURL('https://example.com/1'),
         'Item 1',
-        [Source(URL('https://source.com/1'), 'so')],
+        [Source(NormalizedURL('https://source.com/1'), 'so')],
         created=THREE_DAYS_AGO,
         modified=NOW,
     )
     item2 = Item(
         NormalizedURL('https://example.com/2'),
         'Item 2',
-        [Source(URL('https://source.com/2'), 'so')],
+        [Source(NormalizedURL('https://source.com/2'), 'so')],
         created=TWO_DAYS_AGO,
         modified=NOW,
     )
     item3 = Item(
         NormalizedURL('https://example.com/3'),
         'Item 3',
-        [Source(URL('https://source.com/3'), 'so')],
+        [Source(NormalizedURL('https://source.com/3'), 'so')],
         created=YESTERDAY,
         modified=NOW,
     )
     item4 = Item(
         NormalizedURL('https://example.com/4'),
         'Item 4',
-        [Source(URL('https://source.com/4'), 'so')],
+        [Source(NormalizedURL('https://source.com/4'), 'so')],
         created=AN_HOUR_AGO,
         modified=NOW,
     )
@@ -102,21 +90,21 @@ def test_lt_by_sorting_for_equal_created_sorts_on_url():
     item1 = Item(
         NormalizedURL('https://aaa.com/1'),
         'Item 1',
-        [Source(URL('https://source.com/1'), 'so')],
+        [Source(NormalizedURL('https://source.com/1'), 'so')],
         created=AN_HOUR_AGO,
         modified=NOW,
     )
     item2 = Item(
         NormalizedURL('https://bbb.com/2'),
         'Item 2',
-        [Source(URL('https://source.com/2'), 'so')],
+        [Source(NormalizedURL('https://source.com/2'), 'so')],
         created=AN_HOUR_AGO,
         modified=NOW,
     )
     item3 = Item(
         NormalizedURL('https://ccc.com/3'),
         'Item 3',
-        [Source(URL('https://source.com/3'), 'so')],
+        [Source(NormalizedURL('https://source.com/3'), 'so')],
         created=AN_HOUR_AGO,
         modified=NOW,
     )
@@ -132,14 +120,14 @@ def test_count():
     item = Item(
         NormalizedURL('https://example.com/1'),
         'Item 1',
-        [Source(URL('https://source.com/1'), 'so', 2)],
+        [Source(NormalizedURL('https://source.com/1'), 'so', 2)],
         created=NOW,
         modified=NOW,
     )
 
     assert item.count == 2
 
-    alt_source = Source(URL('https://alt-source.com/2'), 'alt', 1)
+    alt_source = Source(NormalizedURL('https://alt-source.com/2'), 'alt', 1)
     item.sources.append(alt_source)
 
     assert item.count == 3
@@ -149,7 +137,7 @@ def test_different_sources():
     item1 = Item(
         NormalizedURL('https://example.com/1'),
         'Item 1',
-        [Source(URL('https://source.com/1'), 'so')],
+        [Source(NormalizedURL('https://source.com/1'), 'so')],
         created=NOW,
         modified=NOW,
     )
@@ -159,7 +147,7 @@ def test_different_sources():
     item2 = Item(
         NormalizedURL('https://example.com/2'),
         'Item 2',
-        [Source(URL('https://example.com/2'), 'so')],
+        [Source(NormalizedURL('https://example.com/2'), 'so')],
         created=NOW,
         modified=NOW,
     )
@@ -168,7 +156,7 @@ def test_different_sources():
 
 
 def test_update_from_with_new_source():
-    source = Source(URL('https://source.com/1'), 'so', 1)
+    source = Source(NormalizedURL('https://source.com/1'), 'so', 1)
     existing = Item(
         NormalizedURL('https://example.com/1'),
         'Item 1',
@@ -177,7 +165,7 @@ def test_update_from_with_new_source():
         modified=NOW,
     )
 
-    alt_source = Source(URL('https://alt-source.com/2'), 'alt', 1)
+    alt_source = Source(NormalizedURL('https://alt-source.com/2'), 'alt', 1)
     other = Item(
         NormalizedURL('https://example.com/1'),
         'Item 1',
@@ -196,7 +184,7 @@ def test_update_from_with_new_source():
 
 
 def test_update_from_with_same_source():
-    source = Source(URL('https://source.com/1'), 'so', 1)
+    source = Source(NormalizedURL('https://source.com/1'), 'so', 1)
     existing = Item(
         NormalizedURL('https://example.com/1'),
         'Item 1',
@@ -205,7 +193,7 @@ def test_update_from_with_same_source():
         modified=NOW,
     )
 
-    source_dup = Source(URL('https://source.com/1'), 'so', 1)
+    source_dup = Source(NormalizedURL('https://source.com/1'), 'so', 1)
     other = Item(
         NormalizedURL('https://example.com/1'),
         'Item 1',
@@ -257,7 +245,7 @@ def test_encode():
     item1 = Item(
         NormalizedURL('https://example.com/1'),
         'Item 1',
-        [Source(URL('https://source.com/1'), 'so')],
+        [Source(NormalizedURL('https://source.com/1'), 'so')],
         created=dt,
         modified=dt,
     )
