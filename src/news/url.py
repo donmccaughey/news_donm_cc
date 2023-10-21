@@ -2,7 +2,7 @@ import logging
 import re
 from pathlib import Path
 from typing import AnyStr
-from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit, SplitResult
+from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 log = logging.getLogger(__name__)
 
@@ -88,9 +88,6 @@ class URL:
                 return URL(rewritten) if rewritten else self
             case _:
                 return self
-
-    def split(self) -> SplitResult:
-        return urlsplit(self.url)
 
 
 def clean_query(query: str) -> str:
