@@ -9,30 +9,30 @@ log = logging.getLogger(__name__)
 
 class URL:
     def __init__(self, url: str):
-        self.url = url
+        self.__url = url
 
     def __eq__(self, other: 'URL') -> bool:
-        return isinstance(other, URL) and self.url == other.url
+        return isinstance(other, URL) and self.__url == other.__url
 
     def __hash__(self) -> int:
-        return hash(self.url)
+        return hash(self.__url)
 
     def __lt__(self, other: 'URL') -> bool:
-        return self.url < other.url
+        return self.__url < other.__url
 
     def __repr__(self) -> str:
-        return f"URL('{self.url}')"
+        return f"URL('{self.__url}')"
 
     def __str__(self) -> str:
-        return self.url
+        return self.__url
 
     def clean(self) -> 'URL':
-        cleaned = clean_url(self.url)
-        return self if cleaned is self.url else URL(cleaned)
+        cleaned = clean_url(self.__url)
+        return self if cleaned is self.__url else URL(cleaned)
 
     @property
     def identity(self) -> str:
-        url_parts = urlsplit(self.url)
+        url_parts = urlsplit(self.__url)
         hostname = url_parts.hostname
         path = url_parts.path
 
@@ -75,13 +75,13 @@ class URL:
         return hostname
 
     def normalize(self) -> 'URL':
-        cleaned = clean_url(self.url)
+        cleaned = clean_url(self.__url)
         rewritten = rewrite_url(cleaned)
-        return self if rewritten is self.url else URL(rewritten)
+        return self if rewritten is self.__url else URL(rewritten)
 
     def rewrite(self) -> 'URL':
-        rewritten = rewrite_url(self.url)
-        return self if rewritten is self.url else URL(rewritten)
+        rewritten = rewrite_url(self.__url)
+        return self if rewritten is self.__url else URL(rewritten)
 
 
 def clean_query(query: str) -> str:
