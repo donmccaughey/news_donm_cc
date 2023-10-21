@@ -57,6 +57,12 @@ extract : $(TMP)/pip-install-requirements.stamp.txt
 logs :
 	python3 scripts/logs.py
 
+
+.PHONY : mypy
+mypy :
+	python3 -m mypy src
+
+
 .PHONY : push
 push : $(TMP)/docker-push.stamp.txt
 
