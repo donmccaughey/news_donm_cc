@@ -1,5 +1,7 @@
+from urllib.parse import urlsplit
+
 from pytest import mark
-from .url import clean_query, clean_url, URL
+from .url import clean_query, clean_url, URL, rewrite_npr_url, rewrite_reddit_url
 
 
 def test_eq_and_hash():
@@ -215,3 +217,51 @@ URL_REWRITE_TESTS = [
 @mark.parametrize('url, rewritten', URL_REWRITE_TESTS)
 def test_url_rewrite(url, rewritten):
     assert URL(url).rewrite() == URL(rewritten)
+
+
+REWRITE_NPR_URL_TESTS = [
+    # no section
+    (
+        'https://www.npr.org/2023/03/23/1165680024/perennial-rice-plant-once-harvest-again-and-again',
+        'https://text.npr.org/1165680024',
+    ),
+    # sections
+    (
+        'https://www.npr.org/sections/money/2023/05/02/1172791281/this-company-adopted-ai-heres-what-happened-to-its-human-workers',
+        'https://text.npr.org/1172791281',
+    ),
+    # not a news story
+    (
+        'https://www.npr.org/newsletter/news',
+        None,
+    )
+]
+
+
+@mark.parametrize('url, rewritten', REWRITE_NPR_URL_TESTS)
+def test_rewrite_npr_url(url, rewritten):
+    scheme, netloc, path, query, fragment = urlsplit(url)
+    assert rewrite_npr_url(scheme, path) == rewritten
+
+
+REWRITE_REDDIT_URL_TESTS = [
+    (
+        'https://www.reddit.com/r/pics/comments/13a00ge/a_canadian_goose_that_comes_back_year_after_year/',
+        'https://old.reddit.com/r/pics/comments/13a00ge/a_canadian_goose_that_comes_back_year_after_year/'
+    ),
+]
+
+
+@mark.parametrize('url, rewritten', REWRITE_REDDIT_URL_TESTS)
+def test_rewrite_reddit_url(url, rewritten):
+    scheme, netloc, path, query, fragment = urlsplit(url)
+    assert rewrite_reddit_url(scheme, path, query, fragment) == rewritten
+
+
+def test_rewrite_reddit_url2():
+    assert rewrite_reddit_url(
+        'https',
+        '/r/pics/comments/13a00ge/a_canadian_goose_that_comes_back_year_after_year/',
+        '',
+        ''
+    ) == 'https://old.reddit.com/r/pics/comments/13a00ge/a_canadian_goose_that_comes_back_year_after_year/'

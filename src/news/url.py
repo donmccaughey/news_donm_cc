@@ -82,29 +82,12 @@ class URL:
         scheme, netloc, path, query, fragment = urlsplit(self.url)
         match netloc:
             case 'www.reddit.com':
-                return self.rewrite_reddit(scheme, path, query, fragment)
+                return URL(rewrite_reddit_url(scheme, path, query, fragment))
             case 'www.npr.org':
-                return self.rewrite_npr(scheme, path)
+                rewritten = rewrite_npr_url(scheme, path)
+                return URL(rewritten) if rewritten else self
             case _:
                 return self
-
-    def rewrite_npr(self, scheme: str, path: str) -> 'URL':
-        parts = path.split('/')
-        numbers = [
-            part for part in parts
-            if part.isdecimal() and len(part) > 4
-        ]
-        if not numbers:
-            return self
-        story_id = numbers[0]
-        return URL.from_components(
-            scheme, 'text.npr.org', '/' + story_id, '', ''
-        )
-
-    def rewrite_reddit(self, scheme: str, path: str, query: str, fragment: str) -> 'URL':
-        return URL.from_components(
-            scheme, 'old.reddit.com', path, query, fragment
-        )
 
     def split(self) -> SplitResult:
         return urlsplit(self.url)
@@ -165,6 +148,22 @@ def remove_subdomain(hostname: str, subdomains: list[str]) -> str:
         if subdomain in subdomains:
             return '.'.join(parts[1:])
     return hostname
+
+
+def rewrite_npr_url(scheme: str, path: str) -> str | None:
+    parts = path.split('/')
+    numbers = [
+        part for part in parts
+        if part.isdecimal() and len(part) > 4
+    ]
+    if not numbers:
+        return None
+    story_id = numbers[0]
+    return urlunsplit((scheme, 'text.npr.org', '/' + story_id, '', ''))
+
+
+def rewrite_reddit_url(scheme: str, path: str, query: str, fragment: str) -> str:
+    return urlunsplit((scheme, 'old.reddit.com', path, query, fragment))
 
 
 def keep_path_matching(hostname: str, path: str, pattern: str) -> str:
