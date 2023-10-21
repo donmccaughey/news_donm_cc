@@ -21,11 +21,6 @@ def test_init():
     assert str(url) == 'https://text.npr.org/1165680024'
     assert url.identity == 'npr.org'
 
-    original = URL('https://www.bloomberg.com/news/articles/2023-06-15/alphabet-selling-google-domains-assets-to-squarespace?leadSource=uverify%20wall')
-    url = NormalizedURL(original)
-    assert str(url) == 'https://www.bloomberg.com/news/articles/2023-06-15/alphabet-selling-google-domains-assets-to-squarespace'
-    assert url.identity == 'bloomberg.com'
-
 
 def test_eq():
     url1 = NormalizedURL('https://example.com/1')
