@@ -15,6 +15,7 @@ SKIP_SITES = {
     'commonwealmagazine.org',
     'compactmag.com',
 
+    'dannyreviews.com',
     'dirt.fyi',
     'discoursemagazine.com',
     'dissentmagazine.org',
@@ -89,11 +90,13 @@ SKIP_SITES = {
     'thezvi.substack.com',
 
     'the-fence.com',
+    'theamericanconservative.com',
     'theamericanscholar.org',
     'thecritic.co.uk',
     'thedriftmag.com',
     'theepochtimes.com',
     'themarginalian.org',
+    'themillions.com',
     'thenewatlantis.com',
     'theparisreview.org',
     'thepointmag.com',
