@@ -92,112 +92,9 @@ stop :
 container_files := \
 	.dockerignore \
 	requirements.txt \
-	container/crontabs/news \
-	container/nginx/nginx.conf \
-	container/nginx/error_pages/404.html \
-	container/nginx/error_pages/500.html \
-	container/nginx/error_pages/502.html \
-	container/nginx/error_pages/503.html \
-	container/nginx/error_pages/504.html \
-	container/profile.d/dir.sh \
-	container/sbin/check-health \
-	container/sbin/extract \
-	container/sbin/news \
-	container/sbin/serve \
-	container/wwwroot/robots.txt \
-	container/wwwroot/sitemap.txt
+	$(shell find container -type f \! -name .DS_Store)
 
-python_files := \
-	src/extractor.py \
-	src/gunicorn.conf.py \
-	src/health_check.py \
-	src/query.py \
-	src/youtube_user.py \
-	\
-	src/extractor/__init__.py \
-	src/extractor/cached_feeds.py \
-	src/extractor/cached_news.py \
-	src/extractor/options.py \
-	src/extractor/s3_store.py \
-	src/extractor/s3_store_test.py \
-	\
-	src/feeds/__init__.py \
-	src/feeds/acoup.py \
-	src/feeds/charity_wtf.py \
-	src/feeds/daring_fireball.py \
-	src/feeds/daring_fireball_test.py \
-	src/feeds/feed.py \
-	src/feeds/feed_test.py \
-	src/feeds/feeds.py \
-	src/feeds/feeds_test.py \
-	src/feeds/hacker_news.py \
-	src/feeds/hacker_news_test.py \
-	src/feeds/lobsters.py \
-	src/feeds/reddit.py \
-	src/feeds/reddit_test.py \
-	src/feeds/rust_blog.py \
-	src/feeds/skip_sites.py \
-	src/feeds/streetsblog.py \
-	src/feeds/streetsblog_test.py \
-	src/feeds/tilde_news.py \
-	\
-	src/health/__init__.py \
-	src/health/health.py \
-	src/health/health_test.py \
-	src/health/jobs.py \
-	src/health/processes.py \
-	src/health/servers.py \
-	\
-	src/news/__init__.py \
-	src/news/index.py \
-	src/news/index_test.py \
-	src/news/item.py \
-	src/news/item_test.py \
-	src/news/news.py \
-	src/news/news_test.py \
-	src/news/source.py \
-	src/news/source_test.py \
-	\
-	src/news/url/__init__.py \
-	src/news/url/normalized_url.py \
-	src/news/url/normalized_url_test.py \
-	src/news/url/url.py \
-	src/news/url/url_test.py \
-	\
-	src/serialize/__init__.py \
-	src/serialize/encodable.py \
-	src/serialize/jsontype.py \
-	src/serialize/serializable.py \
-	\
-	src/server/__init__.py \
-	src/server/cached_news.py \
-	src/server/create_app.py \
-	src/server/error_handlers.py \
-	src/server/news_page.py \
-	src/server/search_page.py \
-	src/server/site_page.py \
-	src/server/sites_page.py \
-	src/server/template_filters.py \
-	src/server/utility.py \
-	src/server/views.py \
-	\
-	src/server/templates/news.html \
-	src/server/templates/page.html \
-	src/server/templates/search.html \
-	src/server/templates/site.html \
-	src/server/templates/sites.html \
-	\
-	src/utility/__init__.py \
-	src/utility/cached_file.py \
-	src/utility/cached_file_test.py \
-	src/utility/formats.py \
-	src/utility/formats_test.py \
-	src/utility/no_store.py \
-	src/utility/no_store_test.py \
-	src/utility/page.py \
-	src/utility/page_test.py \
-	src/utility/read_only_store.py \
-	src/utility/store.py
+python_files := $(shell find src -type f \! -name .DS_Store)
 
 script_files := \
 	scripts/logs.py
@@ -243,7 +140,6 @@ $(TMP)/create-container-service-deployment.json : aws/create-container-service-d
 
 
 $(TMP)/docker-build.stamp.txt : \
-		container/Dockerfile \
 		$(container_files) \
 		$(source_files) \
 		| $$(dir $$@)
