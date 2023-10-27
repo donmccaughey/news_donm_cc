@@ -104,7 +104,7 @@ source_files := $(filter-out %_test.py, $(python_files))
 test_files := $(filter %_test.py, $(python_files))
 
 
-test/mypy.txt : $(TMP)/pytest.stamp.txt
+test/mypy.txt : .mypy.ini $(TMP)/pip-install-requirements-dev.stamp.txt $(TMP)/pytest.stamp.txt
 	python3 -m mypy src | tee test/mypy.txt
 
 
