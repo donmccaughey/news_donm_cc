@@ -16,11 +16,6 @@ src/utility/page_test.py:146: error: Argument 1 to "list" has incompatible type 
 src/utility/page_test.py:148: error: Item "None" of "Page | Any | None" has no attribute "previous"  [union-attr]
 src/utility/page_test.py:149: error: Item "None" of "Page | Any | None" has no attribute "next"  [union-attr]
 src/news/item_test.py:231: error: Argument 1 to "decode" of "Item" has incompatible type "dict[str, Sequence[Collection[str]]]"; expected "JSONDict | JSONList"  [arg-type]
-src/youtube_user.py:18: error: Unexpected keyword argument "itemprop" for "find" of "str"  [call-arg]
-/Users/donmcc/.pyenv/versions/news-venv/lib/python3.11/site-packages/mypy/typeshed/stdlib/builtins.pyi:457: note: "find" of "str" defined here
-src/youtube_user.py:20: error: Value of type "Tag | NavigableString | int" is not indexable  [index]
-src/youtube_user.py:20: error: Incompatible return value type (got "str | list[str] | Any", expected "str | None")  [return-value]
-src/youtube_user.py:20: error: Invalid index type "str" for "Tag | NavigableString | int"; expected type "SupportsIndex | slice"  [index]
 src/feeds/feed_test.py:32: error: Need type annotation for "entry" (hint: "entry: Dict[<type>, <type>] = ...")  [var-annotated]
 src/feeds/feed_test.py:47: error: Need type annotation for "entry" (hint: "entry: Dict[<type>, <type>] = ...")  [var-annotated]
 src/feeds/feed_test.py:301: error: Argument 1 to "decode" of "Feed" has incompatible type "dict[str, str]"; expected "JSONDict | JSONList"  [arg-type]
@@ -61,4 +56,4 @@ src/feeds/feeds_test.py:80: error: Item "int" of "JSONDict | list[JSONType] | tu
 src/feeds/feeds_test.py:80: error: Item "float" of "JSONDict | list[JSONType] | tuple[JSONType, ...] | str | int | float | None" has no attribute "get"  [union-attr]
 src/feeds/feeds_test.py:80: error: Item "None" of "JSONDict | list[JSONType] | tuple[JSONType, ...] | str | int | float | None" has no attribute "get"  [union-attr]
 src/feeds/hacker_news_test.py:123: error: Need type annotation for "entry" (hint: "entry: Dict[<type>, <type>] = ...")  [var-annotated]
-Found 46 errors in 6 files (checked 75 source files)
+Found 42 errors in 5 files (checked 75 source files)

@@ -1,8 +1,10 @@
 import argparse
 import sys
+from typing import cast
 
 import bs4
 import requests
+from bs4 import Tag
 
 
 def parse_options():
@@ -14,10 +16,10 @@ def parse_options():
 def find_youtube_user_url(html_text: str) -> str | None:
     soup = bs4.BeautifulSoup(html_text, 'html.parser')
     author = soup.find(itemtype='http://schema.org/Person')
-    if author:
+    if isinstance(author, Tag):
         link = author.find(itemprop='url')
-        if link:
-            return link['href']
+        if isinstance(link, Tag):
+            return cast(str | None, link['href'])
     return None
 
 
