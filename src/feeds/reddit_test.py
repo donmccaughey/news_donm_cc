@@ -125,7 +125,7 @@ def test_parse_entry_for_website_link_cleans_url():
     assert item.sources[0].site_id == 'r/news'
 
 
-CONTENT_TESTS = [
+EXTRACT_LINKS_TESTS = [
     pytest.param(
         '''<table> <tr><td> <a href="https://www.reddit.com/r/latin/comments/131102k/spolia_repurposed_roman_inscriptions_in_valència/">
             <img src="https://preview.redd.it/ylkzznbsfiwa1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;v=enabled&amp;s=8c32954c257d26068750c4e025d7d67b8fe80fd7"
@@ -137,7 +137,7 @@ CONTENT_TESTS = [
             href="https://i.redd.it/ylkzznbsfiwa1.jpg">[link]</a></span> &#32; <span><a
             href="https://www.reddit.com/r/latin/comments/131102k/spolia_repurposed_roman_inscriptions_in_valència/">[comments]</a></span>
             </td></tr></table>''',
-        None,  # https://i.redd.it/ylkzznbsfiwa1.jpg
+        NormalizedURL('https://default.com'),
         NormalizedURL('https://www.reddit.com/r/latin/comments/131102k/spolia_repurposed_roman_inscriptions_in_valència/'),
         id='image link',
     ),
@@ -150,7 +150,7 @@ CONTENT_TESTS = [
             r/aww </a> <br/> <span><a href="https://v.redd.it/i90hkj9nrfwa1">[link]</a></span>
             &#32; <span><a href="https://www.reddit.com/r/aww/comments/130no54/six_little_fwinds/">[comments]</a></span>
             </td></tr></table>''',
-        None,  # https://v.redd.it/i90hkj9nrfwa1
+        NormalizedURL('https://default.com'),
         NormalizedURL('https://www.reddit.com/r/aww/comments/130no54/six_little_fwinds/'),
         id='video link',
     ),
@@ -163,7 +163,7 @@ CONTENT_TESTS = [
             r/greatpyrenees </a> <br/> <span><a href="https://www.reddit.com/gallery/130qn68">[link]</a></span>
             &#32; <span><a href="https://www.reddit.com/r/greatpyrenees/comments/130qn68/mini_photo_shoot_with_my_pyr_sushi/">[comments]</a></span>
             </td></tr></table>''',
-        None,  # https://www.reddit.com/gallery/130qn68
+        NormalizedURL('https://default.com'),
         NormalizedURL('https://www.reddit.com/r/greatpyrenees/comments/130qn68/mini_photo_shoot_with_my_pyr_sushi/'),
         id='gallery link',
     ),
@@ -208,9 +208,11 @@ CONTENT_TESTS = [
 ]
 
 
-@mark.parametrize('content, expected_link, expected_comments', CONTENT_TESTS)
+@mark.parametrize('content, expected_link, expected_comments', EXTRACT_LINKS_TESTS)
 def test_extract_links(content, expected_link, expected_comments):
-    link, comments = extract_links(content)
+    link, comments = extract_links(
+        content, default=NormalizedURL('https://default.com')
+    )
 
     assert link == expected_link
     assert comments == expected_comments

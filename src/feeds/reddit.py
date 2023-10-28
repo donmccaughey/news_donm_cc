@@ -45,7 +45,7 @@ class Reddit(Feed):
 
 
 def extract_links(
-        content, default: NormalizedURL | None = None
+        content, *, default: NormalizedURL
 ) -> Tuple[NormalizedURL, NormalizedURL]:
     link, comments = default, default
     soup = bs4.BeautifulSoup(content, 'html.parser')

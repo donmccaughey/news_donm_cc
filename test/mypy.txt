@@ -21,7 +21,6 @@ src/youtube_user.py:18: error: Unexpected keyword argument "itemprop" for "find"
 src/youtube_user.py:20: error: Value of type "Tag | NavigableString | int" is not indexable  [index]
 src/youtube_user.py:20: error: Incompatible return value type (got "str | list[str] | Any", expected "str | None")  [return-value]
 src/youtube_user.py:20: error: Invalid index type "str" for "Tag | NavigableString | int"; expected type "SupportsIndex | slice"  [index]
-src/feeds/reddit.py:60: error: Incompatible return value type (got "tuple[NormalizedURL | None, NormalizedURL | None]", expected "tuple[NormalizedURL, NormalizedURL]")  [return-value]
 src/feeds/feed_test.py:32: error: Need type annotation for "entry" (hint: "entry: Dict[<type>, <type>] = ...")  [var-annotated]
 src/feeds/feed_test.py:47: error: Need type annotation for "entry" (hint: "entry: Dict[<type>, <type>] = ...")  [var-annotated]
 src/feeds/feed_test.py:301: error: Argument 1 to "decode" of "Feed" has incompatible type "dict[str, str]"; expected "JSONDict | JSONList"  [arg-type]
@@ -61,10 +60,10 @@ src/feeds/feeds_test.py:80: error: Item "str" of "JSONDict | list[JSONType] | tu
 src/feeds/feeds_test.py:80: error: Item "int" of "JSONDict | list[JSONType] | tuple[JSONType, ...] | str | int | float | None" has no attribute "get"  [union-attr]
 src/feeds/feeds_test.py:80: error: Item "float" of "JSONDict | list[JSONType] | tuple[JSONType, ...] | str | int | float | None" has no attribute "get"  [union-attr]
 src/feeds/feeds_test.py:80: error: Item "None" of "JSONDict | list[JSONType] | tuple[JSONType, ...] | str | int | float | None" has no attribute "get"  [union-attr]
-src/server/views.py:50: error: Incompatible return value type (got "werkzeug.wrappers.response.Response", expected "flask.wrappers.Response")  [return-value]
 src/feeds/hacker_news_test.py:123: error: Need type annotation for "entry" (hint: "entry: Dict[<type>, <type>] = ...")  [var-annotated]
+src/server/views.py:50: error: Incompatible return value type (got "werkzeug.wrappers.response.Response", expected "flask.wrappers.Response")  [return-value]
 src/query.py:61: error: Incompatible types in assignment (expression has type "list[tuple[str, list[NormalizedURL]]]", variable has type "defaultdict[str, list[NormalizedURL]]")  [assignment]
 src/query.py:62: error: "defaultdict[str, list[NormalizedURL]]" has no attribute "sort"  [attr-defined]
 src/query.py:63: error: Unpacking a string is disallowed  [misc]
 src/query.py:64: error: Cannot determine type of "identity"  [has-type]
-Found 52 errors in 9 files (checked 75 source files)
+Found 51 errors in 8 files (checked 75 source files)
