@@ -58,9 +58,9 @@ def query_urls_by_site(news: News):
     groups = defaultdict(list)
     for url in urls:
         groups[url.identity].append(url)
-    groups = list(groups.items())
-    groups.sort(key=lambda item: (-len(item[1]), item[0]))
-    for identity, urls in groups:
+    items = list(groups.items())
+    items.sort(key=lambda item: (-len(item[1]), item[0]))
+    for identity, urls in items:
         print(identity, len(urls))
         for url in urls:
             print('    ', url)

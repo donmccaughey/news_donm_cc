@@ -61,8 +61,4 @@ src/feeds/feeds_test.py:80: error: Item "int" of "JSONDict | list[JSONType] | tu
 src/feeds/feeds_test.py:80: error: Item "float" of "JSONDict | list[JSONType] | tuple[JSONType, ...] | str | int | float | None" has no attribute "get"  [union-attr]
 src/feeds/feeds_test.py:80: error: Item "None" of "JSONDict | list[JSONType] | tuple[JSONType, ...] | str | int | float | None" has no attribute "get"  [union-attr]
 src/feeds/hacker_news_test.py:123: error: Need type annotation for "entry" (hint: "entry: Dict[<type>, <type>] = ...")  [var-annotated]
-src/query.py:61: error: Incompatible types in assignment (expression has type "list[tuple[str, list[NormalizedURL]]]", variable has type "defaultdict[str, list[NormalizedURL]]")  [assignment]
-src/query.py:62: error: "defaultdict[str, list[NormalizedURL]]" has no attribute "sort"  [attr-defined]
-src/query.py:63: error: Unpacking a string is disallowed  [misc]
-src/query.py:64: error: Cannot determine type of "identity"  [has-type]
-Found 50 errors in 7 files (checked 75 source files)
+Found 46 errors in 6 files (checked 75 source files)
