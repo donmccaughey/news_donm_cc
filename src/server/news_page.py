@@ -37,11 +37,10 @@ class NewsPage(Iterable[Item]):
         next_page = self.page.next
         self.next_url = f'./{next_page.number}' if next_page else None
 
+        self.previous_url: str | None = None
         previous_page = self.page.previous
         if previous_page:
             self.previous_url = './' if previous_page.number == 1 else f'./{previous_page.number}'
-        else:
-            self.previous_url = None
 
     def __iter__(self) -> Iterator[Item]:
         return iter(self.page)
