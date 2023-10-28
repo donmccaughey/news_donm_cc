@@ -1,3 +1,4 @@
+from typing import cast
 from flask import abort, make_response, redirect, render_template, request, Response
 
 from .cached_news import CachedNews
@@ -47,7 +48,7 @@ def numbered_page(
         page_number: int,
 ) -> Response:
     if page_number == 1:
-        return redirect('/', 308)
+        return cast(Response, redirect('/', 308))
     return news_page(cached_news, version, is_styled, page_number)
 
 
