@@ -23,10 +23,6 @@ src/youtube_user.py:18: error: Unexpected keyword argument "itemprop" for "find"
 src/youtube_user.py:20: error: Value of type "Tag | NavigableString | int" is not indexable  [index]
 src/youtube_user.py:20: error: Incompatible return value type (got "str | list[str] | Any", expected "str | None")  [return-value]
 src/youtube_user.py:20: error: Invalid index type "str" for "Tag | NavigableString | int"; expected type "SupportsIndex | slice"  [index]
-src/feeds/feed.py:153: error: Incompatible return value type (got "dict[str, str]", expected "dict[str, JSONType]")  [return-value]
-src/feeds/feed.py:153: note: "Dict" is invariant -- see https://mypy.readthedocs.io/en/stable/common_issues.html#variance
-src/feeds/feed.py:153: note: Consider using "Mapping" instead, which is covariant in the value type
-src/feeds/feed.py:153: note: Perhaps you need a type annotation for "encoded"? Suggestion: "dict[str, JSONType]"
 src/server/news_page.py:44: error: Incompatible types in assignment (expression has type "None", variable has type "str")  [assignment]
 src/feeds/reddit.py:60: error: Incompatible return value type (got "tuple[NormalizedURL | None, NormalizedURL | None]", expected "tuple[NormalizedURL, NormalizedURL]")  [return-value]
 src/feeds/feed_test.py:32: error: Need type annotation for "entry" (hint: "entry: Dict[<type>, <type>] = ...")  [var-annotated]
@@ -74,4 +70,4 @@ src/query.py:61: error: Incompatible types in assignment (expression has type "l
 src/query.py:62: error: "defaultdict[str, list[NormalizedURL]]" has no attribute "sort"  [attr-defined]
 src/query.py:63: error: Unpacking a string is disallowed  [misc]
 src/query.py:64: error: Cannot determine type of "identity"  [has-type]
-Found 56 errors in 12 files (checked 75 source files)
+Found 55 errors in 11 files (checked 75 source files)
