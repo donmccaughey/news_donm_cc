@@ -1,5 +1,3 @@
-src/utility/cached_file.py:23: error: Incompatible types in assignment (expression has type "float", variable has type "None")  [assignment]
-src/utility/cached_file.py:30: error: Incompatible types in assignment (expression has type "float", variable has type "None")  [assignment]
 src/utility/page_test.py:5: error: Need type annotation for "items" (hint: "items: List[<type>] = ...")  [var-annotated]
 src/utility/page_test.py:83: error: Incompatible types in assignment (expression has type "Page | None", variable has type "Page")  [assignment]
 src/utility/page_test.py:102: error: Argument 1 to "len" has incompatible type "Page | None"; expected "Sized"  [arg-type]
@@ -70,4 +68,4 @@ src/query.py:61: error: Incompatible types in assignment (expression has type "l
 src/query.py:62: error: "defaultdict[str, list[NormalizedURL]]" has no attribute "sort"  [attr-defined]
 src/query.py:63: error: Unpacking a string is disallowed  [misc]
 src/query.py:64: error: Cannot determine type of "identity"  [has-type]
-Found 55 errors in 11 files (checked 75 source files)
+Found 53 errors in 10 files (checked 75 source files)

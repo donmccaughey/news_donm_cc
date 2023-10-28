@@ -5,7 +5,7 @@ class CachedFile:
     def __init__(self, path: Path):
         self.path = path
         self.temp_path = path.with_suffix('.temp' + path.suffix)
-        self.mtime = None
+        self.mtime: float | None = None
         self.contents = ''
 
     def __repr__(self) -> str:
