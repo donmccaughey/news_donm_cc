@@ -105,7 +105,7 @@ test_files := $(filter %_test.py, $(python_files))
 
 
 test/mypy.txt : .mypy.ini $(TMP)/pip-install-requirements-dev.stamp.txt $(TMP)/pytest.stamp.txt
-	python3 -m mypy src | tee test/mypy.txt
+	python3 -m mypy --check-untyped-defs src | tee test/mypy.txt
 
 
 $(TMP)/.env : | $$(dir $$@)
