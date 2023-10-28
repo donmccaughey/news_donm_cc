@@ -19,16 +19,16 @@ class News(Encodable, Iterable[Item], Serializable):
                  modified: datetime | None = None,
                  lifetime: timedelta | None = LIFETIME,
                  ):
-        self.__index = None
+        self.__index: Index | None = None
 
         self.ordered_items: list[Item] = list()
         self.unique_items: dict[Item, Item] = dict()
-        self.by_site = defaultdict(list)
+        self.by_site: dict[str, list[Item]] = defaultdict(list)
 
         now = datetime.now(timezone.utc)
         self.created = created or now
         self.modified = modified or now
-        self.lifetime = lifetime
+        self.lifetime = lifetime or LIFETIME
 
         for item in reversed(items or []):
             self.add_item(item)
