@@ -17,10 +17,6 @@ src/utility/page_test.py:145: error: Argument 1 to "len" has incompatible type "
 src/utility/page_test.py:146: error: Argument 1 to "list" has incompatible type "Page | Any | None"; expected "Iterable[Any]"  [arg-type]
 src/utility/page_test.py:148: error: Item "None" of "Page | Any | None" has no attribute "previous"  [union-attr]
 src/utility/page_test.py:149: error: Item "None" of "Page | Any | None" has no attribute "next"  [union-attr]
-src/news/url/url.py:33: error: Incompatible types in assignment (expression has type "str", variable has type "None")  [assignment]
-src/news/url/url.py:34: error: Incompatible return value type (got "None", expected "str")  [return-value]
-src/news/url/url.py:74: error: Argument 1 to "startswith" of "bytes" has incompatible type "str"; expected "Buffer | tuple[Buffer, ...]"  [arg-type]
-src/news/url/url.py:157: error: Argument 1 to "remove_subdomain" has incompatible type "str | None"; expected "str"  [arg-type]
 src/news/item_test.py:231: error: Argument 1 to "decode" of "Item" has incompatible type "dict[str, Sequence[Collection[str]]]"; expected "JSONDict | JSONList"  [arg-type]
 src/news/news.py:26: error: Need type annotation for "by_site"  [var-annotated]
 src/news/news.py:51: error: Incompatible types in assignment (expression has type "Index", variable has type "None")  [assignment]
@@ -86,4 +82,4 @@ src/query.py:61: error: Incompatible types in assignment (expression has type "l
 src/query.py:62: error: "defaultdict[str, list[NormalizedURL]]" has no attribute "sort"  [attr-defined]
 src/query.py:63: error: Unpacking a string is disallowed  [misc]
 src/query.py:64: error: Cannot determine type of "identity"  [has-type]
-Found 64 errors in 14 files (checked 75 source files)
+Found 60 errors in 13 files (checked 75 source files)

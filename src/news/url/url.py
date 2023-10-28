@@ -9,7 +9,7 @@ log = logging.getLogger(__name__)
 
 class URL:
     def __init__(self, url: str):
-        self.__identity = None
+        self.__identity: str | None = None
         self.__url = url
 
     def __eq__(self, other: object) -> bool:
@@ -69,7 +69,7 @@ def clean_url(url: str) -> str:
         return url
 
 
-def is_dirty(parameter: tuple[AnyStr, AnyStr]) -> bool:
+def is_dirty(parameter: tuple[str, str]) -> bool:
     name, value = parameter
     return name.startswith('utm_') or name in ['leadSource', 'smid']
 
@@ -148,7 +148,7 @@ def keep_path_matching(hostname: str, path: str, pattern: str) -> str:
 
 def url_identity(url: str) -> str:
     url_parts = urlsplit(url)
-    hostname = url_parts.hostname
+    hostname = url_parts.hostname or ''
     path = url_parts.path
 
     unimportant_subdomains = [
