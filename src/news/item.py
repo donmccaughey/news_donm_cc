@@ -1,6 +1,7 @@
 from datetime import datetime
+from typing import cast
 
-from serialize import Encodable, JSONDict
+from serialize import Encodable, JSONDict, JSONList
 from .source import Source
 from .url import NormalizedURL
 
@@ -60,13 +61,18 @@ class Item(Encodable):
         self.sources.append(other_source)
 
     @staticmethod
-    def decode(encoded: JSONDict) -> 'Item':
+    def decode(encoded: JSONDict | JSONList) -> 'Item':
+        encoded = cast(JSONDict, encoded)
+        sources = [
+            Source.decode(cast(JSONDict, source))
+            for source in (cast(JSONList, encoded['sources']))
+        ]
         return Item(
-            url=NormalizedURL(encoded['url']),
-            title=encoded['title'],
-            sources=[Source.decode(source) for source in (encoded['sources'])],
-            created=datetime.fromisoformat(encoded['created']),
-            modified=datetime.fromisoformat(encoded['modified']),
+            url=NormalizedURL(cast(str, encoded['url'])),
+            title=cast(str, encoded['title']),
+            sources=sources,
+            created=datetime.fromisoformat(cast(str, encoded['created'])),
+            modified=datetime.fromisoformat(cast(str, encoded['modified'])),
         )
 
     def encode(self) -> JSONDict:

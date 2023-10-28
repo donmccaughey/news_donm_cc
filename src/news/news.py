@@ -2,9 +2,9 @@ import json
 
 from collections import defaultdict
 from datetime import datetime, timedelta, timezone
-from typing import Iterable, Iterator
+from typing import cast, Iterable, Iterator
 
-from serialize import Encodable, JSONDict, Serializable
+from serialize import Encodable, JSONDict, JSONList, Serializable
 from .index import Index
 from .item import Item
 
@@ -103,11 +103,16 @@ class News(Encodable, Iterable[Item], Serializable):
         return len(new_items), len(existing_items)
 
     @staticmethod
-    def decode(encoded: JSONDict) -> 'News':
+    def decode(encoded: JSONDict | JSONList) -> 'News':
+        encoded = cast(JSONDict, encoded)
+        items = [
+            Item.decode(cast(JSONDict, item))
+            for item in cast(JSONList, encoded['items'])
+        ]
         return News(
-            items=[Item.decode(item) for item in encoded['items']],
-            created=datetime.fromisoformat(encoded['created']),
-            modified=datetime.fromisoformat(encoded['modified']),
+            items=items,
+            created=datetime.fromisoformat(cast(str, encoded['created'])),
+            modified=datetime.fromisoformat(cast(str, encoded['modified'])),
         )
 
     def encode(self) -> JSONDict:

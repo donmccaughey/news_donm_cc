@@ -1,6 +1,7 @@
 import calendar
 import logging
 from datetime import datetime, timezone
+from typing import cast
 from io import BytesIO
 
 import requests
@@ -8,7 +9,7 @@ from feedparser import FeedParserDict, parse
 
 from news import LIFETIME, Item, Source
 from news.url import NormalizedURL, URL
-from serialize import Encodable, JSONDict
+from serialize import Encodable, JSONDict, JSONList
 
 
 log = logging.getLogger(__name__)
@@ -131,12 +132,13 @@ class Feed(Encodable):
             self.last_modified = other.last_modified
 
     @staticmethod
-    def decode(encoded: JSONDict) -> 'Feed':
+    def decode(encoded: JSONDict | JSONList) -> 'Feed':
+        encoded = cast(JSONDict, encoded)
         return Feed(
-            name=encoded['name'],
-            initials=encoded['initials'],
-            etag=encoded.get('etag'),
-            last_modified=encoded.get('last_modified'),
+            name=cast(str, encoded['name']),
+            initials=cast(str, encoded['initials']),
+            etag=cast(str | None, encoded.get('etag')),
+            last_modified=cast(str | None, encoded.get('last_modified')),
         )
 
     def encode(self) -> JSONDict:

@@ -1,8 +1,8 @@
 import json
-from typing import Iterable, Iterator
+from typing import cast, Iterable, Iterator
 
 from news.url import URL
-from serialize import Encodable, JSONList, Serializable
+from serialize import Encodable, JSONDict, JSONList, Serializable
 from .acoup import Acoup
 from .charity_wtf import CharityWTF
 from .daring_fireball import DaringFireball
@@ -50,8 +50,9 @@ class Feeds(Encodable, Iterable[Feed], Serializable):
                 self.feeds[feed].update_from(feed)
 
     @staticmethod
-    def decode(encoded: JSONList) -> 'Feeds':
-        feeds = [Feed.decode(feed) for feed in encoded]
+    def decode(encoded: JSONDict | JSONList) -> 'Feeds':
+        encoded = cast(JSONList, encoded)
+        feeds = [Feed.decode(cast(JSONDict, feed)) for feed in encoded]
         return Feeds(feeds)
 
     def encode(self) -> JSONList:
