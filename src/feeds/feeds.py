@@ -8,6 +8,7 @@ from .charity_wtf import CharityWTF
 from .daring_fireball import DaringFireball
 from .hacker_news import HackerNews
 from .lobsters import Lobsters
+from .molly_white import MollyWhite
 from .reddit import Reddit
 from .rust_blog import RustBlog
 from .feed import Feed
@@ -24,6 +25,7 @@ class Feeds(Encodable, Iterable[Feed], Serializable):
             DaringFireball(),
             HackerNews(),
             Lobsters(),
+            MollyWhite(),
             Reddit(reddit_url),
             RustBlog(),
             Streetsblog(),

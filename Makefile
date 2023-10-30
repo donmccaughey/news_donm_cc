@@ -133,6 +133,7 @@ python_files := \
 	src/feeds/hacker_news.py \
 	src/feeds/hacker_news_test.py \
 	src/feeds/lobsters.py \
+	src/feeds/molly_white.py \
 	src/feeds/reddit.py \
 	src/feeds/reddit_test.py \
 	src/feeds/rust_blog.py \
