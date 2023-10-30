@@ -1,10 +1,53 @@
 import logging
 import re
 from pathlib import Path
-from typing import AnyStr
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
+
 log = logging.getLogger(__name__)
+
+
+IDENTITY_PATTERNS = {
+    'crates.io': '/crates/*',
+    'kickstarter.com': '/projects/*',
+    'sites.google.com': '/site/*',
+    'npmjs.com': '/package/*',
+    'pypi.org': '/project/*',
+    'reddit.com': '/r/*',
+}
+
+
+SOCIAL_PATH_PATTERN = re.compile(
+    r'''
+        /[@~][^/]+  # first path element looks like "/@username" or "/~username"
+        (/.*)?      # optional trailing slash and more path elements
+    ''',
+    re.VERBOSE,
+)
+
+
+SOCIAL_SITES = {
+    'codeberg.org',
+    'github.com',
+    'gitlab.com',
+    'people.kernel.org',
+    'medium.com',
+    'devblogs.microsoft.com',
+    'twitter.com',
+}
+
+
+UNIMPORTANT_SUBDOMAINS = {
+    'blog',
+    'blogs',
+    'community',
+    'docs',
+    'en',
+    'newsletter',
+    'web',
+    'www',
+    'www2'
+}
 
 
 class URL:
@@ -74,20 +117,11 @@ def is_dirty(parameter: tuple[str, str]) -> bool:
     return name.startswith('utm_') or name in ['leadSource', 'smid']
 
 
-SOCIAL_PATH_PATTERN = re.compile(
-    r'''
-        /[@~][^/]+  # first path element looks like "/@username" or "/~username"
-        (/.*)?      # optional trailing slash and more path elements
-    ''',
-    re.VERBOSE,
-)
-
-
 def looks_social(path: str) -> bool:
     return re.match(SOCIAL_PATH_PATTERN, path) is not None
 
 
-def remove_subdomain(hostname: str, subdomains: list[str]) -> str:
+def remove_subdomain(hostname: str, subdomains: set[str]) -> str:
     parts = hostname.split('.')
     if len(parts) > 2:
         subdomain = parts[0]
@@ -151,10 +185,7 @@ def url_identity(url: str) -> str:
     hostname = url_parts.hostname or ''
     path = url_parts.path
 
-    unimportant_subdomains = [
-        'blog', 'blogs', 'community', 'docs', 'en', 'web', 'www', 'www2'
-    ]
-    hostname = remove_subdomain(hostname, unimportant_subdomains)
+    hostname = remove_subdomain(hostname, UNIMPORTANT_SUBDOMAINS)
 
     hostname_map = {
         'lite.cnn.com': 'cnn.com',
@@ -165,27 +196,10 @@ def url_identity(url: str) -> str:
     if hostname in hostname_map:
         hostname = hostname_map[hostname]
 
-    social_sites = [
-        'codeberg.org',
-        'github.com',
-        'gitlab.com',
-        'people.kernel.org',
-        'medium.com',
-        'devblogs.microsoft.com',
-        'twitter.com',
-    ]
-    if looks_social(path) or hostname in social_sites:
+    if looks_social(path) or (hostname in SOCIAL_SITES):
         return keep_path_matching(hostname, path, '/*')
 
-    pattern_map = {
-        'crates.io': '/crates/*',
-        'kickstarter.com': '/projects/*',
-        'sites.google.com': '/site/*',
-        'npmjs.com': '/package/*',
-        'pypi.org': '/project/*',
-        'reddit.com': '/r/*',
-    }
-    if hostname in pattern_map:
-        return keep_path_matching(hostname, path, pattern_map[hostname])
+    if hostname in IDENTITY_PATTERNS:
+        return keep_path_matching(hostname, path, IDENTITY_PATTERNS[hostname])
 
     return hostname
