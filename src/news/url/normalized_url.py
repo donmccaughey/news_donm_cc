@@ -1,4 +1,6 @@
-from .url import URL, clean_url, rewrite_url
+from .clean import clean_url
+from .rewrite import rewrite_url
+from .url import URL
 
 
 class NormalizedURL(URL):
