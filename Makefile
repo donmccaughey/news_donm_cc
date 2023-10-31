@@ -160,6 +160,8 @@ python_files := \
 	src/news/url/identity_test.py \
 	src/news/url/normalized_url.py \
 	src/news/url/normalized_url_test.py \
+	src/news/url/rewrite.py \
+	src/news/url/rewrite_test.py \
 	src/news/url/url.py \
 	src/news/url/url_test.py \
 	\
