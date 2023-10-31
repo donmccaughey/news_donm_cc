@@ -156,6 +156,8 @@ python_files := \
 	src/news/source_test.py \
 	\
 	src/news/url/__init__.py \
+	src/news/url/identity.py \
+	src/news/url/identity_test.py \
 	src/news/url/normalized_url.py \
 	src/news/url/normalized_url_test.py \
 	src/news/url/url.py \
