@@ -1,6 +1,4 @@
-from .clean import clean_url
 from .identity import url_identity
-from .rewrite import rewrite_url
 
 
 class URL:
@@ -28,8 +26,3 @@ class URL:
         if not self.__identity:
             self.__identity = url_identity(self.__url)
         return self.__identity
-
-    def normalize(self) -> 'URL':
-        cleaned = clean_url(self.__url)
-        rewritten = rewrite_url(cleaned)
-        return self if rewritten is self.__url else URL(rewritten)

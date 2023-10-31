@@ -1,4 +1,3 @@
-from pytest import mark
 from .url import URL
 
 
@@ -32,18 +31,3 @@ def test_str_and_repr():
 
     assert 'https://www.example.com/foo/bar?baz#fid' == str(url)
     assert "URL('https://www.example.com/foo/bar?baz#fid')" == repr(url)
-
-
-@mark.parametrize('url, normalized', [
-    ('https://example.com', 'https://example.com'),
-    (
-        'https://queue.acm.org/detail.cfm?id=2898444&utm_source=daringfireball&utm_campaign=df2023',
-        'https://queue.acm.org/detail.cfm?id=2898444',
-    ),
-    (
-        'https://www.npr.org/2023/03/23/1165680024/perennial-rice-plant-once-harvest-again-and-again',
-        'https://text.npr.org/1165680024',
-    ),
-])
-def test_url_normalize(url, normalized):
-    assert URL(url).normalize() == URL(normalized)
