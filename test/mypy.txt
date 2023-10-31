@@ -56,4 +56,4 @@ src/feeds/feeds_test.py:80: error: Item "int" of "JSONDict | list[JSONType] | tu
 src/feeds/feeds_test.py:80: error: Item "float" of "JSONDict | list[JSONType] | tuple[JSONType, ...] | str | int | float | None" has no attribute "get"  [union-attr]
 src/feeds/feeds_test.py:80: error: Item "None" of "JSONDict | list[JSONType] | tuple[JSONType, ...] | str | int | float | None" has no attribute "get"  [union-attr]
 src/feeds/hacker_news_test.py:123: error: Need type annotation for "entry" (hint: "entry: Dict[<type>, <type>] = ...")  [var-annotated]
-Found 42 errors in 5 files (checked 76 source files)
+Found 42 errors in 5 files (checked 72 source files)

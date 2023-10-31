@@ -3,14 +3,10 @@ from typing import cast, Iterable, Iterator
 
 from news.url import URL
 from serialize import Encodable, JSONDict, JSONList, Serializable
-from .acoup import Acoup
-from .charity_wtf import CharityWTF
 from .daring_fireball import DaringFireball
 from .hacker_news import HackerNews
 from .lobsters import Lobsters
-from .molly_white import MollyWhite
 from .reddit import Reddit
-from .rust_blog import RustBlog
 from .feed import Feed
 from .streetsblog import Streetsblog
 from .tilde_news import TildeNews
@@ -20,14 +16,30 @@ class Feeds(Encodable, Iterable[Feed], Serializable):
     @staticmethod
     def all(reddit_url: URL) -> 'Feeds':
         feeds = [
-            Acoup(),
-            CharityWTF(),
+            Feed(
+                'A Collection of Unmitigated Pedantry',
+                'acoup',
+                URL('https://acoup.blog/feed/'),
+            ),
+            Feed(
+                'charity.wtf',
+                'cw',
+                URL('https://charity.wtf/feed/'),
+            ),
+            Feed(
+                'Molly White',
+                'mw',
+                URL('https://newsletter.mollywhite.net/feed'),
+            ),
+            Feed(
+                'rust-lang.org',
+                'rl',
+                URL('https://blog.rust-lang.org/feed.xml'),
+            ),
             DaringFireball(),
             HackerNews(),
             Lobsters(),
-            MollyWhite(),
             Reddit(reddit_url),
-            RustBlog(),
             Streetsblog(),
             TildeNews(),
         ]

@@ -122,8 +122,6 @@ python_files := \
 	src/extractor/s3_store_test.py \
 	\
 	src/feeds/__init__.py \
-	src/feeds/acoup.py \
-	src/feeds/charity_wtf.py \
 	src/feeds/daring_fireball.py \
 	src/feeds/daring_fireball_test.py \
 	src/feeds/feed.py \
@@ -133,10 +131,8 @@ python_files := \
 	src/feeds/hacker_news.py \
 	src/feeds/hacker_news_test.py \
 	src/feeds/lobsters.py \
-	src/feeds/molly_white.py \
 	src/feeds/reddit.py \
 	src/feeds/reddit_test.py \
-	src/feeds/rust_blog.py \
 	src/feeds/skip_sites.py \
 	src/feeds/streetsblog.py \
 	src/feeds/streetsblog_test.py \
