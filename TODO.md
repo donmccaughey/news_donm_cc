@@ -1,5 +1,6 @@
 # To Do
 
+- extract common base class for `HackerNews`, `Lobsters` and `TildeNews`
 - paginate the `/sites` page
 - understand how requests handles redirects
   - Update `Feed.get_items()` to detect redirects correctly

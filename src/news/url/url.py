@@ -7,6 +7,14 @@ from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 log = logging.getLogger(__name__)
 
 
+HOSTNAME_MAP = {
+    'lite.cnn.com': 'cnn.com',
+    'gist.github.com': 'github.com',
+    'text.npr.org': 'npr.org',
+    'old.reddit.com': 'reddit.com',
+}
+
+
 IDENTITY_PATTERNS = {
     'crates.io': '/crates/*',
     'kickstarter.com': '/projects/*',
@@ -187,14 +195,8 @@ def url_identity(url: str) -> str:
 
     hostname = remove_subdomain(hostname, UNIMPORTANT_SUBDOMAINS)
 
-    hostname_map = {
-        'lite.cnn.com': 'cnn.com',
-        'gist.github.com': 'github.com',
-        'text.npr.org': 'npr.org',
-        'old.reddit.com': 'reddit.com',
-    }
-    if hostname in hostname_map:
-        hostname = hostname_map[hostname]
+    if hostname in HOSTNAME_MAP:
+        hostname = HOSTNAME_MAP[hostname]
 
     if looks_social(path) or (hostname in SOCIAL_SITES):
         return keep_path_matching(hostname, path, '/*')
