@@ -130,14 +130,11 @@ python_files := \
 	src/feeds/feed_test.py \
 	src/feeds/feeds.py \
 	src/feeds/feeds_test.py \
-	src/feeds/hacker_news.py \
-	src/feeds/lobsters.py \
 	src/feeds/reddit.py \
 	src/feeds/reddit_test.py \
 	src/feeds/skip_sites.py \
 	src/feeds/streetsblog.py \
 	src/feeds/streetsblog_test.py \
-	src/feeds/tilde_news.py \
 	\
 	src/health/__init__.py \
 	src/health/health.py \

@@ -3,19 +3,32 @@ from typing import cast, Iterable, Iterator
 
 from news.url import URL
 from serialize import Encodable, JSONDict, JSONList, Serializable
+from .aggregator import Aggregator
 from .daring_fireball import DaringFireball
-from .hacker_news import HackerNews
-from .lobsters import Lobsters
 from .reddit import Reddit
 from .feed import Feed
 from .streetsblog import Streetsblog
-from .tilde_news import TildeNews
 
 
 class Feeds(Encodable, Iterable[Feed], Serializable):
     @staticmethod
     def all(reddit_url: URL) -> 'Feeds':
         feeds = [
+            Aggregator(
+                'Hacker News',
+                'hn',
+                URL('https://news.ycombinator.com/rss'),
+            ),
+            Aggregator(
+                'Lobsters',
+                'lob',
+                URL('https://lobste.rs/rss'),
+            ),
+            Aggregator(
+                'tilde.news',
+                '~n',
+                URL('https://tilde.news/rss'),
+            ),
             Feed(
                 'A Collection of Unmitigated Pedantry',
                 'acoup',
@@ -37,11 +50,8 @@ class Feeds(Encodable, Iterable[Feed], Serializable):
                 URL('https://blog.rust-lang.org/feed.xml'),
             ),
             DaringFireball(),
-            HackerNews(),
-            Lobsters(),
             Reddit(reddit_url),
             Streetsblog(),
-            TildeNews(),
         ]
         return Feeds(feeds)
 
