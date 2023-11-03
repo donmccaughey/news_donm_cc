@@ -15,8 +15,5 @@ class HackerNews(Aggregator):
     def __repr__(self) -> str:
         return 'HackerNews()'
 
-    def is_entry_valid(self, entry: dict) -> bool:
-        return self.entry_has_keys(entry, ['comments', 'link', 'title'])
-
     def keep_item(self, item: Item) -> bool:
         return item.url.identity not in SKIP_SITES
