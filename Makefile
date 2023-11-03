@@ -131,7 +131,6 @@ python_files := \
 	src/feeds/feeds.py \
 	src/feeds/feeds_test.py \
 	src/feeds/hacker_news.py \
-	src/feeds/hacker_news_test.py \
 	src/feeds/lobsters.py \
 	src/feeds/reddit.py \
 	src/feeds/reddit_test.py \
