@@ -122,6 +122,8 @@ python_files := \
 	src/extractor/s3_store_test.py \
 	\
 	src/feeds/__init__.py \
+	src/feeds/aggregator.py \
+	src/feeds/aggregator_test.py \
 	src/feeds/daring_fireball.py \
 	src/feeds/daring_fireball_test.py \
 	src/feeds/feed.py \

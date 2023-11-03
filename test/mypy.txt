@@ -24,7 +24,7 @@ src/feeds/feed_test.py:301: note: Consider using "Mapping" instead, which is cov
 src/feeds/feed_test.py:318: error: Argument 1 to "decode" of "Feed" has incompatible type "dict[str, str]"; expected "JSONDict | JSONList"  [arg-type]
 src/feeds/feed_test.py:318: note: "Dict" is invariant -- see https://mypy.readthedocs.io/en/stable/common_issues.html#variance
 src/feeds/feed_test.py:318: note: Consider using "Mapping" instead, which is covariant in the value type
-src/feeds/hacker_news_test.py:123: error: Need type annotation for "entry" (hint: "entry: Dict[<type>, <type>] = ...")  [var-annotated]
+src/feeds/hacker_news_test.py:99: error: Need type annotation for "entry" (hint: "entry: Dict[<type>, <type>] = ...")  [var-annotated]
 src/feeds/feeds_test.py:53: error: Argument 1 to "decode" of "Feeds" has incompatible type "list[dict[str, str]]"; expected "JSONDict | JSONList"  [arg-type]
 src/feeds/feeds_test.py:77: error: No overload variant of "__getitem__" of "list" matches argument type "str"  [call-overload]
 src/feeds/feeds_test.py:77: note: Possible overload variants:
@@ -56,4 +56,4 @@ src/feeds/feeds_test.py:80: error: Item "str" of "JSONDict | list[JSONType] | tu
 src/feeds/feeds_test.py:80: error: Item "int" of "JSONDict | list[JSONType] | tuple[JSONType, ...] | str | int | float | None" has no attribute "get"  [union-attr]
 src/feeds/feeds_test.py:80: error: Item "float" of "JSONDict | list[JSONType] | tuple[JSONType, ...] | str | int | float | None" has no attribute "get"  [union-attr]
 src/feeds/feeds_test.py:80: error: Item "None" of "JSONDict | list[JSONType] | tuple[JSONType, ...] | str | int | float | None" has no attribute "get"  [union-attr]
-Found 42 errors in 5 files (checked 78 source files)
+Found 42 errors in 5 files (checked 80 source files)

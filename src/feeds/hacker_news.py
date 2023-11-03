@@ -1,13 +1,10 @@
-import html
-from datetime import datetime
-
-from news import Item, Source
-from news.url import NormalizedURL, URL
+from news import Item
+from news.url import URL
+from .aggregator import Aggregator
 from .skip_sites import SKIP_SITES
-from .feed import Feed
 
 
-class HackerNews(Feed):
+class HackerNews(Aggregator):
     def __init__(self):
         super().__init__(
             'Hacker News',
@@ -23,12 +20,3 @@ class HackerNews(Feed):
 
     def keep_item(self, item: Item) -> bool:
         return item.url.identity not in SKIP_SITES
-
-    def parse_entry(self, entry, now: datetime) -> Item:
-        return Item(
-            url=NormalizedURL(entry.link),
-            title=html.unescape(entry.title),
-            sources=[Source(NormalizedURL(entry.comments), self.initials)],
-            created=now,
-            modified=now,
-        )
