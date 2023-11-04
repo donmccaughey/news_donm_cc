@@ -29,6 +29,11 @@ class Feeds(Encodable, Iterable[Feed], Serializable):
                 '~n',
                 URL('https://tilde.news/rss'),
             ),
+            Aggregator(
+                'Two Stop Bits',
+                'tsb',
+                URL('https://twostopbits.com/rss'),
+            ),
             Feed(
                 'A Collection of Unmitigated Pedantry',
                 'acoup',
