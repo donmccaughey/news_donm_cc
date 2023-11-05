@@ -31,7 +31,7 @@ class Feeds(Encodable, Iterable[Feed], Serializable):
             ),
             Aggregator(
                 'Two Stop Bits',
-                'tsb',
+                '2sb',
                 URL('https://twostopbits.com/rss'),
             ),
             Feed(
