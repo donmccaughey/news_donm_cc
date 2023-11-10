@@ -31,6 +31,8 @@ SKIP_SITES = {
     'hedgehogreview.com',
     'hudsonreview.com',
 
+    'isonomiaquarterly.com',
+
     'jacobin.com',
     'jewishreviewofbooks.com',
 
@@ -47,6 +49,8 @@ SKIP_SITES = {
 
     'mankindquarterly.org',
     'marginalrevolution.com',
+    # medium.com
+    'steve-yegge.medium.com',
     'meltingasphalt.com',
     'milkyeggs.com',
     'mindmatters.ai',
@@ -89,6 +93,7 @@ SKIP_SITES = {
     'noahpinion.substack.com',
     'thezvi.substack.com',
 
+    'tabletmag.com',
     'the-fence.com',
     'theamericanconservative.com',
     'theamericanscholar.org',
