@@ -8,9 +8,15 @@ from .rewrite import rewrite_url, rewrite_npr_url, rewrite_reddit_url
         'https://languagelearningwithnetflix.com/',
         'https://languagelearningwithnetflix.com/'
     ),
+
+    # Reddit variations
     (
         'https://www.reddit.com/r/pics/comments/13a00ge/a_canadian_goose_that_comes_back_year_after_year/',
         'https://old.reddit.com/r/pics/comments/13a00ge/a_canadian_goose_that_comes_back_year_after_year/'
+    ),
+    (
+            'https://sh.reddit.com/r/uBlockOrigin/comments/17wu2gz/google_confirms_they_will_disable_ublock_origin/',
+            'https://old.reddit.com/r/uBlockOrigin/comments/17wu2gz/google_confirms_they_will_disable_ublock_origin/',
     ),
 
     # NPR, no section
@@ -53,7 +59,11 @@ def test_rewrite_npr_url(url, rewritten):
 @mark.parametrize('url, rewritten', [
     (
         'https://www.reddit.com/r/pics/comments/13a00ge/a_canadian_goose_that_comes_back_year_after_year/',
-        'https://old.reddit.com/r/pics/comments/13a00ge/a_canadian_goose_that_comes_back_year_after_year/'
+        'https://old.reddit.com/r/pics/comments/13a00ge/a_canadian_goose_that_comes_back_year_after_year/',
+    ),
+    (
+        'https://sh.reddit.com/r/uBlockOrigin/comments/17wu2gz/google_confirms_they_will_disable_ublock_origin/',
+        'https://old.reddit.com/r/uBlockOrigin/comments/17wu2gz/google_confirms_they_will_disable_ublock_origin/',
     ),
 ])
 def test_rewrite_reddit_url(url, rewritten):

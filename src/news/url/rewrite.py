@@ -1,6 +1,15 @@
 from urllib.parse import urlsplit, urlunsplit
 
 
+# See https://www.reddit.com/r/TheoryOfReddit/comments/10ugn9j/i_just_learned_about_the_reddit_web_ui/
+REDDIT_NETLOCS = {
+    'i.reddit.com',
+    'm.reddit.com',
+    'sh.reddit.com',
+    'www.reddit.com',
+}
+
+
 def rewrite_npr_url(scheme: str, path: str) -> str | None:
     parts = path.split('/')
     numbers = [
@@ -23,7 +32,7 @@ def rewrite_url(url: str) -> str:
         case 'www.npr.org':
             rewritten = rewrite_npr_url(scheme, path)
             return rewritten if rewritten else url
-        case 'www.reddit.com':
+        case _ if netloc in REDDIT_NETLOCS:
             return rewrite_reddit_url(scheme, path, query, fragment)
         case _:
             return url
