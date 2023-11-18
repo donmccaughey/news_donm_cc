@@ -123,6 +123,37 @@ def test_is_recent_published_15_days_ago():
     assert not feed.is_entry_recent(d.entries[0], now)
 
 
+def test_is_recent_when_published_is_in_the_future(caplog):
+    now = datetime.fromisoformat('2023-11-02T22:05:03.020862+00:00')
+    xml = f'''
+    <?xml version="1.0" encoding="utf-8"?>
+    <feed xmlns="http://www.w3.org/2005/Atom">
+        <entry>
+            <title>Behind the Scenes of Apple’s Behind the Scenes of the ‘Scary Fast’ Keynote Film</title>
+            <link rel="alternate" type="text/html" href="https://www.youtube.com/watch?v=y_E2okzJCvY"/>
+            <link rel="shorturl" type="text/html" href="http://df4.us/v4d"/>
+            <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/11/02/tobin-bts-scary-fast"/>
+            <id>tag:daringfireball.net,2023:/linked//6.40333</id>
+            <published>2023-11-02T23:01:32Z</published>
+            <updated>2023-11-02T23:57:44Z</updated>
+            <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[...]]></content>
+        </entry>
+    </feed>
+    '''
+    d: FeedParserDict = parse(xml)
+    feed = Feed('Daring Fireball', 'df', URL('https://daringfireball.net/feeds/main'))
+
+    assert feed.is_entry_recent(d.entries[0], now)
+    assert len(caplog.messages) is 1
+    assert caplog.messages[0] == (
+        'Daring Fireball entry "Behind the Scenes of Apple’s Behind the Scenes of the ‘Scary Fast’ Keynote Film" '
+        'has a published date in the future: '
+        'now = 2023-11-02 22:05:03.020862+00:00, '
+        'published = 2023-11-02 23:01:32+00:00, '
+        'skew = 0:56:28.979138'
+    )
+
+
 def test_is_recent_is_missing():
     xml = '''
     <?xml version="1.0" encoding="UTF-8"?>

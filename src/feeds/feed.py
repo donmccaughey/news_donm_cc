@@ -89,6 +89,15 @@ class Feed(Encodable):
         if time_tuple:
             timestamp = calendar.timegm(time_tuple)
             published = datetime.fromtimestamp(timestamp, timezone.utc)
+            if published > now:
+                skew = published - now
+                log.warning(
+                    f'{self.name} entry "{entry.get("title")}" '
+                    f'has a published date in the future: '
+                    f'now = {now}, '
+                    f'published = {published}, '
+                    f'skew = {skew}'
+                )
             return (now - published) < LIFETIME
         else:
             return True

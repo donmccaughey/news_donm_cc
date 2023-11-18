@@ -1,0 +1,2259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Daring Fireball</title>
+    <subtitle>By John Gruber</subtitle>
+    <link rel="alternate" type="text/html" href="https://daringfireball.net/"/>
+    <link rel="self" type="application/atom+xml" href="https://daringfireball.net/feeds/main"/>
+    <id>https://daringfireball.net/feeds/main</id>
+
+
+    <updated>2023-11-16T23:25:42Z</updated>
+    <rights>Copyright © 2023, John Gruber</rights>
+    <entry>
+        <title>Apple Announces Intention to Support RCS Messages ‘Next Year’</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.techradar.com/phones/iphone/breaking-apple-will-support-rcs-in-2024"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v53"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/11/16/apple-rcs"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40359</id>
+        <published>2023-11-16T19:16:17Z</published>
+        <updated>2023-11-16T23:25:42Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Lance Ulanoff, reporting for TechRadar:</p>
+
+<blockquote>
+  <p>RCS or Rich Communication Services, a communications standard 
+developed by the GSM Association and adopted by much of the 
+Android ecosystem, is designed to universally elevate messaging 
+communication across mobile devices. Even though Apple has been 
+working with the group, it has until this moment steadfastly 
+refused to add RCS support to iPhones. Now, however, Apple is 
+changing its tune. </p>
+
+<p>“Later next year, we will be adding support for RCS Universal 
+Profile, the standard as currently published by the GSM 
+Association. We believe the RCS Universal Profile will offer a 
+better interoperability experience when compared to SMS or MMS. 
+This will work alongside iMessage, which will continue to be the 
+best and most secure messaging experience for Apple users,” said 
+an Apple spokesperson. [...] </p>
+
+<p>When RCS does arrive on your best iPhone, though, it means the end 
+of the “green bubble shame” for your best Android phone-owning 
+friends, family, and coworkers. They’ll be able to send and 
+receive high-resolution photos and videos from their phones to 
+your iPhone. Group messaging could become platform agnostic. And 
+they’ll be able to share their location with you through 
+RCS-supported messaging. </p>
+
+<p>There is, naturally, a wrinkle here. The RCS standard still 
+doesn’t support end-to-end encryption. Apple, which has offered 
+encrypted messaging for over a decade, is kind of a stickler about 
+security. Apple says it won’t be supporting any proprietary 
+extensions that seek to add encryption on top of RCS and hopes, 
+instead, to work with the GSM Association to add encryption to the 
+standard. </p>
+</blockquote>
+
+<p>Color me surprised by Apple’s change of heart here. Also color me utterly <em>un</em>surprised that Apple has no intention to support Google’s proprietary extensions to RCS that allow for E2EE. It’s a disgrace, in my opinion, that E2EE wasn’t a foundational part of the RCS spec from the start, but if Apple is going to support RCS, they should support RCS by-the-spec, not Google’s proprietary version.</p>
+
+<p>I suspect that in practical terms, this might have almost no discernible effect on the user experience. RCS messages are not going to be blue — <s>they’re either going to stay green, just like SMS/MMS messages, or perhaps Apple will add a new color (purple?) for RCS</s>. I suspect RCS messages will just remain green though, and it’ll be treated as what it is: the next generation of phone-carrier-based messaging. I think any initial coverage today framing this as the end of the green/blue disparity is totally wrong. It’s just about making green messages higher quality and more reliable. <strong>Update:</strong> I confirmed with Apple today that RCS messages will be green, just like SMS and MMS messages.</p>
+
+<p>The best part of the experience, for users, is that RCS supports higher-resolution photos and videos. The worst part is that it’s not encrypted, and Apple caving and deciding to support it will expand, rather than contract, the amount of messaging that is not E2EE. And what’s the plan for when (if?) E2EE gets added to the official RCS spec? Will Apple then <em>drop</em> support for non-encrypted RCS messages? Or add some sort of indicator — a badge or different message color — to indicate which messages are truly encrypted and which are not?</p>
+
+<p>There were also reports from just last year that RCS was being abused to send large amounts of spam in India — see reports here from <a href="https://www.theverge.com/2022/5/18/23121150/google-messages-india-rcs-ads">The Verge</a> and <a href="https://9to5google.com/2022/05/17/google-messages-rcs-ads-india/">9to5Google</a>.</p>
+
+<div>
+<a  title="Permanent link to ‘Apple Announces Intention to Support RCS Messages ‘Next Year’’"  href="https://daringfireball.net/linked/2023/11/16/apple-rcs">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>The Husk That Remains of Once-Great Studio Warner Bros. Shelves ‘Coyote vs. Acme’ Movie for Tax
+            Write-Off
+        </title>
+        <link rel="alternate" type="text/html" href="https://kottke.org/23/11/coyote-vs-acme-movie-shelved"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v52"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/11/15/coyote-v-acme"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40358</id>
+        <published>2023-11-15T21:39:55Z</published>
+        <updated>2023-11-15T22:00:22Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Jason Kottke:</p>
+
+<blockquote>
+  <p>I just found out today that they made a movie version of <a href="https://www.newyorker.com/magazine/1990/02/26/coyote-v-acme">Ian 
+Frazier’s classic 1990 New Yorker piece Coyote V. Acme</a>, in 
+which Wile E. Coyote files a product liability lawsuit against the 
+Acme Company. [...] </p>
+
+<p>My excitement was tempered almost immediately by hearing that 
+Warner Bros. has shelved the completed film (starring John Cena &amp; 
+Will Forte and produced by James Gunn) <a href="https://deadline.com/2023/11/coyote-vs-acme-shelved-warner-bros-discovery-writeoff-david-zaslav-1235598676/">in order to take a $30 
+million tax write-off</a>. </p>
+</blockquote>
+
+<p>Walt Disney once said (and the Disney company still oft repeats): “We don’t make movies to make money, we make money to make more movies.”</p>
+
+<p>Warner Brothers Discovery CEO David Zaslav is a vulture and a disgrace. His top priority should be putting good movies out into the world.</p>
+
+<div>
+<a  title="Permanent link to ‘The Husk That Remains of Once-Great Studio Warner Bros. Shelves ‘Coyote vs. Acme’ Movie for Tax Write-Off’"  href="https://daringfireball.net/linked/2023/11/15/coyote-v-acme">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+
+        <link rel="alternate" type="text/html"
+              href="https://www.vanta.com/trial-sign-up?utm_campaign=ToF&amp;utm_source=thedaringfireball&amp;utm_medium=newsletter"/>
+        <link rel="shorturl" href="http://df4.us/v51"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/feeds/sponsors/2023/11/vanta"/>
+        <id>tag:daringfireball.net,2023:/feeds/sponsors//11.40357</id>
+        <author>
+            <name>Daring Fireball Department of Commerce</name>
+        </author>
+        <published>2023-11-15T21:33:21Z</published>
+        <updated>2023-11-15T21:33:22Z</updated>
+        <content type="html" xml:base="https://daringfireball.net/feeds/sponsors/" xml:lang="en"><![CDATA[
+<p>Shortcut compliance — without shortchanging security.</p>
+
+<p>Vanta brings GRC and security efforts together. Integrate information from multiple systems and reduce risks to your business, all without the need for additional staffing.</p>
+
+<p>And because Vanta automates up to 90% of the work for SOC 2, ISO 27001, and more, you’ll be able to focus on strategy and security, not maintaining compliance.</p>
+
+<p>From the most in-demand frameworks to third-party risk management and security questionnaires, Vanta gives SaaS businesses of all sizes one place to manage risk and prove security in real time. </p>
+
+<p>Try Vanta free for 7 days. No costs or obligations.</p>
+
+<div>
+<a  title="Permanent link to ‘Vanta’"  href="https://daringfireball.net/feeds/sponsors/2023/11/vanta">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+        <title>[Sponsor] Vanta</title>
+    </entry>
+    <entry>
+        <title>‘But What Do We Do if Google Is Legitimately Just a Better Search Engine?’</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.techdirt.com/2023/11/14/but-what-do-we-do-if-google-is-legitimately-just-a-better-search-engine/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v50"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/11/14/masnick-google-better"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40356</id>
+        <published>2023-11-15T00:15:41Z</published>
+        <updated>2023-11-15T00:26:34Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Mike Masnick, writing at TechDirt:</p>
+
+<blockquote>
+  <p>And that raises a real question. How does antitrust handle a situation where the company that is so dominant is in that position because is legitimately offers a better product by a wide margin.</p>
+
+<p>I would love to see more real competition in the search space. Bing and DuckDuckGo continue to <a href="https://www.techdirt.com/2023/08/16/techdirt-has-again-been-removed-from-bing-and-mostly-duckduckgo/">just not cut it</a>. I’m intrigued by startups like Kagi (which I’ve been using, and which actually seems pretty good), but it’s not clear how antitrust helps companies like that get a wider audience.</p>
+
+<p>I’m increasingly coming to the belief that we’ve spent way too many years equating <em>antitrust</em> with <em>increased competition</em>, when it’s one of the least effective mechanisms for enabling greater competition. The situation with Mozilla and Firefox seems to just put an exclamation point on that. If the DOJ wins this lawsuit, what will it actually do to help get more competition on the market? More competition that is actually good and that people want?</p>
+</blockquote>
+
+<p>I think it’s pretty clear that Apple and Google’s TAC deal is the result of fair competition, not an obstacle to it. The iPhone is by far the best mobile platform in the world, and Google search the best search engine (or at least the best free one — Kagi is so good I’d say it gives Google a run for money straight up on results quality). Apple is beset on all sides by competitors to the iPhone — including Google itself! Google has always had competition in search. I for one really do think Google has let its search results quality decline, but even so, they’re still undeniably the best among the mainstream search engines.</p>
+
+<p>So of course there’s some sort of lucrative — and mutually beneficial — deal between Apple and Google to keep Google the default for search in Safari.</p>
+
+<div>
+<a  title="Permanent link to ‘‘But What Do We Do if Google Is Legitimately Just a Better Search Engine?’’"  href="https://daringfireball.net/linked/2023/11/14/masnick-google-better">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Tailscale</title>
+        <link rel="alternate" type="text/html"
+              href="https://tailscale.com/?utm_source=DaringFireball&amp;utm_medium=paid-referral&amp;utm_campaign=2023-2H"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v4z"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/11/13/tailscale"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40355</id>
+        <published>2023-11-13T22:27:23Z</published>
+        <updated>2023-11-13T22:27:24Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>My thanks to Tailscale for sponsoring last week at DF. Tailscale offers remarkably good ways to manage SSH connections. No more bastions. No more juggling keys. It’s SSH that just works.</p>
+
+<p>Tailscale is completely free of charge to try, and remarkably affordable for use on teams both small and large. Simplify your Kubernetes networking story with their new operator. <a href="https://tailscale.com/?utm_source=DaringFireball&amp;utm_medium=paid-referral&amp;utm_campaign=2023-2H">Try Tailscale for Kubernetes now</a>.</p>
+
+<div>
+<a  title="Permanent link to ‘Tailscale’"  href="https://daringfireball.net/linked/2023/11/13/tailscale">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Witness Testifies That Apple Gets 36 Percent of Google Revenue From Safari Search Deal</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.bloomberg.com/news/articles/2023-11-13/apple-gets-36-of-google-revenue-from-search-deal-witness-says"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v4y"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/11/13/google-app-36-percent"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40354</id>
+        <published>2023-11-13T21:56:49Z</published>
+        <updated>2023-11-13T22:00:09Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Leah Nylen, reporting for Bloomberg:<sup>*</sup></p>
+
+<blockquote>
+  <p>Google pays Apple Inc. 36% of the revenue it earns from search advertising made through the Safari browser, the main economics expert for the Alphabet Inc. unit said Monday.</p>
+
+<p>Kevin Murphy, a University of Chicago professor, disclosed the number during his testimony in Google’s defense at the Justice Department’s antitrust trial in Washington. John Schmidtlein, Google’s main litigator, visibly cringed when Murphy said the number, which was supposed to remain confidential. Both Google and Apple had objected to revealing details publicly about their agreement.</p>
+</blockquote>
+
+<p>All those developers complaining about Apple’s 70/30 split for App Store revenue should take note: even Google only gets a 64/36 split for search.</p>
+
+<p><small>* You know.</small></p>
+
+<div>
+<a  title="Permanent link to ‘Witness Testifies That Apple Gets 36 Percent of Google Revenue From Safari Search Deal’"  href="https://daringfireball.net/linked/2023/11/13/google-app-36-percent">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>DAK and the Golden Age of Gadget Catalogs</title>
+        <link rel="alternate" type="text/html"
+              href="https://cabel.com/2023/11/06/dak-and-the-golden-age-of-gadget-catalogs/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v4x"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/11/11/cabel-sasser-dak"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40353</id>
+        <published>2023-11-11T23:29:53Z</published>
+        <updated>2023-11-11T23:34:20Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Where to start with this glorious, decade-in-the-making post from Cabel Sasser? So many old gadgets that still look awesome today. So many others that now look utterly ridiculous. But I think my favorite part is Sasser’s appreciation for Drew Kaplan’s writing style. The catalogs looked utterly professional but the writing was so personal. It was like blogging, but in print.</p>
+
+<div>
+<a  title="Permanent link to ‘DAK and the Golden Age of Gadget Catalogs’"  href="https://daringfireball.net/linked/2023/11/11/cabel-sasser-dak">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+
+        <link rel="alternate" type="text/html"
+              href="https://daringfireball.net/2023/11/vision_pro_spatial_video_and_panoramic_photos"/>
+        <link rel="shorturl" href="http://df4.us/v4w"/>
+        <id>tag:daringfireball.net,2023://1.40352</id>
+        <published>2023-11-11T02:46:59Z</published>
+        <updated>2023-11-11T18:55:47Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <summary type="text">Hands-on experience capturing spatial video using an iPhone, and watching it using a Vision
+            Pro.
+        </summary>
+        <content type="html" xml:base="https://daringfireball.net/" xml:lang="en"><![CDATA[
+<p>Yesterday <a href="https://daringfireball.net/linked/2023/11/09/ios-17-2-beta-2-spatial-video">Apple released developer beta 2 of iOS 17.2</a>, the first version of iOS to include support for capturing spatial video with iPhone 15 Pro models. Today came the public beta, enabling the same feature. Apple invited me to New York yesterday, not merely to preview capturing spatial video using an iPhone, but to experience watching those spatial videos using a Vision Pro.</p>
+
+<p>The experience was, like my first Vision Pro demo back at WWDC in June, astonishing.</p>
+
+<h2>Capturing Spatial Video on an iPhone</h2>
+
+<p>Shooting spatial video on an iPhone 15 Pro is easy. The feature is — for now at least — disabled by default, and can be enabled in Settings → Camera → Formats. The option is labeled “Spatial Video for Apple Vision Pro”, which is apt, because (again, for now at least) spatial video only looks different from non-spatial video when playing it back on Vision Pro. When viewed on any other device it just looks like a regular flat video.</p>
+
+<p>Once enabled, you can toggle spatial video capture in the Camera app whenever you’re in the regular Video mode. It’s very much akin to the toggle for Live Photos when taking still photos, or the Action mode toggle for video — not a separate mode in the main horizontal mode switcher in Camera, but a toggle button in the main Video mode.</p>
+
+<p>When capturing spatial video, you have no choice regarding resolution, frame rate, or file format. All spatial video is captured at 1080p, 30 fps, in the HEVC file format.<sup id="fnr1-2023-11-10"><a href="#fn1-2023-11-10">1</a></sup> You also need to hold the phone horizontally, to put the two capturing lenses on the same plane. The iPhone uses the main (1×) and ultra wide (0.5×) lenses for capture when shooting spatial video, and in fact, Apple changed the arrangement of the three lenses on the iPhone 15 Pro in part to support this feature. (On previous iPhone Pro models, when held horizontally, the ultra wide camera was on the bottom, and the main and telephoto lenses were next to each other on the top.)</p>
+
+<p>I believe resolution is limited to 1080p because to get an image from the ultra wide 0.5× camera that is the equivalent field of view as from the main 1× camera, it needs to crop the ultra wide image significantly. The ultra wide camera has a mere 12 MP sensor, so there just aren’t enough pixels to crop a 1× equivalent field of view from the center of the sensor and get a 4K image.</p>
+
+<p>There are two downsides to shooting spatial video with your iPhone. First, the aforementioned 1080p resolution and 30 fps frame rate. I’ve been shooting 4K video by default for years, because why not? I wish we could capture spatial video at 4K, but alas, not yet. The second downside to shooting spatial video is that it effectively doubles the file size compared to non-spatial 1080p, for the obvious reason that each spatial video contains two 1080p video streams. That file-size doubling is a small price to pay — the videos are still smaller than non-spatial 4K 30 fps video.<sup id="fnr2-2023-11-10"><a href="#fn2-2023-11-10">2</a></sup></p>
+
+<p>Really, it’s just no big deal to capture spatial video on your iPhone. If the toggle button is off, you capture regular video with all the regular options for resolution (720p/1080p/4K) and frame rates (24/30/60). If the toggle for spatial video is on — and when on it’s yellow, impossible to miss — you lose those choices but it just looks like capturing a regular video. And when you play it back, or share it with others who are viewing it on regular devices like their phones or computers, it just looks like a regular flat video.</p>
+
+<p>If you own an iPhone 15 Pro, there’s no good reason not to start capturing spatial videos this year — like, say, this holiday season — to record any sort of moments that feel like something you might want to experience as “memories” with a Vision headset in the future, even if you don’t plan to buy the first-generation Vision Pro next year.</p>
+
+<h2>Viewing Spatial Video on Vision Pro</h2>
+
+<p>Before my demo, I provided Apple with my eyeglasses prescription, and the Vision Pro headset I used had appropriate corrective lenses in place. As with my demo back in June, everything I saw through the headset looked incredibly sharp.</p>
+
+<p>Apple has improved and streamlined the onboarding/calibration process significantly since June. There are a few steps where you’re presented with a series of dots in a big circle floating in front of you, like the hour indexes on a clock. As you look at each circle, it lights up a bit, and you do the finger tap gesture. It’s the Vision Pro’s way to calibrate that what it thinks you’re looking is what you actually are looking at. Once that calibration step was over — and it took just a minute or two — I was in, ready to go on the home screen of VisionOS. (And the precision of this calibration is amazing — UI elements can be placed relatively close to each other and it knows exactly which one you’re looking at when you tap. iOS UI design needs to be much more forgiving of our relatively fat fingertips than VisionOS UI design needs to be about the precision of our gaze.)</p>
+
+<p>My demo yesterday was expressly limited to photography in general, and spatial video in particular, and so my demo was, per Apple’s request, limited to the Photos app in VisionOS. It was tempting, at times, to see where else I could go and what else I could do. But there was so much to see and do in Photos alone that my demo — about 30 minutes in total wearing Vision Pro — raced by.</p>
+
+<p>Prior to separating us in smaller rooms for our time using Vision Pro, I was paired with Joanna Stern from The Wall Street Journal for a briefing on the details of spatial video capturing using the iPhones 15 Pro. We were each provided with a demo iPhone, and were allowed to capture our own spatial videos. We were in a spacious modern high-ceiling’d kitchen, bathed in natural light from large windows. A chef was busy preparing forms of sushi, and served as a model for us to shoot. Joanna and I also, of course, shot footage of each other, while we shot each other. It was very meta. The footage we captured ourselves was then preloaded onto the respective Vision Pro headsets we used for our demos.</p>
+
+<p>We were not permitted to capture spatial video on Vision Pro.<sup id="fnr3-2023-11-10"><a href="#fn3-2023-11-10">3</a></sup> However, our demo units had one video in the Photos library that was captured on Vision Pro — a video I had experienced before, back in June, of a group of twenty-somethings sitting around a fire pit at night, having fun in a chill atmosphere. There were also several other shot-by-Apple spatial videos which were captured using an iPhone 15 Pro.</p>
+
+<p>One obvious question: How different do spatial videos captured using iPhone 15 Pro look from those captured using a Vision Pro itself? Given that Apple provided only one example spatial video captured on Vision Pro, I don’t feel like I can fully answer that based on my experience yesterday. It did not seem like the differences were dramatic or significant. The spatial videos shot using iPhone 15 Pro that I experienced, including those I captured myself, seemed every bit as remarkable as the one captured using Vision Pro.</p>
+
+<p>Apple won’t come right out and say it but I do get the feeling that all things considered, spatial video captured using Vision Pro will be “better”. The iPhone might win out on image quality, given the fact that the 1× main camera on the iPhone 15 Pro is the single best camera system Apple makes, but the Vision Pro should win out on spatiality — <em>3D-ness</em> — because Vision Pro’s two lenses for spatial video capture are roughly as far apart from each other as human eyes. The two lenses used for capture on an iPhone are, of course, much closer to each other than any pair of human eyes. But despite how close the two lenses are to each other, the 3D effect is <em>very</em> compelling on spatial video captured on an iPhone. It’s somehow simultaneously very natural-looking and utterly uncanny.</p>
+
+<p>It’s a stunning effect and remarkable experience to watch them. And so the iPhone, overall, is going to win out as the “best” capture device for spatial video — even if footage captured on Vision Pro is technically superior — because, as the old adage states, the best camera is the one you have with you. I have my iPhone with me almost everywhere. That will never be even close to true for Vision Pro next year.</p>
+
+<p><a href="https://daringfireball.net/2023/06/first_impressions_of_vision_pro_and_visionos">Here’s what I wrote about spatial video back in June, after my first hands-on time with Vision Pro</a>:</p>
+
+<blockquote>
+  <p>Spatial photos and videos — photos and videos shot with the 
+Vision Pro itself — are viewed as a sort of hybrid between 2D 
+content and fully immersive 3D content. They don’t appear in a 
+crisply defined rectangle. Rather, they appear with a hazy 
+dream-like border around them. Like some sort of teleportation 
+magic spell in a Harry Potter movie or something. The effect 
+reminded me very much of Steven Spielberg’s <em>Minority Report</em>, in 
+the way that Tom Cruise’s character <a href="https://hachyderm.io/@tcook/110509376936866896">could obsessively watch 
+“memories” of his son</a>, and the way the psychic “precogs” 
+perceive their visions of murders about to occur. It’s like 
+watching a dream, but through a portal opened into another world. </p>
+</blockquote>
+
+<p>When you watch regular (non-spatial) videos using Vision Pro, or view regular still photography, the image appears in a crisply defined window in front of you. Spatial videos don’t appear like that at all. I can’t describe it any better today than I did in June: it’s like watching — and listening to — a dream, through a hazy-bordered portal opened into another world.</p>
+
+<p>Several factors contribute to that dream-like feel. Spatial videos don’t look <em>real</em>. It doesn’t look or feel like the subjects are truly there in front of you. That <em>is</em> true of the live pass-through video you see in Vision Pro, of the actual real world around you. That pass-through video of actual reality is so compelling, so realistic, that in both my demo experiences to date I forgot that I was always looking at video on screens in front of my eyes, not just looking through a pair of goggles with my eyes’ own view of the world around me.</p>
+
+<p>So Vision Pro is capable of presenting video that looks utterly real — because that’s exactly how pass-through video works and feels. Recorded spatial videos are different. For one thing, reality is not 30 fps, nor is it only 1080p. This makes spatial videos not look low-resolution or crude, per se, but rather more like movies. The upscaled 1080p imagery comes across as film-like grain, and the obviously-lower-than-reality frame rate conveys a movie-like feel as well. Higher resolution would look better, sure, but I’m not sure a higher frame rate would. Part of the magic of movies and TV is that 24 and 30 fps footage has a dream-like aspect to it.</p>
+
+<p>Nothing you’ve ever viewed on a screen, however, can prepare you for the experience of watching these spatial videos, especially the ones you will have shot yourself, of your own family and friends. They truly are more like memories than videos. The spatial videos I experienced yesterday that were shot by Apple looked <em>better</em> — framed by professional photographers, and featuring professional actors. But the ones I shot myself were more compelling, and took my breath away. There’s my friend, Joanna, right in front of me — like I could reach out and touch her — but that was 30 minutes ago, in a different room.</p>
+
+<p>Prepare to be moved, emotionally, when you experience this.</p>
+
+<h2>Panoramic and Still Photos</h2>
+
+<p>My briefing and demo experience yesterday was primarily about capturing spatial video on iPhone 15 Pro and watching it on Vision Pro, but my demo went through the entire Photos app experience in VisionOS.</p>
+
+<p>Plain old still photos look <em>amazing</em>. You can resize the virtual window in which you’re viewing photos to as large as you can practically desire. It’s not merely like having a 20-foot display — a size far more akin to that of a movie theater screen than a television. It’s like having a 20-foot display with retina quality resolution, and the best brightness and clarity of any display you’ve ever used. I spend so much time looking at my own iPhone-captured still photos on my iPhone display that it’s hard to believe how good they can look blown up to billboard-like dimensions. Just plain still photos, captured using an iPhone.</p>
+
+<p>And then there are panoramic photos. Apple first introduced Pano mode back in 2012, with the introduction of the iPhone 5. That feature has never struck me as better than “Kind of a cool trick”. In the decade since the feature has been available, I’ve only taken about 200 of them. They just look too unnatural, too optically distorted, when viewed on a flat display. And the more panoramic you make them, the more unnatural they look when viewed flat.</p>
+
+<p>Panoramic photos viewed using Vision Pro are breathtaking.</p>
+
+<p>There is no optical distortion at all, no fish-eye look. It just looks like you’re standing at the place where the panoramic photo was taken — and the wider the panoramic view at capture, the more compelling the playback experience is. It’s incredible, and now I wish I’d spent the last 10 years taking way more of them.</p>
+
+<p>As a basic rule, going forward, I plan to capture spatial videos of <em>people</em>, especially my family and dearest friends, and panoramic photos of <em>places</em> I visit. It’s like teleportation.</p>
+
+<h2>Miscellaneous Observations</h2>
+
+<p>The Vision Pro experience is highly dependent upon <a href="https://en.wikipedia.org/wiki/Foveated_rendering">foveated rendering</a>, which Wikipedia succinctly describes as “a rendering technique which uses an eye tracker integrated with a virtual reality headset to reduce the rendering workload by greatly reducing the image quality in the peripheral vision (outside of the zone gazed by the fovea).” Our retinas work like this too — we really only see crisply what falls on the maculas at the center of our retinas. Vision Pro really only renders at high resolution what we are directly staring at. The rest is lower-resolution, but that’s not a problem, because when you shift your gaze, Vision Pro is extraordinarily fast at updating the display.</p>
+
+<p>I noticed yesterday that if I darted my eyes from one side to the other fast enough, I could sort of catch it updating the foveation. Just for the briefest of moments, you can catch something at less than perfect resolution. I think. It is so fast fast fast at tracking your gaze and updating the displays that I can’t be sure. It’s just incredible, though, how detailed and high resolution the overall effect is. My demo yesterday was limited to the Photos app, but I came away more confident than ever that Vision Pro is going to be a great device for reading and writing — and thus, well, <em>work</em>.</p>
+
+<p>The sound quality of the speakers in the headset strap is impressive. The visual experience of Vision Pro is so striking — I mean, the product has “Vision” in its name for a reason — that the audio experience is easy to overlook, but it’s remarkably good.</p>
+
+<p>Navigating VisionOS with your gaze and finger taps is so natural. I’ve spent a grand total of about an hour, spread across two 30-minute demos, using Vision Pro, but I already feel at home using the OS. It’s an incredibly natural interaction model based simply on what you are looking at. My enthusiasm for this platform, and the future of spatial computing, could not be higher.</p>
+
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1-2023-11-10">
+<p>The HEVC spec allows for a single file to contain multiple video streams. That’s what Apple is doing, with metadata describing which stream is “left” and which is “right”. <a href="https://developer.apple.com/av-foundation/HEVC-Stereo-Video-Profile.pdf">Apple released preliminary documentation for this format</a> back in June, just after WWDC.&nbsp;<a href="#fnr1-2023-11-10"  class="footnoteBackLink"  title="Jump back to footnote 1 in the text.">&#x21A9;&#xFE0E;</a></p>
+</li>
+
+<li id="fn2-2023-11-10">
+<p>According to Apple, these are the average file sizes per minute of video:</p>
+
+<p>• Regular 1080p 30 fps: 65 MB <br />
+• Spatial 1080p 30 fps: 130 MB <br />
+• Regular 4K 30 fps: 190 MB&nbsp;<a href="#fnr2-2023-11-10"  class="footnoteBackLink"  title="Jump back to footnote 2 in the text.">&#x21A9;&#xFE0E;︎</a></p>
+</li>
+
+<li id="fn3-2023-11-10">
+
+<p>Paraphrased:</p>
+
+<p>“This is the digital crown. You’ll be using this today to adjust the immersiveness by turning it, and you’ll press the crown if you need to go back to the home screen. On the other side is the button you would use to capture photos or videos using Vision Pro. We won’t be using that button today.”</p>
+
+<p>“But does that button work? If I did press that button, would it capture a photo or video?”</p>
+
+<p>“Please don’t press that button.”&nbsp;<a href="#fnr3-2023-11-10"  class="footnoteBackLink"  title="Jump back to footnote 3 in the text.">&#x21A9;&#xFE0E;︎</a></p>
+</li>
+
+</ol>
+</div>
+
+
+
+    ]]></content>
+        <title>★ Vision Pro, Spatial Video, and Panoramic Photos</title>
+    </entry>
+    <entry>
+        <title>‘iOS 17.2 Hints at Sideloading Apps From Outside the App Store’</title>
+        <link rel="alternate" type="text/html" href="https://9to5mac.com/2023/11/10/ios-17-2-sideload-apps/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v4v"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/11/10/ios-17-sideloading"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40351</id>
+        <published>2023-11-10T21:44:12Z</published>
+        <updated>2023-11-10T22:26:18Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Filipe Espósito, with a nice scoop for 9to5Mac:</p>
+
+<blockquote>
+  <p>By analyzing the new API, we’ve learned that it has an extension 
+endpoint declared in the system, which means that other apps can 
+create extensions of this type. Digging even further, we found a 
+new, unused entitlement that will give third-party apps permission 
+to install other apps. In other words, this would allow developers 
+to create their own app stores. </p>
+
+<p>The API has basic controls for downloading, installing, and even 
+updating apps from external sources. It can also check whether an 
+app is compatible with a specific device or iOS version, which the 
+App Store already does. Again, this could easily be used to 
+modernize MDM solutions, but here’s another thing. </p>
+
+<p>We also found references to a region lock in this API, which 
+suggests that Apple could restrict it to specific countries. This 
+wouldn’t make sense for MDM solutions, but it does make sense for 
+enabling sideloading in particular countries only when required by 
+authorities — such as in the European Union. </p>
+</blockquote>
+
+<p>Makes sense. If Apple winds up being forced to allow sideloading in the EU, I think they will <em>only</em> allow it in the EU. Apple still has a pending appeal, but I doubt they’ll win, and the deadline for compliance is March of next year, which probably means iOS 17.3 or 17.4.</p>
+
+<div>
+<a  title="Permanent link to ‘‘iOS 17.2 Hints at Sideloading Apps From Outside the App Store’’"  href="https://daringfireball.net/linked/2023/11/10/ios-17-sideloading">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Dithering Today: A Preview of Spatial Video on Vision Pro</title>
+        <link rel="alternate" type="text/html" href="https://dithering.fm/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v4u"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/11/10/dithering-spatial-video"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40350</id>
+        <published>2023-11-10T18:00:21Z</published>
+        <updated>2023-11-10T21:57:26Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p><a href="https://dithering.fm/" class="noborder">
+<img
+    src = "https://daringfireball.net/misc/2023/11/dithering-cover-nov-2023.jpeg"
+    alt = "November 2023 cover art for Dithering, depicting a family in silhouette, holdings umbrellas, crossing the street on a rainy fall day."
+    width = "500"
+/></a></p>
+
+<p>New episodes usually drop at the crack of dawn, but today’s Dithering was held until 10am PT/1pm ET due to an embargo. Yesterday I got hands-on experience shooting spatial video using an iPhone 15 Pro and watching those videos that I shot — along with others, recorded by Apple — on a Vision Pro headset. I’m blown away once again. I’ll have a column describing my experience out later this afternoon, but Dithering subscribers can hear my thoughts now.</p>
+
+<p>Dithering as a standalone subscription costs just $5/month or $50/year. You get two episodes per week, each exactly 15 minutes long. You can also get it as part of my co-host Ben Thompson’s <a href="https://stratechery.com/stratechery-plus/">Stratechery Plus bundle</a> — a veritable steal at just $12/month or $120/year. I just love having an outlet like Dithering for weeks like this one. People who try Dithering seem to love it, too — we have remarkably little churn.</p>
+
+<div>
+<a  title="Permanent link to ‘Dithering Today: A Preview of Spatial Video on Vision Pro’"  href="https://daringfireball.net/linked/2023/11/10/dithering-spatial-video">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Humane Unveils AI Pin</title>
+        <link rel="alternate" type="text/html" href="https://hu.ma.ne/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v4s"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/11/09/humane-ai-pin"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40348</id>
+        <published>2023-11-09T21:29:55Z</published>
+        <updated>2023-11-10T17:58:44Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>10-minute intro video from Humane co-founders Imran Chaudhri and Bethany Bongiorno. Really curious to see reviews of this. They really do mean for this to replace, not supplement, your phone.</p>
+
+<div>
+<a  title="Permanent link to ‘Humane Unveils AI Pin’"  href="https://daringfireball.net/linked/2023/11/09/humane-ai-pin">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>iOS 17.2 Beta 2 Enables Capturing Spatial Video on iPhones 15 Pro</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.macrumors.com/2023/11/09/ios-17-2-spatial-video-recording/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v4r"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/11/09/ios-17-2-beta-2-spatial-video"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40347</id>
+        <published>2023-11-09T19:48:13Z</published>
+        <updated>2023-11-09T19:56:09Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Juli Clover, MacRumors:</p>
+
+<blockquote>
+  <p>The second beta of iOS 17.2 adds a new feature that allows an iPhone 15 Pro or ‌iPhone 15 Pro‌ Max to record Spatial Video that can be viewed in the Photos app on Apple’s forthcoming Apple Vision Pro headset.</p>
+
+<p>Spatial Video recording can be enabled by going to the Settings app, tapping into the Camera section, selecting Formats, and toggling on “Spatial Video for ‌Apple Vision Pro‌.”</p>
+</blockquote>
+
+<p>It’s off by default, but I think will be <em>on</em> by default in the future, if you have a Vision headset associated with your iCloud account. When enabled, you get an extra button in the viewfinder area of the Camera app when you’re in Video mode, similar to the Macro toggle or the toggle for Action mode. Very simple. Spatial videos captured on an iPhone are always and only 1080p / 30fps. And when you view them on a normal screen — i.e. any device other than a Vision headset — they just look like regular 1080p videos.</p>
+
+<div>
+<a  title="Permanent link to ‘iOS 17.2 Beta 2 Enables Capturing Spatial Video on iPhones 15 Pro’"  href="https://daringfireball.net/linked/2023/11/09/ios-17-2-beta-2-spatial-video">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Humane’s AI Pin Costs $699 and Requires a $24/Month Subscription</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.theverge.com/2023/11/8/23953022/humane-ai-pin-price-specs-leak"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v4q"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/11/08/humane-verge-scoop"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40346</id>
+        <published>2023-11-08T23:02:19Z</published>
+        <updated>2023-11-08T23:05:14Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>David Pierce at The Verge:</p>
+
+<blockquote>
+  <p>Humane has been teasing its first device, the AI Pin, for most of this year. It’s scheduled to launch the Pin on Thursday, but The Verge has obtained documents detailing practically everything about the device ahead of its official launch. What they show is that Humane, the company noisily promoting a world after smartphones, is about to launch what amounts to a $699 wearable smartphone without a screen that has a $24 a month subscription fee, and which runs on a Humane-branded version of T-Mobile’s network with access to AI models from Microsoft and OpenAI.</p>
+</blockquote>
+
+<p>I sincerely hope I’m wrong, but this sounds like the Quibi of AI gadgets.</p>
+
+<div>
+<a  title="Permanent link to ‘Humane’s AI Pin Costs $699 and Requires a $24/Month Subscription’"  href="https://daringfireball.net/linked/2023/11/08/humane-verge-scoop">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>‘Unexpected Baskerville: The Story of LoveFrom Serif’</title>
+        <link rel="alternate" type="text/html"
+              href="https://letterformarchive.org/shop/unexpected-baskerville-the-story-of-lovefrom-serif/#video"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v4p"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/11/07/unexpected-baskerville"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40345</id>
+        <published>2023-11-08T00:04:54Z</published>
+        <updated>2023-11-08T00:04:54Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>You may recall back in June, <a href="https://daringfireball.net/linked/2023/06/29/lovefrom-serif">I linked to</a> a <a href="https://www.fastcompany.com/90888571/jony-ive-spent-the-last-4-years-perfecting-his-typeface-heres-why-hell-never-be-done">story by Mark Wilson</a> about the creation of LoveFrom Serif, a new modern revival of John Baskerville’s legendary type designs created by some of the designers behind Apple’s San Francisco.</p>
+
+<p>Designer Antonio Cavedoni presented a lecture on its design, and that video is now available. Splendid.</p>
+
+<div>
+<a  title="Permanent link to ‘‘Unexpected Baskerville: The Story of LoveFrom Serif’’"  href="https://daringfireball.net/linked/2023/11/07/unexpected-baskerville">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>New Features for Final Cut Pro for Mac and iPad</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.apple.com/newsroom/2023/11/final-cut-pro-for-mac-and-ipad-get-powerful-updates/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v4o"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/11/07/final-cut-pro-new-features"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40344</id>
+        <published>2023-11-07T23:01:32Z</published>
+        <updated>2023-11-07T23:33:29Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Apple Newsroom yesterday:</p>
+
+<blockquote>
+  <p>Today Apple announced updates to Final Cut Pro across Mac and 
+iPad, offering powerful new features that help streamline 
+workflows. Final Cut Pro now includes improvements in timeline 
+navigation and organization, as well as new ways to simplify 
+complex edits. The apps leverage the power-efficient performance 
+of Apple silicon along with an all-new machine learning model for 
+Object Tracker, and export speeds are turbocharged on Mac models 
+powered by multiple media engines. Final Cut Pro for iPad brings 
+new features to further enhance the portable Multi-Touch editing 
+experience, including support for voiceover recording, expanded 
+in-app content options, added color-grading presets, and workflow 
+improvements. These updates to Final Cut Pro will be available 
+later this month on the App Store. </p>
+</blockquote>
+
+<p><a href="https://daringfireball.net/linked/2023/11/02/tobin-bts-scary-fast">I mentioned last week</a> that video editors took notice that <a href="https://www.apple.com/newsroom/2023/10/behind-the-scenes-at-scary-fast-apples-keynote-event-shot-on-iphone/">Apple’s behind-the-scenes look</a> at their “Scary Fast” keynote showed the film being editing in Premiere Pro, not Final Cut Pro, and that it wasn’t helping allay the fears of Final Cut Pro devotees that Apple was losing interest in it, <em>a la</em> the <a href="https://www.dpreview.com/news/5576621302/apple-aperture-will-no-longer-work-after-macos-mojave">still-lamented Aperture</a>.</p>
+
+<p>It occurred to me then that the best evidence that Apple remains keenly committed to Final Cut Pro is that they (finally?) ported it, along with Logic Pro, to the iPad <a href="https://daringfireball.net/linked/2023/05/09/final-cut-pro-logic-pro-ipad">earlier this year</a> — and <a href="https://daringfireball.net/linked/2023/05/17/snell-final-cut-logic-ipad">that the iPad versions are good</a>.</p>
+
+<p>Now, as if on cue, Apple has announced significant feature updates to Final Cut Pro (<a href="https://www.apple.com/newsroom/2023/11/apple-supercharges-logic-pro-for-mac-and-ipad/">and Logic Pro</a>) for both Mac and iPad.</p>
+
+<div>
+<a  title="Permanent link to ‘New Features for Final Cut Pro for Mac and iPad’"  href="https://daringfireball.net/linked/2023/11/07/final-cut-pro-new-features">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>iOS Tip: ‘Smart Activation’ for Do Not Disturb Turns Off Notification During Screen Recordings</title>
+        <link rel="alternate" type="text/html" href="https://mastodon.social/@gruber/111370259598983988"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v4n"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/11/07/smart-activation-do-not-disturb"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40343</id>
+        <published>2023-11-07T22:24:31Z</published>
+        <updated>2023-11-08T16:28:22Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Earlier today I was making a screen recording on my iPhone to share with a friend, and during the recording, a notification for a text message arrived. It wasn’t particularly personal, but I made another take of the screen recording anyway. This has happened to me numerous times before — sort of a Murphy’s Law thing, like buttered toast always seeming to fall wrong-side down. It occurred to me that Do Not Disturb should turn on automatically when you’re recording your screen, and I posted the idea to Mastodon.</p>
+
+<p>Glad I did. Because <a href="https://social.panic.com/@cabel/111370655233510063">Cabel Sasser replied</a> that it already worked like that for him, and then Jason Walke — my favorite person in the world today — <a href="https://social.lol/@jwalke/111370698605974156">explained that this is enabled by turning on “Smart Activation” for Do Not Disturb mode</a>.</p>
+
+<p>Go to Settings → Focus → Do Not Disturb, and under “Set a Schedule”, tap Add Schedule and enable Smart Activation. Now, when you start a screen recording, Do Not Disturb turns on automatically, and it turns itself off a few seconds after you finish recording. I’m not sure what else triggers Smart Activation — the description in Settings is pretty vague — but for screen recordings this is just what I wanted.</p>
+
+<p>(<a href="https://mastodon.social/@rjj/111370303568327667">Ryan Jones chimed in with a good idea</a>: an option to automatically beautify the status bar in screen recordings: removing any extraneous icons (like the Do Not Disturb moon), showing perfect cellular and Wi-Fi signal strength, and having the battery show 100 percent. “Presenter Mode” more or less.)</p>
+
+<div>
+<a  title="Permanent link to ‘iOS Tip: ‘Smart Activation’ for Do Not Disturb Turns Off Notification During Screen Recordings’"  href="https://daringfireball.net/linked/2023/11/07/smart-activation-do-not-disturb">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Google Photos’s Magic Editor Has Content Guardrails</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.androidauthority.com/google-photos-magic-editor-prohibited-edits-3383291/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v4m"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/11/07/google-photos-magic-editor-guardrails"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40342</id>
+        <published>2023-11-07T20:33:13Z</published>
+        <updated>2023-11-07T21:18:06Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Aamir Siddiqui, Android Authority:</p>
+
+<blockquote>
+  <p>Summarizing the strings above, it seems Magic Editor will refuse to edit:</p>
+
+<ul>
+<li>Photos of ID cards, receipts, and other documents that violate Google’s GenAI terms.</li>
+<li>Images with personally identifiable information.</li>
+<li>Human faces and body parts.</li>
+<li>Large selections or selections that need a lot of data to be generated.</li>
+</ul>
+</blockquote>
+
+<p>Reminiscent of the way that photocopiers and image editing apps like Photoshop try (and largely succeed) at <a href="https://www.businessinsider.com/you-cannot-photocopy-or-photoshop-money-2016-6">not allowing you to edit or manipulate images of currency</a>.</p>
+
+<div>
+<a  title="Permanent link to ‘Google Photos’s Magic Editor Has Content Guardrails’"  href="https://daringfireball.net/linked/2023/11/07/google-photos-magic-editor-guardrails">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Trump’s Dark Plans for a Second Term</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.washingtonpost.com/politics/2023/11/05/trump-revenge-second-term/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v4l"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/11/07/trump-dark-plans"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40341</id>
+        <published>2023-11-07T19:16:09Z</published>
+        <updated>2023-11-07T19:16:17Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Isaac Arnsdorf, Josh Dawsey, and Devlin Barrett, reporting Sunday for The Washington Post:</p>
+
+<blockquote>
+  <p>Donald Trump and his allies have begun mapping out specific plans 
+for using the federal government to punish critics and opponents 
+should he win a second term, with the former president naming 
+individuals he wants to investigate or prosecute and his 
+associates drafting plans to potentially invoke the Insurrection 
+Act on his first day in office to allow him to deploy the military 
+against civil demonstrations. </p>
+
+<p>In private, Trump has told advisers and friends in recent months 
+that he wants the Justice Department to investigate onetime 
+officials and allies who have become critical of his time in 
+office, including his former chief of staff, John F. Kelly, and 
+former attorney general William P. Barr, as well as his 
+ex-attorney Ty Cobb and former Joint Chiefs of Staff chairman Gen. 
+Mark A. Milley, according to people who have talked to him, who, 
+like others, spoke on the condition of anonymity to describe 
+private conversations. Trump has also talked of prosecuting 
+officials at the FBI and Justice Department, a person familiar 
+with the matter said. </p>
+
+<p>In public, Trump has vowed to appoint a special prosecutor to “go 
+after” President Biden and his family. The former president has 
+frequently made corruption accusations against them that are <a href="https://www.washingtonpost.com/elections/2023/09/07/trump-biden-false-attacks-2024-presidential-race/">not 
+supported by available 
+evidence</a>. </p>
+
+<p>To facilitate Trump’s ability to direct Justice Department 
+actions, his associates have been drafting plans to dispense with 
+50 years of policy and practice intended to shield criminal 
+prosecutions from political considerations. Critics have called 
+such ideas dangerous and unconstitutional. </p>
+</blockquote>
+
+<p>Trump and his supporters remain the biggest threat to America, and to the concept of liberal democracy itself, the world has ever seen. These are plans for a dictatorship, pure and simple.</p>
+
+<p><a href="https://www.theatlantic.com/newsletters/archive/2023/11/trump-plot-military-election/675922/">Tom Nichols, writing at The Atlantic</a>:</p>
+
+<blockquote>
+  <p>Trump is, to put it mildly, an emotionally disordered man. But 
+such men are usually only a hazard to their families and 
+themselves, especially if they lack money or power. Trump has 
+both, but even more important, he has people around him willing to 
+use that money and power against American democracy. As the Post 
+report reveals, these henchmen are now trying to turn Trump’s 
+ravings into an autocratic program; without their aid, Trump would 
+be just another motormouthed New York executive living on 
+inherited money and holding court over a charred steak while the 
+restaurant staff roll their eyes. With their support, however, he 
+is an ongoing menace to the entire democratic order of the United 
+States. [...] </p>
+
+<p>The coalition of prodemocracy voters — I am one of them — is 
+shocked at the relative lack of outrage when Trump says hideous 
+things. (The media’s complacency is a big part of this problem, 
+but that’s a subject for another day.) For many of us, it feels as 
+if Trump put up a billboard in Times Square that says “I will end 
+democracy and I will in fact shoot you in the middle of Fifth 
+Avenue if that’s what it takes to stay in power” and no one 
+noticed. </p>
+</blockquote>
+
+<div>
+<a  title="Permanent link to ‘Trump’s Dark Plans for a Second Term’"  href="https://daringfireball.net/linked/2023/11/07/trump-dark-plans">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Daniel Dilger Was Rescued After a Bad Accident Thanks to Apple Watch Crash Detection</title>
+        <link rel="alternate" type="text/html"
+              href="https://appleinsider.com/articles/23/11/04/apples-crash-detection-saves-another-life-mine"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v4k"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/11/07/dilger-crash-detection"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40340</id>
+        <published>2023-11-07T18:37:46Z</published>
+        <updated>2023-11-07T18:38:06Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Daniel Eran Dilger, writing at AppleInsider:</p>
+
+<blockquote>
+  <p>I’m not the first person to be saved by paramedics alerted by an 
+emergency call initiated by Crash Detection. There have also been 
+complaints of emergency workers inconvenienced by false alert 
+calls related to events <a href="https://appleinsider.com/articles/22/10/09/rollercoaster-repeatedly-triggers-iphone-14s-crash-detection">including roller coasters</a>, where 
+the user didn’t cancel the emergency call in time. </p>
+
+<p>But I literally have some skin in the game with this new feature 
+because Crash Detection called in an emergency response for me as 
+I was unconscious and bleeding on the sidewalk, alone and late at 
+night. According to calls it made, I was picked up and on my way 
+to an emergency room within half an hour. </p>
+
+<p>Because my accident occurred in a potentially dangerous and 
+somewhat secluded area, I would likely have bled to death if the 
+call hadn’t been automatically placed. </p>
+</blockquote>
+
+<p>Man, what a harrowing story. Best wishes to Dilger for a speedy recovery.</p>
+
+<div>
+<a  title="Permanent link to ‘Daniel Dilger Was Rescued After a Bad Accident Thanks to Apple Watch Crash Detection’"  href="https://daringfireball.net/linked/2023/11/07/dilger-crash-detection">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>OpenAI DevDay Keynote</title>
+        <link rel="alternate" type="text/html" href="https://www.youtube.com/watch?v=U9mJuUkhUzk"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v4j"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/11/07/openai-devday-keynote"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40339</id>
+        <published>2023-11-07T05:57:51Z</published>
+        <updated>2023-11-07T18:23:01Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Strong, tight, 45-minute keynote. Highlights:</p>
+
+<ul>
+<li>Their next-generation model, <a href="https://openai.com/blog/new-models-and-developer-products-announced-at-devday">GPT-4 Turbo</a>, which is both smarter and cheaper to use than GPT-4.</li>
+<li>“<a href="https://openai.com/blog/introducing-gpts">GPTs</a>”, their name for no-code custom AI agents. There are an awful lot of AI startups whose entire purposed seemed to be just this.</li>
+</ul>
+
+<p>Really enjoyed seeing live demos on stage, and Sam Altman came across well. Smart, engaged, and honest. Worth watching.</p>
+
+<div>
+<a  title="Permanent link to ‘OpenAI DevDay Keynote’"  href="https://daringfireball.net/linked/2023/11/07/openai-devday-keynote">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+
+        <link rel="alternate" type="text/html"
+              href="https://tailscale.com/?utm_source=DaringFireball&amp;utm_medium=paid-referral&amp;utm_campaign=2023-2H"/>
+        <link rel="shorturl" href="http://df4.us/v4i"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/feeds/sponsors/2023/11/tailscale_4"/>
+        <id>tag:daringfireball.net,2023:/feeds/sponsors//11.40338</id>
+        <author>
+            <name>Daring Fireball Department of Commerce</name>
+        </author>
+        <published>2023-11-07T00:50:52Z</published>
+        <updated>2023-11-07T00:50:53Z</updated>
+        <content type="html" xml:base="https://daringfireball.net/feeds/sponsors/" xml:lang="en"><![CDATA[
+<p>Simplify your Kubernetes networking story with our new operator. <a href="https://tailscale.com/?utm_source=DaringFireball&amp;utm_medium=paid-referral&amp;utm_campaign=2023-2H">Try Tailscale for Kubernetes now</a>.</p>
+
+<div>
+<a  title="Permanent link to ‘Tailscale’"  href="https://daringfireball.net/feeds/sponsors/2023/11/tailscale_4">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+        <title>[Sponsor] Tailscale</title>
+    </entry>
+    <entry>
+        <title>Monica Chin on the Microsoft Surface Laptop Go 3: ‘Why Does This Exist?’</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.theverge.com/23906932/microsoft-surface-laptop-go-3-review"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v4h"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/11/06/chin-microsoft-surface-why-does-it-exist"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40337</id>
+        <published>2023-11-07T00:19:11Z</published>
+        <updated>2023-11-07T00:19:12Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>A $999 laptop that maxes out at 256 GB of storage and has a 1536 × 1024 display — yeah, I’m wondering why this exists in 2023, too. And I’m no longer wondering <a href="https://www.cnet.com/tech/services-and-software/panos-panay-godfather-of-the-surface-leaves-microsoft-for-amazon/">why Panos Panay left Microsoft for Amazon</a>.</p>
+
+<div>
+<a  title="Permanent link to ‘Monica Chin on the Microsoft Surface Laptop Go 3: ‘Why Does This Exist?’’"  href="https://daringfireball.net/linked/2023/11/06/chin-microsoft-surface-why-does-it-exist">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+
+        <link rel="alternate" type="text/html" href="https://daringfireball.net/2023/11/the_2023_m3_macbook_pros"/>
+        <link rel="shorturl" href="http://df4.us/v4g"/>
+        <id>tag:daringfireball.net,2023://1.40336</id>
+        <published>2023-11-06T19:49:22Z</published>
+        <updated>2023-11-10T22:31:54Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <summary type="text">These new 14- and 16-inch MacBook Pros are the best laptops ever made. Not just the best
+            MacBooks, the best laptops, full stop, and I don’t think it’s even close.
+        </summary>
+        <content type="html" xml:base="https://daringfireball.net/" xml:lang="en"><![CDATA[
+<p>I’m glad that two weeks ago <a href="https://daringfireball.net/2023/10/apple_pencil_usb-c" title="There's a New Apple Pencil With a USB-C Port, and My Thoughts Turn to the Complexity of the Overall iPad Lineup">I griped about the complexity of the current iPad lineup</a>. Three Pencils that are compatible with a complicated matrix of iPad models. iPad Pro models with the front-facing camera on the short side, but a 10th-generation non-pro iPad that’s been updated with a front-facing camera on the long side, where pro users want it. It’s a jumble.</p>
+
+<p>I’m glad because now I have something to point to as a counterexample, a broad product lineup that is, with the introduction of the M3 family of chips, nearly perfect: MacBooks. Here’s how I see Apple’s lineup:<sup id="fnr1-2023-11-06"><a href="#fn1-2023-11-06">1</a></sup></p>
+
+<ul>
+<li><strong>Budget:</strong> 13-inch M1 MacBook Air: $999</li>
+<li><strong>Consumer:</strong> M2 MacBook Air:
+<ul><li>13-inch: $1,100</li>
+<li>15-inch: $1,300</li></ul></li>
+<li><strong>Pro Jr.:</strong> 14-inch M3 MacBook Pro: $1600</li>
+<li><strong>Professional Pro:</strong> M3 Pro MacBook Pro
+<ul><li>14-inch: $2,000</li>
+<li>16-inch: $2,500</li></ul></li>
+<li><strong>Workstation-Class:</strong> M3 Max MacBook Pro
+<ul><li>14-inch: $3,200</li>
+<li>16-inch: $3,500</li></ul></li>
+</ul>
+
+<p>This lineup is clear, crisp, and good. MacBook Airs in the $1,000–$2,000 range; MacBook Pros with M3 Pro in the $2,000–$3,000 range, and MacBook Pros with the M3 Max in the $3,000–<em>$yowza</em> range. (A maxed-out 16-inch MBP with M3 Max (16-core CPU, 40-core GPU), 128 GB RAM, and 8 TB SSD costs $7,200.)</p>
+
+<p>The wildcard in Apple’s MacBook lineup is what I’m cheekily calling the “Pro Jr.” model. For the last few years, that’s been the 13-inch MacBook Pro with Touch Bar — a laptop that most expert users thought shouldn’t even exist, but which Apple has stated was the company’s second-best-selling laptop. There are a <em>lot</em> of buyers who want a MacBook Pro, even if they don’t need — or want to pay for — truly professional performance specs.</p>
+
+<p>With the introduction last week of the 14-inch MacBook Pro with the regular M3 chip, Apple has fixed this tier. I often note that Apple means several different things when it describes a product as “pro” — it sometimes means <em>professional</em>, but sometimes means <em>nicer</em> or <em>better</em>. The regular M3 MacBook Pro exemplifies this latter meaning. It has the same industry-best 14-inch display as its M3 Pro and M3 Max siblings, the same excellent 6-speaker sound system, and the same modern form factor. It is, by all appearances, a MacBook worthy of the name “MacBook Pro” heading into 2024.<sup id="fnr2-2023-11-06"><a href="#fn2-2023-11-06">2</a></sup></p>
+
+<p>One key difference between the new 14-inch M3 MacBook Pro and the 13-inch M2 MacBook Pro it replaces in the lineup is price: the 13-inch M2 MBP started at $1,300; the new 14-inch M3 MBP starts at $1,600. That’s a significant jump, but it makes sense. First, the new-ish 15-inch M2 MacBook Air — introduced this year at WWDC in June — now occupies the “starts at $1,300” tier in the price matrix. Second, it <em>is</em> named “Pro”.</p>
+
+<h2>The M3 Pro and M3 Max</h2>
+
+<p>With the M1 and M2 generations of Apple Silicon, consumer-level Macs debuted months ahead of the professional models with the Pro and Max (and for desktop systems, Ultra) variants of the chips:</p>
+
+<ul>
+<li><p>The M1 chips debuted in November 2020 <a href="https://www.apple.com/newsroom/2020/11/introducing-the-next-generation-of-mac/">with the MacBook Air, 13-inch MacBook Pro, and Mac Mini</a>. These Macs all had unchanged form factors from their Intel-chip predecessors.</p></li>
+<li><p>The M1 Pro and Max, along with the new 14- and 16-inch “notched display” form factors, <a href="https://www.apple.com/newsroom/2021/10/introducing-m1-pro-and-m1-max-the-most-powerful-chips-apple-has-ever-built/">debuted almost a year later in October 2021</a>.</p></li>
+<li><p><a href="https://www.apple.com/newsroom/2022/07/all-new-macbook-air-with-m2-available-to-order-starting-friday-july-8/">The M2 chip debuted in July 2022, in the new-form-factor 13-inch MacBook Air</a>. That M2 chip also appeared in the 13-inch MacBook Pro with Touch Bar at the same time.</p></li>
+<li><p>The M2 Pro and Max <a href="https://www.apple.com/newsroom/2023/01/apple-unveils-macbook-pro-featuring-m2-pro-and-m2-max/">debuted in updated 14- and 16-inch MacBook Pros (along with the M2 Pro in a Mac Mini) in January of 2023</a>. The general consensus is that these machines were late, and were originally intended for late 2022, but the fact is they shipped in January this year.</p></li>
+</ul>
+
+<p>So with the M1 generation, the Pro and Max models shipped almost a year after the plain M1. With the M2’s, the Pro and Max models shipped about 6 months after the plain M2.</p>
+
+<p>Now, with the M3 generation, the M3, M3 Pro, and M3 Max debuted alongside each other, and the plain M3 is debuting <em>only</em> in the new $1,600 “Pro Jr.” 14-inch MacBook Pro. All things considered, this makes sense: you’d think that the first laptops to get a new generation of chips would be the premium ones, not the consumer-priced ones. I suspect that what we saw with the M1 and M2 generations was a byproduct of Apple silicon being new — that the nature of launching a new PC chip architecture was such that Apple went with the “easier” chips first, the “harder” chips after. But now that they’ve been around this block a few times, having successfully bootstrapped an entirely new PC architecture, they’ve reached the point where they’re able to lead with their most important M-series chips: pro chips for pro MacBooks.</p>
+
+<p>I expect that we’ll see M3 MacBook Airs in the spring, either at a special event in March or April, or at WWDC.<sup id="fnr3-2023-11-06"><a href="#fn3-2023-11-06">3</a></sup> And that’s probably the same time we’ll see the desktop lineup — Mini, Studio, and Pro — move to the M3 series as well. (Even if the M3 Ultra is “just” two M3 Maxes bridged together, that should be a pretty good chip, with up to 32 CPU cores, 80 GPU cores, and a RAM cap of 256 GB. If the M3 Ultra is <em>more</em> than that... get your popcorn.)</p>
+
+<p>Further, I think this will be the pattern henceforth, for the M4, M5, and future generations: MacBook Pros first, then MacBook Airs and desktops after. It simply makes more sense marketing-wise. The MacBook Pros are the performance-optimized laptops, and pro laptops far outsell pro desktops.</p>
+
+<p>With the M1 and M2 generations, the Pro chip was basically half of a Max chip. That’s not true with the M3 chips. In broad strokes, the M3 Pro is more like a beefed up regular M3, and the M3 Max is a different beast entirely. Looking at CPUs, split by performance and efficiency cores, here are the best configurations for each chip:</p>
+
+<ul>
+<li>M3: 4/4</li>
+<li>M3 Pro: 6/6</li>
+<li>M3 Max: 12/4</li>
+</ul>
+
+<p>The M3 Pro models are geared toward what I think is the sweet spot for MacBook Pro buyers, with a balance between performance and efficiency cores. The M3 Max models are clearly geared toward professionals who demand the highest performance available. 16 total CPU cores doesn’t sound like that many more than 12, but the M3 Max cores aren’t split evenly between performance and efficiency — they’re skewed heavily toward performance cores.</p>
+
+<p>There are also lesser (presumably, <a href="https://www.tomshardware.com/reviews/glossary-binning-definition,5892.html">binned</a>) variants of the M3 Pro (11 total CPU cores: 5 performance cores/6 efficiency; 14-core GPU) and M3 Max (14 total CPU cores: 10 performance, 4 efficiency; 30-core GPU). And the RAM options for all of these chips vary, both in bandwidth and capacity:</p>
+
+<ul>
+<li><strong>M3:</strong> 2 RAM chips, 100 GB/s memory bandwidth:
+<ul><li>2 × 4 GB = 8 GB</li>
+<li>2 × 8 GB = 16 GB</li>
+<li>2 × 12 GB = 24 GB</li></ul></li>
+<li><strong>M3 Pro:</strong> 3 RAM chips, 150 GB/s memory bandwidth:
+<ul><li>3 × 6 GB = 18 GB</li>
+<li>3 × 12 GB = 36 GB</li></ul></li>
+<li><strong>M3 Max with 14-core CPU:</strong> 3 RAM chips, 300 GB/s memory bandwidth:
+<ul><li>3 × 12 GB = 36 GB</li>
+<li>3 × 32 GB = 96 GB</li></ul></li>
+<li><strong>M3 Max with 16-core CPU:</strong> 4 RAM chips, 400 GB/s memory bandwidth:
+<ul><li>4 × 12 GB = 48 GB</li>
+<li>4 × 16 GB = 64 GB</li>
+<li>4 × 32 GB = 128 GB</li></ul></li>
+</ul>
+
+<p>Those RAM options also make clear that the M3 Pro is more like a beefed-up regular M3, and the M3 Max a different beast. The M3 Pro offers options with a little more RAM that’s 1.5× faster than the baseline M3. The M3 Max offers options with a <em>lot</em> more RAM that’s 3× or 4× faster.</p>
+
+<p>At first it might seem overwhelming to see that the “M3 family of MacBook Pros” supports RAM tiers of 8, 16, 18, 24, 36, 48, 64, 96, and a whopping 128 GB of RAM. But once you zero in on a specific CPU, you’ve really only got two or three choices for RAM. My only complaints about RAM:</p>
+
+<ul>
+<li><p>It would be nice if the base M3 model started at 16 GB, not 8 GB. 8 GB doesn’t feel “pro” in any sense of the word. But we can’t ignore Apple’s profit margins and the siren song, marketing-wise, of hitting lower price points. Keeping the profit margins the same but bumping the base RAM to 16 GB would mean the entry model would start at $1,800; keeping the price at $1,600 but bumping the RAM to 16 GB would eat significantly into the margins for that model — which model, again, is Apple’s second-best-selling Mac. We all love to spend Tim Cook’s money, but he’s the one who’s been running the most profitable company in the world for over a decade. If you’re offended by a mere 8 GB of RAM, pony up the extra $200.</p></li>
+<li><p>I personally fall into the category where my number one performance need is RAM, because I tend to keep open dozens of apps and hundreds of Safari tabs. In terms of my CPU and GPU needs, I don’t think I’d notice the difference between an M3 Pro and M3 Max. But to get a shitload of RAM (that’s a computer science term), you need to buy an M3 Max model. I wish the M3 Pro had at least one more RAM configuration, say, 3 × 16 GB = 48 GB. That would still leave the 64-GB-and-up configurations to the M3 Max, but would be a nice option for people whose biggest power-user need is RAM.</p></li>
+</ul>
+
+<p>None of these extreme options come cheap. The 14-inch MacBook Pro with the 16-core M3 Max and 40-core GPU starts at $3,700; the 16-inch model with the same chip starts at a cool $4,000. The <em>base</em> RAM for that chip is 48 GB — which is double the <em>maximum</em> RAM of the regular M3. Upgrading from 48 to 64 GB RAM costs $200 (a veritable pittance for a roughly $4,000 computer); upgrading from 48 to 128 GB, though, costs $1,000.</p>
+
+<h2>Performance</h2>
+
+<p>I’ve spent the last five days testing a 14-inch MacBook Pro with the M3 Max, with the 16-core CPU, 40-core GPU, 64 GB RAM, and a 2 TB SSD. That’s a $4,300 configuration. Not cheap, but you really do get what you pay for: this machine absolutely screams.</p>
+
+<p>My favorite benchmark is <a href="https://browserbench.org/Speedometer2.1/">the browser-based Speedometer</a> (currently version 2.1). Web browser rendering is surprisingly resource-intensive — partially because modern HTML, CSS, and Javascript are remarkably complex, and partially because most web developers are remarkably untalented and careless programmers.<sup id="fnr4-2023-11-06"><a href="#fn4-2023-11-06">4</a></sup> Javascript is a single-threaded language, and so web browser rendering is inherently bound to the single-core performance of your CPU. Multi-core performance is important, but for most tasks for most users, single-core performance is more important. Speedometer measures that. My results, averaged over multiple runs:</p>
+
+<!-- Markdown Table 
+|                    | Safari 17.1 | Brave 1.60.110
+| ------------------ | :---------: | :------------:
+| M1 Max MacBook Pro | 465         | 425           
+| M3 Max MacBook Pro | 563         | 498           
+| *Factor*           | 1.21×       | 1.17×         
+-->
+
+<table>
+<thead>
+<tr>
+  <th></th>
+  <th align="right">Safari 17.1</th>
+  <th align="right">Brave 1.60.110</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>M1 Max MacBook Pro</td>
+  <td align="right">465</td>
+  <td align="right">425</td>
+</tr>
+<tr>
+  <td>M3 Max MacBook Pro</td>
+  <td align="right">563</td>
+  <td align="right">498</td>
+</tr>
+<tr>
+  <td><em>Factor</em></td>
+  <td align="right">1.21×</td>
+  <td align="right">1.17×</td>
+</tr>
+</tbody>
+</table>
+
+<p>The M1 Max MacBook Pro I’m using for comparison — my own — has 10 cores (8 performance, 2 efficiency) and 64 GB RAM. Both machines are running MacOS 14.1 Sonoma. (Point of comparison: my iPhone 15 Pro scores about 325 on the same Speedometer 2.1 benchmark. The days <a href="https://daringfireball.net/2020/03/the_2020_ipad_pros">when iPhones outperformed MacBook Pros at single-core performance</a> ended with the Intel era.)</p>
+
+<p><a href="https://www.geekbench.com/">Geekbench 6</a> results:</p>
+
+<!-- Markdown Table 
+|                    | Single  | Multi-core | GPU     |
+| ------------------ | ------: | ---------: | ------: |
+| M1 Max MacBook Pro | 2,430   | 12,740     | 118,000 |
+| M3 Max MacBook Pro | 3,200   | 21,220     | 155,000 |
+| *Factor*           | 1.32×   | 1.67×      | 1.31×   |
+-->
+
+<table>
+<thead>
+<tr>
+  <th></th>
+  <th align="right">Single</th>
+  <th align="right">Multi-core</th>
+  <th align="right">GPU</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>M1 Max MacBook Pro</td>
+  <td align="right">2,430</td>
+  <td align="right">12,740</td>
+  <td align="right">118,000</td>
+</tr>
+<tr>
+  <td>M3 Max MacBook Pro</td>
+  <td align="right">3,200</td>
+  <td align="right">21,220</td>
+  <td align="right">155,000</td>
+</tr>
+<tr>
+  <td><em>Factor</em></td>
+  <td align="right">1.32×</td>
+  <td align="right">1.67×</td>
+  <td align="right">1.31×</td>
+</tr>
+</tbody>
+</table>
+
+<p><a href="https://www.maxon.net/en/downloads/cinebench-2024-downloads">Cinebench 2014.1.0</a> results:</p>
+
+<!-- Markdown Table 
+|                    | Single  | Multi-core | GPU     |
+| ------------------ | ------: | ---------: | ------: |
+| M1 Max MacBook Pro |   112   |    823     |   4688 |
+| M3 Max MacBook Pro |   139   |   1,514     | 12,698 |
+| *Factor*           | 1.24×   | 1.84×      | 2.71×   |
+-->
+
+<table>
+<thead>
+<tr>
+  <th></th>
+  <th align="right">Single</th>
+  <th align="right">Multi-core</th>
+  <th align="right">GPU</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>M1 Max MacBook Pro</td>
+  <td align="right">112</td>
+  <td align="right">823</td>
+  <td align="right">4688</td>
+</tr>
+<tr>
+  <td>M3 Max MacBook Pro</td>
+  <td align="right">139</td>
+  <td align="right">1,514</td>
+  <td align="right">12,698</td>
+</tr>
+<tr>
+  <td><em>Factor</em></td>
+  <td align="right">1.24×</td>
+  <td align="right">1.84×</td>
+  <td align="right">2.71×</td>
+</tr>
+</tbody>
+</table>
+
+<p>These results are, broadly speaking, in line with each other, with the exception of the GPU discrepancy between Geekbench and Cinebench. I suspect Cinebench’s 2.7× difference will prove more representative of real-world results, but that’s just a hunch. But it seems fair to say that the M3 Max — and the M3 generation overall — is “faster enough”. These are very solid improvements from comparable MacBook Pros in just two years.</p>
+
+<p>Apple’s own marketing materials make several points of comparison to Intel-based Macs, which is where the new MacBook Pros truly shine. That’s not entirely fair to Intel, the company, because Intel’s laptop chips have, of course, gotten faster since Apple last shipped new Macs equipped with them in 2019. But it’s completely relevant to all Mac users still using Intel-based Macs, who, according to people I’ve spoken with at Apple, remain a majority of the Mac user base. The upgrade cycle for Macs is long — more like that for cars, than for phones. Those Mac users who’ve held off on upgrading to Apple silicon hardware are in for a treat when they do.</p>
+
+<p>I will note that the only time I’ve heard fan noise from the M3 Max MacBook Pro was while running Cinebench’s benchmarks. The machine was warm, not hot, but the fan was definitely audible. Cinebench’s are long-running benchmarks, each taking 10 minutes. In actual usage, I haven’t heard the fans even once, as usual for an Apple silicon Mac.</p>
+
+<h2>Space Black</h2>
+
+<p>My review unit is, unsurprisingly and thankfully, space black — a new color option that is only available with the M3 Pro and M3 Max models. All of the new M3-series MacBook Pros are available in silver, but the dark option for the regular M3 models is the same old space gray.</p>
+
+<p>Apple’s product photography is very fair in terms of accurately conveying just how dark this “space black” is — which, despite its name, is a very dark gray, not black. Why not <em>black</em> black, though? Apple has made plenty of aluminum devices that are truly black. The iPhone 7 — <a href="https://www.apple.com/newsroom/2016/09/apple-introduces-iphone-7-iphone-7-plus/">available in both glossy jet black and matte black</a> — comes to mind. I can only presume that this is the darkness that Apple thinks looks best for a MacBook Pro — that any darker would look worse, overall. There’s a part of me that would like to see it even darker, but this is dark enough that I can believe that even darker would not look better.</p>
+
+<p>I adore it. My personal Mac is a space gray 14-inch M1 Max MacBook Pro with 64 GB RAM (the maximum RAM allotment for that machine). I have no legitimate performance-related reasons to upgrade to an M3 Max MacBook Pro, but I want to, very much, simply because I crave this space black finish. Side by side, this space black M3 MacBook Pro makes my space gray M1 MacBook Pro look like silver. Space gray MacBooks are merely dark<em>er</em>. Space black, though not black, is actually <em>dark</em>. It’s a superficial aspect, but it matters. If it didn’t, Apple would just make them all silver and call it a day.</p>
+
+<p>One reason, it seems, that the space <em>gray</em> Apple offered for years, on both MacBooks and iPads, wasn’t darker is that darker shades of anodized aluminum are more prone to showing fingerprints. Visible fingerprints are a common complaint regarding the “midnight” M2 MacBook Airs, for example, which are in fact quite dark. <a href="https://www.youtube.com/watch?v=ctkW3V0Mh-k" title="Apple's “Scary Fast” event keynote.">When introducing</a> the new space black option last week, Apple specifically mentioned a new process they’ve developed to reduce the visibility of fingerprints. It is <em>not</em> a coating. It is instead a “breakthrough chemistry” that is part of the anodization process. It doesn’t feel any different at all to the touch, and it really does seem to alleviate the visibility of fingerprints. I’m calling it a legit breakthrough. I’ve not once cleaned this MacBook Pro’s surface since I’ve been using it, and other than some squint-and-you-can-see-them smudges on the palm rest area, there’s not much sign it’s been used.</p>
+
+<p>Also: the MagSafe power cable is black, and it looks cool as hell. If Darth Vader charged that chest plate dingus with MagSafe, this would be his cable.</p>
+
+<h2>Conclusion</h2>
+
+<p>These new 14- and 16-inch MacBook Pros are the best laptops ever made. Not just the best MacBooks, the best laptops, full stop, and I don’t think it’s even close. They look great and feel great. They have excellent keyboards and the best trackpads in the world. For the power they pack, they’re remarkably thin and light. They’re durable. They offer a great assortment of ports, including three Thunderbolt 4 ports (<a href="https://www.apple.com/mac/compare/?modelList=MacBook-Pro-14-M3,MacBook-Pro-14-M3x,MacBook-Pro-16-M3">but just two ports on the 14-inch base model</a> — the one with the regular M3 — and those two ports are Thunderbolt/USB 4, not Thunderbolt 4), HDMI out, an SD Card slot, and MagSafe. There is even a very small circular port where you can connect headphones that use a wired connection. The displays are the best in any laptops in the world, with great color accuracy and remarkable brightness. The speaker systems sound too good to be true for laptops.</p>
+
+<p>That’s all been true for two years now, since the M1 Pro and M1 Max MacBook Pros launched in October 2021.</p>
+
+<p>Now they’re even better: the M3 family of chips is more than just a speed bump from the M2. Apple has designed three entirely different chips for three different tiers of users. They’re faster at single-core performance, faster at multi-core, and the GPUs introduce three breakthroughs: hardware accelerated ray tracing and mesh shading (new to Apple silicon), and a new memory allocation technique they’re calling Dynamic Caching (new to the industry, so claims Apple). I suspect this explains the extraordinary gain in Cinebench’s GPU benchmark comparing the M3 Max against my very comparable 2021 M1 Max. Apple’s M-series silicon team is simply on fire, doing some of the most impressive work in the history of computer architecture design and engineering. PC laptops in this class <a href="https://www.theverge.com/23850863/asus-rog-strix-scar-17-review-qhd-gaming-laptop">weigh over 6.5 pounds</a> and offer terrible battery life; the 16-inch MacBook Pro weighs 4.7–4.8, the 14-inch MacBook Pro just 3.4–3.6, and all offer remarkably long battery life. It’s not like Apple’s silicon team had one breakthrough moment back in 2020 and have since been regressing to the mean — they continue to <em>increase</em> their lead over the rest of the industry in performance-per-watt. The difference between Mac and PC laptop hardware is as vast and stark as the difference between MacOS and Windows software. Perhaps even more so.</p>
+
+<p>So should you buy one?</p>
+
+<p>Anyone who bought an M2 MacBook Pro earlier this year: I feel for you. First round of drinks is on me.</p>
+
+<p>Anyone, like me, who bought an M1 MacBook Pro two years ago: you are right to feel tempted. If you’re hell-bent on keeping your wallet in your pocket and waiting one more generation before upgrading, do not — I repeat, do not — let your eyes fall upon a space black M3 MacBook Pro.</p>
+
+<p>Anyone still holding onto an Intel-based MacBook Pro: place an order right now, if you haven’t already. I’m jealous of the treat you’re in for when you experience what these premium Apple silicon machines are like to use.</p>
+
+<div class="footnotes">
+<hr />
+<ol>
+
+<li id="fn1-2023-11-06">
+<p>My style is to round “x99” prices up, for clarity. I see “$1,100” and I know what it means; I see “1,099” and I need a moment to put it in context, and that context is understanding that it effectively means $1,100. I left the M1 MacBook Air at $999 in the above table because that’s clearly a magic price point — Apple’s only sub-$1,000 MacBook.&nbsp;<a href="#fnr1-2023-11-06"  class="footnoteBackLink"  title="Jump back to footnote 1 in the text.">&#x21A9;&#xFE0E;</a></p>
+</li>
+
+<li id="fn2-2023-11-06">
+<p>Pour one out for the Touch Bar, which many Mac users seemingly despised, but which I always had mixed feelings regarding. It wasn’t good enough, that’s clear. I think it needed haptic feedback, for one thing — something that would’ve enabled you to use it by touch alone. The name “Touch Bar” sort of didn’t fit, if you think about it. Yes, it was a touch screen, but unlike the physical keys of a keyboard, there was no way to use it by feel alone. And it wasn’t part of the display — it was part of the <em>keyboard</em>. You had to stare at it to use it. And the lack of a third dimension — buttons you could feel and that needed to be pressed, not just touched, to activate — made it prone to accidental activations. It was worth a try. I genuinely appreciate the ambition of trying something innovative with the F-key row. But it wasn’t good enough and stuck around too long with that “Pro Jr.” 13-inch MacBook Pro. I’d love to see it return someday, with an implementation that somehow offers <em>depth</em> — a third dimension that you can feel and click. Something meant for your fingers, not your eyes.&nbsp;<a href="#fnr2-2023-11-06"  class="footnoteBackLink"  title="Jump back to footnote 2 in the text.">&#x21A9;&#xFE0E;︎</a></p>
+</li>
+
+<li id="fn3-2023-11-06">
+<p>I do not think we will see any M3 chips other than the regular M3 in the next generation of MacBook Air. Generally speaking, if a component has “pro” in its name, it goes into products with “pro” in their name. So I don’t expect the M3 Pro will appear in a MacBook Air. It is true, though, that today’s Mac Mini can be configured with an M2 Pro. The difference between the Mac Mini and MacBook Air, though, is cooling. The Mac Mini is relatively spacious and has fans; the MacBook Air is designed to be as thin as possible and has no fans. No fans means no M3 Pro, I suspect.&nbsp;<a href="#fnr3-2023-11-06"  class="footnoteBackLink"  title="Jump back to footnote 3 in the text.">&#x21A9;&#xFE0E;︎</a></p>
+</li>
+
+<li id="fn4-2023-11-06">
+<p><a href="https://en.wikipedia.org/wiki/Sturgeon%27s_law">Sturgeon’s Law</a> perhaps understates the percentage of web developers whose output is “crap”.&nbsp;<a href="#fnr4-2023-11-06"  class="footnoteBackLink"  title="Jump back to footnote 4 in the text.">&#x21A9;&#xFE0E;︎</a></p>
+</li>
+
+</ol>
+</div>
+
+
+
+    ]]></content>
+        <title>★ The 2023 M3 MacBook Pros</title>
+    </entry>
+    <entry>
+        <title>Tailscale</title>
+        <link rel="alternate" type="text/html"
+              href="https://tailscale.com/?utm_source=DaringFireball&amp;utm_medium=paid-referral&amp;utm_campaign=2023-2H"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v4f"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/11/05/tailscale"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40335</id>
+        <published>2023-11-05T19:39:59Z</published>
+        <updated>2023-11-05T19:39:59Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>My thanks to Tailscale for sponsoring last week at DF. Tailscale offers remarkably good ways to manage SSH connections. No more bastions. No more juggling keys. It’s SSH that just works.</p>
+
+<p>Tailscale is completely free of charge to try, and remarkably affordable for use on teams both small and large. It even works with Apple TV — <a href="https://tailscale.com/?utm_source=DaringFireball&amp;utm_medium=paid-referral&amp;utm_campaign=2023-2H">try Tailscale for Apple TV now</a>.</p>
+
+<div>
+<a  title="Permanent link to ‘Tailscale’"  href="https://daringfireball.net/linked/2023/11/05/tailscale">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Sam Bankman-Fried Found Guilty on All Seven Criminal Fraud Counts</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.cnbc.com/amp/2023/11/02/sam-bankman-fried-found-guilty-on-all-seven-criminal-fraud-counts.html"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v4e"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/11/02/sbf-guilty"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40334</id>
+        <published>2023-11-03T01:39:41Z</published>
+        <updated>2023-11-03T01:39:42Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>MacKenzie Sigalos, reporting for CNBC:</p>
+
+<blockquote>
+  <p>A jury has found Sam Bankman-Fried guilty of all seven criminal 
+counts against him. The FTX founder faces a maximum sentence of 
+115 years in prison. </p>
+
+<p>Bankman-Fried, the 31-year old son of two Stanford legal scholars 
+and graduate of Massachusetts Institute of Technology, was 
+convicted of wire fraud and conspiracy to commit wire fraud 
+against FTX customers and against Alameda Research lenders, 
+conspiracy to commit securities fraud and conspiracy to commit 
+commodities fraud against FTX investors, and conspiracy to commit 
+money laundering. </p>
+</blockquote>
+
+<p>Given how obvious, blatant, and large-scale his acts of fraud were, it would have been rather shocking if he hadn’t been found guilty.</p>
+
+<div>
+<a  title="Permanent link to ‘Sam Bankman-Fried Found Guilty on All Seven Criminal Fraud Counts’"  href="https://daringfireball.net/linked/2023/11/02/sbf-guilty">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Behind the Scenes of Apple’s Behind the Scenes of the ‘Scary Fast’ Keynote Film</title>
+        <link rel="alternate" type="text/html" href="https://www.youtube.com/watch?v=y_E2okzJCvY"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v4d"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/11/02/tobin-bts-scary-fast"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40333</id>
+        <published>2023-11-02T23:01:32Z</published>
+        <updated>2023-11-02T23:57:44Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>YouTuber Michael Tobin dove into a slew of technical and equipment details revealed in <a href="https://daringfireball.net/linked/2023/10/31/behind-the-scenes-at-scary-fast">Apple’s behind-the-scenes mini-documentary</a>. One detail a few people have noticed: “Scary Fast” was edited in Adobe Premiere Pro, not Apple’s own Final Cut Pro. Make of that what you will, but it seems like Final Cut fans <a href="https://twitter.com/matthewtobrien/status/1719371248981925926">are getting</a> the <a href="https://twitter.com/thefinalcutbro/status/1719151426138755476">heebie-jeebies</a> that Final Cut is going the way of Aperture, and Apple using Premiere Pro for this project isn’t allaying that fear.</p>
+
+<div>
+<a  title="Permanent link to ‘Behind the Scenes of Apple’s Behind the Scenes of the ‘Scary Fast’ Keynote Film’"  href="https://daringfireball.net/linked/2023/11/02/tobin-bts-scary-fast">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Apple Q4 2023 Results</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.apple.com/newsroom/2023/11/apple-reports-fourth-quarter-results/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v4c"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/11/02/apple-q4-2023-results"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40332</id>
+        <published>2023-11-02T22:41:44Z</published>
+        <updated>2023-11-03T02:41:13Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Apple Newsroom:</p>
+
+<blockquote>
+  <p>Apple today announced financial results for its fiscal 2023 fourth 
+quarter ended September 30, 2023. The Company posted quarterly 
+revenue of $89.5 billion, down 1 percent year over year, and 
+quarterly earnings per diluted share of $1.46, up 13 percent year 
+over year. </p>
+
+<p>“Today Apple is pleased to report a September quarter revenue 
+record for iPhone and an all-time revenue record in Services,” 
+said Tim Cook, Apple’s CEO. </p>
+</blockquote>
+
+<p>From <a href="https://www.apple.com/newsroom/pdfs/fy2023-q4/FY23_Q4_Consolidated_Financial_Statements.pdf">Apple’s financial statement</a> (PDF, figures are in millions of dollars):</p>
+
+<p><a href="https://daringfireball.net/misc/2023/10/aapl-q4-2023-net-sales-shadow.png" class="noborder">
+<img
+    src = "https://daringfireball.net/misc/2023/10/aapl-q4-2023-net-sales-shadow.png"
+    width = 525
+    alt = "Screenshot of the table for net sales from Apple's financial report for the quarter."
+/></a></p>
+
+<p>Mac sales are down quite a bit year over year, both on a quarterly basis and trailing 12-month period, but I don’t think that’s a reflection on the Mac platform. Rather, it’s the whole PC market, which is now in a downswing after a huge surge during the early COVID years.</p>
+
+<p>Services, at $22.3 billion, is now just over half the net sales for iPhone ($43.8 billion). And Mac + iPad + Wearables/etc. combine for $23.3 billion, so Services seems on the cusp of soon eclipsing all non-iPhone hardware combined.</p>
+
+<p><strong>See also:</strong> <a href="https://sixcolors.com/post/2023/11/apple-q4-2023-financial-results-and-charts/">Jason Snell’s usual collection of charts</a>.</p>
+
+<div>
+<a  title="Permanent link to ‘Apple Q4 2023 Results’"  href="https://daringfireball.net/linked/2023/11/02/apple-q4-2023-results">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Dieter Rams Pointing at Things He Doesn’t Like</title>
+        <link rel="alternate" type="text/html" href="https://www.youtube.com/watch?v=ypyAg3Zbs_8"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v4b"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/11/02/rams-pointing-at-things-he-doesnt-like"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40331</id>
+        <published>2023-11-02T22:08:16Z</published>
+        <updated>2023-11-02T22:08:17Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>“I like orderly confusion very much. But this is neither orderly nor properly confused.”</p>
+
+<p>Three-minute clip from <a href="https://www.hustwit.com/rams">Gary Hustwit’s wonderful documentary <em>Rams</em></a>. If you’re a designer and haven’t seen it, watch it tonight. (If you have seen it, maybe watch it again.)</p>
+
+<div>
+<a  title="Permanent link to ‘Dieter Rams Pointing at Things He Doesn’t Like’"  href="https://daringfireball.net/linked/2023/11/02/rams-pointing-at-things-he-doesnt-like">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Xiaomi 14 Pro Titanium</title>
+        <link rel="alternate" type="text/html" href="https://twitter.com/atytse/status/1720002325023252872?s=46"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v4a"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/11/02/xiaomi-14-pro"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40330</id>
+        <published>2023-11-02T22:01:12Z</published>
+        <updated>2023-11-02T22:01:12Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>I don’t know what I find more surprising: that the shameless rip-off artists at Xiaomi didn’t just skip a number and call this the “15 Pro”, or that Leica is willing to have anything to do with them. (Xiaomi’s checks cash, I guess.)</p>
+
+<div>
+<a  title="Permanent link to ‘Xiaomi 14 Pro Titanium’"  href="https://daringfireball.net/linked/2023/11/02/xiaomi-14-pro">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Seth Godin on the Difference Between a Brand and a Logo</title>
+        <link rel="alternate" type="text/html" href="https://www.youtube.com/watch?v=RZ-i3A4_6HE"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v49"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/11/01/godin-brand-logo"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40329</id>
+        <published>2023-11-01T21:03:15Z</published>
+        <updated>2023-11-07T00:02:29Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Whole interview is good, but the part that really grabbed me starts at 3m:30s.</p>
+
+<p>Godin: “If Nike opened a hotel, I think we would be able to guess pretty accurately what it would be like. If Hyatt came out with sneakers, we’d have no clue. Because Hyatt doesn’t have a brand. They have a logo.”</p>
+
+<div>
+<a  title="Permanent link to ‘Seth Godin on the Difference Between a Brand and a Logo’"  href="https://daringfireball.net/linked/2023/11/01/godin-brand-logo">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Downplaying the Fact That Apple Shot ‘Scary Fast’ With iPhones</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.theverge.com/2023/10/31/23940060/apple-event-shot-on-iphone-behind-the-scenes"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v47"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/10/31/downplaying-shot-on-iphone"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40327</id>
+        <published>2023-11-01T01:32:21Z</published>
+        <updated>2023-11-01T17:52:00Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Jess Weatherbed, writing for The Verge under the headline “Here’s What Apple Really Means When It Says ‘Shot on iPhone’”:</p>
+
+<blockquote>
+  <p>It’s a neat way to promote the recording quality of iPhone 
+cameras, but it’s not like everyday folks can recreate these kinds 
+of results at home unless they happen to own a shedload of 
+ludicrously expensive equipment. The gear shown in the “Scary 
+Fast” behind-the-scenes footage is fairly standard for big studio 
+productions, but Apple’s implication with these so-called “shot on 
+iPhone” promotions is that anyone can do it if only they buy the 
+newest iPhone. </p>
+</blockquote>
+
+<p>I saw a few folks mocking Apple for this on Mastodon and <a href="https://www.threads.net/@blakersdozen/post/CzENNTQAD6G/">Threads</a>, too. This is ridiculous. Do these people think that previous Apple keynote films were shot with just a single camera person wielding something like a $40K RED cinema camera and no crew, no lighting, no cranes? That the iPhone “needs help” that traditional cinema cameras do not? I mean, guess what, they used professional microphones too.</p>
+
+<p>Apple occasionally points out that they make all their software — iOS, MacOS, Safari and Webkit, Final Cut, the iWork suite, Photos and Camera … all of it — using Xcode, Swift, Objective-C, and the AppKit, UIKit, and SwiftUI frameworks that they offer free of charge to all developers. Pissing all over Apple for using expensive production sets for their keynote shoots while promoting the fact that they shot it using iPhone cameras is like pissing on Apple’s developer offerings because a lone developer or small team couldn’t create an entire operating system or non-linear professional video editing system.</p>
+
+<p>The whole point is that an iPhone 15 Pro camera is so good that it can fit right in on a high-budget commercial film shoot, and produce world-class results. There’s no implication that a casual user can get results like this by just hitting the shutter button in the iPhone Camera app. That’s why Apple made an entire <a href="https://daringfireball.net/linked/2023/10/31/behind-the-scenes-at-scary-fast">behind-the-scenes documentary</a>! To show us what it takes to make something look this good.</p>
+
+<p>Why be so cynical? What Apple has accomplished here is extraordinary. They shot a 30-minute film using the same phone cameras they sell to hundreds of millions of people around the world, and the footage looked so good that <em>no one could tell it was shot using iPhones until they told us so</em>.</p>
+
+<p>This is Apple at its best: they make tools for us, using those very same tools themselves. </p>
+
+<div>
+<a  title="Permanent link to ‘Downplaying the Fact That Apple Shot ‘Scary Fast’ With iPhones’"  href="https://daringfireball.net/linked/2023/10/31/downplaying-shot-on-iphone">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>The Talk Show: ‘What the Actual’</title>
+        <link rel="alternate" type="text/html" href="https://daringfireball.net/thetalkshow/2023/10/31/ep-388"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v46"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/10/31/the-talk-show-388"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40326</id>
+        <published>2023-11-01T00:58:49Z</published>
+        <updated>2023-11-01T00:58:50Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Christina Warren joins the show to talk about Apple’s “Scary Fast” event, introducing the new M3 MacBook Pros and 24-inch iMac.</p>
+
+<p><audio
+    src = "https://traffic.libsyn.com/secure/daringfireball/thetalkshow-388-christina-warren.mp3"
+    controls
+    preload = "none"
+/></p>
+
+<p>Sponsored by:</p>
+
+<ul>
+<li><a href="https://nuts.com/thetalkshow">Nuts.com</a>: The world’s best snacks, delivered fast and fresh.</li>
+<li><a href="https://squarespace.com/talkshow">Squarespace</a>: Make your next move. Use code <strong>talkshow</strong> for 10% off your first order.</li>
+</ul>
+
+<div>
+<a  title="Permanent link to ‘The Talk Show: ‘What the Actual’’"  href="https://daringfireball.net/linked/2023/10/31/the-talk-show-388">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>‘The Beauty of Finished Software’</title>
+        <link rel="alternate" type="text/html" href="https://josem.co/the-beauty-of-finished-software/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v45"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/10/31/finished-software"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40325</id>
+        <published>2023-10-31T20:08:51Z</published>
+        <updated>2023-10-31T20:08:51Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Jose M. Gilgado:</p>
+
+<blockquote>
+  <p>Our expectations for software are different from other products we 
+use in our daily lives. </p>
+
+<p>When we buy a physical product, we accept that it won’t change in 
+its lifetime. We’ll use it until it wears off, and we replace it. 
+We can rely on that product not evolving; the gas pedal in my car 
+will always be in the same place. </p>
+
+<p>However, when it comes to software, we usually have the ingrained 
+expectations of perpetual updates. We believe that if software 
+doesn’t evolve it’ll be boring, old and unusable. If we see an 
+app with no updates in the last year, we think the creator might 
+be dead. </p>
+</blockquote>
+
+<p>(<a href="https://social.masto.land/@dave/111330916694532002">Via Dave Winer</a>.)</p>
+
+<div>
+<a  title="Permanent link to ‘‘The Beauty of Finished Software’’"  href="https://daringfireball.net/linked/2023/10/31/finished-software">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Tailscale</title>
+        <link rel="alternate" type="text/html"
+              href="https://tailscale.com/?utm_source=DaringFireball&amp;utm_medium=paid-referral&amp;utm_campaign=2023-2H"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v44"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/10/31/tailscale"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40324</id>
+        <published>2023-10-31T18:41:52Z</published>
+        <updated>2023-10-31T18:41:53Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>My thanks to Tailscale for sponsoring last week at DF. Tailscale offers remarkably good ways to manage SSH connections. No more bastions. No more juggling keys. It’s SSH that just works.</p>
+
+<p>Tailscale is completely free of charge to try, and remarkably affordable for use on teams both small and large. Use the Tailscale VS Code extension to remotely edit files on any of your machines. <a href="https://tailscale.com/?utm_source=DaringFireball&amp;utm_medium=paid-referral&amp;utm_campaign=2023-2H">Try Tailscale now</a>.</p>
+
+<div>
+<a  title="Permanent link to ‘Tailscale’"  href="https://daringfireball.net/linked/2023/10/31/tailscale">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>The Patent Fight That Could Take Apple Watches Off the Market</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.nytimes.com/2023/10/30/opinion/apple-watch-masimo.html?unlocked_article_code=1.60w.qJZN.5ypUqRG8-83v&amp;smid=url-share"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v43"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/10/31/apple-watch-masimo-patent-suit"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40323</id>
+        <published>2023-10-31T18:26:17Z</published>
+        <updated>2023-10-31T18:26:18Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Peter Coy, in a subscriber-only column for The New York Times (I’m using a gift sharing link, which I hope works for all of you):</p>
+
+<blockquote>
+  <p>Apple Inc. sells a lot of smart watches during the holidays, but 
+this year its sales of most Apple Watch models may well drop 100 
+percent — to literally zero — the day after Christmas. </p>
+
+<p>That’s because of a <a href="https://www.usitc.gov/system/files?file=secretary/fed_reg_notices/337/337_1276_notice10262023sgl.pdf">ruling</a> Thursday by the International 
+Trade Commission that most Apple Watches contain parts that 
+infringe on patents held by Masimo Corp., a producer of medical 
+technology, and its sister company, Cercacor Laboratories Inc., 
+both of Irvine, Calif. An import ban and a cease-and-desist order 
+on sales both take effect on Dec. 26 — unless President Biden 
+reverses the decision by Dec. 25, which appears unlikely. 
+(Presidents <a href="https://www.reuters.com/technology/us-trade-tribunal-issues-potential-apple-watch-import-ban-masimo-patent-fight-2023-10-26/">rarely</a> overrule the <a href="https://www.usitc.gov/">independent, nonpartisan 
+agency</a>, which was <a href="https://www.usitc.gov/publications/332/pub0000.pdf">founded</a> in 1916 as the U.S. 
+Tariff Commission.) [...]</p>
+
+<p>Apple declined to provide an executive to speak on the record. The 
+company’s position is that Masimo is pursuing a strategy of 
+litigation over innovation, hoping to generate a fresh stream of 
+royalties because royalties from past litigation have dried up. 
+Apple points out that the federal jury that deadlocked in May was 
+6-to-1 for Apple, indicating that Masimo was a long way from 
+making its case. </p>
+
+<p>This fight is far from over. “My goal isn’t just to beat Apple,” 
+Kiani told me in an interview last summer. “It’s to get Apple to 
+change its ways.” </p>
+</blockquote>
+
+<p>One way or another, I expect Apple Watch to remain available for sale in the U.S. But that deadline is just two months away.</p>
+
+<div>
+<a  title="Permanent link to ‘The Patent Fight That Could Take Apple Watches Off the Market’"  href="https://daringfireball.net/linked/2023/10/31/apple-watch-masimo-patent-suit">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Behind the Scenes at ‘Scary Fast’ — Shot With iPhone 15 Pro Max</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.apple.com/newsroom/2023/10/behind-the-scenes-at-scary-fast-apples-keynote-event-shot-on-iphone/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v42"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/10/31/behind-the-scenes-at-scary-fast"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40322</id>
+        <published>2023-10-31T18:12:56Z</published>
+        <updated>2023-10-31T20:54:57Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Apple Newsroom:</p>
+
+<blockquote>
+  <p>On Monday, October 30, at Apple’s Scary Fast special event 
+unveiling the all-new MacBook Pro with the M3 family of chips and 
+24-inch iMac with M3, there was an unseen star of the show working 
+behind the scenes. All of the presenters, locations, and drone 
+footage in the event were filmed using iPhone 15 Pro Max, the 
+preferred smartphone for creative pros and filmmakers. Led by 
+documentary film director Brian Oakes, known for the award-winning 
+<em>Jim: The James Foley Story</em> and <em>Living with Lincoln</em>, Scary Fast 
+put iPhone 15 Pro Max right in the middle of the action. </p>
+</blockquote>
+
+<p>I noticed <a href="https://daringfireball.net/misc/2023/10/shot-on-iphone.jpeg">the credit at the end of the video</a> last night: “This event was shot on iPhone and edited on Mac”, but until I saw that, I never would have guessed that the video was shot on iPhones. It looked every bit as good as Apple’s previous pre-recorded keynotes, which presumably were shot on dedicated professional digital film cameras. To my eyes Apple didn’t sacrifice an iota of image quality.</p>
+
+<p>Even better, the behind-the-scenes documentary is fascinating. Given their cinematic quality, I’ve always assumed these videos were major productions behind the scenes, but now we can <em>see</em> it — everything from lighting, directing, cinematography, sound, set design, talent, crew, editing, color grading — every single aspect of these keynotes aspires to the highest levels of production quality. Not merely “<em>this looks and sounds good for a marketing video</em>”, but “<em>this looks and sounds good for a movie</em>”.</p>
+
+<p>It’s impressive what the iPhone 15 Pro camera is capable of. And it’s really fun that Apple finally took us behind the scenes of one of these keynotes.</p>
+
+<div>
+<a  title="Permanent link to ‘Behind the Scenes at ‘Scary Fast’ — Shot With iPhone 15 Pro Max’"  href="https://daringfireball.net/linked/2023/10/31/behind-the-scenes-at-scary-fast">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+
+        <link rel="alternate" type="text/html"
+              href="https://daringfireball.net/2023/10/best_leather_cases_for_iphone_15_pro"/>
+        <link rel="shorturl" href="http://df4.us/v41"/>
+        <id>tag:daringfireball.net,2023://1.40321</id>
+        <published>2023-10-30T13:53:21Z</published>
+        <updated>2023-10-31T19:44:29Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <summary type="text">Two companies — Bullstrap and Ryan London — make high-quality leather iPhone cases with a
+            cutout along the bottom lip.
+        </summary>
+        <content type="html" xml:base="https://daringfireball.net/" xml:lang="en"><![CDATA[
+<p>Stephen Robles tested 11 leather cases for the iPhone 15 Pro, and <a href="https://youtu.be/6WNnw9Swhyc?si=ydQemaV8V6iubGZN">put together a nice video review</a>. If you’re in the market for a leather iPhone case for your new iPhone 15, you should definitely watch his video.</p>
+
+<p>For the last three or four years now, <a href="https://daringfireball.net/2023/04/the_case_of_the_iphone_case_poll">I’ve been buying</a> leather iPhone cases from <a href="https://bullstrap.co/products/magsafe-iphone-cases-sienna?variant=43515355300034">Bullstrap</a>. They’re expensive — $89 — but they check every box for me:</p>
+
+<ul>
+<li>High-quality leather. Feels good, smells good, ages well.</li>
+<li>A cut-out bottom lip. This design used to be common, but is getting harder and harder to find on <em>any</em> iPhone cases. I presume that’s because people prefer cases with a lip that goes around the entire circumference of the front face of the phone, “for protection”, but the additional protection of covering the bottom lip seems negligible to me. I strongly prefer the way a no-bottom-lip case feels when swiping up from the bottom of the phone — an action I perform dozens of times a day. This design also solves <a href="https://duckduckgo.com/?q=iphone+15+case+usb-c+cable+doesn't+fit">any problems</a> regarding USB-C or Thunderbolt cables fitting while your iPhone is encased.</li>
+<li>Good buttons. Not great buttons, but good. This includes a button, not a cutout, for the Action button.</li>
+<li>A unique (well, sort of — see below) “gentle hump” design around the camera cutout. I think this looks good, and it <em>feels</em> great. I don’t like a sharp plastic ring around the camera cutout.</li>
+</ul>
+
+<p>Robles ranked the Bullstrap highly, but behind <a href="https://ryanlondon.com/collections/leather-iphone-cases/products/leather-iphone-15-pro-max-shell-case-magsafe-saddle-brown?variant=46641687822656">the case from Ryan London</a>. I don’t know what the deal is between these two companies, but their cases are nearly identical. Same shape (no bottom lip), same buttons, same gentle hump around the camera cutout. I suspect both companies use the same manufacturer in China. Robles prefers the Ryan London because he prefers the way their leather both looks and feels. It definitely looks like a slightly different texture. Also, the Ryan London cases are a bit cheaper: $59 (with an optional $8 add-on to personalize your case with some embossed text).</p>
+
+<p><strong>Previously:</strong> <a href="https://daringfireball.net/2023/04/the_case_of_the_iphone_case_poll">My reader poll from April</a> regarding case usage amongst DF readers. I posted <a href="https://daringfireball.net/misc/2023/04/bullstrap-case-before-after.jpeg">this photo comparing a year-old Bullstrap case next to my then-brand-new one</a> for last year’s iPhone 14.</p>
+
+<p><strong>Postscript</strong>: I actually like Apple’s FineWoven cases. I spent a week vacationing in Florida with my iPhone 15 Pro in one. (I go caseless most of the time, but like using a case while traveling, when I’m more likely to be taking a lot of pictures with my phone. An encased iPhone feels more like a camera to me, with better grippiness.) The dealbreaker for me is not the FineWoven material, which I actually kind of like. Rather, it’s the bottom lip. If Apple’s FineWoven cases had a cutout along the bottom, that would probably be the only case I’d use.</p>
+
+<p><strong>Holy Crap Another Postscript:</strong> I, uh, just happened to run into <a href="https://www.theverge.com/authors/dan-seifert">Dan  Seifert</a> from The Verge this morning, and wouldn’t you know it, he had a brand-new Ryan London leather case on his iPhone 15 Pro. I had my Bullstrap with me, we compared, and we both agreed that the Ryan London leather looks just as good but has a slightly different — and better — feel. You can’t go wrong with either of them — they really are remarkably similar cases overall, almost certainly made by the same Chinese manufacturer — but given that it’s $30 cheaper, I suppose I’d recommend the Ryan London. I actually like the Bullstrap embossed logo, though.</p>
+
+
+
+    ]]></content>
+        <title>★ The Best Leather Cases for iPhone 15 Pro</title>
+    </entry>
+    <entry>
+        <title>‘Matthew Perry Was the Sarcastic Soul of “Friends”’</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.rollingstone.com/tv-movies/tv-movie-features/matthew-perry-death-friends-chandler-bing-sarcasm-sitcom-1234865183/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v40"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/10/29/perry-soul-of-friends"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40320</id>
+        <published>2023-10-29T20:28:47Z</published>
+        <updated>2023-10-29T21:44:23Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Alan Sepinwall, writing for Rolling Stone:</p>
+
+<blockquote>
+  <p>There’s not a lot of Matthew Perry in the pilot episode of 
+<em>Friends</em>, but he gets to deliver one of its funniest jokes. As 
+the gang sits around Central Perk, a newly-divorced Ross admits 
+that he just wants to be married again. A second later, Rachel 
+wanders into the coffee shop, soaking wet and wearing a wedding 
+dress. Without missing a beat, Perry’s Chandler Bing declares, 
+“And I just want a million dollars!” </p>
+
+<p>Like a lot of Chandler punchlines, it’s quick and biting in its 
+sarcasm. And like a lot of Chandler punchlines, Perry’s delivery 
+elevates it from a smartass quip that a few dozen actors could say 
+into something you can’t imagine leaving anyone else’s mouth. </p>
+
+<p>Note the timing and the emphasis of the thing. The pause after 
+“And I,” the way he hits the “I” as hard as he does, and the way 
+his voice goes full game show host as he says “million dollars,” 
+all combine to give the gag a musicality beyond what <em>Friends</em> 
+creators Marta Kauffman and David Crane wrote on the page. It’s a 
+small moment in an episode that is primarily concerned with 
+characters who are not Chandler Bing. But you watch it and you 
+want to hear him say things like it, again and again and again. </p>
+</blockquote>
+
+<p>Perry was so great on <em>Friends</em>, but my favorite show he was on was the short-lived <em><a href="https://tv.apple.com/us/show/studio-60-on-the-sunset-strip/umc.cmc.2shyb7anow8v1rlv12c6lsx7v">Studio 60 on the Sunset Strip</a></em>, a 2006 Aaron Sorkin show that I’ve always thought failed in part<sup>*</sup> because it was a few years ahead of its time. Its lone 22-episode season aired on NBC. It was too smart, too cinematic, for network TV. It should have been on a cable channel like HBO, or, if it aired a decade later, a streaming service. The show was so good (at times — 22 episodes was way too many for a show striving for such quality), and Perry was sublime.</p>
+
+<p>Perry, too, deserves accolades for his remarkable openness regarding his long struggle with addiction, and his heartfelt willingness to help anyone and everyone  else with The Problem. Rest in peace.</p>
+
+<p><small>* I don’t know if it hurt <em>Studio 60 on the Sunset Strip</em>, but another weird thing about it was that it debuted the same year, on the same network, as Tina Fey’s hall-of-fame-funny sitcom <em><a href="https://www.peacocktv.com/watch-online/tv/30-rock/6240863759978157112">30 Rock</a></em>. Both shows shared the same fundamental premise: they were about fictionalized versions of <em>Saturday Night Live</em>. They even both had numbers in their titles, and those numbers were oddly similar. <em>Studio 60</em> was a funny drama, and <em>30 Rock</em> a sitcom’s sitcom, but I always wondered if it was a bad idea to launch two <em>roman a clefs</em> about <em>SNL</em> at the same time.</small></p>
+
+<div>
+<a  title="Permanent link to ‘‘Matthew Perry Was the Sarcastic Soul of “Friends”’’"  href="https://daringfireball.net/linked/2023/10/29/perry-soul-of-friends">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>‘Matthew Perry Made It Look Easy’</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.nytimes.com/2023/10/29/arts/television/matthew-perry-chandler-bing.html"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v3z"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/10/29/perry-made-it-look-easy"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40319</id>
+        <published>2023-10-29T20:17:26Z</published>
+        <updated>2023-10-29T20:17:27Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Alexis Soloski, writing for The New York Times:</p>
+
+<blockquote>
+  <p>A confession: When I received a news alert that the actor Matthew 
+Perry had died, my mind adopted the particular cadence that Perry 
+perfected as Chandler Bing, the character he played for 10 seasons 
+on the NBC sitcom <em>Friends</em>. Here is what I thought, “Could this 
+<em>be</em> any sadder?” </p>
+
+<p><a href="https://www.nytimes.com/2023/10/29/arts/television/matthew-perry-dead.html">Perry, 54, died</a> nearly a year after the publication of 
+<em><a href="https://us.macmillan.com/books/9781250866448/friendsloversandthebigterriblething">Friends, Lovers, and the Big Terrible Thing</a></em>, an unusually 
+candid memoir of addiction and recovery. As he detailed in that 
+book, he spent many of the best years of his career oblivious, 
+avoidant, numb — conditions that don’t typically encourage great 
+acting. But he was great. And it had seemed reasonable, if 
+rose-colored, to hope that sobriety might make him better, 
+returning him to the nervy, instinctive brilliance of his peak 
+years. That hope is now foreclosed. [...] </p>
+
+<p>To say that he never did anything quite as good as <em>Friends</em>, 
+before or after, is not to diminish his achievement. Even among 
+the irrepressible talents of his co-stars, Perry stood out, for a 
+rubbery, heedless way with physical comedy and a split-second 
+timing that most stopwatches would envy. If you have seen more 
+than a few episodes of the show — and many, many millions have, 
+including fans born years after its initial airing — you will 
+have absorbed Chandler’s rhythms, his catchphrases, the way 
+Perry’s handsome, moony face would stretch like spandex, the 
+better to sell a reaction. He had both an absolute commitment to 
+what a line required and a way of gently ironizing that line. His 
+character was the butt of jokes. Perry was in on those same jokes. 
+There was a boyishness to him that seemed to excuse his 
+characters’ worst behavior, on <em>Friends</em> and in subsequent roles. </p>
+</blockquote>
+
+<div>
+<a  title="Permanent link to ‘‘Matthew Perry Made It Look Easy’’"  href="https://daringfireball.net/linked/2023/10/29/perry-made-it-look-easy">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>The Talk Show: ‘Are There Ever Too Many Love Songs?’</title>
+        <link rel="alternate" type="text/html" href="https://daringfireball.net/thetalkshow/2023/10/27/ep-387"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v3x"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/10/27/the-talk-show-387"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40317</id>
+        <published>2023-10-28T01:51:01Z</published>
+        <updated>2023-10-28T01:51:01Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Special guests Sebastiaan de With and Ben Sandofsky, co-founders of Lux, join the show to talk about their apps (Halide, Spectre, and Orion) and speculate about next week’s “Scary Fast” Apple event.</p>
+
+<p><audio
+    src = "https://traffic.libsyn.com/secure/daringfireball/thetalkshow-387-lux-camera.mp3"
+    controls
+    preload = "none"
+/></p>
+
+<p>Sponsored by:</p>
+
+<ul>
+<li><a href="https://squarespace.com/talkshow">Squarespace</a>: Make your next move. Use code <strong>talkshow</strong> for 10% off your first order.</li>
+<li><a href="https://www.drinktrade.com/thetalkshow">Trade Coffee</a>: Let’s coffee better. Get a free bag of fresh coffee with any Trade subscription.</li>
+</ul>
+
+<div>
+<a  title="Permanent link to ‘The Talk Show: ‘Are There Ever Too Many Love Songs?’’"  href="https://daringfireball.net/linked/2023/10/27/the-talk-show-387">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Elon Musk Predicts X Will Replace Banks Next Year</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.theverge.com/2023/10/26/23934216/x-twitter-bank-elon-musk-2024"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v3w"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/10/27/musk-x-banking"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40316</id>
+        <published>2023-10-27T21:28:59Z</published>
+        <updated>2023-10-27T21:39:28Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Jacob Kastrenakes and Alex Heath, reporting for The Verge:</p>
+
+<blockquote>
+  <p>Elon Musk wants X to be the center of your financial world, 
+handling anything in your life that deals with money. He expects 
+those features to launch by the end of 2024, he told X employees 
+during an <a href="https://www.theverge.com/e/23698094">all-hands call on Thursday</a>, saying that people 
+will be surprised with “just how powerful it is.” </p>
+
+<p>“When I say payments, I actually mean someone’s entire financial 
+life,” Musk said, according to audio of the meeting obtained by 
+The Verge. “If it involves money. It’ll be on our platform. 
+Money or securities or whatever. So, it’s not just like send $20 
+to my friend. I’m talking about, like, you won’t need a bank 
+account.” </p>
+
+<p>X CEO Linda Yaccarino said the company sees this becoming a “full 
+opportunity” in 2024. “It would blow my mind if we don’t have that 
+rolled out by the end of next year,” Musk said. </p>
+</blockquote>
+
+<p>Not a day goes by that I don’t hear from someone who wishes that the entirety of their personal finances were handled by a company with the reputation for reliability of X.</p>
+
+<p>It’s so obvious, and banking systems are so easy, I honestly wouldn’t be surprised if X launches this by April 20, even.</p>
+
+<div>
+<a  title="Permanent link to ‘Elon Musk Predicts X Will Replace Banks Next Year’"  href="https://daringfireball.net/linked/2023/10/27/musk-x-banking">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>iOS 17.2 (Beta) Sticker Reactions Stink</title>
+        <link rel="alternate" type="text/html"
+              href="https://sixcolors.com/post/2023/10/ios-17-2-beta-sticker-reactions-thumbs-down/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v3v"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/10/27/ios-17-sticker-reactions-stink"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40315</id>
+        <published>2023-10-27T21:15:00Z</published>
+        <updated>2023-10-27T21:43:18Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Jason Snell, writing at Six Colors on the new “use an emoji as a sticker reaction in Messages” feature in iOS 17.2, which just came out today as a public beta:</p>
+
+<blockquote>
+  <p>Instead, to send a sticker response you have to tap and hold on a 
+message and then choose Add Sticker from the resulting contextual 
+menu, then choose a sticker or emoji. It’s an extra step that 
+really shouldn’t be necessary and makes stickers feel like an 
+afterthought, which they apparently are. </p>
+
+<p>It gets worse. When you add a sticker reaction, it’s placed on top of 
+the message you’re reacting to, obscuring part of the text! Why in 
+the world would Apple choose a placement that makes it impossible 
+to read the text being responded to? The right placement for these 
+reactions is … wait for it … the same place that Tapbacks appear, in 
+a little bubble snuggled up against the message that’s being 
+reacted to. </p>
+</blockquote>
+
+<p>This design feels more than a bit spiteful to me. I suspect there are two contingents inside Apple: the “<em>Tapbacks are perfect just as they are</em>” side (who prefer there are only six of them — heart, thumbs-up, thumbs-down, ha-ha, “!!”, and “?” — and who insist that they’re monochrome), and the “<em>Jesus H. Christ, every single other popular messaging platform in the world lets users react with any emoji they want, in full color</em>” side. This new emoji-as-stickers feature is a small win for the latter contingent, but the Tapbacks-are-perfect side is calling the shots, and keeping Tapbacks as the only reactions that (a) are super-easy to apply, and (b) don’t obscure the text of the message.</p>
+
+<p>I’ve been playing with the feature, and the one emoji I’ve found that <a href="https://daringfireball.net/misc/2023/10/emoji-stickers-finger.jpeg">only <em>barely</em> obscures the text of the message</a> it’s applied to just happens to be the perfect emoji to express my feelings about how this feature currently works: 🖕.</p>
+
+<div>
+<a  title="Permanent link to ‘iOS 17.2 (Beta) Sticker Reactions Stink’"  href="https://daringfireball.net/linked/2023/10/27/ios-17-sticker-reactions-stink">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>Google Spends $26 Billion Annually to Be the Default Search Engine Almost Everywhere (and Most of It Goes
+            to You Know Who)
+        </title>
+        <link rel="alternate" type="text/html"
+              href="https://www.theverge.com/2023/10/27/23934961/google-antitrust-trial-defaults-search-deal-26-3-billion"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v3u"/>
+        <link rel="related" type="text/html"
+              href="https://daringfireball.net/linked/2023/10/27/google-aggregate-search-default"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40314</id>
+        <published>2023-10-27T20:31:54Z</published>
+        <updated>2023-10-27T20:53:50Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>David Pierce, writing for The Verge:</p>
+
+<blockquote>
+  <p>The <a href="https://www.theverge.com/23869483/us-v-google-search-antitrust-case-updates"><em>U.S. v. Google</em> antitrust trial</a> is about many things, 
+but more than anything, it’s about the power of defaults. Even if 
+it’s easy to switch browsers or platforms or search engines, the 
+one that appears when you turn it on matters a lot. Google 
+obviously agrees and has paid a staggering amount to make sure it 
+is the default: testimony in the trial revealed that Google spent 
+a total of $26.3 billion in 2021 to be the default search engine 
+in multiple browsers, phones, and platforms. [...] </p>
+
+<p>Just to put that $26.3 billion in context: Alphabet, Google’s 
+parent company, announced in <a href="https://www.theverge.com/2023/10/24/23929496/google-alphabet-q3-2023-earnings-ads-ai-sge">its recent earnings report</a> 
+that Google Search ad business brought in about $44 billion over 
+the last three months and about $165 billion in the last year. Its 
+entire ad business — which also includes YouTube ads — made a 
+bit under $90 billion in profit. This is all back-of-the-napkin 
+math, but essentially, Google is giving up about 16 percent of its 
+search revenue and about 29 percent of its profit to those 
+distribution deals. </p>
+
+<p>Most of that money, of course, goes to Apple. The New York Times 
+recently reported that Google’s deal to be the default search 
+engine in Safari across Google products cost the company <a href="https://www.theverge.com/2023/10/26/23933206/google-apple-search-deal-safari-18-billion">about 
+$18 billion</a> in 2021. </p>
+</blockquote>
+
+<p>Goldman Sachs analysts have been estimating this number for years, and $18 billion in 2021 is pretty much in line with their estimates. (Goldman <em>conservatively</em> estimates about $17 billion in <a href="https://www.investopedia.com/terms/t/traffic-acquisition-cost-tac.asp">TAC</a> payments from Google to Apple for this year, 2023. That would be the low end — Apple gets <em>at least</em> that much from Google for their partnership on this.)</p>
+
+<p>Apple reports this revenue under Services, which has <a href="https://sixcolors.com/post/2023/08/charts-apple-q3-2023-results/">just grown past $20 billion per quarter</a> for Apple. So somewhere between 20-25 percent of Apple’s Services revenue comes from these payments from Google alone. You can see why <a href="https://www.theverge.com/2023/9/26/23891037/apple-eddy-cue-testimony-us-google">Apple is rooting for Google</a> in this lawsuit.</p>
+
+<p>This whole partnership with Google is the weakest link in Apple’s overall privacy stance. Google generates so much money from search through user tracking that Apple would consider contrary to its own internal values. If Apple were to run its own search engine, it would be <em>far</em> more private than Google Search. But instead they partner with Google, set Google as the default for Safari on all platforms, and share in Google’s profit to the tune of around $20 billion/year.</p>
+
+<div>
+<a  title="Permanent link to ‘Google Spends $26 Billion Annually to Be the Default Search Engine Almost Everywhere (and Most of It Goes to You Know Who)’"  href="https://daringfireball.net/linked/2023/10/27/google-aggregate-search-default">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>More like RipoffOS, Am I Right?</title>
+        <link rel="alternate" type="text/html" href="https://www.gizchina.com/2023/10/19/hyperos-xiaomi-poco-redmi/"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v3t"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/10/27/xiaomi-hyperos"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40313</id>
+        <published>2023-10-27T19:44:03Z</published>
+        <updated>2023-10-27T19:44:04Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Gizchina:</p>
+
+<blockquote>
+  <p>Xiaomi is about to embark on a new journey in its software 
+department with the anticipated HyperOS. This <a href="https://www.gizchina.com/2023/10/17/xiaomi-hyperos/">operating 
+system</a> is primed to make its debut on the Xiaomi 14 series. 
+The Xiaomi community is excited as some lucky Weibo users have 
+been granted an early peek at HyperOS. They’ve generously 
+<a href="https://m.weibo.cn/detail/4957982115761300">shared</a> screenshots of the new user interface, giving us a 
+glimpse of what’s to come. </p>
+</blockquote>
+
+<p>Just blatant utter copies of iOS. Utterly shameless.</p>
+
+<div>
+<a  title="Permanent link to ‘More like RipoffOS, Am I Right?’"  href="https://daringfireball.net/linked/2023/10/27/xiaomi-hyperos">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+        <title>The Aftermath of a Massacre Is Always the Time to Push for Gun Legislation</title>
+        <link rel="alternate" type="text/html"
+              href="https://www.axios.com/2023/10/27/speaker-mike-johnson-gun-control-gay-marriage"/>
+        <link rel="shorturl" type="text/html" href="http://df4.us/v3s"/>
+        <link rel="related" type="text/html" href="https://daringfireball.net/linked/2023/10/27/aftermath"/>
+        <id>tag:daringfireball.net,2023:/linked//6.40312</id>
+        <published>2023-10-27T15:14:40Z</published>
+        <updated>2023-10-27T15:38:20Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <content type="html" xml:base="https://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+<p>Axios:</p>
+
+<blockquote>
+  <p>New House Speaker Mike Johnson (R-La.) told Fox News’ Sean Hannity in his first interview as speaker that now is not the time to discuss legislation to address the scourge of mass shootings, adding: “The problem is the human heart, not guns.”</p>
+</blockquote>
+
+<p>Since no other civilized country on the planet has massacres like this, Johnson is implicitly arguing that the problem isn’t the <em>human</em> heart, but the <em>American</em> heart.</p>
+
+<p>Or, maybe the problem is the fact that America is the <em>only</em> country where military-grade assault rifles are not just legal, but legally obtainable by mentally ill angry men like this lunatic in Maine.</p>
+
+<p>Either we are the worst people on the planet, or we have the worst gun laws.</p>
+
+<blockquote>
+  <p>Why it matters: President Biden and Democrats in Congress are urging action in the wake of the shooting in Lewiston, Maine that left 18 people dead. Johnson argued that it was inappropriate to discuss gun control “in the middle of the crisis,” and that he believes, “it’s not the weapon, it’s the underlying problem.”</p>
+</blockquote>
+
+<p>This “<em>now is not the time</em>” argument gets trotted out by Republicans after each and every gun massacre. Right after their tweets offering “thoughts and prayers”. Bullshit. The aftermath of a massacre is <em>the</em> time to demand sane gun control measures. That’s when the issue is clarified. Would Republicans argue that October 8 was “not the right time” for Israel to discuss Hamas terrorism? Was September 12, 2001 “not the right time” to discuss Al-Qaeda? Should FDR have delivered an address to the nation on December 8, 1941, advising that we relax, let cooler heads prevail, because the aftermath of Japan’s attack on Pearl Harbor “was not the time” to consider retaliating?</p>
+
+<p>Imagine a Venezuelan refugee illegally crosses the U.S.-Mexico border next week and kills 18 U.S. citizens with a bomb he carried across. Would Hannity have a guest on Fox News — say, Mike Johnson — arguing that “now is not the time, in the middle of the crisis, to talk about border security”?</p>
+
+<p>Our emotional responses to these massacres are valid. Strike while the iron, and our blood, is running hot. Let our emotions fuel the urgency of our attempts to respond with <a href="https://pro.morningconsult.com/instant-intel/house-gun-legislation-background-checks-polling">overwhelmingly popular gun control legislation</a>, and let Republicans head into elections in two weeks opposing them.</p>
+
+<div>
+<a  title="Permanent link to ‘The Aftermath of a Massacre Is Always the Time to Push for Gun Legislation’"  href="https://daringfireball.net/linked/2023/10/27/aftermath">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+    </entry>
+    <entry>
+
+        <link rel="alternate" type="text/html"
+              href="https://daringfireball.net/2023/10/apple_again_hikes_prices_for_services"/>
+        <link rel="shorturl" href="http://df4.us/v3o"/>
+        <id>tag:daringfireball.net,2023://1.40308</id>
+        <published>2023-10-25T21:50:01Z</published>
+        <updated>2023-10-27T01:36:21Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <summary type="text">Of the three component services whose standalone prices went up, TV+ and Arcade seem
+            justified. News+, however, does not.
+        </summary>
+        <content type="html" xml:base="https://daringfireball.net/" xml:lang="en"><![CDATA[
+<p><a href="https://www.macrumors.com/2023/10/25/apple-services-price-increases/">Joe Rossignol, MacRumors</a>:</p>
+
+<blockquote>
+  <p>Apple today announced that it is increasing the prices of some of 
+its subscription-based services, including Apple TV+, Apple 
+Arcade, and Apple News+, for new and existing subscribers in the 
+U.S. and <a href="https://www.macg.co/services/2023/10/augmentation-imminente-des-abonnements-apple-arcade-apple-tv-et-apple-one-140063">many other countries around the world</a>. </p>
+
+<p>The price changes in the U.S. are as follows: </p>
+
+<ul>
+<li>Apple TV+: $6.99 per month → $9.99 per month </li>
+<li>Apple Arcade: $4.99 per month → $6.99 per month </li>
+<li>Apple News+: $9.99 per month → $12.99 per month </li>
+</ul>
+
+<p>For those who subscribe to Apple TV+ on an annual basis, the price 
+has increased from $69 per year to $99 per year accordingly. </p>
+
+<p>Prices for the Apple One bundles that include these services are 
+also increasing as a result: </p>
+
+<ul>
+<li>Individual: $16.95 per month → $19.95 per month </li>
+<li>Family: $22.95 per month → $25.95 per month </li>
+<li>Premier: $32.95 per month → $37.95 per month </li>
+</ul>
+
+<p>[...] There are no price increases for Apple Music and Apple 
+Fitness+ today. </p>
+</blockquote>
+
+<p>I’d have linked to the Apple Newsroom announcement of these price increases, but there’s not a word about them there. <a href="https://www.apple.com/newsroom/">Apple Newsroom</a> is sort of a “good news only” company blog.</p>
+
+<p>At the Apple One bundle level, these increases are pretty modest, but at the standalone level, these hikes are notable. TV+ is now double the price <a href="https://www.apple.com/newsroom/2019/09/apple-tv-launches-november-1-featuring-originals-from-the-worlds-greatest-storytellers/">it debuted at just four years ago</a>.</p>
+
+<p><a href="https://twitter.com/tomwarren/status/1717188520123445666">Tom Warren, on Twitter/X</a>, makes a keen observation regarding the ever-escalating prices of streaming services:</p>
+
+<blockquote>
+  <p>If Apple TV, Netflix, and Disney+ keep raising prices then it will 
+only force more people into piracy. It’s already surprising how 
+many in the UK use modified Fire TV sticks to access pirated TV 
+shows and movies. </p>
+</blockquote>
+
+<p>I’ll quibble with his verb choice and suggest “push” not “force” — no one is <em>forced</em> to bootleg content — but the point stands. Ever since the iTunes Music Store opened 20 years ago, at the height of MP3 file sharing via Napster and similar platforms, I’ve always thought of media bootlegging as a form of negotiation. It’s like ad hoc collective bargaining between users and the corporations that set the prices and define the experience of consuming the media.</p>
+
+<p>Subscription pricing requires a form of calculus to find the sweet spot that generates the most money. Set the price too low and you’ll reduce piracy but leave money on the table. Set the price too high and you’ll generate less money because more users — ones who might otherwise have subscribed at a lower price — will choose to bootleg. (Some people, of course, will always choose to bootleg. There’s no point trying to find a price to appease them.)</p>
+
+<p>But pricing isn’t the only factor in this equation. The experience is too. Bootlegging’s obvious appeal is the price: zero. But it’s always been a bit of a pain in the ass. Weird apps and sketchy sources. Steve Jobs emphasized this aspect of the iTunes Music Store when he introduced it: 99 cents was an appealing price, but not as appealing as free. But the overall experience of searching for and downloading music from iTunes was so much better than bootlegging that it made you happy to pay for the songs.</p>
+
+<p>Apple still gets that part: their apps for consuming their services are generally very low on annoyances. You almost never have to sign back in because your previous sign-in expired. So many of the streaming video services I use on my Apple TV make me jump through hoops with those incredibly annoying sign-back-in flows where you have to open a URL on the web using another device (probably your phone, if you’re on your couch), and enter a code that’s on the TV screen. Then you have to wait like 20 seconds and they let you back in. Then a few months from now you have to do it again for unexplained reasons.</p>
+
+<p>Every time the official service makes you watch an unskippable ad, every time their shitty custom video player makes fast-forwarding or rewinding janky, every time their shitty app feels slow or forgets where you were in a movie that you paused days ago — those little annoyances add up, and they reduce the user experience advantage that paying for content should provide compared to bootlegging it.</p>
+
+<p>If the “pirate or pay?” debate for users were just about price, zillions more people would bootleg their music and content and games. It’s more like this:</p>
+
+<ul>
+<li><p><strong>Pirate:</strong> Pay nothing (good), feel guilty about stealing the content (bad), go through all the hassle of obtaining pirated content and cracked copies of games and apps, and managing your own local library of content that’s fallen off the back of these proverbial trucks (bad). Also, there’s a risk of legal trouble, getting your internet service disabled, or just plain embarrassment if some piracy watchdog catches you (bad).</p></li>
+<li><p><strong>Pay:</strong> Cough up the monthly subscription fee for the service (bad), feel no guilt because you’re not stealing anything (good), avoid the hassles of obtaining and managing bootlegged media content (good), and enjoy the ease of  use of the official app for the service.</p></li>
+</ul>
+
+<p>I didn’t put a “(good)” or “(bad)” after that last one, because it varies so wildly from one service to another. The only content I’ve bootlegged in years are those rare films that aren’t available through legitimate channels, like the wonderful <a href="https://en.wikipedia.org/wiki/Harmy%27s_Despecialized_Edition">“de-specialized” editions of the original Star Wars trilogy</a>. In addition to the fact that I have more money than sense, I’m incredibly lazy when it comes to consuming entertainment. I don’t want to work, at all, to find it, download it, or manage it. But some streaming apps are so bad they make it feel like as much work to watch their content legitimately as it would be to pirate it.</p>
+
+<p>That’s one thing that is vastly under-remarked-upon regarding Netflix: they’ve always provided a terrific user experience. Their apps are fast, reliable, and well-designed. Netflix never forgets or expires my sign-in credentials. You can tell that everyone at Netflix, right up to Ted Sarandos and Reed Hastings, <em>cares</em> about the entire user experience. Netflix, culturally, is much like Apple in that regard: they have good taste baked into the company DNA.</p>
+
+<p>As for Apple’s price hikes today, I’m an Apple One Premier subscriber, and I’m fine — not happy, of course, but fine — with paying an extra $5/month for everything I get. Of the three component services whose standalone prices went up, TV+ and Arcade seem justified. News+, however, does not.</p>
+
+<p>I’ve been saying for a few years that Apple TV+ is becoming the new HBO — a channel dedicated to prestigious original content, quality over quantity — and that feels more true than ever now that HBO is being <a href="https://daringfireball.net/2023/04/warner_max">watered down inside Max</a>. Apple TV+ is home to a steady stream of original shows that my family really enjoys. I’m pretty sure we have more favorite shows on TV+ than any other service. <a href="https://daringfireball.net/linked/2023/05/02/onion-netflix-wga">Unlike Netflix</a>, Apple sticks with all its good shows and renews them for multiple seasons, allowing them to end satisfyingly.<sup id="fnr1-2023-10-25"><a href="#fn1-2023-10-25">1</a></sup> TV+’s average content quality is way higher than that of Disney+, which has been cranking out <a href="https://www.threads.net/@gruber/post/CyHm6Ots64Q">embarrassing franchise-tanking turds</a> like <em>Ahsoka</em> and <em>Secret Invasion</em>, relative disappointments like <em>Obi-Wan Kenobi</em> (a bloviating six-part series which should have been cut down to one solid two-hour movie), and only occasional gems like <em>Andor</em>. And while Apple TV+ has long stood out for its relative dearth of old library content, in terms of original new content, it has way more good stuff — for my taste at least — than Amazon Prime, Hulu, Max, or the also-rans like Peacock and Paramount+. I just don’t care as much about streaming access to old library content compared to new original stuff, and I don’t think most other people do either.</p>
+
+<p>As for Apple Arcade — I personally don’t play many video games, but more and more, the ones I <em>do</em> play on my iPhone are from Arcade. No ads, no in-app-purchase pay-to-win chicanery, and an ever-growing library of really good games that span a wide range of genres. $7/month feels more than fair.</p>
+
+<p>But News+? The primary and obvious appeal of Apple News+ is getting access to paywalled content from <a href="https://www.apple.com/apple-news/publications/">participating publications</a> like The Wall Street Journal. That’s a long list of newspapers and magazines. But the actual reading experience often stinks — most articles from most publishers in Apple News are lousy with huge ugly ads, breaking up each article every few paragraphs. And the ads are often almost comically low-class <a href="https://www.theawl.com/2015/06/a-complete-taxonomy-of-internet-chum/">chumbox</a> scams. I posted <a href="https://mastodon.social/@gruber/111196532299204839">screenshots of a few of them</a> just a few weeks ago on Mastodon. Just look at them.<sup id="fnr2-2023-10-25"><a href="#fn2-2023-10-25">2</a></sup> These ads — and the quantity of them — do not look or feel like something you should experience in a premium $10/month subscription — let alone the new price of $13/month. The only way this price increase for News+ can be justified is if Apple is planning to use the increased subscription fee revenue to both reduce the number of ads in articles <em>and</em> increase their quality.</p>
+
+<p>As with bootlegging media and pirating games and apps, ad blocking is a negotiation between users and publishers. Reading the same article in a web browser, with extensions installed that block user-hostile ads, is, for me at least, almost always a far better experience than reading in Apple News. Given that News+ is a not-cheap paid subscription, that user-experience equation should be the other way around: it should be nicer to read in Apple News than on the web. But it’s not. And yet Apple is raising the price.</p>
+
+<p>Finally, I’ll note with mild annoyance but absolutely zero surprise that while Apple is now steadily <a href="https://variety.com/2022/digital/news/apple-price-increase-apple-tv-plus-music-1235412633/#">raising prices for its media content services every year or so</a>, the data storage tiers for iCloud — whether free or paid — have remained <a href="https://www.theverge.com/2015/9/16/9341083/apple-icloud-storage-plans-cheaper">unchanged since 2015</a> except at the highest tier. Eight years! Steady increases in media subscription pricing are annoying but understandable. Never increasing the amount of storage most users get with iCloud feels stubborn and spiteful.</p>
+
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1-2023-10-25">
+<p>I said <em>good</em> shows, <a href="https://www.nytimes.com/2023/10/19/business/media/jon-stewart-the-problem-ends.html">not all shows</a>.&nbsp;<a href="#fnr1-2023-10-25"  class="footnoteBackLink"  title="Jump back to footnote 1 in the text.">&#x21A9;&#xFE0E;</a></p>
+</li>
+
+<li id="fn2-2023-10-25">
+<p>If you scroll through the replies to <a href="https://mastodon.social/@gruber/111196532299204839">my post on Mastodon</a>, you’ll see a few people suggesting that the reason I’m getting served bottom-of-the-barrel chumbox ads like this is that I must have “Personalized Ads” turned off in Settings → Privacy &amp; Security → Apple Advertising. But I’ve got Personalied Ads turned <em>on</em>, and have had it turned on for a long time. These are Apple’s <em>good</em> ads in Apple News. Glutton for punishment that I am, I’m actually tempted to turn Personalized Ads off and see if the ads get even worse.&nbsp;<a href="#fnr2-2023-10-25"  class="footnoteBackLink"  title="Jump back to footnote 2 in the text.">&#x21A9;&#xFE0E;︎</a></p>
+</li>
+
+
+</ol>
+</div>
+
+
+
+    ]]></content>
+        <title>★ Apple Again Hikes Prices for Its Media Services</title>
+    </entry>
+    <entry>
+
+        <link rel="alternate" type="text/html" href="https://daringfireball.net/2023/10/apple_scary_fast_event"/>
+        <link rel="shorturl" href="http://df4.us/v3m"/>
+        <id>tag:daringfireball.net,2023://1.40306</id>
+        <published>2023-10-24T19:12:03Z</published>
+        <updated>2023-10-27T01:38:46Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <summary type="text">So I’m just guessing here, but I’m thinking this event might be about iMacs only, and just
+            an upgrade to the M2, and maybe some design changes, like, say, fresh colors. It’d be a lot more fun if it’s
+            the debut of the M3, but my spidey sense says that’s not happening yet.
+        </summary>
+        <content type="html" xml:base="https://daringfireball.net/" xml:lang="en"><![CDATA[
+<p><a href="https://sixcolors.com/post/2023/10/spooktacular-apple-event-on-halloween-eve/">Dan Moren, Six Colors</a>:</p>
+
+<blockquote>
+  <p>Chalk this one up as something I’ve never seen before: an Apple 
+event in the <em>evening</em>. The company on Tuesday announced a “Scary 
+Fast” event coming Monday, October 30 at 5pm Pacific time. </p>
+
+<p>It’s largely expected that this event will feature new Macs, as 
+<a href="https://www.macrumors.com/2023/10/23/apple-mac-launch-event-coming-october-30-or-31/">reported by Bloomberg’s Mark Gurman this weekend</a>: the money 
+seems to be on a refreshed 24-inch iMac, though other 
+announcements are possible. </p>
+</blockquote>
+
+<p>Broadcasting an event at 8pm ET / 5pm PT is new, but we’re still relatively early in the era of pre-recorded keynotes. Unusual to say the least — makes me wonder if there’s some other shoe to drop that will make the timing make sense.</p>
+
+<p>If it’s the iMac, I wouldn’t be surprised if the upgrade is to the M2, not the M3. Gurman reported that the iMac would skip the M2 and go straight to the M3, but <a href="https://www.bloomberg.com/news/newsletters/2022-06-26/apple-aapl-plans-iphone-14-apple-watch-series-8-m2-macs-for-2022-and-2023-l4vd5unx">that report was all the way back in June <em>2022</em></a>:</p>
+
+<blockquote>
+  <p>Outside of the Mac and iPad Pro, there’s another place I expect 
+the M2 to appear: Apple’s mixed-reality headset. I’m told the 
+latest internal incarnations of the device run the base M2 chip 
+along with 16 gigabytes of RAM. [...] </p>
+
+<p>Apple is also already at work on the M2’s successor, the M3, and 
+the company is planning to use that chip as early as next year 
+with updates to the 13-inch MacBook Air code-named J513, a 15-inch 
+MacBook Air known as J515, a new iMac code-named J433 and possibly 
+a 12-inch laptop that’s still in early development. </p>
+</blockquote>
+
+<p>He was correct about the Vision Pro using the M2 — and remember, that was a full year ahead of it being announced — but it doesn’t feel right to me that the M3 chip would debut in the iMac. Gurman has also pointed out that MacBook Pros — both the not-really-all-that-“pro” 13-inch model, and the truly-pro 14- and 16-inch models — are in short supply at the moment, with mid-November shipping dates for most configurations. But it just feels too early for the M3 Pro/Max chips to start shipping, when the A17 Pro — the chip the M3 is presumably based on — only started shipping last month. Given what I’ve heard about TSMC’s 3nm production capability — particularly obtaining wafers — I think their hands are full just producing A17 Pro chips for the iPhones 15 Pro.</p>
+
+<p>So I’m just guessing here, but I’m thinking this event might be about iMacs only, with an upgrade to the M2, and maybe some design changes — like, say, fresh colors. It’d be a lot more fun if it’s the debut of the M3, but my spidey sense says that’s not happening yet.</p>
+
+<p><em>Also</em>: It would sort of feel awkward to start launching $1,300 M3-based iMacs (or $1,000 iPad Pros) months ahead of the $3,500 Vision Pro, which will have the M2. It feels natural to me that M3-based Macs and iPads will only launch <em>after</em> the Vision Pro, so that when the Vision Pro is announced, the M2 is still the “current” Apple silicon generation.</p>
+
+<p><em>But</em>: The event is named “Scary Fast”, so maybe it <em>is</em> about the debut of the M3 series? I still don’t think they’re going to have the M3 Pro/Max chips ready, but maybe it’s a refresh across the line for all the Macs that use the regular M2 (and in the iMac’s case, M1)?</p>
+
+<p>So it looks like Gurman is going to beat Ming-Chi Kuo in the “are new Macs coming this year?” <a href="https://daringfireball.net/linked/2023/10/23/apple-rumor-pundit-thunderdome">Thunderdome face-off</a>, but it’s fun that no one seems to know what exactly is coming.</p>
+
+<h2>Postscript</h2>
+
+<p>OK here’s a spitball idea that fits all the puzzle pieces together:</p>
+
+<ul>
+<li>Regular 24-inch iMacs get upgraded to the M2.</li>
+<li>These new iMacs might also be the source for those <a href="https://www.macrumors.com/2023/08/21/iphone-15-could-come-with-color-matched-cables/">purported color-matched braided USB-C cables</a> that were assumed to be for the iPhones 15. All iPhone 15 models ship with plain white braided cables, but the existing M1 iMacs shipped with fun color-matched Lightning cables.</li>
+<li>New “pro” iMacs are launched, with the M2 Pro and M2 Max chips, like the ones in the current 14- and 16-inch MacBook Pros (which only debuted early this year). Maybe these hypothetical iMac Pros will have bigger displays too? 27 inches would match both the Studio Display and the old Intel-based “big” iMacs.</li>
+</ul>
+
+<p>M2 Pro and Max iMacs would justify “Scary Fast” in a way that just plain M2 iMac speed bumps would not. This would still allow the Vision Pro to launch “early next year” while the M2 remains the current Apple silicon generation. And this would fit with the scuttlebutt that TSMC’s 3nm production capability is, for the near future, almost entirely dedicated to keeping up with demand for the iPhones 15 Pro.</p>
+
+
+
+    ]]></content>
+        <title>★ Apple to Broadcast ‘Scary Fast’ Event Next Monday Night</title>
+    </entry>
+    <entry>
+
+        <link rel="alternate" type="text/html" href="https://daringfireball.net/2023/10/apple_and_ai"/>
+        <link rel="shorturl" href="http://df4.us/v3j"/>
+        <id>tag:daringfireball.net,2023://1.40303</id>
+        <published>2023-10-23T23:33:57Z</published>
+        <updated>2023-10-27T01:37:50Z</updated>
+        <author>
+            <name>John Gruber</name>
+            <uri>http://daringfireball.net/</uri>
+        </author>
+        <summary type="text">The anxiety inside Apple is that many people inside do not believe Apple’s own AI/ML team
+            can deliver.
+        </summary>
+        <content type="html" xml:base="https://daringfireball.net/" xml:lang="en"><![CDATA[
+<p><a href="https://daringfireball.net/linked/2023/10/23/apple-rumor-pundit-thunderdome">Speaking of</a> Mark Gurman, <a href="https://www.bloomberg.com/news/newsletters/2023-10-22/what-is-apple-doing-in-ai-revamping-siri-search-apple-music-and-other-apps-lo1ffr7p">he has an interesting bit about Apple’s AI efforts in his latest Power On column</a>:</p>
+
+<blockquote>
+  <p>The company has some catching up to do. Apple largely sat on the 
+sidelines when OpenAI’s ChatGPT took off like a rocket last year. 
+It watched as Google and Microsoft Corp. rolled out generative AI 
+versions of their search engines, which spit out convincingly 
+human-like responses to users’ queries. Microsoft also updated its 
+Windows apps with smarter assistants, and Amazon.com Inc. unveiled 
+an AI-enhanced overhaul of Alexa. </p>
+
+<p>All the while, the only noteworthy AI release from Apple was an 
+improved auto-correct system in iOS 17. </p>
+</blockquote>
+
+<p>I would argue that the improved autocorrect in iOS 17 is a major feature — in my use it’s clearly an improvement, and autocorrect is a feature used every day, in almost every app, by almost every iOS user. It’s one of the most used and most important features in the entire OS. I’d also argue that Apple has done some terrific work with AI features in Photos. The search feature in Photos works <em>really</em> well.</p>
+
+<p>But I think Gurman’s summary does get at an essential truth. If I asked you “Which companies are at the forefront of AI-powered products?”, I doubt you’d put Apple on the list. And AI is proving so useful — and yet is a nascent field — that Apple needs to soon be on that list, lest their products begin to fall behind competitively. “Which companies are best at integrating AI into products?” is going to be like “Which companies are best at creating hardware at scale?” and “Which companies are best at human interface design?”</p>
+
+<p>Gurman continues:</p>
+
+<blockquote>
+  <p>Now, Chief Executive Officer Tim Cook says that Apple has been 
+working on generative AI technology for years. But I can tell you 
+in no uncertain terms that Apple executives were caught off guard 
+by the industry’s sudden AI fever and have been scrambling since 
+late last year to make up for lost time. </p>
+
+<p>“There’s a lot of anxiety about this and it’s considered a pretty 
+big miss internally,” a person with knowledge of the matter told 
+Power On. </p>
+
+<p>As I first reported in July, the company built its own large 
+language model called Ajax and rolled out an internal chatbot 
+dubbed “Apple GPT” to test out the functionality. The critical 
+next step is determining if the technology is up to snuff with the 
+competition and how Apple will actually apply it to its products. </p>
+</blockquote>
+
+<p>What I have heard from little birdies in Cupertino is <em>not</em> that there was a miss on this already. Apple is almost never at the forefront of stuff like this. They’re a deliberate company. Their goal, as with any new technology, is to integrate it into products in meaningful ways <em>best</em>, not <em>first</em>. That’s why there’s no internal anxiety that they’ve already missed anything related to AI.</p>
+
+<p>The anxiety inside Apple is that many people inside do not believe Apple’s own AI/ML team can deliver, but that the company — if only for privacy reasons — will only use what comes from its own AI/ML team.</p>
+
+
+
+    ]]></content>
+        <title>★ Apple and AI</title>
+    </entry>
+</feed><!-- THE END -->
