@@ -26,6 +26,10 @@ def rewrite_reddit_url(scheme: str, path: str, query: str, fragment: str) -> str
     return urlunsplit((scheme, 'old.reddit.com', path, query, fragment))
 
 
+def rewrite_reuters_url(scheme: str, path: str) -> str:
+    return urlunsplit((scheme, 'neuters.de', path, '', ''))
+
+
 def rewrite_twitter_url(scheme: str, path: str) -> str:
     return urlunsplit((scheme, 'nitter.net', path, '', ''))
 
@@ -36,6 +40,8 @@ def rewrite_url(url: str) -> str:
         case 'www.npr.org':
             rewritten = rewrite_npr_url(scheme, path)
             return rewritten if rewritten else url
+        case 'www.reuters.com':
+            return rewrite_reuters_url(scheme, path)
         case 'twitter.com':
             return rewrite_twitter_url(scheme, path)
         case _ if netloc in REDDIT_NETLOCS:
