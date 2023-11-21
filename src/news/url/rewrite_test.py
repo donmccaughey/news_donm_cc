@@ -1,12 +1,16 @@
 from pytest import mark
 from urllib.parse import urlsplit
-from .rewrite import rewrite_url, rewrite_npr_url, rewrite_reddit_url
+from .rewrite import rewrite_twitter_url, rewrite_url, rewrite_npr_url, rewrite_reddit_url
 
 
 @mark.parametrize('url, rewritten', [
     (
         'https://languagelearningwithnetflix.com/',
         'https://languagelearningwithnetflix.com/'
+    ),
+    (
+        'https://twitter.com/eshear/status/1726526112019382275?s=46&t=a8Pjw_2Gzth_zpOPBTHQaw',
+        'https://nitter.net/eshear/status/1726526112019382275',
     ),
 
     # Reddit variations
@@ -69,3 +73,18 @@ def test_rewrite_npr_url(url, rewritten):
 def test_rewrite_reddit_url(url, rewritten):
     scheme, netloc, path, query, fragment = urlsplit(url)
     assert rewrite_reddit_url(scheme, path, query, fragment) == rewritten
+
+
+@mark.parametrize('url, rewritten', [
+    (
+        'https://twitter.com/eastdakota/status/1726735785188073726',
+        'https://nitter.net/eastdakota/status/1726735785188073726',
+    ),
+    (
+        'https://twitter.com/eshear/status/1726526112019382275?s=46&t=a8Pjw_2Gzth_zpOPBTHQaw',
+        'https://nitter.net/eshear/status/1726526112019382275',
+    )
+])
+def test_rewrite_twitter_url(url, rewritten):
+    scheme, netloc, path, query, fragment = urlsplit(url)
+    assert rewrite_twitter_url(scheme, path) == rewritten
