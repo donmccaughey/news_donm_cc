@@ -1,5 +1,6 @@
 SKIP_SITES = {
     'aeon.co',
+    'americanaffairsjournal.org',
     'astralcodexten.com',
 
     'betonit.substack.com',
@@ -27,6 +28,9 @@ SKIP_SITES = {
     'europeanreviewofbooks.com',
 
     'fantasticmetropolis.com',
+    'francisdiclemente.com',
+
+    'granta.com',
 
     'hedgehogreview.com',
     'hudsonreview.com',
@@ -98,6 +102,7 @@ SKIP_SITES = {
     'theamericanconservative.com',
     'theamericanscholar.org',
     'thecritic.co.uk',
+    'thedial.world',
     'thedriftmag.com',
     'theepochtimes.com',
     'themarginalian.org',
@@ -112,6 +117,7 @@ SKIP_SITES = {
     'unherd.com',
 
     'versobooks.com',
+    'vestoj.com',
 
     'wmagazine.com',
 
