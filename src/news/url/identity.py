@@ -39,6 +39,7 @@ SOCIAL_SITES = {
     'devblogs.microsoft.com',
     'nitter.net',
     'twitter.com',
+    'x.com',
 }
 
 
