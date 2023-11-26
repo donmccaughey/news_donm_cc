@@ -40,6 +40,11 @@ class Feeds(Encodable, Iterable[Feed], Serializable):
                 URL('https://acoup.blog/feed/'),
             ),
             Feed(
+                'Benji Weber',
+                'bw',
+                URL('https://benjiweber.co.uk/blog/feed/'),
+            ),
+            Feed(
                 'charity.wtf',
                 'cw',
                 URL('https://charity.wtf/feed/'),
