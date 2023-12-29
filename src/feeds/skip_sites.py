@@ -2,6 +2,7 @@ SKIP_SITES = {
     'aeon.co',
     'americanaffairsjournal.org',
     'astralcodexten.com',
+    'magazine.atavist.com',
 
     'betonit.substack.com',
     # blogspot.com
@@ -32,6 +33,7 @@ SKIP_SITES = {
 
     'granta.com',
 
+    'hakaimagazine.com',
     'hedgehogreview.com',
     'hudsonreview.com',
 
@@ -40,6 +42,7 @@ SKIP_SITES = {
     'jacobin.com',
     'jewishreviewofbooks.com',
 
+    'kirkusreviews.com',
     'knowablemagazine.org',
 
     'laphamsquarterly.org',
@@ -60,6 +63,7 @@ SKIP_SITES = {
     'mindmatters.ai',
     'monthlyreview.org',
 
+    'nakedcapitalism.com',
     'narratively.com',
     'nationalreview.com',
     'newcriterion.com',
@@ -79,6 +83,7 @@ SKIP_SITES = {
 
     'patrickcollison.com',
     'paulgraham.com',
+    'plough.com',
     'project-syndicate.org',
     'publicdomainreview.org',
 
@@ -87,6 +92,7 @@ SKIP_SITES = {
     'racket.news',
     'reason.com',
 
+    'samaltman.com',
     'seths.blog',
     'sive.rs',
     'slatestarcodex.com',
@@ -101,6 +107,7 @@ SKIP_SITES = {
     'the-fence.com',
     'theamericanconservative.com',
     'theamericanscholar.org',
+    'thebaffler.com',
     'thecritic.co.uk',
     'thedial.world',
     'thedriftmag.com',
@@ -111,6 +118,7 @@ SKIP_SITES = {
     'theparisreview.org',
     'thepointmag.com',
     'thewalrus.ca',
+    'thoughtco.com',
     'twitter.com',
     'business.twitter.com',
 
@@ -124,4 +132,6 @@ SKIP_SITES = {
     'xtramagazine.com',
 
     'yalereview.org',
+
+    '972mag.com',
 }
