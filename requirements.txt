@@ -1,6 +1,6 @@
 beautifulsoup4 == 4.12.2
-boto3==1.28.12
-feedparser==6.0.11
-Flask==2.3.3
-gunicorn==21.2.0
-requests==2.31.0
+boto3 == 1.28.12
+feedparser == 6.0.11
+Flask == 2.3.3
+gunicorn == 21.2.0
+requests == 2.31.0
