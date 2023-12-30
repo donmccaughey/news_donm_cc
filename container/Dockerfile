@@ -2,7 +2,16 @@ FROM alpine:latest
 
 EXPOSE 80
 
-RUN apk add --no-cache curl nginx python3 py3-pip
+RUN apk add --no-cache \
+        curl \
+        nginx \
+        python3 \
+        py3-beautifulsoup4 \
+        py3-boto3 \
+        py3-feedparser \
+        py3-flask \
+        py3-gunicorn \
+        py3-requests
 
 
 # nginx
@@ -45,14 +54,9 @@ RUN ln -sf /etc/profile.d/color_prompt.sh.disabled \
 # news app
 RUN mkdir -p /usr/lib/news /var/lib/news
 RUN chown -R news:news /usr/lib/news /var/lib/news
-COPY --chown=news:news requirements.txt /usr/lib/news/
 COPY --chown=news:news ${version_file} /usr/lib/news/
 COPY --chown=news:news src /usr/lib/news
 
-WORKDIR /usr/lib/news
-RUN python3 -m pip install \
-        --quiet --quiet --quiet \
-        --requirement requirements.txt
 
 HEALTHCHECK CMD \
         curl --fail --show-error --silent \

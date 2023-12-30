@@ -1,5 +1,6 @@
 # To Do
 
+- figure out how to keep `requirements.txt` and `apk add` in the docker file in sync
 - paginate the `/sites` page
 - understand how requests handles redirects
   - Update `Feed.get_items()` to detect redirects correctly

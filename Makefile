@@ -91,7 +91,6 @@ stop :
 
 container_files := \
 	.dockerignore \
-	requirements.txt \
 	container/crontabs/news \
 	container/nginx/nginx.conf \
 	container/nginx/error_pages/404.html \
