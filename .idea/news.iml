@@ -5,6 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/.pytest_cache" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/gen" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.11 (news-venv)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />

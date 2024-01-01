@@ -2,16 +2,7 @@ FROM alpine:latest
 
 EXPOSE 80
 
-RUN apk add --no-cache \
-        curl \
-        nginx \
-        python3 \
-        py3-beautifulsoup4 \
-        py3-boto3 \
-        py3-feedparser \
-        py3-flask \
-        py3-gunicorn \
-        py3-requests
+RUN apk add --no-cache curl nginx python3
 
 
 # nginx
@@ -52,9 +43,12 @@ RUN ln -sf /etc/profile.d/color_prompt.sh.disabled \
 
 
 # news app
+COPY gen/apk_add_py3_packages /root
+RUN /root/apk_add_py3_packages
+
 RUN mkdir -p /usr/lib/news /var/lib/news
 RUN chown -R news:news /usr/lib/news /var/lib/news
-COPY --chown=news:news ${version_file} /usr/lib/news/
+COPY --chown=news:news gen/version.txt /usr/lib/news
 COPY --chown=news:news src /usr/lib/news
 
 

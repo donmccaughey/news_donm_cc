@@ -3,6 +3,7 @@
 __pycache__
 aws.xml
 logs
+gen
 secrets
 target
 tmp

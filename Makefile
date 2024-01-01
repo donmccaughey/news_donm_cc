@@ -24,6 +24,7 @@ check : test/mypy.txt
 .PHONY : clean
 clean : stop
 	-docker rm $(NEWS)
+	find gen -mindepth 1 ! -name 'README.md' -exec rm -f {} +
 	rm -rf $(TMP)
 
 
@@ -104,7 +105,9 @@ container_files := \
 	container/sbin/news \
 	container/sbin/serve \
 	container/wwwroot/robots.txt \
-	container/wwwroot/sitemap.txt
+	container/wwwroot/sitemap.txt \
+	gen/apk_add_py3_packages \
+	gen/version.txt
 
 python_files := \
 	src/extractor.py \
@@ -207,6 +210,16 @@ source_files := $(filter-out %_test.py, $(python_files))
 test_files := $(filter %_test.py, $(python_files))
 
 
+gen/apk_add_py3_packages : requirements.txt scripts/pip2apk.py | $$(dir $$@)
+	python3 scripts/pip2apk.py \
+		--input $< \
+		--output $@
+
+
+gen/version.txt : | $$(dir $$@)
+	git rev-parse --short HEAD > $@
+
+
 test/mypy.txt : .mypy.ini $(TMP)/pip-install-requirements-dev.stamp.txt $(TMP)/pytest.stamp.txt
 	python3 -m mypy --check-untyped-defs src | tee test/mypy.txt
 
@@ -232,7 +245,10 @@ $(TMP)/aws-lightsail-create-container-service-deployment.stamp.txt : \
 	date > $@
 
 
-$(TMP)/create-container-service-deployment.json : aws/create-container-service-deployment.template.json | $$(dir $$@)
+$(TMP)/create-container-service-deployment.json : \
+		aws/create-container-service-deployment.template.json \
+		scripts/fillin.py \
+		| $$(dir $$@)
 	python3 scripts/fillin.py \
 		--input $< \
 		--output $@ \
@@ -247,9 +263,7 @@ $(TMP)/docker-build.stamp.txt : \
 		$(container_files) \
 		$(source_files) \
 		| $$(dir $$@)
-	git rev-parse --short HEAD > $(TMP)/version.txt
 	docker build \
-		--build-arg version_file="$(TMP)/version.txt" \
 		--file $< \
 		--platform linux/amd64 \
 		--tag $(NEWS) \
@@ -325,5 +339,6 @@ $(TMP)/.coverage : \
 		--quiet --quiet
 
 
+gen \
 $(TMP)/ :
 	mkdir -p $@
