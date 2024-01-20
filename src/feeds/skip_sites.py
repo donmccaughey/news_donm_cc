@@ -1,6 +1,7 @@
 SKIP_SITES = {
     'aeon.co',
     'americanaffairsjournal.org',
+    'asteriskmag.com',
     'astralcodexten.com',
     'magazine.atavist.com',
 
@@ -68,6 +69,7 @@ SKIP_SITES = {
     'nationalreview.com',
     'newcriterion.com',
     'newleftreview.org',
+    'newrepublic.com',
     'newscientist.com',
     'newstatesman.com',
     'noahpinion.blog',
@@ -81,6 +83,7 @@ SKIP_SITES = {
     'otherlife.co',
     'oxfordpoliticalreview.com',
 
+    'palladiummag.com',
     'patrickcollison.com',
     'paulgraham.com',
     'plough.com',
