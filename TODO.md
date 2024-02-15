@@ -1,6 +1,6 @@
 # To Do
 
-- figure out how to keep `requirements.txt` and `apk add` in the docker file in sync
+- figure out how to check package versions in `requirements.txt` against apk versions
   - https://pkgs.alpinelinux.org/packages
 - paginate the `/sites` page
 - understand how requests handles redirects
