@@ -132,6 +132,7 @@ SKIP_SITES = {
 
     'wmagazine.com',
 
+    'x.com',
     'xtramagazine.com',
 
     'yalereview.org',

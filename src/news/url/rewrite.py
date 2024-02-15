@@ -9,11 +9,6 @@ REDDIT_NETLOCS = {
     'www.reddit.com',
 }
 
-TWITTER_NETLOCS = {
-    'twitter.com',
-    'x.com',
-}
-
 
 def rewrite_npr_url(scheme: str, path: str) -> str | None:
     parts = path.split('/')
@@ -35,10 +30,6 @@ def rewrite_reuters_url(scheme: str, path: str) -> str:
     return urlunsplit((scheme, 'neuters.de', path, '', ''))
 
 
-def rewrite_twitter_url(scheme: str, path: str) -> str:
-    return urlunsplit((scheme, 'nitter.net', path, '', ''))
-
-
 def rewrite_url(url: str) -> str:
     scheme, netloc, path, query, fragment = urlsplit(url)
     match netloc:
@@ -47,8 +38,6 @@ def rewrite_url(url: str) -> str:
             return rewritten if rewritten else url
         case 'www.reuters.com':
             return rewrite_reuters_url(scheme, path)
-        case _ if netloc in TWITTER_NETLOCS:
-            return rewrite_twitter_url(scheme, path)
         case _ if netloc in REDDIT_NETLOCS:
             return rewrite_reddit_url(scheme, path, query, fragment)
         case _:

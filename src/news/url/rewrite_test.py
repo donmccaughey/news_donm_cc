@@ -1,6 +1,6 @@
 from pytest import mark
 from urllib.parse import urlsplit
-from .rewrite import rewrite_reuters_url, rewrite_twitter_url, rewrite_url, rewrite_npr_url, rewrite_reddit_url
+from .rewrite import rewrite_reuters_url, rewrite_url, rewrite_npr_url, rewrite_reddit_url
 
 
 @mark.parametrize('url, rewritten', [
@@ -11,16 +11,6 @@ from .rewrite import rewrite_reuters_url, rewrite_twitter_url, rewrite_url, rewr
     (
         'https://www.reuters.com/legal/transactional/venmo-cash-app-users-sue-apple-over-peer-to-peer-payment-fees-2023-11-20/',
         'https://neuters.de/legal/transactional/venmo-cash-app-users-sue-apple-over-peer-to-peer-payment-fees-2023-11-20/',
-    ),
-
-    # Twitter variations
-    (
-        'https://twitter.com/eshear/status/1726526112019382275?s=46&t=a8Pjw_2Gzth_zpOPBTHQaw',
-        'https://nitter.net/eshear/status/1726526112019382275',
-    ),
-    (
-        'https://x.com/thomashawk/status/1728625377445347685?s=46&t=STDryMhuz44lhHE6I9KwPQ',
-        'https://nitter.net/thomashawk/status/1728625377445347685',
     ),
 
     # Reddit variations
@@ -94,18 +84,3 @@ def test_rewrite_reddit_url(url, rewritten):
 def test_rewrite_reuters_url(url, rewritten):
     scheme, netloc, path, query, fragment = urlsplit(url)
     assert rewrite_reuters_url(scheme, path) == rewritten
-
-
-@mark.parametrize('url, rewritten', [
-    (
-        'https://twitter.com/eastdakota/status/1726735785188073726',
-        'https://nitter.net/eastdakota/status/1726735785188073726',
-    ),
-    (
-        'https://twitter.com/eshear/status/1726526112019382275?s=46&t=a8Pjw_2Gzth_zpOPBTHQaw',
-        'https://nitter.net/eshear/status/1726526112019382275',
-    )
-])
-def test_rewrite_twitter_url(url, rewritten):
-    scheme, netloc, path, query, fragment = urlsplit(url)
-    assert rewrite_twitter_url(scheme, path) == rewritten

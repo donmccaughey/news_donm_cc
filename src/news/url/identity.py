@@ -37,10 +37,6 @@ SOCIAL_SITES = {
     'people.kernel.org',
     'medium.com',
     'devblogs.microsoft.com',
-    'nitter.cz',
-    'nitter.net',
-    'twitter.com',
-    'x.com',
 }
 
 
