@@ -34,6 +34,7 @@ SOCIAL_SITES = {
     'codeberg.org',
     'github.com',
     'gitlab.com',
+    'instagram.com',
     'people.kernel.org',
     'medium.com',
     'devblogs.microsoft.com',

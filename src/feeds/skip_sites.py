@@ -15,6 +15,7 @@ SKIP_SITES = {
 
     'chronicle.com',
     'city-journal.org',
+    'cnn.com',
     'commonwealmagazine.org',
     'compactmag.com',
 
@@ -23,6 +24,7 @@ SKIP_SITES = {
     'discoursemagazine.com',
     'dissentmagazine.org',
     'documentjournal.com',
+    'dropbox.com',
     'dynomight.net',
 
     'emergencemagazine.org',
@@ -32,6 +34,7 @@ SKIP_SITES = {
     'fantasticmetropolis.com',
     'francisdiclemente.com',
 
+    'docs.google.com',
     'granta.com',
 
     'hakaimagazine.com',
@@ -58,11 +61,13 @@ SKIP_SITES = {
     'mankindquarterly.org',
     'marginalrevolution.com',
     # medium.com
+    'doctorow.medium.com',
     'steve-yegge.medium.com',
     'meltingasphalt.com',
     'milkyeggs.com',
     'mindmatters.ai',
     'monthlyreview.org',
+    'motherjones.com',
 
     'nakedcapitalism.com',
     'narratively.com',
@@ -87,7 +92,9 @@ SKIP_SITES = {
     'patrickcollison.com',
     'paulgraham.com',
     'plough.com',
+    'pluralistic.net',
     'project-syndicate.org',
+    'psmag.com',
     'publicdomainreview.org',
 
     'quillette.com',
@@ -120,8 +127,10 @@ SKIP_SITES = {
     'thenewatlantis.com',
     'theparisreview.org',
     'thepointmag.com',
+    'thestacksreader.com',
     'thewalrus.ca',
     'thoughtco.com',
+    'transom.org',
     'twitter.com',
     'business.twitter.com',
 
