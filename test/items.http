@@ -1,0 +1,13 @@
+### GET first page
+GET http://127.0.0.1:8001/
+Accept: application/json
+
+
+### GET second page
+GET http://127.0.0.1:8001/2
+Accept: application/json
+
+
+### GET page 334
+GET http://127.0.0.1:8001/334
+Accept: application/json

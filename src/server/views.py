@@ -8,18 +8,26 @@ from .site_page import SitePage
 from .sites_page import SitesPage
 
 
+ACCEPTED = ['application/json', 'text/html']
+
+
 def news_page(
         cached_news: CachedNews,
         version: str,
         is_styled: bool,
         page_number: int,
 ) -> Response:
-    news = NewsPage(cached_news, version, is_styled, page_number)
+    accepts_json = 'application/json' == request.accept_mimetypes.best_match(ACCEPTED)
+
+    news = NewsPage(cached_news, version, is_styled, page_number, full_urls=accepts_json)
     if not news.is_valid:
         abort(404)
 
-    html = render_template('news.html', news=news)
-    response = make_response(html)
+    representation = (
+        news.to_json() if accepts_json
+        else render_template('news.html', news=news)
+    )
+    response = make_response(representation)
 
     response.add_etag()
     response.last_modified = news.modified

@@ -80,6 +80,6 @@ class Item(Encodable):
             'url': str(self.url),
             'title': self.title,
             'sources': [source.encode() for source in self.sources],
-            'created': datetime.isoformat(self.created),
-            'modified': datetime.isoformat(self.modified),
+            'created': self.created.isoformat(),
+            'modified': self.modified.isoformat(),
         }

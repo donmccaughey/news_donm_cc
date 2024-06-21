@@ -1,5 +1,7 @@
 from typing import Iterable, Optional, Iterator
 
+from serialize import JSONList
+
 
 class Page(Iterable):
     def __init__(self, items: list, page_number: int, items_per_page: int):
@@ -31,6 +33,13 @@ class Page(Iterable):
         return f'Page {self.number} of {self.count}'
 
     @property
+    def first(self) -> Optional['Page']:
+        if self.number != 1 and self.count > 1:
+            return Page(self.items, 1, self.items_per_page)
+        else:
+            return None
+
+    @property
     def last(self) -> Optional['Page']:
         if self.number != self.count and self.count > 1:
             return Page(self.items, self.count, self.items_per_page)
@@ -51,6 +60,13 @@ class Page(Iterable):
         else:
             return None
 
-    @classmethod
-    def one_page(cls, items: list) -> 'Page':
-        return Page(items, 1, len(items))
+    def to_json(self) -> JSONList:
+        def numbered_item(item, number):
+            encoded = item.encode()
+            encoded['number'] = number
+            return encoded
+
+        return [
+            numbered_item(item, number) for (item, number)
+            in zip(self, range(self.begin + 1, self.end + 1))
+        ]

@@ -8,9 +8,9 @@
     <nav>
         <p class=page-info>
             updated <time datetime={{news.modified|iso}}>{{news.modified|utc}}</time>
-        {% if news.first_url %}
+        {% if news.previous_url %}
         <p class=page-control>
-            <a href={{news.first_url}}>first</a>
+            <a href={{news.first_url}} >first</a>
             —
             <a href={{news.previous_url}} rel=prev>previous</a>
         {% endif %}
@@ -34,9 +34,9 @@
 {% endblock %}
 {% block footer %}
     <nav>
-        {% if news.last_url %}
+        {% if news.next_url %}
         <p class=page-control>
-                <a href={{news.last_url}}>last</a>
+                <a href={{news.last_url}} >last</a>
                 —
                 <a href={{news.next_url}} rel=next>next</a>
         {% endif %}
