@@ -36,7 +36,7 @@ class SitesPage(Iterable[Site]):
 
         self.counter_reset_item = 0
         self.count_phrase = count_phrase(self.sites, 'site')
-        self.first_item_value = 1
+        self.first_item_index = 0
 
     def __iter__(self) -> Iterator[Site]:
         return iter(self.sites)

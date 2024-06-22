@@ -6,7 +6,7 @@
 {% block main %}
     <ol>
     {% for item in news %}
-        <li value={{news.first_item_value + loop.index0}}>
+        <li value={{news.first_item_index + loop.index}}>
             <a href=./site/{{item.identity}} rel=noreferrer target=_blank>{{item.identity}}</a>
             <p>
                 {{item.count_phrase}}

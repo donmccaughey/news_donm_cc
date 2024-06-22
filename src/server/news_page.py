@@ -15,6 +15,7 @@ class NewsPage(Iterable[Item]):
             version: str,
             is_styled: bool,
             page_number: int,
+            items_per_page: int,
             full_urls: bool,
     ):
         self.is_styled = is_styled
@@ -23,16 +24,14 @@ class NewsPage(Iterable[Item]):
         self.news = cached_news.read()
         self.modified = self.news.modified
 
-        self.page = Page(
-            self.news.items, page_number=page_number, items_per_page=10
-        )
+        self.page = Page(self.news.items, page_number, items_per_page)
         self.is_valid = (
             (1 <= self.page.number <= self.page.count)
             or (self.page.number == 1 and self.page.count == 0)
         )
 
         self.counter_reset_item = self.page.begin
-        self.first_item_value = self.page.begin + 1
+        self.first_item_index = self.page.begin
 
         # navigation URLs
         self.first_url = page_url(self.page.first, full_urls)
@@ -47,8 +46,12 @@ class NewsPage(Iterable[Item]):
         json = {
             'version': self.version,
             'modified': self.modified.isoformat(),
-            'page_number': self.page.number,
+            'page_index': self.page.index,
+            'total_pages': self.page.count,
+            'items_per_page': self.page.items_per_page,
             'items': self.page.to_json(),
+            'first_item_index': self.first_item_index,
+            'total_items:': len(self.news.items),
             'first_url': self.first_url,
             'last_url': self.last_url,
             'next_url': self.next_url,

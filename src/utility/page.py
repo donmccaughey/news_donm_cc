@@ -6,10 +6,11 @@ from serialize import JSONList
 class Page(Iterable):
     def __init__(self, items: list, page_number: int, items_per_page: int):
         self.items = items
-        self.items_per_page = items_per_page
         self.number = page_number
+        self.items_per_page = items_per_page
 
-        self.begin = (self.number - 1) * self.items_per_page
+        self.index = self.number - 1
+        self.begin = self.index * self.items_per_page
         self.end = self.begin + self.items_per_page
 
         items_end = len(self.items)
@@ -61,12 +62,4 @@ class Page(Iterable):
             return None
 
     def to_json(self) -> JSONList:
-        def numbered_item(item, number):
-            encoded = item.encode()
-            encoded['number'] = number
-            return encoded
-
-        return [
-            numbered_item(item, number) for (item, number)
-            in zip(self, range(self.begin + 1, self.end + 1))
-        ]
+        return [item.encode() for item in self]

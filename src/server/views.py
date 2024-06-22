@@ -18,8 +18,16 @@ def news_page(
         page_number: int,
 ) -> Response:
     accepts_json = 'application/json' == request.accept_mimetypes.best_match(ACCEPTED)
+    if accepts_json:
+        items_per_page = 100
+        full_urls = True
+    else:
+        items_per_page = 10
+        full_urls = False
 
-    news = NewsPage(cached_news, version, is_styled, page_number, full_urls=accepts_json)
+    news = NewsPage(
+        cached_news, version, is_styled, page_number, items_per_page, full_urls
+    )
     if not news.is_valid:
         abort(404)
 

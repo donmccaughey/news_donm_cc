@@ -11,3 +11,18 @@ Accept: application/json
 ### GET page 334
 GET http://127.0.0.1:8001/334
 Accept: application/json
+
+
+### GET first page of prod
+GET https://news.donm.cc/
+Accept: application/json
+
+
+### GET second page of prod
+GET https://news.donm.cc/2
+Accept: application/json
+
+
+### GET page 337 of prod
+GET https://news.donm.cc/337
+Accept: application/json

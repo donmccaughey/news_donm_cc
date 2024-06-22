@@ -7,7 +7,7 @@
 {% block main %}
     <ol>
     {% for item in news %}
-        <li value={{news.first_item_value + loop.index0}}>
+        <li value={{news.first_item_index + loop.index}}>
             <a href={{item.url|href|safe}} rel=noreferrer target=_blank>{{item.title}}</a>
             <p>
                 {{item.url.identity}}
