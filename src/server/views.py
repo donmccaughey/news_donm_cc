@@ -33,7 +33,7 @@ def news_page(
 
     representation = (
         news.to_json() if accepts_json
-        else render_template('news.html', news=news)
+        else render_template('news.html', page=news)
     )
     response = make_response(representation)
 
@@ -75,7 +75,7 @@ def search_page(
         query: str,
 ):
     search = SearchPage(cached_news, version, is_styled, query)
-    html = render_template('search.html', news=search)
+    html = render_template('search.html', page=search)
     response = make_response(html)
 
     response.add_etag()
@@ -94,7 +94,7 @@ def site_page(
         identity: str,
 ) -> Response:
     site = SitePage(cached_news, version, is_styled, identity)
-    html = render_template('site.html', news=site)
+    html = render_template('site.html', page=site)
     response = make_response(html)
 
     response.add_etag()
@@ -112,7 +112,7 @@ def sites_page(
         is_styled: bool,
 ) -> Response:
     sites = SitesPage(cached_news, version, is_styled)
-    html = render_template('sites.html', news=sites)
+    html = render_template('sites.html', page=sites)
     response = make_response(html)
 
     response.add_etag()
