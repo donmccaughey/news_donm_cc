@@ -178,7 +178,7 @@ python_files := \
 	src/server/error_handlers.py \
 	src/server/news_doc.py \
 	src/server/search_doc.py \
-	src/server/site_page.py \
+	src/server/site_doc.py \
 	src/server/sites_page.py \
 	src/server/template_filters.py \
 	src/server/utility.py \

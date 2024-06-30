@@ -4,7 +4,7 @@ from flask import abort, make_response, redirect, render_template, request, Resp
 from .cached_news import CachedNews
 from .news_doc import NewsDoc
 from .search_doc import SearchDoc
-from .site_page import SitePage
+from .site_doc import SiteDoc
 from .sites_page import SitesPage
 
 
@@ -87,13 +87,13 @@ def get_search_response(
     return response
 
 
-def site_doc(
+def get_site_response(
         cached_news: CachedNews,
         version: str,
         is_styled: bool,
         identity: str,
 ) -> Response:
-    site = SitePage(cached_news, version, is_styled, identity)
+    site = SiteDoc(cached_news, version, is_styled, identity)
     html = render_template('site.html', doc=site)
     response = make_response(html)
 

@@ -5,7 +5,7 @@ from .cached_news import CachedNews
 from .utility import count_phrase
 
 
-class SitePage(Iterable[Item]):
+class SiteDoc(Iterable[Item]):
     def __init__(
             self,
             cached_news: CachedNews,
