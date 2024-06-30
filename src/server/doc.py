@@ -1,9 +1,20 @@
 from collections.abc import Iterable, Iterator, Sized
-from typing import TypeVar
+from jinja2 import Template
+from typing import TypeVar, Union
+
+from serialize import JSONDict, JSONList
 from .cached_news import CachedNews
 
 
 T = TypeVar('T')
+
+Representation = Union[
+    JSONDict,
+    JSONList,
+    Template,
+    str,
+    list[str | Template],
+]
 
 
 class Doc(Iterable[T], Sized):
@@ -21,4 +32,7 @@ class Doc(Iterable[T], Sized):
         raise NotImplementedError()
 
     def __len__(self) -> int:
+        raise NotImplementedError()
+
+    def get_representation(self) -> Representation:
         raise NotImplementedError()

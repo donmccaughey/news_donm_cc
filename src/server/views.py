@@ -1,14 +1,11 @@
 from typing import cast
-from flask import abort, make_response, redirect, render_template, request, Response
+from flask import abort, make_response, redirect, request, Response
 
 from .cached_news import CachedNews
 from .news_doc import NewsDoc
 from .search_doc import SearchDoc
 from .site_doc import SiteDoc
 from .sites_doc import SitesDoc
-
-
-ACCEPTED = ['application/json', 'text/html']
 
 
 def get_home_response(
@@ -51,11 +48,7 @@ def get_news_response(
     if not doc.page.is_valid:
         abort(404)
 
-    representation = (
-        doc.to_json() if doc.accepts_json
-        else render_template('news.html', doc=doc)
-    )
-    response = make_response(representation)
+    response = make_response(doc.get_representation())
 
     response.add_etag()
     response.last_modified = doc.modified
@@ -73,8 +66,7 @@ def get_search_response(
         query: str,
 ):
     doc = SearchDoc(cached_news, version, is_styled, query)
-    html = render_template('search.html', doc=doc)
-    response = make_response(html)
+    response = make_response(doc.get_representation())
 
     response.add_etag()
     response.last_modified = doc.modified
@@ -92,8 +84,7 @@ def get_site_response(
         identity: str,
 ) -> Response:
     doc = SiteDoc(cached_news, version, is_styled, identity)
-    html = render_template('site.html', doc=doc)
-    response = make_response(html)
+    response = make_response(doc.get_representation())
 
     response.add_etag()
     response.last_modified = doc.modified
@@ -110,8 +101,7 @@ def get_sites_response(
         is_styled: bool,
 ) -> Response:
     doc = SitesDoc(cached_news, version, is_styled)
-    html = render_template('sites.html', doc=doc)
-    response = make_response(html)
+    response = make_response(doc.get_representation())
 
     response.add_etag()
     response.last_modified = doc.modified

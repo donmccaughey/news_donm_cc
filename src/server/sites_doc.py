@@ -1,9 +1,12 @@
 from collections.abc import Iterator
 from dataclasses import dataclass
 
+from flask import render_template
+
 from news import Item
 from .cached_news import CachedNews
 from .doc import Doc
+from .doc import Representation
 from .utility import count_phrase
 
 
@@ -37,3 +40,6 @@ class SitesDoc(Doc[Site]):
 
     def __len__(self) -> int:
         return len(self.sites)
+
+    def get_representation(self) -> Representation:
+        return render_template('sites.html', doc=self)

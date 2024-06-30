@@ -1,5 +1,6 @@
 from collections.abc import Iterator
 
+from flask import render_template
 from flask import url_for
 from werkzeug.datastructures import MIMEAccept
 
@@ -7,7 +8,7 @@ from news import Item
 from serialize import JSONDict
 from utility import Page
 from .cached_news import CachedNews
-from .doc import Doc
+from .doc import Doc, Representation
 
 
 class NewsDoc(Doc[Item]):
@@ -47,6 +48,12 @@ class NewsDoc(Doc[Item]):
 
     def __len__(self) -> int:
         return self.page.count
+
+    def get_representation(self) -> Representation:
+        return (
+            self.to_json() if self.accepts_json
+            else render_template('news.html', doc=self)
+        )
 
     def to_json(self) -> JSONDict:
         return {
