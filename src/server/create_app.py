@@ -45,14 +45,14 @@ def create_app() -> Flask:
         methods=['GET']
     )
 
-    app.add_template_filter(href)
-    app.add_template_filter(iso)
-    app.add_template_filter(utc)
-
     app.jinja_options = {
         'lstrip_blocks': True,
         'trim_blocks': True,
     }
+
+    app.add_template_filter(href)
+    app.add_template_filter(iso)
+    app.add_template_filter(utc)
 
     app.register_error_handler(404, not_found)
 
