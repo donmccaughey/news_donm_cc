@@ -9,7 +9,7 @@ from .cached_news import CachedNews
 from .error_handlers import not_found
 from .template_filters import href
 from .utility import get_version
-from .views import get_first_news_doc, get_numbered_news_doc, site_doc, sites_doc
+from .views import get_first_news_response, get_numbered_news_response, site_doc, sites_doc
 
 
 def create_app() -> Flask:
@@ -25,12 +25,12 @@ def create_app() -> Flask:
 
     app.add_url_rule(
         '/', 'first_news',
-        partial(get_first_news_doc, cached_news, version, is_styled),
+        partial(get_first_news_response, cached_news, version, is_styled),
         methods=['GET']
     )
     app.add_url_rule(
         '/<int:page_number>', 'numbered_news',
-        partial(get_numbered_news_doc, cached_news, version, is_styled),
+        partial(get_numbered_news_response, cached_news, version, is_styled),
         methods=['GET']
     )
     app.add_url_rule(
