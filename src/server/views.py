@@ -2,6 +2,7 @@ from typing import cast
 from flask import abort, make_response, redirect, request, Response
 
 from .cached_news import CachedNews
+from .doc import Doc
 from .news_doc import NewsDoc
 from .search_doc import SearchDoc
 from .site_doc import SiteDoc
@@ -47,16 +48,7 @@ def get_news_response(
     )
     if not doc.page.is_valid:
         abort(404)
-
-    response = make_response(doc.get_representation())
-
-    response.add_etag()
-    response.last_modified = doc.modified
-
-    response.make_conditional(request)
-    add_cache_control(response)
-
-    return response
+    return make_doc_response(doc)
 
 
 def get_search_response(
@@ -65,16 +57,7 @@ def get_search_response(
         is_styled: bool,
         query: str,
 ):
-    doc = SearchDoc(cached_news, version, is_styled, query)
-    response = make_response(doc.get_representation())
-
-    response.add_etag()
-    response.last_modified = doc.modified
-
-    response.make_conditional(request)
-    add_cache_control(response)
-
-    return response
+    return make_doc_response(SearchDoc(cached_news, version, is_styled, query))
 
 
 def get_site_response(
@@ -83,16 +66,7 @@ def get_site_response(
         is_styled: bool,
         identity: str,
 ) -> Response:
-    doc = SiteDoc(cached_news, version, is_styled, identity)
-    response = make_response(doc.get_representation())
-
-    response.add_etag()
-    response.last_modified = doc.modified
-
-    response.make_conditional(request)
-    add_cache_control(response)
-
-    return response
+    return make_doc_response(SiteDoc(cached_news, version, is_styled, identity))
 
 
 def get_sites_response(
@@ -100,7 +74,10 @@ def get_sites_response(
         version: str,
         is_styled: bool,
 ) -> Response:
-    doc = SitesDoc(cached_news, version, is_styled)
+    return make_doc_response(SitesDoc(cached_news, version, is_styled))
+
+
+def make_doc_response(doc: Doc) -> Response:
     response = make_response(doc.get_representation())
 
     response.add_etag()
