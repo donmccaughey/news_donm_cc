@@ -3,6 +3,7 @@ from typing import Iterable, Iterator
 
 from news import Item
 from .cached_news import CachedNews
+from .doc import Doc
 from .utility import count_phrase
 
 
@@ -13,17 +14,14 @@ class Site:
     items: list[Item]
 
 
-class SitesDoc(Iterable[Site]):
+class SitesDoc(Doc, Iterable[Site]):
     def __init__(
             self,
             cached_news: CachedNews,
             version: str,
             is_styled: bool,
     ):
-        self.is_styled = is_styled
-        self.version = version
-
-        self.news = cached_news.read()
+        super().__init__(cached_news, version, is_styled)
         self.sites = [
             Site(
                 count_phrase(self.news.by_site[site], 'item'),
@@ -32,11 +30,7 @@ class SitesDoc(Iterable[Site]):
             )
             for site in sorted(self.news.by_site.keys())
         ]
-        self.modified = self.news.modified
-
-        self.counter_reset_item = 0
         self.count_phrase = count_phrase(self.sites, 'site')
-        self.first_item_index = 0
 
     def __iter__(self) -> Iterator[Site]:
         return iter(self.sites)

@@ -175,6 +175,7 @@ python_files := \
 	src/server/__init__.py \
 	src/server/cached_news.py \
 	src/server/create_app.py \
+	src/server/doc.py \
 	src/server/error_handlers.py \
 	src/server/news_doc.py \
 	src/server/search_doc.py \

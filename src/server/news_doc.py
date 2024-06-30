@@ -6,9 +6,10 @@ from news import Item
 from serialize import JSONDict
 from utility import Page
 from .cached_news import CachedNews
+from .doc import Doc
 
 
-class NewsDoc(Iterable[Item]):
+class NewsDoc(Doc, Iterable[Item]):
     def __init__(
             self,
             cached_news: CachedNews,
@@ -18,11 +19,7 @@ class NewsDoc(Iterable[Item]):
             items_per_page: int,
             full_urls: bool,
     ):
-        self.is_styled = is_styled
-        self.version = version
-
-        self.news = cached_news.read()
-        self.modified = self.news.modified
+        super().__init__(cached_news, version, is_styled)
 
         self.page = Page(self.news.items, page_number, items_per_page)
         self.is_valid = (

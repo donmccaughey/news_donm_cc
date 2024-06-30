@@ -2,10 +2,11 @@ from typing import Iterable, Iterator
 
 from news import Item
 from .cached_news import CachedNews
+from .doc import Doc
 from .utility import count_phrase
 
 
-class SiteDoc(Iterable[Item]):
+class SiteDoc(Doc, Iterable[Item]):
     def __init__(
             self,
             cached_news: CachedNews,
@@ -13,17 +14,10 @@ class SiteDoc(Iterable[Item]):
             is_styled: bool,
             identity: str,
     ):
+        super().__init__(cached_news, version, is_styled)
         self.identity = identity
-        self.is_styled = is_styled
-        self.version = version
-
-        self.news = cached_news.read()
         self.items = self.news.by_site[self.identity]
-        self.modified = self.news.modified
-
-        self.counter_reset_item = 0
         self.count_phrase = count_phrase(self.items, 'item')
-        self.first_item_index = 0
 
     def __iter__(self) -> Iterator[Item]:
         return iter(self.items)
