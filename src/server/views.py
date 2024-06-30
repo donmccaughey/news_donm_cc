@@ -46,7 +46,7 @@ def get_news_response(
     return response
 
 
-def get_first_news_response(
+def get_home_response(
         cached_news: CachedNews,
         version: str,
         is_styled: bool,

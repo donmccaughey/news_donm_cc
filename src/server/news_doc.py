@@ -63,7 +63,7 @@ def page_url(page: Page | None, full_url: bool) -> str | None:
     if not page:
         return None
     if page.number == 1:
-        return url_for('first_news', _external=full_url)
+        return url_for('home', _external=full_url)
     return url_for(
         'numbered_news', page_number=page.number, _external=full_url
     )
