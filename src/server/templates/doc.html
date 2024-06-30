@@ -4,7 +4,7 @@
 <meta charset=utf-8>
 <meta name=viewport content='initial-scale=0.9, width=device-width'>
 <title>{% block title %}{% endblock %}</title>
-<!-- version {{page.version}} -->
+<!-- version {{doc.version}} -->
 <script>
     function timeAgo(elapsed_ms) {
         const SEC = 1000; // ms
@@ -51,7 +51,7 @@
         intervalID = window.setInterval(updateTimes, 5000);
     });
 </script>
-{% if page.is_styled %}
+{% if doc.is_styled %}
 <style>
     @media (prefers-color-scheme: light) {
         :root {
@@ -153,7 +153,7 @@
         position: relative;
     }
     ol {
-        counter-reset: item {{page.counter_reset_item}};
+        counter-reset: item {{doc.counter_reset_item}};
         list-style: none;
         margin: 1.5rem 0;
         padding: 0;

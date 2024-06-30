@@ -184,8 +184,8 @@ python_files := \
 	src/server/utility.py \
 	src/server/views.py \
 	\
+	src/server/templates/doc.html \
 	src/server/templates/news.html \
-	src/server/templates/page.html \
 	src/server/templates/search.html \
 	src/server/templates/site.html \
 	src/server/templates/sites.html \

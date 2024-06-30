@@ -1,12 +1,12 @@
 {% extends 'doc.html' %}
-{% block title %}News from {{page.identity}}{% endblock %}
+{% block title %}News from {{doc.identity}}{% endblock %}
 {% block header %}
-    <h1>News from {{page.count_phrase}}</h1>
+    <h1>News from {{doc.count_phrase}}</h1>
 {% endblock %}
 {% block main %}
     <ol>
-    {% for item in page %}
-        <li value={{page.first_item_index + loop.index}}>
+    {% for item in doc %}
+        <li value={{doc.first_item_index + loop.index}}>
             <a href=./site/{{item.identity}} rel=noreferrer target=_blank>{{item.identity}}</a>
             <p>
                 {{item.count_phrase}}

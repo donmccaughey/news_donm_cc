@@ -7,19 +7,19 @@
     </form>
     <nav>
         <p class=page-info>
-            updated <time datetime={{page.modified|iso}}>{{page.modified|utc}}</time>
-        {% if page.previous_url %}
+            updated <time datetime={{doc.modified|iso}}>{{doc.modified|utc}}</time>
+        {% if doc.previous_url %}
         <p class=page-control>
-            <a href={{page.first_url}} >first</a>
+            <a href={{doc.first_url}} >first</a>
             —
-            <a href={{page.previous_url}} rel=prev>previous</a>
+            <a href={{doc.previous_url}} rel=prev>previous</a>
         {% endif %}
     </nav>
 {% endblock %}
 {% block main %}
     <ol>
-    {% for item in page %}
-        <li value={{page.first_item_index + loop.index}}>
+    {% for item in doc %}
+        <li value={{doc.first_item_index + loop.index}}>
             <a href={{item.url|href|safe}} rel=noreferrer target=_blank>{{item.title}}</a>
             <p>
                 <a href=./site/{{item.url.identity}} rel=noreferrer>{{item.url.identity}}</a>
@@ -34,13 +34,13 @@
 {% endblock %}
 {% block footer %}
     <nav>
-        {% if page.next_url %}
+        {% if doc.next_url %}
         <p class=page-control>
-                <a href={{page.last_url}} >last</a>
+                <a href={{doc.last_url}} >last</a>
                 —
-                <a href={{page.next_url}} rel=next>next</a>
+                <a href={{doc.next_url}} rel=next>next</a>
         {% endif %}
         <p class=page-info>
-            page {{page.page.number}} of {{page.page.count}}
+            page {{doc.page.number}} of {{doc.page.count}}
     </nav>
 {% endblock %}
