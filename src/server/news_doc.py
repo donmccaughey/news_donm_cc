@@ -8,7 +8,7 @@ from utility import Page
 from .cached_news import CachedNews
 
 
-class NewsPage(Iterable[Item]):
+class NewsDoc(Iterable[Item]):
     def __init__(
             self,
             cached_news: CachedNews,

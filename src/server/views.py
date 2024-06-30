@@ -2,7 +2,7 @@ from typing import cast
 from flask import abort, make_response, redirect, render_template, request, Response
 
 from .cached_news import CachedNews
-from .news_page import NewsPage
+from .news_doc import NewsDoc
 from .search_page import SearchPage
 from .site_page import SitePage
 from .sites_page import SitesPage
@@ -11,7 +11,7 @@ from .sites_page import SitesPage
 ACCEPTED = ['application/json', 'text/html']
 
 
-def news_doc(
+def get_news_doc(
         cached_news: CachedNews,
         version: str,
         is_styled: bool,
@@ -25,20 +25,20 @@ def news_doc(
         items_per_page = 10
         full_urls = False
 
-    news = NewsPage(
+    doc = NewsDoc(
         cached_news, version, is_styled, page_number, items_per_page, full_urls
     )
-    if not news.is_valid:
+    if not doc.is_valid:
         abort(404)
 
     representation = (
-        news.to_json() if accepts_json
-        else render_template('news.html', doc=news)
+        doc.to_json() if accepts_json
+        else render_template('news.html', doc=doc)
     )
     response = make_response(representation)
 
     response.add_etag()
-    response.last_modified = news.modified
+    response.last_modified = doc.modified
 
     response.make_conditional(request)
     add_cache_control(response)
@@ -46,7 +46,7 @@ def news_doc(
     return response
 
 
-def first_news_doc(
+def get_first_news_doc(
         cached_news: CachedNews,
         version: str,
         is_styled: bool,
@@ -54,10 +54,10 @@ def first_news_doc(
     if 'q' in request.args:
         return search_doc(cached_news, version, is_styled, request.args['q'])
     else:
-        return news_doc(cached_news, version, is_styled, 1)
+        return get_news_doc(cached_news, version, is_styled, 1)
 
 
-def numbered_news_doc(
+def get_numbered_news_doc(
         cached_news: CachedNews,
         version: str,
         is_styled: bool,
@@ -65,7 +65,7 @@ def numbered_news_doc(
 ) -> Response:
     if page_number == 1:
         return cast(Response, redirect('/', 308))
-    return news_doc(cached_news, version, is_styled, page_number)
+    return get_news_doc(cached_news, version, is_styled, page_number)
 
 
 def search_doc(

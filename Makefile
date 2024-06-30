@@ -176,7 +176,7 @@ python_files := \
 	src/server/cached_news.py \
 	src/server/create_app.py \
 	src/server/error_handlers.py \
-	src/server/news_page.py \
+	src/server/news_doc.py \
 	src/server/search_page.py \
 	src/server/site_page.py \
 	src/server/sites_page.py \
