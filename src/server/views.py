@@ -41,22 +41,18 @@ def get_news_response(
         is_styled: bool,
         page_number: int,
 ) -> Response:
-    accepts_json = 'application/json' == request.accept_mimetypes.best_match(ACCEPTED)
-    if accepts_json:
-        items_per_page = 100
-        full_urls = True
-    else:
-        items_per_page = 10
-        full_urls = False
-
     doc = NewsDoc(
-        cached_news, version, is_styled, page_number, items_per_page, full_urls
+        cached_news,
+        version,
+        is_styled,
+        request.accept_mimetypes,
+        page_number,
     )
     if not doc.page.is_valid:
         abort(404)
 
     representation = (
-        doc.to_json() if accepts_json
+        doc.to_json() if doc.accepts_json
         else render_template('news.html', doc=doc)
     )
     response = make_response(representation)

@@ -1,6 +1,7 @@
 from collections.abc import Iterator
 
 from flask import url_for
+from werkzeug.datastructures import MIMEAccept
 
 from news import Item
 from serialize import JSONDict
@@ -10,16 +11,27 @@ from .doc import Doc
 
 
 class NewsDoc(Doc[Item]):
+    ACCEPTED = ['application/json', 'text/html']
+
     def __init__(
             self,
             cached_news: CachedNews,
             version: str,
             is_styled: bool,
+            accept_mimetypes: MIMEAccept,
             page_number: int,
-            items_per_page: int,
-            full_urls: bool,
     ):
         super().__init__(cached_news, version, is_styled)
+
+        self.accepts_json = (
+                'application/json' == accept_mimetypes.best_match(self.ACCEPTED)
+        )
+        if self.accepts_json:
+            items_per_page = 100
+            full_urls = True
+        else:
+            items_per_page = 10
+            full_urls = False
 
         self.page = Page(self.news.items, page_number, items_per_page)
         self.counter_reset_item = self.page.begin
