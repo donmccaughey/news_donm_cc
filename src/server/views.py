@@ -11,6 +11,28 @@ from .sites_doc import SitesDoc
 ACCEPTED = ['application/json', 'text/html']
 
 
+def get_home_response(
+        cached_news: CachedNews,
+        version: str,
+        is_styled: bool,
+) -> Response:
+    if 'q' in request.args:
+        return get_search_response(cached_news, version, is_styled, request.args['q'])
+    else:
+        return get_news_response(cached_news, version, is_styled, 1)
+
+
+def get_numbered_response(
+        cached_news: CachedNews,
+        version: str,
+        is_styled: bool,
+        page_number: int,
+) -> Response:
+    if page_number == 1:
+        return cast(Response, redirect('/', 308))
+    return get_news_response(cached_news, version, is_styled, page_number)
+
+
 def get_news_response(
         cached_news: CachedNews,
         version: str,
@@ -44,28 +66,6 @@ def get_news_response(
     add_cache_control(response)
 
     return response
-
-
-def get_home_response(
-        cached_news: CachedNews,
-        version: str,
-        is_styled: bool,
-) -> Response:
-    if 'q' in request.args:
-        return get_search_response(cached_news, version, is_styled, request.args['q'])
-    else:
-        return get_news_response(cached_news, version, is_styled, 1)
-
-
-def get_numbered_response(
-        cached_news: CachedNews,
-        version: str,
-        is_styled: bool,
-        page_number: int,
-) -> Response:
-    if page_number == 1:
-        return cast(Response, redirect('/', 308))
-    return get_news_response(cached_news, version, is_styled, page_number)
 
 
 def get_search_response(
