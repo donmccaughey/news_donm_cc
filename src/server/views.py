@@ -74,12 +74,12 @@ def get_search_response(
         is_styled: bool,
         query: str,
 ):
-    search = SearchDoc(cached_news, version, is_styled, query)
-    html = render_template('search.html', doc=search)
+    doc = SearchDoc(cached_news, version, is_styled, query)
+    html = render_template('search.html', doc=doc)
     response = make_response(html)
 
     response.add_etag()
-    response.last_modified = search.modified
+    response.last_modified = doc.modified
 
     response.make_conditional(request)
     add_cache_control(response)
@@ -93,12 +93,12 @@ def get_site_response(
         is_styled: bool,
         identity: str,
 ) -> Response:
-    site = SiteDoc(cached_news, version, is_styled, identity)
-    html = render_template('site.html', doc=site)
+    doc = SiteDoc(cached_news, version, is_styled, identity)
+    html = render_template('site.html', doc=doc)
     response = make_response(html)
 
     response.add_etag()
-    response.last_modified = site.modified
+    response.last_modified = doc.modified
 
     response.make_conditional(request)
     add_cache_control(response)
@@ -111,12 +111,12 @@ def get_sites_response(
         version: str,
         is_styled: bool,
 ) -> Response:
-    sites = SitesDoc(cached_news, version, is_styled)
-    html = render_template('sites.html', doc=sites)
+    doc = SitesDoc(cached_news, version, is_styled)
+    html = render_template('sites.html', doc=doc)
     response = make_response(html)
 
     response.add_etag()
-    response.last_modified = sites.modified
+    response.last_modified = doc.modified
 
     response.make_conditional(request)
     add_cache_control(response)
