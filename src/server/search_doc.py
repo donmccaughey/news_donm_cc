@@ -1,4 +1,4 @@
-from typing import Iterable, Iterator
+from collections.abc import Iterator
 
 from news import Item
 from .cached_news import CachedNews
@@ -6,7 +6,7 @@ from .doc import Doc
 from .utility import count_phrase
 
 
-class SearchDoc(Doc, Iterable[Item]):
+class SearchDoc(Doc[Item]):
     def __init__(
             self,
             cached_news: CachedNews,

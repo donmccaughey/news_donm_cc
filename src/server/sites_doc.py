@@ -1,5 +1,5 @@
+from collections.abc import Iterator
 from dataclasses import dataclass
-from typing import Iterable, Iterator
 
 from news import Item
 from .cached_news import CachedNews
@@ -14,7 +14,7 @@ class Site:
     items: list[Item]
 
 
-class SitesDoc(Doc, Iterable[Site]):
+class SitesDoc(Doc[Site]):
     def __init__(
             self,
             cached_news: CachedNews,

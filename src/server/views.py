@@ -17,7 +17,9 @@ def get_home_response(
         is_styled: bool,
 ) -> Response:
     if 'q' in request.args:
-        return get_search_response(cached_news, version, is_styled, request.args['q'])
+        return get_search_response(
+            cached_news, version, is_styled, request.args['q']
+        )
     else:
         return get_news_response(cached_news, version, is_styled, 1)
 

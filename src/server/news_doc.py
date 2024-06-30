@@ -1,4 +1,4 @@
-from typing import Iterable, Iterator
+from collections.abc import Iterator
 
 from flask import url_for
 
@@ -9,7 +9,7 @@ from .cached_news import CachedNews
 from .doc import Doc
 
 
-class NewsDoc(Doc, Iterable[Item]):
+class NewsDoc(Doc[Item]):
     def __init__(
             self,
             cached_news: CachedNews,
@@ -32,6 +32,9 @@ class NewsDoc(Doc, Iterable[Item]):
 
     def __iter__(self) -> Iterator[Item]:
         return iter(self.page)
+
+    def __len__(self) -> int:
+        return self.page.count
 
     def to_json(self) -> JSONDict:
         return {
