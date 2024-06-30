@@ -179,7 +179,7 @@ python_files := \
 	src/server/news_doc.py \
 	src/server/search_doc.py \
 	src/server/site_doc.py \
-	src/server/sites_page.py \
+	src/server/sites_doc.py \
 	src/server/template_filters.py \
 	src/server/utility.py \
 	src/server/views.py \

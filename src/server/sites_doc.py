@@ -13,7 +13,7 @@ class Site:
     items: list[Item]
 
 
-class SitesPage(Iterable[Site]):
+class SitesDoc(Iterable[Site]):
     def __init__(
             self,
             cached_news: CachedNews,

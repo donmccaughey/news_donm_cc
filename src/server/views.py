@@ -5,7 +5,7 @@ from .cached_news import CachedNews
 from .news_doc import NewsDoc
 from .search_doc import SearchDoc
 from .site_doc import SiteDoc
-from .sites_page import SitesPage
+from .sites_doc import SitesDoc
 
 
 ACCEPTED = ['application/json', 'text/html']
@@ -106,12 +106,12 @@ def get_site_response(
     return response
 
 
-def sites_doc(
+def get_sites_response(
         cached_news: CachedNews,
         version: str,
         is_styled: bool,
 ) -> Response:
-    sites = SitesPage(cached_news, version, is_styled)
+    sites = SitesDoc(cached_news, version, is_styled)
     html = render_template('sites.html', doc=sites)
     response = make_response(html)
 
