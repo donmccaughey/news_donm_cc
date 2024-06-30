@@ -24,22 +24,22 @@ def create_app() -> Flask:
     is_styled = True
 
     app.add_url_rule(
-        '/', 'first_news_doc',
+        '/', 'first_news',
         partial(get_first_news_doc, cached_news, version, is_styled),
         methods=['GET']
     )
     app.add_url_rule(
-        '/<int:page_number>', 'numbered_news_doc',
+        '/<int:page_number>', 'numbered_news',
         partial(get_numbered_news_doc, cached_news, version, is_styled),
         methods=['GET']
     )
     app.add_url_rule(
-        '/site/<path:identity>', 'site_doc',
+        '/site/<path:identity>', 'site',
         partial(site_doc, cached_news, version, is_styled),
         methods=['GET']
     )
     app.add_url_rule(
-        '/sites', 'sites_doc',
+        '/sites', 'sites',
         partial(sites_doc, cached_news, version, is_styled),
         methods=['GET']
     )
