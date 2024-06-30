@@ -3,7 +3,7 @@ from flask import abort, make_response, redirect, render_template, request, Resp
 
 from .cached_news import CachedNews
 from .news_doc import NewsDoc
-from .search_page import SearchPage
+from .search_doc import SearchDoc
 from .site_page import SitePage
 from .sites_page import SitesPage
 
@@ -52,7 +52,7 @@ def get_first_news_response(
         is_styled: bool,
 ) -> Response:
     if 'q' in request.args:
-        return search_doc(cached_news, version, is_styled, request.args['q'])
+        return get_search_response(cached_news, version, is_styled, request.args['q'])
     else:
         return get_news_response(cached_news, version, is_styled, 1)
 
@@ -68,13 +68,13 @@ def get_numbered_news_response(
     return get_news_response(cached_news, version, is_styled, page_number)
 
 
-def search_doc(
+def get_search_response(
         cached_news: CachedNews,
         version: str,
         is_styled: bool,
         query: str,
 ):
-    search = SearchPage(cached_news, version, is_styled, query)
+    search = SearchDoc(cached_news, version, is_styled, query)
     html = render_template('search.html', doc=search)
     response = make_response(html)
 
