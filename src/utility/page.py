@@ -34,6 +34,13 @@ class Page(Iterable):
         return f'Page {self.number} of {self.count}'
 
     @property
+    def is_valid(self) -> bool:
+        return (
+                (1 <= self.number <= self.count)
+                or (self.number == 1 and self.count == 0)
+        )
+
+    @property
     def first(self) -> Optional['Page']:
         if self.number != 1 and self.count > 1:
             return Page(self.items, 1, self.items_per_page)

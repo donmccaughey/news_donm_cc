@@ -22,15 +22,9 @@ class NewsDoc(Doc, Iterable[Item]):
         super().__init__(cached_news, version, is_styled)
 
         self.page = Page(self.news.items, page_number, items_per_page)
-        self.is_valid = (
-            (1 <= self.page.number <= self.page.count)
-            or (self.page.number == 1 and self.page.count == 0)
-        )
-
         self.counter_reset_item = self.page.begin
         self.first_item_index = self.page.begin
 
-        # navigation URLs
         self.first_url = page_url(self.page.first, full_urls)
         self.last_url = page_url(self.page.last, full_urls)
         self.next_url = page_url(self.page.next, full_urls)

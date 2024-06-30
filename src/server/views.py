@@ -50,7 +50,7 @@ def get_news_response(
     doc = NewsDoc(
         cached_news, version, is_styled, page_number, items_per_page, full_urls
     )
-    if not doc.is_valid:
+    if not doc.page.is_valid:
         abort(404)
 
     representation = (
