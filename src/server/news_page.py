@@ -43,7 +43,7 @@ class NewsPage(Iterable[Item]):
         return iter(self.page)
 
     def to_json(self) -> JSONDict:
-        json = {
+        return {
             'version': self.version,
             'modified': self.modified.isoformat(),
             'page_index': self.page.index,
@@ -58,10 +58,8 @@ class NewsPage(Iterable[Item]):
             'previous_url': self.previous_url,
         }
 
-        return json
 
-
-def page_url(page: Page, full_url: bool) -> str | None:
+def page_url(page: Page | None, full_url: bool) -> str | None:
     if not page:
         return None
     if page.number == 1:

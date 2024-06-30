@@ -23,6 +23,6 @@ GET https://news.donm.cc/2
 Accept: application/json
 
 
-### GET page 337 of prod
-GET https://news.donm.cc/337
+### GET page 34 of prod
+GET https://news.donm.cc/34
 Accept: application/json
