@@ -1,6 +1,7 @@
 SKIP_SITES = {
     'aeon.co',
     'americanaffairsjournal.org',
+    'apollo-magazine.com',
     'asteriskmag.com',
     'astralcodexten.com',
     'magazine.atavist.com',
@@ -33,7 +34,10 @@ SKIP_SITES = {
 
     'fantasticmetropolis.com',
     'francisdiclemente.com',
+    'ft.com',
 
+    'glamour.com',
+    # google.com
     'docs.google.com',
     'granta.com',
 
@@ -72,6 +76,7 @@ SKIP_SITES = {
     'nakedcapitalism.com',
     'narratively.com',
     'nationalreview.com',
+    'neomodern.com',
     'newcriterion.com',
     'newleftreview.org',
     'newrepublic.com',
@@ -86,6 +91,7 @@ SKIP_SITES = {
     'openculture.com',
     'openthemagazine.com',
     'otherlife.co',
+    'ourcivilisation.com',
     'oxfordpoliticalreview.com',
 
     'palladiummag.com',
@@ -98,6 +104,7 @@ SKIP_SITES = {
     'publicdomainreview.org',
 
     'quillette.com',
+    'quora.com',
 
     'racket.news',
     'reason.com',
@@ -106,6 +113,7 @@ SKIP_SITES = {
     'seths.blog',
     'sive.rs',
     'slatestarcodex.com',
+    'open.spotify.com',
     'spy.com',
     # substack.com
     'astralcodexten.substack.com',
