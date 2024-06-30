@@ -11,7 +11,7 @@ from .sites_page import SitesPage
 ACCEPTED = ['application/json', 'text/html']
 
 
-def news_page(
+def news_doc(
         cached_news: CachedNews,
         version: str,
         is_styled: bool,
@@ -46,18 +46,18 @@ def news_page(
     return response
 
 
-def first_page(
+def first_news_doc(
         cached_news: CachedNews,
         version: str,
         is_styled: bool,
 ) -> Response:
     if 'q' in request.args:
-        return search_page(cached_news, version, is_styled, request.args['q'])
+        return search_doc(cached_news, version, is_styled, request.args['q'])
     else:
-        return news_page(cached_news, version, is_styled, 1)
+        return news_doc(cached_news, version, is_styled, 1)
 
 
-def numbered_page(
+def numbered_news_doc(
         cached_news: CachedNews,
         version: str,
         is_styled: bool,
@@ -65,10 +65,10 @@ def numbered_page(
 ) -> Response:
     if page_number == 1:
         return cast(Response, redirect('/', 308))
-    return news_page(cached_news, version, is_styled, page_number)
+    return news_doc(cached_news, version, is_styled, page_number)
 
 
-def search_page(
+def search_doc(
         cached_news: CachedNews,
         version: str,
         is_styled: bool,
@@ -87,7 +87,7 @@ def search_page(
     return response
 
 
-def site_page(
+def site_doc(
         cached_news: CachedNews,
         version: str,
         is_styled: bool,
@@ -106,7 +106,7 @@ def site_page(
     return response
 
 
-def sites_page(
+def sites_doc(
         cached_news: CachedNews,
         version: str,
         is_styled: bool,
