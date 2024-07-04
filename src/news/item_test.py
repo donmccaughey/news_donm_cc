@@ -1,4 +1,5 @@
 from datetime import datetime, timezone, timedelta
+from serialize import JSONDict
 
 from .item import Item
 from .source import Source
@@ -211,7 +212,7 @@ def test_update_from_with_same_source():
 
 
 def test_decode_from_sources():
-    encoded = {
+    encoded: JSONDict = {
         'url': 'https://example.com/1',
         'title': 'Item 1',
         'sources': [
