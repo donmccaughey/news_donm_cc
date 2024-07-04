@@ -15,7 +15,7 @@ src/utility/page_test.py:145: error: Argument 1 to "len" has incompatible type "
 src/utility/page_test.py:146: error: Argument 1 to "list" has incompatible type "Page | Any | None"; expected "Iterable[Any]"  [arg-type]
 src/utility/page_test.py:148: error: Item "None" of "Page | Any | None" has no attribute "previous"  [union-attr]
 src/utility/page_test.py:149: error: Item "None" of "Page | Any | None" has no attribute "next"  [union-attr]
-src/news/item_test.py:231: error: Argument 1 to "decode" of "Item" has incompatible type "dict[str, Sequence[Collection[str]]]"; expected "JSONDict | JSONList"  [arg-type]
+src/news/item_test.py:232: error: Argument 1 to "decode" of "Item" has incompatible type "dict[str, object]"; expected "JSONDict | JSONList"  [arg-type]
 src/feeds/feed_test.py:32: error: Need type annotation for "entry" (hint: "entry: Dict[<type>, <type>] = ...")  [var-annotated]
 src/feeds/feed_test.py:47: error: Need type annotation for "entry" (hint: "entry: Dict[<type>, <type>] = ...")  [var-annotated]
 src/feeds/feed_test.py:332: error: Argument 1 to "decode" of "Feed" has incompatible type "dict[str, str]"; expected "JSONDict | JSONList"  [arg-type]

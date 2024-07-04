@@ -13,12 +13,14 @@ class Item(Encodable):
                  sources: list[Source],
                  created: datetime,
                  modified: datetime,
+                 seq_id: int = 0,
                  ):
         self.url = url
         self.title = title
         self.sources = sources
         self.created = created
         self.modified = modified
+        self.seq_id = seq_id
 
     def __eq__(self, other: object) -> bool:
         return isinstance(other, Item) and self.url == other.url
@@ -73,6 +75,7 @@ class Item(Encodable):
             sources=sources,
             created=datetime.fromisoformat(cast(str, encoded['created'])),
             modified=datetime.fromisoformat(cast(str, encoded['modified'])),
+            seq_id=cast(int, encoded['seq_id']),
         )
 
     def encode(self) -> JSONDict:
@@ -82,4 +85,5 @@ class Item(Encodable):
             'sources': [source.encode() for source in self.sources],
             'created': self.created.isoformat(),
             'modified': self.modified.isoformat(),
+            'seq_id': self.seq_id,
         }

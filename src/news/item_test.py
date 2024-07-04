@@ -226,6 +226,7 @@ def test_decode_from_sources():
         ],
         'created': '2022-12-22T16:36:54.143222+00:00',
         'modified': '2022-12-22T16:36:54.143222+00:00',
+        'seq_id': 17,
     }
 
     item = Item.decode(encoded)
@@ -237,6 +238,7 @@ def test_decode_from_sources():
     assert item.sources[0].site_id == 'so'
     assert item.sources[1].url == URL('https://alt-source.com/2')
     assert item.sources[1].site_id == 'alt'
+    assert item.seq_id == 17
 
 
 def test_encode():
@@ -247,6 +249,7 @@ def test_encode():
         [Source(NormalizedURL('https://source.com/1'), 'so')],
         created=dt,
         modified=dt,
+        seq_id=11,
     )
 
     encoded = item1.encode()
@@ -262,6 +265,7 @@ def test_encode():
     ]
     assert encoded['created'] == '2022-12-22T16:36:54.143222+00:00'
     assert encoded['modified'] == '2022-12-22T16:36:54.143222+00:00'
+    assert encoded['seq_id'] == 11
 
 
 NOW = datetime.now(timezone.utc)
