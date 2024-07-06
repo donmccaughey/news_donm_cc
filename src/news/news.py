@@ -1,6 +1,7 @@
 import json
 
 from collections import defaultdict
+from collections.abc import Container
 from collections.abc import Iterable
 from collections.abc import Iterator
 from collections.abc import Sized
@@ -15,7 +16,7 @@ from .item import Item
 LIFETIME = timedelta(days=15)
 
 
-class News(Encodable, Iterable[Item], Serializable, Sized):
+class News(Container[Item], Encodable, Iterable[Item], Serializable, Sized):
     def __init__(self,
                  items: list[Item] | None = None,
                  created: datetime | None = None,
@@ -36,6 +37,9 @@ class News(Encodable, Iterable[Item], Serializable, Sized):
         for item in reversed(items or []):
             self.add_item(item)
 
+    def __contains__(self, item) -> bool:
+        return item in self.__unique_items
+
     def __iter__(self) -> Iterator[Item]:
         return iter(self.__ordered_items)
 
@@ -51,7 +55,7 @@ class News(Encodable, Iterable[Item], Serializable, Sized):
     @property
     def index(self) -> Index:
         if not self.__index:
-            self.__index = Index.from_ordered_items(self.__ordered_items)
+            self.__index = Index.from_ordered_items(self.items)
         return self.__index
 
     @property
@@ -87,8 +91,8 @@ class News(Encodable, Iterable[Item], Serializable, Sized):
     def remove_old(self, now: datetime) -> int:
         expiration_date = now - self.lifetime
         old_count = 0
-        i = len(self.__ordered_items) - 1
-        while i >= 0 and self.__ordered_items[i].created <= expiration_date:
+        i = len(self) - 1
+        while i >= 0 and self.items[i].created <= expiration_date:
             self.remove_item_at(i)
             self.modified = now
             old_count += 1
@@ -97,12 +101,12 @@ class News(Encodable, Iterable[Item], Serializable, Sized):
 
     def search(self, query: str) -> list[Item]:
         indices = sorted(self.index.search(query))
-        return [self.__ordered_items[i] for i in indices]
+        return [self.items[i] for i in indices]
 
     def update(self, items: list[Item], now: datetime) -> tuple[int, int]:
         new_items, existing_items = [], []
         for item in items:
-            if item in self.__unique_items:
+            if item in self:
                 existing_items.append(item)
             else:
                 new_items.append(item)
@@ -129,7 +133,7 @@ class News(Encodable, Iterable[Item], Serializable, Sized):
 
     def encode(self) -> JSONDict:
         return {
-            'items': [item.encode() for item in self.__ordered_items],
+            'items': [item.encode() for item in self.items],
             'created': datetime.isoformat(self.created),
             'modified': datetime.isoformat(self.modified),
         }
