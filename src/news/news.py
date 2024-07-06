@@ -43,10 +43,10 @@ class News(Encodable, Iterable[Item], Serializable, Sized):
         return len(self.__ordered_items)
 
     def __repr__(self) -> str:
-        return f'<News: {len(self.__ordered_items)} items>'
+        return f'<News: {len(self)} items>'
 
     def __str__(self) -> str:
-        return f'{len(self.__ordered_items)} news items'
+        return f'{len(self)} news items'
 
     @property
     def index(self) -> Index:
@@ -66,24 +66,23 @@ class News(Encodable, Iterable[Item], Serializable, Sized):
         if not item.seq_id:
             last_seq_id = self.__ordered_items[0].seq_id if self.__ordered_items else 0
             item.seq_id = last_seq_id + 1
-        self.__unique_items[item] = item
         self.__ordered_items.insert(0, item)
+        self.__unique_items[item] = item
         self.__by_site[item.url.identity].insert(0, item)
 
     def remove_item_at(self, i: int):
         item = self.__ordered_items[i]
-        identity = item.url.identity
+        del self.__ordered_items[i]
 
         if item in self.__unique_items:
             del self.__unique_items[item]
 
+        identity = item.url.identity
         if identity in self.__by_site:
             if item in self.__by_site[identity]:
                 self.__by_site[identity].remove(item)
             if not self.__by_site[identity]:
                 del self.__by_site[identity]
-
-        del self.__ordered_items[i]
 
     def remove_old(self, now: datetime) -> int:
         expiration_date = now - self.lifetime
