@@ -1,6 +1,7 @@
 import re
 import unicodedata
 from collections import defaultdict
+from collections.abc import Iterable
 
 from news import Item
 
@@ -10,9 +11,9 @@ class Index:
         self.terms = terms or defaultdict(set)
 
     @staticmethod
-    def from_ordered_items(ordered_items: list[Item]) -> 'Index':
+    def from_items(items: Iterable[Item]) -> 'Index':
         terms = defaultdict(set)
-        for i, item in enumerate(ordered_items):
+        for i, item in enumerate(items):
             for term in get_terms(item.title):
                 terms[term].add(i)
         return Index(terms)

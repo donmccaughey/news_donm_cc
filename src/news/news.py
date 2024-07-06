@@ -55,7 +55,7 @@ class News(Container[Item], Encodable, Iterable[Item], Serializable, Sized):
     @property
     def index(self) -> Index:
         if not self.__index:
-            self.__index = Index.from_ordered_items(self.items)
+            self.__index = Index.from_items(self)
         return self.__index
 
     @property
@@ -133,7 +133,7 @@ class News(Container[Item], Encodable, Iterable[Item], Serializable, Sized):
 
     def encode(self) -> JSONDict:
         return {
-            'items': [item.encode() for item in self.items],
+            'items': [item.encode() for item in self],
             'created': datetime.isoformat(self.created),
             'modified': datetime.isoformat(self.modified),
         }
