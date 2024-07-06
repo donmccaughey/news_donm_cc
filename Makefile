@@ -150,6 +150,7 @@ python_files := \
 	src/news/index_test.py \
 	src/news/item.py \
 	src/news/item_test.py \
+	src/news/items.py \
 	src/news/news.py \
 	src/news/news_test.py \
 	src/news/source.py \

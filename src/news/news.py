@@ -1,6 +1,5 @@
 import json
 
-from collections import defaultdict
 from collections.abc import Container
 from collections.abc import Iterable
 from collections.abc import Iterator
@@ -11,6 +10,7 @@ from typing import cast
 from serialize import Encodable, JSONDict, JSONList, Serializable
 from .index import Index
 from .item import Item
+from .items import Items
 
 
 LIFETIME = timedelta(days=15)
@@ -24,27 +24,21 @@ class News(Container[Item], Encodable, Iterable[Item], Serializable, Sized):
                  lifetime: timedelta | None = LIFETIME,
                  ):
         self.__index: Index | None = None
-
-        self.__ordered_items: list[Item] = list()
-        self.__unique_items: dict[Item, Item] = dict()
-        self.__by_site: dict[str, list[Item]] = defaultdict(list)
+        self.__items = Items(items)
 
         now = datetime.now(timezone.utc)
         self.created = created or now
         self.modified = modified or now
         self.lifetime = lifetime or LIFETIME
 
-        for item in reversed(items or []):
-            self.add_item(item)
-
     def __contains__(self, item) -> bool:
-        return item in self.__unique_items
+        return item in self.__items
 
     def __iter__(self) -> Iterator[Item]:
-        return iter(self.__ordered_items)
+        return iter(self.__items)
 
     def __len__(self) -> int:
-        return len(self.__ordered_items)
+        return len(self.__items)
 
     def __repr__(self) -> str:
         return f'<News: {len(self)} items>'
@@ -60,40 +54,18 @@ class News(Container[Item], Encodable, Iterable[Item], Serializable, Sized):
 
     @property
     def items(self) -> list[Item]:
-        return self.__ordered_items
+        return self.__items.items
 
     @property
     def items_by_site(self) -> dict[str, list[Item]]:
-        return self.__by_site
-
-    def add_item(self, item: Item):
-        if not item.seq_id:
-            last_seq_id = self.__ordered_items[0].seq_id if self.__ordered_items else 0
-            item.seq_id = last_seq_id + 1
-        self.__ordered_items.insert(0, item)
-        self.__unique_items[item] = item
-        self.__by_site[item.url.identity].insert(0, item)
-
-    def remove_item_at(self, i: int):
-        item = self.__ordered_items[i]
-        del self.__ordered_items[i]
-
-        if item in self.__unique_items:
-            del self.__unique_items[item]
-
-        identity = item.url.identity
-        if identity in self.__by_site:
-            if item in self.__by_site[identity]:
-                self.__by_site[identity].remove(item)
-            if not self.__by_site[identity]:
-                del self.__by_site[identity]
+        return self.__items.by_site
 
     def remove_old(self, now: datetime) -> int:
         expiration_date = now - self.lifetime
         old_count = 0
         i = len(self) - 1
         while i >= 0 and self.items[i].created <= expiration_date:
-            self.remove_item_at(i)
+            self.__items.remove_item_at(i)
             self.modified = now
             old_count += 1
             i -= 1
@@ -113,9 +85,9 @@ class News(Container[Item], Encodable, Iterable[Item], Serializable, Sized):
         if new_items or existing_items:
             self.modified = now
         for new_item in reversed(new_items):
-            self.add_item(new_item)
+            self.__items.add_item(new_item)
         for existing_item in existing_items:
-            self.__unique_items[existing_item].update_from(existing_item)
+            self.__items.update_item(existing_item)
         return len(new_items), len(existing_items)
 
     @staticmethod
