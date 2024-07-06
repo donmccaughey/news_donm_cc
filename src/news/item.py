@@ -69,13 +69,14 @@ class Item(Encodable):
             Source.decode(cast(JSONDict, source))
             for source in (cast(JSONList, encoded['sources']))
         ]
+        seq_id = cast(int, encoded['seq_id']) if 'seq_id' in encoded else 0
         return Item(
             url=NormalizedURL(cast(str, encoded['url'])),
             title=cast(str, encoded['title']),
             sources=sources,
             created=datetime.fromisoformat(cast(str, encoded['created'])),
             modified=datetime.fromisoformat(cast(str, encoded['modified'])),
-            seq_id=cast(int, encoded['seq_id']),
+            seq_id=seq_id,
         )
 
     def encode(self) -> JSONDict:

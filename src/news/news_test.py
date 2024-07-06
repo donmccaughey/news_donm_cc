@@ -25,6 +25,9 @@ def test_update(item1, item2):
     assert list(news) == [item1, item2]
     assert news.by_site == {'example.com': [item1], 'example.net': [item2]}
 
+    assert item2.seq_id == 1
+    assert item1.seq_id == 2
+
 
 def test_update_for_empty():
     news = News()
@@ -48,6 +51,11 @@ def test_update_for_all_duplicates(item1, item2, item3, item4):
             'example.net': [item2],
             'example.org': [item3]
         }
+
+    assert item4.seq_id == 1
+    assert item3.seq_id == 2
+    assert item2.seq_id == 3
+    assert item1.seq_id == 4
 
 
 def test_update_for_some_duplicates(item1, item2, item3, item4):

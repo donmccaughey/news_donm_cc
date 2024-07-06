@@ -242,6 +242,36 @@ def test_decode_from_sources():
     assert item.seq_id == 17
 
 
+def test_decode_when_missing_seq_id():
+    encoded: JSONDict = {
+        'url': 'https://example.com/1',
+        'title': 'Item 1',
+        'sources': [
+            {
+                'url': 'https://source.com/1',
+                'site_id': 'so',
+            },
+            {
+                'url': 'https://alt-source.com/2',
+                'site_id': 'alt',
+            },
+        ],
+        'created': '2022-12-22T16:36:54.143222+00:00',
+        'modified': '2022-12-22T16:36:54.143222+00:00',
+    }
+
+    item = Item.decode(encoded)
+
+    assert item.url == URL('https://example.com/1')
+    assert item.title == 'Item 1'
+    assert len(item.sources) == 2
+    assert item.sources[0].url == URL('https://source.com/1')
+    assert item.sources[0].site_id == 'so'
+    assert item.sources[1].url == URL('https://alt-source.com/2')
+    assert item.sources[1].site_id == 'alt'
+    assert item.seq_id == 0
+
+
 def test_encode():
     dt = datetime.fromisoformat('2022-12-22T16:36:54.143222+00:00')
     item1 = Item(

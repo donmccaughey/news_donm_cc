@@ -56,6 +56,9 @@ class News(Encodable, Iterable[Item], Serializable):
         return self.ordered_items
 
     def add_item(self, item: Item):
+        if not item.seq_id:
+            last_seq_id = self.ordered_items[0].seq_id if self.ordered_items else 0
+            item.seq_id = last_seq_id + 1
         self.unique_items[item] = item
         self.ordered_items.insert(0, item)
         self.by_site[item.url.identity].insert(0, item)
@@ -64,11 +67,14 @@ class News(Encodable, Iterable[Item], Serializable):
         item = self.ordered_items[i]
         identity = item.url.identity
 
-        del self.unique_items[item]
+        if item in self.unique_items:
+            del self.unique_items[item]
 
-        self.by_site[identity].remove(item)
-        if not self.by_site[identity]:
-            del self.by_site[identity]
+        if identity in self.by_site:
+            if item in self.by_site[identity]:
+                self.by_site[identity].remove(item)
+            if not self.by_site[identity]:
+                del self.by_site[identity]
 
         del self.ordered_items[i]
 

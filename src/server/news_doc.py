@@ -37,6 +37,12 @@ class NewsDoc(Doc[Item]):
         self.page = Page(self.news.items, page_number, items_per_page)
         self.counter_reset_item = self.page.begin
         self.first_item_index = self.page.begin
+        self.oldest_item_seq_id = (
+            self.news.items[-1].seq_id if self.news.items else 0
+        )
+        self.newest_item_seq_id = (
+            self.news.items[0].seq_id if self.news.items else 0
+        )
 
         self.first_url = page_url(self.page.first, full_urls)
         self.last_url = page_url(self.page.last, full_urls)
@@ -59,12 +65,16 @@ class NewsDoc(Doc[Item]):
         return {
             'version': self.version,
             'modified': self.modified.isoformat(),
+
             'page_index': self.page.index,
             'total_pages': self.page.count,
             'items_per_page': self.page.items_per_page,
             'items': self.page.to_json(),
             'first_item_index': self.first_item_index,
+            'newest_item_seq_id': self.newest_item_seq_id,
+            'oldest_item_seq_id': self.oldest_item_seq_id,
             'total_items:': len(self.news.items),
+
             'first_url': self.first_url,
             'last_url': self.last_url,
             'next_url': self.next_url,
