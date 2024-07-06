@@ -27,11 +27,11 @@ class SitesDoc(Doc[Site]):
         super().__init__(cached_news, version, is_styled)
         self.sites = [
             Site(
-                count_phrase(self.news.by_site[site], 'item'),
+                count_phrase(self.news.items_by_site[site], 'item'),
                 site,
-                self.news.by_site[site]
+                self.news.items_by_site[site]
             )
-            for site in sorted(self.news.by_site.keys())
+            for site in sorted(self.news.items_by_site.keys())
         ]
         self.count_phrase = count_phrase(self.sites, 'site')
 

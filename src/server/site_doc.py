@@ -19,7 +19,7 @@ class SiteDoc(Doc[Item]):
     ):
         super().__init__(cached_news, version, is_styled)
         self.identity = identity
-        self.items = self.news.by_site[self.identity]
+        self.items = self.news.items_by_site[self.identity]
         self.count_phrase = count_phrase(self.items, 'item')
 
     def __iter__(self) -> Iterator[Item]:

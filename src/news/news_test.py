@@ -23,7 +23,7 @@ def test_update(item1, item2):
     assert modified_count == 0
     assert len(news) == 2
     assert list(news) == [item1, item2]
-    assert news.by_site == {'example.com': [item1], 'example.net': [item2]}
+    assert news.items_by_site == {'example.com': [item1], 'example.net': [item2]}
 
     assert item2.seq_id == 1
     assert item1.seq_id == 2
@@ -46,7 +46,7 @@ def test_update_for_all_duplicates(item1, item2, item3, item4):
     assert new_count == 0
     assert modified_count == 2
     assert len(news) == 4
-    assert news.by_site == {
+    assert news.items_by_site == {
             'example.com': [item1, item4],
             'example.net': [item2],
             'example.org': [item3]
@@ -77,10 +77,10 @@ def test_update_for_existing_item_from_new_source(item1, item1_alt_source):
     assert new_count == 0
     assert modified_count == 1
     assert len(news) == 1
-    assert news.by_site == {'example.com': [item1]}
-    assert len(news.ordered_items[0].sources) == 2
-    assert item1.sources[0] in news.ordered_items[0].sources
-    assert item1_alt_source.sources[0] in news.ordered_items[0].sources
+    assert news.items_by_site == {'example.com': [item1]}
+    assert len(news.items[0].sources) == 2
+    assert item1.sources[0] in news.items[0].sources
+    assert item1_alt_source.sources[0] in news.items[0].sources
 
 
 def test_remove_old_when_empty():
@@ -101,7 +101,7 @@ def test_remove_old_odd_1(item1_old, item2, item3):
     assert old_count == 1
     assert news.modified == NOW
     assert len(news) == 2
-    assert news.by_site == {'example.net': [item2], 'example.org': [item3]}
+    assert news.items_by_site == {'example.net': [item2], 'example.org': [item3]}
 
 
 def test_remove_old_odd_2(item1_old, item2_old, item3):
@@ -112,7 +112,7 @@ def test_remove_old_odd_2(item1_old, item2_old, item3):
     assert old_count == 2
     assert news.modified == NOW
     assert len(news) == 1
-    assert news.by_site == {'example.org': [item3]}
+    assert news.items_by_site == {'example.org': [item3]}
 
 
 def test_remove_old_even_1(item1_old, item2, item3, item4):
@@ -123,7 +123,7 @@ def test_remove_old_even_1(item1_old, item2, item3, item4):
     assert old_count == 1
     assert news.modified == NOW
     assert len(news) == 3
-    assert news.by_site == {
+    assert news.items_by_site == {
             'example.net': [item2],
             'example.org': [item3],
             'example.com': [item4],
@@ -138,7 +138,7 @@ def test_remove_old_even_2(item1_old, item2_old, item3, item4):
     assert old_count == 2
     assert news.modified == NOW
     assert len(news) == 2
-    assert news.by_site == {
+    assert news.items_by_site == {
             'example.org': [item3],
             'example.com': [item4],
         }
@@ -151,7 +151,7 @@ def test_remove_old_when_none_expired(item1, item2, item3):
 
     assert old_count == 0
     assert news.modified == AN_HOUR_AGO
-    assert news.by_site == {
+    assert news.items_by_site == {
             'example.com': [item1],
             'example.net': [item2],
             'example.org': [item3],
@@ -166,7 +166,7 @@ def test_remove_old_when_all_expired(item1_old, item2_old):
     assert old_count == 2
     assert news.modified == NOW
     assert len(news) == 0
-    assert news.by_site == {}
+    assert news.items_by_site == {}
 
 
 def test_remove_old_and_update_for_duplicate_item(item1, item1_old, item2, item3):
