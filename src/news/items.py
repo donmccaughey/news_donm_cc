@@ -31,7 +31,7 @@ class Items(Container[Item], Iterable[Item], Sized):
         return f'{len(self)} items'
 
     @property
-    def items(self) -> list[Item]:
+    def as_list(self) -> list[Item]:
         return self.__ordered_items
 
     @property

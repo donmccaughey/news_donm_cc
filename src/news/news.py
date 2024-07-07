@@ -54,7 +54,7 @@ class News(Container[Item], Encodable, Iterable[Item], Serializable, Sized):
 
     @property
     def items(self) -> list[Item]:
-        return self.__items.items
+        return self.__items.as_list
 
     @property
     def items_by_site(self) -> dict[str, list[Item]]:
