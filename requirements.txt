@@ -1,8 +1,8 @@
 # use versions from https://pkgs.alpinelinux.org/packages
 # since this file becomes gen/apk_add_py3_packages
 beautifulsoup4==4.12.3
-boto3 == 1.28.12
+boto3 == 1.34.108
 feedparser == 6.0.11
-Flask == 2.3.3
+Flask == 3.0.3
 gunicorn == 21.2.0
-requests == 2.31.0
+requests == 2.32.3
