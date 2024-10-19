@@ -85,6 +85,7 @@ def make_doc_response(doc: Doc) -> Response:
 
     response.make_conditional(request)
     add_cache_control(response)
+    response.vary.add('Accept')
 
     return response
 

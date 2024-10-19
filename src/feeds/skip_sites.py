@@ -1,5 +1,6 @@
 SKIP_SITES = {
     'aeon.co',
+    'altaonline.com',
     'americanaffairsjournal.org',
     'apollo-magazine.com',
     'asteriskmag.com',
@@ -138,6 +139,7 @@ SKIP_SITES = {
     'thestacksreader.com',
     'thewalrus.ca',
     'thoughtco.com',
+    'tiktok.com',
     'transom.org',
     'twitter.com',
     'business.twitter.com',
@@ -147,6 +149,7 @@ SKIP_SITES = {
     'versobooks.com',
     'vestoj.com',
 
+    'wheresyoured.at',
     'wmagazine.com',
 
     'x.com',

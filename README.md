@@ -16,14 +16,12 @@ can find the current list of sources in the [`Feeds.all()`][1] method.
 
 ## Development Setup
 
-1. Install `aws`, `docker`, `jq` and `make`
-2. Install `pyenv` and `pyenv-virtualenv`
-3. Create a `news-venv` virtual environment using Python 3.11.5 and activate it
-4. Run tests: `make check`
-5. Run the extractor locally for ad hoc testing: `make extract`
-6. Run the server locally for ad hoc testing: `make debug`
-7. Run the container locally and shell into it: `make shell`
-8. Deploy a new version from the current machine: `make deploy`
+1. Install `aws`, `docker`, `jq`, `make` and `uv`
+2. Run tests: `make check`
+3. Run the extractor locally for ad hoc testing: `make extract`
+4. Run the server locally for ad hoc testing: `make debug`
+5. Run the container locally and shell into it: `make shell`
+6. Deploy a new version from the current machine: `make deploy`
 
 
 ## Functional Goals

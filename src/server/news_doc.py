@@ -73,7 +73,7 @@ class NewsDoc(Doc[Item]):
             'first_item_index': self.first_item_index,
             'newest_item_seq_id': self.newest_item_seq_id,
             'oldest_item_seq_id': self.oldest_item_seq_id,
-            'total_items:': len(self.news),
+            'total_items': len(self.news),
 
             'first_url': self.first_url,
             'last_url': self.last_url,

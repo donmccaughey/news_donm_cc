@@ -59,6 +59,10 @@ from .identity import url_identity
     ('npmjs.com/package/express', 'https://www.npmjs.com/package/express'),
     ('pypi.org/project/pytest', 'https://pypi.org/project/pytest/'),
 
+    # -- bluesky
+
+    ('bsky.app/profile/duetosymmetry.com', 'https://bsky.app/profile/duetosymmetry.com/post/3knzeem5w362r'),
+    ('bsky.app/profile/makai.chaotic.ninja', 'https://bsky.app/profile/makai.chaotic.ninja/post/3kofrm3pcvc2p'),
 
     # -- github
 

@@ -12,6 +12,7 @@ HOSTNAME_MAP = {
 
 
 IDENTITY_PATTERNS = {
+    'bsky.app': '/profile/*',
     'crates.io': '/crates/*',
     'kickstarter.com': '/projects/*',
     'sites.google.com': '/site/*',

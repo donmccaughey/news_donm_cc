@@ -28,15 +28,20 @@ clean : stop
 	rm -rf $(TMP)
 
 
+.PHONY : clobber
+clobber : clean
+	rm -rf .venv
+
+
 .PHONY : cov
 cov : $(TMP)/.coverage
 
 
 .PHONY : debug
-debug : $(TMP)/pip-install-requirements.stamp.txt
+debug : $(TMP)/uv-sync.stamp.txt
 	FLASK_CACHE_DIR="$(TMP)" \
 	FLASK_RUN_PORT=8001 \
-	flask \
+	uv run flask \
 		--app src/server \
 		--debug \
 		run
@@ -47,16 +52,16 @@ deploy : $(TMP)/aws-lightsail-create-container-service-deployment.stamp.txt
 
 
 .PHONY : extract
-extract : $(TMP)/pip-install-requirements.stamp.txt
+extract : $(TMP)/uv-sync.stamp.txt
 	REDDIT_PRIVATE_RSS_FEED="$(REDDIT_PRIVATE_RSS_FEED)" \
-	python3 src/extractor.py \
+	uv run src/extractor.py \
 		--cache-dir="$(TMP)" \
 		--no-store
 
 
 .PHONY : logs
 logs :
-	python3 scripts/logs.py
+	uv run scripts/logs.py
 
 
 .PHONY : mypy
@@ -212,8 +217,8 @@ source_files := $(filter-out %_test.py, $(python_files))
 test_files := $(filter %_test.py, $(python_files))
 
 
-gen/apk_add_py3_packages : requirements.txt scripts/pip2apk.py | $$(dir $$@)
-	python3 scripts/pip2apk.py \
+gen/apk_add_py3_packages : requirements.txt scripts/pip2apk.py $(TMP)/uv-sync.stamp.txt | $$(dir $$@)
+	uv run scripts/pip2apk.py \
 		--input $< \
 		--output $@
 
@@ -222,8 +227,13 @@ gen/version.txt : | $$(dir $$@)
 	git rev-parse --short HEAD > $@
 
 
-test/mypy.txt : .mypy.ini $(TMP)/pip-install-requirements-dev.stamp.txt $(TMP)/pytest.stamp.txt
-	python3 -m mypy --check-untyped-defs src | tee test/mypy.txt
+test/mypy.txt : .mypy.ini $(TMP)/uv-sync.stamp.txt $(TMP)/pytest.stamp.txt
+	uv run -m mypy --check-untyped-defs src | tee test/mypy.txt
+
+
+uv.lock : pyproject.toml .python-version
+	uv sync
+	touch $@
 
 
 $(TMP)/.env : | $$(dir $$@)
@@ -251,7 +261,7 @@ $(TMP)/create-container-service-deployment.json : \
 		aws/create-container-service-deployment.template.json \
 		scripts/fillin.py \
 		| $$(dir $$@)
-	python3 scripts/fillin.py \
+	uv run scripts/fillin.py \
 		--input $< \
 		--output $@ \
 		--name 'AWS_ACCESS_KEY_ID' --value '$(AWS_ACCESS_KEY_ID)' \
@@ -301,27 +311,17 @@ $(TMP)/docker-run.stamp.txt : \
 	date > $@
 
 
-$(TMP)/pip-install-requirements.stamp.txt : requirements.txt | $$(dir $$@)
-	python3 -m pip install \
-		--quiet --quiet --quiet \
-		--requirement $<
-	date > $@
-
-
-$(TMP)/pip-install-requirements-dev.stamp.txt : requirements-dev.txt | $$(dir $$@)
-	python3 -m pip install \
-		--quiet --quiet --quiet \
-		--requirement $<
-	date > $@
-
-
 $(TMP)/pytest.stamp.txt : \
 		$(source_files) \
 		$(test_files) \
-		$(TMP)/pip-install-requirements.stamp.txt \
-		$(TMP)/pip-install-requirements-dev.stamp.txt \
+		$(TMP)/uv-sync.stamp.txt \
 		| $$(dir $$@)
-	python3 -m pytest --quiet --quiet
+	uv run -m pytest --quiet --quiet
+	date > $@
+
+
+$(TMP)/uv-sync.stamp.txt : uv.lock | $$(dir $$@)
+	uv sync --frozen
 	date > $@
 
 
@@ -329,11 +329,10 @@ $(TMP)/.coverage : \
 		.coveragerc \
 		$(source_files) \
 		$(test_files) \
-		$(TMP)/pip-install-requirements.stamp.txt \
-		$(TMP)/pip-install-requirements-dev.stamp.txt \
+		$(TMP)/uv-sync.stamp.txt \
 		| $$(dir $$@)
 	COVERAGE_FILE=$@ \
-	python3 -m pytest \
+	uv run -m pytest \
 		--cov \
 		--cov-config=$< \
 		--cov-report=html:"$(TMP)/coverage" \
