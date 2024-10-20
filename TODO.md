@@ -1,6 +1,6 @@
 # To Do
 
-- figure out how to check package versions in `requirements.txt` against apk versions
+- figure out how to check package versions in `pyproject.toml` against apk versions
   - https://pkgs.alpinelinux.org/packages
 - paginate the `/sites` page
 - understand how requests handles redirects
@@ -48,7 +48,6 @@
 - transform `keep_entry()` method into a score and bubble the score up
 - change `News.add_new() to take (items, now) instead of news`
 - split `modified` into `items_added` and `items_removed`
-- json responses
 - add container smoke test
 - statsd and datadog 
 - where should `query.py` live?
@@ -66,9 +65,6 @@
     - https://archive.vn/rsxDl --> archive.today --> source site
     - wsj
     - economist
-  - Twitter, tweet and sub-tweet media links
-    - https://twitter.com/TurnerNovak/status/1654577231937544192
-    - https://twitter.com/TurnerNovak/status/1654577231937544192/photo/1
 - search
   - include search box on search page, prefilled with query
   - include "found n of m items" on search page as `.page-info`

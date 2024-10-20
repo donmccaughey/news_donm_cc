@@ -217,8 +217,8 @@ source_files := $(filter-out %_test.py, $(python_files))
 test_files := $(filter %_test.py, $(python_files))
 
 
-gen/apk_add_py3_packages : requirements.txt scripts/pip2apk.py $(TMP)/uv-sync.stamp.txt | $$(dir $$@)
-	uv run scripts/pip2apk.py \
+gen/apk_add_py3_packages : pyproject.toml scripts/py3apk.py $(TMP)/uv-sync.stamp.txt | $$(dir $$@)
+	uv run scripts/py3apk.py \
 		--input $< \
 		--output $@
 
