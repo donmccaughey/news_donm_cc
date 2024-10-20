@@ -131,6 +131,7 @@ SKIP_SITES = {
     'thedial.world',
     'thedriftmag.com',
     'theepochtimes.com',
+    'thelampmagazine.com',
     'themarginalian.org',
     'themillions.com',
     'thenewatlantis.com',
