@@ -9,3 +9,5 @@ secrets
 target
 tmp
 venv
+xcuserdata/
+

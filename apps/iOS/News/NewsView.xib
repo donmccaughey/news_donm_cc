@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewsViewController">
             <connections>
+                <outlet property="tableView" destination="hER-4H-Rvk" id="YkI-JJ-Ioe"/>
                 <outlet property="view" destination="iN0-l3-epB" id="eF0-2N-h5Y"/>
             </connections>
         </placeholder>
@@ -18,17 +19,36 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBM-zM-Qva">
-                    <rect key="frame" x="166" y="430" width="43" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQn-d3-zxi">
+                    <rect key="frame" x="16" y="59" width="361" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="NRj-bA-5PU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="48"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hER-4H-Rvk">
+                    <rect key="frame" x="0.0" y="117" width="393" height="701"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="imC-5T-m4G"/>
+                        <outlet property="delegate" destination="-1" id="gsc-BH-lmk"/>
+                    </connections>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="-15" y="20"/>
+            <constraints>
+                <constraint firstItem="oQn-d3-zxi" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="A0y-ET-0Xl"/>
+                <constraint firstItem="hER-4H-Rvk" firstAttribute="top" secondItem="oQn-d3-zxi" secondAttribute="bottom" constant="8" symbolic="YES" id="Edh-Mi-pmb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="oQn-d3-zxi" secondAttribute="trailing" constant="16" id="P8w-XI-HOQ"/>
+                <constraint firstItem="hER-4H-Rvk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="WpY-1w-nPp"/>
+                <constraint firstItem="oQn-d3-zxi" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="iBO-K5-dTt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hER-4H-Rvk" secondAttribute="trailing" id="jG2-fW-9AU"/>
+                <constraint firstItem="hER-4H-Rvk" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="y8a-fl-JHS"/>
+            </constraints>
+            <point key="canvasLocation" x="-16.030534351145036" y="19.718309859154932"/>
         </view>
     </objects>
     <resources>
