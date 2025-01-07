@@ -82,6 +82,7 @@ class Item(Encodable):
     def encode(self) -> JSONDict:
         return {
             'url': str(self.url),
+            'url_identity': self.url.identity,
             'title': self.title,
             'sources': [source.encode() for source in self.sources],
             'created': self.created.isoformat(),
