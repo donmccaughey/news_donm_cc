@@ -1,14 +1,14 @@
-### GET first page
+### GET first page of dev
 GET http://127.0.0.1:8001/
 Accept: application/json
 
 
-### GET second page
+### GET second page of dev
 GET http://127.0.0.1:8001/2
 Accept: application/json
 
 
-### GET page 30
+### GET page 30 of dev
 GET http://127.0.0.1:8001/30
 Accept: application/json
 
@@ -25,4 +25,14 @@ Accept: application/json
 
 ### GET page 34 of prod
 GET https://news.donm.cc/34
+Accept: application/json
+
+
+### Get first page of container
+GET http://localhost:8000/
+Accept: application/json
+
+
+### Get second page of container
+GET http://localhost:8000/2
 Accept: application/json
