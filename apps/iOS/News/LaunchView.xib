@@ -14,13 +14,12 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ilQ-h0-xFG">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwn-Vw-19y">
                     <rect key="frame" x="16" y="59" width="361" height="50"/>
                     <constraints>
-                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Bvt-yL-Qqs"/>
-                        <constraint firstAttribute="height" constant="50" id="Cbd-hY-cDT"/>
+                        <constraint firstAttribute="height" constant="50" id="fTY-JF-toE"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="48"/>
+                    <fontDescription key="fontDescription" name="AtkinsonHyperlegible-Regular" family="Atkinson Hyperlegible" pointSize="48"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -28,9 +27,9 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="ilQ-h0-xFG" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="KUO-NN-q0f"/>
-                <constraint firstItem="ilQ-h0-xFG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="SCV-Gq-2sH"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ilQ-h0-xFG" secondAttribute="trailing" constant="16" id="phZ-XI-en4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="iwn-Vw-19y" secondAttribute="trailing" constant="16" id="B0B-aH-zs4"/>
+                <constraint firstItem="iwn-Vw-19y" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="VXJ-IP-7BK"/>
+                <constraint firstItem="iwn-Vw-19y" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="cAn-fK-df0"/>
             </constraints>
             <point key="canvasLocation" x="63" y="20"/>
         </view>

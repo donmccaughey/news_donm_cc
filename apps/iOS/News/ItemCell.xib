@@ -15,32 +15,32 @@
                 <rect key="frame" x="0.0" y="0.0" width="393" height="64"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KaK-3O-Rsn">
-                        <rect key="frame" x="20" y="0.0" width="373" height="45"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="45" id="6uz-BE-FQ0"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="URL Identity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1JS-PD-3qS">
-                        <rect key="frame" x="20" y="43" width="373" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1JS-PD-3qS">
+                        <rect key="frame" x="20" y="43" width="353" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="TvA-NO-ECS"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
-                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" name="AtkinsonHyperlegible-Regular" family="Atkinson Hyperlegible" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KaK-3O-Rsn">
+                        <rect key="frame" x="20" y="4" width="353" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="6uz-BE-FQ0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AtkinsonHyperlegible-Regular" family="Atkinson Hyperlegible" pointSize="16"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="1JS-PD-3qS" firstAttribute="leading" secondItem="5BX-KU-9ew" secondAttribute="leading" constant="20" symbolic="YES" id="6HM-9B-T17"/>
-                    <constraint firstAttribute="trailing" secondItem="KaK-3O-Rsn" secondAttribute="trailing" id="9XG-Aq-7bQ"/>
-                    <constraint firstAttribute="trailing" secondItem="1JS-PD-3qS" secondAttribute="trailing" id="TTH-L3-frh"/>
+                    <constraint firstAttribute="trailing" secondItem="KaK-3O-Rsn" secondAttribute="trailing" constant="20" symbolic="YES" id="9XG-Aq-7bQ"/>
+                    <constraint firstAttribute="trailing" secondItem="1JS-PD-3qS" secondAttribute="trailing" constant="20" symbolic="YES" id="TTH-L3-frh"/>
                     <constraint firstAttribute="bottom" secondItem="1JS-PD-3qS" secondAttribute="bottom" id="hJL-5b-wJw"/>
                     <constraint firstItem="KaK-3O-Rsn" firstAttribute="leading" secondItem="5BX-KU-9ew" secondAttribute="leading" constant="20" symbolic="YES" id="kpo-N3-Bvc"/>
-                    <constraint firstItem="KaK-3O-Rsn" firstAttribute="top" secondItem="5BX-KU-9ew" secondAttribute="top" id="uZi-Ep-roj"/>
+                    <constraint firstItem="KaK-3O-Rsn" firstAttribute="top" secondItem="5BX-KU-9ew" secondAttribute="top" constant="4" id="uZi-Ep-roj"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
