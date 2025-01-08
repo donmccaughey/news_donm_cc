@@ -11,7 +11,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property Item *item;
 @property (weak) IBOutlet UILabel *title;
-@property (weak) IBOutlet UILabel *urlIdentity;
+@property (weak) IBOutlet UILabel *details;
+
+- (NSString *)detailsString;
 
 @end
 

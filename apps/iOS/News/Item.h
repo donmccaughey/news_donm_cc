@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly) NSDate *created;
 @property (readonly) NSDate *modfied;
 @property (readonly) NSUInteger seqID;
+@property (readonly) NSArray<NSString *> *siteIDs;
 @property (readonly) NSArray<Source *> *sources;
 @property (readonly) NSString *title;
 @property (readonly) NSURL *url;

@@ -36,6 +36,17 @@
 }
 
 
+- (NSArray<NSString *> *)siteIDs;
+{
+    NSMutableArray<NSString *> *siteIDs = [NSMutableArray new];
+    for (Source *source in _sources) {
+        if ( ! [source.url isEqual:_url]) [siteIDs addObject:source.siteID];
+    }
+    [siteIDs sortUsingSelector:@selector(compare:)];
+    return siteIDs;
+}
+
+
 - (BOOL)isEqual:(id)object;
 {
     if (self == object) return YES;

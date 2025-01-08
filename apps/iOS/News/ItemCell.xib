@@ -8,24 +8,24 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="72" id="lCX-cT-4BG" customClass="ItemCell">
-            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="92" id="lCX-cT-4BG" customClass="ItemCell">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="64"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lCX-cT-4BG" id="5BX-KU-9ew">
-                <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                <rect key="frame" x="0.0" y="0.0" width="393" height="64"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KaK-3O-Rsn">
-                        <rect key="frame" x="20" y="0.0" width="373" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KaK-3O-Rsn">
+                        <rect key="frame" x="20" y="0.0" width="373" height="45"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="21" id="6uz-BE-FQ0"/>
+                            <constraint firstAttribute="height" constant="45" id="6uz-BE-FQ0"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="URL Identity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1JS-PD-3qS">
-                        <rect key="frame" x="20" y="23" width="373" height="21"/>
+                        <rect key="frame" x="20" y="43" width="373" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="TvA-NO-ECS"/>
                         </constraints>
@@ -44,10 +44,10 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="details" destination="1JS-PD-3qS" id="ei3-uJ-PVv"/>
                 <outlet property="title" destination="KaK-3O-Rsn" id="YCT-Z6-iL7"/>
-                <outlet property="urlIdentity" destination="1JS-PD-3qS" id="Qnt-ku-4PT"/>
             </connections>
-            <point key="canvasLocation" x="-16.030534351145036" y="396.47887323943667"/>
+            <point key="canvasLocation" x="-16.030534351145036" y="403.52112676056339"/>
         </tableViewCell>
     </objects>
 </document>

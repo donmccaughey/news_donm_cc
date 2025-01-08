@@ -46,6 +46,7 @@ static NSString *itemCellName = @"ItemCell";
 {
     [_tableView registerNib:[UINib nibWithNibName:itemCellName bundle:nil]
      forCellReuseIdentifier:itemCellName];
+    _tableView.rowHeight = 64.0;
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(newsAPIDidFetchNews:)
@@ -66,9 +67,10 @@ static NSString *itemCellName = @"ItemCell";
 - (void)      tableView:(UITableView *)tableView
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 {
-    Item *cell = [tableView cellForRowAtIndexPath:indexPath];
+    ItemCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     // TODO: show detail view for cell.item
+    (void)cell;
 }
 
 
