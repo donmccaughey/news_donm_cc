@@ -14,16 +14,24 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Launch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Dz-r0-jJA">
-                    <rect key="frame" x="168" y="242" width="56" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ilQ-h0-xFG">
+                    <rect key="frame" x="16" y="59" width="361" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Bvt-yL-Qqs"/>
+                        <constraint firstAttribute="height" constant="50" id="Cbd-hY-cDT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="48"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ilQ-h0-xFG" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="KUO-NN-q0f"/>
+                <constraint firstItem="ilQ-h0-xFG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="SCV-Gq-2sH"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ilQ-h0-xFG" secondAttribute="trailing" constant="16" id="phZ-XI-en4"/>
+            </constraints>
             <point key="canvasLocation" x="63" y="20"/>
         </view>
     </objects>

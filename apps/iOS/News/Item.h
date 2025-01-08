@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly) NSArray<Source *> *sources;
 @property (readonly) NSString *title;
 @property (readonly) NSURL *url;
+@property (readonly) NSString *urlIdentity;
 
 - (instancetype)init NS_UNAVAILABLE;
 

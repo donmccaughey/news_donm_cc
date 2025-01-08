@@ -19,6 +19,7 @@
     _sources = [self array:@"sources" ofClass:[Source class] fromJSON:json];
     _title = [self string:@"title" fromJSON:json];
     _url = [self url:@"url" fromJSON:json];
+    _urlIdentity = [self string:@"url_identity" fromJSON:json];
     
     if (self.error) {
         if (error) *error = self.error;

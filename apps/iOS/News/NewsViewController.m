@@ -2,8 +2,12 @@
 
 #import "AppDelegate.h"
 #import "Item.h"
+#import "ItemCell.h"
 #import "News.h"
 #import "NewsAPI.h"
+
+
+static NSString *itemCellName = @"ItemCell";
 
 
 @implementation NewsViewController
@@ -40,6 +44,9 @@
 
 - (void)viewDidLoad;
 {
+    [_tableView registerNib:[UINib nibWithNibName:itemCellName bundle:nil]
+     forCellReuseIdentifier:itemCellName];
+    
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(newsAPIDidFetchNews:)
                                                  name:NewsAPIDidFetchNewsNotification
@@ -50,35 +57,24 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath;
 {
-    static NSString *cellIdentifier = @"NewsCell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    if ( ! cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
-                                      reuseIdentifier:cellIdentifier];
-        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-        cell.selectionStyle = UITableViewCellSelectionStyleDefault;
-        cell.textLabel.adjustsFontSizeToFitWidth = YES;
-        cell.textLabel.minimumScaleFactor = 0.8;
-    }
-    
-    Item *item = [self.news itemAtIndex:indexPath.row];
-    if (item) {
-        cell.textLabel.text = item.title;
-        cell.detailTextLabel.text = item.url.description;
-    } else {
-        cell.textLabel.text = @"(news item)";
-        cell.detailTextLabel.text = @"";
-    }
-    
+    ItemCell *cell = [tableView dequeueReusableCellWithIdentifier:itemCellName];
+    cell.item = [self.news itemAtIndex:indexPath.row];
     return cell;
+}
+
+
+- (void)      tableView:(UITableView *)tableView
+didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
+{
+    Item *cell = [tableView cellForRowAtIndexPath:indexPath];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    // TODO: show detail view for cell.item
 }
 
 
 - (NSInteger)tableView:(UITableView *)tableView
  numberOfRowsInSection:(NSInteger)section;
 {
-    NSLog(@"self.news.count = %lu", self.news.count);
     return self.news.count;
 }
 
