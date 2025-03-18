@@ -223,7 +223,11 @@ gen/apk_add_py3_packages : pyproject.toml scripts/py3apk.py $(TMP)/uv-sync.stamp
 		--output $@
 
 
-gen/version.txt : | $$(dir $$@)
+gen/version.txt : \
+		container/Dockerfile \
+		$(container_files) \
+		$(source_files) \
+		| $$(dir $$@)
 	git rev-parse --short HEAD > $@
 
 
