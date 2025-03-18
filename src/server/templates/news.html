@@ -2,9 +2,11 @@
 {% block title %}News{% endblock %}
 {% block header %}
     <h1>News</h1>
-    <form class=search action=./ method=GET>
-        <input type=search name=q placeholder=search>
-    </form>
+    <search>
+        <form class=search action=./ method=GET>
+            <input type=search name=q placeholder=search>
+        </form>
+    </search>
     <nav>
         <p class=page-info>
             updated <time datetime={{doc.modified|iso}}>{{doc.modified|utc}}</time>
