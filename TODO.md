@@ -1,5 +1,7 @@
 # To Do
 
+- check of neuters.de has fixed captcha issue with Reuters API
+  - https://github.com/HookedBehemoth/neuters/issues/42
 - figure out how to check package versions in `pyproject.toml` against apk versions
   - https://pkgs.alpinelinux.org/packages
 - paginate the `/sites` page
