@@ -33,6 +33,7 @@ SKIP_SITES = {
     'english.elpais.com',
     'europeanreviewofbooks.com',
 
+    'm.facebook.com',
     'fantasticmetropolis.com',
     'francisdiclemente.com',
     'ft.com',
@@ -40,6 +41,7 @@ SKIP_SITES = {
     'glamour.com',
     # google.com
     'docs.google.com',
+    'drive.google.com',
     'granta.com',
 
     'hakaimagazine.com',
@@ -139,6 +141,7 @@ SKIP_SITES = {
     'thepointmag.com',
     'thestacksreader.com',
     'thewalrus.ca',
+    'thewhitereview.org',
     'thoughtco.com',
     'tiktok.com',
     'transom.org',
