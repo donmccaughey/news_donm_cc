@@ -5,6 +5,13 @@ from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 log = logging.getLogger(__name__)
 
 
+DIRTY_PARAMS = [
+    'embedded-checkout',
+    'leadSource',
+    'smid',
+    'reflink',
+]
+
 def clean_query(query: str) -> str:
     if query:
         try:
@@ -37,4 +44,4 @@ def clean_url(url: str) -> str:
 
 def is_dirty(parameter: tuple[str, str]) -> bool:
     name, value = parameter
-    return name.startswith('utm_') or name in ['leadSource', 'smid']
+    return name.startswith('utm_') or name in DIRTY_PARAMS

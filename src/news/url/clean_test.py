@@ -9,6 +9,8 @@ from .clean import clean_query, clean_url
     ('leadSource=uverify%20wall', ''),
     ('TupleSpace', 'TupleSpace'),
     ('utm_source=rss&utm_medium=rss&utm_campaign=foo', ''),
+    ('reflink=integratedwebview_share', ''),
+    ('embedded-checkout=true', ''),
 ])
 def test_clean_query(query, cleaned, caplog):
     assert clean_query(query) == cleaned
