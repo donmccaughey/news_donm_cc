@@ -10,15 +10,20 @@ REDDIT_NETLOCS = {
 }
 
 
+def is_npr_story_id(part: str) -> bool:
+    if part.isdecimal() and len(part) > 4:
+        return True
+    if part.startswith('nx-s1-') and part[6:].isdecimal():
+        return True
+    return False
+
+
 def rewrite_npr_url(scheme: str, path: str) -> str | None:
     parts = path.split('/')
-    numbers = [
-        part for part in parts
-        if part.isdecimal() and len(part) > 4
-    ]
-    if not numbers:
+    story_id = [part for part in parts if is_npr_story_id(part)]
+    if not story_id:
         return None
-    story_id = numbers[0]
+    story_id = story_id[0]
     return urlunsplit((scheme, 'text.npr.org', '/' + story_id, '', ''))
 
 

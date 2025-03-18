@@ -45,6 +45,10 @@ def test_rewrite_url(url, rewritten):
         'https://www.npr.org/2023/03/23/1165680024/perennial-rice-plant-once-harvest-again-and-again',
         'https://text.npr.org/1165680024',
     ),
+    (
+        'https://www.npr.org/2024/07/27/nx-s1-5054329/utah-great-salt-lake-carbon-emissions',
+        'https://text.npr.org/nx-s1-5054329',
+    ),
     # sections
     (
         'https://www.npr.org/sections/money/2023/05/02/1172791281/this-company-adopted-ai-heres-what-happened-to-its-human-workers',
