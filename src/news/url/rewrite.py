@@ -10,6 +10,10 @@ REDDIT_NETLOCS = {
 }
 
 
+def rewrite_medium_url(url: str) -> str:
+    return 'https://freedium.cfd/' + url
+
+
 def is_npr_story_id(part: str) -> bool:
     if part.isdecimal() and len(part) > 4:
         return True
@@ -20,10 +24,10 @@ def is_npr_story_id(part: str) -> bool:
 
 def rewrite_npr_url(scheme: str, path: str) -> str | None:
     parts = path.split('/')
-    story_id = [part for part in parts if is_npr_story_id(part)]
-    if not story_id:
+    story_id_parts = [part for part in parts if is_npr_story_id(part)]
+    if not story_id_parts:
         return None
-    story_id = story_id[0]
+    story_id = story_id_parts[0]
     return urlunsplit((scheme, 'text.npr.org', '/' + story_id, '', ''))
 
 
@@ -38,6 +42,8 @@ def rewrite_reuters_url(scheme: str, path: str) -> str:
 def rewrite_url(url: str) -> str:
     scheme, netloc, path, query, fragment = urlsplit(url)
     match netloc:
+        case 'medium.com':
+            return rewrite_medium_url(url)
         case 'www.npr.org':
             rewritten = rewrite_npr_url(scheme, path)
             return rewritten if rewritten else url

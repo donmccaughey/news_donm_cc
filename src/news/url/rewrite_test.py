@@ -1,6 +1,6 @@
 from pytest import mark
 from urllib.parse import urlsplit
-from .rewrite import rewrite_reuters_url, rewrite_url, rewrite_npr_url, rewrite_reddit_url
+from .rewrite import rewrite_reuters_url, rewrite_url, rewrite_npr_url, rewrite_reddit_url, rewrite_medium_url
 
 
 @mark.parametrize('url, rewritten', [
@@ -34,9 +34,29 @@ from .rewrite import rewrite_reuters_url, rewrite_url, rewrite_npr_url, rewrite_
         'https://www.npr.org/sections/money/2023/05/02/1172791281/this-company-adopted-ai-heres-what-happened-to-its-human-workers',
         'https://text.npr.org/1172791281',
     ),
+
+    # Medium
+    (
+            'https://medium.com/@AminYazdanpanah/how-we-built-webrtc-in-php-a-four-month-journey-of-asynchronous-struggles-shared-libraries-and-38fb7c414c1d',
+            'https://freedium.cfd/https://medium.com/@AminYazdanpanah/how-we-built-webrtc-in-php-a-four-month-journey-of-asynchronous-struggles-shared-libraries-and-38fb7c414c1d',
+    ),
 ])
 def test_rewrite_url(url, rewritten):
     assert rewrite_url(url) == rewritten
+
+
+@mark.parametrize('url, rewritten', [
+    (
+        'https://medium.com/@AminYazdanpanah/how-we-built-webrtc-in-php-a-four-month-journey-of-asynchronous-struggles-shared-libraries-and-38fb7c414c1d',
+        'https://freedium.cfd/https://medium.com/@AminYazdanpanah/how-we-built-webrtc-in-php-a-four-month-journey-of-asynchronous-struggles-shared-libraries-and-38fb7c414c1d',
+    ),
+    (
+        'https://medium.com/@greptime/how-to-supercharge-your-java-project-with-rust-a-practical-guide-to-jni-integration-with-a-86f60e9708b8#bypass',
+        'https://freedium.cfd/https://medium.com/@greptime/how-to-supercharge-your-java-project-with-rust-a-practical-guide-to-jni-integration-with-a-86f60e9708b8#bypass',
+    ),
+])
+def test_rewrite_medium_url(url, rewritten):
+    assert rewrite_medium_url(url) == rewritten
 
 
 @mark.parametrize('url, rewritten', [

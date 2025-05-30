@@ -46,7 +46,6 @@ UNIMPORTANT_SUBDOMAINS = {
     'blog',
     'blogs',
     'community',
-    'docs',
     'en',
     'newsletter',
     'web',

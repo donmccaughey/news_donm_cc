@@ -18,6 +18,7 @@ SKIP_SITES = {
     'chronicle.com',
     'city-journal.org',
     'cnn.com',
+    'commentary.org',
     'commonwealmagazine.org',
     'compactmag.com',
 
@@ -26,6 +27,7 @@ SKIP_SITES = {
     'discoursemagazine.com',
     'dissentmagazine.org',
     'documentjournal.com',
+    'drb.ie',
     'dropbox.com',
     'dynomight.net',
 
