@@ -11,6 +11,11 @@ from .clean import clean_query, clean_url
     ('utm_source=rss&utm_medium=rss&utm_campaign=foo', ''),
     ('reflink=integratedwebview_share', ''),
     ('embedded-checkout=true', ''),
+    (
+            'giftId=b36053f8-1341-48e1-8221-25f480bbb37f&utm_campaign=gifted_article',
+            ''
+    ),
+    ('st=fEwMmb&reflink=article_copyURL_share', ''),
 ])
 def test_clean_query(query, cleaned, caplog):
     assert clean_query(query) == cleaned
@@ -40,6 +45,22 @@ def test_clean_query(query, cleaned, caplog):
     (
         'https://www.bloomberg.com/opinion/articles/2023-06-27/silicon-valley-is-on-drugs#xj4y7vzkg',
         'https://www.bloomberg.com/opinion/articles/2023-06-27/silicon-valley-is-on-drugs',
+    ),
+    (
+        'https://www.wsj.com/business/elon-musk-illegal-drugs-e826a9e1?reflink=integratedwebview_share',
+        'https://www.wsj.com/business/elon-musk-illegal-drugs-e826a9e1',
+    ),
+    (
+        'https://www.wsj.com/politics/policy/howard-lutnick-trump-trade-agenda-messaging-75d84e01?st=fEwMmb&reflink=article_copyURL_share',
+        'https://www.wsj.com/politics/policy/howard-lutnick-trump-trade-agenda-messaging-75d84e01',
+    ),
+    (
+        'https://www.bloomberg.com/news/articles/2025-03-04/deutsche-bank-sees-risk-of-us-dollar-losing-safe-haven-status?embedded-checkout=true',
+        'https://www.bloomberg.com/news/articles/2025-03-04/deutsche-bank-sees-risk-of-us-dollar-losing-safe-haven-status',
+    ),
+    (
+        'https://www.economist.com/by-invitation/2024/12/04/how-to-turn-european-savings-into-investment-innovation-and-growth-by-christine-lagarde?giftId=b36053f8-1341-48e1-8221-25f480bbb37f&utm_campaign=gifted_article',
+        'https://www.economist.com/by-invitation/2024/12/04/how-to-turn-european-savings-into-investment-innovation-and-growth-by-christine-lagarde',
     ),
 ])
 def test_clean_url(url, cleaned):

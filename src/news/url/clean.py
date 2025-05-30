@@ -7,8 +7,10 @@ log = logging.getLogger(__name__)
 
 DIRTY_PARAMS = [
     'embedded-checkout',
+    'giftId',
     'leadSource',
     'smid',
+    'st',
     'reflink',
 ]
 
