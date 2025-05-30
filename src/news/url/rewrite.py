@@ -17,6 +17,8 @@ def rewrite_medium_url(url: str) -> str:
 def is_npr_story_id(part: str) -> bool:
     if part.isdecimal() and len(part) > 4:
         return True
+    if part.startswith('g-s1-') and part[5:].isdecimal():
+        return True
     if part.startswith('nx-s1-') and part[6:].isdecimal():
         return True
     return False

@@ -69,6 +69,18 @@ def test_rewrite_medium_url(url, rewritten):
         'https://www.npr.org/2024/07/27/nx-s1-5054329/utah-great-salt-lake-carbon-emissions',
         'https://text.npr.org/nx-s1-5054329',
     ),
+    (
+        'https://www.npr.org/2024/05/31/g-s1-2298/publisher-of-2000-mules-election-conspiracy-theory-film-issues-apology',
+        'https://text.npr.org/g-s1-2298',
+    ),
+    (
+        'https://www.npr.org/2025/03/07/nx-s1-5318785/tariff-dodging-companies-exemptions-engineering',
+        'https://text.npr.org/nx-s1-5318785',
+    ),
+    (
+        'https://www.npr.org/2025/01/24/nx-s1-5250264/unemployment-rate-cpi-inflation-census-bureau-labor-statistics',
+        'https://text.npr.org/nx-s1-5250264',
+    ),
     # sections
     (
         'https://www.npr.org/sections/money/2023/05/02/1172791281/this-company-adopted-ai-heres-what-happened-to-its-human-workers',
