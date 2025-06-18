@@ -1,12 +1,16 @@
 from pytest import mark
 from urllib.parse import urlsplit
-from .rewrite import rewrite_reuters_url, rewrite_url, rewrite_npr_url, rewrite_reddit_url, rewrite_medium_url
+from .rewrite import rewrite_cnn_url, rewrite_reuters_url, rewrite_url, rewrite_npr_url, rewrite_reddit_url, rewrite_medium_url
 
 
 @mark.parametrize('url, rewritten', [
     (
         'https://languagelearningwithnetflix.com/',
         'https://languagelearningwithnetflix.com/'
+    ),
+    (
+        'https://www.cnn.com/2025/06/16/science/fast-radio-bursts-missing-matter',
+        'https://lite.cnn.com/2025/06/16/science/fast-radio-bursts-missing-matter',
     ),
     # TODO (2025-03-18): re-enable if neuters.de fixes captcha error
     # (
@@ -43,6 +47,17 @@ from .rewrite import rewrite_reuters_url, rewrite_url, rewrite_npr_url, rewrite_
 ])
 def test_rewrite_url(url, rewritten):
     assert rewrite_url(url) == rewritten
+
+
+@mark.parametrize('url, rewritten', [
+    (
+        'https://www.cnn.com/2025/06/16/science/fast-radio-bursts-missing-matter',
+        'https://lite.cnn.com/2025/06/16/science/fast-radio-bursts-missing-matter',
+    ),
+])
+def test_rewrite_cnn_url(url, rewritten):
+    scheme, netloc, path, query, fragment = urlsplit(url)
+    assert rewrite_cnn_url(scheme, path, query, fragment) == rewritten
 
 
 @mark.parametrize('url, rewritten', [

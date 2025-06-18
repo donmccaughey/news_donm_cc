@@ -96,7 +96,7 @@ from .identity import url_identity
     # -- special cases
 
     # `lite.cnn.com`
-    ('cnn.com', 'https://lite.cnn.com/en/article/h_83938cfff92036cf0e1b55ced9febc77'),
+    ('cnn.com', 'https://lite.cnn.com/2025/06/16/science/fast-radio-bursts-missing-matter'),
 
     # `text.npr.org'
     ('npr.org', 'https://text.npr.org/1144331954'),

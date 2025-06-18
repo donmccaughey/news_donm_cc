@@ -10,6 +10,10 @@ REDDIT_NETLOCS = {
 }
 
 
+def rewrite_cnn_url(scheme: str, path: str, query: str, fragment: str) -> str:
+    return urlunsplit((scheme, 'lite.cnn.com', path, query, fragment))
+
+
 def rewrite_medium_url(url: str) -> str:
     return 'https://freedium.cfd/' + url
 
@@ -44,6 +48,8 @@ def rewrite_reuters_url(scheme: str, path: str) -> str:
 def rewrite_url(url: str) -> str:
     scheme, netloc, path, query, fragment = urlsplit(url)
     match netloc:
+        case 'www.cnn.com':
+            return rewrite_cnn_url(scheme, path, query, fragment)
         case 'medium.com':
             return rewrite_medium_url(url)
         case 'www.npr.org':

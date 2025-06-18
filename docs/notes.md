@@ -426,7 +426,9 @@ Non-sponsor sponsor link:
 
 ### CNN
 
-https://lite.cnn.com/en/article/h_83938cfff92036cf0e1b55ced9febc77
+https://lite.cnn.com/2025/06/16/science/fast-radio-bursts-missing-matter
+https://www.cnn.com/2025/06/16/science/fast-radio-bursts-missing-matter
+
 
 ### NPR
 

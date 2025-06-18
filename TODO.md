@@ -60,7 +60,6 @@
 - unify command line options and ENV
 - ENV variable to control logging level
 - link rewriting
-  - cnn to https://lite.cnn.com/en
   - https://youtubetranscript.com
   - https://threadreaderapp.com
   - pay walls to https://archive.ph
