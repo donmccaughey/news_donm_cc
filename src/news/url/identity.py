@@ -3,7 +3,7 @@ from pathlib import Path
 from urllib.parse import urlsplit
 
 
-HOSTNAME_MAP = {
+SUBDOMAIN_ALIASES_MAP = {
     'lite.cnn.com': 'cnn.com',
     'gist.github.com': 'github.com',
     'text.npr.org': 'npr.org',
@@ -54,11 +54,11 @@ UNIMPORTANT_SUBDOMAINS = {
 }
 
 
-def keep_path_matching(hostname: str, path: str, pattern: str) -> str:
+def path_matching_pattern(path: str, pattern: str) -> str:
     parts = Path(path).parts
     patterns = Path(pattern).parts
     if len(parts) < len(patterns):
-        return hostname
+        return ''
 
     matching = []
     for part, pattern in zip(parts, patterns):
@@ -71,9 +71,9 @@ def keep_path_matching(hostname: str, path: str, pattern: str) -> str:
                 if part == pattern:
                     matching.append(part)
                 else:
-                    return hostname
+                    return ''
 
-    return hostname + '/'.join(matching)
+    return '/'.join(matching)
 
 
 def looks_social(path: str) -> bool:
@@ -96,13 +96,14 @@ def url_identity(url: str) -> str:
 
     hostname = remove_subdomain(hostname, UNIMPORTANT_SUBDOMAINS)
 
-    if hostname in HOSTNAME_MAP:
-        hostname = HOSTNAME_MAP[hostname]
+    if hostname in SUBDOMAIN_ALIASES_MAP:
+        hostname = SUBDOMAIN_ALIASES_MAP[hostname]
 
     if looks_social(path) or (hostname in SOCIAL_SITES):
-        return keep_path_matching(hostname, path, '/*')
+        identifying_path = path_matching_pattern(path, '/*')
+    elif hostname in IDENTITY_PATTERNS:
+        identifying_path = path_matching_pattern(path, IDENTITY_PATTERNS[hostname])
+    else:
+        identifying_path = ''
 
-    if hostname in IDENTITY_PATTERNS:
-        return keep_path_matching(hostname, path, IDENTITY_PATTERNS[hostname])
-
-    return hostname
+    return hostname + identifying_path
