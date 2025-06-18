@@ -14,6 +14,7 @@ SUBDOMAIN_ALIASES_MAP = {
 IDENTITY_PATTERNS = {
     'bsky.app': '/profile/*',
     'crates.io': '/crates/*',
+    'freedium.cfd': '/https://medium.com/*',
     'kickstarter.com': '/projects/*',
     'sites.google.com': '/site/*',
     'npmjs.com': '/package/*',
@@ -54,11 +55,11 @@ UNIMPORTANT_SUBDOMAINS = {
 }
 
 
-def path_matching_pattern(path: str, pattern: str) -> str:
+def path_parts_matching_pattern(path: str, pattern: str) -> list[str]:
     parts = Path(path).parts
     patterns = Path(pattern).parts
     if len(parts) < len(patterns):
-        return ''
+        return []
 
     matching = []
     for part, pattern in zip(parts, patterns):
@@ -71,9 +72,9 @@ def path_matching_pattern(path: str, pattern: str) -> str:
                 if part == pattern:
                     matching.append(part)
                 else:
-                    return ''
+                    return []
 
-    return '/'.join(matching)
+    return matching
 
 
 def looks_social(path: str) -> bool:
@@ -100,10 +101,14 @@ def url_identity(url: str) -> str:
         hostname = SUBDOMAIN_ALIASES_MAP[hostname]
 
     if looks_social(path) or (hostname in SOCIAL_SITES):
-        identifying_path = path_matching_pattern(path, '/*')
+        path_parts = path_parts_matching_pattern(path, '/*')
     elif hostname in IDENTITY_PATTERNS:
-        identifying_path = path_matching_pattern(path, IDENTITY_PATTERNS[hostname])
+        path_parts = path_parts_matching_pattern(path, IDENTITY_PATTERNS[hostname])
     else:
-        identifying_path = ''
+        path_parts = []
 
-    return hostname + identifying_path
+    if 'freedium.cfd' == hostname:
+        hostname = 'medium.com'
+        del path_parts[1:3]
+
+    return hostname + '/'.join(path_parts)

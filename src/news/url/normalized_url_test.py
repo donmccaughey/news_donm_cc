@@ -21,6 +21,14 @@ def test_init():
     assert str(url) == 'https://text.npr.org/1165680024'
     assert url.identity == 'npr.org'
 
+    url = NormalizedURL('https://medium.com/@AminYazdanpanah/how-we-built-webrtc-in-php-a-four-month-journey-of-asynchronous-struggles-shared-libraries-and-38fb7c414c1d')
+    assert str(url) == 'https://freedium.cfd/https://medium.com/@AminYazdanpanah/how-we-built-webrtc-in-php-a-four-month-journey-of-asynchronous-struggles-shared-libraries-and-38fb7c414c1d'
+    assert url.identity == 'medium.com/@AminYazdanpanah'
+
+    url = NormalizedURL('https://freedium.cfd/https://medium.com/@greptime/how-to-supercharge-your-java-project-with-rust-a-practical-guide-to-jni-integration-with-a-86f60e9708b8')
+    assert str(url) == 'https://freedium.cfd/https://medium.com/@greptime/how-to-supercharge-your-java-project-with-rust-a-practical-guide-to-jni-integration-with-a-86f60e9708b8'
+    assert url.identity == 'medium.com/@greptime'
+
 
 def test_eq():
     url1 = NormalizedURL('https://example.com/1')
