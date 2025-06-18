@@ -1,9 +1,10 @@
+from functools import cached_property
+
 from .identity import url_identity
 
 
 class URL:
     def __init__(self, url: str):
-        self.__identity: str | None = None
         self.__url = url
 
     def __eq__(self, other: object) -> bool:
@@ -21,8 +22,6 @@ class URL:
     def __str__(self) -> str:
         return self.__url
 
-    @property
+    @cached_property
     def identity(self) -> str:
-        if not self.__identity:
-            self.__identity = url_identity(self.__url)
-        return self.__identity
+        return url_identity(self.__url)
