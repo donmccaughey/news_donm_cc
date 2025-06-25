@@ -12,11 +12,10 @@ from .rewrite import rewrite_cnn_url, rewrite_reuters_url, rewrite_url, rewrite_
         'https://www.cnn.com/2025/06/16/science/fast-radio-bursts-missing-matter',
         'https://lite.cnn.com/2025/06/16/science/fast-radio-bursts-missing-matter',
     ),
-    # TODO (2025-03-18): re-enable if neuters.de fixes captcha error
-    # (
-    #     'https://www.reuters.com/legal/transactional/venmo-cash-app-users-sue-apple-over-peer-to-peer-payment-fees-2023-11-20/',
-    #     'https://neuters.de/legal/transactional/venmo-cash-app-users-sue-apple-over-peer-to-peer-payment-fees-2023-11-20/',
-    # ),
+    (
+        'https://www.reuters.com/legal/transactional/venmo-cash-app-users-sue-apple-over-peer-to-peer-payment-fees-2023-11-20/',
+        'https://neuters.de/legal/transactional/venmo-cash-app-users-sue-apple-over-peer-to-peer-payment-fees-2023-11-20/',
+    ),
 
     # Reddit variations
     (
@@ -127,8 +126,6 @@ def test_rewrite_reddit_url(url, rewritten):
     assert rewrite_reddit_url(scheme, path, query, fragment) == rewritten
 
 
-# TODO (2025-03-18): re-enable if neuters.de fixes captcha error
-@mark.skip
 @mark.parametrize('url, rewritten', [
     (
             'https://www.reuters.com/legal/transactional/venmo-cash-app-users-sue-apple-over-peer-to-peer-payment-fees-2023-11-20/',
