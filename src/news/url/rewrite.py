@@ -56,7 +56,10 @@ def rewrite_url(url: str) -> str:
             rewritten = rewrite_npr_url(scheme, path)
             return rewritten if rewritten else url
         case 'www.reuters.com':
-            return rewrite_reuters_url(scheme, path)
+            # TODO (2025-03-18): re-enable if neuters.de fixes captcha error
+            # https://github.com/HookedBehemoth/neuters/issues/42
+            # return rewrite_reuters_url(scheme, path)
+            return url
         case _ if netloc in REDDIT_NETLOCS:
             return rewrite_reddit_url(scheme, path, query, fragment)
         case _:
