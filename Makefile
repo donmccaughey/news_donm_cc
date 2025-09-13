@@ -110,9 +110,7 @@ container_files := \
 	container/sbin/news \
 	container/sbin/serve \
 	container/wwwroot/robots.txt \
-	container/wwwroot/sitemap.txt \
-	gen/apk_add_py3_packages \
-	gen/version.txt
+	container/wwwroot/sitemap.txt
 
 python_files := \
 	src/extractor.py \
@@ -277,6 +275,8 @@ $(TMP)/create-container-service-deployment.json : \
 $(TMP)/docker-build.stamp.txt : \
 		container/Dockerfile \
 		$(container_files) \
+		gen/apk_add_py3_packages \
+		gen/version.txt \
 		$(source_files) \
 		| $$(dir $$@)
 	docker build \
