@@ -37,7 +37,7 @@ check : test/mypy.txt
 clean : stop
 	rm -rf .mypy_cache
 	rm -rf .pytest_cache
-	-docker rm $(news_container)
+	-podman rm $(news_container)
 	find gen -mindepth 1 ! -name 'README.md' -delete
 	find src -type d -name '__pycache__' -delete
 	rm -rf $(TMP)
@@ -46,7 +46,7 @@ clean : stop
 .PHONY : clobber
 clobber : clean
 	rm -rf .venv
-	-docker image rm --force $(news_image)
+	-podman image rm --force $(news_image)
 
 
 .PHONY : cov
@@ -94,7 +94,7 @@ run : $(TMP)/docker-run.stamp
 
 .PHONY : shell
 shell : $(TMP)/docker-run.stamp
-	docker exec \
+	podman exec \
 		--interactive \
 		--tty \
 		$(news_image) sh -l
@@ -102,12 +102,12 @@ shell : $(TMP)/docker-run.stamp
 
 .PHONY : status
 status :
-	docker inspect news | jq '.[0].State'
+	podman inspect $(news_container) | jq '.[0].State'
 
 
 .PHONY : stop
 stop :
-	-docker stop $(news_container)
+	-podman stop $(news_container)
 	rm -rf $(TMP)/docker-run.stamp
 
 
@@ -193,21 +193,21 @@ $(TMP)/docker-build.stamp : \
 		gen/apk_add_py3_packages \
 		gen/version.txt \
 		test/mypy.txt
-	docker build \
+	podman build \
 		--file container/Dockerfile \
 		--platform linux/amd64 \
-		--tag $(news_image) \
 		--quiet \
+		--tag $(news_image) \
 		.
 	touch $@
 
 
 $(TMP)/docker-push.stamp : $(TMP)/docker-build.stamp
 	aws ecr-public get-login-password --region us-east-1 \
-        | docker login --username AWS --password-stdin public.ecr.aws
-	docker tag news public.ecr.aws/d2g3p0u7/news
-	docker push --quiet public.ecr.aws/d2g3p0u7/news
-	docker logout public.ecr.aws
+        | podman login --username AWS --password-stdin public.ecr.aws
+	podman tag $(news_image) public.ecr.aws/d2g3p0u7/news
+	podman push --quiet public.ecr.aws/d2g3p0u7/news
+	podman logout public.ecr.aws
 	touch $@
 
 
@@ -215,8 +215,8 @@ $(TMP)/docker-run.stamp : \
 		$(TMP)/docker-build.stamp \
 		$(TMP)/.env \
 		stop
-	-docker rm $(news_container)
-	docker run \
+	-podman rm $(news_container)
+	podman run \
 		--detach \
 		--env-file $(TMP)/.env \
 		--init \
