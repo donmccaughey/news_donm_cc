@@ -236,7 +236,7 @@ gen/version.txt : \
 	git rev-parse --short HEAD > $@
 
 
-test/mypy.txt : $(TMP)/uv-sync.stamp $(TMP)/pytest.stamp
+test/mypy.txt : $(TMP)/uv-sync.stamp $(TMP)/coverage.sqlite
 	uv run -m mypy \
 		--cache-dir $(TMP)/.mypy_cache \
 		src \
@@ -331,13 +331,6 @@ $(TMP)/docker-run.stamp : \
 		--publish 8000:80 \
 		--rm \
 		$(NEWS)
-	touch $@
-
-
-$(TMP)/pytest.stamp : $(python_files) $(TMP)/uv-sync.stamp
-	uv run -m pytest \
-		--override-ini cache_dir=$(TMP)/.pytest_cache \
-		--quiet --quiet
 	touch $@
 
 
