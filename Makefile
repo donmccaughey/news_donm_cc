@@ -26,7 +26,8 @@ clean : stop
 	rm -rf .mypy_cache
 	rm -rf .pytest_cache
 	-docker rm $(NEWS)
-	find gen -mindepth 1 ! -name 'README.md' -exec rm -f {} +
+	find gen -mindepth 1 ! -name 'README.md' -delete
+	find src -type d -name '__pycache__' -delete
 	rm -rf $(TMP)
 
 
