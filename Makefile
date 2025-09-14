@@ -43,10 +43,10 @@ cov : $(TMP)/coverage.sqlite
 debug : $(TMP)/uv-sync.stamp
 	FLASK_CACHE_DIR="$(TMP)" \
 	FLASK_RUN_PORT=8001 \
-	uv run flask \
-		--app src/server \
-		--debug \
-		run
+		uv run flask \
+			--app src/server \
+			--debug \
+			run
 
 
 .PHONY : deploy
@@ -56,9 +56,9 @@ deploy : $(TMP)/aws-lightsail-create-container-service-deployment.stamp
 .PHONY : extract
 extract : $(TMP)/uv-sync.stamp
 	REDDIT_PRIVATE_RSS_FEED="$(REDDIT_PRIVATE_RSS_FEED)" \
-	uv run src/extractor.py \
-		--cache-dir="$(TMP)" \
-		--no-store
+		uv run src/extractor.py \
+			--cache-dir="$(TMP)" \
+			--no-store
 
 
 .PHONY : logs
