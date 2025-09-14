@@ -5,7 +5,11 @@ TMP ?= $(abspath tmp)
 
 NEWS := news  # container name
 
-python_files := $(shell find src/ -type f -name '*.py')
+
+container_files := \
+	.dockerignore \
+	$(shell find container -type f -not -name '.DS_Store')
+python_files := $(shell find src -type f -name '*.py')
 source_files := $(filter-out %_test.py, $(python_files))
 
 
@@ -101,24 +105,6 @@ stop :
 	rm -rf $(TMP)/docker-run.stamp
 
 
-container_files := \
-	.dockerignore \
-	container/crontabs/news \
-	container/nginx/nginx.conf \
-	container/nginx/error_pages/404.html \
-	container/nginx/error_pages/500.html \
-	container/nginx/error_pages/502.html \
-	container/nginx/error_pages/503.html \
-	container/nginx/error_pages/504.html \
-	container/profile.d/dir.sh \
-	container/sbin/check-health \
-	container/sbin/extract \
-	container/sbin/news \
-	container/sbin/serve \
-	container/wwwroot/robots.txt \
-	container/wwwroot/sitemap.txt
-
-
 uv.lock : pyproject.toml .python-version
 	uv sync
 	touch $@
@@ -134,11 +120,7 @@ gen/apk_add_py3_packages : \
 		--output $@
 
 
-gen/version.txt : \
-		container/Dockerfile \
-		$(container_files) \
-		$(source_files) \
-		| $$(dir $$@)
+gen/version.txt : $(container_files) $(source_files) | $$(dir $$@)
 	git rev-parse --short HEAD > $@
 
 
@@ -199,14 +181,13 @@ $(TMP)/create-container-service-deployment.json : \
 
 
 $(TMP)/docker-build.stamp : \
-		container/Dockerfile \
 		$(container_files) \
 		gen/apk_add_py3_packages \
 		gen/version.txt \
 		$(source_files) \
 		| $$(dir $$@)
 	docker build \
-		--file $< \
+		--file container/Dockerfile \
 		--platform linux/amd64 \
 		--tag $(NEWS) \
 		--quiet \
