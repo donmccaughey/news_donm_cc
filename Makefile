@@ -14,7 +14,7 @@ all : build
 
 
 .PHONY : build
-build : $(TMP)/docker-build.stamp.txt
+build : $(TMP)/docker-build.stamp
 
 
 .PHONY : check
@@ -38,7 +38,7 @@ cov : $(TMP)/.coverage
 
 
 .PHONY : debug
-debug : $(TMP)/uv-sync.stamp.txt
+debug : $(TMP)/uv-sync.stamp
 	FLASK_CACHE_DIR="$(TMP)" \
 	FLASK_RUN_PORT=8001 \
 	uv run flask \
@@ -48,11 +48,11 @@ debug : $(TMP)/uv-sync.stamp.txt
 
 
 .PHONY : deploy
-deploy : $(TMP)/aws-lightsail-create-container-service-deployment.stamp.txt
+deploy : $(TMP)/aws-lightsail-create-container-service-deployment.stamp
 
 
 .PHONY : extract
-extract : $(TMP)/uv-sync.stamp.txt
+extract : $(TMP)/uv-sync.stamp
 	REDDIT_PRIVATE_RSS_FEED="$(REDDIT_PRIVATE_RSS_FEED)" \
 	uv run src/extractor.py \
 		--cache-dir="$(TMP)" \
@@ -69,15 +69,15 @@ mypy : test/mypy.txt
 
 
 .PHONY : push
-push : $(TMP)/docker-push.stamp.txt
+push : $(TMP)/docker-push.stamp
 
 
 .PHONY : run
-run : $(TMP)/docker-run.stamp.txt
+run : $(TMP)/docker-run.stamp
 
 
 .PHONY : shell
-shell : $(TMP)/docker-run.stamp.txt
+shell : $(TMP)/docker-run.stamp
 	docker exec \
 		--interactive \
 		--tty \
@@ -92,7 +92,7 @@ status :
 .PHONY : stop
 stop :
 	-docker stop $(NEWS)
-	rm -rf $(TMP)/docker-run.stamp.txt
+	rm -rf $(TMP)/docker-run.stamp
 
 
 container_files := \
@@ -215,7 +215,7 @@ source_files := $(filter-out %_test.py, $(python_files))
 test_files := $(filter %_test.py, $(python_files))
 
 
-gen/apk_add_py3_packages : pyproject.toml scripts/py3apk.py $(TMP)/uv-sync.stamp.txt | $$(dir $$@)
+gen/apk_add_py3_packages : pyproject.toml scripts/py3apk.py $(TMP)/uv-sync.stamp | $$(dir $$@)
 	uv run scripts/py3apk.py \
 		--input $< \
 		--output $@
@@ -229,7 +229,7 @@ gen/version.txt : \
 	git rev-parse --short HEAD > $@
 
 
-test/mypy.txt : .mypy.ini $(TMP)/uv-sync.stamp.txt $(TMP)/pytest.stamp.txt
+test/mypy.txt : .mypy.ini $(TMP)/uv-sync.stamp $(TMP)/pytest.stamp
 	uv run -m mypy --check-untyped-defs src | tee test/mypy.txt
 
 
@@ -246,9 +246,9 @@ $(TMP)/.env : | $$(dir $$@)
 	chmod 600 $@
 
 
-$(TMP)/aws-lightsail-create-container-service-deployment.stamp.txt : \
+$(TMP)/aws-lightsail-create-container-service-deployment.stamp : \
 		$(TMP)/create-container-service-deployment.json \
-		$(TMP)/docker-push.stamp.txt \
+		$(TMP)/docker-push.stamp \
 		| $$(dir $$@)
 	aws lightsail create-container-service-deployment \
 		--cli-input-json "$$(jq -c . $(TMP)/create-container-service-deployment.json)" \
@@ -272,7 +272,7 @@ $(TMP)/create-container-service-deployment.json : \
 	chmod 600 $@
 
 
-$(TMP)/docker-build.stamp.txt : \
+$(TMP)/docker-build.stamp : \
 		container/Dockerfile \
 		$(container_files) \
 		gen/apk_add_py3_packages \
@@ -288,7 +288,7 @@ $(TMP)/docker-build.stamp.txt : \
 	date > $@
 
 
-$(TMP)/docker-push.stamp.txt : $(TMP)/docker-build.stamp.txt | $$(dir $$@)
+$(TMP)/docker-push.stamp : $(TMP)/docker-build.stamp | $$(dir $$@)
 	aws ecr-public get-login-password --region us-east-1 \
         | docker login --username AWS --password-stdin public.ecr.aws
 	docker tag news public.ecr.aws/d2g3p0u7/news
@@ -297,8 +297,8 @@ $(TMP)/docker-push.stamp.txt : $(TMP)/docker-build.stamp.txt | $$(dir $$@)
 	date > $@
 
 
-$(TMP)/docker-run.stamp.txt : \
-		$(TMP)/docker-build.stamp.txt \
+$(TMP)/docker-run.stamp : \
+		$(TMP)/docker-build.stamp \
 		$(TMP)/.env \
 		stop \
 		| $$(dir $$@)
@@ -315,16 +315,16 @@ $(TMP)/docker-run.stamp.txt : \
 	date > $@
 
 
-$(TMP)/pytest.stamp.txt : \
+$(TMP)/pytest.stamp : \
 		$(source_files) \
 		$(test_files) \
-		$(TMP)/uv-sync.stamp.txt \
+		$(TMP)/uv-sync.stamp \
 		| $$(dir $$@)
 	uv run -m pytest --quiet --quiet
 	date > $@
 
 
-$(TMP)/uv-sync.stamp.txt : uv.lock | $$(dir $$@)
+$(TMP)/uv-sync.stamp : uv.lock | $$(dir $$@)
 	uv sync --frozen
 	date > $@
 
@@ -333,7 +333,7 @@ $(TMP)/.coverage : \
 		.coveragerc \
 		$(source_files) \
 		$(test_files) \
-		$(TMP)/uv-sync.stamp.txt \
+		$(TMP)/uv-sync.stamp \
 		| $$(dir $$@)
 	COVERAGE_FILE=$@ \
 	uv run -m pytest \
