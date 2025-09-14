@@ -256,7 +256,7 @@ $(TMP)/aws-lightsail-create-container-service-deployment.stamp : \
 		--region us-west-2 \
 		--service-name news \
 		> $(TMP)/lightsail-deployment.json
-	date > $@
+	touch $@
 
 
 $(TMP)/create-container-service-deployment.json : \
@@ -285,7 +285,7 @@ $(TMP)/docker-build.stamp : \
 		--tag $(NEWS) \
 		--quiet \
 		.
-	date > $@
+	touch $@
 
 
 $(TMP)/docker-push.stamp : $(TMP)/docker-build.stamp | $$(dir $$@)
@@ -294,7 +294,7 @@ $(TMP)/docker-push.stamp : $(TMP)/docker-build.stamp | $$(dir $$@)
 	docker tag news public.ecr.aws/d2g3p0u7/news
 	docker push --quiet public.ecr.aws/d2g3p0u7/news
 	docker logout public.ecr.aws
-	date > $@
+	touch $@
 
 
 $(TMP)/docker-run.stamp : \
@@ -312,7 +312,7 @@ $(TMP)/docker-run.stamp : \
 		--publish 8000:80 \
 		--rm \
 		$(NEWS)
-	date > $@
+	touch $@
 
 
 $(TMP)/pytest.stamp : \
@@ -321,12 +321,12 @@ $(TMP)/pytest.stamp : \
 		$(TMP)/uv-sync.stamp \
 		| $$(dir $$@)
 	uv run -m pytest --quiet --quiet
-	date > $@
+	touch $@
 
 
 $(TMP)/uv-sync.stamp : uv.lock | $$(dir $$@)
 	uv sync --frozen
-	date > $@
+	touch $@
 
 
 $(TMP)/.coverage : \
