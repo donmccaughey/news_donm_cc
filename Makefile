@@ -212,6 +212,11 @@ python_files := \
 source_files := $(filter-out %_test.py, $(python_files))
 
 
+uv.lock : pyproject.toml .python-version
+	uv sync
+	touch $@
+
+
 gen/apk_add_py3_packages : \
 		pyproject.toml \
 		scripts/py3apk.py \
@@ -235,11 +240,6 @@ test/mypy.txt : $(TMP)/uv-sync.stamp $(TMP)/pytest.stamp
 		--cache-dir $(TMP)/.mypy_cache \
 		src \
 		| tee test/mypy.txt
-
-
-uv.lock : pyproject.toml .python-version
-	uv sync
-	touch $@
 
 
 $(TMP)/.env : | $$(dir $$@)
