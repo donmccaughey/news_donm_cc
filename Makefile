@@ -259,6 +259,20 @@ $(TMP)/aws-lightsail-create-container-service-deployment.stamp : \
 	touch $@
 
 
+$(TMP)/coverage.sqlite : $(python_files) $(TMP)/uv-sync.stamp
+	COVERAGE_FILE=$@ \
+		uv run -m pytest \
+			--cov \
+			--cov-report= \
+			--quiet --quiet
+	@printf '%s%% code coverage\n' \
+		$$(uv run coverage report --data-file=$@ --format=total --precision=2)
+	uv run coverage html \
+		--data-file=$@ \
+		--directory=$(TMP)/coverage-report \
+		--quiet
+
+
 $(TMP)/create-container-service-deployment.json : \
 		aws/create-container-service-deployment.template.json \
 		scripts/fillin.py \
@@ -327,20 +341,6 @@ $(TMP)/pytest.stamp : \
 $(TMP)/uv-sync.stamp : uv.lock | $$(dir $$@)
 	uv sync --frozen
 	touch $@
-
-
-$(TMP)/coverage.sqlite : $(python_files) $(TMP)/uv-sync.stamp
-	COVERAGE_FILE=$@ \
-		uv run -m pytest \
-			--cov \
-			--cov-report= \
-			--quiet --quiet
-	@printf '%s%% code coverage\n' \
-		$$(uv run coverage report --data-file=$@ --format=total --precision=2)
-	uv run coverage html \
-		--data-file=$@ \
-		--directory=$(TMP)/coverage-report \
-		--quiet
 
 
 gen \
