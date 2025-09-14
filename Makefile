@@ -234,5 +234,5 @@ $(TMP)/uv-sync.stamp : uv.lock | $$(dir $$@)
 
 
 gen \
-$(TMP) :
+$(TMP)/ :
 	mkdir -p $@
