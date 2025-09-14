@@ -215,7 +215,11 @@ script_files := \
 source_files := $(filter-out %_test.py, $(python_files))
 
 
-gen/apk_add_py3_packages : pyproject.toml scripts/py3apk.py $(TMP)/uv-sync.stamp | $$(dir $$@)
+gen/apk_add_py3_packages : \
+		pyproject.toml \
+		scripts/py3apk.py \
+		$(TMP)/uv-sync.stamp \
+		| $$(dir $$@)
 	uv run scripts/py3apk.py \
 		--input $< \
 		--output $@
@@ -254,7 +258,8 @@ $(TMP)/aws-lightsail-create-container-service-deployment.stamp : \
 		$(TMP)/docker-push.stamp \
 		| $$(dir $$@)
 	aws lightsail create-container-service-deployment \
-		--cli-input-json "$$(jq -c . $(TMP)/create-container-service-deployment.json)" \
+		--cli-input-json \
+			"$$(jq -c . $(TMP)/create-container-service-deployment.json)" \
 		--output json \
 		--region us-west-2 \
 		--service-name news \
@@ -346,5 +351,5 @@ $(TMP)/uv-sync.stamp : uv.lock | $$(dir $$@)
 
 
 gen \
-$(TMP)/ :
+$(TMP) :
 	mkdir -p $@
