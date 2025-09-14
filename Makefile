@@ -24,6 +24,7 @@ check : test/mypy.txt
 .PHONY : clean
 clean : stop
 	rm -rf .mypy_cache
+	rm -rf .pytest_cache
 	-docker rm $(NEWS)
 	find gen -mindepth 1 ! -name 'README.md' -exec rm -f {} +
 	rm -rf $(TMP)
@@ -268,6 +269,7 @@ $(TMP)/coverage.sqlite : $(python_files) $(TMP)/uv-sync.stamp
 		uv run -m pytest \
 			--cov \
 			--cov-report= \
+			--override-ini cache_dir=$(TMP)/.pytest_cache \
 			--quiet --quiet
 	@printf '%s%% code coverage\n' \
 		$$(uv run coverage report --data-file=$@ --format=total --precision=2)
@@ -333,12 +335,10 @@ $(TMP)/docker-run.stamp : \
 	touch $@
 
 
-$(TMP)/pytest.stamp : \
-		$(source_files) \
-		$(test_files) \
-		$(TMP)/uv-sync.stamp \
-		| $$(dir $$@)
-	uv run -m pytest --quiet --quiet
+$(TMP)/pytest.stamp : $(python_files) $(TMP)/uv-sync.stamp
+	uv run -m pytest \
+		--override-ini cache_dir=$(TMP)/.pytest_cache \
+		--quiet --quiet
 	touch $@
 
 
