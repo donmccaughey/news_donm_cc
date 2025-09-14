@@ -209,9 +209,6 @@ python_files := \
 	src/utility/read_only_store.py \
 	src/utility/store.py
 
-script_files := \
-	scripts/logs.py
-
 source_files := $(filter-out %_test.py, $(python_files))
 
 
