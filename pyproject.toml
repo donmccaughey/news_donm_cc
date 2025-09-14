@@ -5,7 +5,7 @@ requires-python = '==3.12.*'
 dependencies = [
     "beautifulsoup4 == 4.13.5",
     "boto3 == 1.37.1",
-    "feedparser == 6.0.11",
+    "feedparser == 6.0.12",
     "Flask == 3.0.3",
     "gunicorn == 23.0.0",
     "requests == 2.32.5",
