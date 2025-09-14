@@ -3,6 +3,12 @@ AWS_SECRET_ACCESS_KEY ?= $(shell aws configure get aws_secret_access_key)
 REDDIT_PRIVATE_RSS_FEED ?= $(shell cat secrets/reddit-private-rss-feed.txt)
 TMP ?= $(abspath tmp)
 
+# generate a SEED for test randomization if not provided
+ifeq ($(origin SEED), undefined)
+	generate_seed := import random; print(random.randint(0, 2**32-1))
+	SEED := $(shell uv run python -c '$(generate_seed)')
+endif
+
 container_files := \
 	.dockerignore \
 	$(shell find container -type f -not -name '.DS_Store')
@@ -153,12 +159,14 @@ $(TMP)/aws-lightsail-create-container-service-deployment.stamp : \
 
 
 $(TMP)/coverage.sqlite : $(python_files) $(TMP)/uv-sync.stamp
+	@printf 'SEED=%i\n' '$(SEED)'| tee $(TMP)/pytest.seed
 	COVERAGE_FILE=$@ \
 		uv run -m pytest \
 			--cov \
 			--cov-report= \
 			--override-ini cache_dir=$(TMP)/.pytest_cache \
-			--quiet --quiet
+			--quiet --quiet \
+			--randomly-seed=$(SEED)
 	@printf '%s%% code coverage\n' \
 		$$(uv run coverage report --data-file=$@ --format=total --precision=2)
 	uv run coverage html \
