@@ -3,12 +3,11 @@ AWS_SECRET_ACCESS_KEY ?= $(shell aws configure get aws_secret_access_key)
 REDDIT_PRIVATE_RSS_FEED ?= $(shell cat secrets/reddit-private-rss-feed.txt)
 TMP ?= $(abspath tmp)
 
-NEWS := news  # container name
-
-
 container_files := \
 	.dockerignore \
 	$(shell find container -type f -not -name '.DS_Store')
+news_container := news
+news_image := news
 python_files := $(shell find src -type f -name '*.py')
 source_files := $(filter-out %_test.py, $(python_files))
 
@@ -32,7 +31,7 @@ check : test/mypy.txt
 clean : stop
 	rm -rf .mypy_cache
 	rm -rf .pytest_cache
-	-docker rm $(NEWS)
+	-docker rm $(news_container)
 	find gen -mindepth 1 ! -name 'README.md' -delete
 	find src -type d -name '__pycache__' -delete
 	rm -rf $(TMP)
@@ -41,6 +40,7 @@ clean : stop
 .PHONY : clobber
 clobber : clean
 	rm -rf .venv
+	-docker image rm --force $(news_image)
 
 
 .PHONY : cov
@@ -91,7 +91,7 @@ shell : $(TMP)/docker-run.stamp
 	docker exec \
 		--interactive \
 		--tty \
-		$(NEWS) sh -l
+		$(news_image) sh -l
 
 
 .PHONY : status
@@ -101,7 +101,7 @@ status :
 
 .PHONY : stop
 stop :
-	-docker stop $(NEWS)
+	-docker stop $(news_container)
 	rm -rf $(TMP)/docker-run.stamp
 
 
@@ -188,7 +188,7 @@ $(TMP)/docker-build.stamp : \
 	docker build \
 		--file container/Dockerfile \
 		--platform linux/amd64 \
-		--tag $(NEWS) \
+		--tag $(news_image) \
 		--quiet \
 		.
 	touch $@
@@ -207,16 +207,16 @@ $(TMP)/docker-run.stamp : \
 		$(TMP)/docker-build.stamp \
 		$(TMP)/.env \
 		stop
-	-docker rm $(NEWS)
+	-docker rm $(news_container)
 	docker run \
 		--detach \
 		--env-file $(TMP)/.env \
 		--init \
-		--name $(NEWS) \
+		--name $(news_container) \
 		--platform linux/amd64 \
 		--publish 8000:80 \
 		--rm \
-		$(NEWS)
+		$(news_image)
 	touch $@
 
 
