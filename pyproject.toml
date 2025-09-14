@@ -24,6 +24,15 @@ include = [
 omit = ['src/**/*_test.py']
 
 
+[tool.mypy]
+check_untyped_defs = true
+
+
+[[tool.mypy.overrides]]
+module = 'feedparser'
+ignore_missing_imports = true
+
+
 [tool.uv]
 dev-dependencies = [
     "boto3-stubs[s3] == 1.40.30",

@@ -23,6 +23,7 @@ check : test/mypy.txt
 
 .PHONY : clean
 clean : stop
+	rm -rf .mypy_cache
 	-docker rm $(NEWS)
 	find gen -mindepth 1 ! -name 'README.md' -exec rm -f {} +
 	rm -rf $(TMP)
@@ -229,8 +230,11 @@ gen/version.txt : \
 	git rev-parse --short HEAD > $@
 
 
-test/mypy.txt : .mypy.ini $(TMP)/uv-sync.stamp $(TMP)/pytest.stamp
-	uv run -m mypy --check-untyped-defs src | tee test/mypy.txt
+test/mypy.txt : $(TMP)/uv-sync.stamp $(TMP)/pytest.stamp
+	uv run -m mypy \
+		--cache-dir $(TMP)/.mypy_cache \
+		src \
+		| tee test/mypy.txt
 
 
 uv.lock : pyproject.toml .python-version
