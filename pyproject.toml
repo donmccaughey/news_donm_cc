@@ -4,7 +4,7 @@ version = '0.0.1'
 requires-python = '==3.12.*'
 dependencies = [
     "beautifulsoup4 == 4.13.5",
-    "boto3 == 1.37.1",
+    "boto3 == 1.40.30",
     "feedparser == 6.0.12",
     "Flask == 3.1.2",
     "gunicorn == 23.0.0",
@@ -13,8 +13,8 @@ dependencies = [
 
 [tool.uv]
 dev-dependencies = [
-    "boto3-stubs[s3] == 1.37.14",
-    "botocore-stubs == 1.37.14",
+    "boto3-stubs[s3] == 1.40.30",
+    "botocore-stubs == 1.40.30",
     "mypy == 1.15.0",
     "pytest == 8.3.5",
     "pytest-cov == 6.0.0",
