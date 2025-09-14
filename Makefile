@@ -5,6 +5,9 @@ TMP ?= $(abspath tmp)
 
 NEWS := news  # container name
 
+python_files := $(shell find src/ -type f -name '*.py')
+source_files := $(filter-out %_test.py, $(python_files))
+
 
 .SECONDEXPANSION :
 
@@ -114,103 +117,6 @@ container_files := \
 	container/sbin/serve \
 	container/wwwroot/robots.txt \
 	container/wwwroot/sitemap.txt
-
-python_files := \
-	src/extractor.py \
-	src/gunicorn.conf.py \
-	src/health_check.py \
-	src/query.py \
-	src/youtube_user.py \
-	\
-	src/extractor/__init__.py \
-	src/extractor/cached_feeds.py \
-	src/extractor/cached_news.py \
-	src/extractor/options.py \
-	src/extractor/s3_store.py \
-	src/extractor/s3_store_test.py \
-	\
-	src/feeds/__init__.py \
-	src/feeds/aggregator.py \
-	src/feeds/aggregator_test.py \
-	src/feeds/daring_fireball.py \
-	src/feeds/daring_fireball_test.py \
-	src/feeds/feed.py \
-	src/feeds/feed_test.py \
-	src/feeds/feeds.py \
-	src/feeds/feeds_test.py \
-	src/feeds/reddit.py \
-	src/feeds/reddit_test.py \
-	src/feeds/skip_sites.py \
-	src/feeds/streetsblog.py \
-	src/feeds/streetsblog_test.py \
-	\
-	src/health/__init__.py \
-	src/health/health.py \
-	src/health/health_test.py \
-	src/health/jobs.py \
-	src/health/processes.py \
-	src/health/servers.py \
-	\
-	src/news/__init__.py \
-	src/news/index.py \
-	src/news/index_test.py \
-	src/news/item.py \
-	src/news/item_test.py \
-	src/news/items.py \
-	src/news/news.py \
-	src/news/news_test.py \
-	src/news/source.py \
-	src/news/source_test.py \
-	\
-	src/news/url/__init__.py \
-	src/news/url/clean.py \
-	src/news/url/clean_test.py \
-	src/news/url/identity.py \
-	src/news/url/identity_test.py \
-	src/news/url/normalized_url.py \
-	src/news/url/normalized_url_test.py \
-	src/news/url/rewrite.py \
-	src/news/url/rewrite_test.py \
-	src/news/url/url.py \
-	src/news/url/url_test.py \
-	\
-	src/serialize/__init__.py \
-	src/serialize/encodable.py \
-	src/serialize/jsontype.py \
-	src/serialize/serializable.py \
-	\
-	src/server/__init__.py \
-	src/server/cached_news.py \
-	src/server/create_app.py \
-	src/server/doc.py \
-	src/server/error_handlers.py \
-	src/server/news_doc.py \
-	src/server/search_doc.py \
-	src/server/site_doc.py \
-	src/server/sites_doc.py \
-	src/server/template_filters.py \
-	src/server/utility.py \
-	src/server/views.py \
-	\
-	src/server/templates/doc.html \
-	src/server/templates/news.html \
-	src/server/templates/search.html \
-	src/server/templates/site.html \
-	src/server/templates/sites.html \
-	\
-	src/utility/__init__.py \
-	src/utility/cached_file.py \
-	src/utility/cached_file_test.py \
-	src/utility/formats.py \
-	src/utility/formats_test.py \
-	src/utility/no_store.py \
-	src/utility/no_store_test.py \
-	src/utility/page.py \
-	src/utility/page_test.py \
-	src/utility/read_only_store.py \
-	src/utility/store.py
-
-source_files := $(filter-out %_test.py, $(python_files))
 
 
 uv.lock : pyproject.toml .python-version
