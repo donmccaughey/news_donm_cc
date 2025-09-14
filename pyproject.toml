@@ -11,6 +11,19 @@ dependencies = [
     "requests == 2.32.5",
 ]
 
+
+[tool.coverage.run]
+branch = true
+include = [
+    'src/extractor/*',
+    'src/feeds/*',
+    'src/health/*',
+    'src/news/*',
+    'src/utility/*',
+]
+omit = ['src/**/*_test.py']
+
+
 [tool.uv]
 dev-dependencies = [
     "boto3-stubs[s3] == 1.40.30",

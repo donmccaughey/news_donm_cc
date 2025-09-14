@@ -34,7 +34,7 @@ clobber : clean
 
 
 .PHONY : cov
-cov : $(TMP)/.coverage
+cov : $(TMP)/coverage.sqlite
 
 
 .PHONY : debug
@@ -329,19 +329,18 @@ $(TMP)/uv-sync.stamp : uv.lock | $$(dir $$@)
 	touch $@
 
 
-$(TMP)/.coverage : \
-		.coveragerc \
-		$(source_files) \
-		$(test_files) \
-		$(TMP)/uv-sync.stamp \
-		| $$(dir $$@)
+$(TMP)/coverage.sqlite : $(python_files) $(TMP)/uv-sync.stamp
 	COVERAGE_FILE=$@ \
-	uv run -m pytest \
-		--cov \
-		--cov-config=$< \
-		--cov-report=html:"$(TMP)/coverage" \
-		--cov-report=xml:"$(TMP)/coverage.xml" \
-		--quiet --quiet
+		uv run -m pytest \
+			--cov \
+			--cov-report= \
+			--quiet --quiet
+	@printf '%s%% code coverage\n' \
+		$$(uv run coverage report --data-file=$@ --format=total --precision=2)
+	uv run coverage html \
+		--data-file=$@ \
+		--directory=$(TMP)/coverage-report \
+		--quiet
 
 
 gen \
