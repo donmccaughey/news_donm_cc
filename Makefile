@@ -255,8 +255,7 @@ $(TMP)/.env : | $$(dir $$@)
 
 $(TMP)/aws-lightsail-create-container-service-deployment.stamp : \
 		$(TMP)/create-container-service-deployment.json \
-		$(TMP)/docker-push.stamp \
-		| $$(dir $$@)
+		$(TMP)/docker-push.stamp
 	aws lightsail create-container-service-deployment \
 		--cli-input-json \
 			"$$(jq -c . $(TMP)/create-container-service-deployment.json)" \
@@ -311,7 +310,7 @@ $(TMP)/docker-build.stamp : \
 	touch $@
 
 
-$(TMP)/docker-push.stamp : $(TMP)/docker-build.stamp | $$(dir $$@)
+$(TMP)/docker-push.stamp : $(TMP)/docker-build.stamp
 	aws ecr-public get-login-password --region us-east-1 \
         | docker login --username AWS --password-stdin public.ecr.aws
 	docker tag news public.ecr.aws/d2g3p0u7/news
@@ -323,8 +322,7 @@ $(TMP)/docker-push.stamp : $(TMP)/docker-build.stamp | $$(dir $$@)
 $(TMP)/docker-run.stamp : \
 		$(TMP)/docker-build.stamp \
 		$(TMP)/.env \
-		stop \
-		| $$(dir $$@)
+		stop
 	-docker rm $(NEWS)
 	docker run \
 		--detach \
