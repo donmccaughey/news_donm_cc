@@ -116,7 +116,7 @@ gen/apk_add_py3_packages : \
 		$(TMP)/uv-sync.stamp \
 		| $$(dir $$@)
 	uv run scripts/py3apk.py \
-		--input $< \
+		--input pyproject.toml \
 		--output $@
 
 
@@ -172,7 +172,7 @@ $(TMP)/create-container-service-deployment.json : \
 		scripts/fillin.py \
 		| $$(dir $$@)
 	uv run scripts/fillin.py \
-		--input $< \
+		--input aws/create-container-service-deployment.template.json \
 		--output $@ \
 		--name 'AWS_ACCESS_KEY_ID' --value '$(AWS_ACCESS_KEY_ID)' \
 		--name 'AWS_SECRET_ACCESS_KEY' --value '$(AWS_SECRET_ACCESS_KEY)' \
