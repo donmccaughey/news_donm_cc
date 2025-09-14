@@ -184,8 +184,7 @@ $(TMP)/docker-build.stamp : \
 		$(container_files) \
 		gen/apk_add_py3_packages \
 		gen/version.txt \
-		$(source_files) \
-		| $$(dir $$@)
+		test/mypy.txt
 	docker build \
 		--file container/Dockerfile \
 		--platform linux/amd64 \
