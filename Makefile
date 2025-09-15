@@ -173,6 +173,10 @@ $(TMP)/coverage.sqlite : $(python_files) $(TMP)/uv-sync.stamp
 		--data-file=$@ \
 		--directory=$(TMP)/coverage-report \
 		--quiet
+	uv run coverage xml \
+		--data-file=$@ \
+		-o $(TMP)/coverage.xml \
+		--quiet
 
 
 $(TMP)/create-container-service-deployment.json : \
