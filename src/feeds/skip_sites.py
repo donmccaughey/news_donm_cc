@@ -169,6 +169,8 @@ SKIP_SITES = {
     'xtramagazine.com',
 
     'yalereview.org',
+    'youtube.com',
+    'youtu.be',
 
     '972mag.com',
 }

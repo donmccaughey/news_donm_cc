@@ -56,4 +56,4 @@ src/feeds/feeds_test.py:80: error: Item "int" of "JSONDict | list[JSONType] | tu
 src/feeds/feeds_test.py:80: error: Item "float" of "JSONDict | list[JSONType] | tuple[JSONType, ...] | str | int | float | None" has no attribute "get"  [union-attr]
 src/feeds/feeds_test.py:80: error: Item "None" of "JSONDict | list[JSONType] | tuple[JSONType, ...] | str | int | float | None" has no attribute "get"  [union-attr]
 src/extractor/cached_news.py:12: error: Incompatible types in assignment (expression has type "ReadOnlyStore", variable has type "NoStore | S3Store")  [assignment]
-Found 42 errors in 5 files (checked 81 source files)
+Found 42 errors in 5 files (checked 80 source files)
