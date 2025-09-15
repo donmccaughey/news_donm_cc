@@ -26,7 +26,7 @@ all : build
 
 
 .PHONY : build
-build : $(TMP)/docker-build.stamp
+build : $(TMP)/podman-build.stamp
 
 
 .PHONY : check
@@ -85,15 +85,15 @@ mypy : test/mypy.txt
 
 
 .PHONY : push
-push : $(TMP)/docker-push.stamp
+push : $(TMP)/podman-push.stamp
 
 
 .PHONY : run
-run : $(TMP)/docker-run.stamp
+run : $(TMP)/podman-run.stamp
 
 
 .PHONY : shell
-shell : $(TMP)/docker-run.stamp
+shell : $(TMP)/podman-run.stamp
 	podman exec \
 		--interactive \
 		--tty \
@@ -108,7 +108,7 @@ status :
 .PHONY : stop
 stop :
 	-podman stop $(news_container)
-	rm -rf $(TMP)/docker-run.stamp
+	rm -rf $(TMP)/podman-run.stamp
 
 
 uv.lock : pyproject.toml .python-version
@@ -147,7 +147,7 @@ $(TMP)/.env : | $$(dir $$@)
 
 $(TMP)/aws-lightsail-create-container-service-deployment.stamp : \
 		$(TMP)/create-container-service-deployment.json \
-		$(TMP)/docker-push.stamp
+		$(TMP)/podman-push.stamp
 	aws lightsail create-container-service-deployment \
 		--cli-input-json \
 			"$$(jq -c . $(TMP)/create-container-service-deployment.json)" \
@@ -192,7 +192,7 @@ $(TMP)/create-container-service-deployment.json : \
 	chmod 600 $@
 
 
-$(TMP)/docker-build.stamp : \
+$(TMP)/podman-build.stamp : \
 		$(container_files) \
 		gen/apk_add_py3_packages \
 		gen/version.txt \
@@ -206,7 +206,7 @@ $(TMP)/docker-build.stamp : \
 	touch $@
 
 
-$(TMP)/docker-push.stamp : $(TMP)/docker-build.stamp
+$(TMP)/podman-push.stamp : $(TMP)/podman-build.stamp
 	aws ecr-public get-login-password --region us-east-1 \
         | podman login --username AWS --password-stdin public.ecr.aws
 	podman tag $(news_image) public.ecr.aws/d2g3p0u7/news
@@ -215,8 +215,8 @@ $(TMP)/docker-push.stamp : $(TMP)/docker-build.stamp
 	touch $@
 
 
-$(TMP)/docker-run.stamp : \
-		$(TMP)/docker-build.stamp \
+$(TMP)/podman-run.stamp : \
+		$(TMP)/podman-build.stamp \
 		$(TMP)/.env \
 		stop
 	-podman rm $(news_container)
