@@ -17,4 +17,6 @@ class Streetsblog(Feed):
         return self.entry_has_keys(entry, ['category', 'link', 'title'])
 
     def keep_entry(self, entry) -> bool:
-        return "Today's Headlines" in entry.category
+        return any(
+            map(lambda tag: "Today's Headlines" in tag['term'], entry['tags'])
+        )

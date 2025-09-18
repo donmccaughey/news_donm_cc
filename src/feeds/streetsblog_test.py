@@ -5,6 +5,27 @@ from feedparser import FeedParserDict, parse
 from .streetsblog import Streetsblog
 
 
+def test_keep_entry_headlines_with_two_categories():
+    feed = '''
+    <?xml version="1.0" encoding="UTF-8"?>
+    <rss version="2.0">
+        <channel>
+            <item>
+                <title>Headlines, September 17</title>
+                <link>https://sf.streetsblog.org/2025/09/17/headlines-september-17-2</link>
+                <category><![CDATA[Special Features]]></category>
+                <category><![CDATA[Today's Headlines]]></category>
+            </item>
+        </channel>
+    </rss>
+    '''
+    d: FeedParserDict = parse(feed)
+    entry = d.entries[0]
+    sb = Streetsblog()
+
+    assert sb.keep_entry(entry)
+
+
 def test_keep_entry_todays_headlines():
     feed = '''
     <?xml version="1.0" encoding="UTF-8"?>

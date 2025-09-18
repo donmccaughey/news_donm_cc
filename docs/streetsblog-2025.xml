@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+     xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+     xmlns:media="http://search.yahoo.com/mrss/">
+
+    <channel>
+        <title>Streetsblog San Francisco</title>
+        <atom:link href="https://sf.streetsblog.org/feed" rel="self" type="application/rss+xml"/>
+        <link>https://sf.streetsblog.org/</link>
+        <description>Covering San Francisco&#039;s livable streets movement</description>
+        <lastBuildDate>Thu, 18 Sep 2025 00:08:16 +0000</lastBuildDate>
+        <language>en-US</language>
+        <sy:updatePeriod>
+            hourly
+        </sy:updatePeriod>
+        <sy:updateFrequency>
+            1
+        </sy:updateFrequency>
+        <generator>https://wordpress.org/?v=6.8.2</generator>
+
+        <image>
+            <url>
+                https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2016/12/streetsblog-favicon.png?w=16
+            </url>
+            <title>Streetsblog San Francisco</title>
+            <link>https://sf.streetsblog.org/</link>
+            <width>32</width>
+            <height>32</height>
+        </image>
+        <site xmlns="com-wordpress:feed-additions:1">120322391</site>
+        <item>
+            <title>Commentary: It&#8217;s Time to Recall Recalls</title>
+            <link>https://sf.streetsblog.org/2025/09/17/commentary-its-time-to-recall-recalls</link>
+
+            <dc:creator><![CDATA[Roger Rudick]]></dc:creator>
+            <pubDate>Wed, 17 Sep 2025 23:19:00 +0000</pubDate>
+            <category><![CDATA[San Francisco Neighborhoods]]></category>
+            <category><![CDATA[Sunset]]></category>
+            <category><![CDATA[Promoted]]></category>
+            <guid isPermaLink="false">https://sf.streetsblog.org/?p=480575</guid>
+
+            <description><![CDATA[<p>Tuesday's recall of Supervisor Joel Engardio proves the city really needs to take another look at its provisions</p>
+<p>The post <a href="https://sf.streetsblog.org/2025/09/17/commentary-its-time-to-recall-recalls">Commentary: It&#8217;s Time to Recall  Recalls</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></description>
+            <content:encoded><![CDATA[
+<p>District 4 Supervisor Joel Engardio was successfully recalled in Tuesday&#8217;s election, with <a href="https://sfelections.org/results/20250916w/index.html">10,625 &#8220;yes&#8221; votes counted on Measure A</a>, which called for his ouster. Of course, the <a href="https://bsky.app/profile/scottwiener.bsky.social/post/3lz27adf4sk2i">election was about Engardio&#8217;s support for change</a>, especially Proposition K in 2024, which turned the Upper Great Highway into <a href="https://sf.streetsblog.org/2025/08/18/short-sunset-dunes-update">Sunset Dunes</a>. That won by <a href="https://sfelections.org/results/20241105w/index.html">206,042 votes in the city-wide election</a>.</p>
+
+
+
+<p>&#8220;Joel Engardio had the courage to let San Franciscans decide the future of their coast. Sunset Dunes is already one of the city’s most popular parks, bringing joy to tens of thousands of people every week–kids on bikes, people using wheelchairs, and everyone of all ages enjoying easier access to the coast. More voters in District 4 supported creating the park than voted to recall Joel,&#8221; said Friends of Sunset Dunes’ Lucas Lux. &#8220;As Sunset residents, we know that Sunset Dunes is here to stay and will continue to grow in popularity as it evolves to reach its full potential.&#8221;</p>
+
+
+
+<p>Meanwhile, Engardio will be replaced by a mayoral appointment to fill out his term until June, when there will be another election.</p>
+
+
+
+<p>Streetsblog&#8217;s non-profit status didn&#8217;t let me state the obvious during the recall campaign. So let me say it now: this recall was asinine.</p>
+
+
+
+<p>I picture a child who realizes they&#8217;ve lost a board game, so they dump the board over. To repeat the obvious, this recall does not remove the park. And if a subsection of Sunset voters just wanted Engardio removed to prove a point, they only had to wait until his term was up.</p>
+
+
+
+<p>Recalls were always intended to relieve politicians who are guilty of something truly egregious. I guess <a href="https://oaklandside.org/2025/06/20/anniversary-fbi-raids-oakland-mayor-sheng-thao-questions/">the recall of Oakland Mayor Thao made sense</a>, as she was under investigation for fraud and the city couldn&#8217;t afford to leave her in charge until the end of her term while she was allegedly taking bribes. And there are other politicians who I think <em>should</em> have been recalled, such as <a href="https://sf.streetsblog.org/2022/05/03/commentary-reject-reckless-drivers-from-transportation-leadership">Marin Assemblymember Damon Connolly, not because of policy decisions, but because he committed a DUI hit-and-run while a county supervisor</a>.</p>
+
+
+
+<p>But nobody&#8217;s accusing Engardio of anything egregious or remotely criminal. All that happened is that a subset of people in his district didn&#8217;t like his support for Sunset Dunes.</p>
+
+
+
+<p><a href="https://sf.streetsblog.org/2025/04/10/advocates-denounce-mayor-luries-decision-to-allow-waymo-on-market-street">Mayor Lurie decided to allow Waymo on Market Street</a>. I think it&#8217;s a naive decision that will ultimately cause harm to the very thing he&#8217;s trying to fix: <a href="https://sf.streetsblog.org/2025/08/07/commentary-downtown-s-f-rebounds-must-be-the-return-of-cars-to-market-street-oh-wait">the economic vitality of downtown</a>. But I can&#8217;t imagine asking for Mayor Lurie to be thrown out of office in a wasteful recall election. There&#8217;s a difference between a policy disagreement and egregious or felonious behavior.</p>
+
+
+
+<figure class="wp-block-image aligncenter size-large"><img fetchpriority="high" decoding="async" width="1024" height="575" src="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/04/RecandParkenjoyment.jpg?w=710" alt="" class="wp-image-473997" srcset="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/04/RecandParkenjoyment.jpg 2048w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/04/RecandParkenjoyment.jpg?resize=300,168 300w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/04/RecandParkenjoyment.jpg?resize=768,431 768w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/04/RecandParkenjoyment.jpg?resize=1024,575 1024w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/04/RecandParkenjoyment.jpg?resize=1536,863 1536w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/04/RecandParkenjoyment.jpg?resize=1080,606 1080w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/04/RecandParkenjoyment.jpg?resize=564,317 564w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/04/RecandParkenjoyment.jpg?resize=385,217 385w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/04/RecandParkenjoyment.jpg?resize=715,402 715w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/04/RecandParkenjoyment.jpg?resize=725,408 725w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/04/RecandParkenjoyment.jpg?resize=445,250 445w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/04/RecandParkenjoyment.jpg?resize=710,399 710w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/04/RecandParkenjoyment.jpg?resize=1440,810 1440w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/04/RecandParkenjoyment.jpg?resize=290,163 290w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/04/RecandParkenjoyment.jpg?resize=320,180 320w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/04/RecandParkenjoyment.jpg?resize=235,132 235w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/04/RecandParkenjoyment.jpg?resize=150,84 150w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/04/RecandParkenjoyment.jpg?resize=100,56 100w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/04/RecandParkenjoyment.jpg?resize=780,438 780w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">Sunset Dunes on opening day. Photo: SFRec&amp;Park</figcaption></figure>
+
+
+
+<p>But apparently, a majority of those who voted in Tuesday&#8217;s low-turnout election can&#8217;t make that distinction.</p>
+
+
+
+<p>Democracy means sometimes you get your way, other times you don&#8217;t. Again, <a href="https://sf.streetsblog.org/2025/06/10/sunset-dunes-update-concrete-poured-for-sloat-gateway-skate-park">Sunset Dunes isn&#8217;t going anywhere</a>. When the board of supervisors was debating closing the Great Highway to cars years ago, opponents repeatedly urged that it be put to a citywide vote. Engardio did what they asked for: <a href="https://sf.streetsblog.org/2022/11/14/safe-streets-advocates-celebrate-j-f-k-triumph">he voted with a majority of the supervisors to put Prop. K on the ballot and put the question before the voters. Twice now a majority of the voters of San Francisco made it clear they want a park along the ocean, not a highway.</a></p>
+
+
+
+<p>Beyond that, <a href="https://sf.streetsblog.org/2024/07/29/advocates-launch-vote-yes-for-ocean-beach-park-campaign">yes, he aligned with the majority of San Franciscans</a>, rather than the majority of his district, genuinely believing it was in the best interests of both. He was always clear about his preference for a park over a highway. This is precisely how representative democracy is supposed to work.</p>
+
+
+
+<p>Bottom line, with the first recall of a San Francisco supervisor, it&#8217;s clear our state and local recall laws are broken. It&#8217;s become way too easy for right-wing resentment junkies to get a recall election qualified, which means politicians have to spend all their time campaigning instead of governing. If everyone&#8217;s constantly in the back of the bus of state, fighting over who gets to drive, then pretty soon the bus goes into a ditch.</p>
+
+
+
+<p>Ironically, <a href="https://missionlocal.org/2025/09/joel-engardio-recalled-now-anyone-can-be-recalled-by-everyone/">Engardio himself supported recalls of other politicians</a>. He was wrong. And these <a href="https://www.sos.ca.gov/elections/recalls/complete-list-recall-attempts">recurring recalls, even the ones that have no chance of succeeding</a>, just make it harder to convince good people to get into public service in the first place. <a href="https://ballotpedia.org/Laws_governing_recall">Many states don&#8217;t allow recalls of local officials. Others allow them only for specific reasons</a>. The most <a href="https://ballotpedia.org/San_Francisco,_California,_Proposition_C,_Recall_Timeline_Restrictions_and_Vacancy_Appointments_Amendment_(June_2022)">recent attempt at recall reform in San Francisco failed</a>. But Tuesday&#8217;s election proves <a href="https://www.sfchronicle.com/opinion/article/engardio-recall-election-sunset-20817730.php">the city really needs to take another look at its recall laws</a>.</p>
+<p>The post <a href="https://sf.streetsblog.org/2025/09/17/commentary-its-time-to-recall-recalls">Commentary: It&#8217;s Time to Recall  Recalls</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></content:encoded>
+
+
+            <post-id xmlns="com-wordpress:feed-additions:1">480575</post-id>
+            <media:content medium="image"
+                           url="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/04/JoelandAlicia.jpg?w=564"
+                           width="564" height="376"/>
+        </item>
+        <item>
+            <title>Windsor Stoked About its New Train</title>
+            <link>https://sf.streetsblog.org/2025/09/17/windsor-stoked-about-its-new-train</link>
+
+            <dc:creator><![CDATA[Roger Rudick]]></dc:creator>
+            <pubDate>Wed, 17 Sep 2025 17:35:14 +0000</pubDate>
+            <category><![CDATA[SMART]]></category>
+            <category><![CDATA[Promoted]]></category>
+            <guid isPermaLink="false">https://sf.streetsblog.org/?p=480095</guid>
+
+            <description><![CDATA[<p>All about my car-free mini-vacation in the Sonoma County town of Windsor, which is truly embracing the bike/train lifestyle. But there's still work left to do.</p>
+<p>The post <a href="https://sf.streetsblog.org/2025/09/17/windsor-stoked-about-its-new-train">Windsor Stoked About its New Train</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></description>
+            <content:encoded><![CDATA[
+<p>If I had a dime for every time I got an email from some marketing company offering to sponsor a post, I&#8217;d have a lot of dimes. But when <a href="https://www.vvcomms.com/about">Vine &amp; Venture Communications</a>, which promotes, among other things, car-free tourism in Windsor, CA, offered to pay for a two-night séjour in Sonoma wine country, I couldn&#8217;t pass it up. </p>
+
+
+
+<p>After all, a trip to Windsor to check out the latest <a href="https://sf.streetsblog.org/2025/02/04/two-item-tuesday-advocates-celebrate-more-smart-bike-path">SMART train extension</a> was already on my list of things I&#8217;d like to do, time permitting. So last week I packed my panniers and got on the Larkspur ferry from San Francisco for my train to Windsor. Two relaxing hours later I arrived.</p>
+
+
+
+<figure class="wp-block-image aligncenter size-large"><img decoding="async" width="1024" height="768" src="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170616635.MP_.jpg?w=710" alt="" class="wp-image-480417" srcset="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170616635.MP_.jpg 4032w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170616635.MP_.jpg?resize=300,225 300w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170616635.MP_.jpg?resize=768,576 768w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170616635.MP_.jpg?resize=1024,768 1024w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170616635.MP_.jpg?resize=1536,1152 1536w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170616635.MP_.jpg?resize=2048,1536 2048w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170616635.MP_.jpg?resize=1080,810 1080w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170616635.MP_.jpg?resize=564,423 564w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170616635.MP_.jpg?resize=710,533 710w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170616635.MP_.jpg?resize=290,218 290w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170616635.MP_.jpg?resize=320,240 320w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170616635.MP_.jpg?resize=235,176 235w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170616635.MP_.jpg?resize=150,113 150w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170616635.MP_.jpg?resize=100,75 100w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170616635.MP_.jpg?resize=780,585 780w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">Designed in an old-western motif, this is part of a downtown redevelopment project, all steps from the SMART platform. Photo: Streetsblog/Rudick</figcaption></figure>
+
+
+
+<p>The Windsor extension of the <a href="https://sf.streetsblog.org/2019/01/22/open-thread-more-smart-trains-for-the-bay-area">SMART train</a>, which opened in the spring of this year, is relatively new, and residents in that town of 26,000 are still noticeably excited about it. Hang out in any of the cafes and restaurants in town, and you&#8217;ll overhear some version of &#8220;Did you take the train here? Isn&#8217;t it better than driving!&#8221; For some time, the town has been planning for it: with an entire mixed-use development ready and waiting right across from the station.</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="768" src="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_194028616.MP_.jpg?w=710" alt="" class="wp-image-480431" srcset="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_194028616.MP_.jpg 4032w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_194028616.MP_.jpg?resize=300,225 300w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_194028616.MP_.jpg?resize=768,576 768w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_194028616.MP_.jpg?resize=1024,768 1024w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_194028616.MP_.jpg?resize=1536,1152 1536w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_194028616.MP_.jpg?resize=2048,1536 2048w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_194028616.MP_.jpg?resize=1080,810 1080w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_194028616.MP_.jpg?resize=564,423 564w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_194028616.MP_.jpg?resize=710,533 710w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_194028616.MP_.jpg?resize=290,218 290w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_194028616.MP_.jpg?resize=320,240 320w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_194028616.MP_.jpg?resize=235,176 235w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_194028616.MP_.jpg?resize=150,113 150w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_194028616.MP_.jpg?resize=100,75 100w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_194028616.MP_.jpg?resize=780,585 780w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">My bike in one of the vertical racks on the train, making it easy to take a bike (and keep an eye on it). Thank you Mr. SMART conductor for helping me get my bike &#8220;seated&#8221; correctly. Photo: Streetsblog/Rudick</figcaption></figure>
+
+
+
+<p>And SMART, as well as the city of Windsor, are making a concerted effort to solve last-mile problems by being as bike-friendly as possible. There are bike racks on each train car on SMART, secure bike lockers and racks at the stations, and bike racks throughout the town.</p>
+
+
+
+<figure class="wp-block-image aligncenter size-large"><img loading="lazy" decoding="async" width="1024" height="768" src="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_164240382.jpg?w=710" alt="" class="wp-image-480400" srcset="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_164240382.jpg 4032w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_164240382.jpg?resize=300,225 300w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_164240382.jpg?resize=768,576 768w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_164240382.jpg?resize=1024,768 1024w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_164240382.jpg?resize=1536,1152 1536w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_164240382.jpg?resize=2048,1536 2048w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_164240382.jpg?resize=1080,810 1080w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_164240382.jpg?resize=564,423 564w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_164240382.jpg?resize=710,533 710w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_164240382.jpg?resize=290,218 290w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_164240382.jpg?resize=320,240 320w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_164240382.jpg?resize=235,176 235w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_164240382.jpg?resize=150,113 150w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_164240382.jpg?resize=100,75 100w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_164240382.jpg?resize=780,585 780w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">A <a href="https://www.bikelink.org/">BikeLink</a> locker, holding my bike when I was down the street at <a href="https://fruity-moto-restaurant.square.site/">Fruity Moto</a> cafe, near Windsor Station. Photo: Streetsblog/Rudick</figcaption></figure>
+
+
+
+<p>&#8220;People come off the train with flat tires and we&#8217;re the first business they see,&#8221; said Noah Casabella, a mechanic in &#8220;The Bike Shop,&#8221; a local, uh, bike shop. He said they&#8217;ve been backed up for weeks since the new station opened. </p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="768" src="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_205332927.MP_.jpg?w=710" alt="" class="wp-image-480407" srcset="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_205332927.MP_.jpg 4032w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_205332927.MP_.jpg?resize=300,225 300w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_205332927.MP_.jpg?resize=768,576 768w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_205332927.MP_.jpg?resize=1024,768 1024w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_205332927.MP_.jpg?resize=1536,1152 1536w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_205332927.MP_.jpg?resize=2048,1536 2048w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_205332927.MP_.jpg?resize=1080,810 1080w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_205332927.MP_.jpg?resize=564,423 564w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_205332927.MP_.jpg?resize=710,533 710w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_205332927.MP_.jpg?resize=290,218 290w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_205332927.MP_.jpg?resize=320,240 320w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_205332927.MP_.jpg?resize=235,176 235w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_205332927.MP_.jpg?resize=150,113 150w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_205332927.MP_.jpg?resize=100,75 100w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_205332927.MP_.jpg?resize=780,585 780w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">Noah Casabella of &#8220;The Bike Shop&#8221; said customers regularly roll off the train and into his shop for repairs. Including me—to get a brake adjustment. Photo: Streetsblog/Rudick</figcaption></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="768" src="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/fruitymoto.jpg?w=710" alt="" class="wp-image-480556" srcset="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/fruitymoto.jpg 1132w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/fruitymoto.jpg?resize=300,225 300w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/fruitymoto.jpg?resize=768,576 768w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/fruitymoto.jpg?resize=1024,768 1024w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/fruitymoto.jpg?resize=1080,810 1080w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/fruitymoto.jpg?resize=564,423 564w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/fruitymoto.jpg?resize=710,533 710w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/fruitymoto.jpg?resize=290,218 290w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/fruitymoto.jpg?resize=320,240 320w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/fruitymoto.jpg?resize=235,176 235w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/fruitymoto.jpg?resize=150,113 150w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/fruitymoto.jpg?resize=100,75 100w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/fruitymoto.jpg?resize=780,585 780w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">Fruity Moto, a cafe, is another great merchant right across from the station. Photo: Streetsblog/Rudick</figcaption></figure>
+
+
+
+<p>On my first day there, I met up with Eris Weaver with the <a href="https://www.bikesonoma.org/">Sonoma County Bicycle Coalition</a>. She took me on a 3.5-mile ride (each way) from the Windsor Station to Airport Boulevard on the SMART train bike path, which parallels the tracks. Along the way, she talked about the lobbying that her organization had to do to get these sections built. She pointed out the bike counters she helped get installed.</p>
+
+
+
+<figure class="wp-block-image aligncenter size-large"><img loading="lazy" decoding="async" width="1024" height="768" src="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/ErisAndSMARTTrainWindsor.jpg?w=710" alt="" class="wp-image-480531" srcset="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/ErisAndSMARTTrainWindsor.jpg 2010w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/ErisAndSMARTTrainWindsor.jpg?resize=300,225 300w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/ErisAndSMARTTrainWindsor.jpg?resize=768,576 768w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/ErisAndSMARTTrainWindsor.jpg?resize=1024,768 1024w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/ErisAndSMARTTrainWindsor.jpg?resize=1536,1152 1536w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/ErisAndSMARTTrainWindsor.jpg?resize=1080,810 1080w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/ErisAndSMARTTrainWindsor.jpg?resize=564,423 564w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/ErisAndSMARTTrainWindsor.jpg?resize=710,533 710w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/ErisAndSMARTTrainWindsor.jpg?resize=290,218 290w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/ErisAndSMARTTrainWindsor.jpg?resize=320,240 320w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/ErisAndSMARTTrainWindsor.jpg?resize=235,176 235w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/ErisAndSMARTTrainWindsor.jpg?resize=150,113 150w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/ErisAndSMARTTrainWindsor.jpg?resize=100,75 100w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/ErisAndSMARTTrainWindsor.jpg?resize=780,585 780w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">Eris Weaver at the SMART train traffic circle in Windsor. Photo: Streetsblog/Rudick</figcaption></figure>
+
+
+
+<p>&#8220;Much to everyone&#8217;s surprise, there are as many cyclists using the path as riders on the SMART train,&#8221; she said. Of course, some of that is overlap (cyclists who are on their way to ride the SMART train), but it underscores the importance of gathering data to convince sometimes skeptical bureaucrats that people will bike (and take the train) when safe, comfortable paths exist. Unfortunately, the path ends at the SMART storage yard, meaning there&#8217;s still work to do going south. The same goes for the bike path/road intersections, which are confusing and, sorry to say it, couldn&#8217;t have been designed by anyone who actually rides a bike.</p>
+
+
+
+<figure class="wp-block-image aligncenter size-large"><img loading="lazy" decoding="async" width="1024" height="768" src="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_200449740.MP_.jpg?w=710" alt="" class="wp-image-480410" srcset="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_200449740.MP_.jpg 4032w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_200449740.MP_.jpg?resize=300,225 300w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_200449740.MP_.jpg?resize=768,576 768w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_200449740.MP_.jpg?resize=1024,768 1024w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_200449740.MP_.jpg?resize=1536,1152 1536w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_200449740.MP_.jpg?resize=2048,1536 2048w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_200449740.MP_.jpg?resize=1080,810 1080w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_200449740.MP_.jpg?resize=564,423 564w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_200449740.MP_.jpg?resize=710,533 710w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_200449740.MP_.jpg?resize=290,218 290w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_200449740.MP_.jpg?resize=320,240 320w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_200449740.MP_.jpg?resize=235,176 235w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_200449740.MP_.jpg?resize=150,113 150w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_200449740.MP_.jpg?resize=100,75 100w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_200449740.MP_.jpg?resize=780,585 780w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">A typical smart path bike crossing. Where am I supposed to ride exactly to get across this street and pick up the path on the other side? Photo: Streetsblog/Rudick</figcaption></figure>
+
+
+
+<p>That said, the path really is incredibly useful. The next day, I repeated some of that journey with Frieda Lewis of <a href="https://www.aceitbiketours.com/">Ace It Bike Tours</a>, which is also right near the SMART Windsor station. Lewis gives e-bike tours of the town, nearby vineyards, and the new Russian River Brewery. She said the train has been great for business.</p>
+
+
+
+<figure class="wp-block-image aligncenter size-large"><img loading="lazy" decoding="async" width="1024" height="768" src="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/ACEItBikeToursWindsor.jpg?w=710" alt="" class="wp-image-480532" srcset="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/ACEItBikeToursWindsor.jpg 2010w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/ACEItBikeToursWindsor.jpg?resize=300,225 300w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/ACEItBikeToursWindsor.jpg?resize=768,576 768w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/ACEItBikeToursWindsor.jpg?resize=1024,768 1024w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/ACEItBikeToursWindsor.jpg?resize=1536,1152 1536w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/ACEItBikeToursWindsor.jpg?resize=1080,810 1080w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/ACEItBikeToursWindsor.jpg?resize=564,423 564w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/ACEItBikeToursWindsor.jpg?resize=710,533 710w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/ACEItBikeToursWindsor.jpg?resize=290,218 290w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/ACEItBikeToursWindsor.jpg?resize=320,240 320w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/ACEItBikeToursWindsor.jpg?resize=235,176 235w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/ACEItBikeToursWindsor.jpg?resize=150,113 150w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/ACEItBikeToursWindsor.jpg?resize=100,75 100w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/ACEItBikeToursWindsor.jpg?resize=780,585 780w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">Frieda Lewis of Ace It bike tours, located a stone&#8217;s throw from the SMART platform. Photo: Streetsblog/Rudick</figcaption></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="768" src="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/RogeratRussianRiver.jpg?w=710" alt="" class="wp-image-480530" srcset="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/RogeratRussianRiver.jpg 2010w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/RogeratRussianRiver.jpg?resize=300,225 300w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/RogeratRussianRiver.jpg?resize=768,576 768w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/RogeratRussianRiver.jpg?resize=1024,768 1024w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/RogeratRussianRiver.jpg?resize=1536,1152 1536w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/RogeratRussianRiver.jpg?resize=1080,810 1080w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/RogeratRussianRiver.jpg?resize=564,423 564w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/RogeratRussianRiver.jpg?resize=710,533 710w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/RogeratRussianRiver.jpg?resize=290,218 290w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/RogeratRussianRiver.jpg?resize=320,240 320w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/RogeratRussianRiver.jpg?resize=235,176 235w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/RogeratRussianRiver.jpg?resize=150,113 150w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/RogeratRussianRiver.jpg?resize=100,75 100w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/RogeratRussianRiver.jpg?resize=780,585 780w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">Me at Russian River Brewery, a short ride on the SMART train path and an easy jaunt from the Windsor station. Photo: Frieda Lewis of <a href="https://www.aceitbiketours.com/">Ace It Bike Tours</a></figcaption></figure>
+
+
+
+<p>By the way, <a href="https://www.russianriverbrewing.com/windsor-location/">Russian River Brewery</a> is one of the few places in the Bay Area that makes or sells Bière de Garde, my favorite style of beer. They only sell it at their brewery locations, so I had a glass with lunch in their restaurant and <em>yum!</em> Not only is the food and beer great, but the dining room comes with a view of the SMART train tracks.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="768" src="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/RussianRiverSign.jpg?w=710" alt="" class="wp-image-480533" srcset="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/RussianRiverSign.jpg 2010w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/RussianRiverSign.jpg?resize=300,225 300w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/RussianRiverSign.jpg?resize=768,576 768w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/RussianRiverSign.jpg?resize=1024,768 1024w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/RussianRiverSign.jpg?resize=1536,1152 1536w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/RussianRiverSign.jpg?resize=1080,810 1080w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/RussianRiverSign.jpg?resize=564,423 564w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/RussianRiverSign.jpg?resize=710,533 710w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/RussianRiverSign.jpg?resize=290,218 290w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/RussianRiverSign.jpg?resize=320,240 320w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/RussianRiverSign.jpg?resize=235,176 235w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/RussianRiverSign.jpg?resize=150,113 150w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/RussianRiverSign.jpg?resize=100,75 100w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/RussianRiverSign.jpg?resize=780,585 780w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption"><a href="https://www.russianriverbrewing.com/windsor-location/">Russian River Brewery</a> is also psyched about the train. Photo: Streetsblog/Rudick</figcaption></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="768" src="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_182422460.MP_.jpg?w=710" alt="" class="wp-image-480411" srcset="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_182422460.MP_.jpg 4032w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_182422460.MP_.jpg?resize=300,225 300w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_182422460.MP_.jpg?resize=768,576 768w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_182422460.MP_.jpg?resize=1024,768 1024w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_182422460.MP_.jpg?resize=1536,1152 1536w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_182422460.MP_.jpg?resize=2048,1536 2048w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_182422460.MP_.jpg?resize=1080,810 1080w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_182422460.MP_.jpg?resize=564,423 564w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_182422460.MP_.jpg?resize=710,533 710w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_182422460.MP_.jpg?resize=290,218 290w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_182422460.MP_.jpg?resize=320,240 320w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_182422460.MP_.jpg?resize=235,176 235w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_182422460.MP_.jpg?resize=150,113 150w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_182422460.MP_.jpg?resize=100,75 100w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_182422460.MP_.jpg?resize=780,585 780w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">Another view of <a href="https://www.russianriverbrewing.com/windsor-location/">Russian River Brewery</a> in Windsor. The SMART tracks are behind me. Photo: Streetsblog/Rudick</figcaption></figure>
+
+
+
+<p>As mentioned, the enthusiasm for the new train was everywhere in Windsor. Back at the station, I noticed one of the real estate offices was also boasting about the proximity of their properties to the new service. &#8220;For sure, proximity to the train is very desirable,&#8221; said Nadine Reyes, one of the owners of <a href="https://aspirarealty.com/">Aspira Realty</a>, located next to the station. &#8220;The exposure it&#8217;s giving Windsor is phenomenal.&#8221;</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="768" src="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/OnDisplayinfrontofAspira.jpg?w=710" alt="" class="wp-image-480535" srcset="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/OnDisplayinfrontofAspira.jpg 2010w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/OnDisplayinfrontofAspira.jpg?resize=300,225 300w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/OnDisplayinfrontofAspira.jpg?resize=768,576 768w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/OnDisplayinfrontofAspira.jpg?resize=1024,768 1024w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/OnDisplayinfrontofAspira.jpg?resize=1536,1152 1536w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/OnDisplayinfrontofAspira.jpg?resize=1080,810 1080w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/OnDisplayinfrontofAspira.jpg?resize=564,423 564w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/OnDisplayinfrontofAspira.jpg?resize=710,533 710w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/OnDisplayinfrontofAspira.jpg?resize=290,218 290w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/OnDisplayinfrontofAspira.jpg?resize=320,240 320w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/OnDisplayinfrontofAspira.jpg?resize=235,176 235w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/OnDisplayinfrontofAspira.jpg?resize=150,113 150w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/OnDisplayinfrontofAspira.jpg?resize=100,75 100w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/OnDisplayinfrontofAspira.jpg?resize=780,585 780w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">On display in front of <a href="https://aspirarealty.com/">Aspira Realty</a>, across from the station. Note the SMART train guide in the basket. Photo: Streetsblog/Rudick</figcaption></figure>
+
+
+
+<p>This actually speaks volumes to the sophistry often bandied about that &#8220;trains don&#8217;t make profits, therefore they aren&#8217;t worth investing in.&#8221; <a href="https://usa.streetsblog.org/2024/08/26/americas-overbuilt-road-network-costs-us-trillions-in-lost-housing-opportunities">That&#8217;s nonsense</a>. They make &#8220;profit,&#8221; but from the adjoining real estate and merchant economy that they generate. Most railroads of old in California were actually <a href="https://en.wikipedia.org/wiki/Pacific_Electric">part of real estate businesses</a>, not transportation per se.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="768" src="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170347025_ff2273.jpg?w=710" alt="" class="wp-image-480424" srcset="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170347025_ff2273.jpg 4032w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170347025_ff2273.jpg?resize=300,225 300w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170347025_ff2273.jpg?resize=768,576 768w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170347025_ff2273.jpg?resize=1024,768 1024w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170347025_ff2273.jpg?resize=1536,1152 1536w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170347025_ff2273.jpg?resize=2048,1536 2048w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170347025_ff2273.jpg?resize=1080,810 1080w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170347025_ff2273.jpg?resize=564,423 564w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170347025_ff2273.jpg?resize=710,533 710w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170347025_ff2273.jpg?resize=290,218 290w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170347025_ff2273.jpg?resize=320,240 320w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170347025_ff2273.jpg?resize=235,176 235w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170347025_ff2273.jpg?resize=150,113 150w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170347025_ff2273.jpg?resize=100,75 100w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170347025_ff2273.jpg?resize=780,585 780w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">Another look at the mixed-use developments around the station. Photo: Streetsblog/Rudick</figcaption></figure>
+
+
+
+<p>That said, sometimes one has to get farther away from the station. The last tour I did was of <a href="https://www.limericklanewines.com/">Limerick Lane Wine Cellars</a>, about a ten-minute drive from the station. Yes, I said drive. I took a Lyft for that part of my tour. It wasn&#8217;t the distance. It was that I just didn&#8217;t feel secure biking solo up the fast-moving country roads outside of town on my own. </p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="768" src="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_174833020.jpg?w=710" alt="" class="wp-image-480398" srcset="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_174833020.jpg 4032w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_174833020.jpg?resize=300,225 300w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_174833020.jpg?resize=768,576 768w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_174833020.jpg?resize=1024,768 1024w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_174833020.jpg?resize=1536,1152 1536w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_174833020.jpg?resize=2048,1536 2048w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_174833020.jpg?resize=1080,810 1080w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_174833020.jpg?resize=564,423 564w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_174833020.jpg?resize=710,533 710w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_174833020.jpg?resize=290,218 290w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_174833020.jpg?resize=320,240 320w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_174833020.jpg?resize=235,176 235w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_174833020.jpg?resize=150,113 150w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_174833020.jpg?resize=100,75 100w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_174833020.jpg?resize=780,585 780w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">Limerick Lane Cellars vineyards. It was definitely worth the price of a Lyft. Photo: Streetsblog/Rudick</figcaption></figure>
+
+
+
+<p>I&#8217;m glad I did, because the Lyft was bumping all over the place on the craggy pavement and there was no shoulder for most of the ride. My lightweight bike with road tires wouldn&#8217;t have taken that well. <a href="https://www.aceitbiketours.com/">Ace It Bike Tours</a> uses sturdier e-bikes that are more up to the task. I&#8217;m glad I took the trip to the winery though: Andy Tester of Limerick was amazing and, even though I&#8217;m no wine guy, I was blown away by his knowledge and enthusiasm. And he confirmed <a href="https://www.aceitbiketours.com/packages">he does get bike tours in his tasting room</a>—more since the SMART train opened.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="768" src="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_180129548.jpg?w=710" alt="" class="wp-image-480419" srcset="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_180129548.jpg 4032w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_180129548.jpg?resize=300,225 300w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_180129548.jpg?resize=768,576 768w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_180129548.jpg?resize=1024,768 1024w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_180129548.jpg?resize=1536,1152 1536w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_180129548.jpg?resize=2048,1536 2048w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_180129548.jpg?resize=1080,810 1080w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_180129548.jpg?resize=564,423 564w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_180129548.jpg?resize=710,533 710w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_180129548.jpg?resize=290,218 290w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_180129548.jpg?resize=320,240 320w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_180129548.jpg?resize=235,176 235w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_180129548.jpg?resize=150,113 150w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_180129548.jpg?resize=100,75 100w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_180129548.jpg?resize=780,585 780w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">Andy Tester poured tastes for a group visiting from Pennsylvania at <a href="https://www.limericklanewines.com/">Limerick Lane Cellars</a>. Photo: Streetsblog/Rudick</figcaption></figure>
+
+
+
+<p>That actually speaks to where Sonoma County needs to do more work on bike facilities—the lack of east-west connections to the SMART station and paths is a big problem. As soon as I tried to bike perpendicularly to the tracks, away from the Windsor town center, things got squirrelly. For example, <a href="https://www.hilton.com/en/hotels/stswihx-hampton-suites-windsor-sonoma-wine-country/">my hotel</a>, while friendly, comfortable, and nice, was on the far side of 101, along with a car-centric shopping center and office park. So while it&#8217;s seven quick minutes by bike from the hotel to Windsor station, the last part of the ride is sketchy where one has to bike through <a href="https://cal.streetsblog.org/2019/08/15/whoop-de-doo-paint-added-to-oakland-hellscape">Caltrans-controlled</a> territory. I biked on the empty sidewalk through there because I don&#8217;t have a death wish.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="768" src="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/dangerouszipperWindosr.jpg?w=710" alt="" class="wp-image-480551" srcset="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/dangerouszipperWindosr.jpg 1132w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/dangerouszipperWindosr.jpg?resize=300,225 300w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/dangerouszipperWindosr.jpg?resize=768,576 768w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/dangerouszipperWindosr.jpg?resize=1024,768 1024w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/dangerouszipperWindosr.jpg?resize=1080,810 1080w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/dangerouszipperWindosr.jpg?resize=564,423 564w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/dangerouszipperWindosr.jpg?resize=710,533 710w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/dangerouszipperWindosr.jpg?resize=290,218 290w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/dangerouszipperWindosr.jpg?resize=320,240 320w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/dangerouszipperWindosr.jpg?resize=235,176 235w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/dangerouszipperWindosr.jpg?resize=150,113 150w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/dangerouszipperWindosr.jpg?resize=100,75 100w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/dangerouszipperWindosr.jpg?resize=780,585 780w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">A zipper lane in Windsor designed by an engineer who thinks a bike is just a little car. Photo: Streetsblog/Rudick</figcaption></figure>
+
+
+
+<p>There are a few &#8220;safety&#8221; features, such as a green-paint bike lane wedged between a concrete wall and speeding traffic (see below) but it&#8217;s obvious this was all designed by the kind of state officials described in Wes Marshall&#8217;s <em><a href="https://usa.streetsblog.org/2024/06/13/talking-headways-podcast-killed-by-a-traffic-engineer">Killed by a Traffic Engineer</a></em>.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="768" src="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/typicalcaltrans1Winsor.jpg?w=710" alt="" class="wp-image-480547" srcset="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/typicalcaltrans1Winsor.jpg 1132w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/typicalcaltrans1Winsor.jpg?resize=300,225 300w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/typicalcaltrans1Winsor.jpg?resize=768,576 768w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/typicalcaltrans1Winsor.jpg?resize=1024,768 1024w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/typicalcaltrans1Winsor.jpg?resize=1080,810 1080w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/typicalcaltrans1Winsor.jpg?resize=564,423 564w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/typicalcaltrans1Winsor.jpg?resize=710,533 710w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/typicalcaltrans1Winsor.jpg?resize=290,218 290w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/typicalcaltrans1Winsor.jpg?resize=320,240 320w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/typicalcaltrans1Winsor.jpg?resize=235,176 235w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/typicalcaltrans1Winsor.jpg?resize=150,113 150w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/typicalcaltrans1Winsor.jpg?resize=100,75 100w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/typicalcaltrans1Winsor.jpg?resize=780,585 780w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">Keeping pedestrians safe&#8230; by making it impossible to cross. Thanks Caltrans. Photo: streetsblog/Rudick</figcaption></figure>
+
+
+
+<p>There&#8217;s also a <em>slightly</em> raised crosswalk with flashing beacons across one of the many ramps and merges, as seen in the picture below. But since uncontrolled left turns are still permitted and this is across a ramp engineered to encourage speeding, this is still nowhere near safe enough for <a href="https://sf.streetsblog.org/2020/11/12/spur-talk-how-to-get-everyone-walking-and-biking">people of all ages and abilities</a> to bike or walk on.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="768" src="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/slightlyraisedcrosswalkWinsor.jpg?w=710" alt="" class="wp-image-480548" srcset="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/slightlyraisedcrosswalkWinsor.jpg 1132w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/slightlyraisedcrosswalkWinsor.jpg?resize=300,225 300w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/slightlyraisedcrosswalkWinsor.jpg?resize=768,576 768w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/slightlyraisedcrosswalkWinsor.jpg?resize=1024,768 1024w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/slightlyraisedcrosswalkWinsor.jpg?resize=1080,810 1080w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/slightlyraisedcrosswalkWinsor.jpg?resize=564,423 564w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/slightlyraisedcrosswalkWinsor.jpg?resize=710,533 710w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/slightlyraisedcrosswalkWinsor.jpg?resize=290,218 290w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/slightlyraisedcrosswalkWinsor.jpg?resize=320,240 320w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/slightlyraisedcrosswalkWinsor.jpg?resize=235,176 235w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/slightlyraisedcrosswalkWinsor.jpg?resize=150,113 150w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/slightlyraisedcrosswalkWinsor.jpg?resize=100,75 100w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/slightlyraisedcrosswalkWinsor.jpg?resize=780,585 780w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">This slightly raised crosswalk made crossing here slightly safer. Photo: Streetsblog/Rudick</figcaption></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="768" src="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170028183.MP_.jpg?w=710" alt="" class="wp-image-480418" srcset="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170028183.MP_.jpg 4032w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170028183.MP_.jpg?resize=300,225 300w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170028183.MP_.jpg?resize=768,576 768w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170028183.MP_.jpg?resize=1024,768 1024w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170028183.MP_.jpg?resize=1536,1152 1536w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170028183.MP_.jpg?resize=2048,1536 2048w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170028183.MP_.jpg?resize=1080,810 1080w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170028183.MP_.jpg?resize=564,423 564w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170028183.MP_.jpg?resize=710,533 710w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170028183.MP_.jpg?resize=290,218 290w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170028183.MP_.jpg?resize=320,240 320w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170028183.MP_.jpg?resize=235,176 235w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170028183.MP_.jpg?resize=150,113 150w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170028183.MP_.jpg?resize=100,75 100w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170028183.MP_.jpg?resize=780,585 780w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">Another look at the slightly raised crosswalk and the problems should be obvious. Photo: Streetsblog/Rudick</figcaption></figure>
+
+
+
+<p>Ultimately, there should be a separated bike and pedestrian link that doesn&#8217;t cross the ramps at all. There&#8217;s a nearby creek/flood channel that goes under the freeway and ramp complex (see pic below), so I&#8217;m sure some clever engineer could design a path alongside it to keep cyclists and pedestrians truly safe from all the 101 traffic.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="768" src="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_213422251.jpg?w=710" alt="" class="wp-image-480404" srcset="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_213422251.jpg 4032w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_213422251.jpg?resize=300,225 300w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_213422251.jpg?resize=768,576 768w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_213422251.jpg?resize=1024,768 1024w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_213422251.jpg?resize=1536,1152 1536w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_213422251.jpg?resize=2048,1536 2048w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_213422251.jpg?resize=1080,810 1080w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_213422251.jpg?resize=564,423 564w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_213422251.jpg?resize=710,533 710w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_213422251.jpg?resize=290,218 290w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_213422251.jpg?resize=320,240 320w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_213422251.jpg?resize=235,176 235w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_213422251.jpg?resize=150,113 150w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_213422251.jpg?resize=100,75 100w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_213422251.jpg?resize=780,585 780w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">A creek already goes under the freeway. Maybe a side path can be added? Photo: Streetsblog/Rudick</figcaption></figure>
+
+
+
+<p>Ironically, I discovered a wonderfully pleasant mixed-use trail on the other side of the hotel that connects to a cultural center and a residential neighborhood (it doesn&#8217;t take you nearer to the station, unfortunately). It appeared to run along that same channel that later goes under the freeway, but the path ends before it gets there.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="768" src="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/betterimageofthebikepath.jpg?w=710" alt="" class="wp-image-480549" srcset="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/betterimageofthebikepath.jpg 1132w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/betterimageofthebikepath.jpg?resize=300,225 300w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/betterimageofthebikepath.jpg?resize=768,576 768w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/betterimageofthebikepath.jpg?resize=1024,768 1024w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/betterimageofthebikepath.jpg?resize=1080,810 1080w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/betterimageofthebikepath.jpg?resize=564,423 564w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/betterimageofthebikepath.jpg?resize=710,533 710w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/betterimageofthebikepath.jpg?resize=290,218 290w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/betterimageofthebikepath.jpg?resize=320,240 320w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/betterimageofthebikepath.jpg?resize=235,176 235w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/betterimageofthebikepath.jpg?resize=150,113 150w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/betterimageofthebikepath.jpg?resize=100,75 100w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/betterimageofthebikepath.jpg?resize=780,585 780w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">The neighborhood greenway behind the hotel and a residential neighborhood. Maybe Windsor can extend this under (or over) 101 so there&#8217;s a low-stress route to the train station. Photo: Streetsblog/Rudick</figcaption></figure>
+
+
+
+<p>There are also some easement areas, currently fenced off, that could allow cyclists to avoid some of the more heavily trafficked feeder roads between the hotel and train station. I followed some wheel ruts (<a href="https://en.wikipedia.org/wiki/Desire_path">a desire path</a>) behind an office building when going between downtown and the hotel, which was a little more direct and lower stress. Relocate the fence and lay down some asphalt along that route for starters.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="768" src="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_014627064.jpg?w=710" alt="" class="wp-image-480428" srcset="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_014627064.jpg 4032w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_014627064.jpg?resize=300,225 300w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_014627064.jpg?resize=768,576 768w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_014627064.jpg?resize=1024,768 1024w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_014627064.jpg?resize=1536,1152 1536w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_014627064.jpg?resize=2048,1536 2048w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_014627064.jpg?resize=1080,810 1080w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_014627064.jpg?resize=564,423 564w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_014627064.jpg?resize=710,533 710w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_014627064.jpg?resize=290,218 290w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_014627064.jpg?resize=320,240 320w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_014627064.jpg?resize=235,176 235w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_014627064.jpg?resize=150,113 150w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_014627064.jpg?resize=100,75 100w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_014627064.jpg?resize=780,585 780w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">It&#8217;s hard to see in the photo, but some cyclists were obviously cutting behind this office building to avoid some of the traffic mayhem leading to the freeway ramps when going between the hotel area and downtown. Photo: Streetsblog/Rudick</figcaption></figure>
+
+
+
+<p>Back to the SMART train, there&#8217;s also the issue of the operating hours. SMART was conceived as a commuter train. But it&#8217;s actually turned out to also be a great way (at least in theory) to get to Windsor&#8217;s many entertainment offerings, such as &#8220;<a href="https://www.townofwindsor.ca.gov/342/Summer-Nights-on-the-Green">Summer Nights on the Green</a>,&#8221; a concert series in the town&#8217;s central park a block from the station. </p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="768" src="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170430724.MP_.jpg?w=710" alt="" class="wp-image-480422" srcset="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170430724.MP_.jpg 4032w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170430724.MP_.jpg?resize=300,225 300w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170430724.MP_.jpg?resize=768,576 768w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170430724.MP_.jpg?resize=1024,768 1024w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170430724.MP_.jpg?resize=1536,1152 1536w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170430724.MP_.jpg?resize=2048,1536 2048w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170430724.MP_.jpg?resize=1080,810 1080w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170430724.MP_.jpg?resize=564,423 564w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170430724.MP_.jpg?resize=710,533 710w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170430724.MP_.jpg?resize=290,218 290w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170430724.MP_.jpg?resize=320,240 320w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170430724.MP_.jpg?resize=235,176 235w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170430724.MP_.jpg?resize=150,113 150w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170430724.MP_.jpg?resize=100,75 100w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250911_170430724.MP_.jpg?resize=780,585 780w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">The Windsor Green, a block from the train station, and an outdoor concert venue. Photo: Streetsblog/Rudick</figcaption></figure>
+
+
+
+<p>But Lisa Ahrens, owner of <a href="https://www.muttlynchwinery.com/">Mutt Lynch Winery</a>, a dog-friendly, bike friendly, train friendly shop adjacent to all this, pointed out the elephant in the room: <a href="https://www.sonomamarintrain.org/schedules-fares#wkndsouth">the last train going south on weekends</a> and holidays leaves at 6:06 p.m and the latest weekday train is at 7:05 p.m. &#8220;How is that supposed to work when people who take the train up can&#8217;t even stay for dinner?&#8221; asked Ahrens. So my recommendation for now: if you&#8217;re going to come up by train, stay at least one night so you can enjoy all that Windsor has to offer.</p>
+
+
+
+<figure class="wp-block-image aligncenter size-large"><img loading="lazy" decoding="async" width="1024" height="768" src="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_163003299.MP_.jpg?w=710" alt="" class="wp-image-480402" srcset="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_163003299.MP_.jpg 4032w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_163003299.MP_.jpg?resize=300,225 300w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_163003299.MP_.jpg?resize=768,576 768w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_163003299.MP_.jpg?resize=1024,768 1024w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_163003299.MP_.jpg?resize=1536,1152 1536w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_163003299.MP_.jpg?resize=2048,1536 2048w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_163003299.MP_.jpg?resize=1080,810 1080w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_163003299.MP_.jpg?resize=564,423 564w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_163003299.MP_.jpg?resize=710,533 710w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_163003299.MP_.jpg?resize=290,218 290w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_163003299.MP_.jpg?resize=320,240 320w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_163003299.MP_.jpg?resize=235,176 235w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_163003299.MP_.jpg?resize=150,113 150w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_163003299.MP_.jpg?resize=100,75 100w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_163003299.MP_.jpg?resize=780,585 780w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">Entrance to <a href="https://www.hilton.com/en/hotels/stswihx-hampton-suites-windsor-sonoma-wine-country/">The Hampton Inn and Suites in Windsor</a>, where I stayed.</figcaption></figure>
+
+
+
+<p>Obviously, this is all a work in progress. SMART is still under construction going north, with the <a href="https://www.sonomamarintrain.org/construction-updates">Healdsburg station set to open in 2028</a>. In the meantime, the people of Windsor have done a great job making their town work with the train.</p>
+
+
+
+<figure class="wp-block-image aligncenter size-large"><img loading="lazy" decoding="async" width="1024" height="768" src="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_182823826.MP_.jpg?w=710" alt="" class="wp-image-480395" srcset="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_182823826.MP_.jpg 4032w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_182823826.MP_.jpg?resize=300,225 300w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_182823826.MP_.jpg?resize=768,576 768w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_182823826.MP_.jpg?resize=1024,768 1024w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_182823826.MP_.jpg?resize=1536,1152 1536w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_182823826.MP_.jpg?resize=2048,1536 2048w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_182823826.MP_.jpg?resize=1080,810 1080w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_182823826.MP_.jpg?resize=564,423 564w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_182823826.MP_.jpg?resize=710,533 710w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_182823826.MP_.jpg?resize=290,218 290w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_182823826.MP_.jpg?resize=320,240 320w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_182823826.MP_.jpg?resize=235,176 235w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_182823826.MP_.jpg?resize=150,113 150w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_182823826.MP_.jpg?resize=100,75 100w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250912_182823826.MP_.jpg?resize=780,585 780w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">Cyclists riding around Windsor Green. Photo: Streetsblog/Rudick</figcaption></figure>
+
+
+
+<p>Several of the merchants I met, in fact, asked me to get them in touch with the <a href="https://www.bikesonoma.org/about/contact/?sfw=pass1758060781">Sonoma County Bicycle Coalition</a> so they can get more involved. And I have no doubt they will continue advocating with their county and city leaders to extend SMART&#8217;s hours and get those east-west bike routes improved. There&#8217;s still work to do, but the town is off to a great start in making a leave-your-car-at-home holiday possible. It should only get better from here.</p>
+
+
+
+<p><em>Click </em><a href="https://www.canva.com/design/DAGrZzIGcRk/ETd4N2OvJ9_HcVyd-cRLLA/view?utm_content=DAGrZzIGcRk&amp;utm_campaign=designshare&amp;utm_medium=link2&amp;utm_source=uniquelinks&amp;utlId=h76dc9249b6"><em>here to</em> <em>learn more about SMART travel packages</em></a>. S<em>pecial thanks to the hospitality of the city and <a href="https://www.windsorchamber.com/">all the merchants of Windsor</a>, including <a href="https://www.barrelbrothersbrewing.com/">Barrel Brothers</a>, <a href="https://fruity-moto-restaurant.square.site/">Fruity Moto</a>, <a href="https://www.socoreflexology.com/">SoCo Reflexology</a></em>, <em>and many others.</em></p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="768" src="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/trainbeatscar.jpg?w=710" alt="" class="wp-image-480553" srcset="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/trainbeatscar.jpg 1132w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/trainbeatscar.jpg?resize=300,225 300w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/trainbeatscar.jpg?resize=768,576 768w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/trainbeatscar.jpg?resize=1024,768 1024w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/trainbeatscar.jpg?resize=1080,810 1080w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/trainbeatscar.jpg?resize=564,423 564w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/trainbeatscar.jpg?resize=710,533 710w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/trainbeatscar.jpg?resize=290,218 290w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/trainbeatscar.jpg?resize=320,240 320w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/trainbeatscar.jpg?resize=235,176 235w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/trainbeatscar.jpg?resize=150,113 150w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/trainbeatscar.jpg?resize=100,75 100w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/trainbeatscar.jpg?resize=780,585 780w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">Another reason trains beat cars. Photo: Streetsblog/Rudick</figcaption></figure>
+<p>The post <a href="https://sf.streetsblog.org/2025/09/17/windsor-stoked-about-its-new-train">Windsor Stoked About its New Train</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></content:encoded>
+
+
+            <post-id xmlns="com-wordpress:feed-additions:1">480095</post-id>
+            <media:content medium="image"
+                           url="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/WindsorSMART.png?w=564"
+                           width="564" height="564"/>
+        </item>
+        <item>
+            <title>Headlines, September 17</title>
+            <link>https://sf.streetsblog.org/2025/09/17/headlines-september-17-2</link>
+
+            <dc:creator><![CDATA[]]></dc:creator>
+            <pubDate>Wed, 17 Sep 2025 15:33:48 +0000</pubDate>
+            <category><![CDATA[Special Features]]></category>
+            <category><![CDATA[Today's Headlines]]></category>
+            <guid isPermaLink="false">https://sf.streetsblog.org/?p=480566</guid>
+
+            <description><![CDATA[<p>Get state headlines at&#160;Streetsblog California, national headlines at&#160;Streetsblog USA Independent journalism is more important than ever.&#160;Won’t you contribute?</p>
+<p>The post <a href="https://sf.streetsblog.org/2025/09/17/headlines-september-17-2">Headlines, September 17</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></description>
+            <content:encoded><![CDATA[
+<ul class="wp-block-list">
+<li>Supervisor Engardio, Supporter of Sunset Dunes, is Recalled (<a href="https://www.nytimes.com/2025/09/17/us/joel-engardio-san-francisco.html">NYTimes</a>, <a href="https://www.sfchronicle.com/election/article/sf-engardio-recall-sunset-future-21039867.php">SFChron</a>, <a href="https://www.sfgate.com/politics/article/sf-joel-engardio-recall-results-21052313.php">SFGate</a>)</li>
+
+
+
+<li>Who Will Mayor Lurie Pick to Replace Engardio? (<a href="https://www.sfchronicle.com/sf/article/sf-engardio-recall-lurie-pick-21039846.php">SFChron</a>)</li>
+
+
+
+<li>Now Recall Supporters Want to Destroy Sunset Dunes (<a href="https://sfstandard.com/2025/09/17/great-highway-recall-joel-engardio-sunset-dunes-prop-k/">SFStandard</a>)</li>
+
+
+
+<li>Covering San Francisco Transportation (<a href="https://www.kalw.org/2025-09-17/getting-around-the-bay-transit-month-edition">KALW</a>)</li>
+
+
+
+<li>&#8216;Hairball&#8217; Cleared of Encampments Again (<a href="https://www.sfchronicle.com/sf/article/cesear-chavez-encampment-clear-newsom-21051443.php">SFChron</a>)</li>
+
+
+
+<li>Supes Push for &#8216;Affordable Housing&#8217; in Mayor Plan (<a href="https://www.sfexaminer.com/news/urban-development/sf-affordable-housing-funding-dilemma-prompts-legislation/article_0579a94c-62ce-4cf3-8040-09cafeb26da3.html">SFExaminer</a>)</li>
+
+
+
+<li>New Leader for S.F. Downtown Redevelopment Corp. (<a href="https://www.sfchronicle.com/sf/article/san-francisco-downtown-development-corporation-21050914.php">SFChron</a>)</li>
+
+
+
+<li>Car Thief Crashes into Three Pedestrians in Berkeley (<a href="https://www.sfchronicle.com/crime/article/berkeley-hit-run-injuries-arrest-21051125.php">SFChron</a>, <a href="https://sfstandard.com/2025/09/16/hit-run-carjacking-attempt-berkeley-school-drop-ends-crash/">SFStandard</a>)</li>
+
+
+
+<li>Shooting on BART (<a href="https://www.sfchronicle.com/bayarea/article/15-year-old-bart-passenger-shot-train-oakland-21052416.php">SFChron</a>, <a href="https://www.sfgate.com/news/bayarea/article/oakland-teenager-shot-on-bart-train-wednesday-21052370.php">SFGate</a>)</li>
+
+
+
+<li>Commentary: Welcome to the Age of the Recall (<a href="https://missionlocal.org/2025/09/joel-engardio-recalled-now-anyone-can-be-recalled-by-everyone/">MissionLocal</a>)</li>
+
+
+
+<li>Commentary: San Francisco Dems Disgraced Themselves by Failing to Endorse Engardio (<a href="https://sfstandard.com/opinion/2025/09/17/ran-slogan-dems-change-sacrificed-ally/">SFStandard</a>)</li>
+</ul>
+
+
+
+<p>Get state headlines at&nbsp;<a rel="noreferrer noopener" href="https://cal.streetsblog.org/" target="_blank">Streetsblog California</a>, national headlines at&nbsp;<a rel="noreferrer noopener" href="https://usa.streetsblog.org/" target="_blank">Streetsblog USA</a></p>
+
+
+
+<p><em>Independent journalism is more important than ever.&nbsp;<a href="https://sf.streetsblog.org/make-a-donation-to-streetsblog-san-francisco/" rel="noreferrer noopener" target="_blank">Won’t you contribute</a>?</em></p>
+<p>The post <a href="https://sf.streetsblog.org/2025/09/17/headlines-september-17-2">Headlines, September 17</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></content:encoded>
+
+
+            <post-id xmlns="com-wordpress:feed-additions:1">480566</post-id>
+            <media:content medium="image"
+                           url="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2024/08/Newspaper_cropped.png?w=564"
+                           width="564" height="191"/>
+        </item>
+        <item>
+            <title>Breaking: US DOT Pulls Grants For Projects That Aren’t Focused on Cars</title>
+            <link>
+                https://usa.streetsblog.org/2025/09/16/breaking-us-dot-pulls-grants-for-projects-that-arent-focused-on-cars
+            </link>
+
+            <dc:creator><![CDATA[Streetsblog]]></dc:creator>
+            <pubDate>Tue, 16 Sep 2025 21:13:34 +0000</pubDate>
+            <category><![CDATA[Bipartisan Infrastructure Bill]]></category>
+            <category><![CDATA[Bipartisan infrastructure law]]></category>
+            <category><![CDATA[BUILD]]></category>
+            <category><![CDATA[Donald Trump]]></category>
+            <category><![CDATA[Federal Funding]]></category>
+            <category><![CDATA[Federal Government]]></category>
+            <category><![CDATA[federal grants]]></category>
+            <category><![CDATA[Issues, Campaigns and Miscellany]]></category>
+            <category><![CDATA[Promoted]]></category>
+            <category><![CDATA[RAISE]]></category>
+            <category><![CDATA[Trump]]></category>
+            <guid isPermaLink="false">https://usa.streetsblog.org/?p=282828</guid>
+
+            <description><![CDATA[<p>The Trump administration bias for "vehicular travel" — and the burning of fossil fuels that it requires — rears its ugly head again.</p>
+<p>The post <a href="https://usa.streetsblog.org/2025/09/16/breaking-us-dot-pulls-grants-for-projects-that-arent-focused-on-cars">Breaking: US DOT Pulls Grants For Projects That Aren’t Focused on Cars</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></description>
+            <content:encoded><![CDATA[<p>The Trump administration bias for &#8220;vehicular travel&#8221; — and the burning of fossil fuels that it requires — rears its ugly head again.</p>
+<p>The post <a href="https://usa.streetsblog.org/2025/09/16/breaking-us-dot-pulls-grants-for-projects-that-arent-focused-on-cars">Breaking: US DOT Pulls Grants For Projects That Aren’t Focused on Cars</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></content:encoded>
+
+
+            <enclosure
+                    url="https://lede-admin.usa.streetsblog.org/wp-content/uploads/sites/46/2025/09/duffy-thief.jpg?w=564"
+                    length="0" type=""/>
+
+            <post-id xmlns="com-wordpress:feed-additions:1">480599</post-id>
+            <media:content medium="image"
+                           url="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/duffy-thief.jpg?w=564"
+                           width="564" height="338"/>
+        </item>
+        <item>
+            <title>Headlines, September 16</title>
+            <link>https://sf.streetsblog.org/2025/09/16/headlines-september-16-2</link>
+
+            <dc:creator><![CDATA[]]></dc:creator>
+            <pubDate>Tue, 16 Sep 2025 15:22:10 +0000</pubDate>
+            <category><![CDATA[Special Features]]></category>
+            <category><![CDATA[Today's Headlines]]></category>
+            <guid isPermaLink="false">https://sf.streetsblog.org/?p=480506</guid>
+
+            <description><![CDATA[<p>Get state headlines at&#160;Streetsblog California, national headlines at&#160;Streetsblog USA Independent journalism is more important than ever.&#160;Won’t you contribute?</p>
+<p>The post <a href="https://sf.streetsblog.org/2025/09/16/headlines-september-16-2">Headlines, September 16</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></description>
+            <content:encoded><![CDATA[
+<ul class="wp-block-list">
+<li>BART From Now on to Make Computer Upgrades on the Weekend (<a href="https://www.sfchronicle.com/bayarea/article/bart-delays-computer-updgrades-21049328.php">SFChron</a>)</li>
+
+
+
+<li>BART &#8216;Speed Run&#8217; Highlights Transit Funding Fears (<a href="https://www.dailycal.org/news/city/amid-record-breaking-bart-speedrun-attempt-fears-around-bay-area-transit-funding-loom/article_31d26c32-9f1c-4942-a2bb-391bbb84094e.html">DailyCal</a>)</li>
+
+
+
+<li>More on Regional Transit Funding Measure/S.B.-63 (<a href="https://www.mercurynews.com/2025/09/15/sales-tax-transit/">MercNews</a>)</li>
+
+
+
+<li>Engardio Recall Election is Today (<a href="https://www.sfexaminer.com/news/politics/joel-engardio-recall-how-sf-hit-verge-of-ousting-supervisor/article_d3586372-006a-4315-bd88-792d7f805d50.html">SFExaminer</a>, <a href="https://www.sfchronicle.com/election/article/supervisor-engardio-recall-21039835.php">SFChron</a>, <a href="https://sfstandard.com/2025/09/16/engardio-recall-sunset-san-francisco-great-highway/">SFStandard</a>, <a href="https://missionlocal.org/2025/09/sf-sunset-joel-engardio-recall-chinese-voters/">MissionLocal</a>)</li>
+
+
+
+<li>More on Crossing Guards (<a href="https://www.sfexaminer.com/news/education/mixed-reaction-to-sf-plan-to-add-more-school-crossing-guards/article_c8d6e64b-8852-4a90-aba9-e7915068b9e3.html">SFExaminer</a>)</li>
+
+
+
+<li>Foot Traffic Economics in Different San Francisco Neighborhoods (<a href="https://www.sfchronicle.com/sf/article/neighborhoods-foot-traffic-data-21044913.php">SFChron</a>)</li>
+
+
+
+<li>But I Saw a Cyclist Run a Stop Sign (<a href="https://www.sfgate.com/travel/article/motorcyclist-caught-130-mph-california-highway-21049458.php">SFGate</a>)</li>
+
+
+
+<li>So I can Get Government Money for a &#8216;Clean&#8217; Car, but Not a Regular Bike? (<a href="https://www.axios.com/local/san-francisco/2025/09/16/clean-cars-4-all-bay-area-ev-transportation-funding-ca">Axios</a>)</li>
+
+
+
+<li>Waymo Coming to Oakland? (<a href="https://oaklandside.org/2025/09/15/is-waymo-coming-to-oakland/">Oaklandside</a>)</li>
+
+
+
+<li>Commentary: Hating on Sunset Dunes (<a href="https://sfstandard.com/2025/09/15/san-francisco-supervisor-joel-engardio-recall-great-highway/">SFStandard</a>)</li>
+
+
+
+<li>Commentary: S.B.-63 is a Win for San Mateo (<a href="https://www.smdailyjournal.com/opinion/guest_perspectives/senate-bill-63-is-a-win-for-san-mateo-county/article_9a6fc470-c73b-475b-b7cb-a0f408b6061f.html">DailyJournal</a>)</li>
+
+
+
+<li>Commentary: S.F.&#8217;s Tech Billboards are Terrifying (<a href="https://www.sfgate.com/tech/article/bay-area-tech-scene-dorky-now-terrifying-21042943.php">SFGate</a>)</li>
+</ul>
+
+
+
+<p>Get state headlines at&nbsp;<a href="https://cal.streetsblog.org/" rel="noreferrer noopener" target="_blank">Streetsblog California</a>, national headlines at&nbsp;<a href="https://usa.streetsblog.org/" rel="noreferrer noopener" target="_blank">Streetsblog USA</a></p>
+
+
+
+<p><em>Independent journalism is more important than ever.&nbsp;<a rel="noreferrer noopener" href="https://sf.streetsblog.org/make-a-donation-to-streetsblog-san-francisco/" target="_blank">Won’t you contribute</a>?</em></p>
+<p>The post <a href="https://sf.streetsblog.org/2025/09/16/headlines-september-16-2">Headlines, September 16</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></content:encoded>
+
+
+            <post-id xmlns="com-wordpress:feed-additions:1">480506</post-id>
+            <media:content medium="image"
+                           url="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2024/08/Newspaper_cropped.png?w=564"
+                           width="564" height="191"/>
+        </item>
+        <item>
+            <title>Seattle’s Human Population Is Up, But Its Car Population Isn’t</title>
+            <link>https://usa.streetsblog.org/2025/09/16/seattles-human-population-is-up-but-its-car-population-isnt
+            </link>
+
+            <dc:creator><![CDATA[Doug Trumm]]></dc:creator>
+            <pubDate>Tue, 16 Sep 2025 04:02:00 +0000</pubDate>
+            <category><![CDATA[Cars]]></category>
+            <category><![CDATA[Cities, Counties, and Countries]]></category>
+            <category><![CDATA[Cities, Counties, States and Countries]]></category>
+            <category><![CDATA[Promoted]]></category>
+            <category><![CDATA[Regional Transit]]></category>
+            <category><![CDATA[Seattle]]></category>
+            <guid isPermaLink="false">https://usa.streetsblog.org/?p=282693</guid>
+
+            <description><![CDATA[<p>Urbanists have long been making that case that growth in Seattle is the most climate-friendly and easiest to support with transit and infrastructure. And it's happening.</p>
+<p>The post <a href="https://usa.streetsblog.org/2025/09/16/seattles-human-population-is-up-but-its-car-population-isnt">Seattle’s Human Population Is Up, But Its Car Population Isn’t</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></description>
+            <content:encoded><![CDATA[<p>Urbanists have long been making that case that growth in Seattle is the most climate-friendly and easiest to support with transit and infrastructure. And it&#8217;s happening.</p>
+<p>The post <a href="https://usa.streetsblog.org/2025/09/16/seattles-human-population-is-up-but-its-car-population-isnt">Seattle’s Human Population Is Up, But Its Car Population Isn’t</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></content:encoded>
+
+
+            <enclosure
+                    url="https://lede-admin.usa.streetsblog.org/wp-content/uploads/sites/46/2025/09/Seattle-by-Jeffery-Hayes.jpg?w=564"
+                    length="0" type=""/>
+
+            <post-id xmlns="com-wordpress:feed-additions:1">480514</post-id>
+            <media:content medium="image"
+                           url="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/Seattle-by-Jeffery-Hayes.jpg?w=564"
+                           width="564" height="294"/>
+        </item>
+        <item>
+            <title>Legislative Update: It’s Over.</title>
+            <link>https://cal.streetsblog.org/2025/09/15/legislative-update-its-over</link>
+
+            <dc:creator><![CDATA[Damien Newton]]></dc:creator>
+            <pubDate>Mon, 15 Sep 2025 22:38:17 +0000</pubDate>
+            <category><![CDATA[Legislation]]></category>
+            <category><![CDATA[Promoted]]></category>
+            <category><![CDATA[State Capitol Updates]]></category>
+            <category><![CDATA[State Legislation]]></category>
+            <guid isPermaLink="false">https://cal.streetsblog.org/?p=69960</guid>
+
+            <description><![CDATA[<p>Did your favorite/least favorite bill make it to the finish line?</p>
+<p>The post <a href="https://cal.streetsblog.org/2025/09/15/legislative-update-its-over">Legislative Update: It’s Over.</a> appeared first on <a href="https://cal.streetsblog.org/">Streetsblog California</a>.</p>
+<p>The post <a href="https://cal.streetsblog.org/2025/09/15/legislative-update-its-over">Legislative Update: It’s Over.</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></description>
+            <content:encoded><![CDATA[<p>The legislative session is over. What is heading to the governor’s desk and what will have to wait until next year.</p>
+<p>The list of bills below is in alpha-numerical order. If you’re just looking for bill status, you can find it in bold.</p>
+<h2 class="wp-block-heading"><strong>Assembly Bills</strong></h2>
+<p><a href="https://legiscan.com/CA/bill/AB289/2025"><strong>AB 289</strong></a><strong>, State highway work zone speed safety program</strong>: AB 289 would allow the state to use automated speed cameras to enforce speed limits in areas where roads are under construction or repair. <strong>This legislation passed both houses.</strong></p>
+<p><a href="https://legiscan.com/CA/votes/AB366/2025"><strong>AB 366</strong></a><strong>, Ignition interlock devices</strong>: AB 366 would extend the operation of these provisions indefinitely after a driver is found guilty of a DUI and would repeal related reporting requirements. <strong>This legislation passed both houses.</strong><a href="https://cal.streetsblog.org/2025/02/05/petrie-norris-archuleta-introduce-legislation-mandating-breathalyzer-for-all-dui-offenders"> Read more</a>.</p>
+<p><a href="https://legiscan.com/CA/bill/AB394/2025"><strong>AB 394</strong></a><strong>, Transit Safety Bill</strong>: AB 394 would expand existing legal protections offered to riders and transit operators by strengthening penalties for assaults against transit employees, broaden enforcement against trespassing on transit systems, and empower courts to issue prohibition orders restricting access to individuals convicted of violent offenses against transit workers. <strong>This legislation passed both houses.</strong><a href="https://cal.streetsblog.org/2025/02/10/wilson-introduces-transit-safety-bill-first-in-series-of-transportation-safety-bills"> Read more</a>.</p>
+<p><a href="https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB697"><strong>AB 697</strong></a><strong>, Protected species: authorized take for State Route 37 expansion</strong>: AB 697 would allow for the construction of additional travel lanes on State Route 37 between Vallejo and State Route 121 in Sonoma County despite the project area running through protected habitats and wetlands passed the Assembly Water, Parks and Wildlife Committee. <strong>It passed the Assembly but was not passed by the Senate</strong>.<a href="https://cal.streetsblog.org/2025/04/29/legislation-moves-in-assembly-to-loosen-environmental-regulations-on-proposed-widening-of-sr-37"> Read more</a>.</p>
+<p><a href="https://legiscan.com/CA/bill/AB891/2025"><strong>AB 891</strong></a><strong>,</strong> Quick-Build Project Pilot Program: AB 891 would require Caltrans to develop quick-build bike lane and intersection projects to improve safety on state highways for cyclists and pedestrians. <strong>It passed the Assembly but was not passed by the Assembly.</strong><a href="https://cal.streetsblog.org/2025/06/06/quick-build-legislation-makes-it-through-the-assembly"> Read more</a>.</p>
+<p><a href="https://legiscan.com/CA/votes/AB939/2025"><strong>AB 939</strong></a><strong>, The Safe, Sustainable, Traffic-Reducing Transportation Bond Act of 2026</strong>: AB 939, which would have placed a bond on the November 3, 2026 statewide ballot to fund sustainable transportation throughout California,<strong> did not receive a committee hearing or vote.</strong> <a href="https://cal.streetsblog.org/2025/02/25/new-legislation-would-ask-voters-to-approve-20-billion-bond-for-transit-and-active-transportation">Read more</a>.</p>
+<p><a href="https://legiscan.com/CA/text/AB954/id/2829911"><strong>AB 954</strong></a><strong>, The Bike Highways Bill</strong>: A heavily amended AB 954 now adds a definition of bike highways to state planning documents, making it possible for government bodies to develop and fund their own programs or for the legislature to take up bike highways again in a future session. <strong>It passed the Assembly but did not pass the Senate</strong><a href="https://cal.streetsblog.org/2025/06/05/wieners-legislation-to-upzone-near-transit-barely-clears-the-senate"> Read more</a>.</p>
+<p><a href="https://leginfo.legislature.ca.gov/faces/billVotesClient.xhtml?bill_id=202520260AB1207"><strong>AB 1207</strong></a><strong>, </strong><strong>Climate change: market-based compliance mechanism: extension: </strong>This legislation reauthorizes the “capture mechanism” for the state’s Cap-and-Trade program until 2045. While it gives greater authority to the state to roll back the amount of “free” credits to pollute a company can have, it didn’t go far enough for many environmental groups. <strong>This legislation passed both the Assembly and the Senate. </strong><a href="https://cal.streetsblog.org/2025/09/10/cap-and-trade-reauthorization-legislation-makes-the-deadline-could-be-approved-on-friday">Read More.</a></p>
+<h2 class="wp-block-heading"><strong>Senate Bills</strong></h2>
+<p><a href="https://legiscan.com/CA/bill/SB63/2025"><strong>SB 63</strong></a><strong>, San Francisco Bay area: local revenue measure: transportation funding</strong>: SB 63 would allow Bay Area transit agencies to place a measure on the November 2026 ballot to fund operations. <strong>It passed the Senate and the Assembly.</strong><a href="https://sf.streetsblog.org/2025/03/24/transit-funding-measure-reintroduced"> Read more</a>. <a href="https://sf.streetsblog.org/2025/09/15/advocates-and-agencies-celebrate-progress-towards-funding-transit">Update from Streetsblog SF earlier today</a>.</p>
+<p><a href="https://legiscan.com/CA/votes/SB71/2025"><strong>SB 71</strong></a><strong>, California Environmental Quality Act exemptions for transit projects</strong>: SB 71 would streamline the state-mandated environmental review under the California Environmental Quality Act (CEQA) for public transportation and bike and pedestrian infrastructure projects that reduce car dependency. <strong>I</strong><a href="https://cal.streetsblog.org/2025/09/09/legislation-to-streamline-the-environmental-review-for-transit-bicycle-and-pedestrian-projects-passes-the-assembly"><strong>t passed the Senate and the Assembly.</strong></a><a href="https://sf.streetsblog.org/2025/03/24/transit-funding-measure-reintroduced"> Read more</a>.<a href="https://cal.streetsblog.org/2025/01/24/wiener-introduces-legislation-to-continue-ceqa-exemption-for-sustainable-transportation"> Read more</a>.</p>
+<p><a href="https://leginfo.legislature.ca.gov/faces/billVotesClient.xhtml?bill_id=202520260SB79"><strong>SB79</strong></a><strong>, Housing development: transit-oriented development: </strong>SB 79 allows municipalities to upzone near transit and gives transit agencies greater leeway in developing property that they own. The legislation has been opposed by some environmental and housing groups noting it overrides existing rules in some cities (Los Angeles for example) that have spurred affordable housing growth.<a href="https://cal.streetsblog.org/2025/09/11/sb-79-passes-assembly-still-needs-senate-concurrence-before-the-governors-desk"> <strong>It passed the Senate and the Assembly.</strong></a><a href="https://cal.streetsblog.org/2025/06/05/wieners-legislation-to-upzone-near-transit-barely-clears-the-senate"> Read more</a> and<a href="https://cal.streetsblog.org/2025/08/25/politics-heat-up-around-sb79-dems-support-los-angeles-opposes"> more</a>.</p>
+<p><a href="https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=202520260SB222"><strong>SB 222</strong></a><strong>, Climate Disasters, Civil Actions</strong>: SB 222 would allow victims of climate disasters their insurers or the California FAIR Plan to sue oil companies to recoup losses <strong>was defeated in the Senate Judiciary Committee.</strong> <strong>This legislation cannot be voted on again until the next session.</strong><a href="https://cal.streetsblog.org/2025/04/09/senate-committee-rejects-legislation-allowing-lawsuits-against-oil-and-gas-companies-for-climate-disasters"> Read more</a>.</p>
+<p><a href="https://legiscan.com/CA/votes/SB273/2025"><strong>SB 273</strong></a><strong>, Surplus Land</strong>: This heavily amended bill would have allowed for 2,000 new oil rigs to be permitted every year in Kern County. The legislation was hastily introduced, but it didn’t receive a vote in either the Assembly or Senate. <a href="https://cal.streetsblog.org/2025/09/11/last-minute-bill-would-allow-thousands-of-new-oil-wells-annually-in-kern-county">Read more</a>.</p>
+<p><a href="https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=202520260SB445"><strong>SB 445</strong></a><strong>, Transportation: planning: complete streets facilities: sustainable transportation projects</strong>: SB 445 would create deadlines on local governments, special districts, telecommunications companies, and public and private utilities to comply with permitting processes so that the process will not be extended while local governments barter for concessions. <strong>It passed the Senate but not the Assembly.</strong></p>
+<p><a href="https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB601"><strong>SB 601</strong></a><strong>, California Freshwater</strong>: SB 601 would restore state-level protections to California’s freshwater that used to exist under federal law. <strong>It passed the Senate but not the Assembly</strong><a href="https://cal.streetsblog.org/2025/02/21/sen-ben-allen-moves-to-protect-californias-freshwater"> Read more</a>.</p>
+<p><a href="https://legiscan.com/CA/rollcall/SB720/id/1562986"><strong>SB 720</strong></a>, <strong>Automated traffic enforcement system programs</strong>: SB 720 would modernize state regulations for municipalities to create and operate red light camera programs. Similar changes in other states have led to dramatic decreases in both crashes and fatalities. <strong>It passed the Senate and the Assembly.</strong><a href="https://cal.streetsblog.org/2025/07/17/legislation-to-modernize-red-light-cameras-in-california-has-cleared-the-senate-and-is-moving-in-the-assembly"> Read More</a>.</p>
+<p><a href="https://leginfo.legislature.ca.gov/faces/billVotesClient.xhtml?bill_id=202520260SB840"><strong>SB-840</strong></a><strong>, Greenhouse gases: Greenhouse Gas Reduction Fund: studies. </strong>A companion bill to AB 1207, this bill updated the expenditure program for the state’s Cap-and-Trade program through 2045. Amongst other things, the program guarantees $1 billion annually for the California High Speed Rail project. <strong>It passed the Senate and the Assembly. </strong><a href="https://cal.streetsblog.org/2025/09/10/cap-and-trade-reauthorization-legislation-makes-the-deadline-could-be-approved-on-friday">Read More.</a></p>
+<p>The post <a href="https://cal.streetsblog.org/2025/09/15/legislative-update-its-over">Legislative Update: It’s Over.</a> appeared first on <a href="https://cal.streetsblog.org/">Streetsblog California</a>.</p>
+<p>The post <a href="https://cal.streetsblog.org/2025/09/15/legislative-update-its-over">Legislative Update: It’s Over.</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></content:encoded>
+
+
+            <enclosure
+                    url="https://lede-admin.cal.streetsblog.org/wp-content/uploads/sites/52/2017/09/Bike-CapitolupdatecroppedsmallWORDS-1.jpg?w=564"
+                    length="0" type=""/>
+
+            <post-id xmlns="com-wordpress:feed-additions:1">480503</post-id>
+            <media:content medium="image"
+                           url="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/Bike-CapitolupdatecroppedsmallWORDS-1_c883cf.jpg?w=564"
+                           width="564" height="465"/>
+        </item>
+        <item>
+            <title>Advocates and Agencies Celebrate Progress Towards Funding Transit</title>
+            <link>
+                https://sf.streetsblog.org/2025/09/15/advocates-and-agencies-celebrate-progress-towards-funding-transit
+            </link>
+
+            <dc:creator><![CDATA[Roger Rudick]]></dc:creator>
+            <pubDate>Mon, 15 Sep 2025 21:27:30 +0000</pubDate>
+            <category><![CDATA[Advocacy]]></category>
+            <category><![CDATA[Community, Advocacy and Labor]]></category>
+            <category><![CDATA[Issues, Campaigns and Miscellany]]></category>
+            <category><![CDATA[Transit Advocacy]]></category>
+            <category><![CDATA[Promoted]]></category>
+            <guid isPermaLink="false">https://sf.streetsblog.org/?p=480487</guid>
+
+            <description><![CDATA[<p>Funding measure advances to the governor's desk. But it's not over yet.</p>
+<p>The post <a href="https://sf.streetsblog.org/2025/09/15/advocates-and-agencies-celebrate-progress-towards-funding-transit">Advocates and Agencies Celebrate Progress Towards Funding Transit</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></description>
+            <content:encoded><![CDATA[
+<p>Advocates have worked tirelessly to ensure a <a href="https://sf.streetsblog.org/2025/09/08/emergency-rally-advocates-demand-gov-newsom-fund-transit-now">$750 million bridge loan</a> from the state to keep Bay Area transit running. And they&#8217;ve campaigned hard to get <a href="https://legiscan.com/CA/text/SB63/id/3046901" target="_blank" rel="noreferrer noopener">Senate Bill 63</a>, the legislation by Senators Scott Wiener and Jesse Arreguín to fund transit, in front of voters next year. Both have advanced, S.B. 63 in particular.</p>
+
+
+
+<p>From <a href="https://www.seamlessbayarea.org/">Seamless Bay Area</a>&#8216;s Adina Levin:</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p>Hooray! The bill to authorize a regional transit funding measure,&nbsp;S.B. 63, passed the legislature at 1:30 a.m. in the dark of Saturday morning! Now it’s on to the Governor&#8217;s desk where it&#8217;s very likely to get signed</p>
+
+
+
+<p>This measure will provide 14 years of consistent funding to keep transit running and improving on the region’s most used services &#8211; Muni, BART, Caltrain and AC Transit, and support other services around the region including SamTrans and VTA. The measure will fund and require seamless transit &#8211; making transit more coordinated, affordable and accessible, with free transfers, accessible wayfinding signs, and more!</p>
+</blockquote>
+
+
+
+<p>From <a href="https://www.bart.gov/news/articles/2025/news20250913">a BART statement</a>:</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p>S.B. 63 is a historic opportunity to allow voters in five counties of the Bay Area to consider a 14-year sales tax measure in November 2026 to preserve and improve transit. BART, and the entire transit network that keeps the Bay Area moving, stand to benefit from this bill.&nbsp;</p>
+
+
+
+<p>The legislation is needed because remote work has caused a decline in operating revenue for various operators and deficits are too large to solve through cuts alone. Since the COVID-19 pandemic, it has been clear that BART’s outdated funding model no longer works. BART is facing annual operating deficits of $350-400 million once the emergency assistance we have been provided runs out at the end of Fiscal Year 2026. </p>
+</blockquote>
+
+
+
+<p> &#8220;Keeping our trains and buses running frequently and reliably is essential for the future of the Bay Area,&#8221; said Senator Wiener. “I’m grateful to see this incredible coalition from across the Bay Area come together to ensure our transit systems are financially stable and able to provide improved service for our residents.</p>
+
+
+
+<figure class="wp-block-image aligncenter size-large"><img loading="lazy" decoding="async" width="1024" height="768" src="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250908_164547334.jpg?w=710" alt="" class="wp-image-480167" srcset="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250908_164547334.jpg 4032w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250908_164547334.jpg?resize=300,225 300w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250908_164547334.jpg?resize=768,576 768w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250908_164547334.jpg?resize=1024,768 1024w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250908_164547334.jpg?resize=1536,1152 1536w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250908_164547334.jpg?resize=2048,1536 2048w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250908_164547334.jpg?resize=1080,810 1080w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250908_164547334.jpg?resize=564,423 564w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250908_164547334.jpg?resize=710,533 710w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250908_164547334.jpg?resize=290,218 290w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250908_164547334.jpg?resize=320,240 320w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250908_164547334.jpg?resize=235,176 235w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250908_164547334.jpg?resize=150,113 150w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250908_164547334.jpg?resize=100,75 100w, https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/09/PXL_20250908_164547334.jpg?resize=780,585 780w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">S.F. State Senator Scott Wiener addressing a crowd of advocates and lawmakers last week across from the California State Office Building in San Francisco. Photo: Streetsblog/Rudick</figcaption></figure>
+
+
+
+<p>However, there&#8217;s still much work to be done. Also from Seamless:</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p>Next, over 100,000 signatures will need to be gathered across the 5 counties. And then the campaign to reach voters and get more than 50 percent of the vote by November 2026. Plus, San Francisco will need a second parcel tax measure on the same November ballot to save Muni service.</p>
+</blockquote>
+
+
+
+<p>Moreover, despite the Governor&#8217;s Department of Finance&#8217;s failure to commit to a <a href="https://sf.streetsblog.org/2025/09/05/call-to-action-tell-governor-newsom-again-to-support-transit">$750 million bridge loan</a> to keep transit running until the measure hits the ballot, it seems a deal is in the making. <a href="https://www.gov.ca.gov/2025/09/10/governor-newsom-announces-continued-state-financial-support-for-bay-area-transit/">Newsom has signaled</a> his support; there&#8217;s an option to get this done as late as January in special session, which would be enough time for operators to avoid dire service cuts. &#8220;We&#8217;re now continuing discussions to finalize the loan,&#8221; said Erik Mebust with Wiener&#8217;s office. &#8220;We all want to get this finalized, hopefully some time this fall.&#8221;</p>
+
+
+
+<p>&#8220;The risks to our essential transit systems are real, and we have a long road ahead to securing this long-term funding and stabilizing our transit systems. I’m confident that in spite of these challenges, with partnership from leaders across the region we can ensure our public transportation systems remain vibrant and reliable,&#8221; said Wiener in a statement.</p>
+
+
+
+<p><em><a href="https://www.transbaycoalition.org/?link_id=7&amp;can_id=25b80f35b8285f3fa952daafb4dfd0b4&amp;source=email-2-big-wins-for-bay-area-transit-yesterday-because-of-you-2&amp;email_referrer=email_2886959&amp;email_subject=victory-sb63-regional-funding-measure-bill-passes-legislature-now-to-governor-and-voters">The Transbay Coalition</a>, which also worked on these campaigns along with Seamless, the <a href="https://luma.com/user/usr-smo2NsfnnEoodRQ">San Francisco Transit Riders</a>, and many other groups, suggests advocates come celebrate at a <a href="https://click.actionnetwork.org/ss/c/u001.SNYHID0cgDJeR88MOfSMuZuB_UYPkmkCFhJQ3jzD3wzda2hTGa3LJixdFiv2eGzcNpqa9L253vJ0VGfdl8vPmD21F3NXterpUsngXltZJjqvSVO5ylCk5p_be0ux0ju6V23oybW6KGlLSAWd2iKzXNFsiz1F1daN1MuPE0w4hpLbKxl4rZm2usbWdJCUQO7Fz73S5B4YxA7IExdauL4V3h3tN6ArM7D4h61rDUzL3ntDHdC3J5JB9BcIQ5ptpUHOdtUdcm6Kx8ECxDagXU_xIW7r0U-H2x8JzHAzW8j1v-WLLnMlCk9qUCKz4w-fSM2EW7FsQO6raOUxfdSUTwD6VBxSCMeJA1ePIrETwfckYsS3mebdJZqKxkJqCw05MX_XiTvSs8TtHysweg9B1U2wuw/4jv/Vdo6NaS2TquZpkwwhEZKxg/h2/h001.IMRLknLFDmBshP2VLmihqfB37aonyIG-mhW_s8w3aqA" target="_blank" rel="noreferrer noopener">Peninsula Transit Happy Hour</a> in Redwood City on September 29. There&#8217;s also the <a href="https://click.actionnetwork.org/ss/c/u001.SNYHID0cgDJeR88MOfSMuajNNLNtklCtIrQLwLGUhzzRJ6dhRmZG0yBAu6cUaWaclvYDenkfy9q3sEXwOQPBZMyqcVZtLrKxIVHdOER8Ch11oK0nJU9uJv3mCyXkAUBg9PFspNjJuZ36G9XSq5yBmKjX3wWlQHpAgtUjNDv54ClTEJvuS7spSZr4pdylQC7z3dj_Id6XPon5-AXJCSoRYZFvq8j39A-cfs78CWdxTg3Wgg6FnIS11OPmgrhc6qjmX21h7D9fbRWd1ZdIOlH5deHriGxulVYpZl38Ct0IZ2-Ji94vQgcENkR7VFPmhmPWxF2nkZ5wn1vXlwo5ijKDyAE5RQbviIKOmO7s-O2jTdJztYGSmqDfow4FFUzGQUk2oyoqXzQ21MYDoSELhl-pKg/4jv/Vdo6NaS2TquZpkwwhEZKxg/h3/h001.dA5xOe2-E5z-gP-Rh9YqW6GjfYhhWUJi4hbrI5-F3yU" target="_blank" rel="noreferrer noopener">Rider First Awards</a> in San Francisco on October 10 to celebrate the movement and leaders that moved this bill along.</em></p>
+<p>The post <a href="https://sf.streetsblog.org/2025/09/15/advocates-and-agencies-celebrate-progress-towards-funding-transit">Advocates and Agencies Celebrate Progress Towards Funding Transit</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></content:encoded>
+
+
+            <post-id xmlns="com-wordpress:feed-additions:1">480487</post-id>
+            <media:content medium="image"
+                           url="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2025/08/Caltrain_KISS_leaving_Millbrae_station_August_2024.jpg?w=564"
+                           width="564" height="424"/>
+        </item>
+        <item>
+            <title>This Week: Engardio Recall Election, Bay Wheels, Biketopia, Muni Trivia</title>
+            <link>
+                https://sf.streetsblog.org/2025/09/15/this-week-engardio-recall-election-bay-wheels-biketopia-muni-trivia
+            </link>
+
+            <dc:creator><![CDATA[Roger Rudick]]></dc:creator>
+            <pubDate>Mon, 15 Sep 2025 15:27:33 +0000</pubDate>
+            <category><![CDATA[Special Features]]></category>
+            <category><![CDATA[Today's Headlines]]></category>
+            <guid isPermaLink="false">https://sf.streetsblog.org/?p=480442</guid>
+
+            <description><![CDATA[<p>Here is a list of events this week. Got an event we should know about?&#160;Drop us a line.</p>
+<p>The post <a href="https://sf.streetsblog.org/2025/09/15/this-week-engardio-recall-election-bay-wheels-biketopia-muni-trivia">This Week: Engardio Recall Election, Bay Wheels, Biketopia, Muni Trivia</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></description>
+            <content:encoded><![CDATA[
+<p>Here is a list of events this week.</p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Tuesday</strong> <a href="https://www.sf.gov/member-board-of-supervisors-district-4-recall-election">Engardio Recall Election</a>. San Francisco will hold a Recall Election for voters to decide whether to remove District 4 Supervisor Joel Engardio from office. September 16, 7 a.m.-8 p.m. Find your polling location <a href="https://sfelections.org/tools/map_poll_time/">here</a>.</li>
+
+
+
+<li><strong>Tuesday</strong>&nbsp;<a href="https://sfbike.org/event/intro-to-biking-in-sf-with-bay-wheels-17/">Biking in S.F. with Bay Wheels</a>. This class is for people who already know how to bike but are considering bicycling more in the city, joining Bay Wheels, or looking to brush up on city riding skills. Tuesday, September 16, 6-7 p.m. Register for&nbsp;<a href="https://us02web.zoom.us/meeting/register/JDYAIwwDRHqr6QXPwoSIOw">Zoom link</a>.</li>
+
+
+
+<li><strong>Wednesday </strong><a href="https://unm.zoom.us/webinar/register/WN_qfAffsBsTSOlQaOE9arBMw#/registration">Shifts in Pedestrian Serious Injuries and Fatalities</a>. This Center for Bicycle and Pedestrian Safety webinar explores how pedestrian safety issues have shifted on the urban/suburban/rural continuum. Wednesday, September 17, 11 a.m. Register for <a href="https://unm.zoom.us/webinar/register/WN_qfAffsBsTSOlQaOE9arBMw#/registration">Zoom link</a>.</li>
+
+
+
+<li><strong>Wednesday</strong> <a href="https://bikeeastbay.org/event/biketopia-2025/">Biketopia 2025</a>. Join Bike East Bay’s annual member party and fundraiser. Wednesday, September 17, 6-8:30 p.m. Preservation Park, 1233 Preservation Park Way, Oakland.</li>
+
+
+
+<li><strong>Thursday </strong><a href="https://www.sfmta.com/calendar/muni-presents-live-routle-trivia-night">Muni Presents: Live Routle &amp; Trivia Night</a>. Come connect with fellow Muni lovers and celebrate the system that keeps SF moving. Thursday, September 18, 7 p.m. Standard Deviant Brewing, 280 14th Street, S.F.</li>
+
+
+
+<li><strong>Saturday and Sunday</strong> <a href="https://www.sfmta.com/calendar/muni-heritage-weekend-2025">Muni Heritage Weekend</a>. Ride vintage transit vehicles. Saturday and Sunday, September 20 and 21,  10 a.m.-4 p.m. San Francisco Railway Museum, 77 Steuart Street, S.F.</li>
+
+
+
+<li><strong>Saturday</strong>&nbsp;<a href="https://borp.app.neoncrm.com/np/clients/borp/event.jsp?event=108216">Free Adaptive Cycling in Golden Gate Park</a>. BORP&nbsp;hosts weekly adaptive cycling opportunities that cater to riders of all abilities. Saturday, September 20, 10 a.m.-3 p.m. GGP Music Concourse Bandshell, 75 Hagiwara Tea Garden, S.F.</li>
+
+
+
+<li><strong>Saturday</strong> <a href="https://events.humanitix.com/doors-open-16th-street-station">Doors Open: 16th Street Station</a>. A rare opportunity to visit the Bay Area&#8217;s shuttered railroad station, Oakland&#8217;s Southern Pacific 16th St. Station. Saturday, September 20, 10 a.m.-2 p.m., 16th Street Train Station, West Oakland. <a href="https://events.humanitix.com/doors-open-16th-street-station/tickets">RSVP required</a>.</li>
+</ul>
+
+
+
+<p>Got an event we should know about?&nbsp;<a rel="noreferrer noopener" href="https://sf.streetsblog.org/suggest-event/" target="_blank"></a><a rel="noreferrer noopener" href="https://sf.streetsblog.org/suggest-event/" target="_blank">Drop us a line</a>.</p>
+<p>The post <a href="https://sf.streetsblog.org/2025/09/15/this-week-engardio-recall-election-bay-wheels-biketopia-muni-trivia">This Week: Engardio Recall Election, Bay Wheels, Biketopia, Muni Trivia</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></content:encoded>
+
+
+            <post-id xmlns="com-wordpress:feed-additions:1">480442</post-id>
+            <media:content medium="image"
+                           url="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2020/08/HiDefEventsLogo.png?w=500"
+                           width="500" height="500"/>
+        </item>
+        <item>
+            <title>Headlines, September 15</title>
+            <link>https://sf.streetsblog.org/2025/09/15/headlines-september-15-2</link>
+
+            <dc:creator><![CDATA[]]></dc:creator>
+            <pubDate>Mon, 15 Sep 2025 15:23:57 +0000</pubDate>
+            <category><![CDATA[Special Features]]></category>
+            <category><![CDATA[Today's Headlines]]></category>
+            <guid isPermaLink="false">https://sf.streetsblog.org/?p=480450</guid>
+
+            <description><![CDATA[<p>Get state headlines at&#160;Streetsblog California, national headlines at&#160;Streetsblog USA Independent journalism is more important than ever.&#160;Won’t you contribute?</p>
+<p>The post <a href="https://sf.streetsblog.org/2025/09/15/headlines-september-15-2">Headlines, September 15</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></description>
+            <content:encoded><![CDATA[
+<ul class="wp-block-list">
+<li>Transit Funding Bills Head to Governor&#8217;s Desk (<a href="https://www.sfchronicle.com/politics/article/bay-area-transit-funding-wiener-arreguin-21046312.php">SFChron1</a>, <a href="https://www.trains.com/pro/passenger/california-legislature-clears-path-for-ballot-measure-to-support-bay-area-transit/">Trains</a>, <a href="https://www.berkeleyside.org/2025/09/12/transit-funding-bill-passes-california-senate-heads-to-gov-newsom">Berkeleyside</a>, <a href="https://hoodline.com/2025/09/california-legislature-passes-connect-bay-area-act-awaiting-newsom-s-decision-on-future-of-transit-funding/">Hoodline</a>)</li>
+
+
+
+<li>More on Muni&#8217;s Budget Woes (<a href="https://abc7news.com/post/what-know-munis-budget-deficit-efforts-save-transit-agency/17794761/">ABC7</a>)</li>
+
+
+
+<li>Get Ready for the Robocar Traffic Jam (<a href="https://www.vox.com/future-perfect/461393/self-driving-cars-cities-congestion-avs-parking">VOX</a>)</li>
+
+
+
+<li>Tourists Take Robocars on Joyrides (<a href="https://www.sfchronicle.com/sf/article/waymo-tourists-san-francisco-21027130.php">SFChron</a>)</li>
+
+
+
+<li>Exploratorium to Host Conference on Sea Level Rise (<a href="https://www.sfexaminer.com/news/climate/bay-area-rising-sea-levels-focus-of-sf-exploratorium-event/article_9775abf5-2a61-447a-801d-f3516ddce649.html">SFExaminer</a>)</li>
+
+
+
+<li>Supervisor Mahmood Trying to Convert Divis/Oak Carwash to Housing (<a href="https://www.sfchronicle.com/sf/article/housing-car-wash-billboard-mahmood-21039179.php">SFChron</a>)</li>
+
+
+
+<li>S.F. Has Fewest Kids (<a href="https://www.sfchronicle.com/sf/article/san-francisco-fewest-kids-data-21044908.php">SFChron</a>)</li>
+
+
+
+<li>Napa Drivers Cutting Through Parking Lots (<a href="https://www.sfchronicle.com/bayarea/article/napa-fines-traffic-shortcuts-21047568.php">SFChron</a>)</li>
+
+
+
+<li>Commentary: Supervisor Sauter Trying to Clear Out Legislative Sludge (<a href="https://sfstandard.com/opinion/2025/09/15/aaron-peskin-danny-sauter-north-beach/">SFStandard</a>)</li>
+
+
+
+<li>Commentary: Strategies for Funding SMART (<a href="https://www.marinij.com/2025/09/13/dick-spotswood-smart-citizens-group-pushing-toward-tax-initiative-in-june/">MarinIJ</a>) </li>
+
+
+
+<li>Commentary: Raging in Sunset District Will Continue (<a href="https://www.sfchronicle.com/opinion/article/engardio-recall-sunset-supervisor-21043823.php">SFChron</a>)</li>
+</ul>
+
+
+
+<p>Get state headlines at&nbsp;<a rel="noreferrer noopener" href="https://cal.streetsblog.org/" target="_blank">Streetsblog California</a>, national headlines at&nbsp;<a rel="noreferrer noopener" href="https://usa.streetsblog.org/" target="_blank">Streetsblog USA</a></p>
+
+
+
+<p><em>Independent journalism is more important than ever.&nbsp;<a href="https://sf.streetsblog.org/make-a-donation-to-streetsblog-san-francisco/" rel="noreferrer noopener" target="_blank">Won’t you contribute</a>?</em></p>
+<p>The post <a href="https://sf.streetsblog.org/2025/09/15/headlines-september-15-2">Headlines, September 15</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></content:encoded>
+
+
+            <post-id xmlns="com-wordpress:feed-additions:1">480450</post-id>
+            <media:content medium="image"
+                           url="https://lede-admin.sf.streetsblog.org/wp-content/uploads/sites/47/2024/08/Newspaper_cropped.png?w=564"
+                           width="564" height="191"/>
+        </item>
+    </channel>
+</rss>
