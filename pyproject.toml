@@ -3,7 +3,7 @@ name = 'News'
 version = '0.0.1'
 requires-python = '==3.12.*'
 dependencies = [
-    "beautifulsoup4 == 4.13.5",
+    "beautifulsoup4 == 4.14.2",
     "boto3 == 1.40.30",
     "feedparser == 6.0.12",
     "Flask == 3.1.2",
