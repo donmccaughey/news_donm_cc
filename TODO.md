@@ -51,6 +51,43 @@
 			"modified": "2025-06-19T01:50:03.260011+00:00",
 			"seq_id": 71509
 		},
+    Another example, probably due to appearing simultaneously in hn and lob during the same extraction:
+		{
+			"url": "http://retrovania-vgjunk.blogspot.com/2016/11/fireman-sam-commodore-64.html",
+			"url_identity": "retrovania-vgjunk.blogspot.com",
+			"title": "Fireman Sam (Commodore 64)",
+			"sources": [
+				{
+					"url": "https://news.ycombinator.com/item?id=45530172",
+					"site_id": "hn",
+					"count": 6
+				},
+				{
+					"url": "https://lobste.rs/s/pydvse/fireman_sam_commodore_64",
+					"site_id": "lob",
+					"count": 4
+				}
+			],
+			"created": "2025-10-09T16:55:03.594938+00:00",
+			"modified": "2025-10-09T16:55:03.594938+00:00",
+			"seq_id": 93493
+		},
+		{
+			"url": "http://retrovania-vgjunk.blogspot.com/2016/11/fireman-sam-commodore-64.html",
+			"url_identity": "retrovania-vgjunk.blogspot.com",
+			"title": "Fireman Sam (COMMODORE 64)",
+			"sources": [
+				{
+					"url": "https://lobste.rs/s/pydvse/fireman_sam_commodore_64",
+					"site_id": "lob",
+					"count": 1
+				}
+			],
+			"created": "2025-10-09T16:55:03.594938+00:00",
+			"modified": "2025-10-09T16:55:03.594938+00:00",
+			"seq_id": 93492
+		},
+ 
 
 - why do some old daringfireball items reappear?
 		{

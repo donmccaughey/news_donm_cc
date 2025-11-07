@@ -50,6 +50,11 @@ class Feeds(Encodable, Iterable[Feed], Serializable):
                 URL('https://charity.wtf/feed/'),
             ),
             Feed(
+                'Gary Marcus',
+                'gm',
+                URL('https://garymarcus.substack.com/feed'),
+            ),
+            Feed(
                 'Molly White',
                 'mw',
                 URL('https://newsletter.mollywhite.net/feed'),
