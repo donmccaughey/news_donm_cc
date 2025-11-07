@@ -116,6 +116,7 @@ SKIP_SITES = {
 
     'racket.news',
     'reason.com',
+    'reviewcanada.ca',
 
     'samaltman.com',
     'scottaaronson.blog',
@@ -172,5 +173,6 @@ SKIP_SITES = {
     'youtube.com',
     'youtu.be',
 
+    '3quarksdaily.com',
     '972mag.com',
 }
