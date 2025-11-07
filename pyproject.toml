@@ -12,6 +12,19 @@ dependencies = [
 ]
 
 
+[dependency-groups]
+dev = [
+    "boto3-stubs[s3] == 1.40.30",
+    "botocore-stubs == 1.40.30",
+    "mypy == 1.18.1",
+    "pytest == 8.4.2",
+    "pytest-cov == 7.0.0",
+    "pytest-randomly == 4.0.1",
+    "types-beautifulsoup4 == 4.12.0.20250516",
+    "types-requests == 2.32.4.20250913",
+]
+
+
 [tool.coverage.run]
 branch = true
 include = [
@@ -31,16 +44,3 @@ check_untyped_defs = true
 [[tool.mypy.overrides]]
 module = 'feedparser'
 ignore_missing_imports = true
-
-
-[tool.uv]
-dev-dependencies = [
-    "boto3-stubs[s3] == 1.40.30",
-    "botocore-stubs == 1.40.30",
-    "mypy == 1.18.1",
-    "pytest == 8.4.2",
-    "pytest-cov == 7.0.0",
-    "pytest-randomly == 4.0.1",
-    "types-beautifulsoup4 == 4.12.0.20250516",
-    "types-requests == 2.32.4.20250913",
-]
