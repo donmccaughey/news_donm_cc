@@ -2,9 +2,9 @@ import logging
 from datetime import datetime, timezone
 from pathlib import Path
 
-from extractor import CachedFeeds, CachedNews, parse_options
+from extractor import CachedFeeds, CachedNews, parse_options, S3Store
 from news import LAST_EXTRACTION_FILE
-from utility import iso
+from utility import iso, NoStore, ReadOnlyStore, Store
 
 
 def main():
@@ -14,12 +14,16 @@ def main():
     log = logging.getLogger()
     log.name = Path(__file__).name
 
+    store: Store = NoStore() if options.no_store else S3Store()
+    if options.read_only:
+        store = ReadOnlyStore(store)
+
     with CachedFeeds(options.cache_dir, options.reddit_private_rss_feed) as feeds:
         now = datetime.now(timezone.utc)
         items = []
         for feed in feeds:
             items += feed.get_items(now)
-        with CachedNews(options.cache_dir, options.no_store, options.read_only) as news:
+        with CachedNews(options.cache_dir, store) as news:
             added_count, modified_count = news.update(items, now)
             removed_count = news.remove_old(now)
 
