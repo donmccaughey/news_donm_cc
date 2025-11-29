@@ -55,4 +55,4 @@ src/feeds/feeds_test.py:80: error: Item "str" of "JSONDict | list[JSONType] | tu
 src/feeds/feeds_test.py:80: error: Item "int" of "JSONDict | list[JSONType] | tuple[JSONType, ...] | str | int | float | None" has no attribute "get"  [union-attr]
 src/feeds/feeds_test.py:80: error: Item "float" of "JSONDict | list[JSONType] | tuple[JSONType, ...] | str | int | float | None" has no attribute "get"  [union-attr]
 src/feeds/feeds_test.py:80: error: Item "None" of "JSONDict | list[JSONType] | tuple[JSONType, ...] | str | int | float | None" has no attribute "get"  [union-attr]
-Found 41 errors in 4 files (checked 80 source files)
+Found 41 errors in 4 files (checked 81 source files)
