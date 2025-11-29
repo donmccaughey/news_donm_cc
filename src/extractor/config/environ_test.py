@@ -6,7 +6,7 @@ from .environ import _environ_is_true, Environ, os
 
 def test_environ_read() -> None:
     # missing all keys
-    with patch.dict('os.environ', {}):
+    with patch.dict('os.environ', {}, clear=True):
         with raises(KeyError):
             Environ.read()
 
@@ -14,7 +14,7 @@ def test_environ_read() -> None:
     values = {
         'REDDIT_PRIVATE_RSS_FEED': 'https://reddit.com/rss',
     }
-    with patch.dict('os.environ', values):
+    with patch.dict('os.environ', values, clear=True):
         environ = Environ.read()
         assert environ.reddit_private_rss_feed == 'https://reddit.com/rss'
         assert environ.read_write == False
@@ -33,7 +33,7 @@ def test_environ_read() -> None:
 def test_environ_is_true() -> None:
     # false values
 
-    with patch.dict('os.environ', {}):
+    with patch.dict('os.environ', {}, clear=True):
         assert not _environ_is_true('FOO')
 
     with patch.dict('os.environ', {'FOO': 'false'}):
