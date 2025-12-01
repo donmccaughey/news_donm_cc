@@ -2,14 +2,14 @@ import logging
 from datetime import datetime, timezone
 from pathlib import Path
 
-from extractor import CachedFeeds, CachedNews, Config, Environ, parse_options
+from extractor import CachedFeeds, CachedNews, Config, Environ, Options
 from extractor import S3Store
 from news import LAST_EXTRACTION_FILE
 from utility import iso, NoStore, ReadOnlyStore, Store
 
 
 def main():
-    options = parse_options()
+    options = Options.parse()
     environ = Environ.read()
     config = Config.build(options, environ)
 

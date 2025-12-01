@@ -1,10 +1,10 @@
 from __future__ import annotations
 
-from argparse import Namespace
 from dataclasses import dataclass
 from pathlib import Path
 
 from .environ import Environ
+from .options import Options
 
 
 @dataclass(frozen=True, slots=True)
@@ -15,7 +15,7 @@ class Config:
     reddit_private_rss_feed: str
 
     @classmethod
-    def build(cls, options: Namespace, environ: Environ) -> Config:
+    def build(cls, options: Options, environ: Environ) -> Config:
         return cls(
             cache_dir=options.cache_dir,
             no_store=options.no_store,
