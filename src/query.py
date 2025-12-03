@@ -3,7 +3,7 @@ from collections import defaultdict
 from pathlib import Path
 
 from news import Item, News
-from extractor import S3Store
+from extractor import S3Creds, S3Store
 from utility import CachedFile
 
 
@@ -83,7 +83,8 @@ def main():
     if options.news_path:
         json = CachedFile(options.news_path).read()
     else:
-        json = S3Store().read()
+        aws_s3_creds = S3Creds.for_aws()
+        json = S3Store(aws_s3_creds).read()
 
     news = News.from_json(json)
 

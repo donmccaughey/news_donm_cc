@@ -3,7 +3,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from extractor import CachedFeeds, CachedNews, Config, Environ, Options
-from extractor import S3Store
+from extractor import S3Creds, S3Store
 from news import LAST_EXTRACTION_FILE
 from utility import iso, NoStore, ReadOnlyStore, Store
 
@@ -11,13 +11,18 @@ from utility import iso, NoStore, ReadOnlyStore, Store
 def main():
     options = Options.parse()
     environ = Environ.read()
-    config = Config.build(options, environ)
+    aws_s3_creds = S3Creds.for_aws()
+    config = Config.build(options, environ, aws_s3_creds)
 
     logging.basicConfig(level=logging.INFO)
     log = logging.getLogger()
     log.name = Path(__file__).name
 
-    store: Store = NoStore() if config.no_store else S3Store()
+    if config.no_store:
+        store = NoStore()
+    else:
+        store = S3Store(config.s3_creds)
+
     if config.read_only:
         store = ReadOnlyStore(store)
 
