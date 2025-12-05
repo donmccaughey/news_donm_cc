@@ -1,12 +1,12 @@
 import html
 from datetime import datetime
 
-from feedparser import FeedParserDict
-
 from feeds.feed import Feed
 from feeds.skip_sites import SKIP_SITES
 from news import Item, Source
 from news.url import NormalizedURL
+
+from .entry import Entry
 
 
 class Aggregator(Feed):
@@ -16,11 +16,11 @@ class Aggregator(Feed):
     def keep_item(self, item: Item) -> bool:
         return item.url.identity not in SKIP_SITES
 
-    def parse_entry(self, entry: FeedParserDict, now: datetime) -> Item:
+    def parse_entry(self, entry: Entry, now: datetime) -> Item:
         return Item(
-            url=NormalizedURL(entry.link),
-            title=html.unescape(entry.title),
-            sources=[Source(NormalizedURL(entry.comments), self.initials)],
+            url=NormalizedURL(entry['link']),
+            title=html.unescape(entry['title']),
+            sources=[Source(NormalizedURL(entry['comments']), self.initials)],
             created=now,
             modified=now,
         )

@@ -6,6 +6,8 @@ from feedparser import FeedParserDict, parse
 from requests import ConnectTimeout
 
 from news.url import URL
+from serialize import JSONDict
+from .entry import Entry
 from .feed import Feed
 
 
@@ -29,7 +31,7 @@ def test_str_and_repr():
 
 def test_entry_has_keys():
     feed = Feed('Hacker News', 'hn', URL('https://news.ycombinator.com/rss'))
-    entry = {}
+    entry: Entry = {}
 
     assert not feed.entry_has_keys(entry, ['link', 'title'])
 
@@ -44,7 +46,7 @@ def test_entry_has_keys():
 
 def test_is_entry_valid():
     feed = Feed('Hacker News', 'hn', URL('https://news.ycombinator.com/rss'))
-    entry = {}
+    entry: Entry = {}
 
     assert not feed.is_entry_valid(entry)
 
@@ -324,7 +326,7 @@ def test_update_from_without_etag_and_last_modified():
 
 
 def test_decode_without_etag_and_last_modified():
-    encoded = {
+    encoded: JSONDict = {
         'name': 'Example',
         'initials': 'ex',
     }
@@ -339,7 +341,7 @@ def test_decode_without_etag_and_last_modified():
 
 
 def test_decode_with_etag_and_last_modified():
-    encoded = {
+    encoded: JSONDict = {
         'name': 'Example',
         'initials': 'ex',
         'etag': 'W/"647aab77-10117"',

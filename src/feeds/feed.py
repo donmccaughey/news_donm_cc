@@ -11,6 +11,8 @@ from news import LIFETIME, Item, Source
 from news.url import NormalizedURL, URL
 from serialize import Encodable, JSONDict, JSONList
 
+from .entry import Entry
+
 
 log = logging.getLogger(__name__)
 
@@ -41,7 +43,7 @@ class Feed(Encodable):
     def __str__(self) -> str:
         return str(self.name)
 
-    def entry_has_keys(self, entry: dict, keys: list[str]) -> bool:
+    def entry_has_keys(self, entry: Entry, keys: list[str]) -> bool:
         for key in keys:
             if key not in entry:
                 log.warning(f'Entry {repr(entry)} from {self.name} does not have a "{key}" attribute')
@@ -79,7 +81,7 @@ class Feed(Encodable):
             log.warning(f'{self.name} returned status code {response.status_code}')
             return []
 
-    def is_entry_recent(self, entry: dict, now: datetime) -> bool:
+    def is_entry_recent(self, entry: Entry, now: datetime) -> bool:
         time_tuple = (
                 entry.get('published_parsed')
                 or entry.get('updated_parsed')
@@ -102,16 +104,16 @@ class Feed(Encodable):
         else:
             return True
 
-    def is_entry_valid(self, entry: dict) -> bool:
+    def is_entry_valid(self, entry: Entry) -> bool:
         return self.entry_has_keys(entry, ['link', 'title'])
 
-    def keep_entry(self, entry: FeedParserDict) -> bool:
+    def keep_entry(self, entry: Entry) -> bool:
         return True
 
     def keep_item(self, item: Item) -> bool:
         return True
 
-    def parse_entries(self, entries: list[FeedParserDict], now: datetime) -> list[Item]:
+    def parse_entries(self, entries: list[Entry], now: datetime) -> list[Item]:
         items = []
         for entry in entries:
             if (
@@ -124,11 +126,11 @@ class Feed(Encodable):
                     items.append(item)
         return items
 
-    def parse_entry(self, entry: FeedParserDict, now: datetime) -> Item:
-        url = NormalizedURL(entry.link)
+    def parse_entry(self, entry: Entry, now: datetime) -> Item:
+        url = NormalizedURL(entry['link'])
         return Item(
             url=url,
-            title=entry.title,
+            title=entry['title'],
             sources=[Source(url, self.initials)],
             created=now,
             modified=now,

@@ -1,11 +1,3 @@
-src/feeds/feed_test.py:32: error: Need type annotation for "entry" (hint: "entry: dict[<type>, <type>] = ...")  [var-annotated]
-src/feeds/feed_test.py:47: error: Need type annotation for "entry" (hint: "entry: dict[<type>, <type>] = ...")  [var-annotated]
-src/feeds/feed_test.py:332: error: Argument 1 to "decode" of "Feed" has incompatible type "dict[str, str]"; expected "JSONDict | list[JSONType] | tuple[JSONType, ...]"  [arg-type]
-src/feeds/feed_test.py:332: note: "dict" is invariant -- see https://mypy.readthedocs.io/en/stable/common_issues.html#variance
-src/feeds/feed_test.py:332: note: Consider using "Mapping" instead, which is covariant in the value type
-src/feeds/feed_test.py:349: error: Argument 1 to "decode" of "Feed" has incompatible type "dict[str, str]"; expected "JSONDict | list[JSONType] | tuple[JSONType, ...]"  [arg-type]
-src/feeds/feed_test.py:349: note: "dict" is invariant -- see https://mypy.readthedocs.io/en/stable/common_issues.html#variance
-src/feeds/feed_test.py:349: note: Consider using "Mapping" instead, which is covariant in the value type
 src/feeds/aggregator_test.py:12: error: Need type annotation for "entry" (hint: "entry: dict[<type>, <type>] = ...")  [var-annotated]
 src/feeds/feeds_test.py:53: error: Argument 1 to "decode" of "Feeds" has incompatible type "list[dict[str, str]]"; expected "JSONDict | list[JSONType] | tuple[JSONType, ...]"  [arg-type]
 src/feeds/feeds_test.py:77: error: No overload variant of "__getitem__" of "list" matches argument type "str"  [call-overload]
@@ -38,4 +30,4 @@ src/feeds/feeds_test.py:80: error: Item "str" of "JSONDict | list[JSONType] | tu
 src/feeds/feeds_test.py:80: error: Item "int" of "JSONDict | list[JSONType] | tuple[JSONType, ...] | str | int | float | None" has no attribute "get"  [union-attr]
 src/feeds/feeds_test.py:80: error: Item "float" of "JSONDict | list[JSONType] | tuple[JSONType, ...] | str | int | float | None" has no attribute "get"  [union-attr]
 src/feeds/feeds_test.py:80: error: Item "None" of "JSONDict | list[JSONType] | tuple[JSONType, ...] | str | int | float | None" has no attribute "get"  [union-attr]
-Found 24 errors in 3 files (checked 88 source files)
+Found 20 errors in 2 files (checked 89 source files)
