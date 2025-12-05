@@ -1,15 +1,16 @@
-import pytest
 from datetime import datetime, timezone
-from pytest import mark
+
+from feedparser import FeedParserDict, parse
+from pytest import mark, param
 
 from news.url import URL
 from .aggregator import Aggregator
-from feedparser import FeedParserDict, parse
+from .entry import Entry
 
 
 def test_is_entry_valid_rejects():
     ag = Aggregator('Ag', 'ag', URL('https://rss.example.com'))
-    entry = {}
+    entry: Entry = {}
 
     assert not ag.is_entry_valid(entry)
 
@@ -36,7 +37,7 @@ def test_keep_item_keeps_typical_entry():
         link='https://blog.otterstack.com/posts/202212-doom-calculator/',
         comments='https://news.ycombinator.com/item?id=34102419',
     )
-    entry = d.entries[0]
+    entry: Entry = d.entries[0]
     ag = Aggregator('Ag', 'ag', URL('https://rss.example.com'))
     item = ag.parse_entry(entry, datetime.now(timezone.utc))
 
@@ -44,61 +45,61 @@ def test_keep_item_keeps_typical_entry():
 
 
 @mark.parametrize('title, link, comments', [
-    pytest.param(
+    param(
         'If Parrots Can Talk, Why Can’t Monkeys?',
         'https://english.elpais.com/science-tech/2023-01-10/if-parrots-can-talk-why-cant-monkeys.html',
         'https://news.ycombinator.com/item?id=35431466',
         id='english.elpais.com',
     ),
-    pytest.param(
+    param(
         'San Francisco is getting cold feet about self-driving car tests',
         'https://www.newscientist.com/article/2356888-san-francisco-is-getting-cold-feet-about-self-driving-car-tests/',
         'https://news.ycombinator.com/item?id=34608179',
         id='newscientist.com',
     ),
-    pytest.param(
+    param(
         'Why to start a startup in a bad economy (2008)',
         'http://paulgraham.com/badeconomy.html',
         'https://news.ycombinator.com/item?id=34429869',
         id='paulgraham.com',
     ),
-    pytest.param(
+    param(
         'Travelling Just for the People',
         'https://sive.rs/travp',
         'https://news.ycombinator.com/item?id=34733694',
         id='sive.rs',
     ),
-    pytest.param(
+    param(
         'Highlights from the Comments on IRBs',
         'https://astralcodexten.substack.com/p/highlights-from-the-comments-on-irbs',
         'https://news.ycombinator.com/item?id=35608036',
         id='astralcodexten.substack.com',
     ),
-    pytest.param(
+    param(
         '“Luxury” construction causes high rents like umbrellas cause rain',
         'https://noahpinion.substack.com/p/luxury-construction-causes-high-rents',
         'https://news.ycombinator.com/item?id=35668072',
         id='noahpinion.substack.com',
     ),
-    pytest.param(
+    param(
         'Philosophy’s No-Go Zone',
         'https://quillette.com/2023/04/17/philosophys-no-go-zone/',
         'https://news.ycombinator.com/item?id=35678299',
         id='quillette.com',
     ),
-    pytest.param(
+    param(
         'Borrowers with High Credit Scores Penalized Under New Federal Mortgage Fee Plan',
         'https://reason.com/2023/04/21/borrowers-with-high-credit-scores-penalized-under-new-federal-mortgage-fee-plan/',
         'https://news.ycombinator.com/item?id=35676765',
         id='reason.com',
     ),
-    pytest.param(
+    param(
         'Someone Has to Run the Fabs',
         'https://www.noahpinion.blog/p/repost-someone-has-to-run-the-fabs',
         'https://news.ycombinator.com/item?id=35715679',
         id='noahpinion.blog',
     ),
-    pytest.param(
+    param(
         'Brave Search removes last remnant of Bing from search results page',
         'https://brave.com/search-independence/',
         'https://news.ycombinator.com/item?id=35730711',
@@ -107,7 +108,7 @@ def test_keep_item_keeps_typical_entry():
 ])
 def test_keep_item_rejects_site(title, link, comments):
     d = build_feed(str(title), str(link), str(comments))
-    entry = d.entries[0]
+    entry: Entry = d.entries[0]
     ag = Aggregator('Ag', 'ag', URL('https://rss.example.com'))
     item = ag.parse_entry(entry, datetime.now(timezone.utc))
 
@@ -120,7 +121,7 @@ def test_parse_entry_decodes_html_entities():
         link='https://matklad.github.io/2023/02/12/a-love-letter-to-deno.html',
         comments='https://news.ycombinator.com/item?id=34767795',
     )
-    entry = d.entries[0]
+    entry: Entry = d.entries[0]
     ag = Aggregator('Ag', 'ag', URL('https://rss.example.com'))
     item = ag.parse_entry(entry, datetime.now(timezone.utc))
     assert item.title == '<3 Deno'
@@ -132,7 +133,7 @@ def test_parse_entry_decodes_hex_char_entities():
         link='https://www.bleepingcomputer.com/news/security/namecheaps-email-hacked-to-send-metamask-dhl-phishing-emails/',
         comments='https://news.ycombinator.com/item?id=34768550',
     )
-    entry = d.entries[0]
+    entry: Entry = d.entries[0]
     ag = Aggregator('Ag', 'ag', URL('https://rss.example.com'))
     item = ag.parse_entry(entry, datetime.now(timezone.utc))
     assert item.title == "NameCheap's email hacked to send Metamask, DHL phishing emails"

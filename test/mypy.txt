@@ -1,4 +1,3 @@
-src/feeds/aggregator_test.py:12: error: Need type annotation for "entry" (hint: "entry: dict[<type>, <type>] = ...")  [var-annotated]
 src/feeds/feeds_test.py:53: error: Argument 1 to "decode" of "Feeds" has incompatible type "list[dict[str, str]]"; expected "JSONDict | list[JSONType] | tuple[JSONType, ...]"  [arg-type]
 src/feeds/feeds_test.py:77: error: No overload variant of "__getitem__" of "list" matches argument type "str"  [call-overload]
 src/feeds/feeds_test.py:77: note: Possible overload variants:
@@ -30,4 +29,4 @@ src/feeds/feeds_test.py:80: error: Item "str" of "JSONDict | list[JSONType] | tu
 src/feeds/feeds_test.py:80: error: Item "int" of "JSONDict | list[JSONType] | tuple[JSONType, ...] | str | int | float | None" has no attribute "get"  [union-attr]
 src/feeds/feeds_test.py:80: error: Item "float" of "JSONDict | list[JSONType] | tuple[JSONType, ...] | str | int | float | None" has no attribute "get"  [union-attr]
 src/feeds/feeds_test.py:80: error: Item "None" of "JSONDict | list[JSONType] | tuple[JSONType, ...] | str | int | float | None" has no attribute "get"  [union-attr]
-Found 20 errors in 2 files (checked 89 source files)
+Found 19 errors in 1 file (checked 89 source files)
