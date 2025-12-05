@@ -30,7 +30,9 @@ build : $(TMP)/podman-build.stamp
 
 
 .PHONY : check
-check : test/mypy.txt
+check : \
+		$(TMP)/coverage.sqlite \
+		$(TMP)/mypy.stamp
 
 
 .PHONY : clean
@@ -130,13 +132,6 @@ gen/version.txt : $(container_files) $(source_files) | $$(dir $$@)
 	git rev-parse --short HEAD > $@
 
 
-test/mypy.txt : $(TMP)/uv-sync.stamp $(TMP)/coverage.sqlite
-	uv run -m mypy \
-		--cache-dir $(TMP)/.mypy_cache \
-		src \
-		| tee test/mypy.txt
-
-
 $(TMP)/.env : | $$(dir $$@)
 	printf "AWS_ACCESS_KEY_ID=%s\n" "$(AWS_ACCESS_KEY_ID)" >> $@
 	printf "AWS_SECRET_ACCESS_KEY=%s\n" "$(AWS_SECRET_ACCESS_KEY)" >> $@
@@ -189,11 +184,19 @@ $(TMP)/create-container-service-deployment.json : \
 	chmod 600 $@
 
 
+$(TMP)/mypy.stamp : $(python_files) $(TMP)/uv-sync.stamp
+	uv run -m mypy \
+		--cache-dir $(TMP)/.mypy_cache \
+		src
+	touch $@
+
+
 $(TMP)/podman-build.stamp : \
 		$(container_files) \
 		gen/apk_add_py3_packages \
 		gen/version.txt \
-		test/mypy.txt
+		$(TMP)/coverage.sqlite \
+		$(TMP)/mypy.stamp
 	podman build \
 		--file container/Dockerfile \
 		--platform linux/amd64 \
