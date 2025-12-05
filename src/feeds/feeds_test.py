@@ -1,4 +1,5 @@
 from news.url import URL
+from serialize import JSONList
 from .feeds import Feeds
 from .feed import Feed
 
@@ -38,7 +39,7 @@ def test_update_from():
 
 
 def test_decode():
-    encoded = [
+    encoded: JSONList = [
         {
             'name': 'Example1',
             'initials': 'ex1',
@@ -74,7 +75,11 @@ def test_encode():
     encoded = feeds.encode()
 
     assert len(encoded) == 2
+
+    assert isinstance(encoded[0], dict)
     assert encoded[0]['name'] == 'Hacker News'
     assert encoded[0]['etag'] == 'W/"647aab77-10117"'
+
+    assert isinstance(encoded[1], dict)
     assert encoded[1]['name'] == 'Lobsters'
     assert encoded[1].get('etag') is None
