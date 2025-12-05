@@ -1,8 +1,9 @@
+from news import Item
 from .page import Page
 
 
 def test_no_news():
-    items = []
+    items: list[Item] = []
     page = Page(items, page_number=1, items_per_page=3)
 
     assert page.number == 1
@@ -16,56 +17,56 @@ def test_no_news():
 
 
 def test_one_item():
-    news = ['item1']
-    page = Page(news, page_number=1, items_per_page=3)
+    items = [item1]
+    page = Page(items, page_number=1, items_per_page=3)
 
     assert page.number == 1
     assert page.count == 1
 
     assert len(page) == 1
-    assert list(page) == ['item1']
+    assert list(page) == [item1]
 
     assert page.previous is None
     assert page.next is None
 
 
 def test_two_items():
-    items = ['item1', 'item2']
+    items = [item1, item2]
     page = Page(items, page_number=1, items_per_page=3)
 
     assert page.number == 1
     assert page.count == 1
 
     assert len(page) == 2
-    assert list(page) == ['item1', 'item2']
+    assert list(page) == [item1, item2]
 
     assert page.previous is None
     assert page.next is None
 
 
 def test_three_items():
-    items = ['item1', 'item2', 'item3']
+    items = [item1, item2, item3]
     page = Page(items, page_number=1, items_per_page=3)
 
     assert page.number == 1
     assert page.count == 1
 
     assert len(page) == 3
-    assert list(page) == ['item1', 'item2', 'item3']
+    assert list(page) == [item1, item2, item3]
 
     assert page.previous is None
     assert page.next is None
 
 
 def test_four_items():
-    items = ['item1', 'item2', 'item3', 'item4']
+    items = [item1, item2, item3, item4]
     page1 = Page(items, page_number=1, items_per_page=3)
 
     assert page1.number == 1
     assert page1.count == 2
 
     assert len(page1) == 3
-    assert list(page1) == ['item1', 'item2', 'item3']
+    assert list(page1) == [item1, item2, item3]
 
     assert page1.previous is None
 
@@ -76,81 +77,85 @@ def test_four_items():
     assert page2.count == 2
 
     assert len(page2) == 1
-    assert list(page2) == ['item4']
+    assert list(page2) == [item4]
 
     assert page2.next is None
 
-    page1 = page2.previous
-    assert page1 is not None
+    page1_again = page2.previous
+    assert page1_again is not None
 
-    assert len(page1) == 3
-    assert list(page1) == ['item1', 'item2', 'item3']
+    assert len(page1_again) == 3
+    assert list(page1_again) == [item1, item2, item3]
 
 
 def test_five_items():
-    items = ['item1', 'item2', 'item3', 'item4', 'item5']
+    items = [item1, item2, item3, item4, item5]
     page1 = Page(items, page_number=1, items_per_page=3)
 
     assert page1.number == 1
     assert page1.count == 2
 
     assert len(page1) == 3
-    assert list(page1) == ['item1', 'item2', 'item3']
+    assert list(page1) == [item1, item2, item3]
 
     page2 = page1.next
+    assert page2 is not None
 
     assert len(page2) == 2
-    assert list(page2) == ['item4', 'item5']
+    assert list(page2) == [item4, item5]
 
     assert page2.next is None
     assert page2.previous is not None
 
 
 def test_six_items():
-    items = ['item1', 'item2', 'item3', 'item4', 'item5', 'item6']
+    items = [item1, item2, item3, item4, item5, item6]
     page1 = Page(items, page_number=1, items_per_page=3)
 
     assert page1.number == 1
     assert page1.count == 2
 
     assert len(page1) == 3
-    assert list(page1) == ['item1', 'item2', 'item3']
+    assert list(page1) == [item1, item2, item3]
 
     page2 = page1.next
+    assert page2 is not None
 
     assert len(page2) == 3
-    assert list(page2) == ['item4', 'item5', 'item6']
+    assert list(page2) == [item4, item5, item6]
 
     assert page2.next is None
     assert page2.previous is not None
 
 
 def test_seven_items_backwards():
-    items = ['item1', 'item2', 'item3', 'item4', 'item5', 'item6', 'item7']
+    items = [item1, item2, item3, item4, item5, item6, item7]
     page3 = Page(items, page_number=3, items_per_page=3)
 
     assert page3.number == 3
     assert page3.count == 3
 
     assert len(page3) == 1
-    assert list(page3) == ['item7']
+    assert list(page3) == [item7]
 
     page2 = page3.previous
+    assert page2 is not None
 
     assert len(page2) == 3
-    assert list(page2) == ['item4', 'item5', 'item6']
+    assert list(page2) == [item4, item5, item6]
 
     page1 = page2.previous
+    assert page1 is not None
 
     assert len(page1) == 3
-    assert list(page1) == ['item1', 'item2', 'item3']
+    assert list(page1) == [item1, item2, item3]
 
     assert page1.previous is None
     assert page1.next is not None
 
 
 def test_page_number_past_end():
-    items = ['item1', 'item2']
+    items = [item1, item2]
     page = Page(items, page_number=2, items_per_page=3)
 
     assert page.number == 2
@@ -164,10 +169,36 @@ def test_page_number_past_end():
 
 
 def test_str_and_repr():
-    items = ['item1', 'item2', 'item3', 'item4']
+    items = [item1, item2, item3, item4]
     page = Page(items, page_number=1, items_per_page=3)
 
     assert str(page) == 'Page 1 of 2'
     assert repr(page) == '<Page 1 of 2, items[0:3]>'
 
     assert repr(page.next) == '<Page 2 of 2, items[3:4]>'
+
+
+def _make_item(title: str) -> Item:
+    return Item.decode({
+        'url': f'https://example.com/{title}',
+        'url_identity': 'example.com',
+        'title': title,
+        'sources': [
+            {
+                'url': f'https://example.com/source/{title}',
+                'site_id': 'test',
+                'count': 1,
+            },
+        ],
+        'created': '2025-12-03T04:45:39.441622+00:00',
+        'modified': '2025-12-03T04:45:39.441622+00:00',
+    })
+
+
+item1 = _make_item('item1')
+item2 = _make_item('item2')
+item3 = _make_item('item3')
+item4 = _make_item('item4')
+item5 = _make_item('item5')
+item6 = _make_item('item6')
+item7 = _make_item('item7')

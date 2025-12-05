@@ -1,10 +1,11 @@
-from typing import Iterable, Optional, Iterator
+from typing import Iterable, Iterator, Optional
 
+from news import Item
 from serialize import JSONList
 
 
-class Page(Iterable):
-    def __init__(self, items: list, page_number: int, items_per_page: int):
+class Page(Iterable[Item]):
+    def __init__(self, items: list[Item], page_number: int, items_per_page: int):
         self.items = items
         self.number = page_number
         self.items_per_page = items_per_page
@@ -21,7 +22,7 @@ class Page(Iterable):
 
         self.count = ((items_end - 1) // self.items_per_page) + 1
 
-    def __iter__(self) -> Iterator:
+    def __iter__(self) -> Iterator[Item]:
         return iter(self.items[self.begin:self.end])
 
     def __len__(self) -> int:
