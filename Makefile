@@ -71,8 +71,9 @@ deploy : $(TMP)/aws-lightsail-create-container-service-deployment.stamp
 
 .PHONY : extract
 extract : $(TMP)/uv-sync.stamp
+	PYTHONPATH=src \
 	REDDIT_PRIVATE_RSS_FEED="$(REDDIT_PRIVATE_RSS_FEED)" \
-		uv run src/extractor.py \
+		uv run -m extractor \
 			--cache-dir="$(TMP)" \
 			--no-store
 
