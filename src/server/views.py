@@ -42,7 +42,7 @@ def get_news_response(
         page_number: int,
 ) -> Response:
     doc = NewsDoc(
-        cached_news,
+        cached_news.news,
         version,
         is_styled,
         request.accept_mimetypes,
@@ -59,7 +59,9 @@ def get_search_response(
         is_styled: bool,
         query: str,
 ):
-    return make_doc_response(SearchDoc(cached_news, version, is_styled, query))
+    return make_doc_response(
+        SearchDoc(cached_news.news, version, is_styled, query)
+    )
 
 
 def get_site_response(
@@ -68,7 +70,9 @@ def get_site_response(
         is_styled: bool,
         identity: str,
 ) -> Response:
-    return make_doc_response(SiteDoc(cached_news, version, is_styled, identity))
+    return make_doc_response(
+        SiteDoc(cached_news.news, version, is_styled, identity)
+    )
 
 
 def get_sites_response(
@@ -76,7 +80,7 @@ def get_sites_response(
         version: str,
         is_styled: bool,
 ) -> Response:
-    return make_doc_response(SitesDoc(cached_news, version, is_styled))
+    return make_doc_response(SitesDoc(cached_news.news, version, is_styled))
 
 
 def make_doc_response(doc: Doc) -> Response:

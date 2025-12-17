@@ -4,10 +4,9 @@ from flask import render_template
 from flask import url_for
 from werkzeug.datastructures import MIMEAccept
 
-from news import Item
+from news import Item, News
 from serialize import JSONDict
 from utility import Page
-from .cached_news import CachedNews
 from .doc import Doc, Representation
 
 
@@ -16,13 +15,13 @@ class NewsDoc(Doc[Item]):
 
     def __init__(
             self,
-            cached_news: CachedNews,
+            news: News,
             version: str,
             is_styled: bool,
             accept_mimetypes: MIMEAccept,
             page_number: int,
     ):
-        super().__init__(cached_news, version, is_styled)
+        super().__init__(news, version, is_styled)
 
         self.accepts_json = (
                 'application/json' == accept_mimetypes.best_match(self.ACCEPTED)

@@ -3,10 +3,8 @@ from dataclasses import dataclass
 
 from flask import render_template
 
-from news import Item
-from .cached_news import CachedNews
-from .doc import Doc
-from .doc import Representation
+from news import Item, News
+from .doc import Doc, Representation
 from .utility import count_phrase
 
 
@@ -18,13 +16,8 @@ class Site:
 
 
 class SitesDoc(Doc[Site]):
-    def __init__(
-            self,
-            cached_news: CachedNews,
-            version: str,
-            is_styled: bool,
-    ):
-        super().__init__(cached_news, version, is_styled)
+    def __init__(self, news: News, version: str, is_styled: bool):
+        super().__init__(news, version, is_styled)
         self.sites = [
             Site(
                 count_phrase(self.news.items_by_site[site], 'item'),
