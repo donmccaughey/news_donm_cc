@@ -15,6 +15,8 @@ def get_home_response(
         is_styled: bool,
 ) -> Response:
     if 'q' in request.args:
+        if len(request.args['q']) > 32:
+            abort(400)
         return get_search_response(
             cached_news, version, is_styled, request.args['q']
         )
