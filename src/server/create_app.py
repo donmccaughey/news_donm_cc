@@ -1,4 +1,3 @@
-from functools import partial
 from pathlib import Path
 
 from flask import Flask
@@ -7,9 +6,12 @@ from news import CACHE_DIR, NEWS_FILE
 from utility import iso, utc
 from .cached_news import CachedNews
 from .error_handlers import not_found
+from .home import Home
+from .numbered import Numbered
+from .site import Site
+from .sites import Sites
 from .template_filters import href
 from .utility import get_version
-from .views import get_home_response, get_numbered_response, get_site_response, get_sites_response
 
 
 def create_app() -> Flask:
@@ -24,24 +26,20 @@ def create_app() -> Flask:
     is_styled = True
 
     app.add_url_rule(
-        '/', 'home',
-        partial(get_home_response, cached_news, version, is_styled),
-        methods=['GET']
+        '/',
+        view_func=Home.as_view('home', cached_news, version, is_styled)
     )
     app.add_url_rule(
-        '/<int:page_number>', 'numbered',
-        partial(get_numbered_response, cached_news, version, is_styled),
-        methods=['GET']
+        '/<int:page_number>',
+        view_func=Numbered.as_view('numbered', cached_news, version, is_styled)
     )
     app.add_url_rule(
-        '/site/<path:identity>', 'site',
-        partial(get_site_response, cached_news, version, is_styled),
-        methods=['GET']
+        '/site/<path:identity>',
+        view_func=Site.as_view('site', cached_news, version, is_styled),
     )
     app.add_url_rule(
-        '/sites', 'sites',
-        partial(get_sites_response, cached_news, version, is_styled),
-        methods=['GET']
+        '/sites',
+        view_func=Sites.as_view('sites', cached_news, version, is_styled),
     )
 
     app.jinja_options = {
