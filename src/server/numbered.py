@@ -1,14 +1,11 @@
 from typing import cast
 from flask import redirect, Response
 
-from .resource import Resource
-from .views import get_news_response
+from .news_resource import NewsResource
 
 
-class Numbered(Resource):
-    def get(self, page_number: int):
+class Numbered(NewsResource):
+    def get(self, page_number: int) -> Response:
         if page_number == 1:
             return cast(Response, redirect('/', 308))
-        return get_news_response(
-            self.cached_news, self.version, self.is_styled, page_number
-        )
+        return self.get_news(page_number)
