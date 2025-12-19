@@ -1,9 +1,9 @@
 from .resource import Resource
-from .views import get_sites_response
+from .sites_doc import SitesDoc
+from .views import make_doc_response
 
 
 class Sites(Resource):
     def get(self):
-        return get_sites_response(
-            self.cached_news, self.version, self.is_styled
-        )
+        doc = SitesDoc(self.cached_news.read(), self.version, self.is_styled)
+        return make_doc_response(doc)
