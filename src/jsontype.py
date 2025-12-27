@@ -1,18 +1,8 @@
-from __future__ import annotations
-
-from typing import Union
+from typing import Mapping, Sequence
 
 
-JSONDict = dict[str, 'JSONType']
+type JSONDict = Mapping[str, JSONType]
 
-JSONList = list['JSONType'] | tuple['JSONType', ...]
+type JSONList = Sequence[JSONType]
 
-JSONType = Union[
-    JSONDict,
-    JSONList,
-    str,
-    int,
-    float,
-    bool,
-    None,
-]
+type JSONType = JSONDict | JSONList | str | int | float | bool | None

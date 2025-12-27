@@ -154,7 +154,7 @@ class Feed(Encodable):
         )
 
     def encode(self) -> JSONDict:
-        encoded: JSONDict = {
+        encoded = {
             'name': self.name,
             'initials': self.initials,
         }
