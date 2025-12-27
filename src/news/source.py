@@ -1,6 +1,7 @@
 from typing import cast
 
-from serialize import Encodable, JSONDict, JSONList
+from jsontype import JSONDict, JSONList
+from serialize import Encodable
 from .url import NormalizedURL
 
 

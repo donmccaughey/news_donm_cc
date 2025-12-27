@@ -1,8 +1,9 @@
 import json
 from typing import cast, Iterable, Iterator
 
+from jsontype import JSONDict, JSONList
 from news.url import URL
-from serialize import Encodable, JSONDict, JSONList, Serializable
+from serialize import Encodable, Serializable
 from .aggregator import Aggregator
 from .daring_fireball import DaringFireball
 from .reddit import Reddit

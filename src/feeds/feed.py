@@ -7,9 +7,10 @@ from io import BytesIO
 import requests
 from feedparser import FeedParserDict, parse
 
+from jsontype import JSONDict, JSONList
 from news import LIFETIME, Item, Source
 from news.url import NormalizedURL, URL
-from serialize import Encodable, JSONDict, JSONList
+from serialize import Encodable
 
 from .entry import Entry
 

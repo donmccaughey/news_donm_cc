@@ -1,7 +1,7 @@
 from typing import Iterable, Iterator, Optional
 
 from news import Item
-from serialize import JSONList
+from jsontype import JSONList
 
 
 class Page(Iterable[Item]):

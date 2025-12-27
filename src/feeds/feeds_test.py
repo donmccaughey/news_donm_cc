@@ -1,5 +1,5 @@
+from jsontype import JSONList
 from news.url import URL
-from serialize import JSONList
 from .feeds import Feeds
 from .feed import Feed
 

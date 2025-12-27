@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from serialize.jsontype import JSONDict, JSONList
+from jsontype import JSONDict, JSONList
 
 
 class Encodable(ABC):

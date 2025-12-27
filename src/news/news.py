@@ -7,7 +7,8 @@ from collections.abc import Sized
 from datetime import datetime, timedelta, timezone
 from typing import cast
 
-from serialize import Encodable, JSONDict, JSONList, Serializable
+from jsontype import JSONDict, JSONList
+from serialize import Encodable, Serializable
 from .index import Index
 from .item import Item
 from .items import Items

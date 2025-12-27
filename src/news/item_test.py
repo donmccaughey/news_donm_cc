@@ -1,5 +1,5 @@
 from datetime import datetime, timezone, timedelta
-from serialize import JSONDict
+from jsontype import JSONDict
 
 from .item import Item
 from .source import Source

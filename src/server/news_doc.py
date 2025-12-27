@@ -4,8 +4,8 @@ from flask import render_template
 from flask import url_for
 from werkzeug.datastructures import MIMEAccept
 
+from jsontype import JSONDict
 from news import Item, News
-from serialize import JSONDict
 from utility import Page
 from .doc import Doc, Representation
 

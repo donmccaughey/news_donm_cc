@@ -1,7 +1,8 @@
 from datetime import datetime
 from typing import cast
 
-from serialize import Encodable, JSONDict, JSONList
+from jsontype import JSONDict, JSONList
+from serialize import Encodable
 from .source import Source
 from .url import NormalizedURL
 

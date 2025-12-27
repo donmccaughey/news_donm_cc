@@ -2,8 +2,8 @@ from collections.abc import Iterable, Iterator, Sized
 from jinja2 import Template
 from typing import TypeVar, Union
 
+from jsontype import JSONDict, JSONList
 from news import News
-from serialize import JSONDict, JSONList
 
 
 T = TypeVar('T')

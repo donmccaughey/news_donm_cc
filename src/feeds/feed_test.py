@@ -5,8 +5,8 @@ from email import utils
 from feedparser import FeedParserDict, parse
 from requests import ConnectTimeout
 
+from jsontype import JSONDict
 from news.url import URL
-from serialize import JSONDict
 from .entry import Entry
 from .feed import Feed
 
