@@ -1,7 +1,7 @@
 from datetime import datetime
 from typing import cast
 
-from jsontype import JSONDict, JSONList
+from jsontype import JSONArray, JSONObject
 from serialize import Encodable
 from .source import Source
 from .url import NormalizedURL
@@ -64,11 +64,11 @@ class Item(Encodable):
         self.sources.append(other_source)
 
     @staticmethod
-    def decode(encoded: JSONDict | JSONList) -> 'Item':
-        encoded = cast(JSONDict, encoded)
+    def decode(encoded: JSONArray | JSONObject) -> 'Item':
+        encoded = cast(JSONObject, encoded)
         sources = [
-            Source.decode(cast(JSONDict, source))
-            for source in (cast(JSONList, encoded['sources']))
+            Source.decode(cast(JSONObject, source))
+            for source in (cast(JSONArray, encoded['sources']))
         ]
         seq_id = cast(int, encoded['seq_id']) if 'seq_id' in encoded else 0
         return Item(
@@ -80,7 +80,7 @@ class Item(Encodable):
             seq_id=seq_id,
         )
 
-    def encode(self) -> JSONDict:
+    def encode(self) -> JSONObject:
         return {
             'url': str(self.url),
             'url_identity': self.url.identity,

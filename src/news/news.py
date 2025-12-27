@@ -7,7 +7,7 @@ from collections.abc import Sized
 from datetime import datetime, timedelta, timezone
 from typing import cast
 
-from jsontype import JSONDict, JSONList
+from jsontype import JSONArray, JSONObject
 from serialize import Encodable, Serializable
 from .index import Index
 from .item import Item
@@ -92,11 +92,11 @@ class News(Container[Item], Encodable, Iterable[Item], Serializable, Sized):
         return len(new_items), len(existing_items)
 
     @staticmethod
-    def decode(encoded: JSONDict | JSONList) -> 'News':
-        encoded = cast(JSONDict, encoded)
+    def decode(encoded: JSONArray | JSONObject) -> 'News':
+        encoded = cast(JSONObject, encoded)
         items = [
-            Item.decode(cast(JSONDict, item))
-            for item in cast(JSONList, encoded['items'])
+            Item.decode(cast(JSONObject, item))
+            for item in cast(JSONArray, encoded['items'])
         ]
         return News(
             items=items,
@@ -104,7 +104,7 @@ class News(Container[Item], Encodable, Iterable[Item], Serializable, Sized):
             modified=datetime.fromisoformat(cast(str, encoded['modified'])),
         )
 
-    def encode(self) -> JSONDict:
+    def encode(self) -> JSONObject:
         return {
             'items': [item.encode() for item in self],
             'created': datetime.isoformat(self.created),

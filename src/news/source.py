@@ -1,6 +1,6 @@
 from typing import cast
 
-from jsontype import JSONDict, JSONList
+from jsontype import JSONArray, JSONObject
 from serialize import Encodable
 from .url import NormalizedURL
 
@@ -31,15 +31,15 @@ class Source(Encodable):
         self.count += other.count
 
     @staticmethod
-    def decode(encoded: JSONDict | JSONList) -> 'Source':
-        encoded = cast(JSONDict, encoded)
+    def decode(encoded: JSONArray | JSONObject) -> 'Source':
+        encoded = cast(JSONObject, encoded)
         return Source(
             url=NormalizedURL(cast(str, encoded['url'])),
             site_id=cast(str, encoded['site_id']),
             count=cast(int, encoded.get('count', 1))
         )
 
-    def encode(self) -> JSONDict:
+    def encode(self) -> JSONObject:
         return {
             'url': str(self.url),
             'site_id': self.site_id,

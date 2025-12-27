@@ -7,7 +7,7 @@ from io import BytesIO
 import requests
 from feedparser import FeedParserDict, parse
 
-from jsontype import JSONDict, JSONList
+from jsontype import JSONArray, JSONObject
 from news import LIFETIME, Item, Source
 from news.url import NormalizedURL, URL
 from serialize import Encodable
@@ -144,8 +144,8 @@ class Feed(Encodable):
             self.last_modified = other.last_modified
 
     @staticmethod
-    def decode(encoded: JSONDict | JSONList) -> 'Feed':
-        encoded = cast(JSONDict, encoded)
+    def decode(encoded: JSONArray | JSONObject) -> 'Feed':
+        encoded = cast(JSONObject, encoded)
         return Feed(
             name=cast(str, encoded['name']),
             initials=cast(str, encoded['initials']),
@@ -153,7 +153,7 @@ class Feed(Encodable):
             last_modified=cast(str | None, encoded.get('last_modified')),
         )
 
-    def encode(self) -> JSONDict:
+    def encode(self) -> JSONObject:
         encoded = {
             'name': self.name,
             'initials': self.initials,

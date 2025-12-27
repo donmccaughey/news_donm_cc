@@ -1,5 +1,5 @@
 from datetime import datetime, timezone, timedelta
-from jsontype import JSONDict
+from jsontype import JSONObject
 
 from .item import Item
 from .source import Source
@@ -212,7 +212,7 @@ def test_update_from_with_same_source():
 
 
 def test_decode_from_sources():
-    encoded: JSONDict = {
+    encoded: JSONObject = {
         'url': 'https://example.com/1',
         'title': 'Item 1',
         'sources': [
@@ -243,7 +243,7 @@ def test_decode_from_sources():
 
 
 def test_decode_when_missing_seq_id():
-    encoded: JSONDict = {
+    encoded: JSONObject = {
         'url': 'https://example.com/1',
         'title': 'Item 1',
         'sources': [

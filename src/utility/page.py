@@ -1,7 +1,7 @@
 from typing import Iterable, Iterator, Optional
 
 from news import Item
-from jsontype import JSONList
+from jsontype import JSONArray
 
 
 class Page(Iterable[Item]):
@@ -69,5 +69,5 @@ class Page(Iterable[Item]):
         else:
             return None
 
-    def to_json(self) -> JSONList:
+    def to_json(self) -> JSONArray:
         return [item.encode() for item in self]

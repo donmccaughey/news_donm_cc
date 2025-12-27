@@ -5,7 +5,7 @@ from email import utils
 from feedparser import FeedParserDict, parse
 from requests import ConnectTimeout
 
-from jsontype import JSONDict
+from jsontype import JSONObject
 from news.url import URL
 from .entry import Entry
 from .feed import Feed
@@ -326,7 +326,7 @@ def test_update_from_without_etag_and_last_modified():
 
 
 def test_decode_without_etag_and_last_modified():
-    encoded: JSONDict = {
+    encoded: JSONObject = {
         'name': 'Example',
         'initials': 'ex',
     }
@@ -341,7 +341,7 @@ def test_decode_without_etag_and_last_modified():
 
 
 def test_decode_with_etag_and_last_modified():
-    encoded: JSONDict = {
+    encoded: JSONObject = {
         'name': 'Example',
         'initials': 'ex',
         'etag': 'W/"647aab77-10117"',

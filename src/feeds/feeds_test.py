@@ -1,4 +1,4 @@
-from jsontype import JSONList
+from jsontype import JSONArray
 from news.url import URL
 from .feeds import Feeds
 from .feed import Feed
@@ -39,7 +39,7 @@ def test_update_from():
 
 
 def test_decode():
-    encoded: JSONList = [
+    encoded: JSONArray = [
         {
             'name': 'Example1',
             'initials': 'ex1',

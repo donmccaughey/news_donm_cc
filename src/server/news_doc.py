@@ -4,7 +4,7 @@ from flask import render_template
 from flask import url_for
 from werkzeug.datastructures import MIMEAccept
 
-from jsontype import JSONDict
+from jsontype import JSONObject
 from news import Item, News
 from utility import Page
 from .doc import Doc, Representation
@@ -60,7 +60,7 @@ class NewsDoc(Doc[Item]):
             else render_template('news.html', doc=self)
         )
 
-    def to_json(self) -> JSONDict:
+    def to_json(self) -> JSONObject:
         return {
             'version': self.version,
             'modified': self.modified.isoformat(),

@@ -2,15 +2,15 @@ from collections.abc import Iterable, Iterator, Sized
 from jinja2 import Template
 from typing import TypeVar, Union
 
-from jsontype import JSONDict, JSONList
+from jsontype import JSONArray, JSONObject
 from news import News
 
 
 T = TypeVar('T')
 
 Representation = Union[
-    JSONDict,
-    JSONList,
+    JSONArray,
+    JSONObject,
     Template,
     str,
     list[str | Template],

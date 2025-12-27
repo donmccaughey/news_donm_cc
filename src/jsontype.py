@@ -1,8 +1,8 @@
 from typing import Mapping, Sequence
 
 
-type JSONDict = Mapping[str, JSONType]
+type JSONArray = Sequence[JSONType]
 
-type JSONList = Sequence[JSONType]
+type JSONObject = Mapping[str, JSONType]
 
-type JSONType = JSONDict | JSONList | str | int | float | bool | None
+type JSONType = bool | float | int | JSONArray | JSONObject | None | str

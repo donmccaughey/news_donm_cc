@@ -1,13 +1,13 @@
 from abc import ABC, abstractmethod
-from jsontype import JSONDict, JSONList
+from jsontype import JSONArray, JSONObject
 
 
 class Encodable(ABC):
     @staticmethod
     @abstractmethod
-    def decode(encoded: JSONDict | JSONList) -> 'Encodable':
+    def decode(encoded: JSONObject | JSONArray) -> 'Encodable':
         pass
 
     @abstractmethod
-    def encode(self) -> JSONDict | JSONList:
+    def encode(self) -> JSONObject | JSONArray:
         pass
