@@ -41,6 +41,11 @@ class Feeds(Encodable, Iterable[Feed], Serializable):
                 URL('https://acoup.blog/feed/'),
             ),
             Feed(
+                'Aswath Damodaran',
+                'ad',
+                URL('https://aswathdamodaran.substack.com/feed'),
+            ),
+            Feed(
                 'Benji Weber',
                 'bw',
                 URL('https://benjiweber.co.uk/blog/feed/'),
@@ -48,7 +53,7 @@ class Feeds(Encodable, Iterable[Feed], Serializable):
             Feed(
                 'charity.wtf',
                 'cw',
-                URL('https://charity.wtf/feed/'),
+                URL('http://charitydotwtf.substack.com/feed'),
             ),
             Feed(
                 'Gary Marcus',
@@ -59,6 +64,11 @@ class Feeds(Encodable, Iterable[Feed], Serializable):
                 'Molly White',
                 'mw',
                 URL('https://newsletter.mollywhite.net/feed'),
+            ),
+            Feed(
+                'Paul Krugman',
+                'pk',
+                URL('https://paulkrugman.substack.com/feed'),
             ),
             Feed(
                 'rust-lang.org',
