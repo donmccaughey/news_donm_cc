@@ -1,11 +1,14 @@
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
 
+from .body import Body, body_repr
+from .headers import Headers, headers_repr
+
 
 @dataclass(frozen=True, kw_only=True, slots=True)
 class Message(ABC):
-    headers: dict[str, str]
-    body: str = ''
+    headers: Headers
+    body: Body | None
 
     @property
     @abstractmethod
@@ -15,7 +18,11 @@ class Message(ABC):
         return self.to_str('\r\n')
 
     def to_str(self, line_ending: str) -> str:
-        headers = (
-            f'{name}: {value}' for name, value in sorted(self.headers.items())
+        return line_ending.join(
+            [
+                self.start_line,
+                *headers_repr(self.headers),
+                '',
+                body_repr(self.body),
+            ]
         )
-        return line_ending.join([self.start_line, *headers, '', self.body])

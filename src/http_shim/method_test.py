@@ -12,7 +12,7 @@ def test_method() -> None:
                 status_code=200,
                 reason_phrase='OK',
                 headers={'Content-Type': 'text/plain'},
-                body=f'{page}',
+                body=f'{page}'.encode(),
             )
 
         def not_a_method(self):

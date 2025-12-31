@@ -6,7 +6,7 @@ def test_start_line() -> None:
         status_code=200,
         reason_phrase='OK',
         headers={'Content-Type': 'text/plain'},
-        body='Hello, world!',
+        body='Hello, world!'.encode(),
     )
     assert response.start_line == 'HTTP/1.1 200 OK'
 
@@ -19,7 +19,7 @@ def test_str() -> None:
             'Content-Type': 'text/plain',
             'Content-Length': '6',
         },
-        body='Hello!',
+        body='Hello!'.encode(),
     )
 
     assert str(response) == (
@@ -27,5 +27,5 @@ def test_str() -> None:
         'Content-Length: 6\r\n'
         'Content-Type: text/plain\r\n'
         '\r\n'
-        'Hello!'
+        '<Buffer: 6 bytes>'
     )

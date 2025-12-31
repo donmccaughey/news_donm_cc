@@ -1,12 +1,10 @@
-from collections.abc import Buffer
 from dataclasses import dataclass
-from typing import BinaryIO
 
-
-type Body = Buffer | BinaryIO
+from .body import Body
+from .headers import Headers
 
 
 @dataclass(frozen=True, kw_only=True, slots=True)
 class Entity:
-    headers: dict[str, str]
+    headers: Headers
     body: Body

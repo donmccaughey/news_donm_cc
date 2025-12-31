@@ -7,6 +7,7 @@ def test_start_line() -> None:
         base_url='https://example.com',
         route='/a/thing',
         headers={'Accept': 'text/html'},
+        body=None,
     )
     assert request.start_line == 'DELETE /a/thing HTTP/1.1'
 
@@ -17,6 +18,7 @@ def test_url() -> None:
         base_url='https://example.com',
         route='/some/thing',
         headers={'Accept': 'text/html'},
+        body=None,
     )
     assert request.url == 'https://example.com/some/thing'
 
@@ -30,7 +32,7 @@ def test_str() -> None:
             'Accept': 'text/html',
             'Content-Type': 'text/plain'
         },
-        body='foobar',
+        body='foobar'.encode(),
     )
 
     assert str(request) == (
@@ -38,5 +40,5 @@ def test_str() -> None:
         'Accept: text/html\r\n'
         'Content-Type: text/plain\r\n'
         '\r\n'
-        'foobar'
+        '<Buffer: 6 bytes>'
     )

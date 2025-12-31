@@ -17,7 +17,7 @@ def test_with_methods() -> None:
                 status_code=200,
                 reason_phrase='OK',
                 headers={'Content-Type': 'text/plain'},
-                body='foobar',
+                body='foobar'.encode(),
             )
 
         @method
@@ -26,7 +26,7 @@ def test_with_methods() -> None:
                 status_code=200,
                 reason_phrase='OK',
                 headers={},
-                body='',
+                body=None,
             )
 
         def helper(self) -> None:
