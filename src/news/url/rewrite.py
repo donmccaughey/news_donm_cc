@@ -14,10 +14,6 @@ def rewrite_cnn_url(scheme: str, path: str, query: str, fragment: str) -> str:
     return urlunsplit((scheme, 'lite.cnn.com', path, query, fragment))
 
 
-def rewrite_medium_url(url: str) -> str:
-    return 'https://freedium.cfd/' + url
-
-
 def is_npr_story_id(part: str) -> bool:
     if part.isdecimal() and len(part) > 4:
         return True
@@ -50,8 +46,6 @@ def rewrite_url(url: str) -> str:
     match netloc:
         case 'www.cnn.com':
             return rewrite_cnn_url(scheme, path, query, fragment)
-        case 'medium.com':
-            return rewrite_medium_url(url)
         case 'www.npr.org':
             rewritten = rewrite_npr_url(scheme, path)
             return rewritten if rewritten else url
