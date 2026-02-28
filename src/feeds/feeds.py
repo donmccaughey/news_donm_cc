@@ -70,11 +70,6 @@ class Feeds(Encodable, Iterable[Feed], Serializable):
                 'pk',
                 URL('https://paulkrugman.substack.com/feed'),
             ),
-            Feed(
-                'rust-lang.org',
-                'rl',
-                URL('https://blog.rust-lang.org/feed.xml'),
-            ),
             DaringFireball(),
             Reddit(reddit_url),
             Streetsblog(),
