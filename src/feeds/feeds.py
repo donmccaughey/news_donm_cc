@@ -41,6 +41,11 @@ class Feeds(Encodable, Iterable[Feed], Serializable):
                 URL('https://acoup.blog/feed/'),
             ),
             Feed(
+                'Agile is Anarcy',
+                'aa',
+                URL('https://agileisanarchy.com/rss/'),
+            ),
+            Feed(
                 'Aswath Damodaran',
                 'ad',
                 URL('https://aswathdamodaran.substack.com/feed'),
