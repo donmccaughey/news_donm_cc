@@ -75,6 +75,11 @@ class Feeds(Encodable, Iterable[Feed], Serializable):
                 'pk',
                 URL('https://paulkrugman.substack.com/feed'),
             ),
+            Feed(
+                'Software Design: Tidy First?',
+                'tf',
+                URL('https://tidyfirst.substack.com/feed'),
+            ),
             DaringFireball(),
             Reddit(reddit_url),
             Streetsblog(),
