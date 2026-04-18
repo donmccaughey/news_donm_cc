@@ -46,6 +46,26 @@ def test_keep_entry_todays_headlines():
     assert sb.keep_entry(entry)
 
 
+def test_keep_entry_todays_headlines_in_lower_case():
+    feed = '''
+    <?xml version="1.0" encoding="UTF-8"?>
+    <rss version="2.0">
+        <channel>
+            <item>
+                <title>Today&#8217;s Headlines</title>
+                <link>https://sf.streetsblog.org/2023/01/03/todays-headlines-3375/</link>
+                <category><![CDATA[today's headlines]]></category>
+            </item>
+        </channel>
+    </rss>
+    '''
+    d: FeedParserDict = parse(feed)
+    entry = d.entries[0]
+    sb = Streetsblog()
+
+    assert sb.keep_entry(entry)
+
+
 def test_keep_entry_other_category():
     feed = '''
     <?xml version="1.0" encoding="UTF-8"?>

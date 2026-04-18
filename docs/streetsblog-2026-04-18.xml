@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+     xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+     xmlns:media="http://search.yahoo.com/mrss/"
+>
+
+    <channel>
+        <title>Streetsblog San Francisco</title>
+        <atom:link href="https://sf.streetsblog.org/feed" rel="self" type="application/rss+xml"/>
+        <link>https://sf.streetsblog.org/</link>
+        <description>Covering San Francisco&#039;s livable streets movement</description>
+        <lastBuildDate>Fri, 17 Apr 2026 22:43:06 +0000</lastBuildDate>
+        <language>en-US</language>
+        <sy:updatePeriod>
+            hourly
+        </sy:updatePeriod>
+        <sy:updateFrequency>
+            1
+        </sy:updateFrequency>
+        <generator>https://wordpress.org/?v=6.9.4</generator>
+
+        <image>
+            <url>https://sf.streetsblog.org/wp-content/uploads/sites/12/2016/12/streetsblog-favicon.png?w=16</url>
+            <title>Streetsblog San Francisco</title>
+            <link>https://sf.streetsblog.org/</link>
+            <width>32</width>
+            <height>32</height>
+        </image>
+        <site xmlns="com-wordpress:feed-additions:1">253795871</site>
+        <item>
+            <title>Driver Runs Red, Hits Cyclist, Speeds Off</title>
+            <link>https://sf.streetsblog.org/2026/04/17/mercedes-driver-runs-red-hits-cyclist-speeds-off</link>
+
+            <dc:creator><![CDATA[Roger Rudick]]></dc:creator>
+            <pubDate>Fri, 17 Apr 2026 22:41:24 +0000</pubDate>
+            <category><![CDATA[bike lane]]></category>
+            <category><![CDATA[enforcement]]></category>
+            <category><![CDATA[hit-and-run]]></category>
+            <category><![CDATA[protected bike lane]]></category>
+            <category><![CDATA[Safety]]></category>
+            <category><![CDATA[Promoted]]></category>
+            <guid isPermaLink="false">https://sf.streetsblog.org/?p=488914</guid>
+
+            <description><![CDATA[<p>More evidence that San Francisco drivers are out of control—and that SFMTA must start incorporating concrete into its designs if it wants to reduce crashes</p>
+<p>The post <a href="https://sf.streetsblog.org/2026/04/17/mercedes-driver-runs-red-hits-cyclist-speeds-off">Driver Runs Red, Hits Cyclist, Speeds Off</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></description>
+            <content:encoded><![CDATA[
+<p>A hit-and-run motorist ran a red light and smashed into a cyclist at 8th and Mission on Wednesday. Another cyclist captured the incident from a helmet camera and posted the video on Reddit, which was later picked up by <a href="https://www.kron4.com/news/bay-area/shocking-video-shows-mercedes-driver-hit-sf-cyclist-and-speed-away-from-scene/?fbclid=IwVERTSARN9xVleHRuA2FlbQIxMABzcnRjBmFwcF9pZAwzNTA2ODU1MzE3MjgAAR4d01fy-_KGkpXUgJKB8Mq55sGNKirQsa171U1sI73mQloiaC5d0liy5L0hkQ_aem_fEvHZBrORi9T6SZ89HM_Sg">KRON4</a>:</p>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://www.kron4.com/news/bay-area/shocking-video-shows-mercedes-driver-hit-sf-cyclist-and-speed-away-from-scene/?fbclid=IwVERTSARN9xVleHRuA2FlbQIxMABzcnRjBmFwcF9pZAwzNTA2ODU1MzE3MjgAAR4d01fy-_KGkpXUgJKB8Mq55sGNKirQsa171U1sI73mQloiaC5d0liy5L0hkQ_aem_fEvHZBrORi9T6SZ89HM_Sg"><img fetchpriority="high" decoding="async" height="472" width="1024" src="https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/image_2e3c51.png?w=1024" alt="" class="wp-image-488934" srcset="https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/image_2e3c51.png 2124w, https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/image_2e3c51.png?resize=300,138 300w, https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/image_2e3c51.png?resize=768,354 768w, https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/image_2e3c51.png?resize=1024,472 1024w, https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/image_2e3c51.png?resize=1536,707 1536w, https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/image_2e3c51.png?resize=2048,943 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /></a><figcaption class="wp-element-caption">A frame taken from the <a href="https://www.kron4.com/news/bay-area/shocking-video-shows-mercedes-driver-hit-sf-cyclist-and-speed-away-from-scene/?fbclid=IwVERTSARN9xVleHRuA2FlbQIxMABzcnRjBmFwcF9pZAwzNTA2ODU1MzE3MjgAAR4d01fy-_KGkpXUgJKB8Mq55sGNKirQsa171U1sI73mQloiaC5d0liy5L0hkQ_aem_fEvHZBrORi9T6SZ89HM_Sg">KRON4 story</a> about the incident.</figcaption></figure>
+
+
+
+<p>The crash happened at the end of a protected bike lane that was installed as part of <a href="https://www.sfmta.com/projects/7th-street-8th-street-safety-projects">SFMTA&#8217;s 7th and 8th Avenue Safety project</a>. However, the intersection is not protected, making this type of crash likely.</p>
+
+
+
+<p>In this case, thankfully, the cyclist did not appear to be badly hurt, but that was a matter of quick reactions and blind chance. Had the bicyclist been a half-pedal stroke farther along, it could easily have been severe or fatal.</p>
+
+
+
+<p>Further description of the incident via <a href="https://www.reddit.com/r/sanfrancisco/comments/1smm9bp/shocking_video_shows_mercedes_driver_hit_sf/">Reddit</a>:</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p>As the Mercedes reaches the corner of 8th and Mission streets, he makes an illegal right turn against the light — right into the path of a cyclist riding lawfully in the bike lane.</p>
+</blockquote>
+
+
+
+<p>And:</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p>In the <a href="http://kron4.com/">video</a> the cyclist can be seen skidding on his brakes as he attempts to avoid colliding with the car. The driver of the Mercedes, who has veered out of his lane onto the inside of the bike path, ignores the [collision with the] cyclist and speeds off down the road without stopping.</p>
+</blockquote>
+
+
+
+<p>District 6 Supervisor Matt Dorsey commented about the incident on social media:</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" height="987" width="1024" src="https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/image002.jpg?w=1024" alt="" class="wp-image-488930" srcset="https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/image002.jpg 1064w, https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/image002.jpg?resize=300,289 300w, https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/image002.jpg?resize=768,741 768w, https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/image002.jpg?resize=1024,987 1024w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>&#8220;We are experiencing an epidemic of hit-and-run collisions here in San Francisco – at least three pedestrian deaths in 2026 so far were caused by hit-and-runs, including one just this week on South Van Ness where a pedestrian was killed on the sidewalk,&#8221; wrote the San Francisco Bicycle Coalition&#8217;s Christopher White, in an email to Streetsblog. &#8220;We need immediate interventions to curb reckless drivers, like expanded automated speed camera and red light camera coverage along the High Injury network, along with more ambitiously implementing life-saving traffic calming measures already laid out in the Biking and Rolling Plan.&#8221;</p>
+
+
+
+<figure class="wp-block-image alignright size-large is-resized"><img decoding="async" height="508" width="1024" src="https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/GuysFace.png?w=1024" alt="" class="wp-image-488942" style="aspect-ratio:2.013780431786863;width:419px;height:auto" srcset="https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/GuysFace.png 1728w, https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/GuysFace.png?resize=300,149 300w, https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/GuysFace.png?resize=768,381 768w, https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/GuysFace.png?resize=1024,508 1024w, https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/GuysFace.png?resize=1536,763 1536w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">A screen cap of the driver&#8217;s face.</figcaption></figure>
+
+
+
+<p>Fair enough, and we definitely need more red light and speed cameras, but in this case, it&#8217;s unclear how red-light cameras or other soft enforcement would have helped in an immediate sense. As is clear in the lead photo and the video, the red arrow for the driver was clearly illuminated. This driver just chose to ignore the law. The problem with red lights, signs, and fines is that they still ultimately depend on a driver&#8217;s voluntary compliance; there&#8217;s nothing to <em>force</em> the driver to be safe. On the other hand, a protected intersection with a concrete, protected island at the corner would <em>force</em> drivers to take the turn slowly or risk damaging their car. Ideally, that corner island would also have a cast-iron bell or bollard to physically stop the car if the driver is egregious.</p>
+
+
+
+<figure class="wp-block-image alignright size-large"><img loading="lazy" decoding="async" width="400" height="300" src="https://sf.streetsblog.org/wp-content/uploads/sites/12/2022/06/bell_van.jpg?w=400" alt="" class="wp-image-411319" srcset="https://sf.streetsblog.org/wp-content/uploads/sites/12/2022/06/bell_van.jpg 400w, https://sf.streetsblog.org/wp-content/uploads/sites/12/2022/06/bell_van.jpg?resize=300,225 300w" sizes="auto, (max-width: 400px) 100vw, 400px" /><figcaption class="wp-element-caption">Traffic bells in London protecting a sidewalk corner from unsafe motorists. Photo: Furnitubes</figcaption></figure>
+
+
+
+<p>&#8220;A lack of a protected intersection enables something like this to happen,&#8221; agreed Streets Forward&#8217;s Luke Bornheimer. &#8220;This is exactly why protected intersections exist.&#8221;</p>
+
+
+
+<p>Bornheimer also points out that the city needs to consider close calls such as this one as seriously as it does fatal crashes, because it indicates a dangerous condition that has to be corrected. Streetsblog reached out to several staffers at SFMTA for comment. The agency did not respond.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" height="1024" width="773" src="https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/image.png?w=773" alt="" class="wp-image-488931" srcset="https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/image.png 1152w, https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/image.png?resize=226,300 226w, https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/image.png?resize=768,1018 768w, https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/image.png?resize=773,1024 773w" sizes="auto, (max-width: 773px) 100vw, 773px" /><figcaption class="wp-element-caption">Another comment from the District 6 Supervisor.</figcaption></figure>
+
+
+
+<p>&#8220;There&#8217;s no excuse for the city not installing protected intersections when they&#8217;re doing protected bike lanes,&#8221; he added.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" height="768" width="1024" src="https://sf.streetsblog.org/wp-content/uploads/sites/12/2022/07/PXL_20220718_210751643.MP_.jpg?w=1024" alt="" class="wp-image-412864" srcset="https://sf.streetsblog.org/wp-content/uploads/sites/12/2022/07/PXL_20220718_210751643.MP_.jpg 4032w, https://sf.streetsblog.org/wp-content/uploads/sites/12/2022/07/PXL_20220718_210751643.MP_.jpg?resize=300,225 300w, https://sf.streetsblog.org/wp-content/uploads/sites/12/2022/07/PXL_20220718_210751643.MP_.jpg?resize=768,576 768w, https://sf.streetsblog.org/wp-content/uploads/sites/12/2022/07/PXL_20220718_210751643.MP_.jpg?resize=1024,768 1024w, https://sf.streetsblog.org/wp-content/uploads/sites/12/2022/07/PXL_20220718_210751643.MP_.jpg?resize=1536,1152 1536w, https://sf.streetsblog.org/wp-content/uploads/sites/12/2022/07/PXL_20220718_210751643.MP_.jpg?resize=2048,1536 2048w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">A motorist taking the corner at West and MacArthur in Oakland at a protected intersection. Photo: Streetsblog/Rudick</figcaption></figure>
+
+
+
+<p>It&#8217;s not as if protected intersections are unfamiliar to SFMTA. There are now many in the Bay Area, such as the one pictured above in Oakland. Moreover, <a href="https://sf.streetsblog.org/2016/12/21/eyes-on-the-street-sf-gets-its-first-protected-intersection">one of the first ones in the Bay Area was built in San Francisco back in 2016</a>, at 9th and Division. More have been built since. But for reasons that remain unclear, SFMTA doesn&#8217;t seem to use them as the default. They must do so if they want to make the city safe.</p>
+
+
+
+<p>“Road infrastructure also plays an important role in safer streets,&#8221; added Dorsey. &#8220;I live on this block and have personally experienced dangerous conditions here. I always welcome opportunities to improve our street design.&#8221;</p>
+<p>The post <a href="https://sf.streetsblog.org/2026/04/17/mercedes-driver-runs-red-hits-cyclist-speeds-off">Driver Runs Red, Hits Cyclist, Speeds Off</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></content:encoded>
+
+
+            <post-id xmlns="com-wordpress:feed-additions:1">488914</post-id>
+            <media:content
+                    url="https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/Screenshot-from-2026-04-16-11-04-13.png?w=724"
+                    medium="image" width="724" height="390" type="image/png"/>
+        </item>
+        <item>
+            <title>Headlines, April 17</title>
+            <link>https://sf.streetsblog.org/2026/04/17/headlines-april-17-3</link>
+
+            <dc:creator><![CDATA[Roger Rudick]]></dc:creator>
+            <pubDate>Fri, 17 Apr 2026 15:00:58 +0000</pubDate>
+            <category><![CDATA[Safety]]></category>
+            <category><![CDATA[today's headlines]]></category>
+            <guid isPermaLink="false">https://sf.streetsblog.org/?p=488950</guid>
+
+            <description><![CDATA[<p>The post <a href="https://sf.streetsblog.org/2026/04/17/headlines-april-17-3">Headlines, April 17</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></description>
+            <content:encoded><![CDATA[
+<ul class="wp-block-list">
+<li>West Oakland BART to get 240 Homes (<a href="https://www.sfchronicle.com/bayarea/article/bart-parking-housing-west-oakland-22208073.php">SFChron</a>)</li>
+
+
+
+<li>SMART Expands Fuel Options (<a href="https://www.marinij.com/2026/04/17/smart-expands-fuel-contracts-to-support-increased-service/">MarinIJ</a>)</li>
+
+
+
+<li>New Park for S.F. Marina (<a href="https://www.sfchronicle.com/sf/article/gashouse-cove-marina-park-plan-advances-22208856.php">SFChron</a>)</li>
+
+
+
+<li>S.F.&#8217;s &#8216;Street Parks&#8217; (<a href="https://www.sfchronicle.com/sf/article/street-park-san-francisco-22204547.php">SFChron</a>)</li>
+
+
+
+<li>Anti-Sunset Dunes Cranks Still Cranking (<a href="https://missionlocal.org/2026/04/sf-great-highway-lawsuit-appeal-sunset-dunes/">MissionLocal</a>)</li>
+
+
+
+<li>Cable Car Turnaround and Sidewalk Came out of Nowhere (<a href="https://www.sfgate.com/local/article/sf-cable-car-crash-22210617.php">SFGate</a>)</li>
+
+
+
+<li>Business Fund Plan for Downtown S.F. (<a href="https://sfstandard.com/2026/04/16/downtown-san-francisco-empty-storefront-grants/">SFStandard</a>, <a href="https://www.youtube.com/watch?v=wt8AWMAJREQ&amp;shem=dsdf,sharefoc,agadiscoversdl,,sh/x/discover/m1/4">KRON4</a>)</li>
+
+
+
+<li>Hayward Declares that Maybe Life is More Important than Motoring Convenience (<a href="https://www.eastbaytimes.com/2026/04/17/after-three-pedestrian-deaths-in-10-days-hayward-adopts-safer-streets-plan/">EastBayTimes</a>)</li>
+
+
+
+<li>More on I-80 Closure (<a href="https://www.eastbaytimes.com/2026/04/16/san-francisco-traffic-weekend-80/">EastBayTimes</a>)</li>
+
+
+
+<li>More on Debate Over Fining Property Owner for Destroying Trees (<a href="https://oaklandside.org/2026/04/16/1-million-fine-for-a-landowner-who-chopped-trees-oakland-officials-cant-decide/">Oaklandside</a>)</li>
+
+
+
+<li>Events to Celebrate &#8216;Earth Day&#8217; (<a href="https://www.sfexaminer.com/news/community/earth-day-in-sf-festivals-strolls-and-other-celebrations/article_8d6f5a6e-0383-421b-982a-1917704c9783.html">SFExaminer</a>)</li>
+</ul>
+
+
+
+<p>Get state headlines at&nbsp;<a rel="noreferrer noopener" href="https://cal.streetsblog.org/" target="_blank">Streetsblog California</a>, national headlines at&nbsp;<a rel="noreferrer noopener" href="https://usa.streetsblog.org/" target="_blank">Streetsblog USA</a></p>
+
+
+
+<p><em>Independent journalism is more important than ever.&nbsp;<a rel="noreferrer noopener" href="https://sf.streetsblog.org/make-a-donation-to-streetsblog-san-francisco/" target="_blank">Won’t you contribute</a>?</em></p>
+<p>The post <a href="https://sf.streetsblog.org/2026/04/17/headlines-april-17-3">Headlines, April 17</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></content:encoded>
+
+
+            <post-id xmlns="com-wordpress:feed-additions:1">488950</post-id>
+            <media:content
+                    url="https://sf.streetsblog.org/wp-content/uploads/sites/12/2024/08/Newspaper_cropped.png?w=999"
+                    medium="image" width="999" height="339" type="image/png"/>
+        </item>
+        <item>
+            <title>Friday Video(s): Kidical Mass, Night-Biking in Tokyo, and More</title>
+            <link>https://usa.streetsblog.org/2026/04/17/friday-videos-kidical-mass-night-biking-in-tokyo-and-more
+            </link>
+
+            <dc:creator><![CDATA[Streetsblog]]></dc:creator>
+            <pubDate>Fri, 17 Apr 2026 04:03:00 +0000</pubDate>
+            <category><![CDATA[Friday Video]]></category>
+            <category><![CDATA[Safety]]></category>
+            <guid isPermaLink="false">https://usa.streetsblog.org/?p=289664</guid>
+
+            <description><![CDATA[<p>There were great urbanism-adjacent YouTube videos for every taste this week; here are six of our favorites.</p>
+<p>The post <a href="https://usa.streetsblog.org/2026/04/17/friday-videos-kidical-mass-night-biking-in-tokyo-and-more">Friday Video(s): Kidical Mass, Night-Biking in Tokyo, and More</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></description>
+            <content:encoded><![CDATA[
+<p>Sometimes, the YouTube algorithm gods give us so many great videos on the Streetsblog beat in a single week that we can&#8217;t pick just one. So this week, we&#8217;re encouraging you to have yourself a mini urbanist film festival this weekend and binge them all. </p>
+
+
+
+<p>Let&#8217;s start with an appetizer by watching a short from one of our favs, Justine Underhill, about how bike lanes and emergency vehicles are more compatible than you think:</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-9-16 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+
+</div></figure>
+
+
+
+<p><em>Watch on <a href="https://www.youtube.com/shorts/Lr77lRovfN4">Justine Underhill</a></em> </p>
+
+
+
+<p>Next, we loved this thought-provoking video essay on why the bicycle&nbsp;— and especially the e-bike — is the &#8220;ultimate geopolitical cheat code&#8221; to defeat oil dominance around the world, starting with simple infrastructure in our very own neighborhoods:</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+
+</div></figure>
+
+
+
+<p><em>Watch on <a href="https://www.youtube.com/watch?v=ybCZmiPzy3g">AverageManOnABike.</a></em></p>
+
+
+
+<p>If you feel more like watching a horror movie, dive into this film about one of the most weirdly under-discussed dangers of the driverless car revolution: putting two million <em>human</em> drivers out of work:</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+
+</div></figure>
+
+
+
+<p><em>Watch on <a href="https://www.youtube.com/watch?v=ZqVuNSx7sgs">More Perfect Union.</a></em></p>
+
+
+
+<p>Speaking of techno-futurist horrors: there are some pretty serious implications for pedestrian safety buried in this YouTuber&#8217;s attempt to simply go for a walk without getting caught on camera!</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+
+</div></figure>
+
+
+
+<p><em>Watch on <a href="https://www.youtube.com/watch?v=zNrmeuU3csg">Chris the Producer</a></em></p>
+
+
+
+<p>If you want to make a quick pivot back to joy, check out this one about &#8220;Kidical Mass&#8221; rides, where parents and their children take to the streets on two wheels to advocate for empowering, family-friendly places:</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+
+</div></figure>
+
+
+
+<p><em>Watch on <a href="https://www.youtube.com/watch?v=10CImzRMSu8">Bikepacking and Pedal Born Pictures</a></em></p>
+
+
+
+<p>Or just watch this mesmerizing group ride around Tokyo at night:</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+
+</div></figure>
+
+
+
+<p>Finally, let&#8217;s end on a high note with a moving short film about riding bikes in Oslo, and how human-scaled transportation can connect us to ourselves and each other:</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-4-3 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+
+</div></figure>
+
+
+
+<p><em>Watch on <a href="https://www.youtube.com/watch?v=0GIvzTBZ0K4">Bikes, Books &amp; Buildings</a></em></p>
+<p>The post <a href="https://usa.streetsblog.org/2026/04/17/friday-videos-kidical-mass-night-biking-in-tokyo-and-more">Friday Video(s): Kidical Mass, Night-Biking in Tokyo, and More</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></content:encoded>
+
+
+            <enclosure
+                    url="https://usa.streetsblog.org/wp-content/uploads/sites/10/2026/04/SUO-Books-Bikes-and-buildings.png?w=1024"
+                    length="0" type="image/png"/>
+
+            <post-id xmlns="com-wordpress:feed-additions:1">488955</post-id>
+            <media:content
+                    url="https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/SUO-Books-Bikes-and-buildings.png?w=1024"
+                    medium="image" width="1024" height="638" type="image/png"/>
+        </item>
+        <item>
+            <title>Mayor Gloria’s Budget Has Deep Cuts for Safety and Bicycle Program for the San Diego Department of
+                Transportation
+            </title>
+            <link>
+                https://cal.streetsblog.org/2026/04/16/mayor-glorias-budget-has-deep-cuts-for-safety-and-bicycle-program-for-the-san-diego-department-of-transportation
+            </link>
+
+            <dc:creator><![CDATA[]]></dc:creator>
+            <pubDate>Thu, 16 Apr 2026 23:08:45 +0000</pubDate>
+            <category><![CDATA[Circulate San Diego]]></category>
+            <category><![CDATA[Safety]]></category>
+            <category><![CDATA[San Diego]]></category>
+            <guid isPermaLink="false">https://cal.streetsblog.org/?p=74517</guid>
+
+            <description><![CDATA[<p>Gloria when running for re-election in 2024, "Even in a difficult budget year we still put good money towards our Vision Zero plans.” Gloria's 2026 budget: Elimination of funding for the multi-modal team at SDDOT.<br />
+The post Mayor Gloria’s Budget Has Deep Cuts for Safety and Bicycle Program for the San Diego Department of Transportation appeared first on Streetsblog California.</p>
+<p>The post <a href="https://cal.streetsblog.org/2026/04/16/mayor-glorias-budget-has-deep-cuts-for-safety-and-bicycle-program-for-the-san-diego-department-of-transportation">Mayor Gloria’s Budget Has Deep Cuts for Safety and Bicycle Program for the San Diego Department of Transportation</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></description>
+            <content:encoded><![CDATA[<p>The City of San Diego <a href="https://timesofsandiego.com/politics/2026/04/15/san-diego-budget-deficit-police-fire-arts-parks/">released its draft Fiscal Year 2027 budget</a> this week, with Mayor Todd Gloria outlining a proposal shaped by a significant deficit and difficult tradeoffs across departments. The plan includes major cuts to a wide range of city services, from <a href="https://www.axios.com/local/san-diego/2026/04/15/san-diego-mayor-gloria-draft-city-budget-2027-arts-police-fire-spending">parks to arts funding</a>, as officials attempt to close the budget gap.</p>
+<p>Transportation, at first glance, appears to fare better than many departments. The city’s transportation budget would see a roughly $10 million increase in overall spending. But the devil is in the details. Advocates and watchdog organizations warn that the top line number masks cuts to programs aimed at improving safety for people walking and biking.</p>
+<p>Specifically, the budget calls for the elimination of the multi-modal team &#8211; the traffic engineers who plan and design street elements that make roads safer for all users. <a href="https://www.10news.com/news/local-news/san-diego-news/san-diego-mayor-proposes-scaling-back-some-bike-lane-projects-to-balance-the-city-budget-for-fiscal-year-2027">According to early reporting</a>, funding cuts would also scale back or delay bike lane projects and other traffic safety improvements that are already in the works.</p>
+<p>Recent data underscores why advocates are alarmed about these cuts. In San Diego, pedestrian crashes remain both common and increasingly deadly. <a href="https://www.kpbs.org/news/local/2026/02/23/data-show-san-diego-police-stop-fewer-drivers-while-more-people-die-in-traffic">Pedestrian deaths have climbed steadily over the past decade</a>, even after the city adopted its Vision Zero policy aimed at eliminating traffic fatalities. Hit-and-run crashes are also a persistent danger, with more than <a href="https://www.10news.com/news/local-news/hit-and-run-crashes-are-piling-up-in-san-diego-county-is-that-a-trend">200 incidents in 2024 alone causing dozens of deaths and hundreds of injuries</a>.</p>
+<p>Bicyclists face similar risks on San Diego’s streets. The city <a href="https://bonnicilawgroup.com/how-many-bicycle-accidents-occur-each-year-in-san-diego/">records roughly 500 bicycle-related crashes each year</a>, with several fatalities annually, while countywide totals are even higher. </p>
+<h2 class="wp-block-heading">Advocates Respond</h2>
+<p>Advocates and community groups responded quickly—and critically—to the mayor’s proposal.</p>
+<p><a href="https://www.circulatesd.org/vision_zero_coalition_response_to_mayor_gloria_s_proposed_fy_2027_budget">In a statement</a>, the San Diego Vision Zero Coalition warned that the proposed cuts undermine years of progress toward safer streets, calling on city leaders to restore funding for proven safety programs and infrastructure investments.</p>
+<p>The Vision Zero Coalition and the San Diego Bicycle Coalition <a href="https://actionnetwork.org/letters/urge-mayor-todd-gloria-and-the-city-council-to-keep-funding-bike-projects?source=direct_link&amp;">released an action alert</a> (below) to help people advocate for a restoration of the safety programs in the city&#8217;s budget. The message is simple: these cuts endanger people&#8217;s lives and well being, but it doesn&#8217;t have to be that way.</p>
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="1700" height="832" src="https://cal.streetsblog.org/wp-content/uploads/sites/14/2026/04/Screenshot-2026-04-16-at-1.42.32-PM.png" alt="" class="wp-image-74518" /><figcaption class="wp-element-caption"><a href="https://actionnetwork.org/letters/urge-mayor-todd-gloria-and-the-city-council-to-keep-funding-bike-projects?source=direct_link&amp;">Click here to go straight to the alert and take action.</a></figcaption></figure>
+<p>However, the strongest criticism came from Bike SD, who blasted Gloria for betraying a campaign promise to make the city more safe.</p>
+<p>&#8220;The mayor ran on a platform of saving lives and encouraging mode shift but has fallen short of doing either. With this budget proposal, it’s clear that he lacks the vision and political will to do much of anything he promised to do when running,&#8221; writes Anar Salayev, the Executive Director of BikeSD.</p>
+<p>Salayev has good reason to feel betrayed. When running for Mayor, Gloria regularly promised to be a champion for safe streets. </p>
+<p>&#8220;We&#8217;re building a different (transportation) system now to try and make our commitments under Vision Zero and our landmark Climate Action Plan&#8230;Even in a difficult budget year we still put good money towards our Vision Zero plans,&#8221; <a href="https://www.youtube.com/live/0SbYWh5Ad5g?t=1699s">Gloria said at one mayoral debate</a> less than two years ago when he was running for re-election.</p>
+<p>And it wasn&#8217;t just the professional advocacy groups that were outraged. </p>
+<p>A <a href="https://cal.streetsblog.org/wp-content/uploads/sites/14/2026/04/PRESS-Response-to-Budget-041526.pdf">press statement from Respect Bird Rock</a>, a La Jolla-based community advocacy group, struck a more mixed tone. The group expressed support for continued investment in high-crash locations but warned that key system-wide safety efforts are at risk without additional funding.</p>
+<p>“We are encouraged by the Mayor’s continued commitment to transportation safety, including funding for the ‘Fatal 15’ high-crash intersections and the City’s broader Vision Zero goals,” the group wrote. However, they emphasized that the Citywide Speed Management Plan—approved earlier this year—remains unfunded in the proposal.</p>
+<p>The group argued that without relatively modest investments in signage and implementation, the plan to lower speed limits across hundreds of miles of city streets could stall, leaving dangerous conditions unchanged in school zones, business districts, and high-injury corridors.</p>
+<p>Streetsblog reached out on bicycle safety message boards for reaction, and all of the responses we received were negative. </p>
+<p>This response from Brandon Duran best summarized residents&#8217; concerns: &#8220;Scrapping the multi-modal team will only serve to exacerbate the city&#8217;s problems with aging road infrastructure and terrible traffic. Without safe streets, there is little incentive for people to transition to a car-less lifestyle, and signals to residents that the city continues to prioritize drivers over pedestrians, cyclists, and transit users. These actions would hurt the city&#8217;s stated goals of fighting the climate crisis by going backwards on car dependency.&#8221;</p>
+<h2 class="wp-block-heading">Part 3: Funding Preserved for the “Fatal 15”</h2>
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="768" height="1024" src="https://cal.streetsblog.org/wp-content/uploads/sites/14/2026/04/Fatal-15-2.jpg" alt="" class="wp-image-74520" /><figcaption class="wp-element-caption">Nancy Wilson, holding the poster of her deceased husband, Kevin Wilson, at the launch of the Fatal 15 campaign in 2024. Photo <a href="https://sandiego350.org/2024/06/25/sd350-blog-post-citizen-action-convinces-san-diego-city-council-to-fix-the-fatal15/">SD 350</a>.</figcaption></figure>
+<p>Despite the broader concerns, advocates did acknowledge one important area of continuity: the city is maintaining funding for improvements at the “<a href="https://cal.streetsblog.org/2024/05/13/advocates-push-for-safety-improvements-in-san-diego">Fatal 15</a>,” the intersections and corridors with the highest rates of severe and fatal crashes.</p>
+<p>These projects have been a <a href="https://www.circulatesd.org/fix_the_fatal_15_fy_2025_budget">central focus of San Diego’s Vision Zero strategy</a>, targeting these locations with engineering fixes such as signal upgrades, safer crossings, and traffic calming measures. Previous efforts have <a href="https://www.nbcsandiego.com/news/local/city-making-improvements-at-some-of-san-diegos-most-dangerous-intersections/3965695/">led to changes at several high-risk intersections</a>, with more planned.</p>
+<p>Still, advocates caution that focusing only on the worst locations is not enough. While the Fatal 15 program addresses immediate hotspots, they argue that broader investments—like bike networks, safer street designs, and lower speed limits—are necessary to prevent dangerous conditions from emerging elsewhere.</p>
+<p>The post <a href="https://cal.streetsblog.org/2026/04/16/mayor-glorias-budget-has-deep-cuts-for-safety-and-bicycle-program-for-the-san-diego-department-of-transportation">Mayor Gloria&#8217;s Budget Has Deep Cuts for Safety and Bicycle Program for the San Diego Department of Transportation</a> appeared first on <a href="https://cal.streetsblog.org/">Streetsblog California</a>.</p>
+<p>The post <a href="https://cal.streetsblog.org/2026/04/16/mayor-glorias-budget-has-deep-cuts-for-safety-and-bicycle-program-for-the-san-diego-department-of-transportation">Mayor Gloria’s Budget Has Deep Cuts for Safety and Bicycle Program for the San Diego Department of Transportation</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></content:encoded>
+
+
+            <enclosure
+                    url="https://cal.streetsblog.org/wp-content/uploads/sites/14/2026/04/Screenshot-2026-04-16-at-2.13.18-PM.png?w=1024"
+                    length="0" type="image/png"/>
+
+            <post-id xmlns="com-wordpress:feed-additions:1">488963</post-id>
+            <media:content
+                    url="https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/Screenshot-2026-04-16-at-2.13.18-PM.png?w=1024"
+                    medium="image" width="1024" height="775" type="image/png"/>
+        </item>
+        <item>
+            <title>Headlines, April 16</title>
+            <link>https://sf.streetsblog.org/2026/04/16/headlines-april-16-3</link>
+
+            <dc:creator><![CDATA[Roger Rudick]]></dc:creator>
+            <pubDate>Thu, 16 Apr 2026 15:13:28 +0000</pubDate>
+            <category><![CDATA[Safety]]></category>
+            <category><![CDATA[today's headlines]]></category>
+            <guid isPermaLink="false">https://sf.streetsblog.org/?p=488882</guid>
+
+            <description><![CDATA[<p>The post <a href="https://sf.streetsblog.org/2026/04/16/headlines-april-16-3">Headlines, April 16</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></description>
+            <content:encoded><![CDATA[
+<ul class="wp-block-list">
+<li>SMART Train Ridership Up (<a href="https://www.pressdemocrat.com/2026/04/15/smart-train-cyclists-trail-tax-vote/?share=mtricwxt0msw2rrotrat&amp;fbclid=IwY2xjawRNCwlleHRuA2FlbQIxMQBicmlkETF6UDBMdmZSUVN4aWh1MG5Pc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHlI1fWbvyZOlWgYVPIz5C0-CKBi8ZGhFxTI46FqSCHz5QI0uFHx8cxHypsJt_aem_FSeZWt_FeZulhdG226AMqw">PressDemocrat</a>)</li>
+
+
+
+<li>San Jose Makes Transit Funding Plans (<a href="https://www.eastbaytimes.com/2026/04/15/san-jose-lays-out-transit-funding-wishes-ahead-of-regional-vote/">EastBayTimes</a>)</li>
+
+
+
+<li>How is Caltrain Funded? (<a href="https://www.rwcpulse.com/transportation/2026/04/15/where-does-caltrain-get-its-money/">PaloAltoPost</a>)</li>
+
+
+
+<li>Protests Over Proposed Housing Above Safeway (<a href="https://www.sfgate.com/local/article/bay-area-safeway-building-projects-22204717.php">SFGate</a>)</li>
+
+
+
+<li>Berkeley Raises Threshold to &#8216;Landmark&#8217; Buildings (<a href="https://www.berkeleyside.org/2026/04/16/berkeley-landmark-petition-housing-preservation">Berkeleyside</a>)</li>
+
+
+
+<li>SF Crash Investigated as Homicide (<a href="https://www.eastbaytimes.com/2026/04/15/san-francisco-pedestrian-homicidie/">EastBayTimes</a>)</li>
+
+
+
+<li>But I Saw a Cyclist Run a Stop Sign Once (<a href="https://www.sfchronicle.com/sf/article/bay-bridge-car-race-crash-22209264.php">SFChron</a>)</li>
+
+
+
+<li>More on Planned I-80 Closure (<a href="https://www.berkeleyside.org/2026/04/15/i-80-closure-what-to-know-about-travel-through-san-francisco-this-weekend">Berkeleyside</a>, <a href="https://www.ktvu.com/news/section-i-80-sf-close-over-weekend-viaduct-rehab-project">KTVU</a>)</li>
+
+
+
+<li>Turning I-580 Breakdown Lane into a Carpool Lane (<a href="https://www.sfchronicle.com/bayarea/article/lane-580-carpool-traffic-22208628.php">SFChron</a>)</li>
+
+
+
+<li>Commentary: A Review of SMART Funding Measure (<a href="https://www.marinij.com/2026/04/14/dick-spotswood-tax-proposals-for-fairfax-smart-go-under-microscope/">MarinIJ</a>)</li>
+
+
+
+<li>Commentary: Reviewing the Political Realities of Sunset Dunes (<a href="https://www.sfchronicle.com/opinion/article/sf-sunset-dunes-district-4-supervisor-election-22207144.php">SFChron</a>)</li>
+</ul>
+
+
+
+<p>Get state headlines at&nbsp;<a rel="noreferrer noopener" href="https://cal.streetsblog.org/" target="_blank">Streetsblog California</a>, national headlines at&nbsp;<a rel="noreferrer noopener" href="https://usa.streetsblog.org/" target="_blank">Streetsblog USA</a></p>
+
+
+
+<p><em>Independent journalism is more important than ever.&nbsp;<a rel="noreferrer noopener" href="https://sf.streetsblog.org/make-a-donation-to-streetsblog-san-francisco/" target="_blank">Won’t you contribute</a>?</em></p>
+<p>The post <a href="https://sf.streetsblog.org/2026/04/16/headlines-april-16-3">Headlines, April 16</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></content:encoded>
+
+
+            <post-id xmlns="com-wordpress:feed-additions:1">488882</post-id>
+            <media:content
+                    url="https://sf.streetsblog.org/wp-content/uploads/sites/12/2024/08/Newspaper_cropped.png?w=999"
+                    medium="image" width="999" height="339" type="image/png"/>
+        </item>
+        <item>
+            <title>Talking Headways Podcast: Second-Hand E-Bikes Can Be The Way Forward</title>
+            <link>
+                https://usa.streetsblog.org/2026/04/16/talking-headways-podcast-second-hand-e-bikes-can-be-the-way-forward
+            </link>
+
+            <dc:creator><![CDATA[Jeff Wood]]></dc:creator>
+            <pubDate>Thu, 16 Apr 2026 14:00:00 +0000</pubDate>
+            <category><![CDATA[E-bikes]]></category>
+            <category><![CDATA[ebikes]]></category>
+            <category><![CDATA[Electric Bikes]]></category>
+            <category><![CDATA[Podcast]]></category>
+            <category><![CDATA[Podcasts]]></category>
+            <category><![CDATA[Safety]]></category>
+            <category><![CDATA[Talking Headways Podcast]]></category>
+            <category><![CDATA[Transportation Policy]]></category>
+            <guid isPermaLink="false">https://usa.streetsblog.org/?p=289622</guid>
+
+            <description><![CDATA[<p>Upway is helping people, even AOC, get an e-bike.</p>
+<p>The post <a href="https://usa.streetsblog.org/2026/04/16/talking-headways-podcast-second-hand-e-bikes-can-be-the-way-forward">Talking Headways Podcast: Second-Hand E-Bikes Can Be The Way Forward</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></description>
+            <content:encoded><![CDATA[<figure class="wp-block-image alignright size-large is-resized"><img loading="lazy" decoding="async" width="770" height="715" src="https://usa.streetsblog.org/wp-content/uploads/sites/10/2026/04/AOC-with-Upway-co-founder-Stephane-Ficaja.jpg?w=770" alt="" class="wp-image-289624" style="width:345px;height:auto" /><figcaption class="wp-element-caption">That&#8217;s AOC with Upway co-founder Stéphane Ficaja.</figcaption></figure>
+<p>This week, we’re joined by Calvin Thigpen of Toole Design and Ysabel Hoogeveen of Upway to discuss the report, <a href="https://upway.co/blogs/news/refurbished-e-bikes-report-upway?srsltid=AfmBOoq1xBg6spIjbUdGgW_q37oW4oQPnlDO8BHc-V43zNhFXHqJIIvn" rel="noreferrer noopener">Refurbished E-bikes: An Affordable Transportation Solution for Cities and Consumers</a>. We chat about costs and value for used e-bikes and what could help grow the industry — too bad we spoke before Alexandria Ocasio-Cortez <a href="https://bsky.app/profile/did:plc:udnac33pmf2iwcblpeai5a5p/post/3mjhjniayzs23?ref_src=embed&amp;ref_url=https%253A%252F%252Fnyc.streetsblog.org%252F2026%252F04%252F15%252Fwednesdays-headlines-fifa-follies-edition" id="https://bsky.app/profile/did:plc:udnac33pmf2iwcblpeai5a5p/post/3mjhjniayzs23?ref_src=embed&amp;ref_url=https%253A%252F%252Fnyc.streetsblog.org%252F2026%252F04%252F15%252Fwednesdays-headlines-fifa-follies-edition">was recently spotted</a> tooling around on <a href="https://www.linkedin.com/posts/shopupway_one-of-those-moments-where-you-pause-for-activity-7445824560815316992-Igiz/" id="https://www.linkedin.com/posts/shopupway_one-of-those-moments-where-you-pause-for-activity-7445824560815316992-Igiz/">an Upway e-bike</a>.</p>
+<p>Now, you know at Talking Headways, we give you three ways to enjoy our content: Click the player below and listen, click <a href="https://theoverheadwire.com/2026/04/unedited-podcast-transcript-574-second-hand-e-bikes/" id="https://theoverheadwire.com/2026/04/unedited-podcast-transcript-574-second-hand-e-bikes/">this link</a> and read the full transcript or check out the excerpt below the player:</p>
+<div class="wp-block-iframe not-prose my-6"></div>
+<p><strong>Jeff Wood:</strong> I’m curious about who needs refurbished e-bikes versus who can actually afford them. There’s a price level that you can get e-bikes versus a regular bike, and so there’s obviously folks who have multiple e-bikes or they can afford to have an e-bike. The people in my neighborhood are usually putting their kids in the box and, and then riding down the street.</p>
+<p><strong>Ysabel Hoogeveen:</strong> I don’t know 100 percent the answer on that, but I think one good sign lately what we see in the market is that a lot of rebate programs starting to increase in certain states.</p>
+<p>If you think, for example, like the California rebate, Minnesota rebate, there are a lot of states that are starting to invest them. I think the bigger question is that in general we should expand eligibility of people that can actually own an e-bike. And that’s where potentially refurbished e-bike could be an option to get more kind of adoption per dollar spent.</p>
+<p>Like a rebate voucher can go up to $1,500 per e-bike off. And especially, a hot topic right now with also the raising gas prices is that hopefully we hope to see a trend that people are getting away from car ownership and moving to an e-bike ownership.</p>
+<p>The annual cost of owning a car is over $15,000, whereas an e-bike costs you just a bit more than $1,000 per year. So I think when it comes to need versus own, I think different subsidies at a state level will help us allow to reach also people that really need it when it comes to delivery workers, maybe the low-income families, like these are types of tactics that we should implement to increase e-bike adoption.</p>
+<p><strong>Calvin Thigpen:</strong> To your point, Jeff, a wealthier family has the purchasing power to buy a $5,000 e-bike, so I think, rightly so, a lot of the e-bike rebate programs have really shifted their focus to put some or all of their money towards just income-qualified recipients to make sure those people can afford a high quality e-bike.</p>
+<p>And I think one thing that maybe is missing is the people who are just above that threshold. And I think that’s potentially where services like Upway can come in is if Upway offers you know. 30-, 40-, 50-, 60-percent or more discounts, you know that that makes it much more reasonable for you to buy a bike that’s actually going to last you a long time.</p>
+<p>It’s going to serve all of your needs, be it school commute, groceries, et cetera. And so I do think there is a little bit with evolution of the e-bike rebate programs, I think there’s a little bit of a sort of a missing middle that I think Upway and other similar services and sort of affordability efforts can help plug that hole a bit.</p>
+<p>The post <a href="https://usa.streetsblog.org/2026/04/16/talking-headways-podcast-second-hand-e-bikes-can-be-the-way-forward">Talking Headways Podcast: Second-Hand E-Bikes Can Be The Way Forward</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></content:encoded>
+
+
+            <enclosure
+                    url="https://usa.streetsblog.org/wp-content/uploads/sites/10/2026/04/upway-warehouse-with-headways-and-aoc.jpg?w=1024"
+                    length="0" type="image/jpeg"/>
+
+            <post-id xmlns="com-wordpress:feed-additions:1">488888</post-id>
+            <media:content
+                    url="https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/upway-warehouse-with-headways-and-aoc.jpg?w=1024"
+                    medium="image" width="1024" height="609" type="image/jpeg"/>
+        </item>
+        <item>
+            <title>Florida Town Gives New Residents Free Golf Carts to Replace Their Cars</title>
+            <link>
+                https://usa.streetsblog.org/2026/04/16/this-florida-town-is-buying-residents-golf-carts-to-replace-their-cars
+            </link>
+
+            <dc:creator><![CDATA[Kea Wilson]]></dc:creator>
+            <pubDate>Thu, 16 Apr 2026 04:02:00 +0000</pubDate>
+            <category><![CDATA[Communities]]></category>
+            <category><![CDATA[Florida]]></category>
+            <category><![CDATA[minimobility]]></category>
+            <category><![CDATA[Safety]]></category>
+            <guid isPermaLink="false">https://usa.streetsblog.org/?p=289602</guid>
+
+            <description><![CDATA[<p>...and recording their highest sales numbers ever.</p>
+<p>The post <a href="https://usa.streetsblog.org/2026/04/16/this-florida-town-is-buying-residents-golf-carts-to-replace-their-cars">Florida Town Gives New Residents Free Golf Carts to Replace Their Cars</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></description>
+            <content:encoded><![CDATA[<p>A Florida community has a novel strategy to reduce how much its residents drive: buying them a golf cart instead.</p>
+<p>The planned community of Babcock Ranch recently reported its best sales month ever after it offered a free golf cart with the purchase of any new home, besting its previous one-month record by nearly 25 percent.</p>
+<p>And many of these caddy wagons aren&#8217;t zipping around the links —&nbsp;they&#8217;re replacing car trips. Long before the golf cart promotion, Babock Ranch set out to create a haven for the <a href="https://babcockranch.com/from-publix-to-the-pool-the-joy-of-golf-cart-living-at-babcock-ranch/">&#8220;joy of golf cart living,&#8221;</a> using Vision Zero tools like low speed limits, dedicated non-automotive paths and dense land use that places everything residents need within the seven-mile radius of the community.</p>
+<p>Collectively, those initiatives have made leaving the car at home the sensible choice for all sorts of daily trips — from &#8220;Publix to the pool,&#8221; the community says, referring to the popular grocery chain.</p>
+<p>They also make it easier to get rid of the <em>second </em>family car. Between 2021 and 2023, the share of Babock Ranch households who owned two cars fell from 70 percent just to 43 percent — and that was <em>before </em>the community began to give away golf carts for free.</p>
+<p>&#8220;This is not a pie in the sky idea; it&#8217;s a real town,&#8221; said Larry Burns, who serves on the board of Kitson &amp; Partners, the developer behind the community. &#8220;And our residents are basically telling us that for a lot of the trips they&#8217;re making, they&#8217;re preferring to use their golf cart. And we&#8217;ve engineered the roads to make that a safe thing to do.&#8221;</p>
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" height="670" width="1024" src="https://usa.streetsblog.org/wp-content/uploads/sites/10/2026/04/SUO-Babcock-Ranch-1.png?w=1024" alt="...and recording their highest sales numbers ever." class="wp-image-289603" /></figure>
+<p>A former vice president of research and planning for General Motors, Burns is far from skeptical of automobiles; the Kitson board originally brought him on to discuss how autonomous vehicles might someday help shape the Fort Myers suburb.</p>
+<p>It&#8217;s the <em>low-fi</em> strategies, though, that are helping Babcock Ranch address its transportation challenges today — not the least of which is protecting human lives from car crashes.</p>
+<p>The members of the community already enjoy more than <a href="https://babcockranch.com/from-publix-to-the-pool-the-joy-of-golf-cart-living-at-babcock-ranch/">100 miles of bike trails</a> and 10 mile per hour speed limits in school zones reinforced by cameras, Burns noted. And that&#8217;s in addition to the relief of knowing that their neighbors&#8217; golf carts are farless likely to kill a pedestrian than a multi-ton SUV.</p>
+<p>&#8220;We have all the Vision Zero strategies at work,&#8221; added Burns. &#8220;But [we also have to think] about kinetic energy, and the mass of a car &#8230; If we could have more and more of our trips in the lighter golf cart rather than the heavier car, even at 25 miles an hour, that&#8217;s a good thing for safety.&#8221; </p>
+<aside class="not-prose mb-5">
+<h3 class="text-xl font-bold mb-2 tracking-[.32px] dark:text-white">
+			Recommended<br />
+		</h3>
+<div class="p-4 sm:p-6 border-1 border-[#cccccc] dark:border-[#a6a6a6] text-[#191919] dark:text-[#fafafa]">
+<div class="flex flex-col sm:flex-row gap-3 sm:gap-6">
+<div class="order-first sm:order-last sm:w-[280px] aspect-[16/9] overflow-hidden shrink-0">
+          		<a href="https://usa.streetsblog.org/2024/12/10/can-we-build-car-light-neighborhoods-from-scratch-even-in-texas" class="w-full" aria-hidden="true"><br />
+            	<img loading="lazy" decoding="async" width="1024" height="576" src="https://usa.streetsblog.org/wp-content/uploads/sites/10/2024/12/Commons_Mercantile-Street-05.jpg?w=1024" class="object-cover wp-post-image" alt="Can We Build Car-Light Neighborhoods From Scratch — Even in Texas?" /><br />
+          		</a>
+			</div>
+<div class="flex flex-col justify-start gap-2">
+<div class="leading-tight">
+				<a href="https://usa.streetsblog.org/2024/12/10/can-we-build-car-light-neighborhoods-from-scratch-even-in-texas" class="no-underline! hover:underline! font-bold w-full"><br />
+					Can We Build Car-Light Neighborhoods From Scratch — Even in Texas?<br />
+				</a>
+				</div>
+<div class="hidden sm:flex flex-col flex-wrap gap-2 text-base">
+<div class="flex flex-row nowrap items-center gap-2">
+<div>
+      <a href="https://usa.streetsblog.org/author/streetsblog" class="font-bold !no-underline hover:!underline">Streetsblog</a>
+    </div>
+</p></div>
+</p></div>
+<div class="text-base">
+					December 10, 2024
+				</div>
+</p></div>
+</p></div>
+</p></div>
+</aside>
+<p>Burns also said that discouraging everyday driving is a big part of Babcock Ranch&#8217;s commitment to sustainability, which has won its developers awards and a reputation as the architects of &#8220;America&#8217;s first solar-powered town.&#8221;</p>
+<p>Less driving also helps offset the local cost of living. While the community settles around the median home price of the surrounding area, many residents pay a lower share of their income for <a href="https://htaindex.cnt.org/map/#">housing <em>plus </em>transportation</a>, since a lot of suburban Floridians can&#8217;t reliably access school, work or basic services without buying a car for every adult under their roof. (To be fair, residents of the urbanized parts of Fort Myers still pay less.)</p>
+<p>&#8220;With affordability being high on the list of important reasons to live at Babcock ranch, and it turns out a one car lifestyle plays into that quite nicely,&#8221; he adds.</p>
+<aside class="not-prose mb-5">
+<h3 class="text-xl font-bold mb-2 tracking-[.32px] dark:text-white">
+			Recommended<br />
+		</h3>
+<div class="p-4 sm:p-6 border-1 border-[#cccccc] dark:border-[#a6a6a6] text-[#191919] dark:text-[#fafafa]">
+<div class="flex flex-col sm:flex-row gap-3 sm:gap-6">
+<div class="order-first sm:order-last sm:w-[280px] aspect-[16/9] overflow-hidden shrink-0">
+          		<a href="https://usa.streetsblog.org/2024/05/06/the-e-commerce-explosion-is-making-roads-more-dangerous" class="w-full" aria-hidden="true"><br />
+            	<img decoding="async" loading="lazy" width="1024" height="452" src="https://usa.streetsblog.org/wp-content/uploads/sites/10/2024/05/Amazon-delivery-vans.jpg?w=1024" class="object-cover wp-post-image" alt="The E-Commerce Explosion is Making Roads More Dangerous" /><br />
+          		</a>
+			</div>
+<div class="flex flex-col justify-start gap-2">
+<div class="leading-tight">
+				<a href="https://usa.streetsblog.org/2024/05/06/the-e-commerce-explosion-is-making-roads-more-dangerous" class="no-underline! hover:underline! font-bold w-full"><br />
+					The E-Commerce Explosion is Making Roads More Dangerous<br />
+				</a>
+				</div>
+<div class="hidden sm:flex flex-col flex-wrap gap-2 text-base">
+<div class="flex flex-row nowrap items-center gap-2">
+<div>
+      <a href="https://usa.streetsblog.org/author/keawilson" class="font-bold !no-underline hover:!underline">Kea Wilson</a>
+    </div>
+</p></div>
+</p></div>
+<div class="text-base">
+					May 6, 2024
+				</div>
+</p></div>
+</p></div>
+</p></div>
+</aside>
+<p>Perhaps provocatively, Burns said Babcock Ranch&#8217;s other strategy to reduce car trips might <em>eliminate</em> some trips altogether — by increasing e-commerce instead. He&#8217;s particularly interested in enhancing residents’ &#8220;virtual and physical access&#8221; to the goods and services they rely on, whether that&#8217;s opening a <a href="https://babcockranch.com/growth-at-babcock-ranch-marks-a-new-era-of-convenience-and-connection/">second grocery store </a>within town borders so more people can walk to buy food, or helping a company like Instacart bring food right to their doors.</p>
+<p>Now, he says the community is looking to downsize delivery vehicles so they&#8217;re less likely to injure or kill people who are rolling, walking, and golf-carting around.</p>
+<p>&#8220;We&#8217;re looking really hard at alternatives to having bigger e-commerce vehicles running around on our streets,&#8221; he added. &#8220;With 15,000 residents and e-commerce continuing to grow at 15% a year, you can imagine we&#8217;ll have a lot of brown, white and purple vans running around, unless we think about alternatives &#8230; If we want to reduce our dependence on cars, I think it&#8217;s really important to use virtual access as one of the mechanisms to do that.&#8221;</p>
+<p>Of course, Babcock Ranch is far from a car-free paradise — and in a car-dependent metro like Fort Myers, Burns is hesitant to commit to the goal of becoming one. Still, he hopes the town&#8217;s approach could inspire other suburbs to treat car-light living as a valuable amenity that can help attract residents — whether that&#8217;s buying them golf carts to ride through a Floridian winter or other car-cutting strategies. </p>
+<p>&#8220;It&#8217;s not just a matter of saying, hey, trade in your car for a golf cart,&#8221; he said. &#8220;It&#8217;s also promote ways of you getting a trip made without having to own that second car.&#8221;</p>
+<p>The post <a href="https://usa.streetsblog.org/2026/04/16/this-florida-town-is-buying-residents-golf-carts-to-replace-their-cars">Florida Town Gives New Residents Free Golf Carts to Replace Their Cars</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></content:encoded>
+
+
+            <enclosure
+                    url="https://usa.streetsblog.org/wp-content/uploads/sites/10/2026/04/SUO-Babcock-Ranch-2.png?w=1024"
+                    length="0" type="image/png"/>
+
+            <post-id xmlns="com-wordpress:feed-additions:1">488891</post-id>
+            <media:content
+                    url="https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/SUO-Babcock-Ranch-2.png?w=1024"
+                    medium="image" width="1024" height="627" type="image/png"/>
+        </item>
+        <item>
+            <title>Commentary: Is a Transporter Bridge the 100-Year-Old Solution for the Estuary Crossing We&#8217;ve
+                all been Looking for?
+            </title>
+            <link>
+                https://sf.streetsblog.org/2026/04/15/commentary-is-a-transporter-bridge-the-100-year-old-solution-for-the-estuary-crossing-weve-all-been-looking-for
+            </link>
+
+            <dc:creator><![CDATA[Roger Rudick]]></dc:creator>
+            <pubDate>Thu, 16 Apr 2026 00:19:08 +0000</pubDate>
+            <category><![CDATA[Alameda]]></category>
+            <category><![CDATA[newsletter]]></category>
+            <category><![CDATA[Safety]]></category>
+            <category><![CDATA[Promoted]]></category>
+            <guid isPermaLink="false">https://sf.streetsblog.org/?p=488808</guid>
+
+            <description><![CDATA[<p>A kooky but real technology called a "transporter bridge" may solve Western Alameda's "you can't get there from here" issue for cyclists and pedestrians. Not only that, it could become a major attraction for the Bay Area</p>
+<p>The post <a href="https://sf.streetsblog.org/2026/04/15/commentary-is-a-transporter-bridge-the-100-year-old-solution-for-the-estuary-crossing-weve-all-been-looking-for">Commentary: Is a Transporter Bridge the  100-Year-Old Solution for the Estuary Crossing We&#8217;ve all been Looking for?</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></description>
+            <content:encoded><![CDATA[
+<p><a href="https://sf.streetsblog.org/2018/03/05/is-there-a-place-for-aerial-gondolas-in-the-bay-areas-transit-picture">Gondolas</a>, giant <a href="https://sf.streetsblog.org/2020/03/11/options-for-an-alameda-oakland-bridge">bridges</a>, and water shuttles have all been <a href="https://sf.streetsblog.org/2025/07/15/commentary-the-french-city-of-lyon-shows-how-to-connect-oakland-and-western-alameda">proposed</a> as a safe, inviting way for pedestrians and cyclists to get between Western Alameda and Jack London Square. The popularity of the existing Woodstock water shuttle pilot is proof that the demand is real. Ultimately, some kind of bridge is needed, but current proposals—with a deck high enough to allow the largest ships to clear and massive ramps going up and down—will be incredibly expensive. And a normal drawbridge is out of the question because of Coast Guard requirements about not blocking the channel in the event of a mechanical failure.</p>
+
+
+
+<p>One night, while scrolling more than I should, my feed sent me a link to the Vizcaya transporter bridge near the port of Bilbao, Spain. I&#8217;d never heard of them before, but here&#8217;s the video it sent me:</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe loading="lazy" title="Vizcaya Bridge - UNESCO World Heritage Site" width="500" height="281" src="https://www.youtube.com/embed/IT0QngLe5R0?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div></figure>
+
+
+
+<p></p>
+
+
+
+<p>Here&#8217;s a still shot of the bridge, for those who don&#8217;t have time to watch the video:</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" height="425" width="1024" src="https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/Zubia_jun.jpg?w=1024" alt="" class="wp-image-488810" srcset="https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/Zubia_jun.jpg 1920w, https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/Zubia_jun.jpg?resize=300,125 300w, https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/Zubia_jun.jpg?resize=768,319 768w, https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/Zubia_jun.jpg?resize=1024,425 1024w, https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/Zubia_jun.jpg?resize=1536,638 1536w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">The Vizcaya transporter bridge near the port of Bilbao, Spain. Photo: <a href="https://en.wikipedia.org/wiki/Vizcaya_Bridge" id="https://en.wikipedia.org/wiki/Vizcaya_Bridge">Wikimedia Commons</a>.</figcaption></figure>
+
+
+
+<p>The transporter bridge was invented over 100 years ago. Try to imagine if a high bridge and a gondola had a baby. There are towers on either bank and a deck across the top high enough for any ship to clear. A gondola is suspended by cables just over the water from a track below the deck. The gondola glides just above the water, back and forth from dock to dock to transport cars, pedestrians, and cyclists.</p>
+
+
+
+<p>They were rendered more-or-less obsolete with advances in engineering that made draw bridges and tunnels easier to build and maintain. But they still operate in a few places with unique circumstances. In addition to Spain, there are <a href="https://www.youtube.com/watch?v=KxzOQwktMCc">a couple in the UK</a> and at least one I could find in <a href="https://en.wikipedia.org/wiki/Rochefort-Martrou_Transporter_Bridge">France</a>. </p>
+
+
+
+<p><a href="https://sf.streetsblog.org/2023/03/07/commentary-western-alameda-bike-ped-bridge-proposal-is-too-damn-complicated">In 2023</a>, <a href="https://sf.streetsblog.org/2023/03/07/commentary-western-alameda-bike-ped-bridge-proposal-is-too-damn-complicated">planner Kenya Wheeler and I proposed</a> a bridge like the kind normally used at a train station to get over the tracks, with a tower and an elevator on either side and a deck across the Oakland-Alameda estuary. Under that scheme, you go straight up on one side, walk across the deck, go straight down on the other. That eliminates the need for the ramps, which, in the case of <a href="https://sf.streetsblog.org/2019/02/27/visualizing-a-bridge-to-western-alameda">the Oakland-Alameda proposals</a>, involve huge land acquisitions and additional costs.</p>
+
+
+
+<p>However, advocates I spoke with wanted the ramps, primarily because they didn&#8217;t like the idea of taking elevators on either side. A transporter bridge, obviously, addresses that issue. If you don&#8217;t want to ride the elevators and can&#8217;t climb the stairs, take the gondola directly across from shore to shore.</p>
+
+
+
+<p>Extrapolating from the existing transporter bridges, the crossing should take less than two minutes from boarding to stepping off. It&#8217;s guided directly into its dock, so there&#8217;s no time wasted by a deck hand tying up ropes and lowering a ramp, like there is with the existing water shuttle, which takes about seven minutes for each crossing. The transporter <a href="https://sf.streetsblog.org/2018/03/05/is-there-a-place-for-aerial-gondolas-in-the-bay-areas-transit-picture">bridge gondola</a> also isn&#8217;t subservient to wake currents (the water shuttle often bounces around and has to delay docking when large ships are plying the estuary). It should also be much more tolerant of bad weather. </p>
+
+
+
+<p>This also works for people with a fear of heights, since if the gondola cables break, you “plummet” a few feet onto the water (obviously, the gondola would be designed to float). Unlike a conventional, aerial gondola, if it breaks down, rescues can be done from boats. And unlike with a drawbridge, a mechanical failure won&#8217;t jam up the estuary. It also won&#8217;t leave someone stuck on the wrong side during a mechanical failure, <a href="https://sf.streetsblog.org/2025/11/04/safety-incident-temporarily-removes-alameda-water-shuttle-from-service">as has happened with the water shuttle</a>, since the bridge deck and elevators provide an alternative route.</p>
+
+
+
+<p>And there&#8217;s no issue with burning fuels or charging batteries, since the power comes from motors on the bridge that are plugged into the grid. I&#8217;d imagine it could even be automated.</p>
+
+
+
+<p>It also just <em>fits</em>. Imagine if the bridge were designed to emulate the look of Oakland&#8217;s iconic cargo cranes. You know, the ones that <a href="https://www.sfchronicle.com/bayarea/article/Oakland-port-cranes-Star-Wars-17144781.php">supposedly inspired</a> the walkers in <em>Star Wars</em>:</p>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://commons.wikimedia.org/wiki/File:Container_cranes_in_Oakland_Inner_Harbor_%2891600%29.jpg"><img loading="lazy" decoding="async" width="960" height="720" src="https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/Container_cranes_in_Oakland_Inner_Harbor_91600.jpg?w=960" alt="" class="wp-image-488815" srcset="https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/Container_cranes_in_Oakland_Inner_Harbor_91600.jpg 960w, https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/Container_cranes_in_Oakland_Inner_Harbor_91600.jpg?resize=300,225 300w, https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/Container_cranes_in_Oakland_Inner_Harbor_91600.jpg?resize=768,576 768w" sizes="auto, (max-width: 960px) 100vw, 960px" /></a><figcaption class="wp-element-caption">Oakland&#8217;s existing cranes create an obvious design template for the bridge towers. Maybe they could even construct some of the bridge from the disused cranes? Wikimedia Commons</figcaption></figure>
+
+
+
+<p>In other words, it&#8217;s just freakin&#8217; cool. Imagine the list of tourist attractions for the Bay Area: cable cars, Fisherman&#8217;s Wharf, the Golden Gate Bridge, Chinatown, and North Beach. Now add the Oakland-Alameda transporter bridge, especially considering it&#8217;s a short walk from BART, Amtrak, the ferry terminal, plus a bunch of entertainment venues in Jack London Square</p>
+
+
+
+<p>&#8220;This is so beautiful, it would be a destination in and of itself,&#8221; opined Savlan Hauser of the Jack London Improvement District, after I showed her the video of the bridge in Spain.</p>
+
+
+
+<p>For residents, the gondola would be the choice if it happens to line up with your trip. But the elevators and catwalk crossing is an always-available backup if the gondola&#8217;s on the wrong side and you&#8217;re in a hurry to connect to a ferry or Amtrak.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" height="704" width="1024" src="https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/1280px-Trainera_Transbordador_Vizcaya.jpg?w=1024" alt="" class="wp-image-488813" srcset="https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/1280px-Trainera_Transbordador_Vizcaya.jpg 1280w, https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/1280px-Trainera_Transbordador_Vizcaya.jpg?resize=300,206 300w, https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/1280px-Trainera_Transbordador_Vizcaya.jpg?resize=768,528 768w, https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/1280px-Trainera_Transbordador_Vizcaya.jpg?resize=1024,704 1024w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">Not AI. The real Vizcaya Bridge in Spain near the Port of Bilbao. Obviously, what I&#8217;m proposing here would be smaller and would not carry cars, of course. Photo: Wikimedia Commons</figcaption></figure>
+
+
+
+<p>Transporter bridges are a weird, all-but-forgotten, wonderful niche piece of technology, kind of like cable cars for water. There are a few places where they still make sense. With the unique constraints of the Oakland-Alameda estuary, it may be just such a place.</p>
+<p>The post <a href="https://sf.streetsblog.org/2026/04/15/commentary-is-a-transporter-bridge-the-100-year-old-solution-for-the-estuary-crossing-weve-all-been-looking-for">Commentary: Is a Transporter Bridge the  100-Year-Old Solution for the Estuary Crossing We&#8217;ve all been Looking for?</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></content:encoded>
+
+
+            <post-id xmlns="com-wordpress:feed-additions:1">488808</post-id>
+            <media:content
+                    url="https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/Gemini_Generated_transporterbridgeoverestuary_white.png?w=1024"
+                    medium="image" width="1024" height="768" type="image/png"/>
+        </item>
+        <item>
+            <title>Headlines, April 15</title>
+            <link>https://sf.streetsblog.org/2026/04/15/headlines-april-15-2</link>
+
+            <dc:creator><![CDATA[Roger Rudick]]></dc:creator>
+            <pubDate>Wed, 15 Apr 2026 15:38:38 +0000</pubDate>
+            <category><![CDATA[Safety]]></category>
+            <category><![CDATA[today's headlines]]></category>
+            <guid isPermaLink="false">https://sf.streetsblog.org/?p=488826</guid>
+
+            <description><![CDATA[<p>The post <a href="https://sf.streetsblog.org/2026/04/15/headlines-april-15-2">Headlines, April 15</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></description>
+            <content:encoded><![CDATA[
+<ul class="wp-block-list">
+<li>Transit Ridership Climbing (<a href="https://abc7news.com/amp/post/bay-area-transit-agencies-are-seeing-ridership-climb-gas-prices-rise-weather-improves-is-sustainable/18881191/">ABC7</a>)</li>
+
+
+
+<li>More on BART Ridership (<a href="https://localnewsmatters.org/2026/04/14/bart-ridership-march-2026-post-pandemic-high-budget-deficit/">LocalNewsMatters</a>)</li>
+
+
+
+<li>More BART Delays (<a href="https://www.eastbaytimes.com/2026/04/15/bart-second-major-delay-in-a-week-disabled-train/">EastBayTimes</a>)</li>
+
+
+
+<li>Designs for Capping/Closing I-980 in West Oakland (<a href="https://oaklandside.org/2026/04/14/vision-980-highway-phase-two-competition-oakland-removal-community/">Oaklandside</a>)</li>
+
+
+
+<li>Bayview Residents Mad They Can&#8217;t Park on Sidewalk (<a href="https://missionlocal.org/2026/04/sf-bayview-parking-crackdown-police/">MissionLocal</a>)</li>
+
+
+
+<li>Oakland Can Now Tow Vehicles More Quickly (<a href="https://oaklandside.org/2026/04/14/ken-houston-encampment-abatement-policy-passes-oakland/">Oaklandside</a>, <a href="https://www.eastbaytimes.com/2026/04/14/oakland-homeless-new-law/">EastBayTimes</a>)</li>
+
+
+
+<li>Bayshore Freeway Weekend Closure Could Bring &#8216;Carmageddon&#8217; (<a href="https://www.sfchronicle.com/sf/article/san-francisco-bayshore-freeway-closure-mean-22207125.php">SFChron</a>, <a href="https://www.sfgate.com/travel/article/caltrans-i-80-closure-sf-22204734.php">SFGate</a>)</li>
+
+
+
+<li>Apartments Planned Near San Rafael Transit Center (<a href="https://www.marinij.com/2026/04/14/new-24-story-san-rafael-apartment-plan-proposed/">MarinIJ</a>)</li>
+
+
+
+<li>Suspect Arrested for Killing Pedestrian on Mission (<a href="https://www.sfchronicle.com/bayarea/article/sf-fatal-hit-and-run-arrest-22206501.php">SFChron</a>, <a href="https://sfstandard.com/2026/04/14/san-francisco-fatal-hit-and-run-soma/">SFStandard</a>)</li>
+
+
+
+<li>Man Kills 38 Trees in Oakland (<a href="https://www.sfchronicle.com/eastbay/article/oakland-tree-cutting-fine-hearing-22205973.php">SFChron</a>)</li>
+
+
+
+<li>Letters: Develop the Presidio (<a href="https://www.sfchronicle.com/opinion/letterstotheeditor/article/presidio-trust-san-francisco-22206684.php">SFChron</a>)</li>
+
+
+
+<li>Commentary: Development or Destruction in Store for Presidio? (<a href="https://www.sfgate.com/local/article/trump-sf-presidio-trust-22203827.php">SFGate</a>)</li>
+
+
+
+<li>Commentary: Support Prop. A for Earthquake Resilience (<a href="https://www.sfchronicle.com/opinion/editorials/article/prop-a-san-francisco-earthquake-22206074.php">SFChron</a>)</li>
+</ul>
+
+
+
+<p>Get state headlines at&nbsp;<a rel="noreferrer noopener" href="https://cal.streetsblog.org/" target="_blank">Streetsblog California</a>, national headlines at&nbsp;<a rel="noreferrer noopener" href="https://usa.streetsblog.org/" target="_blank">Streetsblog USA</a></p>
+
+
+
+<p><em>Independent journalism is more important than ever.&nbsp;<a rel="noreferrer noopener" href="https://sf.streetsblog.org/make-a-donation-to-streetsblog-san-francisco/" target="_blank">Won’t you contribute</a>?</em></p>
+<p>The post <a href="https://sf.streetsblog.org/2026/04/15/headlines-april-15-2">Headlines, April 15</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></content:encoded>
+
+
+            <post-id xmlns="com-wordpress:feed-additions:1">488826</post-id>
+            <media:content
+                    url="https://sf.streetsblog.org/wp-content/uploads/sites/12/2024/08/NewspaperCoffee_cropped.png?w=1024"
+                    medium="image" width="1024" height="486" type="image/png"/>
+        </item>
+        <item>
+            <title>Where the Hottest Blocks in Your City Are — And How To Cool Them Down</title>
+            <link>
+                https://usa.streetsblog.org/2026/04/15/where-the-hottest-blocks-in-your-city-are-and-how-to-cool-them-down
+            </link>
+
+            <dc:creator><![CDATA[Kea Wilson]]></dc:creator>
+            <pubDate>Wed, 15 Apr 2026 04:32:19 +0000</pubDate>
+            <category><![CDATA[heat resilience]]></category>
+            <category><![CDATA[Heat waves]]></category>
+            <category><![CDATA[Heatwaves]]></category>
+            <category><![CDATA[Safety]]></category>
+            <category><![CDATA[Urban Heat Islands]]></category>
+            <category><![CDATA[Weather]]></category>
+            <guid isPermaLink="false">https://usa.streetsblog.org/?p=289566</guid>
+
+            <description><![CDATA[<p>A cutting-edge tool is helping city leaders identify where they most badly need street trees, bus shelters, and more.</p>
+<p>The post <a href="https://usa.streetsblog.org/2026/04/15/where-the-hottest-blocks-in-your-city-are-and-how-to-cool-them-down">Where the Hottest Blocks in Your City Are — And How To Cool Them Down</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></description>
+            <content:encoded><![CDATA[<p>A breakthrough new tool will help cities pinpoint their hottest streets during heat waves and find ways to cool them down —&nbsp;and hopefully, keep people walking, biking, and waiting for the bus even on the most sweltering days.</p>
+<p>Last month, the World Resources Institute Center for Sustainable Cities launched an online resource known as the <a href="http://environmental%20health%20and%20extreme%20heat%20data%20scientist,%20wri%20ross%20center%20for%20sustainable%20cities/">Cool Cities Lab</a> aimed at helping communities not just to decrease temperatures citywide, but to increase &#8220;thermal comfort&#8221; in the hyper-specific places where extreme heat takes the greatest toll. </p>
+<p>Currently piloted in 20 cities around the world but <a href="https://worldresourcesinstitute.typeform.com/ccl-launch">accepting more collaborators now</a>, the tool draws on cutting-edge, open-source data that models how granular details of the built environment make people feel at the block level. That might include the presence or absence of shade near sidewalks, the percentage of sun-reflecting roofs near bike lanes, and even how much grass a neighborhood has compared to sweaty parking lots.</p>
+<p>Those sorts of details are particularly important when it comes to transportation, where an unshaded bus stop on a 90-degree day can send a would-be sustainable commuter running for the comfort of an air-conditioned car.</p>
+<p>And for those who don&#8217;t or can&#8217;t drive — and particularly for the unhoused — a long walk on a street flanked by heat-absorbing buildings can be downright dangerous. The Yale School of Public Health recently <a href="https://ysph.yale.edu/news-article/warming-us-climate-linked-to-rising-deaths-from-heat/">warned</a> that deaths linked to heat exposure surged more than 50 percent over the past two decades in the U.S. alone.</p>
+<p>&#8220;The effects of heat are already being felt by millions of people around the world in 2025 — [and I&#8217;m talking about] heat waves that are exacerbated by climate change, specifically,&#8221; said Ruth Engel, environmental health and extreme heat data scientist for the Center. &#8220;This is an issue mainly for people who don&#8217;t have other resources. People who can will drive more on hot days, or will just stay inside to try and protect themselves. But for many people, that&#8217;s not an option.&#8221;</p>
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="2380" height="1624" src="https://usa.streetsblog.org/wp-content/uploads/sites/10/2026/04/Cool-Cities-Lab.png" alt="" class="wp-image-289567" /></figure>
+<p>As deadly as extreme heat is, Engel explains that cities have long struggled to assess where the hottest corners of their built environment are —&nbsp;never mind make changes to cool them down.</p>
+<p>It&#8217;s easy enough for meteorologists to measure the ambient temperature of an entire city, but detailed, block-by-block heat maps like the ones that appear on the Lab have historically been hard to develop. Many relied on expensive processes like LIDAR readings from airplanes, which researchers use to collect three-dimensional data on things like building heights and islands of cooling greenery, which they&#8217;d use to calculate how hot specific areas might feel to human beings on the ground.</p>
+<p>&#8220;Heat exposure is an incredibly local phenomenon,&#8221; she added. &#8220;Where you&#8217;re standing outside really affects how you feel; if you&#8217;re in the shade, you&#8217;re going to feel much cooler than if you&#8217;re in the sun. The surfaces you&#8217;re standing on and the buildings around you —&nbsp;these can all substantially affect your own personal heat exposure and your personal heat burden. &#8230; But it&#8217;s really hard to get the data right.&#8221;</p>
+<aside class="not-prose mb-5">
+<h3 class="text-xl font-bold mb-2 tracking-[.32px] dark:text-white">
+			Recommended<br />
+		</h3>
+<div class="p-4 sm:p-6 border-1 border-[#cccccc] dark:border-[#a6a6a6] text-[#191919] dark:text-[#fafafa]">
+<div class="flex flex-col sm:flex-row gap-3 sm:gap-6">
+<div class="order-first sm:order-last sm:w-[280px] aspect-[16/9] overflow-hidden shrink-0">
+          		<a href="https://usa.streetsblog.org/2024/07/18/this-heat-wave-is-a-car-dependency-problem" class="w-full" aria-hidden="true"><br />
+            	<img loading="lazy" decoding="async" width="1024" height="585" src="https://usa.streetsblog.org/wp-content/uploads/sites/10/2024/07/Egg-on-sidewalk-heat-e1721245595167.jpg?w=1024" class="object-cover wp-post-image" alt="This Heat Wave is a Car Dependency Problem" /><br />
+          		</a>
+			</div>
+<div class="flex flex-col justify-start gap-2">
+<div class="leading-tight">
+				<a href="https://usa.streetsblog.org/2024/07/18/this-heat-wave-is-a-car-dependency-problem" class="no-underline! hover:underline! font-bold w-full"><br />
+					This Heat Wave is a Car Dependency Problem<br />
+				</a>
+				</div>
+<div class="hidden sm:flex flex-col flex-wrap gap-2 text-base">
+<div class="flex flex-row nowrap items-center gap-2">
+<div>
+      <a href="https://usa.streetsblog.org/author/keawilson" class="font-bold !no-underline hover:!underline">Kea Wilson</a>
+    </div>
+</p></div>
+</p></div>
+<div class="text-base">
+					July 18, 2024
+				</div>
+</p></div>
+</p></div>
+</p></div>
+</aside>
+<p>In just the last two years, though, Engel says researchers have developed an open source model that uses physics to produce heat maps <em>without </em>costly flyovers, down to a &#8220;one meter resolution.&#8221; The WRI Center for Sustainable Cities then used that data to analyze how those high-risk areas line up with important locations like job centers and grocery stores, as well as large concentrations of elders, kids, and others who are more vulnerable to heat-related health conditions.</p>
+<p>The tool can even identify which areas could benefit the most from cooling infrastructure investments, like adding reflective pavements near frequently-traveled sidewalks or cool roofs on buildings near popular bike lanes. </p>
+<p>&#8220;Now you can say, &#8216;Pedestrians are going to be much safer from heat on this street if we plant, say, 20-percent more trees,&#8217;&#8221; added Engel. &#8220;We take heat from being a personal phenomenon that needs personal interventions, to being a public health phenomenon that entails public health solutions.&#8221;</p>
+<aside class="not-prose mb-5">
+<h3 class="text-xl font-bold mb-2 tracking-[.32px] dark:text-white">
+			Recommended<br />
+		</h3>
+<div class="p-4 sm:p-6 border-1 border-[#cccccc] dark:border-[#a6a6a6] text-[#191919] dark:text-[#fafafa]">
+<div class="flex flex-col sm:flex-row gap-3 sm:gap-6">
+<div class="order-first sm:order-last sm:w-[280px] aspect-[16/9] overflow-hidden shrink-0">
+          		<a href="https://usa.streetsblog.org/2021/09/20/bidens-heat-island-strategy-ignores-cars" class="w-full" aria-hidden="true"><br />
+            	<img loading="lazy" decoding="async" width="1024" height="903" src="https://usa.streetsblog.org/wp-content/uploads/sites/10/2021/09/Chicago-heat.png?w=1024" class="object-cover wp-post-image" alt="Biden&#8217;s &#8216;Heat Island&#8217; Strategy Ignores Cars" /><br />
+          		</a>
+			</div>
+<div class="flex flex-col justify-start gap-2">
+<div class="leading-tight">
+				<a href="https://usa.streetsblog.org/2021/09/20/bidens-heat-island-strategy-ignores-cars" class="no-underline! hover:underline! font-bold w-full"><br />
+					Biden&#8217;s &#8216;Heat Island&#8217; Strategy Ignores Cars<br />
+				</a>
+				</div>
+<div class="hidden sm:flex flex-col flex-wrap gap-2 text-base">
+<div class="flex flex-row nowrap items-center gap-2">
+<div>
+      <a href="https://usa.streetsblog.org/author/keaw" class="font-bold !no-underline hover:!underline">Kea Wilson</a>
+    </div>
+</p></div>
+</p></div>
+<div class="text-base">
+					September 20, 2021
+				</div>
+</p></div>
+</p></div>
+</p></div>
+</aside>
+<p>Over time, the Cool Cities Lab might may help build urgency for transportation leaders to address the root reasons <em>why</em> our communities are so hot — including the omnipresence of cars.</p>
+<p>In addition to driving climate change-related heat waves, cars produce massive amounts of &#8220;waste heat&#8221; every time they&#8217;re turned on, drafting up <a href="https://www.treehugger.com/cars-add-heat-to-cities-ban-them-5680313">72 percent</a> of their energy into their surrounding environments; they also absorb solar radiation and radiate it back out as heat even when they&#8217;re <em>parked</em>, particularly if they have a <a href="https://www.npr.org/2025/08/27/nx-s1-5518006/darker-cars-absorb-more-heat-and-make-cities-feel-hotter#:~:text=Transcript-,In%20urban%20environments%2C%20heat%20gets%20absorbed%20and%20released%20by%20the,cars%2C%20especially%20the%20darker%20ones.">darker paint job.</a></p>
+<p>In at least one early study, the WRI team is already marrying travel data <em>with </em>heat risk data, which could help identify the specific blocks where shifting modes could cool down cities the most. At the very least, it could help transportation leaders decide which pedestrian corridors most urgently need street trees, and which bus stops are just begging for a shelter and a bench.</p>
+<p>Whatever heat-cutting strategies they choose, Engel hopes that city leaders will take a more granular look at where extreme weather is hitting residents the hardest, and take action to cool those streets down now.</p>
+<p>&#8220;That&#8217;s critical in keeping people walking — and keeping people out of cars,&#8221; she said.  </p>
+<p>The post <a href="https://usa.streetsblog.org/2026/04/15/where-the-hottest-blocks-in-your-city-are-and-how-to-cool-them-down">Where the Hottest Blocks in Your City Are — And How To Cool Them Down</a> appeared first on <a href="https://sf.streetsblog.org">Streetsblog San Francisco</a>.</p>
+]]></content:encoded>
+
+
+            <enclosure url="https://usa.streetsblog.org/wp-content/uploads/sites/10/2026/04/Hot-city.png?w=1024"
+                       length="0" type="image/png"/>
+
+            <post-id xmlns="com-wordpress:feed-additions:1">488844</post-id>
+            <media:content url="https://sf.streetsblog.org/wp-content/uploads/sites/12/2026/04/Hot-city.png?w=1024"
+                           medium="image" width="1024" height="717" type="image/png"/>
+        </item>
+    </channel>
+</rss>
