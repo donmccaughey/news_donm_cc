@@ -66,6 +66,11 @@ class Feeds(Encodable, Iterable[Feed], Serializable):
                 URL('https://garymarcus.substack.com/feed'),
             ),
             Feed(
+                'GramEditor Releases',
+                'gram',
+                URL('https://codeberg.org/GramEditor/gram/releases.rss'),
+            ),
+            Feed(
                 'Molly White',
                 'mw',
                 URL('https://newsletter.mollywhite.net/feed'),
