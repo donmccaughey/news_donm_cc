@@ -14,6 +14,7 @@ SKIP_SITES = {
     'bloodknife.com',
     'bookforum.com',
     'brave.com',
+    'brownstone.org',
     'buckleyschool.com',
 
     'chronicle.com',
@@ -106,6 +107,7 @@ SKIP_SITES = {
     'paulgraham.com',
     'plough.com',
     'pluralistic.net',
+    'porticoquarterly.com',
     'project-syndicate.org',
     'prospectmagazine.co.uk',
     'psmag.com',
