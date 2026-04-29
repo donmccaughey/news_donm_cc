@@ -38,9 +38,10 @@ SKIP_SITES = {
     'europeanreviewofbooks.com',
 
     'm.facebook.com',
+    'failedarchitecture.com',
     'fantasticmetropolis.com',
     'francisdiclemente.com',
-    'ft.com',
+    'frontporchrepublic.com',
 
     'glamour.com',
     # google.com
@@ -144,6 +145,7 @@ SKIP_SITES = {
     'thedispatch.com',
     'thedriftmag.com',
     'theepochtimes.com',
+    'theideasletter.org',
     'thelampmagazine.com',
     'themarginalian.org',
     'themillions.com',
