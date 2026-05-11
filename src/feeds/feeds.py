@@ -76,6 +76,11 @@ class Feeds(Encodable, Iterable[Feed], Serializable):
                 URL('https://newsletter.mollywhite.net/feed'),
             ),
             Feed(
+                "No One's Happy",
+                'n1h',
+                URL('https://nooneshappy.com/rss.xml'),
+            ),
+            Feed(
                 'Paul Krugman',
                 'pk',
                 URL('https://paulkrugman.substack.com/feed'),
