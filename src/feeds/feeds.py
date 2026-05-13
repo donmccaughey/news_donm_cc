@@ -100,6 +100,11 @@ class Feeds(Encodable, Iterable[Feed], Serializable):
                 'tf',
                 URL('https://tidyfirst.substack.com/feed'),
             ),
+            Feed(
+                'Unsung',
+                'us',
+                URL('https://unsung.aresluna.org/feed.xml'),
+            ),
             DaringFireball(),
             Reddit(reddit_url),
             Streetsblog(),
