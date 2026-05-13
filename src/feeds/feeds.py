@@ -81,6 +81,11 @@ class Feeds(Encodable, Iterable[Feed], Serializable):
                 URL('https://nooneshappy.com/rss.xml'),
             ),
             Feed(
+                'OxKiire',
+                'oxk',
+                URL('https://0xkiire.com/rss.xml'),
+            ),
+            Feed(
                 'Paul Krugman',
                 'pk',
                 URL('https://paulkrugman.substack.com/feed'),
