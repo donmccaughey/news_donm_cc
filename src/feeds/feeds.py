@@ -41,11 +41,6 @@ class Feeds(Encodable, Iterable[Feed], Serializable):
                 URL('https://acoup.blog/feed/'),
             ),
             Feed(
-                'Agile is Anarcy',
-                'aa',
-                URL('https://agileisanarchy.com/rss/'),
-            ),
-            Feed(
                 'Aswath Damodaran',
                 'ad',
                 URL('https://aswathdamodaran.substack.com/feed'),
@@ -59,6 +54,11 @@ class Feeds(Encodable, Iterable[Feed], Serializable):
                 'charity.wtf',
                 'cw',
                 URL('http://charitydotwtf.substack.com/feed'),
+            ),
+            Feed(
+                'FT Alphaville',
+                'ftav',
+                URL('https://ftav.substack.com/feed'),
             ),
             Feed(
                 'Gary Marcus',
@@ -79,11 +79,6 @@ class Feeds(Encodable, Iterable[Feed], Serializable):
                 "No One's Happy",
                 'n1h',
                 URL('https://nooneshappy.com/rss.xml'),
-            ),
-            Feed(
-                'OxKiire',
-                'oxk',
-                URL('https://0xkiire.com/rss.xml'),
             ),
             Feed(
                 'Paul Krugman',
