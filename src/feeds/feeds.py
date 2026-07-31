@@ -41,6 +41,11 @@ class Feeds(Encodable, Iterable[Feed], Serializable):
                 URL('https://acoup.blog/feed/'),
             ),
             Feed(
+                'Alpine Linux News',
+                'al',
+                URL('https://alpinelinux.org/atom.xml'),
+            ),
+            Feed(
                 'Aswath Damodaran',
                 'ad',
                 URL('https://aswathdamodaran.substack.com/feed'),
