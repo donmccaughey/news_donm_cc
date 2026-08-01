@@ -8,7 +8,7 @@ SKIP_SITES = {
     'astralcodexten.com',
     'magazine.atavist.com',
 
-    'betonit.substack.com',
+    'bittersoutherner.com',
     # blogspot.com
     'steve-yegge.blogspot.com',
     'bloodknife.com',
@@ -24,9 +24,11 @@ SKIP_SITES = {
     'commonwealmagazine.org',
     'compactmag.com',
 
+    'dailicle.com',
     'dannyreviews.com',
     'dirt.fyi',
     'discoursemagazine.com',
+    'dispatch-media.com',
     'dissentmagazine.org',
     'documentjournal.com',
     'drb.ie',
@@ -79,6 +81,7 @@ SKIP_SITES = {
     'meltingasphalt.com',
     'milkyeggs.com',
     'mindmatters.ai',
+    'monocle.com,'
     'monthlyreview.org',
     'motherjones.com',
 
@@ -118,6 +121,7 @@ SKIP_SITES = {
     'quora.com',
 
     'racket.news',
+    'raptitude.com',
     'reason.com',
     'reviewcanada.ca',
 
@@ -130,6 +134,7 @@ SKIP_SITES = {
     'spy.com',
     # substack.com
     'astralcodexten.substack.com',
+    'betonit.substack.com',
     'dynomight.substack.com',
     'noahpinion.substack.com',
     'thezvi.substack.com',
@@ -151,8 +156,10 @@ SKIP_SITES = {
     'themillions.com',
     'thenation.com',
     'thenewatlantis.com',
+    'thenewcritic.com',
     'theparisreview.org',
     'thepointmag.com',
+    'thesmallbow.com',
     'thestacksreader.com',
     'thewalrus.ca',
     'thewhitereview.org',
