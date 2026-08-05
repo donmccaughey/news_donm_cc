@@ -61,6 +61,11 @@ class Feeds(Encodable, Iterable[Feed], Serializable):
                 URL('http://charitydotwtf.substack.com/feed'),
             ),
             Feed(
+                'Constraint Lab',
+                'cl',
+                URL('https://www.constraintlab.com/feed.xml'),
+            ),
+            Feed(
                 'FT Alphaville',
                 'ftav',
                 URL('https://ftav.substack.com/feed'),
