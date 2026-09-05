@@ -66,6 +66,7 @@ SKIP_SITES = {
     'laphamsquarterly.org',
     'lareviewofbooks.org',
     'libertiesjournal.com',
+    'linkedin.com',
     'literaryreview.co.uk',
     'lithub.com',
     'longnow.org',
@@ -100,6 +101,7 @@ SKIP_SITES = {
     'nybooks.com',
     'nypost.com',
 
+    'oaklandreviewofbooks.org',
     'openculture.com',
     'openthemagazine.com',
     'otherlife.co',

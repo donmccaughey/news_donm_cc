@@ -81,6 +81,11 @@ class Feeds(Encodable, Iterable[Feed], Serializable):
                 URL('https://codeberg.org/GramEditor/gram/releases.rss'),
             ),
             Feed(
+                'Groundbreaker',
+                'gb',
+                URL('https://www.groundbrkr.com/feed'),
+            ),
+            Feed(
                 'Molly White',
                 'mw',
                 URL('https://newsletter.mollywhite.net/feed'),
@@ -89,6 +94,11 @@ class Feeds(Encodable, Iterable[Feed], Serializable):
                 "No One's Happy",
                 'n1h',
                 URL('https://nooneshappy.com/rss.xml'),
+            ),
+            Feed(
+                'Nuntii Latini',
+                'nl',
+                URL('https://nuntiilatinibreves.substack.com/feed'),
             ),
             Feed(
                 'Paul Krugman',
