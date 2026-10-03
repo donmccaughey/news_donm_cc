@@ -120,6 +120,11 @@ class Feeds(Encodable, Iterable[Feed], Serializable):
                 'us',
                 URL('https://unsung.aresluna.org/feed.xml'),
             ),
+            Feed(
+                'Urbex: Darbians Photography',
+                'ubx',
+                URL('http://www.darbiansphotography.com/latest-reports?format=rss'),
+            ),
             DaringFireball(),
             Reddit(reddit_url),
             Streetsblog(),
