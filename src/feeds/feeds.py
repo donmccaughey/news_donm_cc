@@ -61,11 +61,6 @@ class Feeds(Encodable, Iterable[Feed], Serializable):
                 URL('http://charitydotwtf.substack.com/feed'),
             ),
             Feed(
-                'Constraint Lab',
-                'cl',
-                URL('https://www.constraintlab.com/feed.xml'),
-            ),
-            Feed(
                 'FT Alphaville',
                 'ftav',
                 URL('https://ftav.substack.com/feed'),
@@ -89,11 +84,6 @@ class Feeds(Encodable, Iterable[Feed], Serializable):
                 'Molly White',
                 'mw',
                 URL('https://newsletter.mollywhite.net/feed'),
-            ),
-            Feed(
-                "No One's Happy",
-                'n1h',
-                URL('https://nooneshappy.com/rss.xml'),
             ),
             Feed(
                 'Nuntii Latini',
@@ -120,13 +110,7 @@ class Feeds(Encodable, Iterable[Feed], Serializable):
                 'us',
                 URL('https://unsung.aresluna.org/feed.xml'),
             ),
-            Feed(
-                'Urbex: Darbians Photography',
-                'ubx',
-                URL('http://www.darbiansphotography.com/latest-reports?format=rss'),
-            ),
             DaringFireball(),
-            Reddit(reddit_url),
             Streetsblog(),
         ]
         return Feeds(feeds)
